@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.landadvisors.cl/sitemap.xml
+
+# Bloquear recursos de desarrollo si quedaran expuestos
+Disallow: /maps-config.example.js

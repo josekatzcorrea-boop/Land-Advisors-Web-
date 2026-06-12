@@ -1434,7 +1434,8 @@ section {
   margin-bottom: 2rem;
 }
 
-.territory-tags span {
+.territory-tags span,
+.territory-tags a {
   padding: 0.45rem 0.9rem;
   font-size: 0.82rem;
   font-weight: 600;

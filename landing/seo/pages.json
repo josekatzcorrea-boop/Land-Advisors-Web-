@@ -1,0 +1,162 @@
+[
+  {
+    "path": "/",
+    "file": "index.html",
+    "title": "Inversión inmobiliaria y territorial sur de Chile | Land Advisors",
+    "description": "Consultoría de inteligencia territorial e inversión inmobiliaria rural y periurbana en Puerto Varas, Frutillar, Llanquihue y Malalcahuello. Plusvalía, expansión urbana y oportunidades con criterio.",
+    "type": "home",
+    "breadcrumb": "Inicio"
+  },
+  {
+    "path": "/servicios/",
+    "file": "servicios/index.html",
+    "title": "Servicios de consultoría inmobiliaria territorial | Land Advisors",
+    "description": "Diagnóstico estratégico, búsqueda personalizada, estudios de potencial y estructuración de proyectos inmobiliarios en el sur de Chile.",
+    "type": "hub",
+    "breadcrumb": "Servicios",
+    "h1": "Servicios de inteligencia territorial e inversión inmobiliaria",
+    "intro": "Cada servicio responde a una etapa distinta de la decisión: desde ordenar tu búsqueda hasta estructurar un proyecto con plusvalía y respaldo normativo.",
+    "keywords": ["consultoría inmobiliaria", "inversión territorial", "diagnóstico inmobiliario"]
+  },
+  {
+    "path": "/servicios/diagnostico-estrategico/",
+    "file": "servicios/diagnostico-estrategico/index.html",
+    "title": "Diagnóstico estratégico inmobiliario | Land Advisors Chile",
+    "description": "Reunión e informe de diagnóstico estratégico inmobiliario (1 UF). Identifica zonas, prestaciones y oportunidades de inversión territorial en el sur de Chile.",
+    "type": "service",
+    "breadcrumb": "Diagnóstico estratégico",
+    "h1": "Diagnóstico estratégico inmobiliario",
+    "intro": "El punto de entrada para quien necesita criterio antes de comprar: territorio, normativa, mercado y factibilidad según tu presupuesto y objetivos.",
+    "service": {
+      "name": "Diagnóstico estratégico inmobiliario",
+      "price": "1 UF",
+      "description": "Reunión estratégica e informe con ubicaciones y prestaciones aptas para tus objetivos de compra o inversión territorial."
+    },
+    "cta": { "label": "Agendar diagnóstico estratégico", "event": "cta_diagnostico" }
+  },
+  {
+    "path": "/servicios/busqueda-personalizada/",
+    "file": "servicios/busqueda-personalizada/index.html",
+    "title": "Búsqueda personalizada de terrenos | Land Advisors",
+    "description": "Búsqueda curada de terrenos con criterio territorial y de mercado en la cuenca del Lago Llanquihue. Incluye diagnóstico estratégico.",
+    "type": "service",
+    "breadcrumb": "Búsqueda personalizada",
+    "h1": "Búsqueda personalizada de terrenos",
+    "intro": "Filtramos ruido de portales y corredoras. Selección alineada a tu perfil, con lectura de conectividad, urbanización y plusvalía potencial.",
+    "service": {
+      "name": "Búsqueda personalizada",
+      "price": "5 UF",
+      "description": "Selección curada de terrenos alineada a tu perfil, con orientación en la evaluación. Incluye diagnóstico estratégico."
+    },
+    "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" }
+  },
+  {
+    "path": "/servicios/estudio-potencial-inmobiliario/",
+    "file": "servicios/estudio-potencial-inmobiliario/index.html",
+    "title": "Estudio de potencial inmobiliario | Land Advisors",
+    "description": "Tesis de inversión con territorio, normativa, escenarios y recomendaciones. Desde 10 UF para proyectos con plusvalía en el sur de Chile.",
+    "type": "service",
+    "breadcrumb": "Estudio de potencial inmobiliario",
+    "h1": "Estudio de potencial inmobiliario",
+    "intro": "Para inversionistas y desarrolladores que necesitan una tesis documentada: cambio de uso, expansión urbana, turismo inmobiliario o desarrollo comercial.",
+    "service": {
+      "name": "Estudio de potencial inmobiliario",
+      "price": "Desde 10 UF",
+      "description": "Tesis de inversión: territorio, normativa, escenarios y recomendaciones con respaldo verificable."
+    },
+    "cta": { "label": "Solicitar estudio de potencial", "event": "cta_estudio" }
+  },
+  {
+    "path": "/servicios/estructuracion-proyectos/",
+    "file": "servicios/estructuracion-proyectos/index.html",
+    "title": "Estructuración y desarrollo de proyectos inmobiliarios | Land Advisors",
+    "description": "Estructuración de proyectos turísticos, cabañas, comercio y desarrollo PYME en el contorno rural del sur de Chile. Desde 20 UF.",
+    "type": "service",
+    "breadcrumb": "Estructuración de proyectos",
+    "h1": "Estructuración y desarrollo de proyectos",
+    "intro": "Diseñamos la tesis de negocio y la lectura territorial para cabañas, turismo, strip center y desarrollo inmobiliario en periurbano rural.",
+    "service": {
+      "name": "Estructuración y desarrollo de proyectos",
+      "price": "Desde 20 UF",
+      "description": "Turismo, renta corta, cabañas, comercio y desarrollo PYME con respaldo territorial y normativo."
+    },
+    "cta": { "label": "Consultar estructuración de proyecto", "event": "cta_estructuracion" }
+  },
+  {
+    "path": "/territorios/",
+    "file": "territorios/index.html",
+    "title": "Territorios de inversión inmobiliaria sur de Chile | Land Advisors",
+    "description": "Inteligencia territorial en Puerto Varas, Frutillar, Llanquihue, Malalcahuello y cuenca del Lago Llanquihue. Oportunidades de plusvalía y expansión urbana.",
+    "type": "hub",
+    "breadcrumb": "Territorios",
+    "h1": "Territorios donde leemos el mercado inmobiliario",
+    "intro": "Operamos en el contorno rural periurbano: donde la expansión urbana, la conectividad y el cambio de uso generan oportunidades antes de que sean evidentes.",
+    "keywords": ["inversión territorial", "oportunidades inmobiliarias sur de Chile", "plusvalía inmobiliaria"]
+  },
+  {
+    "path": "/territorios/puerto-varas/",
+    "file": "territorios/puerto-varas/index.html",
+    "title": "Inversión inmobiliaria Puerto Varas | Terrenos y oportunidades",
+    "description": "Consultoría de inversión inmobiliaria en Puerto Varas: terrenos, terrenos comerciales, expansión urbana y plusvalía en el contorno rural.",
+    "type": "territory",
+    "breadcrumb": "Puerto Varas",
+    "h1": "Inversión inmobiliaria en Puerto Varas",
+    "intro": "Puerto Varas concentra demanda residencial, turística y comercial. Leemos expansión urbana, conectividad y normativa para identificar terrenos con vocación real.",
+    "keywords": ["inversión inmobiliaria Puerto Varas", "terrenos en Puerto Varas", "terrenos comerciales Puerto Varas"]
+  },
+  {
+    "path": "/territorios/frutillar/",
+    "file": "territorios/frutillar/index.html",
+    "title": "Inversión inmobiliaria Frutillar | Terrenos y plusvalía",
+    "description": "Oportunidades de inversión inmobiliaria en Frutillar: terrenos, parcelas y desarrollo en el contorno rural con criterio territorial.",
+    "type": "territory",
+    "breadcrumb": "Frutillar",
+    "h1": "Inversión inmobiliaria en Frutillar",
+    "intro": "Frutillar combina patrimonio, turismo y segunda vivienda. Evaluamos terrenos con lectura de mercado local, no con avisos genéricos.",
+    "keywords": ["inversión inmobiliaria Frutillar", "terrenos en Frutillar", "parcelas en Frutillar"]
+  },
+  {
+    "path": "/territorios/llanquihue/",
+    "file": "territorios/llanquihue/index.html",
+    "title": "Inversión inmobiliaria Llanquihue | Terrenos y desarrollo",
+    "description": "Consultoría territorial en Llanquihue: terrenos, proyectos inmobiliarios y oportunidades de plusvalía en el contorno rural.",
+    "type": "territory",
+    "breadcrumb": "Llanquihue",
+    "h1": "Inversión inmobiliaria en Llanquihue",
+    "intro": "Llanquihue muestra dinámica de urbanización y parcelaciones en expansión. Identificamos valor presente vs. valor futuro con datos de mercado.",
+    "keywords": ["inversión inmobiliaria Llanquihue", "terrenos en Llanquihue"]
+  },
+  {
+    "path": "/territorios/malalcahuello/",
+    "file": "territorios/malalcahuello/index.html",
+    "title": "Inversión inmobiliaria Malalcahuello | Oportunidades territoriales",
+    "description": "Inteligencia territorial en Malalcahuello: inversión inmobiliaria rural, turismo y terrenos con potencial de desarrollo.",
+    "type": "territory",
+    "breadcrumb": "Malalcahuello",
+    "h1": "Inversión inmobiliaria en Malalcahuello",
+    "intro": "Malalcahuello abre oportunidades de turismo inmobiliario y segunda vivienda con lectura de conectividad y vocación del territorio.",
+    "keywords": ["inversión inmobiliaria Malalcahuello", "terrenos Malalcahuello"]
+  },
+  {
+    "path": "/casos-de-estudio/",
+    "file": "casos-de-estudio/index.html",
+    "title": "Casos de estudio inmobiliarios | Land Advisors Chile",
+    "description": "Casos reales de inversión territorial en Puerto Varas, Frutillar y Llanquihue: plusvalía, cambio de uso y arbitraje inmobiliario.",
+    "type": "hub",
+    "breadcrumb": "Casos de estudio",
+    "h1": "Casos de estudio de inversión territorial",
+    "intro": "Resultados pasados no garantizan resultados futuros. Estos casos ilustran cómo la inteligencia territorial revela oportunidades que el mercado no precifica.",
+    "keywords": ["casos inversión inmobiliaria", "plusvalía terrenos", "oportunidades inmobiliarias sur de Chile"]
+  },
+  {
+    "path": "/blog/",
+    "file": "blog/index.html",
+    "title": "Blog de inteligencia territorial e inversión inmobiliaria | Land Advisors",
+    "description": "Artículos sobre plusvalía, expansión urbana, cambio de uso de suelo, mercado inmobiliario del sur de Chile e inversión territorial.",
+    "type": "blog",
+    "breadcrumb": "Blog",
+    "h1": "Inteligencia territorial e inversión inmobiliaria",
+    "intro": "Publicamos análisis sobre mercado inmobiliario del sur de Chile, desarrollo inmobiliario rural y oportunidades de inversión con respaldo territorial.",
+    "keywords": ["inteligencia territorial", "plusvalía inmobiliaria", "expansión urbana", "mercado inmobiliario sur de Chile"]
+  }
+]

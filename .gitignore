@@ -23,3 +23,6 @@ brochure/corporativo/Land-Advisors-Corporativo.pdf
 
 # Video territorial (opcional: quita esta línea si quieres subir el MP4)
 landing/video/territorio.mp4
+
+# Analítica con IDs reales (mantener analytics-config.example.js en repo)
+landing/analytics-config.local.js

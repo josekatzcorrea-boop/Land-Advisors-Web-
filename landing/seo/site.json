@@ -1,0 +1,41 @@
+{
+  "name": "Land Advisors Chile",
+  "legalName": "Land Advisors Chile",
+  "tagline": "Estrategia Inmobiliaria",
+  "url": "https://www.landadvisors.cl",
+  "email": "contacto@landadvisors.cl",
+  "phone": "+56974533265",
+  "whatsapp": "https://wa.me/56974533265",
+  "address": {
+    "street": "Walker Martínez 517",
+    "locality": "Puerto Varas",
+    "region": "Los Lagos",
+    "country": "CL",
+    "postalCode": "5550000"
+  },
+  "geo": {
+    "latitude": -41.3195,
+    "longitude": -72.9369
+  },
+  "founder": {
+    "name": "José Hernán Katz C.",
+    "jobTitle": "Fundador y consultor de estrategia inmobiliaria",
+    "url": "https://www.landadvisors.cl/#nosotros"
+  },
+  "areasServed": [
+    "Puerto Varas",
+    "Llanquihue",
+    "Frutillar",
+    "Puerto Octay",
+    "Ensenada",
+    "Las Cascadas",
+    "Malalcahuello",
+    "Fresia",
+    "Los Muermos"
+  ],
+  "defaultOgImage": "/images/hero.jpg",
+  "social": {
+    "linkedin": "",
+    "instagram": ""
+  }
+}
