@@ -1,0 +1,58 @@
+---
+description: Contexto Land Advisors Chile — marca, visual, clientes, metodología, casos, servicios y web
+alwaysApply: true
+---
+
+# Land Advisors Chile — Contexto obligatorio
+
+Archivos fuente: identidad, cliente ideal, metodología, casos, arquitectura comercial, `web master context.txt`, `LandAdvisors_Especificacion_Maestra.txt`. Landing: `landing/`.
+
+## Identidad visual (logo v1.0 congelado · paleta v2.0)
+
+- **Descriptor logotipo (logo actual)**: ESTRATEGIA INMOBILIARIA (Montserrat Light, mayúsculas). NO usar "ESTRATEGIA TERRITORIAL".
+- **Colores logo (inmutables, medidos en assets)**: `#052C4D` azul institucional; `#A7ADB3` gris secundario. (Nota: spec antigua decía `#0F4C5C` — no coincide con PNG exportado.)
+- **Paleta extendida web** (`01 - Branding Book Land Advisors.txt` v2.0): `#0A3A47` `#1A5F72` `#E8F1F3` `#F4F7F8` `#EEF3F5`; acentos territorio `#5B8FA0` `#3D6B5E` `#E6EFE9`.
+- **Tipografía**: Montserrat SemiBold = LAND ADVISORS; Light = descriptor.
+- **Isotipo**: monograma LA; no alterar proporciones, ángulos ni colores del logo.
+- **Assets web**: `assets/logo-horizontal-light.png`, `assets/logo-isotipo.png`.
+
+## Quiénes somos
+
+- **Land Advisors Chile**: consultora de estrategia inmobiliaria y proyección inmobiliaria en el sur de Chile.
+- **Líder**: José Katz. **Territorio**: Cuenca Lago Llanquihue y Malalcahuello.
+- **Modelo territorial**: (1) Ciudad urbana → (2) **Contorno rural** (parcelaciones, habita zona rural pero interactúa con la ciudad, mismos servicios) → (3) Campo lejano. Foco Land Advisors: **contorno rural**, no campo ni inmueble urbano.
+- **Valor**: identificar oportunidades antes de que sean evidentes; no mostrar propiedades.
+- **Enfoque**: territorio primero, activo después; lectura ciudad + periferia rural.
+- **Tecnología**: SIG, cartografía, RAG, IA territorial, Google Earth, datos de mercado.
+- **NO somos**: corredora, portal, inmobiliaria de proyectos propios.
+
+## Cliente prioritario (landing)
+
+- **Comprador indeciso de terreno rural** — saturado de ofertas de corredoras, poco tiempo, confusión.
+- Muchos **viven en Santiago** y no conocen dinámica local.
+- Dolores reales: distancia, conectividad, urbanización del contorno, diseño/tamaño de loteo, calidad de vida, factibilidad de proyecto (casa, cabañas, café, restaurant, comercio). Cliente en contorno rural, no campo lejano.
+- Debe sentir: dónde conviene comprar, qué es factible, dónde cumplir objetivos, dónde evitar problemas futuros.
+- **Terminología web/copy**: usar **terreno**, no parcela (salvo dato histórico en casos).
+- **NO decir** que todos los terrenos se parecen; sí que cuesta comparar con criterio.
+- **Plano regulador (PRC)**: instrumento urbano; en web explicar relación **ciudad ↔ contorno rural**, no como pieza central del problema. **5 preguntas #problema**: mantener las actuales.
+
+## Cliente ideal (4 perfiles + prioritario)
+
+1. Comprador terreno rural (prioritario web). 2. Inversionista patrimonial (1.000–5.000 UF). 3. Familia calidad de vida. 4. Desarrollador (turismo/cabañas/comercio). 5. Empresario local.
+
+## Expertise, casos y servicios
+
+- Metodología: territorio → terrenos; oportunidad = valor futuro >> presente.
+- Casos: Puerto Varas, Frutillar, Llanquihue.
+- Servicios: Diagnóstico 1 UF, Búsqueda 5 UF, Asesoría 2,5%, Estudios desde 10 UF, Estructuración desde 20 UF.
+
+## Sitio web
+
+- Objetivo: reuniones calificadas. NO portal ni catálogo.
+- **Versión oficial (v2 vanguardia):** `landing/` activo, respaldo en `landing/official/`. Histórico: `landing/v1-classic/`. Propuesta copy (no implementada): `landing/PROPUESTA-COPY-comprador-terreno.md`.
+- Copy: consultor/estratega, cercano al comprador emocional; emoción + compra inteligente. Confianza intelectual > urgencia comercial.
+- Arco visitante: reconocen su problema → entienden que Land Advisors lee el territorio → quieren hablar antes de decidir.
+
+## Tono
+
+Profesional, cercano, honestidad intelectual. Traducir lo técnico a dolores concretos (distancia, conectividad, calidad de vida, proyecto futuro). En web aplicar identidad visual.

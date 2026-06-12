@@ -1,0 +1,35 @@
+LAND ADVISORS - Especificación Maestra de Identidad Visual v1.0
+Estado
+DISEÑO APROBADO Y CONGELADO. No modificar isotipo, tipografía, proporciones, relación símbolo/logotipo, colores ni jerarquías.
+1. Isotipo Maestro
+Monograma geométrico formado por L y A integradas en una sola figura. Representa estrategia, dirección, territorio e inversión.
+2. Proporciones del Isotipo
+Altura total = X. Ancho total ? 0,88X. Apertura interior ? 0,18X. Separación entre L y A ? 0,05X. Grosor visual de la L ? 0,13X.
+3. Ángulos
+Barra izquierda ? 65°. Lado izquierdo de la A ? 55°. Lado derecho de la A ? 63°. No alterar.
+4. Área de Protección
+Y = grosor de la barra izquierda. Mantener una zona libre mínima equivalente a Y alrededor de todo el sistema.
+5. Relación Isotipo / Logotipo
+Altura isotipo: 1X. Altura LAND ADVISORS: 0,28X. Altura descriptor: 0,10X. Separador vertical: ancho 0,01X y altura 0,80X.
+6. Colores Oficiales
+Azul institucional #0F4C5C (RGB 15,76,92). Gris secundario #A7ADB3 (RGB 167,173,179).
+7. Tipografía Oficial
+Montserrat SemiBold para LAND ADVISORS. Montserrat Light para PROYECCIÓN INMOBILIARIA. Descriptor siempre en mayúsculas.
+8. Tamaños Mínimos
+Horizontal: 150 px digital / 35 mm impreso. Vertical: 120 px digital / 25 mm impreso. Isotipo: 32 px digital / 8 mm impreso.
+9. Versiones Autorizadas
+Horizontal, vertical, isotipo, negativo y monocromo.
+10. Versiones Prohibidas
+No cambiar colores, estirar, comprimir, agregar sombras, degradados, cambiar tipografía, mover descriptor o alterar isotipo.
+11. Avatar RRSS
+Instagram 1080x1080. LinkedIn 1080x1080. WhatsApp 1024x1024. Utilizar solo isotipo.
+12. Favicon
+Utilizar únicamente el isotipo. Tamaños: 512, 256, 128, 64 y 32 px.
+13. Tarjeta Corporativa
+Frente: logo horizontal sobre fondo azul institucional. Reverso: datos de José Hernán Katz C., Fundador.
+14. Firma Email
+Jerarquía: Nombre, Cargo, Teléfono, Correo y Web. Logo horizontal a la izquierda.
+15. Portada LinkedIn
+1584x396. Incluir logo horizontal, descriptor y eslogan: 'Conocimiento local para inversiones inteligentes.'
+16. Archivos a Entregar
+Master SVG, EPS, AI, PDF, PNG transparentes, redes sociales, firma HTML, tarjetas, PPT Master y LinkedIn Cover.

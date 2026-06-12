@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --blue: #0f4c5c;
+  --blue-deep: #0a3540;
+  --blue-soft: #1a6b7d;
+  --mint: #7ec8d8;
+  --paper: #f6f9fa;
+  --white: #ffffff;
+  --text: #1a2428;
+  --muted: #5f7179;
+  --line: rgba(15, 76, 92, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+  line-height: 1.6;
+  color: var(--text);
+  background: #eceff1;
+}
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  background: var(--white);
+  position: relative;
+}
+
+.top-accent {
+  height: 5px;
+  background: var(--blue);
+}
+
+.inner {
+  padding: 0.5in 0.7in 0.55in;
+}
+
+/* Header — sin formas que invadan el contenido */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.35rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.logo-wrap img {
+  display: block;
+  width: 168px;
+  height: auto;
+  margin-bottom: 0.85rem;
+}
+
+.brand-name {
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+  margin-bottom: 0.35rem;
+}
+
+.brand-tagline {
+  font-size: 8.5pt;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 340px;
+}
+
+.contact-card {
+  flex-shrink: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  font-size: 8.5pt;
+  line-height: 1.75;
+  color: var(--muted);
+  min-width: 188px;
+}
+
+.contact-card a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card .contact-line strong {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* Hero — bloque propio, sin superposiciones */
+.hero {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.35rem 1.4rem 1.2rem;
+  margin-bottom: 1.65rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--mint);
+  border-radius: 16px 0 0 16px;
+}
+
+.doc-type {
+  display: inline-block;
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue-soft);
+  margin-bottom: 0.65rem;
+}
+
+.hero h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--blue);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.hero .client {
+  font-size: 13pt;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 1.1rem;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-size: 8.5pt;
+}
+
+.meta-pill span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.meta-pill strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 1.45rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.section-badge {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 11pt;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section h2 {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.03em;
+}
+
+/* Profile grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.profile-item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+}
+
+.profile-item.full {
+  grid-column: 1 / -1;
+}
+
+.profile-item dt {
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue-soft);
+  margin-bottom: 0.35rem;
+}
+
+.profile-item dd {
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+/* Services */
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.service-list > li {
+  position: relative;
+  padding: 0.8rem 0.95rem 0.8rem 1.15rem;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font-size: 9.5pt;
+  line-height: 1.55;
+}
+
+.service-list > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--mint);
+}
+
+.service-list strong {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.service-list em {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 8.5pt;
+}
+
+.sub-list {
+  list-style: none;
+  margin-top: 0.55rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sub-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 9pt;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.sub-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--mint);
+}
+
+/* Honorarios */
+.fees-box {
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fee-line {
+  font-size: 9.5pt;
+  line-height: 1.55;
+}
+
+.fee-line strong {
+  font-weight: 700;
+  color: var(--mint);
+}
+
+.fee-line em {
+  font-style: italic;
+  opacity: 0.92;
+}
+
+.page-footer-line {
+  height: 4px;
+  background: var(--blue);
+  margin-top: 0.35in;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .page {
+    margin: 0;
+  }
+}

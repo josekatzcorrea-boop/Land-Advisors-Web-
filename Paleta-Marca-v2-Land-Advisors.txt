@@ -1,0 +1,60 @@
+LAND ADVISORS CHILE — PALETA DE MARCA v2.0
+Junio 2026 · Compatible con logo actual · Web moderna · Territorio Llanquihue / Malalcahuello
+
+═══════════════════════════════════════════════════════════════
+1. COLORES DEL LOGO (INMUTABLES)
+═══════════════════════════════════════════════════════════════
+Estos son los únicos colores que componen el logotipo. No alterar.
+
+  Azul institucional    #052C4D    Monograma LA + LAND ADVISORS (medido en ISOTIPO PNG-01)
+  Azul documento previo #0F4C5C    Solo referencia histórica — NO coincide con export actual
+  Gris secundario       #A7ADB3    Descriptor ESTRATEGIA INMOBILIARIA
+
+═══════════════════════════════════════════════════════════════
+2. DERIVADOS INSTITUCIONALES (armonía con el logo)
+═══════════════════════════════════════════════════════════════
+  Azul profundo         #031D33    Hover, overlays, profundidad
+  Azul medio            #1A5F72    Enlaces activos, iconos, estados UI
+  Azul suave            #E8F1F3    Tarjetas, campos, bloques claros
+  Gris oscuro           #8E969C    Metadatos, notas al pie
+  Gris claro            #E8EAEC    Separadores, bordes
+  Gris niebla           #EEF3F5    Secciones alternas (web)
+  Fondo neutro          #F4F7F8    Base de página
+  Texto principal       #1C2B30    Cuerpo de copy
+  Blanco                #FFFFFF    Texto sobre azul, botones invertidos
+
+═══════════════════════════════════════════════════════════════
+3. ACENTOS TERRITORIO (periferia rural, lago, bosque)
+═══════════════════════════════════════════════════════════════
+Complementan el logo con la geografía de la cuenca. Uso moderado.
+
+  Reflejo lago          #5B8FA0    Highlights, progress, bordes activos
+  Lago claro            #A8C5D0    Badges, micro-acentos, eyebrow hero
+  Bosque periferia      #3D6B5E    1 acento por vista; gráficos territoriales
+  Bosque suave          #E6EFE9    Fondos con sensación de contorno rural
+
+═══════════════════════════════════════════════════════════════
+4. PROPORCIÓN RECOMENDADA — WEB
+═══════════════════════════════════════════════════════════════
+  45%  Neutros fríos (F4F7F8, EEF3F5, E8EAEC, blanco)
+  30%  Azul institucional y derivados
+  15%  Fotografía de territorio (lago, volcanes, bosque, mapas)
+  10%  Acentos lago/bosque en UI
+
+═══════════════════════════════════════════════════════════════
+5. REGLAS DE USO
+═══════════════════════════════════════════════════════════════
+  • Header / footer / CTA: #0F4C5C + logo versión negativa (blanco).
+  • Fondos claros: logo versión positiva (azul + gris del logo).
+  • Prohibido: cyan eléctrico, verde esmeralda, dorado, negro puro como marca.
+  • Títulos y subtítulos de marca: SIEMPRE #052C4D (mismo azul medido del isotipo). No usar #0F4C5C ni otros azules en tipografía.
+  • Máximo un acento territorio por componente (tarjeta, botón, sección).
+  • Fotos: limpias, luminosas, tonos fríos — lago, bosque nativo, periferia rural.
+  • Sensación: moderna · innovadora · profesional · territorial · analítica.
+
+═══════════════════════════════════════════════════════════════
+6. SINCRONIZACIÓN
+═══════════════════════════════════════════════════════════════
+  Implementación web: landing/styles.css (variables CSS)
+  RRSS: rrss/branding-book.md
+  Cursor: .cursor/rules/land-advisors-context.mdc

@@ -1,0 +1,122 @@
+04_WEB_MASTER_CONTEXT
+Objetivo del Sitio Web
+El objetivo principal del sitio web de Land Advisors es generar reuniones calificadas con potenciales clientes e inversionistas.
+El sitio no debe funcionar como un portal inmobiliario ni como un catálogo de propiedades.
+Debe posicionar a Land Advisors como una consultora especializada en estrategia inmobiliaria, inteligencia territorial e identificación de oportunidades de inversión.
+El objetivo final es que el visitante perciba valor suficiente para solicitar una reunión antes de tomar una decisión inmobiliaria.
+
+Qué es Land Advisors
+Land Advisors es una consultora especializada en identificar oportunidades inmobiliarias en territorios con potencial de crecimiento.
+No comercializamos propiedades como actividad principal.
+Nuestro valor está en el análisis, la evaluación y la identificación de oportunidades que el mercado todavía no ha descubierto completamente.
+Combinamos conocimiento local, tecnología y estrategia inmobiliaria para ayudar a nuestros clientes a tomar mejores decisiones.
+
+Qué NO es Land Advisors
+No somos una corredora tradicional.
+No somos un portal inmobiliario.
+No somos una empresa agrícola.
+No somos una empresa turística.
+No somos una inmobiliaria enfocada exclusivamente en vender terrenos.
+No competimos por mostrar más propiedades.
+Competimos por comprender mejor el territorio.
+
+Sensación General que Debe Transmitir la Web
+La web debe transmitir:
+* Profesionalismo.
+* Confianza.
+* Inteligencia.
+* Conocimiento local.
+* Modernidad.
+* Credibilidad.
+* Cercanía.
+* Experiencia en terreno.
+* Capacidad analítica.
+El usuario debe percibir que Land Advisors combina trabajo en terreno con herramientas tecnológicas avanzadas.
+Debe sentirse como una mezcla entre exploración territorial e inteligencia inmobiliaria.
+
+Sensaciones que Debe Evitar
+La web no debe transmitir:
+* Venta agresiva.
+* Corretaje tradicional.
+* Especulación.
+* Agricultura.
+* Conservación.
+* Turismo comercial.
+* Lujo ostentoso.
+* Estética corporativa fría.
+
+Personalidad de Marca
+Profesional.
+Estratégica.
+Curiosa.
+Exploradora.
+Analítica.
+Tecnológica.
+Conectada con el territorio.
+Cercana.
+Humana.
+Experta.
+
+Referencias de Diseño
+Las siguientes referencias representan elementos deseables para la construcción de la marca:
+Land Advisors USA:
+* Claridad.
+* Profesionalismo.
+* Simplicidad.
+Google Earth:
+* Exploración.
+* Descubrimiento.
+* Inteligencia geográfica.
+Explora:
+* Conexión con el territorio.
+* Inspiración.
+* Profundidad.
+AGS Visión Inmobiliaria:
+* Relación cercana con el mercado local.
+iTerra Sur:
+* Conocimiento especializado del territorio.
+
+Cómo Debe Sentirse la Experiencia
+Cuando un visitante entra al sitio debe pensar:
+"Estos conocen el territorio mejor que yo."
+Después:
+"Estos entienden cómo se genera valor inmobiliario."
+Y finalmente:
+"Necesito hablar con ellos antes de tomar una decisión."
+
+Mensajes Clave
+Conocimiento local para inversiones inteligentes.
+Identificamos oportunidades donde otros solo ven terrenos.
+Trabajamos en la intersección entre territorio, tecnología e inversión.
+La mejor inversión comienza con una mejor comprensión del territorio.
+Invertimos donde otros aún no están mirando.
+
+Estructura Recomendada del Sitio
+1. Hero Principal
+2. Problema del Mercado
+3. Cómo Pensamos
+4. Qué Hacemos
+5. Cómo Identificamos Oportunidades
+6. Casos de Estudio
+7. Territorios que Analizamos
+8. Sobre José Katz
+9. Contacto
+10. Llamado a la Acción
+
+Instrucciones de Copywriting
+Escribir como:
+* consultor
+* estratega
+* analista territorial
+No escribir como:
+* vendedor
+* corredor de propiedades
+* promotor inmobiliario
+Evitar frases comerciales genéricas.
+Priorizar argumentos, evidencia y conocimiento.
+La comunicación debe generar confianza intelectual antes que urgencia comercial.
+
+Principio Rector
+Land Advisors no vende terrenos.
+Land Advisors ayuda a descubrir oportunidades inmobiliarias antes de que sean evidentes para el mercado.
+

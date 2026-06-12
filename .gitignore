@@ -1,0 +1,25 @@
+# Secretos y tokens
+.env
+.env.local
+**/token-cache.json
+
+# Respaldos históricos (no subir — la web activa está en landing/*.html en la raíz de landing/)
+landing/official/
+landing/v1-classic/
+landing/v2-saved/
+brochure/triptico/
+
+# Archivos locales / debug
+debug.log
+Thumbs.db
+.DS_Store
+
+# Binarios y carpetas pesadas (no necesarias en GitHub)
+output/
+
+# PDFs generados (el HTML fuente sí se sube)
+brochure/Land-Advisors-Digital.pdf
+brochure/corporativo/Land-Advisors-Corporativo.pdf
+
+# Video territorial (opcional: quita esta línea si quieres subir el MP4)
+landing/video/territorio.mp4

@@ -1,0 +1,31 @@
+{
+  "marca": "Land Advisors Chile",
+  "version": "1.0",
+  "zona_horaria": "America/Santiago",
+  "canales": ["instagram", "facebook"],
+  "frecuencia_semanal": 5,
+  "branding_book": "rrss/branding-book.md",
+  "cta_default": {
+    "tipo": "reunion_diagnostica",
+    "texto": "Agenda tu diagnóstico estratégico inmobiliario",
+    "url": "POR_DEFINIR"
+  },
+  "posts": [
+    {"id":"2026-06-09-T1","fecha":"2026-06-09","hora":"10:00","pilar":"T","tema":"¿Hacia dónde se proyecta el crecimiento en la cuenca del Llanquihue?","formato":"carrusel","slides":7,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-10-M1","fecha":"2026-06-10","hora":"12:00","pilar":"M","tema":"Primero el territorio. Después el activo.","formato":"carrusel","slides":6,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-11-E1","fecha":"2026-06-11","hora":"10:00","pilar":"E","tema":"¿Cómo afecta la normativa al terreno que te interesa?","formato":"carrusel","slides":6,"disclaimer":true,"estado":"pendiente"},
+    {"id":"2026-06-12-S1","fecha":"2026-06-12","hora":"18:00","pilar":"S","tema":"Diagnóstico estratégico: qué compras realmente (1 UF)","formato":"single","slides":1,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-13-A1","fecha":"2026-06-13","hora":"11:00","pilar":"A","tema":"Por qué nació Land Advisors","formato":"single","slides":1,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-16-T1","fecha":"2026-06-16","hora":"10:00","pilar":"T","tema":"Conectividad actual y futura: qué mirar antes de invertir","formato":"carrusel","slides":6,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-17-M1","fecha":"2026-06-17","hora":"12:00","pilar":"M","tema":"Las 5 preguntas que un portal no responde","formato":"carrusel","slides":7,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-18-E1","fecha":"2026-06-18","hora":"10:00","pilar":"E","tema":"Primera vivienda vs inversión: distinto criterio territorial","formato":"carrusel","slides":5,"disclaimer":true,"estado":"pendiente"},
+    {"id":"2026-06-19-S1","fecha":"2026-06-19","hora":"18:00","pilar":"S","tema":"Búsqueda personalizada: selección curada (5 UF)","formato":"carrusel","slides":4,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-20-A1","fecha":"2026-06-20","hora":"11:00","pilar":"A","tema":"Honestidad intelectual: decir no también es asesorar","formato":"single","slides":1,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-23-T1","fecha":"2026-06-23","hora":"10:00","pilar":"T","tema":"Periferia rural: dónde suelen aparecer oportunidades","formato":"carrusel","slides":6,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-24-M1","fecha":"2026-06-24","hora":"12:00","pilar":"M","tema":"Oportunidad ≠ el terreno más fotogénico","formato":"single","slides":1,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-25-E1","fecha":"2026-06-25","hora":"10:00","pilar":"E","tema":"Restricciones que no se ven en la foto del aviso","formato":"carrusel","slides":6,"disclaimer":true,"estado":"pendiente"},
+    {"id":"2026-06-26-S1","fecha":"2026-06-26","hora":"18:00","pilar":"S","tema":"Estudio de potencial: tesis de inversión (desde 10 UF)","formato":"carrusel","slides":4,"disclaimer":true,"estado":"pendiente"},
+    {"id":"2026-06-27-A1","fecha":"2026-06-27","hora":"11:00","pilar":"A","tema":"Territorio + tecnología + estrategia","formato":"single","slides":1,"disclaimer":false,"estado":"pendiente"},
+    {"id":"2026-06-30-T1","fecha":"2026-06-30","hora":"10:00","pilar":"T","tema":"Google Earth: 3 capas que miramos primero","formato":"carrusel","slides":5,"disclaimer":false,"estado":"pendiente"}
+  ]
+}
