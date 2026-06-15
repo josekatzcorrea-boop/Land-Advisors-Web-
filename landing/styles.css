@@ -1658,6 +1658,27 @@ section {
   resize: vertical;
 }
 
+.form-status {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.form-status[data-type="success"] {
+  background: rgba(61, 107, 94, 0.12);
+  color: #2d5a4a;
+  border: 1px solid rgba(61, 107, 94, 0.25);
+}
+
+.form-status[data-type="error"],
+.form-status[data-type="info"] {
+  background: rgba(5, 44, 77, 0.06);
+  color: var(--text-dark);
+  border: 1px solid rgba(5, 44, 77, 0.12);
+}
+
 /* CTA */
 .cta-band {
   background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
