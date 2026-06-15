@@ -37,7 +37,9 @@ jobs:
             --exclude 'filelist.txt' \
             --exclude 'maps-config.example.js' \
             landing/ _site/
-          cp assets/logo-horizontal.png assets/logo-isotipo.png _site/assets/
+          cp assets/logo-horizontal.png assets/logo-isotipo.png \
+            assets/logo-horizontal-3d.jpg assets/logo-isotipo-3d.png \
+            _site/assets/
           find _site -name '*.html' -exec sed -i 's|\.\./assets/|assets/|g' {} +
           echo 'www.landadvisors.cl' > _site/CNAME
 
