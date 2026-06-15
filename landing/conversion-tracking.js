@@ -17,18 +17,6 @@
     if (el) track(el);
   });
 
-  document.querySelectorAll(".contact-form").forEach(function (form) {
-    form.addEventListener("submit", function () {
-      if (typeof window.LA_track === "function") {
-        const perfil = form.querySelector("[name=perfil], [name=intent]");
-        window.LA_track("form_submit", {
-          form_intent: perfil ? perfil.value : "",
-          page_path: location.pathname,
-        });
-      }
-    });
-  });
-
   document.getElementById("la-chat-widget")?.addEventListener("click", function (e) {
     if (e.target.closest("a")) {
       if (typeof window.LA_track === "function") {

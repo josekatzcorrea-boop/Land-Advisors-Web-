@@ -142,7 +142,7 @@
             <a href="blog/">Blog</a>
             <a href="#nosotros">Nosotros</a>
           </div>
-          <a href="#contacto" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
+          <a href="#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
         </nav>
       </div>
     </div>
@@ -163,7 +163,7 @@
           con quien conoce el territorio y el mercado mejor que cualquier portal o corredora.
         </p>
         <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary btn-glow" data-track="cta_contacto">Solicitar reunión estratégica</a>
+          <a href="#contacto-form" class="btn btn-primary btn-glow" data-track="cta_contacto">Solicitar reunión estratégica</a>
           <a href="#situaciones" class="btn btn-glass">¿Te suena tu caso?</a>
         </div>
         <div class="hero-metrics">
@@ -272,7 +272,7 @@
         </div>
 
         <p class="situaciones-cta">
-          <a href="#contacto" class="btn btn-primary btn-glow">Cuéntanos tu situación</a>
+          <a href="#contacto-form" class="btn btn-primary btn-glow">Cuéntanos tu situación</a>
         </p>
       </div>
     </section>
@@ -427,7 +427,7 @@
             <h3><strong>Asesoría</strong> de compra y adquisición</h3>
             <p>Negociación, gestión documental y cierre con seguridad.</p>
             <p class="service-card-price">2,5% del valor de compra <span class="service-card-price-note">menos 5 UF de Búsqueda personalizada</span></p>
-            <a href="#contacto" class="service-card-link" data-track="cta_contacto">Consultar asesoría →</a>
+            <a href="#contacto-form" class="service-card-link" data-track="cta_contacto">Consultar asesoría →</a>
           </article>
           <article class="service-card glass-card" role="listitem">
             <div class="service-card-head">
@@ -614,19 +614,21 @@
               Agenda una reunión estratégica. El primer paso puede ser un diagnóstico para entender tus objetivos,
               presupuesto y qué terrenos tienen sentido real para ti —en vivienda, inversión o proyecto comercial.
             </p>
-            <p><strong>Correo:</strong> <a href="mailto:contacto@landadvisors.cl">contacto@landadvisors.cl</a></p>
-            <p><strong>Web:</strong> www.landadvisors.cl</p>
+            <p><strong>Correo:</strong> <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contacto@landadvisors.cl" target="_blank" rel="noopener noreferrer">contacto@landadvisors.cl</a></p>
+            <p><strong>Web:</strong> <a href="https://www.landadvisors.cl/" target="_blank" rel="noopener noreferrer">www.landadvisors.cl</a></p>
             <p><strong>Oficina:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Walker+Mart%C3%ADnez+517+Puerto+Varas" target="_blank" rel="noopener noreferrer">Walker Martínez 517, Puerto Varas · Los Lagos</a></p>
             <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
               Respondemos consultas de inversionistas patrimoniales, familias que buscan calidad de vida,
               desarrolladores y empresarios locales en el sur de Chile.
             </p>
           </div>
-          <form class="contact-form glass-card" action="#" method="post" id="contact-form">
+          <form class="contact-form glass-card" action="#" method="post" id="contacto-form">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required autocomplete="name">
             <label for="email">Correo electrónico</label>
             <input type="email" id="email" name="email" required autocomplete="email">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678">
             <label for="intent">¿Qué necesitas?</label>
             <select id="intent" name="intent" required>
               <option value="">Seleccionar servicio…</option>
@@ -649,7 +651,7 @@
             <label for="mensaje">Cuéntanos tu objetivo</label>
             <textarea id="mensaje" name="mensaje" required placeholder="Territorio de interés, presupuesto, tipo de proyecto, plazo…"></textarea>
             <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-            <button type="submit" class="btn btn-primary btn-glow" data-track="form_submit">Solicitar reunión</button>
+            <button type="submit" class="btn btn-primary btn-glow">Solicitar información</button>
           </form>
         </div>
       </div>
@@ -659,12 +661,12 @@
       <div class="container" data-reveal>
         <h2>¿Buscas terreno en el sur? Hablemos antes de decidir.</h2>
         <p>Land Advisors te ayuda a comprar con criterio —y, si tu proyecto lo requiere, a evaluar su potencial comercial.</p>
-        <a href="#contacto" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <a href="#contacto-form" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
       </div>
     </section>
   </main>
 
-  <a href="#contacto" class="btn btn-primary btn-glow sticky-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
+  <a href="#contacto-form" class="btn btn-primary btn-glow sticky-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -687,22 +689,6 @@
     document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
       link.addEventListener("click", () => nav.classList.remove("is-open"));
     });
-    document.querySelector(".contact-form")?.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const data = new FormData(e.target);
-      if (data.get("website")) return;
-      const intent = data.get("intent") || "";
-      const body = encodeURIComponent(
-        "Nombre: " + data.get("nombre") +
-        "\nServicio: " + intent +
-        "\nPerfil: " + data.get("perfil") +
-        "\n\n" + data.get("mensaje")
-      );
-      if (typeof window.LA_track === "function") {
-        window.LA_track("form_submit", { form_intent: intent });
-      }
-      window.location.href = "mailto:contacto@landadvisors.cl?subject=" + encodeURIComponent("Reunión estratégica Land Advisors — " + intent) + "&body=" + body;
-    });
   </script>
   <script src="analytics-config.js" defer></script>
   <script src="analytics.js" defer></script>
@@ -711,5 +697,6 @@
   <script src="territory-carousel.js" defer></script>
   <script src="pensamos-video.js" defer></script>
   <script src="chat-widget.js" defer></script>
+  <script src="contact-form.js" defer></script>
 </body>
 </html>

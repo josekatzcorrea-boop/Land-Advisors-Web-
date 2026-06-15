@@ -192,7 +192,7 @@ function navLinks(prefix) {
             <a href="${prefix}blog/">Blog</a>
             <a href="${prefix}#nosotros">Nosotros</a>
           </div>
-          <a href="${prefix}#contacto" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
+          <a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
         </nav>`;
 }
 
@@ -257,7 +257,7 @@ function buildSecondaryPage(page) {
   const assets = assetPrefix(page.path);
   const schemas = buildSchemas(page);
   const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
-  const ctaHref = prefix + "#contacto";
+  const ctaHref = prefix + "#contacto-form";
 
   let extraContent = "";
   if (page.path === "/servicios/") extraContent = `<div class="seo-card-grid">${serviceLinks(prefix)}</div>`;
