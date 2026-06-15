@@ -1,5 +1,6 @@
 /**
  * Formulario de contacto → envío automático a WhatsApp del consultor (CallMeBot).
+ * Preferir webhookUrl (Google Apps Script) para evitar CORS.
  * Si no está configurado, abre wa.me con el mensaje prellenado (el visitante debe enviar).
  */
 (function () {
@@ -86,23 +87,38 @@
     return String(phone || DEFAULT_PHONE).replace(/\s+/g, "").replace(/^\+/, "");
   }
 
-  function sendAutoWhatsApp(text) {
-    const cfg = config();
-    const phone = normalizePhone(cfg.phone);
-    const apiKey = (cfg.apiKey || "").trim();
-    if (!cfg.enabled || !apiKey) {
-      return Promise.reject(new Error("not_configured"));
-    }
-
+  function callMeBotUrl(phone, apiKey, text) {
     const params = new URLSearchParams({
       source: "web",
       phone: phone,
       text: text,
       apikey: apiKey,
     });
-    const url = "https://api.callmebot.com/whatsapp.php?" + params.toString();
+    return "https://api.callmebot.com/whatsapp.php?" + params.toString();
+  }
 
-    // CallMeBot no expone CORS al navegador; iframe evita el bloqueo.
+  function sendViaWebhook(webhookUrl, text) {
+    return fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ text: text }),
+    }).then(function (res) {
+      return res.text().then(function (body) {
+        let data;
+        try {
+          data = JSON.parse(body);
+        } catch (e) {
+          throw new Error("invalid_response");
+        }
+        if (!data.ok) {
+          throw new Error(data.error || "send_failed");
+        }
+        return { confirmed: true, result: data.result || "queued" };
+      });
+    });
+  }
+
+  function tryIframeGet(url, timeoutMs) {
     return new Promise(function (resolve, reject) {
       const iframe = document.createElement("iframe");
       iframe.setAttribute("aria-hidden", "true");
@@ -113,8 +129,8 @@
         if (done) return;
         done = true;
         iframe.remove();
-        if (ok) resolve("queued");
-        else reject(new Error("send_failed"));
+        if (ok) resolve();
+        else reject(new Error("iframe_failed"));
       }
 
       iframe.onload = function () {
@@ -127,9 +143,64 @@
       document.body.appendChild(iframe);
       iframe.src = url;
       window.setTimeout(function () {
-        finish(true);
-      }, 3500);
+        finish(false);
+      }, timeoutMs || 5000);
     });
+  }
+
+  function tryNoCorsFetch(url) {
+    return fetch(url, { method: "GET", mode: "no-cors" });
+  }
+
+  function tryImageBeacon(url) {
+    return new Promise(function (resolve, reject) {
+      const img = new Image();
+      img.onload = function () {
+        resolve();
+      };
+      img.onerror = function () {
+        reject(new Error("beacon_failed"));
+      };
+      img.src = url;
+      window.setTimeout(function () {
+        reject(new Error("beacon_timeout"));
+      }, 5000);
+    });
+  }
+
+  function sendClientFallbacks(text, phone, apiKey) {
+    const url = callMeBotUrl(phone, apiKey, text);
+    return tryIframeGet(url, 5000)
+      .catch(function () {
+        return tryNoCorsFetch(url);
+      })
+      .catch(function () {
+        return tryImageBeacon(url);
+      })
+      .then(function () {
+        return { confirmed: false };
+      })
+      .catch(function () {
+        return { confirmed: false };
+      });
+  }
+
+  function sendAutoWhatsApp(text) {
+    const cfg = config();
+    const webhookUrl = (cfg.webhookUrl || "").trim();
+    const apiKey = (cfg.apiKey || "").trim();
+    const phone = normalizePhone(cfg.phone);
+
+    if (!cfg.enabled) {
+      return Promise.reject(new Error("not_configured"));
+    }
+    if (webhookUrl) {
+      return sendViaWebhook(webhookUrl, text);
+    }
+    if (apiKey) {
+      return sendClientFallbacks(text, phone, apiKey);
+    }
+    return Promise.reject(new Error("not_configured"));
   }
 
   document.querySelectorAll(".contact-form").forEach(function (form) {
@@ -146,7 +217,11 @@
       }
 
       const cfg = config();
-      if (!cfg.enabled || !(cfg.apiKey || "").trim()) {
+      const webhookUrl = (cfg.webhookUrl || "").trim();
+      const apiKey = (cfg.apiKey || "").trim();
+      const autoSend = cfg.enabled && (webhookUrl || apiKey);
+
+      if (!autoSend) {
         window.open(whatsAppUrl(message), "_blank", "noopener,noreferrer");
         setStatus(
           form,
@@ -160,11 +235,20 @@
       setStatus(form, "", "");
 
       sendAutoWhatsApp(message)
-        .then(function () {
+        .then(function (result) {
+          if (result && result.confirmed) {
+            setStatus(
+              form,
+              "¡Listo! Recibimos tu solicitud. Te contactaremos pronto por WhatsApp o correo.",
+              "success"
+            );
+            form.reset();
+            return;
+          }
           setStatus(
             form,
-            "¡Listo! Recibimos tu solicitud. Te contactaremos pronto por WhatsApp o correo.",
-            "success"
+            "Intentamos enviar tu solicitud, pero no pudimos confirmarlo desde el navegador. Te contactaremos pronto o escríbenos por el botón verde de WhatsApp.",
+            "info"
           );
           form.reset();
         })
