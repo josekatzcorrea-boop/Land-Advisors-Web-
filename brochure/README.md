@@ -1,32 +1,10 @@
-# Brochures Land Advisors Chile
+# Brochure Land Advisors Chile — versión definitiva
 
-Dos formatos complementarios:
+**Activo:** `corporativo/` · **Respaldo congelado:** `corporativo/official/`
 
-| Versión | Ruta | Uso |
-|---------|------|-----|
-| **Corporativo premium** | `corporativo/` | PDF A4 apaisado, consultora boutique, servicios completos |
-| **Digital vertical** | `index.html` | WhatsApp / móvil, narrativa emocional comprador |
+Brochure vertical de 6 pantallas (móvil, WhatsApp, PDF móvil y PDF A4).
 
----
-
-## Brochure corporativo premium (`corporativo/`)
-
-Referencia editorial: catálogo Terrasur 2026 (calidad, no copia literal).
-
-**10 páginas A4 apaisado:**
-
-1. Portada — Territorio + Tecnología + Inversión  
-2. Quiénes somos  
-3. Público objetivo (4 perfiles)  
-4. Cómo trabajamos (metodología + herramientas)  
-5. Diagnóstico Estratégico Inmobiliario  
-6. Búsqueda Estratégica de Terrenos  
-7. Asesoría de Compra y Adquisición  
-8. Estudio de Potencial Inmobiliario  
-9. Estructuración y Desarrollo de Proyectos  
-10. Cierre y contacto  
-
-### Ver y exportar
+## Ver en navegador
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File landing\serve.ps1
@@ -34,41 +12,34 @@ powershell -ExecutionPolicy Bypass -File landing\serve.ps1
 
 http://127.0.0.1:8765/brochure/corporativo/index.html
 
+## Compartir
+
+| Formato | Comando / botón |
+|---------|-----------------|
+| **HTML** autocontenido | Botón «HTML» o `export-compartir.ps1` |
+| **PDF móvil** (430px) | Botón «PDF móvil» o `export-pdf-movil.ps1` |
+| **PDF A4** (imprimir) | Botón «PDF A4» o `export-pdf.ps1` |
+
 ```powershell
+powershell -ExecutionPolicy Bypass -File brochure\corporativo\export-compartir.ps1
+powershell -ExecutionPolicy Bypass -File brochure\corporativo\export-pdf-movil.ps1
 powershell -ExecutionPolicy Bypass -File brochure\corporativo\export-pdf.ps1
 ```
 
-→ `Land-Advisors-Corporativo.pdf`
+## Estructura (6 páginas)
 
-### Imágenes
+1. Portada  
+2. Nuestra promesa  
+3. Datos que respaldan nuestra expertise (1/2)  
+4. Datos que respaldan nuestra expertise (2/2)  
+5. Dónde trabajamos  
+6. Por qué Land Advisors + contacto  
 
-- `brochure/images/` — optimizadas desde **Selección de fotografías** (Escritorio)  
-- `landing/images/` — hero, prc y fotos de casos  
-- Regenerar: `optimize-brochure-images.ps1`
+## Imágenes y marca
 
-### Identidad
+- Fotos: `brochure/images/`  
+- Regenerar optimizadas: `optimize-brochure-images.ps1`  
+- Paleta: `#052C4D`, `#031D33`, `#A7ADB3`  
+- Descriptor: **Estrategia Inmobiliaria**
 
-- Paleta v2: `#052C4D`, `#031D33`, `#A7ADB3`  
-- Descriptor: **Estrategia Inmobiliaria**  
-- Logo: `assets/logo-horizontal.png` / `logo-horizontal-light.png`  
-- Sin rotar, deformar ni recortar elementos territoriales críticos  
-
----
-
-## Brochure digital vertical (`index.html`)
-
-10 pantallas móviles, tono emocional orientado al comprador de terreno.
-
-http://127.0.0.1:8765/brochure/index.html
-
-```powershell
-powershell -ExecutionPolicy Bypass -File brochure\export-pdf.ps1
-```
-
-→ `Land-Advisors-Digital.pdf`
-
----
-
-## Histórico
-
-`triptico/` — versión tríptico impreso anterior.
+`brochure/index.html` redirige a `corporativo/`.

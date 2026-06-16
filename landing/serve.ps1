@@ -4,6 +4,7 @@ $listener = [System.Net.HttpListener]::new()
 $listener.Prefixes.Add("http://127.0.0.1:$port/")
 $listener.Start()
 Write-Host "http://127.0.0.1:$port/landing/index.html"
+Write-Host "http://127.0.0.1:$port/landing/servicios/index.html"
 
 $mimes = @{
   ".html" = "text/html; charset=utf-8"

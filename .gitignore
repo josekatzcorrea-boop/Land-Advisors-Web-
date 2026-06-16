@@ -20,6 +20,9 @@ output/
 # PDFs generados (el HTML fuente sí se sube)
 brochure/Land-Advisors-Digital.pdf
 brochure/corporativo/Land-Advisors-Corporativo.pdf
+brochure/corporativo/Land-Advisors-Brochure-compartir.html
+brochure/corporativo/Land-Advisors-Brochure-movil.pdf
+catalogo/Land-Advisors-Catalogo-movil.pdf
 
 # Video territorial (opcional: quita esta línea si quieres subir el MP4)
 landing/video/territorio.mp4

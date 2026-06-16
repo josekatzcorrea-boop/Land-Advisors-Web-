@@ -1,0 +1,105 @@
+{
+  "lead": "Consultoría para comprar el terreno correcto en la cuenca del Lago Llanquihue y Malalcahuello. Territorio primero, activo después — cada servicio se contrata de forma independiente.",
+  "priceNote": "Precios en UF · sujetos a confirmación en reunión estratégica.",
+  "legal": "No somos corredora ni portal inmobiliario. Cada terreno requiere evaluación específica.",
+  "gallery": {
+    "eyebrow": "Más que un terreno",
+    "phrase": "Así puede verse tu futuro en el sur de Chile — familia, paisaje y calidad de vida en zonas con potencial turístico. Con el terreno correcto y nuestra ayuda, la inversión también se siente así.",
+    "ariaLabel": "Galería — vida e inversión en el sur de Chile",
+    "images": [
+      {
+        "file": "galeria-04-opt.jpg",
+        "alt": "Grupo explorando el territorio en la cordillera del sur",
+        "position": "center 22%"
+      },
+      {
+        "file": "galeria-05-opt.jpg",
+        "alt": "Vista al lago y ciudad turística desde el contorno rural",
+        "position": "32% center"
+      },
+      {
+        "file": "familia-outdoor-opt.jpg",
+        "alt": "Familia disfrutando el paisaje del sur de Chile",
+        "position": "center 38%"
+      },
+      {
+        "file": "tinaja-outdoor-opt.jpg",
+        "alt": "Descanso y calidad de vida junto al lago",
+        "position": "center 42%"
+      }
+    ]
+  },
+  "services": [
+    {
+      "num": "01",
+      "slug": "diagnostico-estrategico",
+      "title": "Diagnóstico estratégico inmobiliario",
+      "price": "1 UF",
+      "deliverables": [
+        "Reunión estratégica (presencial u online)",
+        "Informe con zonas recomendadas y criterios de evaluación",
+        "Próximos pasos concretos según tu presupuesto y objetivo"
+      ],
+      "notes": ["Ideal si aún no sabes en qué zona ni con qué criterio avanzar."],
+      "cta": { "label": "Agendar diagnóstico →", "event": "cta_diagnostico" }
+    },
+    {
+      "num": "02",
+      "slug": "busqueda-personalizada",
+      "title": "Búsqueda personalizada de terrenos",
+      "price": "5 UF",
+      "deliverables": [
+        "3 alternativas de terrenos que se ajustan a tu objetivo y presupuesto",
+        "Reunión para descartar y reseleccionar alternativas",
+        "Análisis comparativo entre las 3 mejores opciones",
+        "Recomendación de compra"
+      ],
+      "notes": [
+        "Incluye diagnóstico estratégico.",
+        "Para quien quiere opciones con criterio, no un catálogo masivo."
+      ],
+      "highlightNote": "Incluye diagnóstico estratégico.",
+      "cta": { "label": "Solicitar búsqueda →", "event": "cta_busqueda" }
+    },
+    {
+      "num": "03",
+      "slug": null,
+      "title": "Asesoría de compra y adquisición",
+      "price": "2,5% del valor de compra",
+      "deliverables": [
+        "Estrategia de negociación y revisión documental",
+        "Coordinación con notaría y proveedores hasta la escrituración",
+        "Informes de avance y checklist de cierre"
+      ],
+      "notes": ["Menos 5 UF si contrataste búsqueda personalizada previamente."],
+      "cta": { "label": "Consultar asesoría →", "event": "cta_contacto" }
+    },
+    {
+      "num": "04",
+      "slug": "estudio-potencial-inmobiliario",
+      "title": "Estudio de potencial inmobiliario",
+      "price": "Desde 10 UF",
+      "objective": "Objetivo: establecer cuál es la vocación comercial de un terreno, cuál es el proyecto óptimo y por qué.",
+      "deliverables": [
+        "Informe con análisis territorial y normativo",
+        "Escenarios de valorización y riesgos identificados",
+        "Recomendación de proceder o no, con respaldo verificable"
+      ],
+      "notes": ["Alcance y fee final según complejidad del terreno y del proyecto."],
+      "cta": { "label": "Solicitar estudio →", "event": "cta_estudio" }
+    },
+    {
+      "num": "05",
+      "slug": "estructuracion-proyectos",
+      "title": "Estructuración y desarrollo de proyectos",
+      "price": "Desde 20 UF",
+      "deliverables": [
+        "Modelo de negocio y factibilidad territorial",
+        "Normativa aplicable y escenarios del proyecto",
+        "Hoja de ruta para cabañas, turismo, strip center, comercio o renta corta"
+      ],
+      "notes": ["Territorio y normativa antes del modelo de negocio."],
+      "cta": { "label": "Consultar estructuración →", "event": "cta_estructuracion" }
+    }
+  ]
+}

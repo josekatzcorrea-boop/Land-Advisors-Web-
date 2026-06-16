@@ -13,6 +13,7 @@ const SEO = path.join(ROOT, "seo");
 
 const site = JSON.parse(fs.readFileSync(path.join(SEO, "site.json"), "utf8"));
 const pages = JSON.parse(fs.readFileSync(path.join(SEO, "pages.json"), "utf8"));
+const catalog = JSON.parse(fs.readFileSync(path.join(SEO, "services-catalog.json"), "utf8"));
 
 function depthFromPath(p) {
   const segs = p.replace(/\/$/, "").split("/").filter(Boolean);
@@ -21,7 +22,8 @@ function depthFromPath(p) {
 
 function assetPrefix(pagePath) {
   const d = depthFromPath(pagePath);
-  return d === 0 ? "assets/" : "../".repeat(d) + "assets/";
+  // HTML lives under landing/; shared assets live at repo root assets/
+  return "../".repeat(d + 1) + "assets/";
 }
 
 function rootPrefix(pagePath) {
@@ -49,8 +51,8 @@ function buildHead(page, prefix, assets) {
   <meta name="geo.placename" content="Puerto Varas">
   <link rel="canonical" href="${url}">
   <title>${esc(page.title)}</title>
-  <link rel="icon" type="image/png" href="${assets}logo-isotipo.png">
-  <link rel="apple-touch-icon" href="${assets}logo-isotipo.png">
+  <link rel="icon" type="image/png" href="${assets}logo-isotipo-3d.png">
+  <link rel="apple-touch-icon" href="${assets}logo-isotipo-3d.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
   <meta property="og:site_name" content="${esc(site.name)}">
@@ -237,19 +239,79 @@ function territoryLinks(prefix) {
     .join("");
 }
 
-function serviceLinks(prefix) {
-  const items = pages.filter((p) => p.type === "service");
-  return items
-    .map((p) => {
-      const slug = p.file.replace("servicios/", "").replace("/index.html", "");
-      return `<article class="seo-card glass-card">
-      <h2><a href="${prefix}servicios/${slug}/">${esc(p.breadcrumb)}</a></h2>
-      <p>${esc(p.intro)}</p>
-      ${p.service ? `<p class="seo-price">${esc(p.service.price)}</p>` : ""}
-      <a href="${prefix}servicios/${slug}/" class="btn btn-glass">Ver servicio →</a>
-    </article>`;
+function catalogBySlug(slug) {
+  return catalog.services.find((s) => s.slug === slug);
+}
+
+function serviceIconSvg(num) {
+  const icons = {
+    "01": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.75"/><circle cx="16" cy="16" r="2.5" fill="currentColor"/><path d="M16 5v4M16 23v4M5 16h4M23 16h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M8.5 8.5l2.8 2.8M20.7 20.7l2.8 2.8M23.5 8.5l-2.8 2.8M11.3 20.7l-2.8 2.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+    "02": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="13.5" cy="13.5" r="7" stroke="currentColor" stroke-width="1.75"/><path d="M19 19l7.5 7.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M13.5 10.5v6M10.5 13.5h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M13.5 22.5c4.5 0 8-2.5 8-5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+    "03": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 18c0-4 3.5-7 10-7s10 3 10 7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M9 18c1.5 2.5 4 4 7 4s5.5-1.5 7-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M11 22l-2 6M21 22l2 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><rect x="12" y="8" width="8" height="10" rx="1" stroke="currentColor" stroke-width="1.75"/><path d="M14 11h4M14 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+    "04": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 24l5-8 5 4 5-10 5 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 26h20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M22 6l2 2-4 4-2-2 4-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="22" cy="8" r="1.25" fill="currentColor"/></svg>`,
+    "05": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 26V14l8-6 8 6v12" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 26v-8h8v8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M14 18h4M14 21h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M4 26h24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  };
+  return icons[num] || "";
+}
+
+function serviceDeliverablesBlock(svc) {
+  let html = "";
+  if (svc.objective) {
+    html += `<p class="service-detail-objective">${esc(svc.objective)}</p>`;
+  }
+  html += `<ul class="service-detail-list">${svc.deliverables
+    .map((item) => `<li>${esc(item)}</li>`)
+    .join("")}</ul>`;
+  svc.notes.forEach((note) => {
+    const highlight = note === svc.highlightNote ? " service-detail-note--highlight" : "";
+    html += `<p class="service-detail-note${highlight}">${esc(note)}</p>`;
+  });
+  return html;
+}
+
+function buildServicesGallery(prefix) {
+  const g = catalog.gallery;
+  if (!g?.images?.length) return "";
+  const imgs = g.images
+    .map((img) => {
+      const pos = img.position ? ` style="object-position:${img.position}"` : "";
+      return `<figure class="services-life-gallery__item"><img src="${prefix}servicios/images/${esc(img.file)}" alt="${esc(img.alt)}" width="900" height="600" loading="lazy" decoding="async"${pos}></figure>`;
     })
     .join("");
+  return `<aside class="services-life-gallery" aria-label="${esc(g.ariaLabel || "Vida en el sur de Chile")}">
+    <p class="services-life-gallery__label">${esc(g.eyebrow)}</p>
+    <p class="services-life-gallery__phrase">${esc(g.phrase)}</p>
+    <div class="services-life-gallery__grid">${imgs}</div>
+  </aside>`;
+}
+
+function buildServicesCatalog(prefix) {
+  const items = catalog.services
+    .map((svc, index) => {
+      const href = svc.slug ? `${prefix}servicios/${svc.slug}/` : `${prefix}#contacto-form`;
+      const alt = index % 2 === 1 ? " services-catalog-item--alt" : "";
+      const title = svc.slug
+        ? `<a href="${href}">${esc(svc.title)}</a>`
+        : esc(svc.title);
+      return `<article class="services-catalog-item glass-card${alt}">
+      <div class="services-catalog-head">
+        <span class="services-catalog-icon" aria-hidden="true">${serviceIconSvg(svc.num)}</span>
+        <div class="services-catalog-heading">
+          <span class="services-catalog-num">${esc(svc.num)}</span>
+          <h2>${title}</h2>
+          <p class="services-catalog-price">${esc(svc.price)}</p>
+        </div>
+      </div>
+      ${serviceDeliverablesBlock(svc)}
+      <a href="${href}" class="service-card-link" data-track="${esc(svc.cta.event)}">${esc(svc.cta.label)}</a>
+    </article>`;
+    })
+    .join("\n");
+
+  return `${buildServicesGallery(prefix)}
+    <p class="services-catalog-price-note">${esc(catalog.priceNote)}</p>
+    <div class="services-catalog-list" role="list">${items}</div>
+    <p class="services-catalog-legal">${esc(catalog.legal)}</p>`;
 }
 
 function buildSecondaryPage(page) {
@@ -260,7 +322,7 @@ function buildSecondaryPage(page) {
   const ctaHref = prefix + "#contacto-form";
 
   let extraContent = "";
-  if (page.path === "/servicios/") extraContent = `<div class="seo-card-grid">${serviceLinks(prefix)}</div>`;
+  if (page.path === "/servicios/") extraContent = buildServicesCatalog(prefix);
   else if (page.path === "/territorios/") extraContent = `<div class="seo-card-grid">${territoryLinks(prefix)}</div>`;
   else if (page.path === "/casos-de-estudio/") {
     extraContent = `<div class="seo-card-grid">
@@ -282,6 +344,10 @@ function buildSecondaryPage(page) {
     </div>`;
   } else if (page.type === "territory" && page.keywords) {
     extraContent = `<p class="seo-keywords">Búsquedas relacionadas: ${page.keywords.map(esc).join(" · ")}</p>`;
+  } else if (page.type === "service") {
+    const slug = page.path.split("/").filter(Boolean).pop();
+    const svc = catalogBySlug(slug);
+    if (svc) extraContent = `<div class="service-detail glass-card">${serviceDeliverablesBlock(svc)}</div>`;
   }
 
   const serviceBlock =
@@ -302,12 +368,12 @@ ${buildHead(page, prefix, assets)}
   <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
 </head>
-<body class="site-v2 seo-page">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : ""}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
         <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
-          <img src="${assets}logo-horizontal.png" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
+          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
 ${navLinks(prefix)}
@@ -348,9 +414,9 @@ ${navLinks(prefix)}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p>© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
     </div>
   </footer>
 

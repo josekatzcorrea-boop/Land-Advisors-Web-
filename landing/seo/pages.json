@@ -10,12 +10,12 @@
   {
     "path": "/servicios/",
     "file": "servicios/index.html",
-    "title": "Servicios de consultoría inmobiliaria territorial | Land Advisors",
-    "description": "Diagnóstico estratégico, búsqueda personalizada, estudios de potencial y estructuración de proyectos inmobiliarios en el sur de Chile.",
+    "title": "Catálogo de servicios de consultoría inmobiliaria | Land Advisors",
+    "description": "Diagnóstico estratégico, búsqueda personalizada, asesoría de compra, estudios de potencial y estructuración de proyectos en el sur de Chile. Precios en UF.",
     "type": "hub",
     "breadcrumb": "Servicios",
-    "h1": "Servicios de inteligencia territorial e inversión inmobiliaria",
-    "intro": "Cada servicio responde a una etapa distinta de la decisión: desde ordenar tu búsqueda hasta estructurar un proyecto con plusvalía y respaldo normativo.",
+    "h1": "Catálogo de servicios",
+    "intro": "Consultoría para comprar el terreno correcto en la cuenca del Lago Llanquihue y Malalcahuello. Territorio primero, activo después — cada servicio se contrata de forma independiente.",
     "keywords": ["consultoría inmobiliaria", "inversión territorial", "diagnóstico inmobiliario"]
   },
   {
@@ -26,11 +26,11 @@
     "type": "service",
     "breadcrumb": "Diagnóstico estratégico",
     "h1": "Diagnóstico estratégico inmobiliario",
-    "intro": "El punto de entrada para quien necesita criterio antes de comprar: territorio, normativa, mercado y factibilidad según tu presupuesto y objetivos.",
+    "intro": "Ideal si aún no sabes en qué zona ni con qué criterio avanzar.",
     "service": {
       "name": "Diagnóstico estratégico inmobiliario",
       "price": "1 UF",
-      "description": "Reunión estratégica e informe con ubicaciones y prestaciones aptas para tus objetivos de compra o inversión territorial."
+      "description": "Reunión estratégica, informe con zonas recomendadas y próximos pasos según tu presupuesto y objetivo."
     },
     "cta": { "label": "Agendar diagnóstico estratégico", "event": "cta_diagnostico" }
   },
@@ -42,11 +42,11 @@
     "type": "service",
     "breadcrumb": "Búsqueda personalizada",
     "h1": "Búsqueda personalizada de terrenos",
-    "intro": "Filtramos ruido de portales y corredoras. Selección alineada a tu perfil, con lectura de conectividad, urbanización y plusvalía potencial.",
+    "intro": "Para quien quiere opciones con criterio, no un catálogo masivo. Incluye diagnóstico estratégico.",
     "service": {
-      "name": "Búsqueda personalizada",
+      "name": "Búsqueda personalizada de terrenos",
       "price": "5 UF",
-      "description": "Selección curada de terrenos alineada a tu perfil, con orientación en la evaluación. Incluye diagnóstico estratégico."
+      "description": "3 alternativas de terrenos, análisis comparativo y recomendación de compra. Incluye diagnóstico estratégico."
     },
     "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" }
   },
@@ -58,11 +58,11 @@
     "type": "service",
     "breadcrumb": "Estudio de potencial inmobiliario",
     "h1": "Estudio de potencial inmobiliario",
-    "intro": "Para inversionistas y desarrolladores que necesitan una tesis documentada: cambio de uso, expansión urbana, turismo inmobiliario o desarrollo comercial.",
+    "intro": "Establecer cuál es la vocación comercial de un terreno, cuál es el proyecto óptimo y por qué.",
     "service": {
       "name": "Estudio de potencial inmobiliario",
       "price": "Desde 10 UF",
-      "description": "Tesis de inversión: territorio, normativa, escenarios y recomendaciones con respaldo verificable."
+      "description": "Informe territorial y normativo, escenarios de valorización y recomendación con respaldo verificable."
     },
     "cta": { "label": "Solicitar estudio de potencial", "event": "cta_estudio" }
   },
@@ -74,11 +74,11 @@
     "type": "service",
     "breadcrumb": "Estructuración de proyectos",
     "h1": "Estructuración y desarrollo de proyectos",
-    "intro": "Diseñamos la tesis de negocio y la lectura territorial para cabañas, turismo, strip center y desarrollo inmobiliario en periurbano rural.",
+    "intro": "Territorio y normativa antes del modelo de negocio.",
     "service": {
       "name": "Estructuración y desarrollo de proyectos",
       "price": "Desde 20 UF",
-      "description": "Turismo, renta corta, cabañas, comercio y desarrollo PYME con respaldo territorial y normativo."
+      "description": "Modelo de negocio, factibilidad territorial y hoja de ruta para cabañas, turismo, strip center, comercio o renta corta."
     },
     "cta": { "label": "Consultar estructuración de proyecto", "event": "cta_estructuracion" }
   },

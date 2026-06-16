@@ -1,0 +1,370 @@
+:root {
+  --blue: #052c4d;
+  --blue-dark: #031d33;
+  --gray: #a7adb3;
+  --lake: #5b8fa0;
+  --lake-soft: #e8f1f3;
+  --bg: #f4f7f8;
+  --bg-white: #ffffff;
+  --text: #1c2b30;
+  --text-muted: #5a6b72;
+  --white: #ffffff;
+  --font: "Montserrat", system-ui, sans-serif;
+  --deck-w: 430px;
+  --pad: 1.35rem;
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.catalogo {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+  background: #1a2328;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.catalog-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-size: 0.78rem;
+}
+
+.catalog-toolbar a,
+.catalog-toolbar button {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 0.45rem 1rem;
+  border: 0;
+  border-radius: 100px;
+  background: var(--white);
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.toolbar-note {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  opacity: 0.88;
+  font-size: 0.68rem;
+}
+
+.catalog-pages {
+  width: 100%;
+  max-width: var(--deck-w);
+  margin: 0 auto;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
+}
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  overflow: hidden;
+  background: var(--bg-white);
+}
+
+.page--soft {
+  background: var(--bg);
+}
+
+.page-photo {
+  flex-shrink: 0;
+  overflow: hidden;
+  background: var(--lake-soft);
+}
+
+.page-photo--hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-photo--hero {
+  position: relative;
+  height: 38vh;
+  min-height: 200px;
+  max-height: 320px;
+  background: var(--bg-white);
+}
+
+.page-photo--hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 26%;
+  background: linear-gradient(
+    to bottom,
+    var(--blue) 0%,
+    rgba(5, 44, 77, 0.45) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.page-photo--mid {
+  height: 30vh;
+  min-height: 170px;
+  max-height: 240px;
+}
+
+.page-body {
+  flex: 0 0 auto;
+  padding: var(--pad);
+}
+
+.page-body--blue {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.page-body--blue h2,
+.page-body--blue h3,
+.page-body--blue p {
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lake);
+}
+
+.eyebrow--dark {
+  color: var(--blue);
+}
+
+.eyebrow--on-dark {
+  color: var(--lake-soft);
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 1.22rem;
+}
+
+p {
+  margin: 0 0 0.55rem;
+}
+
+.lead {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.brand-logo-grande {
+  width: auto;
+  height: 2.75rem;
+  max-width: 100%;
+  margin-bottom: 0.85rem;
+  object-fit: contain;
+}
+
+.cover-tagline {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cover-title {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.cover-sub {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.45;
+}
+
+.cover-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.4;
+}
+
+.service-card {
+  margin: 0;
+}
+
+.service-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--blue);
+  background: var(--lake-soft);
+  border-radius: var(--radius);
+}
+
+.service-icon svg {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+.service-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.service-heading h2 {
+  margin-bottom: 0.35rem;
+}
+
+.service-num {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--lake);
+}
+
+.service-price {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0.6rem;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+.service-objective {
+  margin: 0 0 0.6rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.deliverable-list {
+  margin: 0 0 0.65rem;
+  padding: 0 0 0 1.15em;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.deliverable-list li {
+  margin-bottom: 0.3rem;
+}
+
+.deliverable-list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-note {
+  margin: 0;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.service-note + .service-note {
+  margin-top: 0.35rem;
+}
+
+.service-note--highlight {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.lead--on-dark {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.page-body--blue .close-contact p {
+  margin: 0 0 0.3rem;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.page-body--blue .close-contact a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.close-legal {
+  margin-top: 0.85rem;
+  font-size: 0.62rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.4;
+}
+
+/* PDF móvil: sin huecos 100dvh */
+html[data-export="movil"] .catalog-toolbar {
+  display: none !important;
+}
+
+html[data-export="movil"] .page {
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+html[data-export="movil"] .page-body {
+  flex: 0 0 auto !important;
+  padding: var(--pad) !important;
+}
+
+html[data-export="movil"] .page-photo--hero,
+html[data-export="movil"] .page-photo--mid {
+  height: 185px !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}

@@ -39,8 +39,19 @@ jobs:
             landing/ _site/
           cp assets/logo-horizontal.png assets/logo-isotipo.png \
             assets/logo-horizontal-3d.jpg assets/logo-isotipo-3d.png \
+            "assets/LOGO GRANDE JPG-02-3D.jpg" \
             _site/assets/
           find _site -name '*.html' -exec sed -i 's|\.\./assets/|assets/|g' {} +
+          rsync -a \
+            --exclude 'corporativo/official/' \
+            --exclude 'corporativo/Land-Advisors-Corporativo.pdf' \
+            --exclude 'visual/' \
+            --exclude 'triptico/' \
+            --exclude '*.ps1' \
+            --exclude '*.pdf' \
+            --exclude 'contenido brochure.txt' \
+            --exclude 'README.md' \
+            brochure/ _site/brochure/
           echo 'www.landadvisors.cl' > _site/CNAME
 
       - name: Upload Pages artifact
