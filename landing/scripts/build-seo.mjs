@@ -20,10 +20,9 @@ function depthFromPath(p) {
   return segs.length;
 }
 
-function assetPrefix(pagePath) {
-  const d = depthFromPath(pagePath);
-  // HTML lives under landing/; shared assets live at repo root assets/
-  return "../".repeat(d + 1) + "assets/";
+function assetPrefix() {
+  // Root-absolute: works in production (landing/ = site root) and local serve.ps1 (Contexto root).
+  return "/assets/";
 }
 
 function rootPrefix(pagePath) {
@@ -79,7 +78,7 @@ function orgSchema() {
     name: site.name,
     legalName: site.legalName,
     url: site.url,
-    logo: site.url + "/assets/logo-horizontal.png",
+    logo: site.url + "/assets/logo-horizontal-3d.jpg",
     email: site.email,
     telephone: site.phone,
     description: "Consultoría de inteligencia territorial e inversión inmobiliaria rural y periurbana en el sur de Chile.",
@@ -316,7 +315,7 @@ function buildServicesCatalog(prefix) {
 
 function buildSecondaryPage(page) {
   const prefix = rootPrefix(page.path);
-  const assets = assetPrefix(page.path);
+  const assets = assetPrefix();
   const schemas = buildSchemas(page);
   const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
   const ctaHref = prefix + "#contacto-form";

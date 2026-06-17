@@ -37,17 +37,9 @@ jobs:
             --exclude 'filelist.txt' \
             --exclude 'maps-config.example.js' \
             landing/ _site/
-          cp assets/logo-horizontal.png _site/assets/
-          cp assets/logo-horizontal.png _site/assets/logo-isotipo.png
           cp assets/logo-horizontal-3d.jpg _site/assets/
           cp assets/logo-isotipo-3d.png _site/assets/
           cp "assets/LOGO GRANDE JPG-02-3D.jpg" _site/assets/
-          find _site -name '*.html' -exec sed -i \
-            -e 's|\.\./\.\./\.\./assets/|../../assets/|g' \
-            -e 's|\.\./\.\./assets/|../assets/|g' \
-            -e 's|href="\.\./assets/|href="assets/|g' \
-            -e 's|src="\.\./assets/|src="assets/|g' \
-            {} +
           rsync -a \
             --exclude 'corporativo/official/' \
             --exclude 'corporativo/Land-Advisors-Corporativo.pdf' \

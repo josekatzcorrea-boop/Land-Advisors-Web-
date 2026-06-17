@@ -1183,6 +1183,22 @@ section {
   flex-direction: column;
   padding: 1rem;
   border-top: 3px solid var(--lake);
+  position: relative;
+}
+
+.service-card-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.service-card:has(.service-card-hit) {
+  cursor: pointer;
+}
+
+.service-card-link {
+  position: relative;
+  z-index: 2;
 }
 
 .service-card-head {
