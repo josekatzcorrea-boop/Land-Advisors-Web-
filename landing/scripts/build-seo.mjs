@@ -227,19 +227,42 @@ function renderBlogSection(section) {
 }
 
 function buildBlogIndexContent(prefix) {
+  const assets = assetPrefix();
   const cards = blogPosts
     .map((post) => {
       const href = `${prefix}blog/${post.slug}/`;
+      const imgSrc = `${prefix}${(post.image || "/images/hero.jpg").replace(/^\//, "")}`;
       const date = new Date(`${post.datePublished}T12:00:00`).toLocaleDateString("es-CL", {
         year: "numeric",
-        month: "long",
+        month: "short",
         day: "numeric",
       });
-      return `<article class="seo-card glass-card blog-card">
-        <p class="blog-card__meta">${esc(date)} · ${post.readMinutes || 5} min lectura</p>
-        <h2><a href="${href}">${esc(post.h1)}</a></h2>
-        <p>${esc(post.intro)}</p>
-        <a href="${href}" class="btn btn-glass">Leer artículo →</a>
+      const seriesBadge =
+        post.series && post.seriesPart
+          ? `<span class="blog-card__series">${esc(post.series)} · Parte ${post.seriesPart}</span>`
+          : post.category
+            ? `<span class="blog-card__category">${esc(post.category)}</span>`
+            : "";
+      const primaryTag = post.category || (post.tags && post.tags[0]) || "Artículo";
+
+      return `<article class="blog-card">
+        <a href="${href}" class="blog-card__media" tabindex="-1" aria-hidden="true">
+          <img src="${imgSrc}" alt="${esc(post.imageAlt || post.h1)}" width="640" height="400" loading="lazy" decoding="async">
+          <span class="blog-card__overlay" aria-hidden="true"></span>
+          ${seriesBadge}
+        </a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__category-pill">${esc(primaryTag)}</span>
+            <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+            <time datetime="${post.datePublished}">${esc(date)}</time>
+            <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+            <span>${post.readMinutes || 5} min</span>
+          </div>
+          <h2 class="blog-card__title"><a href="${href}">${esc(post.h1)}</a></h2>
+          <p class="blog-card__excerpt">${esc(post.intro)}</p>
+          <a href="${href}" class="blog-card__cta">Leer artículo <span aria-hidden="true">→</span></a>
+        </div>
       </article>`;
     })
     .join("");
@@ -248,12 +271,21 @@ function buildBlogIndexContent(prefix) {
     .map((topic) => `<li>${esc(topic)}</li>`)
     .join("");
 
-  return `<div class="seo-card-grid blog-index-grid">${cards}</div>
+  return `<div class="blog-index-intro glass-card">
+      <div class="blog-index-intro__icon" aria-hidden="true">
+        <img src="${assets}logo-isotipo-3d.png" alt="" width="72" height="72">
+      </div>
+      <div class="blog-index-intro__copy">
+        <p class="section-label">Editorial territorial</p>
+        <p class="blog-index-intro__text">Análisis sobre mercado inmobiliario del sur de Chile, lectura de territorio y criterio para comprar el terreno correcto — sin hype ni promesas de rentabilidad.</p>
+      </div>
+    </div>
+    <div class="blog-index-grid">${cards}</div>
     ${
       upcoming
         ? `<div class="seo-blog-soon glass-card blog-upcoming">
       <p class="section-label">Próximamente</p>
-      <h2>Siguientes artículos</h2>
+      <h2 class="blog-upcoming__title">Siguientes artículos</h2>
       <ul class="seo-topic-list">${upcoming}</ul>
     </div>`
         : ""
@@ -570,7 +602,7 @@ ${buildHead(page, prefix, assets)}
   <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
 </head>
-<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : ""}">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : ""}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">

@@ -18,6 +18,9 @@
       "image": "/images/caso-puerto-varas.jpg",
       "imageAlt": "Puerto Varas y entorno del Lago Llanquihue",
       "readMinutes": 6,
+      "series": "Contorno rural de Puerto Varas",
+      "seriesPart": 1,
+      "category": "Plusvalía territorial",
       "tags": ["plusvalía inmobiliaria", "Puerto Varas", "contorno rural", "inversión territorial"],
       "sections": [
         {
@@ -126,6 +129,9 @@
       "image": "/images/caso-llanquihue.jpg",
       "imageAlt": "Sector rural en Llanquihue con potencial de desarrollo",
       "readMinutes": 5,
+      "series": "Contorno rural de Puerto Varas",
+      "seriesPart": 2,
+      "category": "Factibilidad y costos",
       "tags": ["habilitación de predios", "Puerto Varas", "contorno rural", "factibilidad inmobiliaria"],
       "sections": [
         {
