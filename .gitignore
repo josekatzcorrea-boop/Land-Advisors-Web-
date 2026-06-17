@@ -29,3 +29,8 @@ landing/video/territorio.mp4
 
 # Analítica con IDs reales (mantener analytics-config.example.js en repo)
 landing/analytics-config.local.js
+
+# Servicios gallery: keep only optimized *-opt.jpg in git
+landing/servicios/*.jpg
+landing/servicios/images/*.jpg
+!landing/servicios/images/*-opt.jpg
