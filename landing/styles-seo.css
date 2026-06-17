@@ -76,6 +76,151 @@
 
 .seo-blog-soon { padding: 2rem; }
 
+.blog-index-grid {
+  margin-bottom: 1.5rem;
+}
+
+.blog-upcoming {
+  margin-top: 0.5rem;
+}
+
+.blog-card__meta {
+  font-size: 0.82rem;
+  color: var(--text-muted, #5a6a75);
+  margin: 0 0 0.5rem;
+}
+
+.seo-page--blog-post .seo-hero--article h1 {
+  max-width: 24ch;
+}
+
+.blog-article {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.blog-article__header {
+  padding: 0;
+}
+
+.blog-article__meta {
+  padding: 1.25rem 1.5rem 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #5a6a75);
+  margin: 0;
+}
+
+.blog-article__figure {
+  margin: 1rem 0 0;
+}
+
+.blog-article__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.blog-article__content {
+  padding: 1.5rem 1.5rem 0.5rem;
+  line-height: 1.7;
+  color: var(--text, #1c2b30);
+}
+
+.blog-article__lead {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--brand-deep, #052c4d);
+  margin: 0 0 1.25rem;
+}
+
+.blog-article__content p {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.blog-article__h2 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.blog-article__h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.blog-article__content ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.blog-article__content li + li {
+  margin-top: 0.35rem;
+}
+
+.blog-article__note {
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+  font-size: 0.9rem;
+  color: var(--text-muted, #5a6a75);
+  border-left: 3px solid var(--lake, #5b8fa0);
+}
+
+.blog-article__note p {
+  margin: 0;
+}
+
+.blog-article__footer {
+  padding: 0.5rem 1.5rem 1.5rem;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  background: rgba(91, 143, 160, 0.14);
+  color: var(--brand-mid, #1a5f72);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.blog-related__label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-mid, #1a5f72);
+  margin: 0 0 0.5rem;
+}
+
+.blog-related ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.65;
+}
+
+.blog-related a {
+  color: var(--brand-mid, #1a5f72);
+  text-decoration: none;
+}
+
+.blog-related a:hover {
+  text-decoration: underline;
+}
+
 .seo-topic-list {
   margin: 1rem 0 0;
   padding-left: 1.25rem;

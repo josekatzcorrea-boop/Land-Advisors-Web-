@@ -1,0 +1,338 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Land Advisors Chile//RRSS Calendar//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Land Advisors RRSS (desde 2026-06-17)
+BEGIN:VTIMEZONE
+TZID:America/Santiago
+BEGIN:STANDARD
+DTSTART:19700405T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700906T000000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0300
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-06-17-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260617T180000
+DTEND;TZID=America/Santiago:20260617T183000
+SUMMARY:📱 Publicar IG+FB — Relanzamiento oficial: nueva Land Advisors
+DESCRIPTION:Post: 2026-06-17-R1\nPilar: R\nTema: Relanzamiento oficial: nueva Land Advisors\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-06-09-R1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Relanzamiento oficial: nueva Land Advisors
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Relanzamiento oficial: nueva Land Advisors
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-18-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260618T100000
+DTEND;TZID=America/Santiago:20260618T103000
+SUMMARY:📱 Publicar IG+FB — Nueva identidad visual: logo 3D y paleta v2.0
+DESCRIPTION:Post: 2026-06-18-R1\nPilar: R\nTema: Nueva identidad visual: logo 3D y paleta v2.0\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-06-18-R1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Nueva identidad visual: logo 3D y paleta v2.0
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Nueva identidad visual: logo 3D y paleta v2.0
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-18-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260617T140000
+DTEND;TZID=America/Santiago:20260617T143000
+SUMMARY:📋 Preparar post — Nueva identidad visual: logo 3D y paleta v2.0
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-18 10:00 Chile.\\n2026-06-18-R1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Nueva identidad visual: logo 3D y paleta v2.0
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-19-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260619T180000
+DTEND;TZID=America/Santiago:20260619T183000
+SUMMARY:📱 Publicar IG+FB — El terreno correcto. Al precio correcto.
+DESCRIPTION:Post: 2026-06-19-R1\nPilar: R\nTema: El terreno correcto. Al precio correcto.\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-06-19-R1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — El terreno correcto. Al precio correcto.
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — El terreno correcto. Al precio correcto.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-19-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260618T140000
+DTEND;TZID=America/Santiago:20260618T143000
+SUMMARY:📋 Preparar post — El terreno correcto. Al precio correcto.
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-19 18:00 Chile.\\n2026-06-19-R1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — El terreno correcto. Al precio correcto.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-20-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260620T110000
+DTEND;TZID=America/Santiago:20260620T113000
+SUMMARY:📱 Publicar IG+FB — Nueva web: inteligencia territorial antes de invertir
+DESCRIPTION:Post: 2026-06-20-R1\nPilar: R\nTema: Nueva web: inteligencia territorial antes de invertir\nFormato: carrusel\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-06-20-R1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Nueva web: inteligencia territorial antes de invertir
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Nueva web: inteligencia territorial antes de invertir
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-20-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260619T140000
+DTEND;TZID=America/Santiago:20260619T143000
+SUMMARY:📋 Preparar post — Nueva web: inteligencia territorial antes de invertir
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-20 11:00 Chile.\\n2026-06-20-R1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Nueva web: inteligencia territorial antes de invertir
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-23-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260623T100000
+DTEND;TZID=America/Santiago:20260623T103000
+SUMMARY:📱 Publicar IG+FB — Brochure corporativo + decisiones inteligentes
+DESCRIPTION:Post: 2026-06-23-R1\nPilar: R\nTema: Brochure corporativo + decisiones inteligentes\nFormato: single\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-06-23-R1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Brochure corporativo + decisiones inteligentes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Brochure corporativo + decisiones inteligentes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-23-R1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260622T140000
+DTEND;TZID=America/Santiago:20260622T143000
+SUMMARY:📋 Preparar post — Brochure corporativo + decisiones inteligentes
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-23 10:00 Chile.\\n2026-06-23-R1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Brochure corporativo + decisiones inteligentes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-24-M1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260624T120000
+DTEND;TZID=America/Santiago:20260624T123000
+SUMMARY:📱 Publicar IG+FB — Inteligencia territorial: primero el territorio\, después el activo
+DESCRIPTION:Post: 2026-06-24-M1\nPilar: M\nTema: Inteligencia territorial: primero el territorio, después el activo\nFormato: carrusel\nHora Chile: 12:00\n\nPiezas: rrss/output/2026-06-24-M1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Inteligencia territorial: primero el territorio\, después el activo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Inteligencia territorial: primero el territorio\, después el activo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-24-M1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260623T140000
+DTEND;TZID=America/Santiago:20260623T143000
+SUMMARY:📋 Preparar post — Inteligencia territorial: primero el territorio\, después el activo
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-24 12:00 Chile.\\n2026-06-24-M1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Inteligencia territorial: primero el territorio\, después el activo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-25-E1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260625T100000
+DTEND;TZID=America/Santiago:20260625T103000
+SUMMARY:📱 Publicar IG+FB — ¿Cómo afecta la normativa al terreno que te interesa?
+DESCRIPTION:Post: 2026-06-25-E1\nPilar: E\nTema: ¿Cómo afecta la normativa al terreno que te interesa?\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-06-25-E1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Cómo afecta la normativa al terreno que te interesa?
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Cómo afecta la normativa al terreno que te interesa?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-25-E1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260624T140000
+DTEND;TZID=America/Santiago:20260624T143000
+SUMMARY:📋 Preparar post — ¿Cómo afecta la normativa al terreno que te interesa?
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-25 10:00 Chile.\\n2026-06-25-E1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — ¿Cómo afecta la normativa al terreno que te interesa?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-26-S1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260626T180000
+DTEND;TZID=America/Santiago:20260626T183000
+SUMMARY:📱 Publicar IG+FB — Diagnóstico estratégico: qué compras realmente (1 UF)
+DESCRIPTION:Post: 2026-06-26-S1\nPilar: S\nTema: Diagnóstico estratégico: qué compras realmente (1 UF)\nFormato: single\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-06-26-S1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Diagnóstico estratégico: qué compras realmente (1 UF)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Diagnóstico estratégico: qué compras realmente (1 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-26-S1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260625T140000
+DTEND;TZID=America/Santiago:20260625T143000
+SUMMARY:📋 Preparar post — Diagnóstico estratégico: qué compras realmente (1 UF)
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-26 18:00 Chile.\\n2026-06-26-S1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Diagnóstico estratégico: qué compras realmente (1 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-27-A1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260627T110000
+DTEND;TZID=America/Santiago:20260627T113000
+SUMMARY:📱 Publicar IG+FB — Trabajamos para quien compra — no para quien vende
+DESCRIPTION:Post: 2026-06-27-A1\nPilar: A\nTema: Trabajamos para quien compra — no para quien vende\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-06-27-A1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Trabajamos para quien compra — no para quien vende
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Trabajamos para quien compra — no para quien vende
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-27-A1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260626T140000
+DTEND;TZID=America/Santiago:20260626T143000
+SUMMARY:📋 Preparar post — Trabajamos para quien compra — no para quien vende
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-27 11:00 Chile.\\n2026-06-27-A1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Trabajamos para quien compra — no para quien vende
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-30-T1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260630T100000
+DTEND;TZID=America/Santiago:20260630T103000
+SUMMARY:📱 Publicar IG+FB — Conectividad actual y futura: qué mirar antes de invertir
+DESCRIPTION:Post: 2026-06-30-T1\nPilar: T\nTema: Conectividad actual y futura: qué mirar antes de invertir\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-06-30-T1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Conectividad actual y futura: qué mirar antes de invertir
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Conectividad actual y futura: qué mirar antes de invertir
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-06-30-T1@landadvisors.cl
+DTSTAMP:20260617T164848Z
+DTSTART;TZID=America/Santiago:20260629T140000
+DTEND;TZID=America/Santiago:20260629T143000
+SUMMARY:📋 Preparar post — Conectividad actual y futura: qué mirar antes de invertir
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-06-30 10:00 Chile.\\n2026-06-30-T1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Conectividad actual y futura: qué mirar antes de invertir
+END:VALARM
+END:VEVENT
+END:VCALENDAR

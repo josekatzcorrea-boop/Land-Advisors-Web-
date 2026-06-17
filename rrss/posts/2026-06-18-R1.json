@@ -1,0 +1,106 @@
+{
+  "id": "2026-06-18-R1",
+  "fecha_publicacion": "2026-06-18",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "R",
+  "campana": "relanzamiento-jun2026",
+  "tema": "Nueva identidad visual: logo 3D y paleta v2.0",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "aprobado",
+  "post_generado": "rrss/posts/2026-06-18-R1.json",
+  "piezas_visuales": "rrss/posts/2026-06-18-R1/index.html",
+  "export_output": "rrss/output/2026-06-18-R1/",
+  "titulo_interno": "Identidad visual — logo 3D y paleta v2.0 · campaña relanzamiento",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "Detrás de la nueva imagen Land Advisors",
+      "cuerpo": "Isotipo 3D en azul institucional · logo grande · paleta v2.0.",
+      "imagen_prompt": "Fondo #F4F7F8. Isotipo azul 3D grande + logo grande 3D debajo. Texto azul #052C4D."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Logo 3D — familia completa",
+      "cuerpo": "Logo grande para portadas · horizontal · negativo · isotipo azul 3D.\nSin deformar. Sin recolorear. Sin versiones 2D.",
+      "imagen_prompt": "Logo grande 3D arriba. Tres variantes abajo. Isotipo en azul #052C4D sobre fondo claro."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Paleta v2.0 — colores que cuentan territorio",
+      "cuerpo": "Azul institucional #052C4D como eje.\nNeutros, reflejo lago y acentos de contorno rural con moderación.",
+      "imagen_prompt": "Grid 6 swatches con HEX. Fondo claro #F4F7F8."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Montserrat + descriptor obligatorio",
+      "cuerpo": "SemiBold en titulares · Regular en cuerpo · Light en descriptor.\n\nDescriptor de marca: ESTRATEGIA INMOBILIARIA.",
+      "imagen_prompt": "Muestras tipográficas Montserrat 600/400/300. Badge descriptor en mayúsculas tracking amplio."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Cómo se ve en la práctica",
+      "cuerpo": "Isotipo azul 3D · logo grande · avatar RRSS · header web.\nUna identidad coherente en cada punto de contacto.",
+      "imagen_prompt": "Grid 2x2: isotipo azul fondo claro, logo grande fondo claro, avatar blanco/azul, header web."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "¿Evaluando terreno en el sur de Chile?",
+      "cuerpo": "La imagen renueva. La metodología sigue igual:\nterritorio primero, activo después.\n\nAgenda tu reunión estratégica.",
+      "imagen_prompt": "Fondo #052C4D. Logo invertido 3D. Botón reunión estratégica."
+    }
+  ],
+  "caption_ig": "Ayer presentamos el relanzamiento. Hoy te mostramos la identidad visual detrás de cada pieza.\n\nLogo 3D con tres versiones según el fondo. Paleta v2.0 con azul institucional #052C4D como eje. Tipografía Montserrat y el descriptor ESTRATEGIA INMOBILIARIA en cada aplicación.\n\nNo es solo estética: es una marca más clara para comunicar lo que hacemos — ayudarte a comprar el terreno correcto en el sur de Chile.\n\nDesliza el carrusel para ver logo, colores, tipografía y aplicaciones 👉\n\n¿Qué te llama más la atención de la nueva imagen? Cuéntanos en los comentarios.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #LandAdvisorsRenueva #IdentidadVisual #EstrategiaInmobiliaria #Branding #SurDeChile #InteligenciaTerritorial #InversiónInmobiliaria #PuertoVaras #LagoLlanquihue",
+  "caption_fb": "En el relanzamiento de Land Advisors no solo cambiamos el mensaje: renovamos la identidad visual para que cada pieza comunique con más claridad quiénes somos y cómo trabajamos.\n\nEste carrusel detalla los elementos clave:\n\n• Logo 3D en tres versiones (horizontal, negativo e isotipo)\n• Paleta v2.0 con azul institucional #052C4D y acentos territoriales\n• Tipografía Montserrat y descriptor ESTRATEGIA INMOBILIARIA\n• Aplicación coherente en web, redes y brochure corporativo\n\nLa imagen renueva. La metodología sigue igual: territorio primero, activo después. Seguimos siendo consultoría de inteligencia territorial — no corredora ni portal inmobiliario.\n\nSi estás evaluando comprar terreno en la cuenca del Lago Llanquihue o Malalcahuello, agenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=relanzamiento-jun2026\n\n#LandAdvisors #LandAdvisorsRenueva #EstrategiaInmobiliaria #SurDeChile",
+  "hashtags": {
+    "instagram": [
+      "#LandAdvisors",
+      "#LandAdvisorsRenueva",
+      "#IdentidadVisual",
+      "#EstrategiaInmobiliaria",
+      "#Branding",
+      "#SurDeChile",
+      "#InteligenciaTerritorial",
+      "#InversiónInmobiliaria",
+      "#PuertoVaras",
+      "#LagoLlanquihue"
+    ],
+    "facebook": [
+      "#LandAdvisors",
+      "#LandAdvisorsRenueva",
+      "#EstrategiaInmobiliaria",
+      "#SurDeChile"
+    ]
+  },
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=relanzamiento-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "paleta": ["#052C4D", "#F4F7F8", "#FFFFFF", "#A7ADB3", "#5B8FA0", "#3D6B5E"],
+    "tipografia": "Montserrat SemiBold / Regular / Light",
+    "logo": "Solo assets 3D vigentes jun 2026",
+    "instagram_prefix": "land-advisors-identidad"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "paleta_v2": true,
+    "logo_3d": true,
+    "descriptor_correcto": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true,
+    "caption_ig_fb": true,
+    "hashtags_aprobados": true,
+    "disclaimer": false
+  }
+}

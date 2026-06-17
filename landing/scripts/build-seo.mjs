@@ -14,6 +14,8 @@ const SEO = path.join(ROOT, "seo");
 const site = JSON.parse(fs.readFileSync(path.join(SEO, "site.json"), "utf8"));
 const pages = JSON.parse(fs.readFileSync(path.join(SEO, "pages.json"), "utf8"));
 const catalog = JSON.parse(fs.readFileSync(path.join(SEO, "services-catalog.json"), "utf8"));
+const blogData = JSON.parse(fs.readFileSync(path.join(SEO, "posts.json"), "utf8"));
+const blogPosts = blogData.posts || [];
 
 function depthFromPath(p) {
   const segs = p.replace(/\/$/, "").split("/").filter(Boolean);
@@ -38,9 +40,10 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-function buildHead(page, prefix, assets) {
+function buildHead(page, prefix, assets, options = {}) {
   const url = site.url + (page.path === "/" ? "/" : page.path);
-  const ogImage = site.url + site.defaultOgImage;
+  const ogImage = options.ogImage || site.url + (page.image || site.defaultOgImage);
+  const ogType = options.ogType || "website";
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${esc(page.description)}">
@@ -52,7 +55,7 @@ function buildHead(page, prefix, assets) {
   <title>${esc(page.title)}</title>
   <link rel="icon" type="image/png" href="${assets}logo-isotipo-3d.png">
   <link rel="apple-touch-icon" href="${assets}logo-isotipo-3d.png">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${ogType}">
   <meta property="og:locale" content="es_CL">
   <meta property="og:site_name" content="${esc(site.name)}">
   <meta property="og:title" content="${esc(page.title)}">
@@ -183,13 +186,223 @@ function buildSchemas(page) {
   return schemas;
 }
 
+function blogPostSchema(post, pagePath) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.h1,
+    description: post.description,
+    image: site.url + post.image,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified || post.datePublished,
+    author: {
+      "@type": "Person",
+      name: post.author || site.founder.name,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      logo: { "@type": "ImageObject", url: site.url + "/assets/logo-horizontal-3d.jpg" },
+    },
+    mainEntityOfPage: site.url + pagePath,
+    keywords: (post.tags || []).join(", "),
+  };
+}
+
+function renderBlogSection(section) {
+  switch (section.type) {
+    case "h2":
+      return `<h2 class="blog-article__h2">${esc(section.text)}</h2>`;
+    case "h3":
+      return `<h3 class="blog-article__h3">${esc(section.text)}</h3>`;
+    case "p":
+      return `<p>${esc(section.text)}</p>`;
+    case "ul":
+      return `<ul>${section.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
+    case "note":
+      return `<aside class="blog-article__note glass-card"><p>${esc(section.text)}</p></aside>`;
+    default:
+      return "";
+  }
+}
+
+function buildBlogIndexContent(prefix) {
+  const cards = blogPosts
+    .map((post) => {
+      const href = `${prefix}blog/${post.slug}/`;
+      const date = new Date(`${post.datePublished}T12:00:00`).toLocaleDateString("es-CL", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+      return `<article class="seo-card glass-card blog-card">
+        <p class="blog-card__meta">${esc(date)} · ${post.readMinutes || 5} min lectura</p>
+        <h2><a href="${href}">${esc(post.h1)}</a></h2>
+        <p>${esc(post.intro)}</p>
+        <a href="${href}" class="btn btn-glass">Leer artículo →</a>
+      </article>`;
+    })
+    .join("");
+
+  const upcoming = (blogData.upcoming || [])
+    .map((topic) => `<li>${esc(topic)}</li>`)
+    .join("");
+
+  return `<div class="seo-card-grid blog-index-grid">${cards}</div>
+    ${
+      upcoming
+        ? `<div class="seo-blog-soon glass-card blog-upcoming">
+      <p class="section-label">Próximamente</p>
+      <h2>Siguientes artículos</h2>
+      <ul class="seo-topic-list">${upcoming}</ul>
+    </div>`
+        : ""
+    }`;
+}
+
+function buildBlogArticleBody(post, prefix) {
+  const sections = (post.sections || []).map(renderBlogSection).join("\n        ");
+  const tags = (post.tags || [])
+    .map((t) => `<span class="blog-tag">${esc(t)}</span>`)
+    .join("");
+  const related = (post.related || [])
+    .map((r) => {
+      const href = r.href.startsWith("#") ? `${prefix}${r.href}` : `${prefix}${r.href}`;
+      return `<li><a href="${href}">${esc(r.label)}</a></li>`;
+    })
+    .join("");
+
+  const date = new Date(`${post.datePublished}T12:00:00`).toLocaleDateString("es-CL", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return `<article class="blog-article glass-card">
+      <header class="blog-article__header">
+        <p class="blog-article__meta">${esc(date)} · ${post.readMinutes || 5} min · ${esc(post.author || site.founder.name)}</p>
+        <figure class="blog-article__figure">
+          <img src="${prefix}${post.image.replace(/^\//, "")}" alt="${esc(post.imageAlt || post.h1)}" width="900" height="600" loading="lazy">
+        </figure>
+      </header>
+      <div class="blog-article__content">
+        <p class="blog-article__lead">${esc(post.intro)}</p>
+        ${sections}
+      </div>
+      <footer class="blog-article__footer">
+        <div class="blog-tags">${tags}</div>
+        ${
+          related
+            ? `<nav class="blog-related" aria-label="Enlaces relacionados">
+          <p class="blog-related__label">Relacionado</p>
+          <ul>${related}</ul>
+        </nav>`
+            : ""
+        }
+      </footer>
+    </article>`;
+}
+
+function buildBlogPostPage(post) {
+  const pagePath = `/blog/${post.slug}/`;
+  const prefix = rootPrefix(pagePath);
+  const assets = assetPrefix();
+  const page = {
+    path: pagePath,
+    title: post.title,
+    description: post.description,
+    breadcrumb: post.h1,
+    h1: post.h1,
+    intro: post.intro,
+    image: post.image,
+  };
+  const schemas = buildSchemas({ ...page, type: "blog-post" });
+  schemas.push(blogPostSchema(post, pagePath));
+  const ctaHref = prefix + "#contacto-form";
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.image })}
+  <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
+  <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
+  <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>
+  <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
+  <script type="application/ld+json">${JSON.stringify(schemas[4])}</script>
+</head>
+<body class="site-v2 seo-page seo-page--blog-post">
+  <header class="site-header">
+    <div class="header-shell">
+      <div class="header-inner">
+        <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
+          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+${navLinks(prefix)}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="seo-hero seo-hero--article">
+      <div class="container" data-reveal>
+        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+          <a href="${prefix}">Inicio</a>
+          <span aria-hidden="true"> / </span><a href="${prefix}blog/">Blog</a>
+          <span aria-hidden="true"> / </span><span>${esc(post.h1)}</span>
+        </nav>
+        <p class="section-label">Artículo</p>
+        <h1>${esc(post.h1)}</h1>
+      </div>
+    </section>
+    <section class="seo-body">
+      <div class="container" data-reveal>
+        ${buildBlogArticleBody(post, prefix)}
+      </div>
+    </section>
+    <section class="cta-band">
+      <div class="container">
+        <h2>¿Evaluando un terreno en el sur de Chile?</h2>
+        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
+    </div>
+  </footer>
+
+  <div id="la-chat-widget" aria-label="Contacto"></div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="${prefix}landing-ui.js" defer></script>
+  <script src="${prefix}analytics-config.js" defer></script>
+  <script src="${prefix}analytics.js" defer></script>
+  <script src="${prefix}conversion-tracking.js" defer></script>
+  <script src="${prefix}chat-widget.js" defer></script>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle?.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open);
+    });
+  </script>
+</body>
+</html>`;
+}
+
 function navLinks(prefix) {
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
             <a href="${prefix}#problema">Situación</a>
             <a href="${prefix}servicios/">Servicios</a>
             <a href="${prefix}territorios/">Territorios</a>
-            <a href="${prefix}casos-de-estudio/">Casos</a>
+            <a href="${prefix}#casos">Casos</a>
             <a href="${prefix}blog/">Blog</a>
             <a href="${prefix}#nosotros">Nosotros</a>
           </div>
@@ -330,17 +543,7 @@ function buildSecondaryPage(page) {
       <article class="seo-card glass-card"><h2>Llanquihue</h2><p>Valor presente vs. valor futuro en proyecto a medio urbanizar.</p><a href="${prefix}#casos" class="btn btn-glass">Ver en inicio →</a></article>
     </div>`;
   } else if (page.path === "/blog/") {
-    extraContent = `<div class="seo-blog-soon glass-card">
-      <p class="section-label">Próximamente</p>
-      <h2>Artículos en preparación</h2>
-      <ul class="seo-topic-list">
-        <li>Plusvalía inmobiliaria en el contorno rural de Puerto Varas</li>
-        <li>Expansión urbana y oportunidades de inversión territorial</li>
-        <li>Cambio de uso de suelo: cuándo tiene sentido económico</li>
-        <li>Turismo inmobiliario en la cuenca del Lago Llanquihue</li>
-        <li>Mercado inmobiliario del sur de Chile: lectura para inversionistas</li>
-      </ul>
-    </div>`;
+    extraContent = buildBlogIndexContent(prefix);
   } else if (page.type === "territory" && page.keywords) {
     extraContent = `<p class="seo-keywords">Búsquedas relacionadas: ${page.keywords.map(esc).join(" · ")}</p>`;
   } else if (page.type === "service") {
@@ -440,11 +643,19 @@ ${navLinks(prefix)}
 
 function buildSitemap() {
   const today = new Date().toISOString().slice(0, 10);
-  const urls = pages
+  const allPages = [
+    ...pages,
+    ...blogPosts.map((post) => ({
+      path: `/blog/${post.slug}/`,
+      type: "blog-post",
+    })),
+  ];
+  const urls = allPages
     .map((p) => {
       const loc = site.url + (p.path === "/" ? "/" : p.path);
-      const priority = p.path === "/" ? "1.0" : p.type === "service" || p.type === "territory" ? "0.8" : "0.7";
-      const changefreq = p.type === "blog" ? "weekly" : "monthly";
+      const priority =
+        p.path === "/" ? "1.0" : p.type === "service" || p.type === "territory" ? "0.8" : p.type === "blog-post" ? "0.75" : "0.7";
+      const changefreq = p.type === "blog" || p.type === "blog-post" ? "weekly" : "monthly";
       return `  <url>
     <loc>${loc}</loc>
     <lastmod>${today}</lastmod>
@@ -467,6 +678,14 @@ for (const page of pages) {
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, buildSecondaryPage(page), "utf8");
   console.log("wrote", page.file);
+}
+
+for (const post of blogPosts) {
+  const file = `blog/${post.slug}/index.html`;
+  const out = path.join(ROOT, file);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildBlogPostPage(post), "utf8");
+  console.log("wrote", file);
 }
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap(), "utf8");

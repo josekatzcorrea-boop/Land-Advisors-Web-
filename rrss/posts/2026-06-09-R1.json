@@ -1,0 +1,116 @@
+{
+  "id": "2026-06-09-R1",
+  "fecha_publicacion": "2026-06-09",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "R",
+  "campana": "relanzamiento-jun2026",
+  "tema": "Relanzamiento oficial: nueva Land Advisors",
+  "formato": "carrusel",
+  "slides_count": 7,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "aprobado",
+  "post_generado": "rrss/posts/2026-06-09-R1.json",
+  "piezas_visuales": "rrss/posts/2026-06-09-R1/index.html",
+  "export_output": "rrss/output/2026-06-09-R1/",
+  "titulo_interno": "Relanzamiento oficial — carrusel apertura campaña jun 2026",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "Land Advisors renueva su imagen",
+      "cuerpo": "Nueva identidad. Misma convicción territorial.",
+      "imagen_prompt": "Fondo sólido #052C4D. Isotipo 3D centrado (assets/logo-isotipo-3d.png), grande. Texto blanco Montserrat SemiBold. Sin foto de fondo. Aire limpio."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Nueva identidad visual",
+      "cuerpo": "Logo 3D · paleta renovada · descriptor ESTRATEGIA INMOBILIARIA.\nUna marca más clara, moderna y alineada con lo que hacemos.",
+      "imagen_prompt": "Fondo #F4F7F8. Logo horizontal 3D (assets/logo-horizontal-3d.jpg) centrado. Muestra de color #052C4D y #A7ADB3 en barra inferior."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Nuevo posicionamiento",
+      "cuerpo": "No vendemos terrenos.\nTe ayudamos a comprar el correcto.\n\nEl terreno correcto. Al precio correcto.",
+      "imagen_prompt": "Fondo foto territorial suave (lago/volcanes, overlay azul #052C4D al 75%). Texto blanco. Tipografía Montserrat."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Nueva web",
+      "cuerpo": "Consultoría de inteligencia territorial e inversión inmobiliaria.\n\nTerritorios · servicios · casos · contacto.\nlandadvisors.cl",
+      "imagen_prompt": "Mockup móvil con screenshot hero de la landing. Fondo #EEF3F5. Badge 'Nuevo sitio' en #5B8FA0."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Brochure y catálogo de servicios",
+      "cuerpo": "Brochure corporativo digital.\n5 servicios en UF, contratados de forma independiente.\n\nConocimiento local para decisiones inteligentes.",
+      "imagen_prompt": "Mockup brochure móvil (portada brochure corporativo). Iconos lineales azul #052C4D para los 5 servicios."
+    },
+    {
+      "numero": 6,
+      "tipo": "sintesis",
+      "titulo": "Lo que no cambia",
+      "cuerpo": "Territorio primero. Activo después.\n\nSeguimos leyendo la cuenca del Lago Llanquihue y Malalcahuello con el mismo rigor.\n\nNo somos corredora. No somos portal.",
+      "imagen_prompt": "Foto mapa satelital o contorno rural de la cuenca. Texto sobre overlay #052C4D semitransparente."
+    },
+    {
+      "numero": 7,
+      "tipo": "cta",
+      "titulo": "¿Buscas terreno en el sur de Chile?",
+      "cuerpo": "Agenda tu reunión estratégica.\n\nlandadvisors.cl",
+      "imagen_prompt": "Fondo #052C4D. Isotipo 3D pequeño + logo horizontal blanco (logo invertido 3D). Botón visual 'Reunión estratégica' en blanco. Montserrat SemiBold."
+    }
+  ],
+  "caption_ig": "Hoy Land Advisors da un paso adelante.\n\nRenovamos nuestra imagen —logo 3D, nueva web, brochure y un mensaje más claro— pero la esencia sigue siendo la misma: ayudarte a comprar el terreno correcto en el sur de Chile.\n\nNo vendemos terrenos. Te ayudamos a comprar el correcto.\n\nEl terreno correcto. Al precio correcto.\n\nDesliza el carrusel para ver qué cambió y qué se mantiene 👉\n\n¿Buscas terreno para vivir, invertir o desarrollar un proyecto? Cuéntanos en los comentarios.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #LandAdvisorsRenueva #EstrategiaInmobiliaria #InteligenciaTerritorial #SurDeChile #LagoLlanquihue #InversiónInmobiliaria #Territorio #PuertoVaras #Frutillar #CalidadDeVida",
+  "caption_fb": "Hoy Land Advisors presenta su relanzamiento de marca.\n\nRenovamos la identidad visual con un logo 3D, actualizamos el sitio web y el brochure corporativo, y clarificamos nuestro posicionamiento: somos consultoría de inteligencia territorial e inversión inmobiliaria en el sur de Chile. No somos corredora ni portal inmobiliario.\n\nNuestro mensaje es directo: no vendemos terrenos. Te ayudamos a comprar el correcto. El terreno correcto, al precio correcto.\n\nLo que no cambia es nuestra metodología: territorio primero, activo después. Seguimos trabajando en la cuenca del Lago Llanquihue y Malalcahuello con conocimiento local, tecnología y estrategia.\n\nDesliza el carrusel para conocer los cambios. Si estás evaluando comprar terreno en el sur —para tu casa, tu familia o tu inversión— agenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=relanzamiento-jun2026\n\n#LandAdvisors #LandAdvisorsRenueva #EstrategiaInmobiliaria #SurDeChile #InversiónInmobiliaria",
+  "hashtags": {
+    "instagram": [
+      "#LandAdvisors",
+      "#LandAdvisorsRenueva",
+      "#EstrategiaInmobiliaria",
+      "#InteligenciaTerritorial",
+      "#SurDeChile",
+      "#LagoLlanquihue",
+      "#InversiónInmobiliaria",
+      "#Territorio",
+      "#PuertoVaras",
+      "#Frutillar",
+      "#CalidadDeVida"
+    ],
+    "facebook": [
+      "#LandAdvisors",
+      "#LandAdvisorsRenueva",
+      "#EstrategiaInmobiliaria",
+      "#SurDeChile",
+      "#InversiónInmobiliaria"
+    ]
+  },
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=relanzamiento-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1080 (feed cuadrado) o 1080×1350 (vertical — recomendado para lectura)",
+    "paleta": ["#052C4D", "#F4F7F8", "#FFFFFF", "#A7ADB3", "#5B8FA0"],
+    "tipografia": "Montserrat SemiBold títulos · Regular cuerpo · Light descriptor",
+    "logo": "Solo assets 3D: logo-isotipo-3d.png, logo-horizontal-3d.jpg, logo invertido 3D.jpeg",
+    "prohibido": "Logos 2D, promesas de rentabilidad, urgencia comercial, stock genérico de corredora",
+    "slide_1_critico": "Es la preview en feed y WhatsApp — máximo impacto visual con isotipo 3D sobre azul institucional"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "paleta_v2": true,
+    "logo_3d": true,
+    "descriptor_correcto": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true,
+    "caption_ig_fb": true,
+    "hashtags_aprobados": true,
+    "disclaimer": false
+  }
+}
