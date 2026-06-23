@@ -67,6 +67,10 @@
         cta_contacto: "Contact",
         cta_whatsapp: "Contact",
         form_submit: "Lead",
+        partner_view: "ViewContent",
+        partner_form_open: "InitiateCheckout",
+        partner_lead_submit: "Lead",
+        partner_redirect: "Lead",
       };
       if (map[eventName]) window.fbq("track", map[eventName], params);
     }

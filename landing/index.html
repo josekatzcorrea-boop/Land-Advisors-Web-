@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-seo.css">
   <link rel="stylesheet" href="chat-widget.css">
+  <link rel="stylesheet" href="partners.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -608,6 +609,17 @@
       </div>
     </section>
 
+    <section id="partners" class="section-partners section-brand">
+      <div class="container" data-reveal>
+        <p class="section-label">Alianzas</p>
+        <h2 class="section-title">Partners Estratégicos</h2>
+        <p class="section-intro">
+          Trabajamos junto a empresas líderes para ayudarte a desarrollar tu proyecto en el sur de Chile.
+        </p>
+        <div class="partners-grid" id="partners-grid" role="list"></div>
+      </div>
+    </section>
+
     <section id="contacto">
       <div class="container" data-reveal>
         <p class="section-label">Contacto</p>
@@ -682,6 +694,42 @@
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
 
+  <dialog id="partner-lead-modal" class="partner-modal" aria-labelledby="partner-modal-title">
+    <div class="partner-modal-inner">
+      <div class="partner-modal-header">
+        <h3 class="partner-modal-title" id="partner-modal-title">Solicitar contacto</h3>
+        <button type="button" class="partner-modal-close" data-partner-modal-close aria-label="Cerrar">×</button>
+      </div>
+      <div class="partner-modal-body">
+        <p class="partner-modal-intro">
+          Completa el formulario. Land Advisors registrará tu solicitud y te conectará con el partner seleccionado.
+        </p>
+        <form id="partner-lead-form" class="partner-lead-form" novalidate>
+          <input type="hidden" name="partner" value="">
+          <div class="partner-field">
+            <label for="partner-nombre">Nombre completo</label>
+            <input type="text" id="partner-nombre" name="nombre" required autocomplete="name">
+          </div>
+          <div class="partner-field">
+            <label for="partner-email">Correo electrónico</label>
+            <input type="email" id="partner-email" name="email" required autocomplete="email">
+          </div>
+          <div class="partner-field">
+            <label for="partner-telefono">Teléfono</label>
+            <input type="tel" id="partner-telefono" name="telefono" required autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678">
+          </div>
+          <div class="partner-field">
+            <label for="partner-comentario">Comentario o necesidad</label>
+            <textarea id="partner-comentario" name="comentario" required placeholder="Tipo de proyecto, ubicación del terreno, plazos…"></textarea>
+          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <p class="partner-form-status" role="status" aria-live="polite" hidden></p>
+          <button type="submit" class="btn btn-primary btn-glow">Enviar solicitud</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     const toggle = document.querySelector(".menu-toggle");
@@ -703,5 +751,9 @@
   <script src="pensamos-video.js" defer></script>
   <script src="chat-widget.js" defer></script>
   <script src="contact-form.js" defer></script>
+  <script src="partner-leads-config.js" defer></script>
+  <script src="partners-config.js" defer></script>
+  <script src="partner-leads.js" defer></script>
+  <script src="partners.js" defer></script>
 </body>
 </html>

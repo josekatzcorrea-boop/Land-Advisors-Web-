@@ -1,0 +1,224 @@
+/* Partners estratégicos */
+.section-partners {
+  padding: 5rem 0;
+}
+
+.section-partners .section-intro {
+  max-width: 46em;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-3px);
+}
+
+.partner-card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 88px;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  border: 1px solid rgba(5, 44, 77, 0.08);
+}
+
+.partner-card-logo img {
+  max-width: 200px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 0 0 0.75rem;
+}
+
+.partner-card p {
+  flex: 1;
+  margin: 0 0 1.5rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.partner-card-cta {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Modal */
+.partner-modal {
+  width: min(92vw, 480px);
+  max-height: 90vh;
+  padding: 0;
+  border: none;
+  border-radius: calc(var(--radius) + 4px);
+  background: transparent;
+  overflow: visible;
+}
+
+.partner-modal::backdrop {
+  background: rgba(3, 29, 51, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.partner-modal-inner {
+  background: var(--white);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: 0 24px 64px rgba(3, 29, 51, 0.28);
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.partner-modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 0;
+  line-height: 1.35;
+  padding-right: 0.5rem;
+}
+
+.partner-modal-close {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(5, 44, 77, 0.08);
+  color: var(--blue);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.partner-modal-close:hover {
+  background: rgba(5, 44, 77, 0.14);
+}
+
+.partner-modal-body {
+  padding: 1rem 1.5rem 1.5rem;
+  overflow-y: auto;
+}
+
+.partner-modal-intro {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.partner-lead-form label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--text-dark);
+}
+
+.partner-lead-form input,
+.partner-lead-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid rgba(5, 44, 77, 0.15);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.partner-lead-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.partner-field {
+  margin-bottom: 0.85rem;
+}
+
+.partner-field.is-invalid input,
+.partner-field.is-invalid textarea {
+  border-color: rgba(180, 60, 50, 0.55);
+  background: rgba(180, 60, 50, 0.04);
+}
+
+.partner-field-error {
+  margin: 0.2rem 0 0;
+  font-size: 0.78rem;
+  color: #a33b2f;
+  min-height: 1.1em;
+}
+
+.partner-form-status {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.partner-form-status[data-type="success"] {
+  background: rgba(61, 107, 94, 0.12);
+  color: #2d5a4a;
+  border: 1px solid rgba(61, 107, 94, 0.25);
+}
+
+.partner-form-status[data-type="error"] {
+  background: rgba(180, 60, 50, 0.08);
+  color: #8b3228;
+  border: 1px solid rgba(180, 60, 50, 0.2);
+}
+
+body.partner-modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .section-partners {
+    padding: 3.5rem 0;
+  }
+
+  .partner-card {
+    padding: 1.5rem;
+  }
+
+  .partner-modal-header,
+  .partner-modal-body {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+}
