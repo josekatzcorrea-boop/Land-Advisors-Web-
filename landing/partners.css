@@ -32,20 +32,27 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 88px;
-  margin-bottom: 1.25rem;
-  padding: 0.75rem 1rem;
+  height: 96px;
+  min-height: 96px;
+  max-height: 96px;
+  margin-bottom: 1rem;
+  padding: 0.15rem 0.35rem;
   background: rgba(255, 255, 255, 0.92);
   border-radius: var(--radius);
   border: 1px solid rgba(5, 44, 77, 0.08);
+  overflow: hidden;
+  --partner-logo-scale: 1;
 }
 
 .partner-card-logo img {
-  max-width: 200px;
-  max-height: 72px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
+  object-position: center;
+  transform: scale(var(--partner-logo-scale));
+  transform-origin: center center;
 }
 
 .partner-card h3 {

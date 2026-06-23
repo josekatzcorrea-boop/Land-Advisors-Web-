@@ -33,20 +33,29 @@
   function renderCards() {
     grid.innerHTML = partners
       .map(function (p) {
+        var logoScale = p.logoScale || 1;
+        var logoStyle =
+          logoScale !== 1
+            ? ' style="--partner-logo-scale:' + logoScale + '"'
+            : "";
+        var nameHtml =
+          p.showName === false
+            ? ""
+            : "<h3>" + escapeHtml(p.name) + "</h3>";
         return (
           '<article class="partner-card glass-card" data-partner-id="' +
           escapeHtml(p.id) +
           '">' +
-          '<div class="partner-card-logo">' +
+          '<div class="partner-card-logo"' +
+          logoStyle +
+          ">" +
           '<img src="' +
           escapeHtml(p.logo) +
           '" alt="' +
           escapeHtml(p.name) +
-          '" width="200" height="80" loading="lazy">' +
+          '" loading="lazy">' +
           "</div>" +
-          "<h3>" +
-          escapeHtml(p.name) +
-          "</h3>" +
+          nameHtml +
           "<p>" +
           escapeHtml(p.description) +
           "</p>" +
