@@ -1,14 +1,12 @@
 /**
- * Formulario de contacto → envío automático a WhatsApp del consultor (CallMeBot).
- * Preferir webhookUrl (Google Apps Script) para evitar CORS.
- * Si no está configurado, abre wa.me con el mensaje prellenado (el visitante debe enviar).
+ * Formulario de contacto — captura lead + siguiente paso (calendario / WhatsApp).
  */
 (function () {
   const DEFAULT_PHONE = "+56974533265";
 
   const INTENT_LABELS = {
-    diagnostico: "Diagnóstico estratégico (1 UF)",
-    busqueda: "Búsqueda personalizada (5 UF)",
+    diagnostico: "Diagnóstico estratégico",
+    busqueda: "Búsqueda personalizada",
     estudio: "Estudio de potencial inmobiliario",
     estructuracion: "Estructuración de proyecto",
     otro: "Otro / aún no sé",
@@ -22,12 +20,45 @@
     otro: "Otro",
   };
 
-  function config() {
+  const TRACK_INTENT = {
+    cta_diagnostico: "diagnostico",
+    cta_contacto: "diagnostico",
+    cta_busqueda: "busqueda",
+    cta_estudio: "estudio",
+    cta_estructuracion: "estructuracion",
+  };
+
+  const FORM_COPY = {
+    diagnostico: {
+      title: "Agenda tu diagnóstico estratégico",
+      intro:
+        "Cuéntanos tu situación. Al enviar, podrás elegir horario para la reunión (1 UF) o confirmar por WhatsApp con José.",
+      submit: "Continuar — agendar diagnóstico",
+      successTitle: "¡Listo! Ahora elige cómo reservar tu diagnóstico",
+    },
+    default: {
+      title: "Agenda tu reunión estratégica",
+      intro:
+        "Cuéntanos tu situación. Al enviar, podrás elegir horario en el calendario o confirmar por WhatsApp con José.",
+      submit: "Continuar — agendar reunión",
+      successTitle: "¡Listo! Ahora elige cómo reservar tu reunión",
+    },
+  };
+
+  function whatsappConfig() {
     return window.LA_WHATSAPP || {};
+  }
+
+  function calendarConfig() {
+    return window.LA_CALENDAR || {};
   }
 
   function label(map, value) {
     return (value && map[value]) || value || "—";
+  }
+
+  function copyForIntent(intent) {
+    return intent === "diagnostico" ? FORM_COPY.diagnostico : FORM_COPY.default;
   }
 
   function buildMessage(data) {
@@ -45,6 +76,18 @@
     ].join("\n");
   }
 
+  function buildVisitorWhatsApp(data) {
+    const nombre = (data.get("nombre") || "").trim();
+    const servicio = label(INTENT_LABELS, data.get("intent"));
+    return [
+      "Hola José, acabo de completar el formulario en landadvisors.cl.",
+      "",
+      "Soy " + (nombre || "—") + ". Me interesa: " + servicio + ".",
+      "",
+      "¿Podemos coordinar la reunión? Gracias.",
+    ].join("\n");
+  }
+
   function whatsAppUrl(text) {
     const widget =
       window.LAChatWidget &&
@@ -56,6 +99,22 @@
     return base + sep + "text=" + encodeURIComponent(text);
   }
 
+  function calendarUrl(intent) {
+    const cfg = calendarConfig();
+    const events = cfg["events"] || {};
+    const specific = (events[intent] || "").trim();
+    const fallback = (cfg.url || "").trim();
+    const url = specific || fallback;
+    if (!url) return "";
+    return url;
+  }
+
+  function calendarEnabled(intent) {
+    const cfg = calendarConfig();
+    if (!cfg.enabled) return false;
+    return Boolean(calendarUrl(intent));
+  }
+
   function setStatus(form, message, type) {
     let el = form.querySelector(".form-status");
     if (!el) {
@@ -63,7 +122,9 @@
       el.className = "form-status";
       el.setAttribute("role", "status");
       el.setAttribute("aria-live", "polite");
-      form.appendChild(el);
+      const fields = form.querySelector(".contact-form-fields");
+      if (fields) fields.appendChild(el);
+      else form.appendChild(el);
     }
     el.textContent = message;
     el.hidden = !message;
@@ -186,7 +247,7 @@
   }
 
   function sendAutoWhatsApp(text) {
-    const cfg = config();
+    const cfg = whatsappConfig();
     const webhookUrl = (cfg.webhookUrl || "").trim();
     const apiKey = (cfg.apiKey || "").trim();
     const phone = normalizePhone(cfg.phone);
@@ -203,7 +264,125 @@
     return Promise.reject(new Error("not_configured"));
   }
 
-  document.querySelectorAll(".contact-form").forEach(function (form) {
+  function applyFormCopy(form, intent) {
+    const copy = copyForIntent(intent);
+    const titleEl = document.getElementById("contacto-form-title");
+    const introEl = document.getElementById("contacto-form-intro");
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (titleEl) titleEl.textContent = copy.title;
+    if (introEl) introEl.textContent = copy.intro;
+    if (submitBtn) {
+      submitBtn.textContent = copy.submit;
+      submitBtn.dataset.label = copy.submit;
+    }
+  }
+
+  function setIntent(form, intent) {
+    if (!intent || !INTENT_LABELS[intent]) return;
+    const select = form.querySelector('[name="intent"]');
+    if (select) select.value = intent;
+    applyFormCopy(form, intent);
+  }
+
+  function readIntentFromUrl() {
+    const params = new URLSearchParams(location.search);
+    return params.get("intent") || params.get("servicio") || "";
+  }
+
+  function bindIntentFromCtas(form) {
+    document.addEventListener("click", function (e) {
+      const link = e.target.closest('a[href*="#contacto-form"], a[href*="#contacto"]');
+      if (!link) return;
+      const track = link.getAttribute("data-track") || "";
+      const intent = TRACK_INTENT[track] || link.getAttribute("data-form-intent") || "";
+      if (intent) {
+        window.setTimeout(function () {
+          setIntent(form, intent);
+        }, 50);
+      }
+    });
+  }
+
+  function showSuccessPanel(form, data) {
+    const fields = form.querySelector(".contact-form-fields");
+    const panel = form.querySelector(".contact-success");
+    if (!fields || !panel) return;
+
+    const intent = data.get("intent") || "diagnostico";
+    const copy = copyForIntent(intent === "diagnostico" ? "diagnostico" : "default");
+    const calUrl = calendarUrl(intent);
+    const hasCalendar = calendarEnabled(intent);
+    const waUrl = whatsAppUrl(buildVisitorWhatsApp(data));
+
+    const titleEl = panel.querySelector(".contact-success__title");
+    const leadEl = panel.querySelector(".contact-success__lead");
+    const calBtn = panel.querySelector("[data-action='calendar']");
+    const waBtn = panel.querySelector("[data-action='whatsapp']");
+    const noteEl = panel.querySelector(".contact-success__note");
+
+    if (titleEl) titleEl.textContent = copy.successTitle;
+    if (leadEl) {
+      leadEl.textContent = hasCalendar
+        ? "Tu información ya está con Land Advisors. Elige horario en el calendario o confirma por WhatsApp — lo que te resulte más cómodo."
+        : "Tu información ya está con Land Advisors. Confirma por WhatsApp para coordinar la reunión en los próximos minutos.";
+    }
+
+    if (calBtn) {
+      if (hasCalendar) {
+        calBtn.href = calUrl;
+        calBtn.hidden = false;
+        calBtn.classList.add("btn-primary", "btn-glow");
+      } else {
+        calBtn.hidden = true;
+      }
+    }
+
+    if (waBtn) {
+      waBtn.href = waUrl;
+      if (hasCalendar) {
+        waBtn.classList.remove("btn-primary", "btn-glow");
+        waBtn.classList.add("btn-glass");
+        waBtn.textContent = "Confirmar por WhatsApp";
+      } else {
+        waBtn.classList.add("btn-primary", "btn-glow");
+        waBtn.classList.remove("btn-glass");
+        waBtn.textContent = "Abrir WhatsApp y coordinar reunión";
+      }
+    }
+
+    if (noteEl) {
+      noteEl.textContent =
+        "Reunión ~30 min · Online o presencial en Puerto Varas · Respondemos en horario laboral (lun–vie).";
+    }
+
+    fields.hidden = true;
+    panel.hidden = false;
+    form.dataset.state = "success";
+
+    if (typeof window.LA_track === "function") {
+      window.LA_track("form_success", {
+        form_intent: intent,
+        has_calendar: hasCalendar,
+        page_path: location.pathname,
+      });
+    }
+
+    window.setTimeout(function () {
+      panel.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+  }
+
+  function initForm(form) {
+    const urlIntent = readIntentFromUrl();
+    if (urlIntent) setIntent(form, urlIntent);
+    else applyFormCopy(form, form.querySelector('[name="intent"]')?.value || "diagnostico");
+
+    form.querySelector('[name="intent"]')?.addEventListener("change", function (e) {
+      applyFormCopy(form, e.target.value || "diagnostico");
+    });
+
+    bindIntentFromCtas(form);
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const data = new FormData(form);
@@ -216,18 +395,14 @@
         window.LA_track("form_submit", { form_intent: intent, page_path: location.pathname });
       }
 
-      const cfg = config();
+      const cfg = whatsappConfig();
       const webhookUrl = (cfg.webhookUrl || "").trim();
       const apiKey = (cfg.apiKey || "").trim();
       const autoSend = cfg.enabled && (webhookUrl || apiKey);
 
       if (!autoSend) {
+        showSuccessPanel(form, data);
         window.open(whatsAppUrl(message), "_blank", "noopener,noreferrer");
-        setStatus(
-          form,
-          "Se abrió WhatsApp con tu mensaje. Confírmalo con Enviar para que llegue a Land Advisors.",
-          "info"
-        );
         return;
       }
 
@@ -235,33 +410,22 @@
       setStatus(form, "", "");
 
       sendAutoWhatsApp(message)
-        .then(function (result) {
-          if (result && result.confirmed) {
-            setStatus(
-              form,
-              "¡Listo! Recibimos tu solicitud. Te contactaremos pronto por WhatsApp o correo.",
-              "success"
-            );
-            form.reset();
-            return;
-          }
-          setStatus(
-            form,
-            "Intentamos enviar tu solicitud, pero no pudimos confirmarlo desde el navegador. Te contactaremos pronto o escríbenos por el botón verde de WhatsApp.",
-            "info"
-          );
-          form.reset();
+        .then(function () {
+          showSuccessPanel(form, data);
         })
         .catch(function () {
+          showSuccessPanel(form, data);
           setStatus(
             form,
-            "Hubo un problema al enviar. Intenta de nuevo o escríbenos por el botón verde de WhatsApp.",
-            "error"
+            "Recibimos tu datos en pantalla. Si no ves el calendario, usa WhatsApp para confirmar la reunión.",
+            "info"
           );
         })
         .finally(function () {
           setSubmitting(form, false);
         });
     });
-  });
+  }
+
+  document.querySelectorAll(".contact-form").forEach(initForm);
 })();

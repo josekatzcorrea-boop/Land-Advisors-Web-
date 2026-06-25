@@ -623,12 +623,11 @@
     <section id="contacto">
       <div class="container" data-reveal>
         <p class="section-label">Contacto</p>
-        <h2 class="section-title">Hablemos antes de que compres</h2>
+        <h2 class="section-title" id="contacto-form-title">Agenda tu reunión estratégica</h2>
         <div class="contact-grid">
           <div class="contact-info glass-card">
-            <p class="section-intro" style="margin-bottom: 1.5rem;">
-              Agenda una reunión estratégica. El primer paso puede ser un diagnóstico para entender tus objetivos,
-              presupuesto y qué terrenos tienen sentido real para ti —en vivienda, inversión o proyecto comercial.
+            <p class="section-intro" id="contacto-form-intro" style="margin-bottom: 1.5rem;">
+              Cuéntanos tu situación. Al enviar, podrás elegir horario en el calendario o confirmar por WhatsApp con José.
             </p>
             <p><strong>Correo:</strong> <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contacto@landadvisors.cl" target="_blank" rel="noopener noreferrer">contacto@landadvisors.cl</a></p>
             <p><strong>Web:</strong> <a href="https://www.landadvisors.cl/" target="_blank" rel="noopener noreferrer">www.landadvisors.cl</a></p>
@@ -639,35 +638,47 @@
             </p>
           </div>
           <form class="contact-form glass-card" action="#" method="post" id="contacto-form">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required autocomplete="name">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-            <label for="telefono">Teléfono / WhatsApp</label>
-            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678">
-            <label for="intent">¿Qué necesitas?</label>
-            <select id="intent" name="intent" required>
-              <option value="">Seleccionar servicio…</option>
-              <option value="diagnostico">Diagnóstico estratégico (1 UF)</option>
-              <option value="busqueda">Búsqueda personalizada (5 UF)</option>
-              <option value="estudio">Estudio de potencial inmobiliario</option>
-              <option value="estructuracion">Estructuración de proyecto</option>
-              <option value="otro">Otro / aún no sé</option>
-            </select>
-            <p class="form-hint">El primer paso suele ser el diagnóstico estratégico para ordenar tu búsqueda.</p>
-            <label for="perfil">¿Qué te describe mejor?</label>
-            <select id="perfil" name="perfil">
-              <option value="">Seleccionar…</option>
-              <option value="patrimonial">Inversionista patrimonial</option>
-              <option value="familia">Familia — calidad de vida</option>
-              <option value="desarrollador">Inversionista desarrollador</option>
-              <option value="empresario">Empresario local</option>
-              <option value="otro">Otro</option>
-            </select>
-            <label for="mensaje">Cuéntanos tu objetivo</label>
-            <textarea id="mensaje" name="mensaje" required placeholder="Territorio de interés, presupuesto, tipo de proyecto, plazo…"></textarea>
-            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-            <button type="submit" class="btn btn-primary btn-glow">Solicitar información</button>
+            <div class="contact-form-fields">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" required autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678">
+              <label for="intent">¿Qué necesitas?</label>
+              <select id="intent" name="intent" required>
+                <option value="">Seleccionar servicio…</option>
+                <option value="diagnostico">Diagnóstico estratégico</option>
+                <option value="busqueda">Búsqueda personalizada</option>
+                <option value="estudio">Estudio de potencial inmobiliario</option>
+                <option value="estructuracion">Estructuración de proyecto</option>
+                <option value="otro">Otro / aún no sé</option>
+              </select>
+              <p class="form-hint">El primer paso suele ser el diagnóstico estratégico para ordenar tu búsqueda.</p>
+              <label for="perfil">¿Qué te describe mejor?</label>
+              <select id="perfil" name="perfil">
+                <option value="">Seleccionar…</option>
+                <option value="patrimonial">Inversionista patrimonial</option>
+                <option value="familia">Familia — calidad de vida</option>
+                <option value="desarrollador">Inversionista desarrollador</option>
+                <option value="empresario">Empresario local</option>
+                <option value="otro">Otro</option>
+              </select>
+              <label for="mensaje">Cuéntanos tu objetivo</label>
+              <textarea id="mensaje" name="mensaje" required placeholder="Territorio de interés, presupuesto, tipo de proyecto, plazo…"></textarea>
+              <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+              <button type="submit" class="btn btn-primary btn-glow">Continuar — agendar reunión</button>
+            </div>
+            <div class="contact-success" hidden>
+              <p class="contact-success__kicker">Solicitud recibida</p>
+              <h3 class="contact-success__title">¡Listo! Ahora elige cómo reservar tu reunión</h3>
+              <p class="contact-success__lead">Tu información ya está con Land Advisors. Elige el camino que prefieras:</p>
+              <div class="contact-success__actions">
+                <a href="#" class="btn btn-primary btn-glow" data-action="calendar" data-track="cta_calendar" target="_blank" rel="noopener noreferrer">Elegir horario para reunión</a>
+                <a href="#" class="btn btn-glass" data-action="whatsapp" data-track="cta_whatsapp" target="_blank" rel="noopener noreferrer">Confirmar por WhatsApp</a>
+              </div>
+              <p class="contact-success__note">Reunión ~30 min · Online o presencial en Puerto Varas · Respondemos en horario laboral (lun–vie).</p>
+            </div>
           </form>
         </div>
       </div>
@@ -744,6 +755,7 @@
   </script>
   <script src="analytics-config.js" defer></script>
   <script src="whatsapp-config.js" defer></script>
+  <script src="calendar-config.js" defer></script>
   <script src="analytics.js" defer></script>
   <script src="conversion-tracking.js" defer></script>
   <script src="landing-ui.js" defer></script>

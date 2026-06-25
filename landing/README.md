@@ -38,6 +38,7 @@ Assets en `../assets/`: `logo-horizontal.png` (fondos claros), `logo-horizontal-
 - Correo y dominio en `index.html` (contacto, mailto del formulario).
 - WhatsApp en `chat-widget.js` (`CONFIG.whatsapp.href`).
 - Formulario WhatsApp: copiar `whatsapp-config.example.js` → `whatsapp-config.js`, desplegar `scripts/whatsapp-proxy.gs` en Google Apps Script y pegar la URL en `webhookUrl` (ver instrucciones en el example).
+- Calendario post-formulario: copiar `calendar-config.example.js` → `calendar-config.js`, pegar URL de Google Calendar (Cita programada) o Calendly, y poner `enabled: true`.
 - Formulario: conectar a tu backend o servicio (Formspree, etc.) en lugar del `mailto` actual.
 
 ## Video territorial (sección Cómo pensamos)
