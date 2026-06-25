@@ -70,9 +70,6 @@
       "Teléfono: " + (data.get("telefono") || "").trim(),
       "Servicio: " + label(INTENT_LABELS, data.get("intent")),
       "Perfil: " + label(PERFIL_LABELS, data.get("perfil")),
-      "",
-      "Objetivo:",
-      (data.get("mensaje") || "").trim(),
     ].join("\n");
   }
 
