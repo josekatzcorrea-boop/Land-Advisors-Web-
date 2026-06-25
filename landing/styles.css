@@ -1741,6 +1741,68 @@ section {
 .contact-success__actions .btn {
   width: 100%;
   justify-content: center;
+  gap: 0.55rem;
+  text-decoration: none !important;
+}
+
+.contact-success__btn-calendar {
+  background: var(--blue);
+  color: #fff !important;
+  border: 1px solid rgba(168, 197, 208, 0.25);
+  padding: 1.1rem 1.5rem;
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-success__btn-calendar:hover {
+  background: var(--blue-dark);
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(5, 44, 77, 0.18);
+}
+
+.contact-success__btn-whatsapp {
+  background: #fff;
+  color: var(--text-dark) !important;
+  border: 1.5px solid rgba(5, 44, 77, 0.14);
+  padding: 0.95rem 1.35rem;
+  font-size: 0.98rem;
+}
+
+.contact-success__btn-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.08);
+  border-color: rgba(37, 211, 102, 0.45);
+  color: var(--text-dark) !important;
+  text-decoration: none !important;
+  transform: translateY(-2px);
+}
+
+.contact-success__btn-whatsapp--primary {
+  background: #25d366;
+  border-color: #25d366;
+  color: #fff !important;
+  padding: 1.1rem 1.5rem;
+  font-size: 1.05rem;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+
+.contact-success__btn-whatsapp--primary:hover {
+  background: #1ebe57;
+  border-color: #1ebe57;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.contact-success__btn-whatsapp--primary .contact-success__wa-icon {
+  fill: #fff;
+}
+
+.contact-success__wa-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+  fill: #25d366;
 }
 
 .contact-success__note {

@@ -328,7 +328,6 @@
       if (hasCalendar) {
         calBtn.href = calUrl;
         calBtn.hidden = false;
-        calBtn.classList.add("btn-primary", "btn-glow");
       } else {
         calBtn.hidden = true;
       }
@@ -336,14 +335,12 @@
 
     if (waBtn) {
       waBtn.href = waUrl;
-      if (hasCalendar) {
-        waBtn.classList.remove("btn-primary", "btn-glow");
-        waBtn.classList.add("btn-glass");
-        waBtn.textContent = "Confirmar por WhatsApp";
-      } else {
-        waBtn.classList.add("btn-primary", "btn-glow");
-        waBtn.classList.remove("btn-glass");
-        waBtn.textContent = "Abrir WhatsApp y coordinar reunión";
+      const waLabel = waBtn.querySelector("[data-wa-label]");
+      waBtn.classList.toggle("contact-success__btn-whatsapp--primary", !hasCalendar);
+      if (waLabel) {
+        waLabel.textContent = hasCalendar
+          ? "Confirmar por WhatsApp"
+          : "Abrir WhatsApp y coordinar reunión";
       }
     }
 
