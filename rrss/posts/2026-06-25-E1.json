@@ -1,0 +1,30 @@
+{
+  "id": "2026-06-25-E1",
+  "fecha_publicacion": "2026-06-25",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "E",
+  "campana": null,
+  "tema": "Normativa en parcelaciones: limitaciones de uso urbano vs rural",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": true,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-06-25-E1.json",
+  "piezas_visuales": "rrss/posts/2026-06-25-E1/index.html",
+  "export_output": "rrss/output/2026-06-25-E1/",
+  "titulo_interno": "Educación normativa — limitaciones uso PRC vs LGUC · pilar E",
+  "caption_ig": "Comprar parcela en el sur no es lo mismo que comprar en ciudad.\n\nLGUC y OGUC aplican en suelo urbano y rural.\n\nLa diferencia clave está en dónde se definen las limitaciones al uso:\n→ Suelo urbano: PRC\n→ Suelo rural: LGUC\n→ Parcelación tipo B: además, reglamento de copropiedad\n\nDesliza el carrusel 👉 qué validar antes de ofertar.\n\n¿Has leído el reglamento antes de visitar un lote?\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente y objetivos del cliente.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #InversiónInmobiliaria #TerrenosChile #SurDeChile #Parcelaciones #LGUC #OGUC #PRC #InteligenciaTerritorial #PuertoVaras #EstrategiaInmobiliaria #EducaciónInmobiliaria",
+  "caption_fb": "LGUC y OGUC aplican en suelo urbano y rural. Lo que cambia es dónde están las limitaciones al uso del suelo.\n\nSuelo urbano → PRC (planificación territorial).\nSuelo rural → LGUC.\nParcelación tipo B → además, reglamento de copropiedad.\n\nCarrusel educativo: qué mirar antes de ofertar en loteos del sur de Chile.\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente y objetivos del cliente.\n\nAgenda tu reunión estratégica:\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-normativa-jun2026\n\n#LandAdvisors #SurDeChile #TerrenosChile #Parcelaciones",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-normativa-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-normativa",
+    "fotos": "rrss/assets/fotos-seleccion/",
+    "layouts": "intro-blanco · contraste · split · chips · foto-natural · CTA",
+    "correccion": "2026-06-25 — OGUC también en urbano; limitaciones uso: PRC vs LGUC + reglamento tipo B"
+  }
+}

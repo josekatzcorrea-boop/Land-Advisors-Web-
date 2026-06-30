@@ -1,0 +1,3430 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Land Advisors Chile//LinkedIn Calendar//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Land Advisors — LinkedIn 90 días
+X-WR-TIMEZONE:America/Santiago
+BEGIN:VTIMEZONE
+TZID:America/Santiago
+X-LIC-LOCATION:America/Santiago
+BEGIN:STANDARD
+DTSTART:19700405T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700906T000000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0300
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LI-2026-06-17-P1-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260617T083000
+DTEND;TZID=America/Santiago:20260617T090000
+SUMMARY:👤 LinkedIn — Lanzamiento LinkedIn — carta del fundador
+DESCRIPTION:ID: LI-2026-06-17-P1-W01\\nCanal: Personal · José Katz\\nSemana: 1/13 · Fase 1\\nFormato: texto · Pilar: A\\nTema: Lanzamiento LinkedIn — carta del fundador\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-17-P1.json
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Lanzamiento LinkedIn — carta del fundador
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Lanzamiento LinkedIn — carta del fundador
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Lanzamiento LinkedIn — carta del fundador
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-18-E2-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260618T110000
+DTEND;TZID=America/Santiago:20260618T113000
+SUMMARY:🏢 LinkedIn — Metodología — territorio primero, activo después
+DESCRIPTION:ID: LI-2026-06-18-E2-W01\\nCanal: Empresa · Land Advisors\\nSemana: 1/13 · Fase 1\\nFormato: carrusel · Pilar: M\\nTema: Metodología — territorio primero\, activo después\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-18-E2.json
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología — territorio primero, activo después
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología — territorio primero, activo después
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología — territorio primero, activo después
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-18-E2-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260617T140000
+DTEND;TZID=America/Santiago:20260617T143000
+SUMMARY:📋 Preparar LI — Metodología — territorio primero, activo después
+DESCRIPTION:Publicación: 2026-06-18 11:00 Chile\\nLI-2026-06-18-E2-W01\\nMetodología — territorio primero\, activo después
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Metodología — territorio primero, activo después
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-19-P2-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260619T083000
+DTEND;TZID=America/Santiago:20260619T090000
+SUMMARY:👤 LinkedIn — Por qué no somos corredora
+DESCRIPTION:ID: LI-2026-06-19-P2-W01\\nCanal: Personal · José Katz\\nSemana: 1/13 · Fase 1\\nFormato: carrusel · Pilar: M\\nTema: Por qué no somos corredora\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-19-P2.json
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Por qué no somos corredora
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Por qué no somos corredora
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Por qué no somos corredora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-19-P2-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260618T140000
+DTEND;TZID=America/Santiago:20260618T143000
+SUMMARY:📋 Preparar LI — Por qué no somos corredora
+DESCRIPTION:Publicación: 2026-06-19 08:30 Chile\\nLI-2026-06-19-P2-W01\\nPor qué no somos corredora
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Por qué no somos corredora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-20-P3-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260620T083000
+DTEND;TZID=America/Santiago:20260620T090000
+SUMMARY:👤 LinkedIn — 3 errores al comprar terreno en el sur
+DESCRIPTION:ID: LI-2026-06-20-P3-W01\\nCanal: Personal · José Katz\\nSemana: 1/13 · Fase 1\\nFormato: carrusel · Pilar: E\\nTema: 3 errores al comprar terreno en el sur\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-20-P3.json
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 errores al comprar terreno en el sur
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 errores al comprar terreno en el sur
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 errores al comprar terreno en el sur
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-20-P3-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260619T140000
+DTEND;TZID=America/Santiago:20260619T143000
+SUMMARY:📋 Preparar LI — 3 errores al comprar terreno en el sur
+DESCRIPTION:Publicación: 2026-06-20 08:30 Chile\\nLI-2026-06-20-P3-W01\\n3 errores al comprar terreno en el sur
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — 3 errores al comprar terreno en el sur
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-20-P4-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260620T170000
+DTEND;TZID=America/Santiago:20260620T173000
+SUMMARY:👤 LinkedIn — Video Ensenada — señales territoriales en 60 s
+DESCRIPTION:ID: LI-2026-06-20-P4-W01\\nCanal: Personal · José Katz\\nSemana: 1/13 · Fase 1\\nFormato: video · Pilar: T\\nTema: Video Ensenada — señales territoriales en 60 s\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-20-P4.json
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video Ensenada — señales territoriales en 60 s
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video Ensenada — señales territoriales en 60 s
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video Ensenada — señales territoriales en 60 s
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-20-P4-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260619T140000
+DTEND;TZID=America/Santiago:20260619T143000
+SUMMARY:📋 Preparar LI — Video Ensenada — señales territoriales en 60 s
+DESCRIPTION:Publicación: 2026-06-20 17:00 Chile\\nLI-2026-06-20-P4-W01\\nVideo Ensenada — señales territoriales en 60 s
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video Ensenada — señales territoriales en 60 s
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-21-E3-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260621T100000
+DTEND;TZID=America/Santiago:20260621T103000
+SUMMARY:🏢 LinkedIn — Servicio spotlight — diagnóstico estratégico
+DESCRIPTION:ID: LI-2026-06-21-E3-W01\\nCanal: Empresa · Land Advisors\\nSemana: 1/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: Servicio spotlight — diagnóstico estratégico\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief listo: rrss/linkedin/posts/LI-2026-06-21-E3.json
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio spotlight — diagnóstico estratégico
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio spotlight — diagnóstico estratégico
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio spotlight — diagnóstico estratégico
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-21-E3-W01@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260620T140000
+DTEND;TZID=America/Santiago:20260620T143000
+SUMMARY:📋 Preparar LI — Servicio spotlight — diagnóstico estratégico
+DESCRIPTION:Publicación: 2026-06-21 10:00 Chile\\nLI-2026-06-21-E3-W01\\nServicio spotlight — diagnóstico estratégico
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Servicio spotlight — diagnóstico estratégico
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-23-E1-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260623T100000
+DTEND;TZID=America/Santiago:20260623T103000
+SUMMARY:🏢 LinkedIn — Mapa cuenca Lago Llanquihue
+DESCRIPTION:ID: LI-2026-06-23-E1-W02\\nCanal: Empresa · Land Advisors\\nSemana: 2/13 · Fase 1\\nFormato: carrusel · Pilar: T\\nTema: Mapa cuenca Lago Llanquihue\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa cuenca Lago Llanquihue
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa cuenca Lago Llanquihue
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa cuenca Lago Llanquihue
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-23-E1-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260622T140000
+DTEND;TZID=America/Santiago:20260622T143000
+SUMMARY:📋 Preparar LI — Mapa cuenca Lago Llanquihue
+DESCRIPTION:Publicación: 2026-06-23 10:00 Chile\\nLI-2026-06-23-E1-W02\\nMapa cuenca Lago Llanquihue
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Mapa cuenca Lago Llanquihue
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-24-P1-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260624T083000
+DTEND;TZID=America/Santiago:20260624T090000
+SUMMARY:👤 LinkedIn — 10 años leyendo el sur de Chile
+DESCRIPTION:ID: LI-2026-06-24-P1-W02\\nCanal: Personal · José Katz\\nSemana: 2/13 · Fase 1\\nFormato: texto · Pilar: A\\nTema: 10 años leyendo el sur de Chile\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 10 años leyendo el sur de Chile
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 10 años leyendo el sur de Chile
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 10 años leyendo el sur de Chile
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-24-P1-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260623T140000
+DTEND;TZID=America/Santiago:20260623T143000
+SUMMARY:📋 Preparar LI — 10 años leyendo el sur de Chile
+DESCRIPTION:Publicación: 2026-06-24 08:30 Chile\\nLI-2026-06-24-P1-W02\\n10 años leyendo el sur de Chile
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — 10 años leyendo el sur de Chile
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-25-E2-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260625T110000
+DTEND;TZID=America/Santiago:20260625T113000
+SUMMARY:🏢 LinkedIn — Camino del cliente Land Advisors
+DESCRIPTION:ID: LI-2026-06-25-E2-W02\\nCanal: Empresa · Land Advisors\\nSemana: 2/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: Camino del cliente Land Advisors\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Camino del cliente Land Advisors
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Camino del cliente Land Advisors
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Camino del cliente Land Advisors
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-25-E2-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260624T140000
+DTEND;TZID=America/Santiago:20260624T143000
+SUMMARY:📋 Preparar LI — Camino del cliente Land Advisors
+DESCRIPTION:Publicación: 2026-06-25 11:00 Chile\\nLI-2026-06-25-E2-W02\\nCamino del cliente Land Advisors
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Camino del cliente Land Advisors
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-26-P2-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260626T083000
+DTEND;TZID=America/Santiago:20260626T090000
+SUMMARY:👤 LinkedIn — Opinión: portales vs consultoría
+DESCRIPTION:ID: LI-2026-06-26-P2-W02\\nCanal: Personal · José Katz\\nSemana: 2/13 · Fase 1\\nFormato: texto · Pilar: M\\nTema: Opinión: portales vs consultoría\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: portales vs consultoría
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: portales vs consultoría
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: portales vs consultoría
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-26-P2-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260625T140000
+DTEND;TZID=America/Santiago:20260625T143000
+SUMMARY:📋 Preparar LI — Opinión: portales vs consultoría
+DESCRIPTION:Publicación: 2026-06-26 08:30 Chile\\nLI-2026-06-26-P2-W02\\nOpinión: portales vs consultoría
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Opinión: portales vs consultoría
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-27-P3-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260627T083000
+DTEND;TZID=America/Santiago:20260627T090000
+SUMMARY:👤 LinkedIn — Carrusel PRC Puerto Varas
+DESCRIPTION:ID: LI-2026-06-27-P3-W02\\nCanal: Personal · José Katz\\nSemana: 2/13 · Fase 1\\nFormato: carrusel · Pilar: E\\nTema: Carrusel PRC Puerto Varas\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel PRC Puerto Varas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel PRC Puerto Varas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel PRC Puerto Varas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-27-P3-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260626T140000
+DTEND;TZID=America/Santiago:20260626T143000
+SUMMARY:📋 Preparar LI — Carrusel PRC Puerto Varas
+DESCRIPTION:Publicación: 2026-06-27 08:30 Chile\\nLI-2026-06-27-P3-W02\\nCarrusel PRC Puerto Varas
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel PRC Puerto Varas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-27-P4-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260627T170000
+DTEND;TZID=America/Santiago:20260627T173000
+SUMMARY:👤 LinkedIn — Pregunta abierta a la audiencia
+DESCRIPTION:ID: LI-2026-06-27-P4-W02\\nCanal: Personal · José Katz\\nSemana: 2/13 · Fase 1\\nFormato: encuesta · Pilar: A\\nTema: Pregunta abierta a la audiencia\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Pregunta abierta a la audiencia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Pregunta abierta a la audiencia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Pregunta abierta a la audiencia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-27-P4-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260626T140000
+DTEND;TZID=America/Santiago:20260626T143000
+SUMMARY:📋 Preparar LI — Pregunta abierta a la audiencia
+DESCRIPTION:Publicación: 2026-06-27 17:00 Chile\\nLI-2026-06-27-P4-W02\\nPregunta abierta a la audiencia
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Pregunta abierta a la audiencia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-28-E3-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260628T100000
+DTEND;TZID=America/Santiago:20260628T103000
+SUMMARY:🏢 LinkedIn — Caso agregado brochure (credibilidad)
+DESCRIPTION:ID: LI-2026-06-28-E3-W02\\nCanal: Empresa · Land Advisors\\nSemana: 2/13 · Fase 1\\nFormato: carrusel · Pilar: A\\nTema: Caso agregado brochure (credibilidad)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado brochure (credibilidad)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado brochure (credibilidad)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado brochure (credibilidad)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-28-E3-W02@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260627T140000
+DTEND;TZID=America/Santiago:20260627T143000
+SUMMARY:📋 Preparar LI — Caso agregado brochure (credibilidad)
+DESCRIPTION:Publicación: 2026-06-28 10:00 Chile\\nLI-2026-06-28-E3-W02\\nCaso agregado brochure (credibilidad)
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso agregado brochure (credibilidad)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-06-30-E1-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260630T100000
+DTEND;TZID=America/Santiago:20260630T103000
+SUMMARY:🏢 LinkedIn — Educación: OGUC rural
+DESCRIPTION:ID: LI-2026-06-30-E1-W03\\nCanal: Empresa · Land Advisors\\nSemana: 3/13 · Fase 1\\nFormato: carrusel · Pilar: E\\nTema: Educación: OGUC rural\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación: OGUC rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación: OGUC rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación: OGUC rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-06-30-E1-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260629T140000
+DTEND;TZID=America/Santiago:20260629T143000
+SUMMARY:📋 Preparar LI — Educación: OGUC rural
+DESCRIPTION:Publicación: 2026-06-30 10:00 Chile\\nLI-2026-06-30-E1-W03\\nEducación: OGUC rural
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Educación: OGUC rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-01-P1-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260701T083000
+DTEND;TZID=America/Santiago:20260701T090000
+SUMMARY:👤 LinkedIn — Video terreno: señales visibles
+DESCRIPTION:ID: LI-2026-07-01-P1-W03\\nCanal: Personal · José Katz\\nSemana: 3/13 · Fase 1\\nFormato: video · Pilar: T\\nTema: Video terreno: señales visibles\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video terreno: señales visibles
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video terreno: señales visibles
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video terreno: señales visibles
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-01-P1-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260630T140000
+DTEND;TZID=America/Santiago:20260630T143000
+SUMMARY:📋 Preparar LI — Video terreno: señales visibles
+DESCRIPTION:Publicación: 2026-07-01 08:30 Chile\\nLI-2026-07-01-P1-W03\\nVideo terreno: señales visibles
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video terreno: señales visibles
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-02-E2-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260702T110000
+DTEND;TZID=America/Santiago:20260702T113000
+SUMMARY:🏢 LinkedIn — Servicio búsqueda personalizada
+DESCRIPTION:ID: LI-2026-07-02-E2-W03\\nCanal: Empresa · Land Advisors\\nSemana: 3/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: Servicio búsqueda personalizada\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio búsqueda personalizada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio búsqueda personalizada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio búsqueda personalizada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-02-E2-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260701T140000
+DTEND;TZID=America/Santiago:20260701T143000
+SUMMARY:📋 Preparar LI — Servicio búsqueda personalizada
+DESCRIPTION:Publicación: 2026-07-02 11:00 Chile\\nLI-2026-07-02-E2-W03\\nServicio búsqueda personalizada
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Servicio búsqueda personalizada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-03-P2-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260703T083000
+DTEND;TZID=America/Santiago:20260703T090000
+SUMMARY:👤 LinkedIn — Cuándo NO comprar (confianza intelectual)
+DESCRIPTION:ID: LI-2026-07-03-P2-W03\\nCanal: Personal · José Katz\\nSemana: 3/13 · Fase 1\\nFormato: texto · Pilar: M\\nTema: Cuándo NO comprar (confianza intelectual)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Cuándo NO comprar (confianza intelectual)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Cuándo NO comprar (confianza intelectual)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Cuándo NO comprar (confianza intelectual)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-03-P2-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260702T140000
+DTEND;TZID=America/Santiago:20260702T143000
+SUMMARY:📋 Preparar LI — Cuándo NO comprar (confianza intelectual)
+DESCRIPTION:Publicación: 2026-07-03 08:30 Chile\\nLI-2026-07-03-P2-W03\\nCuándo NO comprar (confianza intelectual)
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Cuándo NO comprar (confianza intelectual)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-04-P3-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260704T083000
+DTEND;TZID=America/Santiago:20260704T090000
+SUMMARY:👤 LinkedIn — Carrusel plusvalía contorno rural
+DESCRIPTION:ID: LI-2026-07-04-P3-W03\\nCanal: Personal · José Katz\\nSemana: 3/13 · Fase 1\\nFormato: carrusel · Pilar: T\\nTema: Carrusel plusvalía contorno rural\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel plusvalía contorno rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel plusvalía contorno rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel plusvalía contorno rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-04-P3-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260703T140000
+DTEND;TZID=America/Santiago:20260703T143000
+SUMMARY:📋 Preparar LI — Carrusel plusvalía contorno rural
+DESCRIPTION:Publicación: 2026-07-04 08:30 Chile\\nLI-2026-07-04-P3-W03\\nCarrusel plusvalía contorno rural
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel plusvalía contorno rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-04-P4-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260704T170000
+DTEND;TZID=America/Santiago:20260704T173000
+SUMMARY:👤 LinkedIn — Comentario tendencia mercado
+DESCRIPTION:ID: LI-2026-07-04-P4-W03\\nCanal: Personal · José Katz\\nSemana: 3/13 · Fase 1\\nFormato: texto · Pilar: T\\nTema: Comentario tendencia mercado\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Comentario tendencia mercado
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Comentario tendencia mercado
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Comentario tendencia mercado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-04-P4-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260703T140000
+DTEND;TZID=America/Santiago:20260703T143000
+SUMMARY:📋 Preparar LI — Comentario tendencia mercado
+DESCRIPTION:Publicación: 2026-07-04 17:00 Chile\\nLI-2026-07-04-P4-W03\\nComentario tendencia mercado
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Comentario tendencia mercado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-05-E3-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260705T100000
+DTEND;TZID=America/Santiago:20260705T103000
+SUMMARY:🏢 LinkedIn — Partner Iterrasur — intro
+DESCRIPTION:ID: LI-2026-07-05-E3-W03\\nCanal: Empresa · Land Advisors\\nSemana: 3/13 · Fase 1\\nFormato: carrusel · Pilar: P\\nTema: Partner Iterrasur — intro\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner Iterrasur — intro
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner Iterrasur — intro
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner Iterrasur — intro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-05-E3-W03@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260704T140000
+DTEND;TZID=America/Santiago:20260704T143000
+SUMMARY:📋 Preparar LI — Partner Iterrasur — intro
+DESCRIPTION:Publicación: 2026-07-05 10:00 Chile\\nLI-2026-07-05-E3-W03\\nPartner Iterrasur — intro
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Partner Iterrasur — intro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-07-E1-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260707T100000
+DTEND;TZID=America/Santiago:20260707T103000
+SUMMARY:🏢 LinkedIn — Carrusel 5 servicios en UF
+DESCRIPTION:ID: LI-2026-07-07-E1-W04\\nCanal: Empresa · Land Advisors\\nSemana: 4/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: Carrusel 5 servicios en UF\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel 5 servicios en UF
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel 5 servicios en UF
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel 5 servicios en UF
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-07-E1-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260706T140000
+DTEND;TZID=America/Santiago:20260706T143000
+SUMMARY:📋 Preparar LI — Carrusel 5 servicios en UF
+DESCRIPTION:Publicación: 2026-07-07 10:00 Chile\\nLI-2026-07-07-E1-W04\\nCarrusel 5 servicios en UF
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel 5 servicios en UF
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-08-P1-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260708T083000
+DTEND;TZID=America/Santiago:20260708T090000
+SUMMARY:👤 LinkedIn — Artículo: decisión inmobiliaria empieza antes del terreno
+DESCRIPTION:ID: LI-2026-07-08-P1-W04\\nCanal: Personal · José Katz\\nSemana: 4/13 · Fase 1\\nFormato: articulo · Pilar: E\\nTema: Artículo: decisión inmobiliaria empieza antes del terreno\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: decisión inmobiliaria empieza antes del terreno
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: decisión inmobiliaria empieza antes del terreno
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: decisión inmobiliaria empieza antes del terreno
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-08-P1-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260707T140000
+DTEND;TZID=America/Santiago:20260707T143000
+SUMMARY:📋 Preparar LI — Artículo: decisión inmobiliaria empieza antes del 
+DESCRIPTION:Publicación: 2026-07-08 08:30 Chile\\nLI-2026-07-08-P1-W04\\nArtículo: decisión inmobiliaria empieza antes del terreno
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Artículo: decisión inmobiliaria empieza antes del 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-09-E2-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260709T110000
+DTEND;TZID=America/Santiago:20260709T113000
+SUMMARY:🏢 LinkedIn — Caso Llanquihue (anonimizado)
+DESCRIPTION:ID: LI-2026-07-09-E2-W04\\nCanal: Empresa · Land Advisors\\nSemana: 4/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: Caso Llanquihue (anonimizado)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso Llanquihue (anonimizado)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso Llanquihue (anonimizado)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso Llanquihue (anonimizado)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-09-E2-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260708T140000
+DTEND;TZID=America/Santiago:20260708T143000
+SUMMARY:📋 Preparar LI — Caso Llanquihue (anonimizado)
+DESCRIPTION:Publicación: 2026-07-09 11:00 Chile\\nLI-2026-07-09-E2-W04\\nCaso Llanquihue (anonimizado)
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso Llanquihue (anonimizado)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-10-P2-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260710T083000
+DTEND;TZID=America/Santiago:20260710T090000
+SUMMARY:👤 LinkedIn — Mini caso Frutillar
+DESCRIPTION:ID: LI-2026-07-10-P2-W04\\nCanal: Personal · José Katz\\nSemana: 4/13 · Fase 1\\nFormato: texto · Pilar: S\\nTema: Mini caso Frutillar\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Mini caso Frutillar
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Mini caso Frutillar
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Mini caso Frutillar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-10-P2-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260709T140000
+DTEND;TZID=America/Santiago:20260709T143000
+SUMMARY:📋 Preparar LI — Mini caso Frutillar
+DESCRIPTION:Publicación: 2026-07-10 08:30 Chile\\nLI-2026-07-10-P2-W04\\nMini caso Frutillar
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Mini caso Frutillar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-11-P3-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260711T083000
+DTEND;TZID=America/Santiago:20260711T090000
+SUMMARY:👤 LinkedIn — Video acceso y conectividad
+DESCRIPTION:ID: LI-2026-07-11-P3-W04\\nCanal: Personal · José Katz\\nSemana: 4/13 · Fase 1\\nFormato: video · Pilar: T\\nTema: Video acceso y conectividad\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video acceso y conectividad
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video acceso y conectividad
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video acceso y conectividad
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-11-P3-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260710T140000
+DTEND;TZID=America/Santiago:20260710T143000
+SUMMARY:📋 Preparar LI — Video acceso y conectividad
+DESCRIPTION:Publicación: 2026-07-11 08:30 Chile\\nLI-2026-07-11-P3-W04\\nVideo acceso y conectividad
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video acceso y conectividad
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-11-P4-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260711T170000
+DTEND;TZID=America/Santiago:20260711T173000
+SUMMARY:👤 LinkedIn — Encuesta: ¿qué te frena al comprar?
+DESCRIPTION:ID: LI-2026-07-11-P4-W04\\nCanal: Personal · José Katz\\nSemana: 4/13 · Fase 1\\nFormato: encuesta · Pilar: E\\nTema: Encuesta: ¿qué te frena al comprar?\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta: ¿qué te frena al comprar?
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta: ¿qué te frena al comprar?
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta: ¿qué te frena al comprar?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-11-P4-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260710T140000
+DTEND;TZID=America/Santiago:20260710T143000
+SUMMARY:📋 Preparar LI — Encuesta: ¿qué te frena al comprar?
+DESCRIPTION:Publicación: 2026-07-11 17:00 Chile\\nLI-2026-07-11-P4-W04\\nEncuesta: ¿qué te frena al comprar?
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Encuesta: ¿qué te frena al comprar?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-12-E3-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260712T100000
+DTEND;TZID=America/Santiago:20260712T103000
+SUMMARY:🏢 LinkedIn — CTA diagnóstico Q2
+DESCRIPTION:ID: LI-2026-07-12-E3-W04\\nCanal: Empresa · Land Advisors\\nSemana: 4/13 · Fase 1\\nFormato: carrusel · Pilar: S\\nTema: CTA diagnóstico Q2\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico Q2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico Q2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico Q2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-12-E3-W04@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260711T140000
+DTEND;TZID=America/Santiago:20260711T143000
+SUMMARY:📋 Preparar LI — CTA diagnóstico Q2
+DESCRIPTION:Publicación: 2026-07-12 10:00 Chile\\nLI-2026-07-12-E3-W04\\nCTA diagnóstico Q2
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — CTA diagnóstico Q2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-14-E1-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260714T100000
+DTEND;TZID=America/Santiago:20260714T103000
+SUMMARY:🏢 LinkedIn — Mapa sectores valorización
+DESCRIPTION:ID: LI-2026-07-14-E1-W05\\nCanal: Empresa · Land Advisors\\nSemana: 5/13 · Fase 2\\nFormato: carrusel · Pilar: T\\nTema: Mapa sectores valorización\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa sectores valorización
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa sectores valorización
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Mapa sectores valorización
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-14-E1-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260713T140000
+DTEND;TZID=America/Santiago:20260713T143000
+SUMMARY:📋 Preparar LI — Mapa sectores valorización
+DESCRIPTION:Publicación: 2026-07-14 10:00 Chile\\nLI-2026-07-14-E1-W05\\nMapa sectores valorización
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Mapa sectores valorización
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-15-P1-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260715T083000
+DTEND;TZID=America/Santiago:20260715T090000
+SUMMARY:👤 LinkedIn — Puerto Octay: oportunidades
+DESCRIPTION:ID: LI-2026-07-15-P1-W05\\nCanal: Personal · José Katz\\nSemana: 5/13 · Fase 2\\nFormato: texto · Pilar: T\\nTema: Puerto Octay: oportunidades\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Puerto Octay: oportunidades
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Puerto Octay: oportunidades
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Puerto Octay: oportunidades
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-15-P1-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260714T140000
+DTEND;TZID=America/Santiago:20260714T143000
+SUMMARY:📋 Preparar LI — Puerto Octay: oportunidades
+DESCRIPTION:Publicación: 2026-07-15 08:30 Chile\\nLI-2026-07-15-P1-W05\\nPuerto Octay: oportunidades
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Puerto Octay: oportunidades
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-16-E2-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260716T110000
+DTEND;TZID=America/Santiago:20260716T113000
+SUMMARY:🏢 LinkedIn — Tiny houses: marco conceptual
+DESCRIPTION:ID: LI-2026-07-16-E2-W05\\nCanal: Empresa · Land Advisors\\nSemana: 5/13 · Fase 2\\nFormato: carrusel · Pilar: TH\\nTema: Tiny houses: marco conceptual\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Tiny houses: marco conceptual
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Tiny houses: marco conceptual
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Tiny houses: marco conceptual
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-16-E2-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260715T140000
+DTEND;TZID=America/Santiago:20260715T143000
+SUMMARY:📋 Preparar LI — Tiny houses: marco conceptual
+DESCRIPTION:Publicación: 2026-07-16 11:00 Chile\\nLI-2026-07-16-E2-W05\\nTiny houses: marco conceptual
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Tiny houses: marco conceptual
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-17-P2-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260717T083000
+DTEND;TZID=America/Santiago:20260717T090000
+SUMMARY:👤 LinkedIn — Normativa agrícola explicada
+DESCRIPTION:ID: LI-2026-07-17-P2-W05\\nCanal: Personal · José Katz\\nSemana: 5/13 · Fase 2\\nFormato: carrusel · Pilar: E\\nTema: Normativa agrícola explicada\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Normativa agrícola explicada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Normativa agrícola explicada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Normativa agrícola explicada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-17-P2-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260716T140000
+DTEND;TZID=America/Santiago:20260716T143000
+SUMMARY:📋 Preparar LI — Normativa agrícola explicada
+DESCRIPTION:Publicación: 2026-07-17 08:30 Chile\\nLI-2026-07-17-P2-W05\\nNormativa agrícola explicada
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Normativa agrícola explicada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-18-P3-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260718T083000
+DTEND;TZID=America/Santiago:20260718T090000
+SUMMARY:👤 LinkedIn — Video camino vs ubicación
+DESCRIPTION:ID: LI-2026-07-18-P3-W05\\nCanal: Personal · José Katz\\nSemana: 5/13 · Fase 2\\nFormato: video · Pilar: T\\nTema: Video camino vs ubicación\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video camino vs ubicación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video camino vs ubicación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video camino vs ubicación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-18-P3-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260717T140000
+DTEND;TZID=America/Santiago:20260717T143000
+SUMMARY:📋 Preparar LI — Video camino vs ubicación
+DESCRIPTION:Publicación: 2026-07-18 08:30 Chile\\nLI-2026-07-18-P3-W05\\nVideo camino vs ubicación
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video camino vs ubicación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-18-P4-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260718T170000
+DTEND;TZID=America/Santiago:20260718T173000
+SUMMARY:👤 LinkedIn — Historia cliente anonimizada
+DESCRIPTION:ID: LI-2026-07-18-P4-W05\\nCanal: Personal · José Katz\\nSemana: 5/13 · Fase 2\\nFormato: texto · Pilar: S\\nTema: Historia cliente anonimizada\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Historia cliente anonimizada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Historia cliente anonimizada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Historia cliente anonimizada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-18-P4-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260717T140000
+DTEND;TZID=America/Santiago:20260717T143000
+SUMMARY:📋 Preparar LI — Historia cliente anonimizada
+DESCRIPTION:Publicación: 2026-07-18 17:00 Chile\\nLI-2026-07-18-P4-W05\\nHistoria cliente anonimizada
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Historia cliente anonimizada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-19-E3-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260719T100000
+DTEND;TZID=America/Santiago:20260719T103000
+SUMMARY:🏢 LinkedIn — Documento checklist compra (lead magnet)
+DESCRIPTION:ID: LI-2026-07-19-E3-W05\\nCanal: Empresa · Land Advisors\\nSemana: 5/13 · Fase 2\\nFormato: documento · Pilar: E\\nTema: Documento checklist compra (lead magnet)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento checklist compra (lead magnet)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento checklist compra (lead magnet)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento checklist compra (lead magnet)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-19-E3-W05@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260718T140000
+DTEND;TZID=America/Santiago:20260718T143000
+SUMMARY:📋 Preparar LI — Documento checklist compra (lead magnet)
+DESCRIPTION:Publicación: 2026-07-19 10:00 Chile\\nLI-2026-07-19-E3-W05\\nDocumento checklist compra (lead magnet)
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Documento checklist compra (lead magnet)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-21-E1-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260721T100000
+DTEND;TZID=America/Santiago:20260721T103000
+SUMMARY:🏢 LinkedIn — Servicio evaluación técnica
+DESCRIPTION:ID: LI-2026-07-21-E1-W06\\nCanal: Empresa · Land Advisors\\nSemana: 6/13 · Fase 2\\nFormato: carrusel · Pilar: S\\nTema: Servicio evaluación técnica\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio evaluación técnica
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio evaluación técnica
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio evaluación técnica
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-21-E1-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260720T140000
+DTEND;TZID=America/Santiago:20260720T143000
+SUMMARY:📋 Preparar LI — Servicio evaluación técnica
+DESCRIPTION:Publicación: 2026-07-21 10:00 Chile\\nLI-2026-07-21-E1-W06\\nServicio evaluación técnica
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Servicio evaluación técnica
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-22-P1-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260722T083000
+DTEND;TZID=America/Santiago:20260722T090000
+SUMMARY:👤 LinkedIn — Las Cascadas: tesis inversión
+DESCRIPTION:ID: LI-2026-07-22-P1-W06\\nCanal: Personal · José Katz\\nSemana: 6/13 · Fase 2\\nFormato: texto · Pilar: T\\nTema: Las Cascadas: tesis inversión\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Las Cascadas: tesis inversión
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Las Cascadas: tesis inversión
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Las Cascadas: tesis inversión
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-22-P1-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260721T140000
+DTEND;TZID=America/Santiago:20260721T143000
+SUMMARY:📋 Preparar LI — Las Cascadas: tesis inversión
+DESCRIPTION:Publicación: 2026-07-22 08:30 Chile\\nLI-2026-07-22-P1-W06\\nLas Cascadas: tesis inversión
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Las Cascadas: tesis inversión
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-23-E2-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260723T110000
+DTEND;TZID=America/Santiago:20260723T113000
+SUMMARY:🏢 LinkedIn — Caso desarrollador PYME
+DESCRIPTION:ID: LI-2026-07-23-E2-W06\\nCanal: Empresa · Land Advisors\\nSemana: 6/13 · Fase 2\\nFormato: carrusel · Pilar: S\\nTema: Caso desarrollador PYME\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso desarrollador PYME
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso desarrollador PYME
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso desarrollador PYME
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-23-E2-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260722T140000
+DTEND;TZID=America/Santiago:20260722T143000
+SUMMARY:📋 Preparar LI — Caso desarrollador PYME
+DESCRIPTION:Publicación: 2026-07-23 11:00 Chile\\nLI-2026-07-23-E2-W06\\nCaso desarrollador PYME
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso desarrollador PYME
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-24-P2-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260724T083000
+DTEND;TZID=America/Santiago:20260724T090000
+SUMMARY:👤 LinkedIn — Renta corta: expectativas reales
+DESCRIPTION:ID: LI-2026-07-24-P2-W06\\nCanal: Personal · José Katz\\nSemana: 6/13 · Fase 2\\nFormato: texto · Pilar: ST\\nTema: Renta corta: expectativas reales\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Renta corta: expectativas reales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Renta corta: expectativas reales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Renta corta: expectativas reales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-24-P2-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260723T140000
+DTEND;TZID=America/Santiago:20260723T143000
+SUMMARY:📋 Preparar LI — Renta corta: expectativas reales
+DESCRIPTION:Publicación: 2026-07-24 08:30 Chile\\nLI-2026-07-24-P2-W06\\nRenta corta: expectativas reales
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Renta corta: expectativas reales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-25-P3-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260725T083000
+DTEND;TZID=America/Santiago:20260725T090000
+SUMMARY:👤 LinkedIn — Carrusel 7 preguntas antes de ofertar
+DESCRIPTION:ID: LI-2026-07-25-P3-W06\\nCanal: Personal · José Katz\\nSemana: 6/13 · Fase 2\\nFormato: carrusel · Pilar: E\\nTema: Carrusel 7 preguntas antes de ofertar\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel 7 preguntas antes de ofertar
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel 7 preguntas antes de ofertar
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel 7 preguntas antes de ofertar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-25-P3-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260724T140000
+DTEND;TZID=America/Santiago:20260724T143000
+SUMMARY:📋 Preparar LI — Carrusel 7 preguntas antes de ofertar
+DESCRIPTION:Publicación: 2026-07-25 08:30 Chile\\nLI-2026-07-25-P3-W06\\nCarrusel 7 preguntas antes de ofertar
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel 7 preguntas antes de ofertar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-25-P4-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260725T170000
+DTEND;TZID=America/Santiago:20260725T173000
+SUMMARY:👤 LinkedIn — Newsletter LinkedIn #1
+DESCRIPTION:ID: LI-2026-07-25-P4-W06\\nCanal: Personal · José Katz\\nSemana: 6/13 · Fase 2\\nFormato: newsletter · Pilar: A\\nTema: Newsletter LinkedIn #1\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #1
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #1
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #1
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-25-P4-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260724T140000
+DTEND;TZID=America/Santiago:20260724T143000
+SUMMARY:📋 Preparar LI — Newsletter LinkedIn #1
+DESCRIPTION:Publicación: 2026-07-25 17:00 Chile\\nLI-2026-07-25-P4-W06\\nNewsletter LinkedIn #1
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Newsletter LinkedIn #1
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-26-E3-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260726T100000
+DTEND;TZID=America/Santiago:20260726T103000
+SUMMARY:🏢 LinkedIn — Alianza arquitecto (colaboración)
+DESCRIPTION:ID: LI-2026-07-26-E3-W06\\nCanal: Empresa · Land Advisors\\nSemana: 6/13 · Fase 2\\nFormato: carrusel · Pilar: P\\nTema: Alianza arquitecto (colaboración)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza arquitecto (colaboración)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza arquitecto (colaboración)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza arquitecto (colaboración)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-26-E3-W06@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260725T140000
+DTEND;TZID=America/Santiago:20260725T143000
+SUMMARY:📋 Preparar LI — Alianza arquitecto (colaboración)
+DESCRIPTION:Publicación: 2026-07-26 10:00 Chile\\nLI-2026-07-26-E3-W06\\nAlianza arquitecto (colaboración)
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Alianza arquitecto (colaboración)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-28-E1-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260728T100000
+DTEND;TZID=America/Santiago:20260728T103000
+SUMMARY:🏢 LinkedIn — Educación servidumbre y agua
+DESCRIPTION:ID: LI-2026-07-28-E1-W07\\nCanal: Empresa · Land Advisors\\nSemana: 7/13 · Fase 2\\nFormato: carrusel · Pilar: E\\nTema: Educación servidumbre y agua\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación servidumbre y agua
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación servidumbre y agua
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Educación servidumbre y agua
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-28-E1-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260727T140000
+DTEND;TZID=America/Santiago:20260727T143000
+SUMMARY:📋 Preparar LI — Educación servidumbre y agua
+DESCRIPTION:Publicación: 2026-07-28 10:00 Chile\\nLI-2026-07-28-E1-W07\\nEducación servidumbre y agua
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Educación servidumbre y agua
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-29-P1-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260729T083000
+DTEND;TZID=America/Santiago:20260729T090000
+SUMMARY:👤 LinkedIn — Malalcahuello: segunda residencia
+DESCRIPTION:ID: LI-2026-07-29-P1-W07\\nCanal: Personal · José Katz\\nSemana: 7/13 · Fase 2\\nFormato: texto · Pilar: T\\nTema: Malalcahuello: segunda residencia\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Malalcahuello: segunda residencia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Malalcahuello: segunda residencia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Malalcahuello: segunda residencia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-29-P1-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260728T140000
+DTEND;TZID=America/Santiago:20260728T143000
+SUMMARY:📋 Preparar LI — Malalcahuello: segunda residencia
+DESCRIPTION:Publicación: 2026-07-29 08:30 Chile\\nLI-2026-07-29-P1-W07\\nMalalcahuello: segunda residencia
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Malalcahuello: segunda residencia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-30-E2-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260730T110000
+DTEND;TZID=America/Santiago:20260730T113000
+SUMMARY:🏢 LinkedIn — Propietarios: qué buscamos
+DESCRIPTION:ID: LI-2026-07-30-E2-W07\\nCanal: Empresa · Land Advisors\\nSemana: 7/13 · Fase 2\\nFormato: carrusel · Pilar: V\\nTema: Propietarios: qué buscamos\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Propietarios: qué buscamos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Propietarios: qué buscamos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Propietarios: qué buscamos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-30-E2-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260729T140000
+DTEND;TZID=America/Santiago:20260729T143000
+SUMMARY:📋 Preparar LI — Propietarios: qué buscamos
+DESCRIPTION:Publicación: 2026-07-30 11:00 Chile\\nLI-2026-07-30-E2-W07\\nPropietarios: qué buscamos
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Propietarios: qué buscamos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-07-31-P2-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260731T083000
+DTEND;TZID=America/Santiago:20260731T090000
+SUMMARY:👤 LinkedIn — Liquidez en terrenos rurales
+DESCRIPTION:ID: LI-2026-07-31-P2-W07\\nCanal: Personal · José Katz\\nSemana: 7/13 · Fase 2\\nFormato: texto · Pilar: E\\nTema: Liquidez en terrenos rurales\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Liquidez en terrenos rurales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Liquidez en terrenos rurales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Liquidez en terrenos rurales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-07-31-P2-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260730T140000
+DTEND;TZID=America/Santiago:20260730T143000
+SUMMARY:📋 Preparar LI — Liquidez en terrenos rurales
+DESCRIPTION:Publicación: 2026-07-31 08:30 Chile\\nLI-2026-07-31-P2-W07\\nLiquidez en terrenos rurales
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Liquidez en terrenos rurales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-01-P3-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260801T083000
+DTEND;TZID=America/Santiago:20260801T090000
+SUMMARY:👤 LinkedIn — Video vista vs orientación
+DESCRIPTION:ID: LI-2026-08-01-P3-W07\\nCanal: Personal · José Katz\\nSemana: 7/13 · Fase 2\\nFormato: video · Pilar: T\\nTema: Video vista vs orientación\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video vista vs orientación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video vista vs orientación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video vista vs orientación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-01-P3-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260731T140000
+DTEND;TZID=America/Santiago:20260731T143000
+SUMMARY:📋 Preparar LI — Video vista vs orientación
+DESCRIPTION:Publicación: 2026-08-01 08:30 Chile\\nLI-2026-08-01-P3-W07\\nVideo vista vs orientación
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video vista vs orientación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-01-P4-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260801T170000
+DTEND;TZID=America/Santiago:20260801T173000
+SUMMARY:👤 LinkedIn — Opinión mercado UF
+DESCRIPTION:ID: LI-2026-08-01-P4-W07\\nCanal: Personal · José Katz\\nSemana: 7/13 · Fase 2\\nFormato: texto · Pilar: T\\nTema: Opinión mercado UF\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión mercado UF
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión mercado UF
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión mercado UF
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-01-P4-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260731T140000
+DTEND;TZID=America/Santiago:20260731T143000
+SUMMARY:📋 Preparar LI — Opinión mercado UF
+DESCRIPTION:Publicación: 2026-08-01 17:00 Chile\\nLI-2026-08-01-P4-W07\\nOpinión mercado UF
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Opinión mercado UF
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-02-E3-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260802T100000
+DTEND;TZID=America/Santiago:20260802T103000
+SUMMARY:🏢 LinkedIn — Carrusel errores del vendedor
+DESCRIPTION:ID: LI-2026-08-02-E3-W07\\nCanal: Empresa · Land Advisors\\nSemana: 7/13 · Fase 2\\nFormato: carrusel · Pilar: V\\nTema: Carrusel errores del vendedor\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel errores del vendedor
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel errores del vendedor
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel errores del vendedor
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-02-E3-W07@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260801T140000
+DTEND;TZID=America/Santiago:20260801T143000
+SUMMARY:📋 Preparar LI — Carrusel errores del vendedor
+DESCRIPTION:Publicación: 2026-08-02 10:00 Chile\\nLI-2026-08-02-E3-W07\\nCarrusel errores del vendedor
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel errores del vendedor
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-04-E1-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260804T100000
+DTEND;TZID=America/Santiago:20260804T103000
+SUMMARY:🏢 LinkedIn — Informe mercado comuna
+DESCRIPTION:ID: LI-2026-08-04-E1-W08\\nCanal: Empresa · Land Advisors\\nSemana: 8/13 · Fase 2\\nFormato: carrusel · Pilar: T\\nTema: Informe mercado comuna\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Informe mercado comuna
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Informe mercado comuna
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Informe mercado comuna
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-04-E1-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260803T140000
+DTEND;TZID=America/Santiago:20260803T143000
+SUMMARY:📋 Preparar LI — Informe mercado comuna
+DESCRIPTION:Publicación: 2026-08-04 10:00 Chile\\nLI-2026-08-04-E1-W08\\nInforme mercado comuna
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Informe mercado comuna
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-05-P1-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260805T083000
+DTEND;TZID=America/Santiago:20260805T090000
+SUMMARY:👤 LinkedIn — Artículo: leer un PRC sin ser arquitecto
+DESCRIPTION:ID: LI-2026-08-05-P1-W08\\nCanal: Personal · José Katz\\nSemana: 8/13 · Fase 2\\nFormato: articulo · Pilar: E\\nTema: Artículo: leer un PRC sin ser arquitecto\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: leer un PRC sin ser arquitecto
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: leer un PRC sin ser arquitecto
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo: leer un PRC sin ser arquitecto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-05-P1-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260804T140000
+DTEND;TZID=America/Santiago:20260804T143000
+SUMMARY:📋 Preparar LI — Artículo: leer un PRC sin ser arquitecto
+DESCRIPTION:Publicación: 2026-08-05 08:30 Chile\\nLI-2026-08-05-P1-W08\\nArtículo: leer un PRC sin ser arquitecto
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Artículo: leer un PRC sin ser arquitecto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-06-E2-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260806T110000
+DTEND;TZID=America/Santiago:20260806T113000
+SUMMARY:🏢 LinkedIn — Servicio negociación
+DESCRIPTION:ID: LI-2026-08-06-E2-W08\\nCanal: Empresa · Land Advisors\\nSemana: 8/13 · Fase 2\\nFormato: carrusel · Pilar: S\\nTema: Servicio negociación\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio negociación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio negociación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio negociación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-06-E2-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260805T140000
+DTEND;TZID=America/Santiago:20260805T143000
+SUMMARY:📋 Preparar LI — Servicio negociación
+DESCRIPTION:Publicación: 2026-08-06 11:00 Chile\\nLI-2026-08-06-E2-W08\\nServicio negociación
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Servicio negociación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-07-P2-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260807T083000
+DTEND;TZID=America/Santiago:20260807T090000
+SUMMARY:👤 LinkedIn — Recorrido Fresia
+DESCRIPTION:ID: LI-2026-08-07-P2-W08\\nCanal: Personal · José Katz\\nSemana: 8/13 · Fase 2\\nFormato: texto · Pilar: T\\nTema: Recorrido Fresia\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Fresia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Fresia
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Fresia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-07-P2-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260806T140000
+DTEND;TZID=America/Santiago:20260806T143000
+SUMMARY:📋 Preparar LI — Recorrido Fresia
+DESCRIPTION:Publicación: 2026-08-07 08:30 Chile\\nLI-2026-08-07-P2-W08\\nRecorrido Fresia
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Recorrido Fresia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-08-P3-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260808T083000
+DTEND;TZID=America/Santiago:20260808T090000
+SUMMARY:👤 LinkedIn — Encuesta desarrolladores
+DESCRIPTION:ID: LI-2026-08-08-P3-W08\\nCanal: Personal · José Katz\\nSemana: 8/13 · Fase 2\\nFormato: encuesta · Pilar: DEV\\nTema: Encuesta desarrolladores\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta desarrolladores
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta desarrolladores
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta desarrolladores
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-08-P3-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260807T140000
+DTEND;TZID=America/Santiago:20260807T143000
+SUMMARY:📋 Preparar LI — Encuesta desarrolladores
+DESCRIPTION:Publicación: 2026-08-08 08:30 Chile\\nLI-2026-08-08-P3-W08\\nEncuesta desarrolladores
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Encuesta desarrolladores
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-08-P4-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260808T170000
+DTEND;TZID=America/Santiago:20260808T173000
+SUMMARY:👤 LinkedIn — Caso Puerto Varas
+DESCRIPTION:ID: LI-2026-08-08-P4-W08\\nCanal: Personal · José Katz\\nSemana: 8/13 · Fase 2\\nFormato: texto · Pilar: S\\nTema: Caso Puerto Varas\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso Puerto Varas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso Puerto Varas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso Puerto Varas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-08-P4-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260807T140000
+DTEND;TZID=America/Santiago:20260807T143000
+SUMMARY:📋 Preparar LI — Caso Puerto Varas
+DESCRIPTION:Publicación: 2026-08-08 17:00 Chile\\nLI-2026-08-08-P4-W08\\nCaso Puerto Varas
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso Puerto Varas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-09-E3-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260809T100000
+DTEND;TZID=America/Santiago:20260809T103000
+SUMMARY:🏢 LinkedIn — CTA mid-quarter
+DESCRIPTION:ID: LI-2026-08-09-E3-W08\\nCanal: Empresa · Land Advisors\\nSemana: 8/13 · Fase 2\\nFormato: carrusel · Pilar: S\\nTema: CTA mid-quarter\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA mid-quarter
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA mid-quarter
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA mid-quarter
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-09-E3-W08@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260808T140000
+DTEND;TZID=America/Santiago:20260808T143000
+SUMMARY:📋 Preparar LI — CTA mid-quarter
+DESCRIPTION:Publicación: 2026-08-09 10:00 Chile\\nLI-2026-08-09-E3-W08\\nCTA mid-quarter
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — CTA mid-quarter
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-11-E1-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260811T100000
+DTEND;TZID=America/Santiago:20260811T103000
+SUMMARY:🏢 LinkedIn — Estudio inversión — servicio
+DESCRIPTION:ID: LI-2026-08-11-E1-W09\\nCanal: Empresa · Land Advisors\\nSemana: 9/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: Estudio inversión — servicio\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Estudio inversión — servicio
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Estudio inversión — servicio
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Estudio inversión — servicio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-11-E1-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260810T140000
+DTEND;TZID=America/Santiago:20260810T143000
+SUMMARY:📋 Preparar LI — Estudio inversión — servicio
+DESCRIPTION:Publicación: 2026-08-11 10:00 Chile\\nLI-2026-08-11-E1-W09\\nEstudio inversión — servicio
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Estudio inversión — servicio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-12-P1-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260812T083000
+DTEND;TZID=America/Santiago:20260812T090000
+SUMMARY:👤 LinkedIn — Desarrollo inmobiliario: cuándo tiene sentido
+DESCRIPTION:ID: LI-2026-08-12-P1-W09\\nCanal: Personal · José Katz\\nSemana: 9/13 · Fase 3\\nFormato: texto · Pilar: DES\\nTema: Desarrollo inmobiliario: cuándo tiene sentido\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Desarrollo inmobiliario: cuándo tiene sentido
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Desarrollo inmobiliario: cuándo tiene sentido
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Desarrollo inmobiliario: cuándo tiene sentido
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-12-P1-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260811T140000
+DTEND;TZID=America/Santiago:20260811T143000
+SUMMARY:📋 Preparar LI — Desarrollo inmobiliario: cuándo tiene sentido
+DESCRIPTION:Publicación: 2026-08-12 08:30 Chile\\nLI-2026-08-12-P1-W09\\nDesarrollo inmobiliario: cuándo tiene sentido
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Desarrollo inmobiliario: cuándo tiene sentido
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-13-E2-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260813T110000
+DTEND;TZID=America/Santiago:20260813T113000
+SUMMARY:🏢 LinkedIn — Partner constructora
+DESCRIPTION:ID: LI-2026-08-13-E2-W09\\nCanal: Empresa · Land Advisors\\nSemana: 9/13 · Fase 3\\nFormato: carrusel · Pilar: P\\nTema: Partner constructora\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner constructora
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner constructora
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Partner constructora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-13-E2-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260812T140000
+DTEND;TZID=America/Santiago:20260812T143000
+SUMMARY:📋 Preparar LI — Partner constructora
+DESCRIPTION:Publicación: 2026-08-13 11:00 Chile\\nLI-2026-08-13-E2-W09\\nPartner constructora
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Partner constructora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-14-P2-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260814T083000
+DTEND;TZID=America/Santiago:20260814T090000
+SUMMARY:👤 LinkedIn — Video due diligence
+DESCRIPTION:ID: LI-2026-08-14-P2-W09\\nCanal: Personal · José Katz\\nSemana: 9/13 · Fase 3\\nFormato: video · Pilar: E\\nTema: Video due diligence\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video due diligence
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video due diligence
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video due diligence
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-14-P2-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260813T140000
+DTEND;TZID=America/Santiago:20260813T143000
+SUMMARY:📋 Preparar LI — Video due diligence
+DESCRIPTION:Publicación: 2026-08-14 08:30 Chile\\nLI-2026-08-14-P2-W09\\nVideo due diligence
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video due diligence
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-15-P3-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260815T083000
+DTEND;TZID=America/Santiago:20260815T090000
+SUMMARY:👤 LinkedIn — Texto alianzas comerciales
+DESCRIPTION:ID: LI-2026-08-15-P3-W09\\nCanal: Personal · José Katz\\nSemana: 9/13 · Fase 3\\nFormato: texto · Pilar: P\\nTema: Texto alianzas comerciales\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Texto alianzas comerciales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Texto alianzas comerciales
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Texto alianzas comerciales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-15-P3-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260814T140000
+DTEND;TZID=America/Santiago:20260814T143000
+SUMMARY:📋 Preparar LI — Texto alianzas comerciales
+DESCRIPTION:Publicación: 2026-08-15 08:30 Chile\\nLI-2026-08-15-P3-W09\\nTexto alianzas comerciales
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Texto alianzas comerciales
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-15-P4-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260815T170000
+DTEND;TZID=America/Santiago:20260815T173000
+SUMMARY:👤 LinkedIn — Caso inversor Santiago
+DESCRIPTION:ID: LI-2026-08-15-P4-W09\\nCanal: Personal · José Katz\\nSemana: 9/13 · Fase 3\\nFormato: texto · Pilar: S\\nTema: Caso inversor Santiago\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso inversor Santiago
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso inversor Santiago
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso inversor Santiago
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-15-P4-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260814T140000
+DTEND;TZID=America/Santiago:20260814T143000
+SUMMARY:📋 Preparar LI — Caso inversor Santiago
+DESCRIPTION:Publicación: 2026-08-15 17:00 Chile\\nLI-2026-08-15-P4-W09\\nCaso inversor Santiago
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso inversor Santiago
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-16-E3-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260816T100000
+DTEND;TZID=America/Santiago:20260816T103000
+SUMMARY:🏢 LinkedIn — Carrusel ROI sin prometer
+DESCRIPTION:ID: LI-2026-08-16-E3-W09\\nCanal: Empresa · Land Advisors\\nSemana: 9/13 · Fase 3\\nFormato: carrusel · Pilar: E\\nTema: Carrusel ROI sin prometer\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel ROI sin prometer
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel ROI sin prometer
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Carrusel ROI sin prometer
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-16-E3-W09@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260815T140000
+DTEND;TZID=America/Santiago:20260815T143000
+SUMMARY:📋 Preparar LI — Carrusel ROI sin prometer
+DESCRIPTION:Publicación: 2026-08-16 10:00 Chile\\nLI-2026-08-16-E3-W09\\nCarrusel ROI sin prometer
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel ROI sin prometer
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-18-E1-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260818T100000
+DTEND;TZID=America/Santiago:20260818T103000
+SUMMARY:🏢 LinkedIn — Caso calidad de vida
+DESCRIPTION:ID: LI-2026-08-18-E1-W10\\nCanal: Empresa · Land Advisors\\nSemana: 10/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: Caso calidad de vida\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso calidad de vida
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso calidad de vida
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso calidad de vida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-18-E1-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260817T140000
+DTEND;TZID=America/Santiago:20260817T143000
+SUMMARY:📋 Preparar LI — Caso calidad de vida
+DESCRIPTION:Publicación: 2026-08-18 10:00 Chile\\nLI-2026-08-18-E1-W10\\nCaso calidad de vida
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso calidad de vida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-19-P1-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260819T083000
+DTEND;TZID=America/Santiago:20260819T090000
+SUMMARY:👤 LinkedIn — Los Muermos: perfil comprador
+DESCRIPTION:ID: LI-2026-08-19-P1-W10\\nCanal: Personal · José Katz\\nSemana: 10/13 · Fase 3\\nFormato: texto · Pilar: T\\nTema: Los Muermos: perfil comprador\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Los Muermos: perfil comprador
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Los Muermos: perfil comprador
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Los Muermos: perfil comprador
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-19-P1-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260818T140000
+DTEND;TZID=America/Santiago:20260818T143000
+SUMMARY:📋 Preparar LI — Los Muermos: perfil comprador
+DESCRIPTION:Publicación: 2026-08-19 08:30 Chile\\nLI-2026-08-19-P1-W10\\nLos Muermos: perfil comprador
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Los Muermos: perfil comprador
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-20-E2-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260820T110000
+DTEND;TZID=America/Santiago:20260820T113000
+SUMMARY:🏢 LinkedIn — Captación propietario
+DESCRIPTION:ID: LI-2026-08-20-E2-W10\\nCanal: Empresa · Land Advisors\\nSemana: 10/13 · Fase 3\\nFormato: carrusel · Pilar: V\\nTema: Captación propietario\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Captación propietario
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Captación propietario
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Captación propietario
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-20-E2-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260819T140000
+DTEND;TZID=America/Santiago:20260819T143000
+SUMMARY:📋 Preparar LI — Captación propietario
+DESCRIPTION:Publicación: 2026-08-20 11:00 Chile\\nLI-2026-08-20-E2-W10\\nCaptación propietario
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Captación propietario
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-21-P2-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260821T083000
+DTEND;TZID=America/Santiago:20260821T090000
+SUMMARY:👤 LinkedIn — Short-term: operación vs activo
+DESCRIPTION:ID: LI-2026-08-21-P2-W10\\nCanal: Personal · José Katz\\nSemana: 10/13 · Fase 3\\nFormato: texto · Pilar: ST\\nTema: Short-term: operación vs activo\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Short-term: operación vs activo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Short-term: operación vs activo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Short-term: operación vs activo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-21-P2-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260820T140000
+DTEND;TZID=America/Santiago:20260820T143000
+SUMMARY:📋 Preparar LI — Short-term: operación vs activo
+DESCRIPTION:Publicación: 2026-08-21 08:30 Chile\\nLI-2026-08-21-P2-W10\\nShort-term: operación vs activo
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Short-term: operación vs activo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-22-P3-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260822T083000
+DTEND;TZID=America/Santiago:20260822T090000
+SUMMARY:👤 LinkedIn — Carrusel negociación informada
+DESCRIPTION:ID: LI-2026-08-22-P3-W10\\nCanal: Personal · José Katz\\nSemana: 10/13 · Fase 3\\nFormato: carrusel · Pilar: E\\nTema: Carrusel negociación informada\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel negociación informada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel negociación informada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Carrusel negociación informada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-22-P3-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260821T140000
+DTEND;TZID=America/Santiago:20260821T143000
+SUMMARY:📋 Preparar LI — Carrusel negociación informada
+DESCRIPTION:Publicación: 2026-08-22 08:30 Chile\\nLI-2026-08-22-P3-W10\\nCarrusel negociación informada
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Carrusel negociación informada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-22-P4-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260822T170000
+DTEND;TZID=America/Santiago:20260822T173000
+SUMMARY:👤 LinkedIn — Newsletter LinkedIn #2
+DESCRIPTION:ID: LI-2026-08-22-P4-W10\\nCanal: Personal · José Katz\\nSemana: 10/13 · Fase 3\\nFormato: newsletter · Pilar: A\\nTema: Newsletter LinkedIn #2\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Newsletter LinkedIn #2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-22-P4-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260821T140000
+DTEND;TZID=America/Santiago:20260821T143000
+SUMMARY:📋 Preparar LI — Newsletter LinkedIn #2
+DESCRIPTION:Publicación: 2026-08-22 17:00 Chile\\nLI-2026-08-22-P4-W10\\nNewsletter LinkedIn #2
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Newsletter LinkedIn #2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-23-E3-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260823T100000
+DTEND;TZID=America/Santiago:20260823T103000
+SUMMARY:🏢 LinkedIn — Web partners estratégicos
+DESCRIPTION:ID: LI-2026-08-23-E3-W10\\nCanal: Empresa · Land Advisors\\nSemana: 10/13 · Fase 3\\nFormato: carrusel · Pilar: P\\nTema: Web partners estratégicos\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Web partners estratégicos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Web partners estratégicos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Web partners estratégicos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-23-E3-W10@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260822T140000
+DTEND;TZID=America/Santiago:20260822T143000
+SUMMARY:📋 Preparar LI — Web partners estratégicos
+DESCRIPTION:Publicación: 2026-08-23 10:00 Chile\\nLI-2026-08-23-E3-W10\\nWeb partners estratégicos
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Web partners estratégicos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-25-E1-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260825T100000
+DTEND;TZID=America/Santiago:20260825T103000
+SUMMARY:🏢 LinkedIn — Metodología evaluación 12 puntos
+DESCRIPTION:ID: LI-2026-08-25-E1-W11\\nCanal: Empresa · Land Advisors\\nSemana: 11/13 · Fase 3\\nFormato: carrusel · Pilar: M\\nTema: Metodología evaluación 12 puntos\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología evaluación 12 puntos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología evaluación 12 puntos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Metodología evaluación 12 puntos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-25-E1-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260824T140000
+DTEND;TZID=America/Santiago:20260824T143000
+SUMMARY:📋 Preparar LI — Metodología evaluación 12 puntos
+DESCRIPTION:Publicación: 2026-08-25 10:00 Chile\\nLI-2026-08-25-E1-W11\\nMetodología evaluación 12 puntos
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Metodología evaluación 12 puntos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-26-P1-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260826T083000
+DTEND;TZID=America/Santiago:20260826T090000
+SUMMARY:👤 LinkedIn — Opinión: ¿burbuja o no en el sur?
+DESCRIPTION:ID: LI-2026-08-26-P1-W11\\nCanal: Personal · José Katz\\nSemana: 11/13 · Fase 3\\nFormato: texto · Pilar: T\\nTema: Opinión: ¿burbuja o no en el sur?\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: ¿burbuja o no en el sur?
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: ¿burbuja o no en el sur?
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Opinión: ¿burbuja o no en el sur?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-26-P1-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260825T140000
+DTEND;TZID=America/Santiago:20260825T143000
+SUMMARY:📋 Preparar LI — Opinión: ¿burbuja o no en el sur?
+DESCRIPTION:Publicación: 2026-08-26 08:30 Chile\\nLI-2026-08-26-P1-W11\\nOpinión: ¿burbuja o no en el sur?
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Opinión: ¿burbuja o no en el sur?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-27-E2-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260827T110000
+DTEND;TZID=America/Santiago:20260827T113000
+SUMMARY:🏢 LinkedIn — Documento descargable
+DESCRIPTION:ID: LI-2026-08-27-E2-W11\\nCanal: Empresa · Land Advisors\\nSemana: 11/13 · Fase 3\\nFormato: documento · Pilar: E\\nTema: Documento descargable\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento descargable
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento descargable
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Documento descargable
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-27-E2-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260826T140000
+DTEND;TZID=America/Santiago:20260826T143000
+SUMMARY:📋 Preparar LI — Documento descargable
+DESCRIPTION:Publicación: 2026-08-27 11:00 Chile\\nLI-2026-08-27-E2-W11\\nDocumento descargable
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Documento descargable
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-28-P2-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260828T083000
+DTEND;TZID=America/Santiago:20260828T090000
+SUMMARY:👤 LinkedIn — Video comparación 2 terrenos
+DESCRIPTION:ID: LI-2026-08-28-P2-W11\\nCanal: Personal · José Katz\\nSemana: 11/13 · Fase 3\\nFormato: video · Pilar: T\\nTema: Video comparación 2 terrenos\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video comparación 2 terrenos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video comparación 2 terrenos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video comparación 2 terrenos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-28-P2-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260827T140000
+DTEND;TZID=America/Santiago:20260827T143000
+SUMMARY:📋 Preparar LI — Video comparación 2 terrenos
+DESCRIPTION:Publicación: 2026-08-28 08:30 Chile\\nLI-2026-08-28-P2-W11\\nVideo comparación 2 terrenos
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video comparación 2 terrenos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-29-P3-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260829T083000
+DTEND;TZID=America/Santiago:20260829T090000
+SUMMARY:👤 LinkedIn — Confianza intelectual
+DESCRIPTION:ID: LI-2026-08-29-P3-W11\\nCanal: Personal · José Katz\\nSemana: 11/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: Confianza intelectual\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Confianza intelectual
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Confianza intelectual
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Confianza intelectual
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-29-P3-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260828T140000
+DTEND;TZID=America/Santiago:20260828T143000
+SUMMARY:📋 Preparar LI — Confianza intelectual
+DESCRIPTION:Publicación: 2026-08-29 08:30 Chile\\nLI-2026-08-29-P3-W11\\nConfianza intelectual
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Confianza intelectual
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-29-P4-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260829T170000
+DTEND;TZID=America/Santiago:20260829T173000
+SUMMARY:👤 LinkedIn — FAQ personal
+DESCRIPTION:ID: LI-2026-08-29-P4-W11\\nCanal: Personal · José Katz\\nSemana: 11/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: FAQ personal\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — FAQ personal
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — FAQ personal
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — FAQ personal
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-29-P4-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260828T140000
+DTEND;TZID=America/Santiago:20260828T143000
+SUMMARY:📋 Preparar LI — FAQ personal
+DESCRIPTION:Publicación: 2026-08-29 17:00 Chile\\nLI-2026-08-29-P4-W11\\nFAQ personal
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — FAQ personal
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-08-30-E3-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260830T100000
+DTEND;TZID=America/Santiago:20260830T103000
+SUMMARY:🏢 LinkedIn — CTA diagnóstico
+DESCRIPTION:ID: LI-2026-08-30-E3-W11\\nCanal: Empresa · Land Advisors\\nSemana: 11/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: CTA diagnóstico\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-08-30-E3-W11@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260829T140000
+DTEND;TZID=America/Santiago:20260829T143000
+SUMMARY:📋 Preparar LI — CTA diagnóstico
+DESCRIPTION:Publicación: 2026-08-30 10:00 Chile\\nLI-2026-08-30-E3-W11\\nCTA diagnóstico
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — CTA diagnóstico
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-01-E1-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260901T100000
+DTEND;TZID=America/Santiago:20260901T103000
+SUMMARY:🏢 LinkedIn — Alianza #2
+DESCRIPTION:ID: LI-2026-09-01-E1-W12\\nCanal: Empresa · Land Advisors\\nSemana: 12/13 · Fase 3\\nFormato: carrusel · Pilar: P\\nTema: Alianza #2\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza #2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza #2
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Alianza #2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-01-E1-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260831T140000
+DTEND;TZID=America/Santiago:20260831T143000
+SUMMARY:📋 Preparar LI — Alianza #2
+DESCRIPTION:Publicación: 2026-09-01 10:00 Chile\\nLI-2026-09-01-E1-W12\\nAlianza #2
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Alianza #2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-02-P1-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260902T083000
+DTEND;TZID=America/Santiago:20260902T090000
+SUMMARY:👤 LinkedIn — Artículo tiny house contorno rural
+DESCRIPTION:ID: LI-2026-09-02-P1-W12\\nCanal: Personal · José Katz\\nSemana: 12/13 · Fase 3\\nFormato: articulo · Pilar: TH\\nTema: Artículo tiny house contorno rural\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo tiny house contorno rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo tiny house contorno rural
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Artículo tiny house contorno rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-02-P1-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260901T140000
+DTEND;TZID=America/Santiago:20260901T143000
+SUMMARY:📋 Preparar LI — Artículo tiny house contorno rural
+DESCRIPTION:Publicación: 2026-09-02 08:30 Chile\\nLI-2026-09-02-P1-W12\\nArtículo tiny house contorno rural
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Artículo tiny house contorno rural
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-03-E2-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260903T110000
+DTEND;TZID=America/Santiago:20260903T113000
+SUMMARY:🏢 LinkedIn — Servicio acompañamiento cierre
+DESCRIPTION:ID: LI-2026-09-03-E2-W12\\nCanal: Empresa · Land Advisors\\nSemana: 12/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: Servicio acompañamiento cierre\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio acompañamiento cierre
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio acompañamiento cierre
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Servicio acompañamiento cierre
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-03-E2-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260902T140000
+DTEND;TZID=America/Santiago:20260902T143000
+SUMMARY:📋 Preparar LI — Servicio acompañamiento cierre
+DESCRIPTION:Publicación: 2026-09-03 11:00 Chile\\nLI-2026-09-03-E2-W12\\nServicio acompañamiento cierre
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Servicio acompañamiento cierre
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-04-P2-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260904T083000
+DTEND;TZID=America/Santiago:20260904T090000
+SUMMARY:👤 LinkedIn — Recorrido Ensenada
+DESCRIPTION:ID: LI-2026-09-04-P2-W12\\nCanal: Personal · José Katz\\nSemana: 12/13 · Fase 3\\nFormato: texto · Pilar: T\\nTema: Recorrido Ensenada\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Ensenada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Ensenada
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Recorrido Ensenada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-04-P2-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260903T140000
+DTEND;TZID=America/Santiago:20260903T143000
+SUMMARY:📋 Preparar LI — Recorrido Ensenada
+DESCRIPTION:Publicación: 2026-09-04 08:30 Chile\\nLI-2026-09-04-P2-W12\\nRecorrido Ensenada
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Recorrido Ensenada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-05-P3-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260905T083000
+DTEND;TZID=America/Santiago:20260905T090000
+SUMMARY:👤 LinkedIn — Caso reventa
+DESCRIPTION:ID: LI-2026-09-05-P3-W12\\nCanal: Personal · José Katz\\nSemana: 12/13 · Fase 3\\nFormato: texto · Pilar: S\\nTema: Caso reventa\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso reventa
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso reventa
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Caso reventa
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-05-P3-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260904T140000
+DTEND;TZID=America/Santiago:20260904T143000
+SUMMARY:📋 Preparar LI — Caso reventa
+DESCRIPTION:Publicación: 2026-09-05 08:30 Chile\\nLI-2026-09-05-P3-W12\\nCaso reventa
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso reventa
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-05-P4-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260905T170000
+DTEND;TZID=America/Santiago:20260905T173000
+SUMMARY:👤 LinkedIn — Encuesta servicios
+DESCRIPTION:ID: LI-2026-09-05-P4-W12\\nCanal: Personal · José Katz\\nSemana: 12/13 · Fase 3\\nFormato: encuesta · Pilar: S\\nTema: Encuesta servicios\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta servicios
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta servicios
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Encuesta servicios
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-05-P4-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260904T140000
+DTEND;TZID=America/Santiago:20260904T143000
+SUMMARY:📋 Preparar LI — Encuesta servicios
+DESCRIPTION:Publicación: 2026-09-05 17:00 Chile\\nLI-2026-09-05-P4-W12\\nEncuesta servicios
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Encuesta servicios
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-06-E3-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260906T100000
+DTEND;TZID=America/Santiago:20260906T103000
+SUMMARY:🏢 LinkedIn — Caso agregado
+DESCRIPTION:ID: LI-2026-09-06-E3-W12\\nCanal: Empresa · Land Advisors\\nSemana: 12/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: Caso agregado\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Caso agregado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-06-E3-W12@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260905T140000
+DTEND;TZID=America/Santiago:20260905T143000
+SUMMARY:📋 Preparar LI — Caso agregado
+DESCRIPTION:Publicación: 2026-09-06 10:00 Chile\\nLI-2026-09-06-E3-W12\\nCaso agregado
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Caso agregado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-08-E1-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260908T100000
+DTEND;TZID=America/Santiago:20260908T103000
+SUMMARY:🏢 LinkedIn — Resultados metodología (agregado)
+DESCRIPTION:ID: LI-2026-09-08-E1-W13\\nCanal: Empresa · Land Advisors\\nSemana: 13/13 · Fase 3\\nFormato: carrusel · Pilar: A\\nTema: Resultados metodología (agregado)\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Resultados metodología (agregado)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Resultados metodología (agregado)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Resultados metodología (agregado)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-08-E1-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260907T140000
+DTEND;TZID=America/Santiago:20260907T143000
+SUMMARY:📋 Preparar LI — Resultados metodología (agregado)
+DESCRIPTION:Publicación: 2026-09-08 10:00 Chile\\nLI-2026-09-08-E1-W13\\nResultados metodología (agregado)
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Resultados metodología (agregado)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-09-P1-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260909T083000
+DTEND;TZID=America/Santiago:20260909T090000
+SUMMARY:👤 LinkedIn — Retrospectiva 90 días LinkedIn
+DESCRIPTION:ID: LI-2026-09-09-P1-W13\\nCanal: Personal · José Katz\\nSemana: 13/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: Retrospectiva 90 días LinkedIn\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Retrospectiva 90 días LinkedIn
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Retrospectiva 90 días LinkedIn
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Retrospectiva 90 días LinkedIn
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-09-P1-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260908T140000
+DTEND;TZID=America/Santiago:20260908T143000
+SUMMARY:📋 Preparar LI — Retrospectiva 90 días LinkedIn
+DESCRIPTION:Publicación: 2026-09-09 08:30 Chile\\nLI-2026-09-09-P1-W13\\nRetrospectiva 90 días LinkedIn
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Retrospectiva 90 días LinkedIn
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-10-E2-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260910T110000
+DTEND;TZID=America/Santiago:20260910T113000
+SUMMARY:🏢 LinkedIn — CTA diagnóstico cierre 90 días
+DESCRIPTION:ID: LI-2026-09-10-E2-W13\\nCanal: Empresa · Land Advisors\\nSemana: 13/13 · Fase 3\\nFormato: carrusel · Pilar: S\\nTema: CTA diagnóstico cierre 90 días\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico cierre 90 días
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico cierre 90 días
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — CTA diagnóstico cierre 90 días
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-10-E2-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260909T140000
+DTEND;TZID=America/Santiago:20260909T143000
+SUMMARY:📋 Preparar LI — CTA diagnóstico cierre 90 días
+DESCRIPTION:Publicación: 2026-09-10 11:00 Chile\\nLI-2026-09-10-E2-W13\\nCTA diagnóstico cierre 90 días
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — CTA diagnóstico cierre 90 días
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-11-P2-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260911T083000
+DTEND;TZID=America/Santiago:20260911T090000
+SUMMARY:👤 LinkedIn — 3 aprendizajes de campo
+DESCRIPTION:ID: LI-2026-09-11-P2-W13\\nCanal: Personal · José Katz\\nSemana: 13/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: 3 aprendizajes de campo\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 aprendizajes de campo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 aprendizajes de campo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — 3 aprendizajes de campo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-11-P2-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260910T140000
+DTEND;TZID=America/Santiago:20260910T143000
+SUMMARY:📋 Preparar LI — 3 aprendizajes de campo
+DESCRIPTION:Publicación: 2026-09-11 08:30 Chile\\nLI-2026-09-11-P2-W13\\n3 aprendizajes de campo
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — 3 aprendizajes de campo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-12-P3-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260912T083000
+DTEND;TZID=America/Santiago:20260912T090000
+SUMMARY:👤 LinkedIn — Video agradecimiento comunidad
+DESCRIPTION:ID: LI-2026-09-12-P3-W13\\nCanal: Personal · José Katz\\nSemana: 13/13 · Fase 3\\nFormato: video · Pilar: A\\nTema: Video agradecimiento comunidad\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video agradecimiento comunidad
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video agradecimiento comunidad
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Video agradecimiento comunidad
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-12-P3-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260911T140000
+DTEND;TZID=America/Santiago:20260911T143000
+SUMMARY:📋 Preparar LI — Video agradecimiento comunidad
+DESCRIPTION:Publicación: 2026-09-12 08:30 Chile\\nLI-2026-09-12-P3-W13\\nVideo agradecimiento comunidad
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Video agradecimiento comunidad
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-12-P4-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260912T170000
+DTEND;TZID=America/Santiago:20260912T173000
+SUMMARY:👤 LinkedIn — Plan Q4 teaser
+DESCRIPTION:ID: LI-2026-09-12-P4-W13\\nCanal: Personal · José Katz\\nSemana: 13/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: Plan Q4 teaser\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Plan Q4 teaser
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Plan Q4 teaser
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:👤 LinkedIn — Plan Q4 teaser
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-12-P4-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260911T140000
+DTEND;TZID=America/Santiago:20260911T143000
+SUMMARY:📋 Preparar LI — Plan Q4 teaser
+DESCRIPTION:Publicación: 2026-09-12 17:00 Chile\\nLI-2026-09-12-P4-W13\\nPlan Q4 teaser
+LOCATION:Personal · José Katz
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Plan Q4 teaser
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:LI-2026-09-13-E3-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260913T100000
+DTEND;TZID=America/Santiago:20260913T103000
+SUMMARY:🏢 LinkedIn — Hiring / colaboradores futuro
+DESCRIPTION:ID: LI-2026-09-13-E3-W13\\nCanal: Empresa · Land Advisors\\nSemana: 13/13 · Fase 3\\nFormato: texto · Pilar: A\\nTema: Hiring / colaboradores futuro\\n\\nEstrategia: rrss/LINKEDIN-estrategia-2026.md\\nBrief: por crear
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Hiring / colaboradores futuro
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Hiring / colaboradores futuro
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:🏢 LinkedIn — Hiring / colaboradores futuro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-LI-2026-09-13-E3-W13@landadvisors.cl
+DTSTAMP:20260623T161135Z
+DTSTART;TZID=America/Santiago:20260912T140000
+DTEND;TZID=America/Santiago:20260912T143000
+SUMMARY:📋 Preparar LI — Hiring / colaboradores futuro
+DESCRIPTION:Publicación: 2026-09-13 10:00 Chile\\nLI-2026-09-13-E3-W13\\nHiring / colaboradores futuro
+LOCATION:Empresa · Land Advisors
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar LI — Hiring / colaboradores futuro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

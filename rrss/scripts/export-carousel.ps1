@@ -5,14 +5,20 @@ param(
   [int]$SlideCount = 0,
   [string]$IgPrefix = "",
   [ValidateSet("vertical", "square")]
-  [string]$Format = "vertical"
+  [string]$Format = "vertical",
+  [switch]$LinkedIn
 )
 
 $scriptDir = Split-Path $MyInvocation.MyCommand.Path -Parent
 $rrssDir = Split-Path $scriptDir -Parent
 $root = Split-Path $rrssDir -Parent
-$outDir = Join-Path $rrssDir "output\$PostId"
-$url = "http://127.0.0.1:$Port/rrss/posts/$PostId/index.html"
+if ($LinkedIn) {
+  $outDir = Join-Path $rrssDir "linkedin\output\$PostId"
+  $url = "http://127.0.0.1:$Port/rrss/linkedin/posts/$PostId/index.html"
+} else {
+  $outDir = Join-Path $rrssDir "output\$PostId"
+  $url = "http://127.0.0.1:$Port/rrss/posts/$PostId/index.html"
+}
 $mjs = Join-Path $scriptDir "export-carousel.mjs"
 
 function Test-ServerUp {
@@ -60,7 +66,11 @@ $env:CAROUSEL_URL = $url
 $env:CAROUSEL_FORMAT = $Format
 
 if ($SlideCount -le 0) {
-  $jsonPath = Join-Path $rrssDir "posts\$PostId.json"
+  if ($LinkedIn) {
+    $jsonPath = Join-Path $rrssDir "linkedin\posts\$PostId.json"
+  } else {
+    $jsonPath = Join-Path $rrssDir "posts\$PostId.json"
+  }
   if (Test-Path $jsonPath) {
     $postJson = Get-Content $jsonPath -Raw | ConvertFrom-Json
     $SlideCount = [int]$postJson.slides_count
@@ -68,12 +78,30 @@ if ($SlideCount -le 0) {
   if ($SlideCount -le 0) { $SlideCount = 7 }
 }
 $env:SLIDE_COUNT = "$SlideCount"
+$env:OUT_DIR = $outDir
 
 if (-not $IgPrefix) {
   if ($PostId -match "2026-06-09-R1|2026-06-17-R1") {
     $IgPrefix = "land-advisors-relanzamiento"
   } elseif ($PostId -match "2026-06-18-R1") {
     $IgPrefix = "land-advisors-identidad"
+  } elseif ($PostId -match "2026-06-19-R1") {
+    $IgPrefix = "land-advisors-mensaje"
+  } elseif ($PostId -match "2026-06-20-R1") {
+    $IgPrefix = "land-advisors-web"
+  } elseif ($PostId -match "2026-06-23-R1") {
+    $IgPrefix = "land-advisors-brochure"
+  } elseif ($PostId -match "2026-06-24-M1") {
+    $IgPrefix = "land-advisors-metodologia"
+  } elseif ($PostId -match "^LI-") {
+    $liJson = Join-Path $rrssDir "linkedin\posts\$PostId.json"
+    if (Test-Path $liJson) {
+      $li = Get-Content $liJson -Raw | ConvertFrom-Json
+      if ($li.notas_diseno.linkedin_prefix) {
+        $IgPrefix = $li.notas_diseno.linkedin_prefix
+      }
+    }
+    if (-not $IgPrefix) { $IgPrefix = "land-advisors-li-$($PostId.ToLower())" }
   } else {
     $IgPrefix = "land-advisors-$($PostId.ToLower())"
   }

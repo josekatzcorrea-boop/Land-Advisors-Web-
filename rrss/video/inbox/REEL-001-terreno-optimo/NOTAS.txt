@@ -1,0 +1,31 @@
+REEL-001 — Terreno óptimo
+=========================
+
+Sube aquí tu material. Borra estas instrucciones cuando empieces.
+
+DRONE (carpeta drone/)
+  - Clips cortos (5-30 s) O un video largo (yo lo divido en drone/clips/)
+  - Nombra: drone-puerto-varas-01.mp4, drone-frutillar-lago-01.mp4, etc.
+  - Anota abajo qué muestra cada clip (zona, vista, bosque, pradera…)
+
+TALKING (carpeta talking/) — opcional
+  - Vertical 9:16, 20-40 s
+  - Frases sugeridas:
+    1) "Soñar con un terreno en el sur es legítimo."
+    2) "La diferencia está en cuánta oferta conoces antes de decidir."
+
+BROLL (carpeta broll/) — opcional
+  - Accesos, caminos, parcelas sin datos del vendedor
+
+AUDIO (carpeta audio/) — opcional
+  - Música con licencia clara, o voz en off
+
+---
+Mis clips (completa tú):
+
+drone-puerto-varas-01.mp4 → 
+drone-frutillar-01.mp4 → 
+...
+
+Preferencia música: [ ] yo subo pista  [ ] que elijan ustedes
+¿Incluir mi voz en cámara? [ ] sí  [ ] no, solo texto

@@ -1,0 +1,122 @@
+{
+  "_comment": "Estándar Land Advisors para Reels. Referencia: REEL-001. Usar en nuevos briefs y builds.",
+  "version": "1.0",
+  "referencia": "REEL-001-terreno-optimo",
+  "playbook": "rrss/video/PLAYBOOK-reel.md",
+
+  "formato": {
+    "ancho": 1080,
+    "alto": 1920,
+    "fps": 30,
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "audio_bitrate": "192k"
+  },
+
+  "timeline": {
+    "intro_seg": 2.5,
+    "vo_delay_seg": 0.15,
+    "tail_post_vo_seg": 2,
+    "outro_seg": 2,
+    "regla_duracion": "total = (intro + vo_delay) + duracion_vo + tail_post_vo + outro",
+    "regla_post_vo": "4 segundos después de que termina la voz: 2 s cola dron + 2 s outro"
+  },
+
+  "voz": {
+    "motor": "edge-tts",
+    "voz": "es-CL-LorenzoNeural",
+    "rate": "+8%",
+    "pitch": "+3Hz",
+    "notas": "Chilena, masculina, más presencia que Catalina. Música NO va en el export — se agrega en Instagram."
+  },
+
+  "audio_export": {
+    "incluir_musica": false,
+    "solo_vo": true,
+    "vo_volumen": 1.0
+  },
+
+  "subtitulos": {
+    "fuente_regular": "Montserrat",
+    "fuente_enfasis": "Montserrat SemiBold",
+    "archivo_regular": "rrss/video/assets/fonts/Montserrat-Regular.ttf",
+    "archivo_semibold": "rrss/video/assets/fonts/Montserrat-SemiBold.ttf",
+    "tamano_px": 56,
+    "color_texto": "#FFFFFF",
+    "color_borde": "#052C4D",
+    "margin_v": 480,
+    "margin_l_r": 56,
+    "alineacion": "bottom-center (ASS alignment=2)",
+    "outline": 2.5,
+    "palabra_clave_en_negrita": true,
+    "quemados_en_video": true,
+    "offset_seg": 2.65,
+    "offset_formula": "intro_seg + vo_delay_seg",
+    "script_conversion": "rrss/video/scripts/vtt-to-ass.py"
+  },
+
+  "branding_intro": {
+    "html": "rrss/video/assets/branding/intro.html",
+    "fondo": "gradiente blanco #FFFFFF → #F4F7F8 → #EEF3F5",
+    "isotipo": "assets/logo-isotipo-3d-transparente.png",
+    "isotipo_ancho_px": 280,
+    "descriptor": "ESTRATEGIA INMOBILIARIA",
+    "descriptor_color": "#A7ADB3",
+    "fade_in_seg": 0.4,
+    "fade_out_seg": 0.5
+  },
+
+  "branding_outro": {
+    "html": "rrss/video/assets/branding/outro.html",
+    "fondo": "#052C4D",
+    "isotipo": "brochure/assets/isotipo-3d-blanco-transparente.png",
+    "isotipo_ancho_px": 200,
+    "isotipo_notas": "MISMO asset que carruseles CTA. NO usar filtros CSS ni PNG generados.",
+    "cta": "Agenda tu reunión estratégica",
+    "url": "landadvisors.cl",
+    "descriptor": "ESTRATEGIA INMOBILIARIA",
+    "fade_in_seg": 0.35
+  },
+
+  "logo_reglas": {
+    "cursor_rule": ".cursor/rules/land-advisors-isotipo-transparente.mdc",
+    "fondo_claro": "assets/logo-isotipo-3d-transparente.png",
+    "fondo_oscuro": "brochure/assets/isotipo-3d-blanco-transparente.png",
+    "prohibido": [
+      "logo-isotipo-3d.png (sin transparente)",
+      "logo invertido 3D.jpeg",
+      "filter: invert() en HTML",
+      "PNG procesados ad hoc"
+    ]
+  },
+
+  "postproduccion": {
+    "crop": "ih*9/16 centrado → 1080x1920",
+    "color_grade": "eq=contrast=1.12:saturation=1.42:brightness=0.03,unsharp=3:3:0.4",
+    "transiciones": "xfade 0.45s entre intro, clips dron y outro",
+    "transiciones_tipos": ["fade", "wipeleft", "wiperight", "slideup", "circlecrop", "fadeblack", "dissolve"]
+  },
+
+  "portada": {
+    "fuente": "frame del dron procesado (seg-02, mitad del clip)",
+    "no_usar": "frame de intro/outro ni video con subtítulos",
+    "ruta_patron": "rrss/video/covers/REEL-XXX-cover.jpg",
+    "subir_manual_ig": true
+  },
+
+  "scripts": {
+    "build_referencia": "rrss/video/scripts/build-reel-001-branded.ps1",
+    "split_drone": "rrss/video/scripts/split-drone-clips.ps1",
+    "vtt_ass": "rrss/video/scripts/vtt-to-ass.py",
+    "plan_timeline": "rrss/video/scripts/plan-reel-timeline.py",
+    "concat_xfade": "rrss/video/scripts/concat-xfade.py",
+    "export_branding": "rrss/video/scripts/export-branding.mjs",
+    "servidor_local": "landing/serve.ps1 (puerto 8765)"
+  },
+
+  "dependencias": {
+    "ffmpeg": "winget install ffmpeg",
+    "python": ["edge-tts", "fonttools"],
+    "node": "Chrome/Edge headless vía export-branding.mjs"
+  }
+}

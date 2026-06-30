@@ -1,0 +1,80 @@
+{
+  "id": "LI-2026-06-23-E1",
+  "fecha_publicacion": "2026-06-23",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "empresa",
+  "pagina": "Land Advisors Chile",
+  "pilar": "T",
+  "embudo": "awareness",
+  "campana": "linkedin-semana-02",
+  "tema": "Mapa cuenca Lago Llanquihue — 5 comunas, 5 lógicas",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-23-E1.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-23-E1/index.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-23-E1/",
+  "titulo_interno": "Territorio LI — mapa cuenca Llanquihue · empresa sem 2",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "5 comunas. 5 lógicas de compra.",
+      "cuerpo": "El sur no es un mercado homogéneo. Cada comuna de la cuenca tiene perfil distinto.",
+      "imagen_prompt": "Intro blanco. Isotipo LA. Titular #052C4D."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "La Ruta 5 articula la cuenca",
+      "cuerpo": "Frutillar, Llanquihue, Puerto Varas y Puerto Montt — mismo corredor, distinta lectura de precio y acceso.",
+      "imagen_prompt": "Mapa conectividad recortado. Panel texto + mapa lateral."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Puerto Varas vs Frutillar",
+      "cuerpo": "Contorno conectado vs segunda residencia cultural. Dos micro-mercados.",
+      "imagen_prompt": "Contraste duo panels."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Llanquihue · Ensenada",
+      "cuerpo": "Orilla del lago vs vocación turística — distinto horizonte de uso.",
+      "imagen_prompt": "Split foto contorno rural."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Qué miramos en cada comuna",
+      "cuerpo": "Conectividad, normativa, comparables, presión turística, servicios.",
+      "imagen_prompt": "Chips criterio territorial."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "¿En qué comuna buscar?",
+      "cuerpo": "Agenda reunión estratégica · landadvisors.cl",
+      "imagen_prompt": "Fondo #052C4D. CTA blanco."
+    }
+  ],
+  "caption_linkedin": "Comprar terreno en el sur sin entender la cuenca es como elegir barrio a ciegas.\n\nLa cuenca del Lago Llanquihue no es un mercado único. Son micro-mercados con lógicas distintas:\n\n→ Puerto Varas: contorno conectado, segunda vivienda e inversión\n→ Frutillar: residencia cultural, ritmo más pausado\n→ Llanquihue: vida lago con acceso urbano\n→ Ensenada: presión turística sobre parcelas\n→ Puerto Octay y contorno: perfiles emergentes\n\nLa Ruta 5 Sur articula el eje — pero cada comuna se lee distinto en normativa, comparables y horizonte de uso.\n\nEn Land Advisors empezamos por el mapa. El terreno viene después.\n\nDesliza el carrusel → lectura territorial de la cuenca.\n\n—\n¿Qué comuna estás evaluando hoy?\n\n#LandAdvisors #InteligenciaTerritorial #LagoLlanquihue #PuertoVaras #Frutillar #InversiónInmobiliaria #TerrenosChile #SurDeChile",
+  "comentario_fijado": "Agenda reunión estratégica → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana02-e1-mapa",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana02-e1-mapa",
+  "notas_diseno": {
+    "formato": "1080×1080",
+    "linkedin_prefix": "land-advisors-li-mapa-cuenca",
+    "foto_mapa": "rrss/assets/fotos-seleccion/mapa-conectividad.jpg"
+  },
+  "checklist_marca": {
+    "pilar_territorio": true,
+    "sin_promesas_rentabilidad": true,
+    "marco_agregado_comunas": true,
+    "cta_reunion_estrategica": true
+  }
+}

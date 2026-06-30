@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-26-S1 — Diagnóstico estratégico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+  <header class="carousel-toolbar">
+    <strong>2026-06-26-S1</strong>
+    <span>Spotlight · tipografía grande · 1080×1350</span>
+    <button type="button" id="btn-export-hint">Exportar: scripts/export-carousel.ps1</button>
+    <a href="../../../calendario-2026-06.json">Calendario</a>
+  </header>
+
+  <main class="carousel-deck" id="carousel-deck">
+
+    <section class="slide slide--spotlight" data-slide="1" aria-label="Slide 1">
+      <div class="slide__inner">
+        <div class="spotlight-photo">
+          <img src="/rrss/assets/fotos-seleccion/lote-vista.jpg" alt="" width="1080" height="420">
+        </div>
+        <div class="spotlight-body">
+          <span class="spotlight-badge">Diagnóstico · 1 UF</span>
+          <h1 class="spotlight-title">¿Comprar un terreno sin antes entender el territorio?</h1>
+          <p class="spotlight-lead">Reunión + informe territorial antes de <strong>visitar a ciegas</strong>.</p>
+          <ul class="spotlight-list">
+            <li>Zonas recomendadas</li>
+            <li>Proyección de desarrollo</li>
+            <li>Argumentos de plusvalía</li>
+          </ul>
+          <div class="spotlight-cta">
+            <span class="spotlight-cta-btn">Agendar diagnóstico estratégico</span>
+            <p class="spotlight-cta-meta">Cuenca Lago Llanquihue · Malalcahuello</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide__footer">
+        <span class="slide__num">01 / 01</span>
+        <div class="slide__brand-mini">
+          <img src="/assets/logo-isotipo-3d-transparente.png" alt="" width="56" height="56">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    if (location.search.includes("export=1")) {
+      document.body.classList.add("export-mode");
+    }
+  </script>
+</body>
+</html>

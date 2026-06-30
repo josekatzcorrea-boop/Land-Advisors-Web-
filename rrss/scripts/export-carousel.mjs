@@ -10,7 +10,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const postId = process.env.POST_ID || "2026-06-09-R1";
 const rrssDir = join(__dirname, "..");
 const postDir = join(rrssDir, "posts", postId);
-const outDir = join(rrssDir, "output", postId);
+const outDir =
+  process.env.OUT_DIR || join(rrssDir, "output", postId);
 const port = Number(process.env.SERVE_PORT || 8765);
 const baseUrl =
   process.env.CAROUSEL_URL ||

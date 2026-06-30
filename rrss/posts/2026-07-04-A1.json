@@ -1,0 +1,27 @@
+{
+  "id": "2026-07-04-A1",
+  "fecha_publicacion": "2026-07-04",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "A",
+  "campana": null,
+  "tema": "El terreno correcto. Al precio correcto.",
+  "formato": "single",
+  "slides_count": 1,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-04-A1.json",
+  "piezas_visuales": "rrss/posts/2026-07-04-A1/index.html",
+  "export_output": "rrss/output/2026-07-04-A1/",
+  "titulo_interno": "Autoridad — tagline marca · pilar A",
+  "caption_ig": "El terreno correcto. Al precio correcto.\n\nNo vendemos terrenos. Te ayudamos a comprar el correcto — con inteligencia territorial, criterio de mercado y honestidad intelectual.\n\nTerritorio antes del activo.\nIndependencia del vendedor.\nDecisiones de largo plazo.\n\n¿Te suena diferente a lo que ofrecen los portales?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #InversiónInmobiliaria #SurDeChile #TerrenosChile #InteligenciaTerritorial #PuertoVaras #HonestidadIntelectual #ContornoRural #LagoLlanquihue",
+  "caption_fb": "El terreno correcto. Al precio correcto.\n\nLand Advisors es consultoría de inteligencia territorial — no corredora ni portal inmobiliario.\n\nTe ayudamos a comprar el predio que calza con tu objetivo, en la zona correcta y al precio que corresponde al mercado.\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-autoridad-jul2026\n\n#LandAdvisors #SurDeChile #EstrategiaInmobiliaria",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-autoridad-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical · single photo-card",
+    "instagram_prefix": "land-advisors-tagline"
+  }
+}

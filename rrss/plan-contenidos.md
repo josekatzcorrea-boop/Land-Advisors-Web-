@@ -396,7 +396,7 @@ Pendiente
 26-jun
 Jue
 S
-Búsqueda personalizada de terrenos: 3 alternativas con criterio (5 UF)
+Búsqueda personalizada de terrenos: al menos 4 alternativas + informe de las 3 mejores elegidas en conjunto (5 UF)
 Carrusel 4
 Pendiente
 27-jun
@@ -412,7 +412,26 @@ Periferia rural: dónde suelen aparecer oportunidades
 Carrusel 6
 Pendiente
 
-Julio en adelante: cadencia L-V estándar sin pilar R. Rotar banco de ideas y servicios según branding-book v1.2.
+Julio en adelante: cadencia L-V estándar sin pilar R. **Tono aliado sutil:** enamorarse está bien · de tu lado en precio, objetivo y negociación · información sin apagar el sueño.
+
+**Fórmula copy:** *Terreno único y especial → acompañamiento sutil → decisión con confianza.*
+
+**Principio:** Land Advisors **vela por tus intereses** — no es aguafiestas. Validamos la emoción y afinamos con criterio (mercado, viabilidad, negociación).
+
+**Calendario julio 2026 (completo):** `rrss/calendario-2026-07.json` · importar `rrss/calendario-publicaciones-julio-2026.ics`
+
+| Semana | Lun T 10:00 | Mar M 12:00 | Mié E 10:00 | Jue S 18:00 | Vie A 11:00 |
+|--------|-------------|-------------|-------------|-------------|-------------|
+| 1 | — | M1 · enamorarse es parte del camino ✓ | E1 · revisemos juntos el reglamento ✓ | S1 · encontrar el terreno único ✓ | A1 · terreno correcto para tu sueño ✓ |
+| 1 cont. | T1 · naturaleza + vida en el tiempo ✓ | — | — | — | — |
+| 2 | — | — | E2 · suelo y tu idea | S2 · mapa antes de visitar (1 UF) | A2 · de tu lado en la cuenca |
+| 3 | T3 · expansión e infraestructura | M2 · preguntas en cada visita | E3 · ¿cumple tus objetivos? | S3 · ¿alternativa correcta? | A3 · caminamos contigo |
+| 4 | T4 · segunda vivienda y patrimonio | M3 · emoción + contrastar precio | E4 · refugio vs proyecto de vida | S4 · acompañamiento hasta escritura | A4 · seguimos buscando contigo |
+| 5 | T5 · evolución desde arriba | M4 · datos para tu proyecto | E5 · mapa del sur desde Santiago | S5 · cabañas, turismo, comercio | A5 · encuentra el tuyo |
+
+✓ = piezas exportadas (`listo_publicar`) — **revisar captions** con tono aspiracional. Resto = `planificado`.
+
+Cada post incluye `tema` (titular aspiracional), `angulo_educativo` (contenido técnico) y `hook_sueño` (emoción del cliente).
 
 7. Plantilla de brief (para el agente)
 Cada post se genera a partir de un brief estructurado.

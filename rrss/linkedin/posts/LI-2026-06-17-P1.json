@@ -1,0 +1,44 @@
+{
+  "id": "LI-2026-06-17-P1",
+  "fecha_publicacion": "2026-06-17",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "A",
+  "embudo": "awareness",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Lanzamiento LinkedIn — carta del fundador",
+  "formato": "texto",
+  "imagen_adjunta": {
+    "tipo": "foto_territorial",
+    "asset_sugerido": "landing/images/hero.jpg o foto José en terreno Ensenada",
+    "notas": "Foto horizontal 1200×627 mínimo. José de espaldas o perfil mirando territorio — no selfie corporativa."
+  },
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-17-P1.json",
+  "titulo_interno": "Arranque LI — carta fundador · personal",
+  "caption_linkedin": "Llevo años recorriendo terrenos en el sur de Chile.\n\nHoy abro este espacio en LinkedIn para compartir lo que veo en campo — no como corredor, sino como consultor de estrategia inmobiliaria.\n\nEn Land Advisors no vendemos terrenos. Ayudamos a comprar el correcto.\n\nEso implica algo que muchos compradores desde Santiago subestiman: la decisión empieza mucho antes de la visita. Empieza leyendo el territorio — acceso real, servicios, normativa, evolución del sector, comparables que no aparecen en un portal.\n\nHe visto familias enamorarse de una vista y descubrir después que el camino de invierno no existe.\nInversionistas ofertar sin entender el PRC.\nDesarrolladores comprar \"barato\" con un costo oculto de habilitación.\n\nMi trabajo — y el de nuestro equipo — es reducir esas decisiones a criterio. Territorio primero, activo después.\n\nEn las próximas semanas compartiré:\n→ Recorridos y señales que miramos en terreno\n→ Errores frecuentes al comprar en el sur\n→ Metodología de consultoría (no corretaje)\n→ Casos reales, anonimizados, con aprendizajes\n\nSi estás evaluando compra, inversión o proyecto de vida en la cuenca del Lago Llanquihue o Malalcahuello, conversemos.\n\nEl primer paso no es ver terrenos. Es ordenar el mapa.\n\n—\n¿Qué te gustaría que profundice primero: normativa, plusvalía territorial o proceso de compra?\n\n#InversiónInmobiliaria #SurDeChile #TerrenosChile #PuertoVaras #RealEstate",
+  "comentario_fijado": "Diagnóstico estratégico — ordena tu mapa antes de visitar terrenos al azar → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p1\n\nLand Advisors Chile @Land Advisors",
+  "acciones_post_publicacion": [
+    "Taguear @Land Advisors Chile en comentario (no en caption principal)",
+    "Fijar comentario con enlace en los primeros 5 minutos",
+    "Responder cada comentario en <24h con pregunta de vuelta",
+    "Compartir en story LinkedIn si disponible"
+  ],
+  "cta_texto": "Agenda diagnóstico estratégico",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p1",
+  "notas_diseno": {
+    "formato_imagen": "1200×627 px o 1080×1080 foto territorial",
+    "sin_texto_en_imagen": true,
+    "tono": "Primera persona, reflexivo, sin hype"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true
+  }
+}

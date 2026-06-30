@@ -1,0 +1,42 @@
+---
+description: Carruseles Instagram RRSS — tipografía grande y slide 1 con foto
+globs: rrss/posts/**/*.html,rrss/posts/**/carousel.css,rrss/templates/**
+alwaysApply: false
+---
+
+# Carruseles Instagram — legibilidad móvil
+
+Referencia: `rrss/templates/carousel-typography.md` · plantilla CSS: `rrss/templates/carousel.css`
+
+## Slide 1
+
+- **Siempre incluir fotografía** (hero, split foto+texto o photo-card). No usar solo fondo blanco/azul con texto.
+
+## Tipografía (canvas 1080×1350)
+
+Diseñar para que el copy se lea al **repostear como story** en celular:
+
+| Elemento | Mínimo |
+|----------|--------|
+| `.slide__title` | **70px** |
+| `.slide__body` | **38px** (nunca &lt; 32px) |
+| `.slide__badge` | **28px** |
+| Split título / cuerpo | **52px / 32px** |
+| Disclaimer | **24px** mínimo |
+
+## Tono copy (julio 2026+)
+
+**Aliado sutil — no aguafiestas:**
+
+- Enamorarse del terreno **está bien**. Buscas algo **único y especial**.
+- Estamos **de tu lado**: objetivo, precio, negociación, viabilidad — con información clara, sin sermón.
+- Presentar datos **después de validar la emoción**, no para apagarla.
+- Evitar titulares alarmistas, «decir no» como gancho, tono moralista.
+- Ver `linea_editorial` en `calendario-2026-07.json`.
+
+- Evitar `font-size` inline pequeños en `index.html`; usar clases del CSS.
+- Posts nuevos: copiar `rrss/templates/carousel.css`, no reducir tamaños “para que quepa”.
+
+## Export
+
+Tras editar: `powershell -ExecutionPolicy Bypass -File rrss/scripts/export-carousel.ps1 -PostId AAAA-MM-DD-XX`

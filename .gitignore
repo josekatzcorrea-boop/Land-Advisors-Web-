@@ -27,6 +27,15 @@ catalogo/Land-Advisors-Catalogo-movil.pdf
 # Video territorial (opcional: quita esta línea si quieres subir el MP4)
 landing/video/territorio.mp4
 
+# Video RRSS — material crudo y exports (briefs/scripts sí van al repo)
+rrss/video/inbox/**/*.mp4
+rrss/video/inbox/**/*.mov
+rrss/video/inbox/**/*.mkv
+rrss/video/inbox/**/clips/
+rrss/video/exports/**/*.mp4
+rrss/video/assets/music/*
+!rrss/video/assets/music/.gitkeep
+
 # Analítica con IDs reales (mantener analytics-config.example.js en repo)
 landing/analytics-config.local.js
 

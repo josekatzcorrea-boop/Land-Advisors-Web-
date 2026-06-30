@@ -1,0 +1,89 @@
+{
+  "id": "LI-2026-06-19-P2",
+  "fecha_publicacion": "2026-06-19",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "M",
+  "embudo": "consideracion",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Incentivos del comprador: portafolio vs mercado completo",
+  "formato": "texto_imagen",
+  "slides_count": 1,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-19-P2.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-19-P2/versus.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-19-P2/versus/",
+  "imagen_apoyo": "rrss/linkedin/output/LI-2026-06-19-P2/land-advisors-li-versus-corredor-consultor.png",
+  "titulo_interno": "Incentivos comprador · canje · personal José Katz",
+  "nota_reutilizacion": "Complementa E2 (empresa). Ángulo personal: dilema ético e incentivos vs metodología institucional.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "Proteger al comprador cambió los incentivos",
+      "cuerpo": "¿Cómo asesorar bien si tu ingreso depende de vender una cartera propia?",
+      "imagen_prompt": "Intro blanco. Isotipo LA."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Portafolio vs mercado completo",
+      "cuerpo": "Corredor: vende su cartera, fracción del mercado, comisión vendedor.\nLand Advisors: sin cartera, todo el mercado, comisión comprador (canje).",
+      "imagen_prompt": "Contraste duo."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Comisión del comprador (canje)",
+      "cuerpo": "Proteger intereses del comprador modificando incentivos. Objetivo: que compres bien, no venderte de mi portafolio.",
+      "imagen_prompt": "Stat slide canje."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "El dilema al independizarme",
+      "cuerpo": "Cartera a toda costa vs especializarse en conocer el mercado. Opté por lo segundo.",
+      "imagen_prompt": "Split foto territorial."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Dilema ético · Jefe de Proyecto",
+      "cuerpo": "Tras experiencia en ventas inmobiliarias, preferí servicio con criterio local — no vender por vender.",
+      "imagen_prompt": "Foto camino bosque."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "Del lado del comprador",
+      "cuerpo": "Conozco el mercado para la mejor alternativa — no para empujar la mía.",
+      "imagen_prompt": "CTA #052C4D."
+    }
+  ],
+  "caption_linkedin": "Me preguntan seguido: «¿Ustedes venden terrenos?»\n\nNo vendemos una cartera. Entregamos consultoría y búsqueda personalizada para que encuentres una propiedad que te convenza al 100%.\n\nEl corretaje tradicional apuesta a tener una cartera grande y buenos vendedores para comercializarla. Land Advisors apunta a otra cosa: que accedas a las mejores alternativas del mercado según tus gustos y necesidades — no a que compres lo que alguien ya tiene listo para vender.\n\nAl independizarme enfrenté un dilema que para mí fue, en parte, ético:\n\n→ Apostar por vender un portafolio propio a toda costa\n→ Especializarme en conocer y comparar todo el mercado, para recomendar lo que realmente calza contigo\n\nOpté por lo segundo.\n\nDespués de desempeñarme como Jefe de Proyecto e involucrarme en todo el proceso de ventas, no tenía sentido para mí empujar stock propio sin mirar si existían mejores opciones para el comprador.\n\nEn la imagen resumo las diferencias entre un corredor de propiedades y un consultor Land Advisors — y también las similitudes: en ambos casos hay acompañamiento integral en la compra, y para quien compra el costo suele ser el mismo: una sola comisión.\n\nLa diferencia está en el modelo de negocio y en de qué lado están los incentivos.\n\n—\n¿Te ha pasado evaluar terrenos sintiendo que solo te mostraban una fracción del mercado?\n\n#InversiónInmobiliaria #Consultoría #TerrenosChile #SurDeChile #RealEstate #LandAdvisors",
+  "comentario_fijado": "Conoce cómo trabajamos del lado del comprador → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p2",
+  "acciones_post_publicacion": [
+    "Land Advisors Chile comenta en post con enlace metodología",
+    "Responder comentarios con pregunta abierta"
+  ],
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p2",
+  "notas_diseno": {
+    "formato": "1080×1350 · imagen apoyo única",
+    "linkedin_prefix": "land-advisors-li-versus-corredor-consultor",
+    "formato_publicacion": "texto largo + 1 imagen versus",
+    "carrusel_legacy": "rrss/linkedin/posts/LI-2026-06-19-P2/index.html",
+    "correccion": "2026-06-08 — Imagen versus incentivos/diferencias/similitudes. Post texto + imagen."
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_consultor": true,
+    "sin_atacar_corredoras_agresivo": true,
+    "incentivos_comprador": true,
+    "cta_reunion_estrategica": true
+  }
+}

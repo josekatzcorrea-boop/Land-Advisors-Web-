@@ -1,0 +1,38 @@
+---
+description: Isotipo y logos Land Advisors — fondo siempre transparente (PNG alpha)
+alwaysApply: true
+---
+
+# Isotipo / logo — fondo transparente obligatorio
+
+En **todo** desarrollo visual (Reels, carruseles, HTML, video, landing, exports):
+
+- Usar **solo** assets con transparencia real (PNG con canal alpha).
+- **Permitido**: `assets/logo-isotipo-3d-transparente.png` (fondos claros), `brochure/assets/isotipo-3d-blanco-transparente.png` (fondos oscuros / outro — **mismo que carruseles**), `assets/logo-grande-3d-transparente.png`.
+- **Prohibido** para isotipo/logo sobre fondos de video o gradientes: JPG/JPEG, `logo-isotipo-3d.png` (sin sufijo transparente), cualquier PNG con fondo cuadrado de color embebido.
+
+## Por qué
+
+Un fondo cuadrado azul (u otro color) alrededor del isotipo no coincide con el fondo del video/pieza y se ve poco profesional.
+
+## Implementación
+
+```html
+<!-- ✅ Correcto -->
+<img src="/assets/logo-isotipo-3d-transparente.png" alt="Land Advisors">
+
+<!-- ❌ Incorrecto -->
+<img src="/assets/logo-isotipo-3d.png" alt="">
+<img src="/assets/logo invertido 3D.jpeg" alt="">
+```
+
+```css
+.isotipo, .logo-brand {
+  background: transparent;
+  object-fit: contain;
+}
+```
+
+En outro oscuro / CTA: usar **`brochure/assets/isotipo-3d-blanco-transparente.png`** (probado en carruseles). No generar variantes con filtros CSS ni scripts ad hoc.
+
+Antes de exportar branding o quemar en video, verificar visualmente que no aparece rectángulo detrás del isotipo.

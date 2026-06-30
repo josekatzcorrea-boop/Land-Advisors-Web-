@@ -1,0 +1,54 @@
+{
+  "id": "LI-2026-06-20-P4",
+  "fecha_publicacion": "2026-06-20",
+  "hora": "17:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "T",
+  "embudo": "awareness",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Video Ensenada — señales territoriales en 60 segundos",
+  "formato": "video",
+  "duracion_segundos": 60,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-20-P4.json",
+  "titulo_interno": "Video terreno Ensenada · personal",
+  "guion_video": {
+    "hook_0_3s": "Este camino define el valor de un terreno en Ensenada.",
+    "bloque_3_20s": "B-roll camino de acceso. VO: No es lo mismo tener servidumbre registrada que un paso informal. En contorno rural, el acceso es parte del activo.",
+    "bloque_20_40s": "B-roll vista lago/volcán + servicios (postes). VO: Segundo: servicios reales versus aparentes. Poste eléctrico visible no siempre significa factibilidad inmediata.",
+    "bloque_40_55s": "B-roll mapa tablet o satélite. VO: Tercero: presión turística. Ensenada concentra demanda residencial y turística. Eso tensiona suelo — pero no en todos los sectores por igual.",
+    "cierre_55_60s": "José a cámara o texto: ¿Qué miras tú primero en un terreno? Comenta.",
+    "subtitulos": "Obligatorios · es-CL · Montserrat"
+  },
+  "assets_sugeridos": [
+    "rrss/video/inbox/REEL-001-terreno-optimo/broll/DJI_0262.jpg",
+    "rrss/video/inbox/REEL-001-terreno-optimo/broll/factbilidad.jpg",
+    "landing/images/hero.jpg",
+    "Grabación nueva en Ensenada si disponible"
+  ],
+  "produccion": {
+    "formato_export": "1080×1080 o 1080×1920 recortado 4:5",
+    "voz": "José directo a cámara preferido; alternativa Lorenzo es-CL",
+    "musica": "Opcional instrumental bajo 0.10; priorizar voz clara LinkedIn",
+    "referencia_playbook": "rrss/video/PLAYBOOK-reel.md"
+  },
+  "caption_linkedin": "Hoy en Ensenada.\n\nTres señales que miro antes de recomendar un terreno en este corredor:\n\n→ Acceso real — camino, servidumbre, invierno\n→ Servicios — lo visible vs lo factible\n→ Presión turística — sector a sector, no en general\n\nEnsenada concentra demanda residencial y turística. Eso tensiona el suelo rural — pero la lectura fina importa: no todos los sectores evolucionan igual.\n\n60 segundos desde el terreno. Sin ubicar predio, sin hype.\n\n—\n¿Qué es lo primero que miras tú cuando visitas un terreno?\n\n#SurDeChile #Ensenada #InversiónInmobiliaria #TerrenosChile #RealEstate",
+  "comentario_fijado": "Si evalúas Ensenada u otra comuna del sur → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p4",
+  "cta_texto": "Conversemos sobre tu búsqueda",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p4",
+  "notas_diseno": {
+    "cover_frame": "José en terreno + texto hook primer frame",
+    "linkedin_native_upload": true,
+    "no_enlace_youtube": true
+  },
+  "checklist_marca": {
+    "sin_ubicar_predio": true,
+    "sin_precio": true,
+    "subtitulos": true,
+    "tono_consultor": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2026-07-03-S1",
+  "fecha_publicacion": "2026-07-03",
+  "hora": "18:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "S",
+  "campana": null,
+  "tema": "Te ayudamos a encontrar ese terreno único — en toda la oferta, no solo la más visible",
+  "formato": "carrusel",
+  "slides_count": 5,
+  "redes": ["instagram", "facebook"],
+  "cta": "busqueda_personalizada",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-03-S1.json",
+  "piezas_visuales": "rrss/posts/2026-07-03-S1/index.html",
+  "export_output": "rrss/output/2026-07-03-S1/",
+  "titulo_interno": "Servicio spotlight — búsqueda personalizada 5 UF · pilar S",
+  "caption_ig": "Buscas un terreno único en el sur — y mereces encontrarlo.\n\nBúsqueda personalizada · 5 UF:\n→ Selección de al menos 4 alternativas\n→ Juntos definimos las 3 mejores\n→ Comparación e informe de esas 3\n\nDe tu lado. Sin presión por vender un lote concreto.\n\nAgendar búsqueda — enlace en bio.\n\n#LandAdvisors #BúsquedaPersonalizada #TerrenosChile #SurDeChile #PuertoVaras #EstrategiaInmobiliaria #InteligenciaTerritorial #LagoLlanquihue #ContornoRural",
+  "caption_fb": "Búsqueda personalizada · 5 UF\n\nSelección de al menos 4 alternativas de terrenos. Reunión contigo para definir las 3 mejores. Comparación e informe de esas 3 seleccionadas en conjunto.\n\nServicio independiente. No somos corredora.\n\nAgendar búsqueda:\n\nhttps://www.landadvisors.cl/servicios/busqueda-personalizada/?utm_source=facebook&utm_medium=social&utm_campaign=rrss-busqueda-jul2026\n\n#LandAdvisors #SurDeChile",
+  "cta_texto": "Agendar búsqueda personalizada",
+  "cta_url": "https://www.landadvisors.cl/servicios/busqueda-personalizada/?utm_source=instagram&utm_medium=social&utm_campaign=rrss-busqueda-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-busqueda"
+  }
+}

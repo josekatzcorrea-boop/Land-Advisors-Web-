@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-27-A1 — Trabajamos para quien compra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+  <header class="carousel-toolbar">
+    <strong>2026-06-27-A1</strong>
+    <span>Autoridad · independencia · single · foto-card</span>
+    <button type="button" id="btn-export-hint">Exportar: scripts/export-carousel.ps1</button>
+    <a href="../../../calendario-2026-06.json">Calendario</a>
+  </header>
+
+  <main class="carousel-deck" id="carousel-deck">
+
+    <section class="slide slide--photo slide--photo-card" data-slide="1" aria-label="Slide 1">
+      <div class="slide__bg">
+        <img src="/rrss/assets/fotos-seleccion/volcan-osorno.jpg" alt="" width="1080" height="1350">
+      </div>
+      <div class="slide__overlay"></div>
+      <div class="slide__inner">
+        <span class="slide__badge slide__badge--light">Autoridad · pilar A</span>
+        <h1 class="slide__title slide__title--light">Trabajamos para quien <em style="font-style:normal;color:var(--lake-soft);">compra</em>.</h1>
+        <p class="slide__body slide__body--light">No representamos un portafolio propio. Evaluamos oportunidades en todo el mercado — publicadas y muchas veces no publicadas en portales.</p>
+        <ul class="contrast-list" style="margin-top:28px;color:rgba(255,255,255,0.9);">
+          <li>No somos corredora ni portal</li>
+          <li>Consultoría independiente</li>
+          <li>Del lado del comprador</li>
+        </ul>
+        <span class="slide__btn" style="margin-top:36px;display:inline-flex;">Agenda tu reunión estratégica</span>
+      </div>
+      <div class="slide__footer" style="padding:0 72px 72px;position:relative;z-index:2;">
+        <span class="slide__num slide__num--light">01 / 01</span>
+        <div class="slide__brand-mini">
+          <img src="/brochure/assets/isotipo-3d-blanco-transparente.png" alt="" width="52" height="52">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    if (location.search.includes("export=1")) {
+      document.body.classList.add("export-mode");
+    }
+  </script>
+</body>
+</html>

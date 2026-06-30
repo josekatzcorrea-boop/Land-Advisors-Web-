@@ -1,0 +1,27 @@
+{
+  "id": "2026-06-27-A1",
+  "fecha_publicacion": "2026-06-27",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "A",
+  "campana": null,
+  "tema": "Trabajamos para quien compra — no para quien vende",
+  "formato": "single",
+  "slides_count": 1,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-06-27-A1.json",
+  "piezas_visuales": "rrss/posts/2026-06-27-A1/index.html",
+  "export_output": "rrss/output/2026-06-27-A1/",
+  "titulo_interno": "Autoridad — independencia consultoría · pilar A",
+  "caption_ig": "No representamos un portafolio propio.\n\nNo necesitamos vender un terreno específico.\nNo trabajamos para quien vende.\n\nEvaluamos oportunidades en todo el mercado disponible — publicadas y muchas veces no publicadas en portales.\n\nNuestro objetivo: ayudarte a tomar posiciones inmobiliarias inteligentes, sostenibles y alineadas con tus objetivos de largo plazo.\n\nTrabajamos para quien compra.\n\n¿Te ha pasado sentir que el intermediario no estaba de tu lado?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #InversiónInmobiliaria #SurDeChile #TerrenosChile #ConsultoríaInmobiliaria #InteligenciaTerritorial #PuertoVaras #HonestidadIntelectual",
+  "caption_fb": "Land Advisors es consultoría de inteligencia territorial — no corredora ni portal inmobiliario.\n\nNo representamos un portafolio propio. No necesitamos vender un terreno específico. Trabajamos para quien compra, no para quien vende.\n\nEvaluamos oportunidades en todo el mercado disponible, incluyendo activos que muchas veces no llegan a los portales.\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-autoridad-jun2026\n\n#LandAdvisors #SurDeChile #EstrategiaInmobiliaria",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-autoridad-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical · single",
+    "instagram_prefix": "land-advisors-comprador"
+  }
+}

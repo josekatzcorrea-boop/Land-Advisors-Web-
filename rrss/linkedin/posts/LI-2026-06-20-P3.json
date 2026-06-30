@@ -1,0 +1,72 @@
+{
+  "id": "LI-2026-06-20-P3",
+  "fecha_publicacion": "2026-06-20",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "E",
+  "embudo": "consideracion",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "3 errores al comprar terreno en el sur de Chile",
+  "formato": "carrusel",
+  "slides_count": 5,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-20-P3.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-20-P3/index.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-20-P3/",
+  "titulo_interno": "Educación — 3 errores compra · personal",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "3 errores que veo cada mes",
+      "cuerpo": "Al comprar terreno en el sur de Chile.\n(Evítalos antes de ofertar.)",
+      "imagen_prompt": "Señal advertencia estilizada + foto camino rural. No alarmista."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Error 1 · Comprar la foto",
+      "cuerpo": "Vista al volcán no paga el camino de invierno.\nEnamorarse del postcard sin leer acceso, servicios y normativa.",
+      "imagen_prompt": "Split: foto bonita vs camino barro. Fondo claro."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Error 2 · Confiar solo en el portal",
+      "cuerpo": "El precio publicado no es el mercado.\nComparables reales, ventas cerradas y contexto sectorial importan más.",
+      "imagen_prompt": "Icono portal + signo interrogación. Texto #052C4D."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Error 3 · Visitar sin mapa previo",
+      "cuerpo": "5 terrenos en un fin de semana desde Santiago suena productivo.\nSin criterio previo, es ruleta.",
+      "imagen_prompt": "Mapa con rutas + X sobre visitas aleatorias."
+    },
+    {
+      "numero": 5,
+      "tipo": "cta",
+      "titulo": "Antes de visitar: ordena el mapa",
+      "cuerpo": "Diagnóstico estratégico Land Advisors.\n1 UF · reunión + informe.\n\n¿Cuál error te resuena más?",
+      "imagen_prompt": "Fondo #052C4D. CTA. Isotipo."
+    }
+  ],
+  "caption_linkedin": "Cada mes recibo consultas de compradores que ya casi ofertan.\n\nTres errores se repiten:\n\n1. Comprar la foto\nLa vista vende. El camino de invierno, la servidumbre o la pendiente no aparecen en el aviso. Enamorarse del postcard sin due diligence es el error #1.\n\n2. Confiar solo en el portal\nLo publicado no es el mercado completo. Precio de referencia, ventas reales del sector y tiempo en mercado cuentan otra historia.\n\n3. Visitar sin mapa previo\nVer 5 terrenos en un fin de semana desde Santiago puede ser peor que no ver ninguno — si no tienes criterio territorial previo.\n\nUna buena compra inmobiliaria comienza mucho antes de visitar un terreno.\n\nDesliza el carrusel →\n\n—\n¿Cometiste alguno? ¿O estás en etapa de evitarlos?\n\n#TerrenosChile #InversiónInmobiliaria #SurDeChile #PuertoVaras #DueDiligence",
+  "comentario_fijado": "Diagnóstico estratégico — ordena el mapa → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p3",
+  "cta_texto": "Agenda diagnóstico estratégico",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-p3",
+  "notas_diseno": {
+    "formato": "1080×1080",
+    "linkedin_prefix": "land-advisors-li-3-errores"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true
+  }
+}

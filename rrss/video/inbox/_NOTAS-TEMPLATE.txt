@@ -1,0 +1,14 @@
+REEL-XXX — [nombre]
+=====================
+
+Sube aquí tu material según PLAN-REELS-2026-07-08.pdf
+
+talking/     → José a cámara (vertical 9:16)
+elevada/     → trípode 2 m + manual ~3,5 m
+broll/       → detalles, caminos, portones
+broll/dron-archivo/ → capturas dron antiguas
+screen/      → grabación pantalla (si aplica)
+audio/       → voz suelta .m4a (si no va en video)
+
+Lista de archivos (completa tú):
+- 

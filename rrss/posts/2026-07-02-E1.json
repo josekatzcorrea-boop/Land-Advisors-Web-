@@ -1,0 +1,28 @@
+{
+  "id": "2026-07-02-E1",
+  "fecha_publicacion": "2026-07-02",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "E",
+  "campana": null,
+  "tema": "Reglamento de copropiedad: qué leer antes de ofertar",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": true,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-02-E1.json",
+  "piezas_visuales": "rrss/posts/2026-07-02-E1/index.html",
+  "export_output": "rrss/output/2026-07-02-E1/",
+  "titulo_interno": "Educación — reglamento copropiedad parcelaciones · pilar E",
+  "caption_ig": "Parcela sin leer el reglamento = sorpresa cara.\n\nEn loteos del sur, el reglamento de copropiedad puede definir qué puedes construir, cómo usar el lote y qué está prohibido — mucho antes de lo que promete el aviso.\n\nDesliza el carrusel 👉 5 cláusulas que conviene revisar antes de ofertar.\n\n¿Has pedido el reglamento antes de visitar un lote?\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente y objetivos del cliente.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #InversiónInmobiliaria #TerrenosChile #SurDeChile #Parcelaciones #ReglamentoCopropiedad #EducaciónInmobiliaria #InteligenciaTerritorial #PuertoVaras #EstrategiaInmobiliaria",
+  "caption_fb": "En parcelaciones tipo B, el reglamento de copropiedad complementa la normativa del suelo rural y define reglas internas del loteo.\n\nCarrusel educativo — qué revisar antes de ofertar:\n\n• Usos permitidos y prohibidos\n• m², alturas y líneas de edificación\n• Restricciones comerciales o turísticas\n• Subdivisión posterior y servidumbres\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente y objetivos del cliente.\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-reglamento-jul2026\n\n#LandAdvisors #SurDeChile #Parcelaciones",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-reglamento-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-reglamento",
+    "apoyo_reel": "REEL-003 (14-jul) — reglamento parcelaciones"
+  }
+}

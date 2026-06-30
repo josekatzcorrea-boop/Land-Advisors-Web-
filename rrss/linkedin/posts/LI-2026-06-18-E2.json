@@ -1,0 +1,81 @@
+{
+  "id": "LI-2026-06-18-E2",
+  "fecha_publicacion": "2026-06-18",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "empresa",
+  "pagina": "Land Advisors Chile",
+  "pilar": "M",
+  "embudo": "consideracion",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Metodología — territorio primero, activo después",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-18-E2.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-18-E2/index.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-18-E2/",
+  "titulo_interno": "Metodología LI — territorio primero · empresa",
+  "nota_reutilizacion": "Ángulo empresa vs post personal P2 (jueves). No duplicar caption.",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "Territorio primero. Activo después.",
+      "cuerpo": "La metodología Land Advisors en 5 pasos.",
+      "imagen_prompt": "Captura satélite estilizada comuna + overlay azul. Titular blanco sobre overlay."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "1 · Leer el territorio",
+      "cuerpo": "LGUC, OGUC, PRC donde aplica, conectividad, servicios, evolución del sector.\nEn parcelaciones: reglamento de copropiedad.\nAntes de mirar un terreno específico.",
+      "imagen_prompt": "Icono mapa + capas. Fondo #F4F7F8."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "2 · Filtrar el mercado",
+      "cuerpo": "No mostramos catálogo.\nFiltramos oferta pública y oportunidades off-market según tu perfil y presupuesto.",
+      "imagen_prompt": "Embudo visual: muchos terrenos → 3 recomendados."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "3 · Evaluar con criterio",
+      "cuerpo": "Acceso · servicios · normativa · mercado · comparables reales.\nDue diligence rural antes de ofertar.",
+      "imagen_prompt": "Checklist 5 items con checks #052C4D."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "4 · Recomendar (o decir que no)",
+      "cuerpo": "Recomendamos el terreno correcto para tu objetivo.\nTambién recomendamos no comprar cuando no calza.",
+      "imagen_prompt": "Balanza o bifurcación: Comprar / Esperar. Tono honesto."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "5 · Acompañar hasta el cierre",
+      "cuerpo": "Negociación · escritura · coordinación técnica.\n\nAgenda reunión estratégica.",
+      "imagen_prompt": "Fondo #052C4D. Logo invertido. CTA blanco."
+    }
+  ],
+  "caption_linkedin": "En Land Advisors no empezamos por el aviso.\nEmpezamos por el territorio.\n\nTerritorio primero, activo después — no es un slogan. Es el orden de trabajo:\n\n1. Leer el territorio (LGUC, OGUC, normativa aplicable, conectividad, servicios)\n2. Filtrar el mercado según tu objetivo y presupuesto\n3. Evaluar con due diligence rural\n4. Recomendar — o decir que no\n5. Acompañar negociación y cierre\n\nEl desafío no es encontrar terrenos en el sur de Chile. Es identificar cuál es el correcto para cada objetivo.\n\nDesliza el carrusel → metodología completa.\n\n—\n¿En qué etapa estás tú: explorando comunas, comparando terrenos o listo para ofertar?\n\n#LandAdvisors #InteligenciaTerritorial #Metodología #InversiónInmobiliaria #SurDeChile",
+  "comentario_fijado": "Conoce el diagnóstico estratégico — puerta de entrada → https://www.landadvisors.cl/servicios/diagnostico-estrategico/?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e2",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e2",
+  "notas_diseno": {
+    "formato": "1080×1080",
+    "paleta": ["#052C4D", "#F4F7F8", "#5B8FA0"],
+    "linkedin_prefix": "land-advisors-li-metodologia"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true
+  }
+}

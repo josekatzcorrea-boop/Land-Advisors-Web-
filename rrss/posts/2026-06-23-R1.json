@@ -1,0 +1,27 @@
+{
+  "id": "2026-06-23-R1",
+  "fecha_publicacion": "2026-06-23",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "R",
+  "campana": "relanzamiento-jun2026",
+  "tema": "Brochure corporativo + decisiones inteligentes",
+  "formato": "single",
+  "slides_count": 1,
+  "redes": ["instagram", "facebook"],
+  "cta": "brochure",
+  "disclaimer": false,
+  "estado": "aprobado",
+  "post_generado": "rrss/posts/2026-06-23-R1.json",
+  "piezas_visuales": "rrss/posts/2026-06-23-R1/index.html",
+  "export_output": "rrss/output/2026-06-23-R1/",
+  "titulo_interno": "Brochure corporativo digital · cierre relanzamiento",
+  "caption_ig": "Renovamos también nuestro brochure corporativo.\n\n6 páginas para entender cómo trabajamos: promesa, metodología, credibilidad, territorios y por qué trabajamos para quien compra — no para quien vende.\n\nConocimiento local para decisiones inteligentes.\n\nSi estás evaluando comprar terreno en el sur de Chile, el brochure resume quiénes somos, qué hacemos y cómo te acompañamos — sin ser corredora ni portal.\n\n¿Quieres verlo? Enlace en bio.\n\nlandadvisors.cl/brochure\n\n#LandAdvisors #LandAdvisorsRenueva #BrochureCorporativo #EstrategiaInmobiliaria #InteligenciaTerritorial #SurDeChile #InversiónInmobiliaria #PuertoVaras #LagoLlanquihue #DecisionesInteligentes",
+  "caption_fb": "Land Advisors presenta su brochure corporativo renovado — 6 páginas de consultoría de inteligencia territorial e inversión inmobiliaria en el sur de Chile.\n\nEncontrarás:\n\n• Nuestra promesa: no vendemos terrenos, te ayudamos a comprar el correcto\n• Metodología: territorio primero, activo después\n• Credibilidad y trayectoria\n• Territorios donde operamos: Llanquihue, Puerto Varas, Frutillar, Malalcahuello\n• Por qué trabajamos para quien compra — no para quien vende\n\nConocimiento local para decisiones inteligentes.\n\nVer brochure digital:\n\nhttps://www.landadvisors.cl/brochure/corporativo/?utm_source=facebook&utm_medium=social&utm_campaign=relanzamiento-jun2026\n\n#LandAdvisors #LandAdvisorsRenueva #BrochureCorporativo #SurDeChile",
+  "cta_texto": "Ver brochure digital",
+  "cta_url": "https://www.landadvisors.cl/brochure/corporativo/?utm_source=instagram&utm_medium=social&utm_campaign=relanzamiento-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical · single (no carrusel)",
+    "instagram_prefix": "land-advisors-brochure"
+  }
+}

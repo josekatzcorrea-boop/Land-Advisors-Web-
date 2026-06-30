@@ -1,0 +1,781 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Land Advisors Chile//RRSS Calendar//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Land Advisors RRSS (desde 2026-01-01)
+BEGIN:VTIMEZONE
+TZID:America/Santiago
+BEGIN:STANDARD
+DTSTART:19700405T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700906T000000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0300
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-07-01-M1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260701T120000
+DTEND;TZID=America/Santiago:20260701T123000
+SUMMARY:📱 Publicar IG+FB — Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial
+DESCRIPTION:Post: 2026-07-01-M1\nPilar: M\nTema: Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial\nFormato: carrusel\nHora Chile: 12:00\n\nPiezas: rrss/output/2026-07-01-M1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-01-M1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260630T140000
+DTEND;TZID=America/Santiago:20260630T143000
+SUMMARY:📋 Preparar post — Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-01 12:00 Chile.\\n2026-07-01-M1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-02-E1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260702T100000
+DTEND;TZID=America/Santiago:20260702T103000
+SUMMARY:📱 Publicar IG+FB — Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar
+DESCRIPTION:Post: 2026-07-02-E1\nPilar: E\nTema: Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-02-E1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-02-E1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260701T140000
+DTEND;TZID=America/Santiago:20260701T143000
+SUMMARY:📋 Preparar post — Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-02 10:00 Chile.\\n2026-07-02-E1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-03-S1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260703T180000
+DTEND;TZID=America/Santiago:20260703T183000
+SUMMARY:📱 Publicar IG+FB — Te ayudamos a encontrar ese terreno único — en toda la oferta\, no solo la más visible
+DESCRIPTION:Post: 2026-07-03-S1\nPilar: S\nTema: Te ayudamos a encontrar ese terreno único — en toda la oferta, no solo la más visible\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-07-03-S1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Te ayudamos a encontrar ese terreno único — en toda la oferta\, no solo la más visible
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Te ayudamos a encontrar ese terreno único — en toda la oferta\, no solo la más visible
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-03-S1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260702T140000
+DTEND;TZID=America/Santiago:20260702T143000
+SUMMARY:📋 Preparar post — Te ayudamos a encontrar ese terreno único — en toda la oferta\, no solo la más visible
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-03 18:00 Chile.\\n2026-07-03-S1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Te ayudamos a encontrar ese terreno único — en toda la oferta\, no solo la más visible
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-A1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260704T110000
+DTEND;TZID=America/Santiago:20260704T113000
+SUMMARY:📱 Publicar IG+FB — El terreno correcto para tu sueño. Al precio correcto.
+DESCRIPTION:Post: 2026-07-04-A1\nPilar: A\nTema: El terreno correcto para tu sueño. Al precio correcto.\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-07-04-A1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — El terreno correcto para tu sueño. Al precio correcto.
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — El terreno correcto para tu sueño. Al precio correcto.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-04-A1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260703T140000
+DTEND;TZID=America/Santiago:20260703T143000
+SUMMARY:📋 Preparar post — El terreno correcto para tu sueño. Al precio correcto.
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-04 11:00 Chile.\\n2026-07-04-A1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — El terreno correcto para tu sueño. Al precio correcto.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-07-T1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260707T100000
+DTEND;TZID=America/Santiago:20260707T103000
+SUMMARY:📱 Publicar IG+FB — Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo
+DESCRIPTION:Post: 2026-07-07-T1\nPilar: T\nTema: Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-07-T1/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-07-T1@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260706T140000
+DTEND;TZID=America/Santiago:20260706T143000
+SUMMARY:📋 Preparar post — Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-07 10:00 Chile.\\n2026-07-07-T1
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Un lugar entre naturaleza y ciudad — y cómo puede acompañar tu vida en el tiempo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-08-E2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260708T100000
+DTEND;TZID=America/Santiago:20260708T103000
+SUMMARY:📱 Publicar IG+FB — ¿Casa\, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea
+DESCRIPTION:Post: 2026-07-08-E2\nPilar: E\nTema: ¿Casa, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-08-E2/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Casa\, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Casa\, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-08-E2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260707T140000
+DTEND;TZID=America/Santiago:20260707T143000
+SUMMARY:📋 Preparar post — ¿Casa\, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-08 10:00 Chile.\\n2026-07-08-E2
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — ¿Casa\, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-S2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260709T180000
+DTEND;TZID=America/Santiago:20260709T183000
+SUMMARY:📱 Publicar IG+FB — Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)
+DESCRIPTION:Post: 2026-07-09-S2\nPilar: S\nTema: Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)\nFormato: single\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-07-09-S2/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-09-S2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260708T140000
+DTEND;TZID=America/Santiago:20260708T143000
+SUMMARY:📋 Preparar post — Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-09 18:00 Chile.\\n2026-07-09-S2
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-10-A2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260710T110000
+DTEND;TZID=America/Santiago:20260710T113000
+SUMMARY:📱 Publicar IG+FB — De tu lado: años conociendo la cuenca para que elijas con confianza
+DESCRIPTION:Post: 2026-07-10-A2\nPilar: A\nTema: De tu lado: años conociendo la cuenca para que elijas con confianza\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-07-10-A2/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — De tu lado: años conociendo la cuenca para que elijas con confianza
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — De tu lado: años conociendo la cuenca para que elijas con confianza
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-10-A2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260709T140000
+DTEND;TZID=America/Santiago:20260709T143000
+SUMMARY:📋 Preparar post — De tu lado: años conociendo la cuenca para que elijas con confianza
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-10 11:00 Chile.\\n2026-07-10-A2
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — De tu lado: años conociendo la cuenca para que elijas con confianza
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-13-T3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260713T100000
+DTEND;TZID=America/Santiago:20260713T103000
+SUMMARY:📱 Publicar IG+FB — Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial
+DESCRIPTION:Post: 2026-07-13-T3\nPilar: T\nTema: Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-13-T3/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-13-T3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260712T140000
+DTEND;TZID=America/Santiago:20260712T143000
+SUMMARY:📋 Preparar post — Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-13 10:00 Chile.\\n2026-07-13-T3
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Elige dónde tu sueño puede crecer — leyendo expansión e infraestructura vial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-14-M2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260714T120000
+DTEND;TZID=America/Santiago:20260714T123000
+SUMMARY:📱 Publicar IG+FB — En cada visita\, preguntas que te acercan al terreno que realmente buscas
+DESCRIPTION:Post: 2026-07-14-M2\nPilar: M\nTema: En cada visita, preguntas que te acercan al terreno que realmente buscas\nFormato: carrusel\nHora Chile: 12:00\n\nPiezas: rrss/output/2026-07-14-M2/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — En cada visita\, preguntas que te acercan al terreno que realmente buscas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — En cada visita\, preguntas que te acercan al terreno que realmente buscas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-14-M2@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260713T140000
+DTEND;TZID=America/Santiago:20260713T143000
+SUMMARY:📋 Preparar post — En cada visita\, preguntas que te acercan al terreno que realmente buscas
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-14 12:00 Chile.\\n2026-07-14-M2
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — En cada visita\, preguntas que te acercan al terreno que realmente buscas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-15-E3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260715T100000
+DTEND;TZID=America/Santiago:20260715T103000
+SUMMARY:📱 Publicar IG+FB — Encontraste uno especial — veamos juntos si cumple tus objetivos
+DESCRIPTION:Post: 2026-07-15-E3\nPilar: E\nTema: Encontraste uno especial — veamos juntos si cumple tus objetivos\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-15-E3/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Encontraste uno especial — veamos juntos si cumple tus objetivos
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Encontraste uno especial — veamos juntos si cumple tus objetivos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-15-E3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260714T140000
+DTEND;TZID=America/Santiago:20260714T143000
+SUMMARY:📋 Preparar post — Encontraste uno especial — veamos juntos si cumple tus objetivos
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-15 10:00 Chile.\\n2026-07-15-E3
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Encontraste uno especial — veamos juntos si cumple tus objetivos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-16-S3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260716T180000
+DTEND;TZID=America/Santiago:20260716T183000
+SUMMARY:📱 Publicar IG+FB — ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)
+DESCRIPTION:Post: 2026-07-16-S3\nPilar: S\nTema: ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-07-16-S3/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-16-S3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260715T140000
+DTEND;TZID=America/Santiago:20260715T143000
+SUMMARY:📋 Preparar post — ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-16 18:00 Chile.\\n2026-07-16-S3
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — ¿Es la alternativa correcta para ti? Lo revisamos juntos (desde 10 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-17-A3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260717T110000
+DTEND;TZID=America/Santiago:20260717T113000
+SUMMARY:📱 Publicar IG+FB — No te vendemos un lote: caminamos contigo hacia tu decisión
+DESCRIPTION:Post: 2026-07-17-A3\nPilar: A\nTema: No te vendemos un lote: caminamos contigo hacia tu decisión\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-07-17-A3/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — No te vendemos un lote: caminamos contigo hacia tu decisión
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — No te vendemos un lote: caminamos contigo hacia tu decisión
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-17-A3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260716T140000
+DTEND;TZID=America/Santiago:20260716T143000
+SUMMARY:📋 Preparar post — No te vendemos un lote: caminamos contigo hacia tu decisión
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-17 11:00 Chile.\\n2026-07-17-A3
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — No te vendemos un lote: caminamos contigo hacia tu decisión
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-20-T4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260720T100000
+DTEND;TZID=America/Santiago:20260720T103000
+SUMMARY:📱 Publicar IG+FB — Segunda vivienda\, familia\, patrimonio: el sur que muchos eligen
+DESCRIPTION:Post: 2026-07-20-T4\nPilar: T\nTema: Segunda vivienda, familia, patrimonio: el sur que muchos eligen\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-20-T4/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Segunda vivienda\, familia\, patrimonio: el sur que muchos eligen
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Segunda vivienda\, familia\, patrimonio: el sur que muchos eligen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-20-T4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260719T140000
+DTEND;TZID=America/Santiago:20260719T143000
+SUMMARY:📋 Preparar post — Segunda vivienda\, familia\, patrimonio: el sur que muchos eligen
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-20 10:00 Chile.\\n2026-07-20-T4
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Segunda vivienda\, familia\, patrimonio: el sur que muchos eligen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-21-M3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260721T120000
+DTEND;TZID=America/Santiago:20260721T123000
+SUMMARY:📱 Publicar IG+FB — Te enamoraste del lugar — también conviene contrastar precio y alternativas
+DESCRIPTION:Post: 2026-07-21-M3\nPilar: M\nTema: Te enamoraste del lugar — también conviene contrastar precio y alternativas\nFormato: carrusel\nHora Chile: 12:00\n\nPiezas: rrss/output/2026-07-21-M3/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Te enamoraste del lugar — también conviene contrastar precio y alternativas
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Te enamoraste del lugar — también conviene contrastar precio y alternativas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-21-M3@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260720T140000
+DTEND;TZID=America/Santiago:20260720T143000
+SUMMARY:📋 Preparar post — Te enamoraste del lugar — también conviene contrastar precio y alternativas
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-21 12:00 Chile.\\n2026-07-21-M3
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Te enamoraste del lugar — también conviene contrastar precio y alternativas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-22-E4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260722T100000
+DTEND;TZID=America/Santiago:20260722T103000
+SUMMARY:📱 Publicar IG+FB — Refugio familiar o proyecto de vida: no es el mismo camino
+DESCRIPTION:Post: 2026-07-22-E4\nPilar: E\nTema: Refugio familiar o proyecto de vida: no es el mismo camino\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-22-E4/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Refugio familiar o proyecto de vida: no es el mismo camino
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Refugio familiar o proyecto de vida: no es el mismo camino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-22-E4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260721T140000
+DTEND;TZID=America/Santiago:20260721T143000
+SUMMARY:📋 Preparar post — Refugio familiar o proyecto de vida: no es el mismo camino
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-22 10:00 Chile.\\n2026-07-22-E4
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Refugio familiar o proyecto de vida: no es el mismo camino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-23-S4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260723T180000
+DTEND;TZID=America/Santiago:20260723T183000
+SUMMARY:📱 Publicar IG+FB — Hasta la escritura: acompañamiento de tu lado en cada paso (2\,5%)
+DESCRIPTION:Post: 2026-07-23-S4\nPilar: S\nTema: Hasta la escritura: acompañamiento de tu lado en cada paso (2,5%)\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-07-23-S4/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Hasta la escritura: acompañamiento de tu lado en cada paso (2\,5%)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Hasta la escritura: acompañamiento de tu lado en cada paso (2\,5%)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-23-S4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260722T140000
+DTEND;TZID=America/Santiago:20260722T143000
+SUMMARY:📋 Preparar post — Hasta la escritura: acompañamiento de tu lado en cada paso (2\,5%)
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-23 18:00 Chile.\\n2026-07-23-S4
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Hasta la escritura: acompañamiento de tu lado en cada paso (2\,5%)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-24-A4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260724T110000
+DTEND;TZID=America/Santiago:20260724T113000
+SUMMARY:📱 Publicar IG+FB — Si no es la alternativa correcta\, te lo diremos — y seguimos buscando contigo
+DESCRIPTION:Post: 2026-07-24-A4\nPilar: A\nTema: Si no es la alternativa correcta, te lo diremos — y seguimos buscando contigo\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-07-24-A4/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Si no es la alternativa correcta\, te lo diremos — y seguimos buscando contigo
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Si no es la alternativa correcta\, te lo diremos — y seguimos buscando contigo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-24-A4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260723T140000
+DTEND;TZID=America/Santiago:20260723T143000
+SUMMARY:📋 Preparar post — Si no es la alternativa correcta\, te lo diremos — y seguimos buscando contigo
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-24 11:00 Chile.\\n2026-07-24-A4
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Si no es la alternativa correcta\, te lo diremos — y seguimos buscando contigo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-27-T5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260727T100000
+DTEND;TZID=America/Santiago:20260727T103000
+SUMMARY:📱 Publicar IG+FB — Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación
+DESCRIPTION:Post: 2026-07-27-T5\nPilar: T\nTema: Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-27-T5/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-27-T5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260726T140000
+DTEND;TZID=America/Santiago:20260726T143000
+SUMMARY:📋 Preparar post — Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-27 10:00 Chile.\\n2026-07-27-T5
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Mira el sur desde arriba — y proyecta cómo evolucionará esa ubicación
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-28-M4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260728T120000
+DTEND;TZID=America/Santiago:20260728T123000
+SUMMARY:📱 Publicar IG+FB — Datos y territorio al servicio de tu proyecto — con calma y de tu lado
+DESCRIPTION:Post: 2026-07-28-M4\nPilar: M\nTema: Datos y territorio al servicio de tu proyecto — con calma y de tu lado\nFormato: carrusel\nHora Chile: 12:00\n\nPiezas: rrss/output/2026-07-28-M4/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Datos y territorio al servicio de tu proyecto — con calma y de tu lado
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Datos y territorio al servicio de tu proyecto — con calma y de tu lado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-28-M4@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260727T140000
+DTEND;TZID=America/Santiago:20260727T143000
+SUMMARY:📋 Preparar post — Datos y territorio al servicio de tu proyecto — con calma y de tu lado
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-28 12:00 Chile.\\n2026-07-28-M4
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Datos y territorio al servicio de tu proyecto — con calma y de tu lado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-29-E5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260729T100000
+DTEND;TZID=America/Santiago:20260729T103000
+SUMMARY:📱 Publicar IG+FB — Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial
+DESCRIPTION:Post: 2026-07-29-E5\nPilar: E\nTema: Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial\nFormato: carrusel\nHora Chile: 10:00\n\nPiezas: rrss/output/2026-07-29-E5/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-29-E5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260728T140000
+DTEND;TZID=America/Santiago:20260728T143000
+SUMMARY:📋 Preparar post — Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-29 10:00 Chile.\\n2026-07-29-E5
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Desde Santiago: llega con mapa del sur y espacio para encontrar lo especial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-30-S5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260730T180000
+DTEND;TZID=America/Santiago:20260730T183000
+SUMMARY:📱 Publicar IG+FB — De la idea al proyecto: cabañas\, turismo o comercio con respaldo (desde 20 UF)
+DESCRIPTION:Post: 2026-07-30-S5\nPilar: S\nTema: De la idea al proyecto: cabañas, turismo o comercio con respaldo (desde 20 UF)\nFormato: carrusel\nHora Chile: 18:00\n\nPiezas: rrss/output/2026-07-30-S5/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — De la idea al proyecto: cabañas\, turismo o comercio con respaldo (desde 20 UF)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — De la idea al proyecto: cabañas\, turismo o comercio con respaldo (desde 20 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-30-S5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260729T140000
+DTEND;TZID=America/Santiago:20260729T143000
+SUMMARY:📋 Preparar post — De la idea al proyecto: cabañas\, turismo o comercio con respaldo (desde 20 UF)
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-30 18:00 Chile.\\n2026-07-30-S5
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — De la idea al proyecto: cabañas\, turismo o comercio con respaldo (desde 20 UF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-31-A5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260731T110000
+DTEND;TZID=America/Santiago:20260731T113000
+SUMMARY:📱 Publicar IG+FB — Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza
+DESCRIPTION:Post: 2026-07-31-A5\nPilar: A\nTema: Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza\nFormato: single\nHora Chile: 11:00\n\nPiezas: rrss/output/2026-07-31-A5/instagram/\nGuía: rrss/guia-publicacion-manual.md
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:📱 Publicar IG+FB — Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-2026-07-31-A5@landadvisors.cl
+DTSTAMP:20260630T145655Z
+DTSTART;TZID=America/Santiago:20260730T140000
+DTEND;TZID=America/Santiago:20260730T143000
+SUMMARY:📋 Preparar post — Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza
+DESCRIPTION:Revisar piezas y captions. Publicación: 2026-07-31 11:00 Chile.\\n2026-07-31-A5
+LOCATION:Instagram + Facebook @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT0M
+ACTION:DISPLAY
+DESCRIPTION:📋 Preparar post — Llevamos años en la cuenca — para que encuentres el tuyo y elijas con confianza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

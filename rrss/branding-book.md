@@ -85,8 +85,10 @@ Los logos 2D (SVG y PNG planos) están retirados. Usar solo assets 3D:
 | Uso | Asset | Contexto |
 | Horizontal positivo | `assets/logo-horizontal-3d.jpg` | Fondos claros, feed, pie de carrusel |
 | Horizontal grande | `assets/LOGO GRANDE JPG-02-3D.jpg` | Portadas, piezas editoriales amplias |
+| Logo grande sin fondo | `assets/logo-grande-3d-transparente.png` | Slides RRSS con fondo claro — evita rectángulo blanco |
 | Horizontal negativo | `assets/logo invertido 3D.jpeg` | Fondos azules (#052C4D), header, stories |
 | Isotipo | `assets/logo-isotipo-3d.png` | Avatar RRSS, favicon, watermark, esquina inferior |
+| Isotipo azul sin fondo | `assets/logo-isotipo-3d-transparente.png` | Slides RRSS con fondo claro (#F4F7F8) — evita rectángulo blanco |
 | Isotipo blanco | `brochure/assets/isotipo-3d-blanco-transparente.png` | Sobre fotos oscuras o overlays azules |
 
 Mínimos en feed: isotipo = 48 px; logo horizontal ancho = 140 px.
@@ -142,6 +144,28 @@ Datos verificables o marco conceptual
 Cifras de rentabilidad prometida
 Sur de Chile, comunas concretas
 Generalidades tipo "Chile entero"
+
+### Lineamiento tono aliado (marca · vigente jul 2026+)
+
+**Posicionamiento:** Land Advisors está **de tu lado** — no somos aguafiestas. El comprador busca un terreno **único y especial**; nosotros acompañamos con sutileza.
+
+**Fórmula:** *Enamorarse del terreno especial → acompañamiento sutil → decisión con confianza.*
+
+| Sí | No |
+|----|-----|
+| Validar la emoción; luego afinar con criterio | Tono alarmista, moralista o sermón |
+| «Encontraste uno especial — veamos juntos…» | Titulares que solo advierten o dicen «no» |
+| De tu lado en objetivo, precio, negociación | Implicar compra por impulso o por foto |
+| Hay terrenos maravillosos donde construir | Criticar enamorarse o visitar terrenos |
+| Información territorial al servicio del sueño | Apagar la ilusión antes de escucharla |
+
+**Principios copy:**
+- La **foto abre la visita**; la compra llega después de recorrer y comparar.
+- **Enamorarse está bien.** Contrastar precio, alternativas y evolución del territorio **sin quitar emoción**.
+- Si no es la alternativa correcta, **seguimos buscando contigo** — honestidad cariñosa.
+- Presentación **sutil** de datos: primero escuchar el proyecto, después aportar mapa de mercado.
+
+Referencia extendida: `rrss/calendario-2026-07.json` → `linea_editorial` · regla Cursor `land-advisors-tono-aliado.mdc`.
 
 Registro por red (misma voz, distinto ritmo)
 Red
@@ -280,7 +304,7 @@ Reunión estratégica (presencial u online) · informe con zonas recomendadas y 
 02
 Búsqueda personalizada de terrenos
 5 UF
-3 alternativas alineadas a objetivo y presupuesto · reunión para descartar y reseleccionar · análisis comparativo · recomendación de compra. Incluye diagnóstico estratégico.
+Al menos 4 alternativas · reunión conjunta para definir las 3 mejores · comparación e informe de las 3 seleccionadas contigo · recomendación de compra. Incluye diagnóstico estratégico.
 03
 Asesoría de compra y adquisición
 2,5% del valor de compra

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-23-R1 — Brochure corporativo Land Advisors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+  <header class="carousel-toolbar">
+    <strong>2026-06-23-R1</strong>
+    <span>Brochure corporativo · single · 1080×1350</span>
+    <button type="button" id="btn-export-hint">Exportar: scripts/export-carousel.ps1</button>
+    <a href="../../../calendario-2026-06.json">Calendario</a>
+  </header>
+
+  <main class="carousel-deck" id="carousel-deck">
+
+    <section class="slide slide--brochure-single" data-slide="1" aria-label="Slide 1">
+      <div class="slide__inner">
+        <span class="slide__badge">Brochure corporativo · 6 páginas</span>
+        <h1 class="slide__title">Conocimiento local para decisiones inteligentes</h1>
+        <p class="slide__body">Brochure digital renovado — metodología, credibilidad y territorios en un solo documento.</p>
+
+        <div class="brochure-phone-wrap">
+          <div class="brochure-phone">
+            <div class="brochure-phone__screen">
+              <div class="brochure-phone__photo">
+                <img src="/brochure/images/galeria-04.jpg" alt="" width="352" height="320">
+              </div>
+              <div class="brochure-phone__panel">
+                <div class="brochure-phone__intro">
+                  <img class="brochure-phone__iso" src="/brochure/assets/isotipo-3d-blanco-transparente.png" alt="" width="72" height="72">
+                  <h2 class="brochure-phone__headline">No vendemos terrenos.<br>Te ayudamos a comprar el correcto.</h2>
+                  <p class="brochure-phone__line">Conocimiento local para decisiones inteligentes · Sur de Chile</p>
+                </div>
+                <p class="brochure-phone__tag">Cuenca Lago Llanquihue · Malalcahuello</p>
+                <div class="brochure-phone__pages" aria-hidden="true">
+                  <span class="brochure-phone__page-dot brochure-phone__page-dot--active"></span>
+                  <span class="brochure-phone__page-dot"></span>
+                  <span class="brochure-phone__page-dot"></span>
+                  <span class="brochure-phone__page-dot"></span>
+                  <span class="brochure-phone__page-dot"></span>
+                  <span class="brochure-phone__page-dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="brochure-highlights">
+          <span class="brochure-highlight">Metodología</span>
+          <span class="brochure-highlight">Credibilidad</span>
+          <span class="brochure-highlight">Territorios</span>
+        </div>
+
+        <div class="brochure-cta-row">
+          <span class="brochure-cta-btn">Ver brochure digital</span>
+          <p class="brochure-cta-url">landadvisors.cl/brochure</p>
+        </div>
+      </div>
+      <div class="slide__footer" style="padding:0 72px 72px;position:relative;z-index:2;">
+        <span class="slide__num">01 / 01</span>
+        <div class="slide__brand-mini">
+          <img src="/assets/logo-isotipo-3d-transparente.png" alt="" width="52" height="52">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    if (location.search.includes("export=1")) {
+      document.body.classList.add("export-mode");
+    }
+  </script>
+</body>
+</html>

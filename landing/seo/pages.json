@@ -46,7 +46,7 @@
     "service": {
       "name": "Búsqueda personalizada de terrenos",
       "price": "5 UF",
-      "description": "3 alternativas de terrenos, análisis comparativo y recomendación de compra. Incluye diagnóstico estratégico."
+      "description": "Selección de al menos 4 alternativas, comparación e informe de las 3 mejores elegidas en conjunto contigo. Incluye diagnóstico estratégico."
     },
     "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" }
   },

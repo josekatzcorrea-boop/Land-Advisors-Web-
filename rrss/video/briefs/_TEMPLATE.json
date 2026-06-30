@@ -1,0 +1,28 @@
+{
+  "id": "REEL-XXX-slug-corto",
+  "titulo": "Título interno del video",
+  "estado": "esperando_material",
+  "formato": "reel",
+  "dimensiones": "1080x1920",
+  "duracion_objetivo_seg": 30,
+  "pilar": "M",
+  "mensaje_una_frase": "",
+  "guion_slides": [],
+  "cta": "reunion_estrategica",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "voz": "texto_en_pantalla",
+  "musica": "ambiente_sin_letra",
+  "material_esperado": {
+    "drone": "3-5 clips o 1 video largo para dividir",
+    "talking": "opcional — 20-40 s vertical",
+    "broll": "opcional"
+  },
+  "compliance": {
+    "sin_direccion_exacta": true,
+    "sin_precio_venta": true,
+    "sin_promesa_rentabilidad": true
+  },
+  "caption_ig": "",
+  "caption_fb": "",
+  "notas": ""
+}

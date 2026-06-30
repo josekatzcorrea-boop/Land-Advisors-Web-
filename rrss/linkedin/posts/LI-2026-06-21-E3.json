@@ -1,0 +1,80 @@
+{
+  "id": "LI-2026-06-21-E3",
+  "fecha_publicacion": "2026-06-21",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "empresa",
+  "pagina": "Land Advisors Chile",
+  "pilar": "S",
+  "embudo": "conversion",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Servicio spotlight — diagnóstico estratégico inmobiliario",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["linkedin"],
+  "cta": "diagnostico_estrategico",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-21-E3.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-21-E3/index.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-21-E3/",
+  "titulo_interno": "Conversión — diagnóstico estratégico · empresa",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "¿Comprar terreno en el sur sin mapa?",
+      "cuerpo": "Diagnóstico estratégico inmobiliario\n1 UF · Reunión + informe",
+      "imagen_prompt": "Mapa comunas con zona sombreada recomendada. Titular #052C4D."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Para quién es",
+      "cuerpo": "→ Inversionista patrimonial\n→ Familia buscando segunda vivienda\n→ Desarrollador evaluando entrada a comuna\n→ Quien aún no sabe QUÉ comuna ni con QUÉ criterio",
+      "imagen_prompt": "4 iconos perfiles. Fondo #F4F7F8."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Para quién NO es",
+      "cuerpo": "→ Quien ya tiene terreno elegido y solo busca corretaje\n→ Quien busca promesa de rentabilidad\n→ Quien no está dispuesto a pagar consultoría",
+      "imagen_prompt": "Lista honesta. Tono confianza intelectual."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Qué incluye",
+      "cuerpo": "Reunión estratégica (presencial o videollamada)\nInforme con zonas recomendadas\nPrestaciones según objetivo y presupuesto\nPróximos pasos concretos",
+      "imagen_prompt": "Mockup informe + icono reunión. Estilo brochure LA."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Qué pasa después",
+      "cuerpo": "Puedes contratar búsqueda personalizada (5 UF, incluye diagnóstico)\nO avanzar por tu cuenta con el mapa ordenado\nSin presión comercial",
+      "imagen_prompt": "Flecha camino cliente: Diagnóstico → Búsqueda → Cierre."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "Agenda tu diagnóstico",
+      "cuerpo": "1 UF\nlandadvisors.cl\n\nEl terreno correcto. Al precio correcto.",
+      "imagen_prompt": "Fondo #052C4D. Botón CTA. Logo invertido."
+    }
+  ],
+  "caption_linkedin": "La mayoría de consultas que recibimos empiezan igual:\n\n\"Quiero comprar terreno en el sur, pero no sé por dónde empezar.\"\n\nEl diagnóstico estratégico inmobiliario existe para eso.\n\n1 UF · reunión + informe con:\n→ Zonas recomendadas según tu objetivo\n→ Prestaciones que deberías exigir\n→ Próximos pasos según tu presupuesto\n\nPara quién es:\nInversionistas, familias en búsqueda, desarrolladores evaluando comuna.\n\nPara quién NO es:\nQuien ya eligió terreno y solo busca intermediación de venta.\n\nServicios independientes. Sin presión para contratar más.\n\nDesliza el carrusel → detalle completo.\n\n—\nLink en primer comentario.\n\n#LandAdvisors #DiagnósticoEstratégico #InversiónInmobiliaria #TerrenosChile #SurDeChile",
+  "comentario_fijado": "Agenda diagnóstico estratégico (1 UF) → https://www.landadvisors.cl/servicios/diagnostico-estrategico/?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e3",
+  "cta_texto": "Agendar diagnóstico estratégico",
+  "cta_url": "https://www.landadvisors.cl/servicios/diagnostico-estrategico/?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e3",
+  "notas_diseno": {
+    "formato": "1080×1080",
+    "linkedin_prefix": "land-advisors-li-diagnostico",
+    "screenshot_web_opcional": "landing/servicios/diagnostico-estrategico/"
+  },
+  "checklist_marca": {
+    "precio_uf_visible": true,
+    "sin_promesas_rentabilidad": true,
+    "para_quien_no_es": true,
+    "cta_diagnostico": true
+  }
+}

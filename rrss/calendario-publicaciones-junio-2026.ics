@@ -204,6 +204,20 @@ DESCRIPTION:📋 Preparar post — Inteligencia territorial: primero el territor
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:REEL-001@landadvisors.cl
+DTSTAMP:20260608T120000Z
+DTSTART;TZID=America/Santiago:20260624T180000
+DTEND;TZID=America/Santiago:20260624T183000
+SUMMARY:🎬 Publicar Reel IG — Terreno óptimo (apoyo carrusel 24-jun)
+DESCRIPTION:Reel: REEL-001-terreno-optimo\nApoyo: 2026-06-24-M1 (carrusel 12:00)\nPilar: M\nHora Chile: 18:00\n\nVideo: rrss/video/exports/REEL-001-terreno-optimo/REEL-001-final.mp4\nPortada: rrss/video/covers/REEL-001-cover.jpg\nCaption: rrss/video/briefs/REEL-001-terreno-optimo.json\n\nSolo VO — agregar música en editor IG. Subir portada manual.
+LOCATION:Instagram @landadvisorschile
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🎬 Publicar Reel — Terreno óptimo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-06-25-E1@landadvisors.cl
 DTSTAMP:20260617T164848Z
 DTSTART;TZID=America/Santiago:20260625T100000

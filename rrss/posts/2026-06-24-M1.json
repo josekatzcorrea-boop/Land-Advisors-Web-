@@ -1,0 +1,27 @@
+{
+  "id": "2026-06-24-M1",
+  "fecha_publicacion": "2026-06-24",
+  "hora": "12:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "M",
+  "campana": null,
+  "tema": "Inteligencia territorial: primero el territorio, después el activo",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "aprobado",
+  "post_generado": "rrss/posts/2026-06-24-M1.json",
+  "piezas_visuales": "rrss/posts/2026-06-24-M1/index.html",
+  "export_output": "rrss/output/2026-06-24-M1/",
+  "titulo_interno": "Metodología — ubicación, precio y sueño del sur · pilar M",
+  "caption_ig": "Soñar con un terreno en el sur es legítimo. Nosotros también lo creemos.\n\nLa diferencia: en un fin de semana desde Santiago puedes ver 5 terrenos en Puerto Varas. Nosotros llevamos años recorriendo miles — estudiando la oferta, los precios de cada sector y qué parcelas realmente valen la pena.\n\nEl terreno óptimo para ti existe: mejor ubicado, mejor precio, con lo que buscas — vista, bosque, pradera, lago, conectividad. Eso no se logra mirando portales ni con dos o tres visitas al año.\n\nDesliza el carrusel 👉\n\n¿Qué buscas en tu terreno? Cuéntanos: vista, bosque, proyecto de vida, inversión…\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #SurDeChile #PuertoVaras #LagoLlanquihue #Frutillar #TerrenoCorrecto #CalidadDeVida #VidaEnElSur #EstrategiaInmobiliaria #InversiónInmobiliaria",
+  "caption_fb": "Soñar con un terreno en el sur de Chile es legítimo — y alcanzable con la orientación correcta.\n\nMuchos compradores desde Santiago visitan 5 terrenos en un fin de semana en Puerto Varas. En Land Advisors llevamos años recorriendo miles de parcelas y estudiando la oferta del sur: qué zonas tienen proyección, qué precio es competitivo y qué terrenos cumplen lo que cada cliente busca.\n\nEl terreno óptimo combina ubicación, precio y características concretas: vista, bosque, pendiente, pradera, estero, lago, conectividad. Eso no se encuentra en un portal ni en dos o tres visitas al año.\n\nSomos la alternativa para hacerlo de forma inteligente — consultoría local, no corredora ni portal.\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-metodologia-jun2026\n\n#LandAdvisors #SurDeChile #PuertoVaras",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-metodologia-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-metodologia"
+  }
+}

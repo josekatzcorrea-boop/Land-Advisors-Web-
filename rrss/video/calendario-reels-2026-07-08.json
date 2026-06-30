@@ -1,0 +1,93 @@
+{
+  "marca": "Land Advisors Chile",
+  "version": "1.0",
+  "actualizado": "2026-06-08",
+  "frecuencia": "4 reels / mes",
+  "periodo": { "inicio": "2026-07-07", "fin": "2026-08-25" },
+  "plan_pdf": "rrss/video/export/PLAN-REELS-2026-07-08.pdf",
+  "plan_md": "rrss/video/PLAN-REELS-2026-07-08.md",
+  "playbook": "rrss/video/PLAYBOOK-reel.md",
+  "notas_produccion": "Sin dron propio. Celular + trípode 2 m + toma manual ~3,5 m. Archivo dron Puerto Varas cuando aplique.",
+  "reels": [
+    {
+      "id": "REEL-002",
+      "fecha": "2026-07-07",
+      "hora": "18:00",
+      "pilar": "T",
+      "tema": "Conectividad: lo que el aviso no dice",
+      "apoyo_post_sugerido": "Carrusel T — conectividad cuenca Llanquihue (jul sem 1)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-003",
+      "fecha": "2026-07-14",
+      "hora": "18:00",
+      "pilar": "E",
+      "tema": "Parcela sin leer el reglamento = sorpresa cara",
+      "apoyo_post_sugerido": "Carrusel E — documentación y copropiedad (jul sem 2)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-004",
+      "fecha": "2026-07-21",
+      "hora": "18:00",
+      "pilar": "M",
+      "tema": "3 cosas antes de pisar un terreno",
+      "apoyo_post_sugerido": "Carrusel M — metodología territorio primero (jul sem 3)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-005",
+      "fecha": "2026-07-28",
+      "hora": "18:00",
+      "pilar": "A",
+      "tema": "No somos corredora — trabajamos para quien compra",
+      "apoyo_post_sugerido": "Single A — independencia consultoría (jul sem 4)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-006",
+      "fecha": "2026-08-04",
+      "hora": "18:00",
+      "pilar": "T",
+      "tema": "Qué mirar en Google Earth antes de comprar",
+      "apoyo_post_sugerido": "Carrusel T — lectura satelital periferia rural (ago sem 1)",
+      "jose_camara": false,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-007",
+      "fecha": "2026-08-11",
+      "hora": "18:00",
+      "pilar": "S",
+      "tema": "Diagnóstico estratégico: qué obtienes en la reunión",
+      "apoyo_post_sugerido": "Single S — servicio diagnóstico (ago sem 2)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-008",
+      "fecha": "2026-08-18",
+      "hora": "18:00",
+      "pilar": "E",
+      "tema": "El terreno más barato suele ser el más caro",
+      "apoyo_post_sugerido": "Carrusel E — precio vs valor / riesgos ocultos (ago sem 3)",
+      "jose_camara": true,
+      "estado": "planificado"
+    },
+    {
+      "id": "REEL-009",
+      "fecha": "2026-08-25",
+      "hora": "18:00",
+      "pilar": "M",
+      "tema": "Caso mini: lo que veía el mercado vs lo que reveló el análisis",
+      "apoyo_post_sugerido": "Carrusel M — caso Puerto Varas o Frutillar (ago sem 4)",
+      "jose_camara": false,
+      "estado": "planificado"
+    }
+  ]
+}

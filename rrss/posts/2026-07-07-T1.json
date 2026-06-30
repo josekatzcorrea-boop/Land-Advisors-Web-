@@ -1,0 +1,28 @@
+{
+  "id": "2026-07-07-T1",
+  "fecha_publicacion": "2026-07-07",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "T",
+  "campana": null,
+  "tema": "Periferia rural: dónde suelen aparecer oportunidades",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-07-T1.json",
+  "piezas_visuales": "rrss/posts/2026-07-07-T1/index.html",
+  "export_output": "rrss/output/2026-07-07-T1/",
+  "titulo_interno": "Territorio — periferia rural oportunidades · pilar T",
+  "caption_ig": "Periferia rural ≠ campo lejano.\n\nEs la franja donde la vida rural se conecta con servicios y corredores viales — sin perder calidad de entorno. Ahí suelen aparecer oportunidades con lógica territorial, no solo precio bajo.\n\nDesliza el carrusel 👉 contorno conectado vs aislamiento, y qué miramos en la cuenca del Lago Llanquihue.\n\n¿Buscas tranquilidad o te importa llegar a la ciudad en minutos razonables?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #SurDeChile #InversiónInmobiliaria #TerrenosChile #ContornoRural #PeriferiaRural #PuertoVaras #LagoLlanquihue #InteligenciaTerritorial #EstrategiaInmobiliaria",
+  "caption_fb": "La periferia rural conectada no es campo lejano: es contorno de núcleos urbanos con acceso razonable, parcelaciones consolidadas y equilibrio entre vida rural y servicios.\n\nCarrusel territorial — qué miramos antes de recomendar una zona:\n\n• Contorno conectado vs campo aislado\n• Señales en el entorno\n• Cuenca Llanquihue: Frutillar, Llanquihue, Puerto Varas\n• Oportunidad con criterio territorial\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-periferia-jul2026\n\n#LandAdvisors #SurDeChile #InversiónInmobiliaria",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-periferia-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-periferia",
+    "apoyo_reel": "REEL-002 (7-jul) — conectividad complementario"
+  }
+}

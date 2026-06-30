@@ -1,8 +1,8 @@
 {
   "marca": "Land Advisors Chile",
   "version": "1.2",
-  "actualizado": "2026-06-17T12:46:00",
-  "ultima_accion": "2026-06-17 — 2026-06-17-R1 programado en Meta Business Suite",
+  "actualizado": "2026-06-08T18:00:00",
+  "ultima_accion": "2026-06-08 — Posts IG 25–30 jun generados (E1, S1, A1, T1) · listos para exportar y programar",
   "zona_horaria": "America/Santiago",
   "canales": ["instagram", "facebook"],
   "frecuencia_semanal": 5,
@@ -53,8 +53,8 @@
       "cta": "reunion_estrategica",
       "content_ref": "2026-06-09-R1",
       "export_output": "rrss/output/2026-06-09-R1/instagram/",
-      "estado": "programado",
-      "notas": "Programado en Meta Business Suite · 17-jun 18:00 Chile. Piezas: carpeta 2026-06-09-R1."
+      "estado": "publicado",
+      "notas": "Publicado en Instagram 17-jun. Carrusel relanzamiento (carpeta 2026-06-09-R1). Pendiente refuerzo historias/comentarios."
     },
     {
       "id": "2026-06-18-R1",
@@ -83,7 +83,10 @@
       "slides": 5,
       "disclaimer": false,
       "cta": "reunion_estrategica",
-      "estado": "pendiente"
+      "content_ref": "2026-06-19-R1",
+      "export_output": "rrss/output/2026-06-19-R1/instagram/",
+      "estado": "programado",
+      "notas": "Programado por usuario en Meta Business Suite · jue 19-jun 18:00."
     },
     {
       "id": "2026-06-20-R1",
@@ -96,7 +99,10 @@
       "slides": 4,
       "disclaimer": false,
       "cta": "web",
-      "estado": "pendiente"
+      "content_ref": "2026-06-20-R1",
+      "export_output": "rrss/output/2026-06-20-R1/instagram/",
+      "estado": "programado",
+      "notas": "Programado por usuario en Meta Business Suite · vie 20-jun 11:00."
     },
     {
       "id": "2026-06-23-R1",
@@ -109,7 +115,10 @@
       "slides": 1,
       "disclaimer": false,
       "cta": "brochure",
-      "estado": "pendiente"
+      "content_ref": "2026-06-23-R1",
+      "export_output": "rrss/output/2026-06-23-R1/instagram/",
+      "estado": "programado",
+      "notas": "Programado por usuario en Meta Business Suite · lun 23-jun 10:00."
     },
     {
       "id": "2026-06-24-M1",
@@ -121,19 +130,42 @@
       "slides": 6,
       "disclaimer": false,
       "cta": "reunion_estrategica",
-      "estado": "pendiente"
+      "content_ref": "2026-06-24-M1",
+      "export_output": "rrss/output/2026-06-24-M1/instagram/",
+      "estado": "listo_publicar",
+      "notas": "Piezas generadas 8-jun. Primer post régimen habitual (pilar M). Programar mar 24-jun 12:00. Reel apoyo REEL-001 a las 18:00 mismo día."
+    },
+    {
+      "id": "REEL-001",
+      "fecha": "2026-06-24",
+      "hora": "18:00",
+      "pilar": "M",
+      "tema": "Terreno óptimo — resumen en Reel (apoyo carrusel 2026-06-24-M1)",
+      "formato": "reel",
+      "slides": 1,
+      "disclaimer": false,
+      "cta": "reunion_estrategica",
+      "content_ref": "REEL-001-terreno-optimo",
+      "apoyo_post": "2026-06-24-M1",
+      "export_output": "rrss/video/exports/REEL-001-terreno-optimo/REEL-001-final.mp4",
+      "cover": "rrss/video/covers/REEL-001-cover.jpg",
+      "estado": "listo_publicar",
+      "notas": "Publicar mar 24-jun 18:00 (6 h después del carrusel M1). Solo VO — música en editor IG. Portada manual REEL-001-cover.jpg. Brief: rrss/video/briefs/REEL-001-terreno-optimo.json"
     },
     {
       "id": "2026-06-25-E1",
       "fecha": "2026-06-25",
       "hora": "10:00",
       "pilar": "E",
-      "tema": "¿Cómo afecta la normativa al terreno que te interesa?",
+      "tema": "Normativa en parcelaciones: reglamento de copropiedad y restricciones del loteo",
       "formato": "carrusel",
       "slides": 6,
       "disclaimer": true,
       "cta": "reunion_estrategica",
-      "estado": "pendiente"
+      "content_ref": "2026-06-25-E1",
+      "export_output": "rrss/output/2026-06-25-E1/instagram/",
+      "estado": "listo_publicar",
+      "notas": "Piezas v2 23-jun. Foco parcelaciones/reglamento copropiedad · layouts variados · fotos rrss/assets/fotos-seleccion. Programar mié 25-jun 10:00."
     },
     {
       "id": "2026-06-26-S1",
@@ -144,8 +176,11 @@
       "formato": "single",
       "slides": 1,
       "disclaimer": false,
-      "cta": "reunion_diagnostico",
-      "estado": "pendiente"
+      "cta": "diagnostico_estrategico",
+      "content_ref": "2026-06-26-S1",
+      "export_output": "rrss/output/2026-06-26-S1/instagram/",
+      "estado": "listo_publicar",
+      "notas": "Piezas generadas 8-jun. Single servicio diagnóstico 1 UF. Programar jue 26-jun 18:00."
     },
     {
       "id": "2026-06-27-A1",
@@ -157,19 +192,25 @@
       "slides": 1,
       "disclaimer": false,
       "cta": "reunion_estrategica",
-      "estado": "pendiente"
+      "content_ref": "2026-06-27-A1",
+      "export_output": "rrss/output/2026-06-27-A1/instagram/",
+      "estado": "listo_publicar",
+      "notas": "Piezas generadas 8-jun. Single autoridad · independencia consultoría. Programar vie 27-jun 11:00."
     },
     {
       "id": "2026-06-30-T1",
       "fecha": "2026-06-30",
       "hora": "10:00",
       "pilar": "T",
-      "tema": "Conectividad actual y futura: qué mirar antes de invertir",
+      "tema": "Conectividad y calidad de vida: bien conectado vs mal conectado",
       "formato": "carrusel",
       "slides": 6,
       "disclaimer": false,
       "cta": "reunion_estrategica",
-      "estado": "pendiente"
+      "content_ref": "2026-06-30-T1",
+      "export_output": "rrss/output/2026-06-30-T1/instagram/",
+      "estado": "listo_publicar",
+      "notas": "Editado 8-jun. Carrusel conectividad: contraste bien/mal conectado, calidad de vida, objetivo comprador. Programar lun 30-jun 10:00."
     }
   ]
 }

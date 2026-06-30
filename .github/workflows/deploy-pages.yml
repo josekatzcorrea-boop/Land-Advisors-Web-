@@ -39,6 +39,8 @@ jobs:
             landing/ _site/
           cp assets/logo-horizontal-3d.jpg _site/assets/
           cp assets/logo-isotipo-3d.png _site/assets/
+          cp assets/logo-isotipo-3d-transparente.png _site/assets/
+          cp assets/logo-grande-3d-transparente.png _site/assets/
           cp "assets/LOGO GRANDE JPG-02-3D.jpg" _site/assets/
           rsync -a \
             --exclude 'corporativo/official/' \

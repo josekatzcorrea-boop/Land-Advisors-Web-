@@ -1,0 +1,27 @@
+{
+  "id": "2026-06-20-R1",
+  "fecha_publicacion": "2026-06-20",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "R",
+  "campana": "relanzamiento-jun2026",
+  "tema": "Nueva web: inteligencia territorial antes de invertir",
+  "formato": "carrusel",
+  "slides_count": 4,
+  "redes": ["instagram", "facebook"],
+  "cta": "web",
+  "disclaimer": false,
+  "estado": "aprobado",
+  "post_generado": "rrss/posts/2026-06-20-R1.json",
+  "piezas_visuales": "rrss/posts/2026-06-20-R1/index.html",
+  "export_output": "rrss/output/2026-06-20-R1/",
+  "titulo_interno": "Nueva web — tour landadvisors.cl · campaña relanzamiento",
+  "caption_ig": "Renovamos landadvisors.cl para que sea más clara desde el primer click.\n\nNo es un portal de avisos. Es consultoría de inteligencia territorial: servicios en UF, territorios donde operamos, casos reales y contacto directo para quien evalúa comprar terreno en el sur.\n\nInteligencia territorial antes de invertir — ese es el eje de la nueva web.\n\nDesliza el carrusel para ver qué encontrarás 👉\n\n¿Ya visitaste el sitio? Cuéntanos qué sección te interesa más.\n\nEnlace en bio · landadvisors.cl\n\n#LandAdvisors #LandAdvisorsRenueva #NuevaWeb #InteligenciaTerritorial #EstrategiaInmobiliaria #SurDeChile #InversiónInmobiliaria #PuertoVaras #LagoLlanquihue #Frutillar",
+  "caption_fb": "Land Advisors estrena su nueva web: landadvisors.cl\n\nRenovamos el sitio para comunicar con más claridad quiénes somos y cómo trabajamos — consultoría de inteligencia territorial e inversión inmobiliaria en el sur de Chile, no corredora ni portal inmobiliario.\n\nEn la nueva web encontrarás:\n\n• Catálogo de servicios en UF — diagnóstico, búsqueda, asesoría y más\n• Territorios donde leemos el mercado: Llanquihue, Puerto Varas, Frutillar, Malalcahuello\n• Casos y contenido editorial para decisiones informadas\n• Formulario de contacto y diagnóstico estratégico\n\nInteligencia territorial antes de invertir.\n\nExplora la nueva web:\n\nhttps://www.landadvisors.cl/?utm_source=facebook&utm_medium=social&utm_campaign=relanzamiento-jun2026\n\n#LandAdvisors #LandAdvisorsRenueva #NuevaWeb #SurDeChile",
+  "cta_texto": "Visita landadvisors.cl",
+  "cta_url": "https://www.landadvisors.cl/?utm_source=instagram&utm_medium=social&utm_campaign=relanzamiento-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-web"
+  }
+}

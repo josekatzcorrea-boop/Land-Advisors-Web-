@@ -1,0 +1,21 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Montserrat,56,&H00FFFFFF,&H000000FF,&H004D2C05,&H96000000,0,0,0,0,100,100,0,0,1,2.5,1,2,56,56,480,1
+Style: Emphasis,Montserrat SemiBold,56,&H00FFFFFF,&H000000FF,&H004D2C05,&H96000000,0,0,0,0,100,100,0,0,1,2.5,1,2,56,56,480,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.75,0:00:08.81,Default,,0,0,0,,Muchos sueñan con comprarse un terreno en el sur, pero hay una diferencia entre recorrer diez terrenos y {\rEmphasis}Land Advisors{\rDefault}.
+Dialogue: 0,0:00:08.76,0:00:14.03,Default,,0,0,0,,La diferencia: en un fin de semana desde Santiago puedes ver {\rEmphasis}cinco terrenos{\rDefault} en Puerto Varas.
+Dialogue: 0,0:00:14.03,0:00:21.43,Default,,0,0,0,,Nosotros llevamos años recorriendo {\rEmphasis}miles{\rDefault} de parcelas, estudiando la oferta, los precios de cada sector y qué terrenos realmente valen la pena.
+Dialogue: 0,0:00:21.43,0:00:26.43,Default,,0,0,0,,El terreno {\rEmphasis}óptimo{\rDefault} para ti existe: mejor ubicado, mejor precio, con lo que buscas.
+Dialogue: 0,0:00:26.43,0:00:30.18,Default,,0,0,0,,Vista, bosque, pradera, {\rEmphasis}lago{\rDefault}, conectividad.
+Dialogue: 0,0:00:30.18,0:00:34.14,Default,,0,0,0,,Eso no se logra mirando {\rEmphasis}portales{\rDefault} ni con dos o tres visitas al año.
+Dialogue: 0,0:00:34.14,0:00:37.93,Default,,0,0,0,,Agenda tu {\rEmphasis}reunión estratégica{\rDefault} en landadvisors punto ce ele.

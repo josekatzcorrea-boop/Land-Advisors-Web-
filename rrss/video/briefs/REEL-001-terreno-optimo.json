@@ -1,0 +1,53 @@
+{
+  "id": "REEL-001-terreno-optimo",
+  "titulo": "Tu terreno en el sur existe — terreno óptimo",
+  "estado": "listo_publicar",
+  "version": "v5-only-the-brave",
+  "playbook": "rrss/video/PLAYBOOK-reel.md",
+  "defaults": "rrss/video/assets/reel-defaults.json",
+  "receta": "rrss/video/exports/REEL-001-terreno-optimo/RECETA.md",
+  "apoyo_post": "2026-06-24-M1",
+  "formato": "reel",
+  "dimensiones": "1080x1920",
+  "duracion_seg": 42,
+  "pilar": "M",
+  "voz": {
+    "motor": "edge-tts",
+    "voz": "es-CL-LorenzoNeural",
+    "rate": "+8%",
+    "pitch": "+3Hz",
+    "script": "rrss/video/briefs/REEL-001-vo-script.txt",
+    "musica_en_export": true,
+    "musica_archivo": "rrss/video/exports/REEL-001-terreno-optimo/Steven Beddall - Only the Brave.mp3",
+    "musica_instrumental": "rrss/video/exports/REEL-001-terreno-optimo/Only-the-Brave-instrumental.wav",
+    "musica_notas": "Only the Brave (Steven Beddall). Instrumental Demucs, vol fijo 0.14, sin sidechain. Programable en Meta sin editor.",
+    "subtitulos": "Montserrat 56px, MarginV 480, borde #052C4D, SemiBold en palabra clave, quemados"
+  },
+  "branding": {
+    "intro_seg": 2.5,
+    "outro_seg": 2,
+    "tail_post_vo_seg": 2,
+    "intro": "Isotipo azul transparente + ESTRATEGIA INMOBILIARIA sobre fondo claro",
+    "outro": "Isotipo blanco brochure + CTA + landadvisors.cl sobre #052C4D",
+    "isotipo_intro": "assets/logo-isotipo-3d-transparente.png",
+    "isotipo_outro": "brochure/assets/isotipo-3d-blanco-transparente.png"
+  },
+  "postproduccion": {
+    "color_grade": "eq contrast 1.12, saturation 1.42, unsharp suave",
+    "transiciones": "xfade 0.45s",
+    "audio": "VO Lorenzo + instrumental Demucs (vol 0.14 constante)",
+    "build_script": "rrss/video/scripts/build-reel-001-branded.ps1"
+  },
+  "export": {
+    "video": "rrss/video/exports/REEL-001-terreno-optimo/REEL-001-final.mp4",
+    "cover": "rrss/video/covers/REEL-001-cover.jpg"
+  },
+  "caption_ig": "Muchos sueñan con comprarse un terreno en el sur… pero hay una diferencia entre recorrer diez terrenos y Land Advisors. 🌲\n\nLa diferencia: en un fin de semana desde Santiago puedes ver cinco terrenos en Puerto Varas. Nosotros llevamos años recorriendo miles de parcelas — estudiando la oferta, los precios de cada sector y qué terrenos realmente valen la pena.\n\nEl terreno óptimo para ti existe: mejor ubicado, mejor precio, con lo que buscas. Vista, bosque, pradera, lago, conectividad. Eso no se logra mirando portales ni con dos o tres visitas al año.\n\n👉 Este Reel resume el carrusel de hoy — desliza en el feed para el mensaje completo.\n\n¿Qué buscas en tu terreno? Cuéntanos en los comentarios.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #SurDeChile #PuertoVaras #Reels #TerrenoCorrecto #VidaEnElSur #EstrategiaInmobiliaria",
+  "publicacion_sugerida": {
+    "fecha": "2026-06-24",
+    "hora": "18:00",
+    "zona_horaria": "America/Santiago",
+    "apoyo_post": "2026-06-24-M1",
+    "notas": "6 h después del carrusel (12:00). Música en editor IG. Portada manual."
+  }
+}

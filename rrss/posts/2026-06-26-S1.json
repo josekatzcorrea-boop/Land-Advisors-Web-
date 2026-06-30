@@ -1,0 +1,34 @@
+{
+  "id": "2026-06-26-S1",
+  "fecha_publicacion": "2026-06-26",
+  "hora": "18:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "S",
+  "campana": null,
+  "tema": "Diagnóstico estratégico: qué compras realmente (1 UF)",
+  "formato": "single",
+  "slides_count": 1,
+  "redes": ["instagram", "facebook"],
+  "cta": "diagnostico_estrategico",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-06-26-S1.json",
+  "piezas_visuales": "rrss/posts/2026-06-26-S1/index.html",
+  "export_output": "rrss/output/2026-06-26-S1/",
+  "titulo_interno": "Servicio spotlight — diagnóstico 1 UF · layout mobile-bold",
+  "caption_ig": "¿Comprar un terreno sin antes entender el territorio?\n\nReunión + informe territorial antes de visitar a ciegas.\n\nDiagnóstico estratégico · 1 UF:\n→ Zonas recomendidas\n→ Proyección de desarrollo\n→ Argumentos de plusvalía\n\nIdeal si evalúas compra en la cuenca del Lago Llanquihue o Malalcahuello y aún no tienes criterio territorial definido.\n\nNo es corretaje: servicios independientes, sin presión para contratar más.\n\n¿En qué etapa estás tú?\n\nAgenda diagnóstico — enlace en bio.\n\n#LandAdvisors #DiagnósticoEstratégico #InversiónInmobiliaria #TerrenosChile #SurDeChile #PuertoVaras #EstrategiaInmobiliaria #InteligenciaTerritorial #LagoLlanquihue",
+  "caption_fb": "¿Comprar un terreno sin antes entender el territorio?\n\nReunión + informe territorial antes de visitar a ciegas.\n\nDiagnóstico estratégico · 1 UF — reunión e informe con zonas recomendidas, proyección de desarrollo y argumentos de plusvalía.\n\nCuenca del Lago Llanquihue y Malalcahuello.\n\nAgendar diagnóstico:\nhttps://www.landadvisors.cl/servicios/diagnostico-estrategico/?utm_source=facebook&utm_medium=social&utm_campaign=rrss-diagnostico-jun2026\n\n#LandAdvisors #SurDeChile #InversiónInmobiliaria",
+  "cta_texto": "Agendar diagnóstico estratégico",
+  "cta_url": "https://www.landadvisors.cl/servicios/diagnostico-estrategico/?utm_source=instagram&utm_medium=social&utm_campaign=rrss-diagnostico-jun2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical · single",
+    "layout": "spotlight — tipografía grande (feed + historias)",
+    "instagram_prefix": "land-advisors-diagnostico",
+    "tipografia_referencia": {
+      "titulo_px": 72,
+      "lead_px": 40,
+      "lista_px": 36,
+      "cta_px": 34
+    }
+  }
+}

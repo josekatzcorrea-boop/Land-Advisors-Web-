@@ -1,0 +1,83 @@
+{
+  "id": "LI-2026-06-16-E1",
+  "fecha_publicacion": "2026-06-16",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "empresa",
+  "pagina": "Land Advisors Chile",
+  "pilar": "A",
+  "embudo": "awareness",
+  "campana": "linkedin-arranque-semana-01",
+  "tema": "Presentación consultoría Land Advisors",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-06-16-E1.json",
+  "piezas_visuales": "rrss/linkedin/posts/LI-2026-06-16-E1/index.html",
+  "export_output": "rrss/linkedin/output/LI-2026-06-16-E1/",
+  "titulo_interno": "Arranque LI — presentación consultoría · empresa",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "gancho",
+      "titulo": "No vendemos terrenos.",
+      "cuerpo": "Te ayudamos a comprar el correcto.\n\nConsultoría de inteligencia territorial · Sur de Chile.",
+      "imagen_prompt": "Foto hero territorial (lago/volcán) con overlay #052C4D 50%. Logo horizontal 3D blanco abajo. Montserrat SemiBold titular blanco."
+    },
+    {
+      "numero": 2,
+      "tipo": "desarrollo",
+      "titulo": "Qué somos",
+      "cuerpo": "Consultoría de inteligencia territorial e inversión inmobiliaria rural y periurbana.\n\nTerritorio primero, activo después.",
+      "imagen_prompt": "Fondo #F4F7F8. Isotipo 3D azul. Iconos linea: mapa, lupa, documento. Texto #052C4D."
+    },
+    {
+      "numero": 3,
+      "tipo": "desarrollo",
+      "titulo": "Qué NO somos",
+      "cuerpo": "→ Corredora\n→ Portal inmobiliario\n→ Vendedor de propiedades\n\nTrabajamos para quien compra, no para quien vende.",
+      "imagen_prompt": "Fondo blanco. Lista con X roja suave (#8E969C). Badge 'Consultoría' en #052C4D."
+    },
+    {
+      "numero": 4,
+      "tipo": "desarrollo",
+      "titulo": "Dónde trabajamos",
+      "cuerpo": "Cuenca Lago Llanquihue + Malalcahuello:\nPuerto Varas · Llanquihue · Frutillar · Ensenada · Puerto Octay · Las Cascadas · Los Muermos · Fresia",
+      "imagen_prompt": "Mapa estilizado cuenca Llanquihue. Puntos comuna en #5B8FA0. Fondo #EEF3F5."
+    },
+    {
+      "numero": 5,
+      "tipo": "desarrollo",
+      "titulo": "Cómo ayudamos",
+      "cuerpo": "Diagnóstico estratégico · Búsqueda personalizada · Evaluación y negociación · Estudios de inversión · Estructuración de proyectos",
+      "imagen_prompt": "Timeline horizontal 5 pasos. Numeros en circulos #052C4D. Fondo claro."
+    },
+    {
+      "numero": 6,
+      "tipo": "cta",
+      "titulo": "El terreno correcto. Al precio correcto.",
+      "cuerpo": "Agenda tu reunión estratégica.\nlandadvisors.cl",
+      "imagen_prompt": "Fondo #052C4D. Logo invertido 3D. Boton CTA blanco. Descriptor ESTRATEGIA INMOBILIARIA."
+    }
+  ],
+  "caption_linkedin": "Arrancamos en LinkedIn con una idea simple:\n\nNo vendemos terrenos. Te ayudamos a comprar el correcto.\n\nLand Advisors es consultoría de inteligencia territorial e inversión inmobiliaria en el sur de Chile. Leemos el territorio — acceso, servicios, normativa, evolución del sector — antes de evaluar cualquier activo.\n\nNo somos corredora ni portal. No listamos propiedades para venderlas. Trabajamos para quien compra.\n\nTerritorio de especialización: cuenca del Lago Llanquihue y Malalcahuello.\n\nDesliza el carrusel para ver cómo trabajamos →\n\n¿Estás evaluando compra o inversión en el sur? Conversemos.\n\n—\nAgenda reunión estratégica (link en primer comentario)\n\n#LandAdvisors #InversiónInmobiliaria #SurDeChile #TerrenosChile #EstrategiaInmobiliaria",
+  "comentario_fijado": "Agenda tu reunión estratégica → https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e1",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=organic&utm_campaign=semana01-e1",
+  "notas_diseno": {
+    "formato": "1080×1080 cuadrado (LinkedIn documento) o 1080×1350 export PDF",
+    "paleta": ["#052C4D", "#F4F7F8", "#FFFFFF", "#5B8FA0"],
+    "tipografia": "Montserrat SemiBold / Regular",
+    "logo": "Solo assets 3D vigentes",
+    "linkedin_prefix": "land-advisors-li-presentacion"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_consultor": true,
+    "sin_promesas_rentabilidad": true,
+    "cta_reunion_estrategica": true,
+    "no_corretaje": true
+  }
+}

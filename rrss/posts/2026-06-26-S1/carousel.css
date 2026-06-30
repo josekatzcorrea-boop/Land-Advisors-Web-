@@ -1,0 +1,278 @@
+:root {
+  --blue: #052c4d;
+  --blue-dark: #031d33;
+  --lake: #5b8fa0;
+  --lake-soft: #a8c5d0;
+  --bg: #f4f7f8;
+  --text: #1c2b30;
+  --text-muted: #5a6b72;
+  --white: #ffffff;
+  --font: "Montserrat", system-ui, sans-serif;
+  --slide-w: 1080px;
+  --slide-h: 1350px;
+  --pad: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background: #1a2328;
+}
+
+body.export-mode {
+  background: #000;
+}
+
+body.export-mode .carousel-toolbar {
+  display: none;
+}
+
+body.export-mode .carousel-deck {
+  gap: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-size: 0.82rem;
+}
+
+.carousel-toolbar strong {
+  font-weight: 600;
+}
+
+.carousel-toolbar button,
+.carousel-toolbar a {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 0.45rem 1rem;
+  border: 0;
+  border-radius: 100px;
+  background: var(--white);
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0 48px;
+}
+
+.slide {
+  position: relative;
+  width: var(--slide-w);
+  height: var(--slide-h);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--text);
+}
+
+.slide__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pad) 48px;
+}
+
+.slide__num {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.slide__brand-mini img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+/* ── Layout Spotlight: tipografía grande · legible en feed e historias ── */
+
+.slide--spotlight {
+  background: var(--white);
+}
+
+.slide--spotlight .slide__inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  min-height: 0;
+  padding-bottom: 88px;
+}
+
+.slide--spotlight .slide__footer {
+  position: absolute;
+  left: var(--pad);
+  right: var(--pad);
+  bottom: 28px;
+  padding: 0;
+  z-index: 3;
+}
+
+.spotlight-photo {
+  position: relative;
+  height: 380px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.spotlight-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.spotlight-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 44, 77, 0) 55%,
+    rgba(5, 44, 77, 0.35) 100%
+  );
+}
+
+.spotlight-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 32px var(--pad) 24px;
+  gap: 0;
+  min-height: 0;
+}
+
+.spotlight-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.spotlight-title {
+  margin: 0 0 16px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--blue);
+  max-width: 980px;
+}
+
+.spotlight-lead {
+  margin: 0 0 24px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text);
+  max-width: 960px;
+}
+
+.spotlight-lead strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.spotlight-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spotlight-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 28px;
+  border-radius: 20px;
+  background: var(--bg);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--blue);
+}
+
+.spotlight-list li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--lake);
+}
+
+.spotlight-cta {
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+.spotlight-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 26px 36px;
+  border-radius: 100px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.spotlight-cta-meta {
+  margin: 12px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--lake);
+  text-align: center;
+}
+
+@media print {
+  .carousel-toolbar {
+    display: none;
+  }
+}

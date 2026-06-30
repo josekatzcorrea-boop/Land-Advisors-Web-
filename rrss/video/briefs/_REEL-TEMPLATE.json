@@ -1,0 +1,60 @@
+{
+  "id": "REEL-XXX-slug",
+  "titulo": "",
+  "estado": "borrador",
+  "apoyo_post": "",
+  "formato": "reel",
+  "dimensiones": "1080x1920",
+  "defaults": "rrss/video/assets/reel-defaults.json",
+  "playbook": "rrss/video/PLAYBOOK-reel.md",
+
+  "timeline": {
+    "intro_seg": 2.5,
+    "vo_delay_seg": 0.15,
+    "tail_post_vo_seg": 2,
+    "outro_seg": 2
+  },
+
+  "voz": {
+    "motor": "edge-tts",
+    "voz": "es-CL-LorenzoNeural",
+    "rate": "+8%",
+    "pitch": "+3Hz",
+    "script": "rrss/video/briefs/REEL-XXX-vo-script.txt",
+    "musica_en_export": false
+  },
+
+  "subtitulos": {
+    "fuente": "Montserrat",
+    "enfasis": "Montserrat SemiBold",
+    "tamano_px": 56,
+    "margin_v": 480,
+    "borde": "#052C4D",
+    "highlights": ["palabra1", "palabra2"],
+    "notas": "Actualizar HIGHLIGHTS en vtt-to-ass.py al generar"
+  },
+
+  "branding": {
+    "intro_html": "rrss/video/assets/branding/intro.html",
+    "outro_html": "rrss/video/assets/branding/outro.html",
+    "isotipo_intro": "assets/logo-isotipo-3d-transparente.png",
+    "isotipo_outro": "brochure/assets/isotipo-3d-blanco-transparente.png"
+  },
+
+  "postproduccion": {
+    "color_grade": "eq contrast 1.12, saturation 1.42, unsharp suave",
+    "transiciones": "xfade 0.45s",
+    "build_script": "rrss/video/scripts/build-reel-XXX-branded.ps1"
+  },
+
+  "export": {
+    "video": "rrss/video/exports/REEL-XXX-slug/REEL-XXX-final.mp4",
+    "cover": "rrss/video/covers/REEL-XXX-cover.jpg"
+  },
+
+  "caption_ig": "",
+  "publicacion_sugerida": {
+    "cuando": "",
+    "hora": "18:00"
+  }
+}

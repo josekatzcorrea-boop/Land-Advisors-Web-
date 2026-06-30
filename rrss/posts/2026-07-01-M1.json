@@ -1,0 +1,27 @@
+{
+  "id": "2026-07-01-M1",
+  "fecha_publicacion": "2026-07-01",
+  "hora": "12:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "M",
+  "campana": null,
+  "tema": "Enamorarse del terreno es parte del camino — te acompañamos a elegir el especial",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-01-M1.json",
+  "piezas_visuales": "rrss/posts/2026-07-01-M1/index.html",
+  "export_output": "rrss/output/2026-07-01-M1/",
+  "titulo_interno": "Metodología · aliado del comprador · terreno único · pilar M",
+  "caption_ig": "Enamorarse de un terreno es parte del camino — y está bien.\n\nBuscas algo único en el sur. Nosotros llevamos años recorriendo la cuenca para acompañarte con sutileza:\n→ ¿Cumple tus objetivos?\n→ ¿El precio calza con el mercado?\n→ ¿Hay margen para negociar?\n\nDe tu lado, sin apagar la emoción.\n\nDesliza el carrusel 👉\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #InteligenciaTerritorial #TerrenosChile #SurDeChile #PuertoVaras #ContornoRural #LagoLlanquihue",
+  "caption_fb": "Enamorarse de un terreno es parte del camino.\n\nEn Land Advisors estamos de tu lado: te ayudamos a encontrar algo especial en el sur y a contrastar objetivo, precio y alternativas — con la información que ya conocemos de años recorriendo la cuenca.\n\nAgenda tu reunión estratégica:\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-metodologia-jul2026\n\n#LandAdvisors #SurDeChile #EstrategiaInmobiliaria",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-metodologia-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-metodologia"
+  }
+}
