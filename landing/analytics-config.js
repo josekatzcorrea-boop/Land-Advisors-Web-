@@ -5,7 +5,7 @@
 window.LA_ANALYTICS = {
   enabled: true,
   gtmId: "",
-  ga4MeasurementId: "",
+  ga4MeasurementId: "G-F09P7G5WZK",
   metaPixelId: "1067824015463958",
   googleAdsConversionId: "",
   debug: false,

@@ -8,7 +8,7 @@
 window.LA_ANALYTICS = {
   enabled: false,
   gtmId: "", // GTM-XXXXXXX (opcional)
-  ga4MeasurementId: "", // G-XXXXXXXXXX — Google Analytics 4
+  ga4MeasurementId: "G-F09P7G5WZK", // Land Advisors Web — GA4
   metaPixelId: "1067824015463958", // Land Advisors Chile — Events Manager
   googleAdsConversionId: "", // AW-XXXXXXXXX
   debug: false,
