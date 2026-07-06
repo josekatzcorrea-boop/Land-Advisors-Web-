@@ -47,6 +47,21 @@
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
     window.fbq("init", cfg.metaPixelId);
     window.fbq("track", "PageView");
+
+    if (!document.getElementById("la-meta-pixel-noscript")) {
+      const noscript = document.createElement("noscript");
+      noscript.id = "la-meta-pixel-noscript";
+      const img = document.createElement("img");
+      img.height = 1;
+      img.width = 1;
+      img.style.display = "none";
+      img.alt = "";
+      img.src =
+        "https://www.facebook.com/tr?id=" + encodeURIComponent(cfg.metaPixelId) + "&ev=PageView&noscript=1";
+      noscript.appendChild(img);
+      document.body.appendChild(noscript);
+    }
+
     log("Meta Pixel", cfg.metaPixelId);
   }
 

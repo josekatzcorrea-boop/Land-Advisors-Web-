@@ -6,7 +6,7 @@ window.LA_ANALYTICS = {
   enabled: false,
   gtmId: "", // GTM-XXXXXXX
   ga4MeasurementId: "", // G-XXXXXXXXXX
-  metaPixelId: "", // Meta Pixel
+  metaPixelId: "1067824015463958", // Land Advisors Chile — Events Manager
   googleAdsConversionId: "",
   debug: false,
 };
