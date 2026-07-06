@@ -1,0 +1,81 @@
+{
+  "guides": [
+    {
+      "slug": "comprar-terreno-sur-chile",
+      "title": "Cómo comprar terreno en el sur de Chile | Guía Land Advisors",
+      "description": "Guía para comprar terreno en Puerto Varas, Frutillar, Llanquihue y Malalcahuello: contorno rural, criterio territorial, costos ocultos y cuándo conviene asesoría especializada.",
+      "h1": "Cómo comprar terreno en el sur de Chile con criterio",
+      "intro": "Comprar terreno en la cuenca del Lago Llanquihue o Malalcahuello no es elegir el aviso más bonito. Es leer territorio, conectividad, normativa y mercado local antes de enamorarse del paisaje.",
+      "image": "/images/galeria/galeria-04.jpg",
+      "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
+      "readMinutes": 8,
+      "datePublished": "2026-07-06",
+      "sections": [
+        {
+          "type": "h2",
+          "text": "1. Define el contorno rural (no campo lejano ni ciudad)"
+        },
+        {
+          "type": "p",
+          "text": "Land Advisors trabaja el contorno rural periurbano: sectores conectados a Puerto Varas, Frutillar o Llanquihue, con vocación de vivienda, segunda residencia o proyecto de vida — no inmuebles urbanos ni predios aislados sin servicios. Si tu objetivo es calidad de vida con acceso razonable a la ciudad, probablemente estás en este segmento."
+        },
+        {
+          "type": "h2",
+          "text": "2. Ordena objetivo y presupuesto antes de mirar avisos"
+        },
+        {
+          "type": "p",
+          "text": "Enamorarse del terreno está bien; lo que ordena la decisión es si cumple tu objetivo (casa, cabañas, inversión patrimonial), si el precio calza con comparables locales y si los costos de habilitación cierran. Un diagnóstico estratégico (1 UF) sirve cuando aún no tienes zona ni criterio claro."
+        },
+        {
+          "type": "h2",
+          "text": "3. Compara con criterio, no con catálogo masivo"
+        },
+        {
+          "type": "p",
+          "text": "Los portales muestran oferta visible; no siempre la mejor alternativa para tu caso. La búsqueda personalizada filtra al menos 4 terrenos alineados a tu objetivo, reunión contigo para elegir las 3 mejores e informe comparativo — con diagnóstico estratégico incluido."
+        },
+        {
+          "type": "h2",
+          "text": "4. Suma costos de habilitación al precio de lista"
+        },
+        {
+          "type": "p",
+          "text": "Accesos, servicios, tramitación y plazos reales pueden transformar un terreno «barato» en uno inviable. Antes de ofertar, contrasta precio de compra + habilitación con un valor de salida conservador basado en comparables del sector."
+        },
+        {
+          "type": "h2",
+          "text": "5. Lee territorio y normativa con respaldo"
+        },
+        {
+          "type": "p",
+          "text": "Expansión urbana, conectividad, planificación comunal y mercado local explican gran parte del valor futuro — o su ausencia. No necesitas volverte experto en PRC; sí conviene que alguien de tu lado lea el terreno con datos verificables, no con promesas del vendedor."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta comprar terreno en Puerto Varas o Frutillar?",
+          "a": "Depende del sector, servicios y vocación del predio. El metro cuadrado en contorno rural varía ampliamente. Lo relevante es si el precio calza con comparables locales y con los costos de habilitación — no solo el número del aviso."
+        },
+        {
+          "q": "¿Necesito corredora o consultoría para comprar terreno?",
+          "a": "Una corredora muestra propiedades de su cartera. Land Advisors es consultoría: no vendemos terrenos; te ayudamos a comprar el correcto con lectura territorial, filtrado de alternativas y recomendación con criterio."
+        },
+        {
+          "q": "¿Qué zonas del sur de Chile cubre Land Advisors?",
+          "a": "Principalmente la cuenca del Lago Llanquihue y Malalcahuello: Puerto Varas, Frutillar, Llanquihue, Ensenada, Puerto Octay, Las Cascadas y contorno rural periurbano de esos núcleos."
+        },
+        {
+          "q": "¿Cuánto demora encontrar terrenos con criterio?",
+          "a": "La búsqueda personalizada incluye selección de al menos 4 alternativas, reunión para definir las 3 mejores contigo e informe comparativo. Los plazos dependen de tu presupuesto, zona y disponibilidad real de mercado — se confirman en reunión estratégica."
+        }
+      ],
+      "related": [
+        { "label": "Búsqueda personalizada de terrenos", "href": "servicios/busqueda-personalizada/" },
+        { "label": "Plusvalía en contorno rural de Puerto Varas", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
+        { "label": "Costos de habilitación en contorno rural", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
+        { "label": "Inversión inmobiliaria en Puerto Varas", "href": "territorios/puerto-varas/" }
+      ]
+    }
+  ]
+}

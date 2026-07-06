@@ -728,3 +728,59 @@
   max-width: 42rem;
   padding: 1.5rem 1.35rem;
 }
+
+/* Internal linking blocks (SEO) */
+.seo-internal-links {
+  margin-top: 2rem;
+  padding: 1.25rem 1.35rem;
+  max-width: 42rem;
+}
+
+.seo-internal-links ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.seo-internal-links li + li { margin-top: 0.35rem; }
+
+.seo-internal-links a {
+  color: var(--brand-mid, #1a5f72);
+  text-decoration: none;
+}
+
+.seo-internal-links a:hover { text-decoration: underline; }
+
+.seo-guide-faq { margin-top: 2rem; }
+
+.section-blog-teaser { padding: 4rem 0; }
+
+.section-blog-teaser h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-blog-teaser h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-blog-teaser h3 a:hover { color: var(--brand-mid, #1a5f72); }
+
+.footer-seo-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.1rem;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.82rem;
+}
+
+.footer-seo-nav a {
+  color: var(--text-muted, #5a6a75);
+  text-decoration: none;
+}
+
+.footer-seo-nav a:hover {
+  color: var(--brand-mid, #1a5f72);
+  text-decoration: underline;
+}

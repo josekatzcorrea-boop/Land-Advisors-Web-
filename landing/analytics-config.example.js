@@ -1,12 +1,15 @@
 /**
  * Configuración de analítica — copiar a analytics-config.js y completar IDs.
  * analytics-config.js está en .gitignore si contiene IDs reales.
+ *
+ * SEO: tras crear GA4, vincular con Search Console (search.google.com/search-console).
+ * Verificación GSC: pegar código en landing/seo/site.json → seo.googleSiteVerification y redeploy.
  */
 window.LA_ANALYTICS = {
   enabled: false,
-  gtmId: "", // GTM-XXXXXXX
-  ga4MeasurementId: "", // G-XXXXXXXXXX
+  gtmId: "", // GTM-XXXXXXX (opcional)
+  ga4MeasurementId: "", // G-XXXXXXXXXX — Google Analytics 4
   metaPixelId: "1067824015463958", // Land Advisors Chile — Events Manager
-  googleAdsConversionId: "",
+  googleAdsConversionId: "", // AW-XXXXXXXXX
   debug: false,
 };

@@ -48,7 +48,8 @@
       "price": "5 UF",
       "description": "Selección de al menos 4 alternativas, comparación e informe de las 3 mejores elegidas en conjunto contigo. Incluye diagnóstico estratégico."
     },
-    "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" }
+    "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" },
+    "keywords": ["búsqueda personalizada terrenos", "asesoría compra terreno", "consultoría inmobiliaria sur chile"]
   },
   {
     "path": "/servicios/estudio-potencial-inmobiliario/",
@@ -108,12 +109,12 @@
     "path": "/territorios/frutillar/",
     "file": "territorios/frutillar/index.html",
     "title": "Inversión inmobiliaria Frutillar | Terrenos y plusvalía",
-    "description": "Oportunidades de inversión inmobiliaria en Frutillar: terrenos, parcelas y desarrollo en el contorno rural con criterio territorial.",
+    "description": "Oportunidades de inversión inmobiliaria en Frutillar: terrenos en el contorno rural con criterio territorial, plusvalía y lectura de mercado local.",
     "type": "territory",
     "breadcrumb": "Frutillar",
     "h1": "Inversión inmobiliaria en Frutillar",
     "intro": "Frutillar combina patrimonio, turismo y segunda vivienda. Evaluamos terrenos con lectura de mercado local, no con avisos genéricos.",
-    "keywords": ["inversión inmobiliaria Frutillar", "terrenos en Frutillar", "parcelas en Frutillar"]
+    "keywords": ["inversión inmobiliaria Frutillar", "terrenos en Frutillar", "comprar terreno Frutillar"]
   },
   {
     "path": "/territorios/llanquihue/",
@@ -147,6 +148,17 @@
     "h1": "Casos de estudio de inversión territorial",
     "intro": "Resultados pasados no garantizan resultados futuros. Estos casos ilustran cómo la inteligencia territorial revela oportunidades que el mercado no precifica.",
     "keywords": ["casos inversión inmobiliaria", "plusvalía terrenos", "oportunidades inmobiliarias sur de Chile"]
+  },
+  {
+    "path": "/guias/",
+    "file": "guias/index.html",
+    "title": "Guías para comprar terreno en el sur de Chile | Land Advisors",
+    "description": "Guías prácticas para comprar terreno en Puerto Varas, Frutillar, Llanquihue y Malalcahuello: contorno rural, criterio territorial y decisiones con respaldo.",
+    "type": "hub",
+    "breadcrumb": "Guías",
+    "h1": "Guías para comprar terreno en el sur de Chile",
+    "intro": "Recursos para quien evalúa terreno en el contorno rural: criterio territorial, costos reales y cuándo conviene asesoría especializada — sin catálogo masivo.",
+    "keywords": ["comprar terreno sur de chile", "guía comprar terreno", "terreno puerto varas", "asesoría compra terreno"]
   },
   {
     "path": "/blog/",
