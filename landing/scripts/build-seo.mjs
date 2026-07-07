@@ -725,7 +725,6 @@ ${navLinks(prefix)}
 function navLinks(prefix) {
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
-            <a href="${prefix}#problema">Situación</a>
             <a href="${prefix}servicios/">Servicios</a>
             <a href="${prefix}territorios/">Territorios</a>
             <a href="${prefix}#casos">Casos</a>
