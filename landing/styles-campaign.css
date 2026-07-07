@@ -172,24 +172,40 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 14rem;
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .seo-page--campaign .campaign-side-photo img {
   width: 100%;
-  flex: 1;
-  min-height: 12rem;
+  aspect-ratio: 5 / 4;
+  height: auto;
+  max-height: min(20rem, 42vh);
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 38%;
   display: block;
+  flex-shrink: 0;
 }
 
 .seo-page--campaign .campaign-side-photo figcaption {
-  padding: 0.85rem 1rem;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: var(--text-muted, #5a6a75);
-  border-top: 1px solid rgba(5, 44, 77, 0.08);
+  padding: 1rem 1.35rem 1.25rem;
+  font-size: clamp(0.94rem, 1.5vw, 1.02rem);
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--brand-deep, #052c4d);
+  border-top: 1px solid rgba(5, 44, 77, 0.1);
+  background: linear-gradient(180deg, rgba(244, 247, 248, 0.5) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+@media (min-width: 900px) {
+  .seo-page--campaign .campaign-side-photo img {
+    max-height: min(22rem, 48vh);
+  }
+
+  .seo-page--campaign .campaign-side-photo figcaption {
+    padding: 1.1rem 1.5rem 1.35rem;
+    font-size: 1rem;
+  }
 }
 
 .seo-page--campaign .campaign-panel {
