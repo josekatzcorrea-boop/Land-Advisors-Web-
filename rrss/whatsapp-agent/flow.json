@@ -1,0 +1,182 @@
+{
+  "id": "busqueda-30-sep2026",
+  "version": "1.0",
+  "phone": "+56974533265",
+  "calendarUrl": "https://calendar.app.google/NnBG8xc4b2HbByu67",
+  "campaignUtm": "busqueda-30-sep2026",
+  "offer": {
+    "service": "Búsqueda personalizada de terrenos",
+    "pricePromo": "3,5 UF",
+    "priceRegular": "5 UF",
+    "diagnostic": "Diagnóstico estratégico incluido (valor 1 UF)",
+    "deadline": "30 de septiembre de 2026",
+    "commissionCredit": "Si compras con nuestra asesoría (2,5%), las 3,5 UF se descuentan del honorario.",
+    "territory": "Cuenca Lago Llanquihue y Malalcahuello — contorno rural, no campo lejano ni inmueble urbano"
+  },
+  "activation": {
+    "campaignToken": "LA-BUSQ30",
+    "utmSources": ["meta", "google", "paid"],
+    "referralSourceTypes": ["ad", "post"],
+    "entryTriggers": [
+      "búsqueda personalizada",
+      "30%",
+      "3,5 uf",
+      "3.5 uf",
+      "oferta",
+      "vi la oferta",
+      "busqueda-30-sep2026"
+    ]
+  },
+  "states": [
+    {
+      "id": "welcome",
+      "next": "objective",
+      "collect": null,
+      "messageKey": "welcome"
+    },
+    {
+      "id": "objective",
+      "next": "budget",
+      "collect": "objective",
+      "messageKey": "ask_objective",
+      "quickReplies": [
+        "Vivienda / familia",
+        "Inversión patrimonial",
+        "Cabañas / turismo",
+        "Proyecto comercial",
+        "Aún lo estoy definiendo"
+      ]
+    },
+    {
+      "id": "budget",
+      "next": "zone",
+      "collect": "budgetUf",
+      "messageKey": "ask_budget",
+      "quickReplies": [
+        "Hasta 1.500 UF",
+        "1.500 – 3.000 UF",
+        "3.000 – 5.000 UF",
+        "Más de 5.000 UF",
+        "Prefiero conversarlo en reunión"
+      ]
+    },
+    {
+      "id": "zone",
+      "next": "timeline",
+      "collect": "zoneInterest",
+      "messageKey": "ask_zone",
+      "quickReplies": [
+        "Puerto Varas / Llanquihue",
+        "Frutillar",
+        "Malalcahuello",
+        "No tengo zona clara",
+        "Otra zona del sur"
+      ]
+    },
+    {
+      "id": "timeline",
+      "next": "location",
+      "collect": "timeline",
+      "messageKey": "ask_timeline",
+      "quickReplies": [
+        "0 – 3 meses",
+        "3 – 6 meses",
+        "6 – 12 meses",
+        "Solo explorando"
+      ]
+    },
+    {
+      "id": "location",
+      "next": "qualify",
+      "collect": "buyerLocation",
+      "messageKey": "ask_location",
+      "quickReplies": [
+        "Vivo en Santiago / RM",
+        "Vivo en el norte",
+        "Vivo en el sur",
+        "Fuera de Chile"
+      ]
+    },
+    {
+      "id": "qualify",
+      "next": "branch",
+      "collect": null,
+      "internal": true
+    },
+    {
+      "id": "offer_fit",
+      "next": "cta_calendar",
+      "collect": null,
+      "messageKey": "offer_summary"
+    },
+    {
+      "id": "cta_calendar",
+      "next": "handoff_tagged",
+      "collect": null,
+      "messageKey": "send_calendar"
+    },
+    {
+      "id": "soft_nurture",
+      "next": "cta_diagnostico",
+      "collect": null,
+      "messageKey": "nurture_exploring"
+    },
+    {
+      "id": "cta_diagnostico",
+      "next": "handoff_tagged",
+      "collect": null,
+      "messageKey": "send_calendar_diagnostico"
+    },
+    {
+      "id": "not_fit",
+      "next": "end",
+      "collect": null,
+      "messageKey": "not_fit"
+    },
+    {
+      "id": "human_escalation",
+      "next": "end",
+      "collect": null,
+      "messageKey": "human_handoff",
+      "notifyJose": true
+    },
+    {
+      "id": "handoff_tagged",
+      "next": "end",
+      "collect": null,
+      "internal": true,
+      "notifyJose": true,
+      "crmTag": "lead-busqueda-30"
+    }
+  ],
+  "qualifyRules": {
+    "offer_fit": {
+      "all": [
+        { "field": "zoneInterest", "notIn": ["Otra zona del sur"] },
+        { "field": "budgetUf", "notIn": ["Prefiero conversarlo en reunión"] }
+      ],
+      "any": [
+        { "field": "timeline", "in": ["0 – 3 meses", "3 – 6 meses", "6 – 12 meses"] }
+      ]
+    },
+    "soft_nurture": {
+      "field": "timeline",
+      "in": ["Solo explorando"]
+    },
+    "not_fit": {
+      "field": "zoneInterest",
+      "in": ["Otra zona del sur"]
+    }
+  },
+  "escalateToHuman": [
+    "abogado",
+    "demanda",
+    "estafa",
+    "urgente hoy",
+    "hablar con josé",
+    "hablar con jose",
+    "corredora",
+    "parcela barata",
+    "campo lejano"
+  ]
+}

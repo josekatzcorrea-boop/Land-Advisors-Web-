@@ -1,0 +1,14 @@
+{
+  "name": "land-advisors-whatsapp-agent",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "verify": "node scripts/verify-wa-config.mjs",
+    "fix-webhook": "node scripts/fix-webhook-subscription.mjs",
+    "test-webhook": "node scripts/test-webhook-flow.mjs"
+  }
+}

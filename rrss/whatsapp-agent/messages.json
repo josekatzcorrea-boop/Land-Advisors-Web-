@@ -1,0 +1,16 @@
+{
+  "welcome": "Hola, soy el asistente de Land Advisors Chile 👋\n\nVeo que te interesa la **búsqueda personalizada de terrenos** en el sur (promo 3,5 UF hasta el 30 de septiembre).\n\nTe hago unas preguntas cortas para ver si calza con tu caso — y si conviene, coordinamos reunión con José Katz.",
+  "ask_objective": "¿Qué te gustaría hacer con el terreno?",
+  "ask_budget": "¿En qué rango de presupuesto estás pensando para la **compra del terreno**? (solo referencial, sin compromiso)",
+  "ask_zone": "¿Hay alguna zona del sur que te atraiga o aún lo estás abriendo?",
+  "ask_timeline": "¿En qué horizonte te gustaría avanzar?",
+  "ask_location": "¿Desde dónde nos escribes? (Muchos clientes compran en el sur viviendo en Santiago o en el norte — la reunión puede ser online.)",
+  "offer_summary": "Por lo que comentas, la **búsqueda personalizada** puede calzar bien contigo.\n\n**Incluye:**\n• Diagnóstico estratégico gratis (valor 1 UF)\n• Al menos 4 alternativas + reunión para elegir las 3 mejores\n• Informe comparativo y recomendación\n• Acompañamiento integral hasta la decisión de compra\n\n**Inversión promocional:** 3,5 UF (antes 5 UF) · válida hasta el 30 de septiembre.\n\n**Si compras** con nuestra asesoría (2,5%), esas 3,5 UF se descuentan del honorario.\n\nNo somos corredora: no vendemos terrenos; te ayudamos a comprar el correcto con criterio territorial.",
+  "send_calendar": "El siguiente paso es una **reunión estratégica** (online o en Puerto Varas) para confirmar alcance y agenda.\n\n📅 Elige horario aquí:\nhttps://calendar.app.google/NnBG8xc4b2HbByu67\n\nCuando reserves, avísame el día y te confirmamos. Si prefieres seguir por acá un minuto más, escríbeme.",
+  "nurture_exploring": "Perfecto — explorar con calma también es válido.\n\nSi aún estás definiendo zona u objetivo, podemos empezar con un **diagnóstico estratégico** (incluido en la promo si contratas la búsqueda después).",
+  "send_calendar_diagnostico": "Te dejo el enlace para agendar una reunión sin compromiso:\n\n📅 https://calendar.app.google/NnBG8xc4b2HbByu67\n\nAhí ordenamos zona, criterio y si la búsqueda personalizada tiene sentido para ti.",
+  "not_fit": "Gracias por escribir. Por lo que comentas, hoy nuestro foco es el **contorno rural** de la cuenca del Lago Llanquihue y Malalcahuello — no campo lejano ni otras regiones.\n\nSi más adelante te interesa esa zona, escríbenos de nuevo. Te deseamos buena búsqueda 🤝",
+  "human_handoff": "Te paso con el equipo de José Katz para atenderte en persona. En horario laboral respondemos lo antes posible.\n\nSi es urgente, indica tu nombre y el terreno o zona que tienes en mente.",
+  "fallback": "No estoy seguro de haber entendido. ¿Puedes elegir una de las opciones del mensaje anterior o contarme en una frase qué buscas?",
+  "after_hours": "Recibimos tu mensaje fuera de horario. Te respondemos a primera hora del siguiente día hábil. Si quieres adelantar, puedes agendar aquí: https://calendar.app.google/NnBG8xc4b2HbByu67"
+}

@@ -1,0 +1,30 @@
+# Render Blueprint — Land Advisors WhatsApp Agent
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: land-advisors-whatsapp
+    runtime: node
+    rootDir: rrss/whatsapp-agent
+    buildCommand: echo "no deps"
+    startCommand: node server.mjs
+    healthCheckPath: /health
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: META_GRAPH_VERSION
+        value: v25.0
+      - key: META_WA_VERIFY_TOKEN
+        value: land-advisors-webhook-2026
+      - key: PORT
+        value: "8787"
+      - key: LA_NOTIFY_WEBHOOK_URL
+        value: https://script.google.com/macros/s/AKfycbw47Uo77XsNA35HNjlbCA41jpdzAFqO2Mu0PdQ6pbGfpM-da44rW0m1sIUwU7IoTqrc/exec
+      - key: LA_NOTIFY_PHONE
+        value: "56974533265"
+      - key: META_WA_ACCESS_TOKEN
+        sync: false
+      - key: META_WA_PHONE_NUMBER_ID
+        sync: false
+      - key: META_WA_BUSINESS_ACCOUNT_ID
+        value: "1519931339630253"

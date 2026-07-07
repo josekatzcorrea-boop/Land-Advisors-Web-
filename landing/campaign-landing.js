@@ -14,7 +14,7 @@
 
   function buildWhatsAppHref() {
     const params = new URLSearchParams(location.search);
-    const parts = [waIntro];
+    const parts = [waIntro, "[Ref: LA-BUSQ30]"];
     const utm = ["utm_source", "utm_medium", "utm_campaign", "utm_content"]
       .map((k) => params.get(k))
       .filter(Boolean);
