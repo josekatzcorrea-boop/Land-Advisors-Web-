@@ -784,3 +784,357 @@
   color: var(--brand-mid, #1a5f72);
   text-decoration: underline;
 }
+
+/* Visual guide blocks */
+.blog-article--guide {
+  max-width: 52rem;
+}
+
+.blog-article__content--guide {
+  padding-bottom: 1.5rem;
+}
+
+.guide-roadmap {
+  margin: 0 0 2rem;
+  padding: 1.35rem 1.25rem;
+}
+
+.guide-roadmap__heading {
+  margin: 0.35rem 0 1rem;
+  font-size: 1.2rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-roadmap__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .guide-roadmap__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .guide-roadmap__list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.guide-roadmap__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0.15rem 0.65rem;
+  padding: 0.85rem 0.75rem;
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(5, 44, 77, 0.08);
+}
+
+.guide-roadmap__icon {
+  grid-row: 1 / span 3;
+  display: flex;
+  align-items: flex-start;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-roadmap__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.guide-roadmap__num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--lake, #5b8fa0);
+  text-transform: uppercase;
+}
+
+.guide-roadmap__title {
+  font-size: 0.92rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-roadmap__text {
+  grid-column: 2;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-step {
+  margin: 2rem 0 0;
+  padding-top: 0.25rem;
+}
+
+.guide-step__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.guide-step__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand-deep, #052c4d), var(--brand-mid, #1a5f72));
+}
+
+.guide-step__icon {
+  display: flex;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-step__icon svg {
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+.guide-step__title {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--brand-deep, #052c4d);
+  line-height: 1.3;
+}
+
+@media (min-width: 640px) {
+  .guide-step__title {
+    flex: 1 1 auto;
+  }
+}
+
+.guide-step__body p {
+  margin: 0 0 0.85rem;
+}
+
+.guide-step__bullets {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-step__bullets li + li {
+  margin-top: 0.35rem;
+}
+
+.guide-example-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+  .guide-example-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.guide-example-card {
+  padding: 1rem 1rem 0.9rem;
+  border-radius: 0.75rem;
+  background: rgba(232, 241, 243, 0.65);
+  border: 1px solid rgba(5, 44, 77, 0.07);
+}
+
+.guide-example-card__icon {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-example-card__icon svg {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+.guide-example-card__title {
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-example-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.guide-criteria {
+  margin-top: 2rem;
+}
+
+.guide-criteria__intro {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-criteria-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .guide-criteria-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .guide-criteria-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.guide-criteria-card {
+  position: relative;
+  padding: 1.1rem 1rem 1rem 1.1rem;
+  min-height: 100%;
+}
+
+.guide-criteria-card__num {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.85rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(91, 143, 160, 0.22);
+}
+
+.guide-criteria-card__icon {
+  display: flex;
+  margin-bottom: 0.55rem;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-criteria-card__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.guide-criteria-card__title {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-criteria-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-decision {
+  margin-top: 2rem;
+}
+
+.guide-decision-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .guide-decision-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.guide-decision-card {
+  padding: 1.1rem 1rem;
+}
+
+.guide-decision-card__icon {
+  display: flex;
+  margin-bottom: 0.55rem;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-decision-card__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.guide-decision-card__title {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-decision-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-callout {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.2rem;
+}
+
+.guide-callout--la {
+  background: linear-gradient(135deg, rgba(5, 44, 77, 0.06), rgba(26, 95, 114, 0.08));
+  border: 1px solid rgba(26, 95, 114, 0.18);
+}
+
+.guide-callout--tip {
+  border-left: 3px solid var(--lake, #5b8fa0);
+}
+
+.guide-callout--footer {
+  margin-top: 2.5rem;
+}
+
+.guide-callout__icon {
+  flex-shrink: 0;
+  display: flex;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-callout__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.guide-callout__copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.guide-callout__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.guide-callout__copy p {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-muted, #5a6a75);
+}
+
+.guide-callout__copy .btn {
+  margin-top: 0.25rem;
+}

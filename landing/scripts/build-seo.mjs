@@ -308,7 +308,8 @@ function buildGuidesHubContent(prefix) {
 }
 
 function buildGuideBody(guide, prefix) {
-  const sections = (guide.sections || []).map(renderBlogSection).join("\n        ");
+  const blocks = guide.blocks || guide.sections || [];
+  const sections = blocks.map(renderGuideBlock).join("\n        ");
   const faq = (guide.faq || [])
     .map(
       (item) => `<details class="faq-item">
@@ -321,15 +322,27 @@ function buildGuideBody(guide, prefix) {
     .map((r) => `<li><a href="${prefix}${r.href}">${esc(r.label)}</a></li>`)
     .join("");
 
-  return `<article class="blog-article glass-card">
+  const ctaHref = prefix + (guide.cta?.href || "servicios/busqueda-personalizada/");
+  const ctaEvent = guide.cta?.event || "cta_busqueda";
+  const ctaLabel = guide.cta?.label || "Solicitar búsqueda personalizada";
+
+  return `<article class="blog-article blog-article--guide glass-card">
       <header class="blog-article__header">
         <figure class="blog-article__figure">
           <img src="${prefix}${guide.image.replace(/^\//, "")}" alt="${esc(guide.imageAlt || guide.h1)}" width="900" height="600" loading="lazy">
         </figure>
       </header>
-      <div class="blog-article__content">
+      <div class="blog-article__content blog-article__content--guide">
         <p class="blog-article__lead">${esc(guide.intro)}</p>
         ${sections}
+        <aside class="guide-callout glass-card guide-callout--la guide-callout--footer">
+          <span class="guide-callout__icon" aria-hidden="true">${guideIcon("la")}</span>
+          <div class="guide-callout__copy">
+            <h2 class="guide-callout__title">¿Quieres que lo hagamos contigo?</h2>
+            <p>En Land Advisors este proceso es nuestro trabajo diario: territorio, normativa, mercado y precio con criterio local. No vendemos terrenos — te ayudamos a comprar el correcto.</p>
+            <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="${esc(ctaEvent)}">${esc(ctaLabel)}</a>
+          </div>
+        </aside>
       </div>
       ${
         faq
@@ -448,6 +461,126 @@ ${navLinks(prefix)}
   </script>
 </body>
 </html>`;
+}
+
+const GUIDE_ICONS = {
+  map: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 24V10l8-4 12 6v14l-8-4-8 4V14l8-4" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><circle cx="14" cy="12" r="2.5" stroke="currentColor" stroke-width="1.75"/></svg>`,
+  browse: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/><path d="M20 20l7 7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M11 14h6M14 11v6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  filter: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 8h20M10 16h12M14 24h8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="22" cy="8" r="2" fill="currentColor"/><circle cx="18" cy="16" r="2" fill="currentColor"/><circle cx="14" cy="24" r="2" fill="currentColor"/></svg>`,
+  heart: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27s-9-5.5-11.5-11C2.5 11 6 6.5 10.5 6.5c2.5 0 4 1.5 5.5 3 1.5-1.5 3-3 5.5-3C26 6.5 29.5 11 27.5 16 25 21.5 16 27 16 27z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>`,
+  scale: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 6v20M8 26h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M10 14h12l-6 8-6-8z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>`,
+  family: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="12" cy="11" r="3" stroke="currentColor" stroke-width="1.75"/><circle cx="22" cy="12" r="2.5" stroke="currentColor" stroke-width="1.75"/><path d="M6 26c0-4 3-7 6-7s6 3 6 7M18 26c0-3 2-5 4-5s4 2 4 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  cabin: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 26V14l10-8 10 8v12" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 26v-8h8v8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M16 6v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  budget: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="6" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.75"/><path d="M10 14h12M10 18h8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="22" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/></svg>`,
+  services: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 14h16v12H8z" stroke="currentColor" stroke-width="1.75"/><path d="M12 14V10a4 4 0 018 0v4" stroke="currentColor" stroke-width="1.75"/><path d="M16 20v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  road: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10 26L14 6h4l4 20" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 18h8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  climate: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.75"/><path d="M16 6v2M16 24v2M6 16h2M24 16h2M9 9l1.5 1.5M21.5 21.5L23 23M23 9l-1.5 1.5M10.5 21.5L9 23" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  normativa: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10 6h12v20H10z" stroke="currentColor" stroke-width="1.75"/><path d="M13 11h6M13 15h6M13 19h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M6 26h20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  price: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 8c0 4 16 4 16 8s-16 4-16 8 16 4 16 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M8 8v16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  connect: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="8" cy="22" r="3" stroke="currentColor" stroke-width="1.75"/><circle cx="24" cy="10" r="3" stroke="currentColor" stroke-width="1.75"/><path d="M10.5 20.5L21.5 11.5" stroke="currentColor" stroke-width="1.75"/></svg>`,
+  habilitation: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 26V18l10-8 10 8v8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 26v-6h8v6" stroke="currentColor" stroke-width="1.75"/><path d="M14 14h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  invest: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 24V14l8-6 8 6v10" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 24v-6h8v6" stroke="currentColor" stroke-width="1.75"/><path d="M16 8v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  la: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 24V12l8-6 8 6v12" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 24v-6h8v6" stroke="currentColor" stroke-width="1.75"/></svg>`,
+};
+
+function guideIcon(name) {
+  return GUIDE_ICONS[name] || GUIDE_ICONS.map;
+}
+
+function renderGuideBlock(block) {
+  switch (block.type) {
+    case "roadmap": {
+      const items = (block.items || [])
+        .map(
+          (item) => `<li class="guide-roadmap__item">
+        <span class="guide-roadmap__icon" aria-hidden="true">${guideIcon(item.icon)}</span>
+        <span class="guide-roadmap__num">${esc(item.num)}</span>
+        <strong class="guide-roadmap__title">${esc(item.title)}</strong>
+        <span class="guide-roadmap__text">${esc(item.text)}</span>
+      </li>`
+        )
+        .join("");
+      return `<nav class="guide-roadmap glass-card" aria-label="${esc(block.title || "Pasos de la guía")}">
+        <p class="section-label">${esc(block.label || "Ruta recomendada")}</p>
+        ${block.title ? `<h2 class="guide-roadmap__heading">${esc(block.title)}</h2>` : ""}
+        <ol class="guide-roadmap__list">${items}</ol>
+      </nav>`;
+    }
+    case "step": {
+      const paras = (block.paragraphs || []).map((t) => `<p>${esc(t)}</p>`).join("");
+      const bullets = block.bullets?.length
+        ? `<ul class="guide-step__bullets">${block.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`
+        : "";
+      const examples = block.examples?.length
+        ? `<div class="guide-example-grid">${block.examples
+            .map(
+              (ex) => `<article class="guide-example-card">
+            <span class="guide-example-card__icon" aria-hidden="true">${guideIcon(ex.icon)}</span>
+            <h3 class="guide-example-card__title">${esc(ex.title)}</h3>
+            <p>${esc(ex.text)}</p>
+          </article>`
+            )
+            .join("")}</div>`
+        : "";
+      return `<section class="guide-step" aria-labelledby="guide-step-${block.num}">
+        <div class="guide-step__head">
+          <span class="guide-step__badge">${esc(block.num)}</span>
+          <span class="guide-step__icon" aria-hidden="true">${guideIcon(block.icon)}</span>
+          <h2 class="guide-step__title" id="guide-step-${block.num}">${esc(block.title)}</h2>
+        </div>
+        <div class="guide-step__body">${paras}${bullets}${examples}</div>
+      </section>`;
+    }
+    case "criteria": {
+      const items = (block.items || [])
+        .map(
+          (item) => `<article class="guide-criteria-card glass-card">
+        <span class="guide-criteria-card__num" aria-hidden="true">${esc(item.num)}</span>
+        <span class="guide-criteria-card__icon" aria-hidden="true">${guideIcon(item.icon)}</span>
+        <h3 class="guide-criteria-card__title">${esc(item.title)}</h3>
+        <p>${esc(item.text)}</p>
+      </article>`
+        )
+        .join("");
+      return `<section class="guide-criteria" aria-labelledby="guide-criteria-title">
+        <h2 class="blog-article__h2" id="guide-criteria-title">${esc(block.title)}</h2>
+        ${block.intro ? `<p class="guide-criteria__intro">${esc(block.intro)}</p>` : ""}
+        <div class="guide-criteria-grid">${items}</div>
+      </section>`;
+    }
+    case "decision": {
+      const items = (block.items || [])
+        .map(
+          (item) => `<article class="guide-decision-card glass-card">
+        <span class="guide-decision-card__icon" aria-hidden="true">${guideIcon(item.icon)}</span>
+        <h3 class="guide-decision-card__title">${esc(item.title)}</h3>
+        <p>${esc(item.text)}</p>
+      </article>`
+        )
+        .join("");
+      return `<section class="guide-decision" aria-labelledby="guide-decision-title">
+        <h2 class="blog-article__h2" id="guide-decision-title">${esc(block.title)}</h2>
+        ${block.intro ? `<p>${esc(block.intro)}</p>` : ""}
+        <div class="guide-decision-grid">${items}</div>
+      </section>`;
+    }
+    case "callout": {
+      const variant = block.variant === "la" ? "guide-callout--la" : "guide-callout--tip";
+      const cta = block.cta
+        ? `<a href="${esc(block.cta.href)}" class="btn btn-primary btn-glow" data-track="${esc(block.cta.event || "cta_busqueda")}">${esc(block.cta.label)}</a>`
+        : "";
+      return `<aside class="guide-callout glass-card ${variant}">
+        <span class="guide-callout__icon" aria-hidden="true">${guideIcon(block.icon || "la")}</span>
+        <div class="guide-callout__copy">
+          <h2 class="guide-callout__title">${esc(block.title)}</h2>
+          <p>${esc(block.text)}</p>
+          ${cta}
+        </div>
+      </aside>`;
+    }
+    default:
+      return renderBlogSection(block);
+  }
 }
 
 function renderBlogSection(section) {
