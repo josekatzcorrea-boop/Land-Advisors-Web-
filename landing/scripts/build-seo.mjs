@@ -251,19 +251,19 @@ function buildInternalLinks(page, prefix) {
 
   if (page.type === "territory") {
     links.push(
-      { href: `${prefix}guias/comprar-terreno-sur-chile/`, label: "Guía: comprar terreno en el sur" },
+      { href: `${prefix}guias/`, label: "Guía: comprar terreno en el sur" },
       { href: `${prefix}servicios/busqueda-personalizada/`, label: "Búsqueda personalizada de terrenos" },
       { href: `${prefix}blog/plusvalia-contorno-rural-puerto-varas/`, label: "Plusvalía en contorno rural" }
     );
   } else if (page.type === "blog-post") {
     links.push(
-      { href: `${prefix}guias/comprar-terreno-sur-chile/`, label: "Guía: comprar terreno en el sur" },
+      { href: `${prefix}guias/`, label: "Guía: comprar terreno en el sur" },
       { href: `${prefix}servicios/busqueda-personalizada/`, label: "Búsqueda personalizada" },
       { href: `${prefix}territorios/`, label: "Territorios" }
     );
   } else if (page.type === "service") {
     links.push(
-      { href: `${prefix}guias/comprar-terreno-sur-chile/`, label: "Guía para comprar terreno" },
+      { href: `${prefix}guias/`, label: "Guía para comprar terreno" },
       { href: `${prefix}territorios/`, label: "Territorios donde operamos" },
       { href: `${prefix}blog/`, label: "Blog de inteligencia territorial" }
     );
@@ -289,25 +289,18 @@ function buildInternalLinks(page, prefix) {
     </nav>`;
 }
 
-function buildGuidesHubContent(prefix) {
-  const cards = guides
-    .map((guide) => {
-      const href = `${prefix}guias/${guide.slug}/`;
-      const imgSrc = `${prefix}${(guide.image || site.defaultOgImage).replace(/^\//, "")}`;
-      return `<article class="seo-card glass-card">
-        <a href="${href}" class="blog-card__media" tabindex="-1" aria-hidden="true">
-          <img src="${imgSrc}" alt="${esc(guide.imageAlt || guide.h1)}" width="640" height="400" loading="lazy" decoding="async">
-        </a>
-        <h2><a href="${href}">${esc(guide.h1)}</a></h2>
-        <p>${esc(guide.intro)}</p>
-        <a href="${href}" class="btn btn-glass">Leer guía →</a>
-      </article>`;
-    })
-    .join("");
-  return `<div class="seo-card-grid">${cards}</div>`;
+function hubGuideForPage(page) {
+  const slug = page.primaryGuide || guides[0]?.slug;
+  return slug ? guides.find((g) => g.slug === slug) : null;
 }
 
-function buildGuideBody(guide, prefix) {
+function buildGuidesHubContent(page, prefix) {
+  const guide = hubGuideForPage(page);
+  if (!guide) return "";
+  return buildGuideBody(guide, prefix, { skipLead: true });
+}
+
+function buildGuideBody(guide, prefix, options = {}) {
   const blocks = guide.blocks || guide.sections || [];
   const sections = blocks.map(renderGuideBlock).join("\n        ");
   const faq = (guide.faq || [])
@@ -333,7 +326,7 @@ function buildGuideBody(guide, prefix) {
         </figure>
       </header>
       <div class="blog-article__content blog-article__content--guide">
-        <p class="blog-article__lead">${esc(guide.intro)}</p>
+        ${options.skipLead ? "" : `<p class="blog-article__lead">${esc(guide.intro)}</p>`}
         ${sections}
         <aside class="guide-callout glass-card guide-callout--la guide-callout--footer">
           <span class="guide-callout__icon" aria-hidden="true">${guideIcon("la")}</span>
@@ -365,102 +358,28 @@ function buildGuideBody(guide, prefix) {
     </article>`;
 }
 
-function buildGuidePage(guide) {
-  const pagePath = `/guias/${guide.slug}/`;
-  const prefix = rootPrefix(pagePath);
-  const assets = assetPrefix();
-  const page = {
-    path: pagePath,
-    title: guide.title,
-    description: guide.description,
-    breadcrumb: guide.h1,
-    h1: guide.h1,
-    intro: guide.intro,
-    image: guide.image,
-    type: "guide",
-  };
-  const schemas = buildSchemas(page);
-  schemas.push(websiteSchema());
-  if (guide.faq?.length) schemas.push(faqPageSchema(guide.faq));
-  const ctaHref = prefix + "#contacto-form";
-
+function buildGuideRedirectPage(guide) {
+  const canonical = site.url + "/guias/";
+  const redirectTarget = "/guias/";
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
-${buildHead(page, prefix, assets, { ogImage: site.url + guide.image })}
-  <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[4])}</script>
-  ${guide.faq?.length ? `<script type="application/ld+json">${JSON.stringify(schemas[5])}</script>` : ""}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="${canonical}">
+  <meta http-equiv="refresh" content="0; url=${redirectTarget}">
+  <title>${esc(guide.h1)} | Land Advisors</title>
+  <script>location.replace("${redirectTarget}");</script>
 </head>
-<body class="site-v2 seo-page seo-page--guide">
-  <header class="site-header">
-    <div class="header-shell">
-      <div class="header-inner">
-        <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
-          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
-        </a>
-        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix)}
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="seo-hero seo-hero--article">
-      <div class="container" data-reveal>
-        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
-          <a href="${prefix}">Inicio</a>
-          <span aria-hidden="true"> / </span><a href="${prefix}guias/">Guías</a>
-          <span aria-hidden="true"> / </span><span>${esc(guide.h1)}</span>
-        </nav>
-        <p class="section-label">Guía</p>
-        <h1>${esc(guide.h1)}</h1>
-        <p class="section-intro">${esc(guide.intro)}</p>
-      </div>
-    </section>
-    <section class="seo-body">
-      <div class="container" data-reveal>
-        ${buildGuideBody(guide, prefix)}
-        ${buildInternalLinks(page, prefix)}
-      </div>
-    </section>
-    <section class="cta-band">
-      <div class="container">
-        <h2>¿Evaluando terreno en el sur de Chile?</h2>
-        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_busqueda">Solicitar búsqueda personalizada</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
-    </div>
-  </footer>
-
-  <div id="la-chat-widget" aria-label="Contacto"></div>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  <script src="${prefix}landing-ui.js" defer></script>
-  <script src="${prefix}analytics-config.js" defer></script>
-  <script src="${prefix}analytics.js" defer></script>
-  <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>
-  <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".nav");
-    toggle?.addEventListener("click", () => {
-      const open = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", open);
-    });
-  </script>
+<body>
+  <p><a href="${redirectTarget}">Ir a ${esc(guide.h1)}</a></p>
 </body>
 </html>`;
+}
+
+function buildGuidePage(guide) {
+  return buildGuideRedirectPage(guide);
 }
 
 const GUIDE_ICONS = {
@@ -937,9 +856,26 @@ function buildServicesCatalog(prefix) {
 function buildSecondaryPage(page) {
   const prefix = rootPrefix(page.path);
   const assets = assetPrefix();
-  const schemas = buildSchemas(page);
+  const hubGuide = page.path === "/guias/" ? hubGuideForPage(page) : null;
+  const pageView = hubGuide
+    ? {
+        ...page,
+        title: hubGuide.title,
+        description: hubGuide.description,
+        h1: hubGuide.h1,
+        intro: hubGuide.intro,
+        image: hubGuide.image,
+      }
+    : page;
+  const schemas = buildSchemas(pageView);
+  if (hubGuide) {
+    schemas.push(websiteSchema());
+    if (hubGuide.faq?.length) schemas.push(faqPageSchema(hubGuide.faq));
+  }
   const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
-  const ctaHref = prefix + "#contacto-form";
+  const ctaHref = prefix + (hubGuide ? "servicios/busqueda-personalizada/" : "#contacto-form");
+  const ctaEvent = hubGuide ? "cta_busqueda" : cta.event;
+  const ctaLabel = hubGuide ? "Solicitar búsqueda personalizada" : cta.label;
 
   let extraContent = "";
   if (page.path === "/servicios/") extraContent = buildServicesCatalog(prefix);
@@ -953,7 +889,7 @@ function buildSecondaryPage(page) {
   } else if (page.path === "/blog/") {
     extraContent = buildBlogIndexContent(prefix);
   } else if (page.path === "/guias/") {
-    extraContent = buildGuidesHubContent(prefix);
+    extraContent = buildGuidesHubContent(page, prefix);
   } else if (page.type === "territory" && page.keywords) {
     extraContent = `<p class="seo-keywords">Búsquedas relacionadas: ${page.keywords.map(esc).join(" · ")}</p>`;
   } else if (page.type === "service") {
@@ -973,14 +909,15 @@ function buildSecondaryPage(page) {
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
-${buildHead(page, prefix, assets)}
+${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.image } : {})}
   <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
+  ${hubGuide && hubGuide.faq?.length ? `<script type="application/ld+json">${JSON.stringify(schemas[schemas.length - 1])}</script>` : ""}
 </head>
-<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : ""}">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : ""}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -994,33 +931,37 @@ ${navLinks(prefix)}
   </header>
 
   <main>
-    <section class="seo-hero">
+    <section class="seo-hero${hubGuide ? " seo-hero--article" : ""}">
       <div class="container" data-reveal>
         <nav class="seo-breadcrumb" aria-label="Breadcrumb">
           <a href="${prefix}">Inicio</a>
-          ${page.path !== "/" ? `<span aria-hidden="true"> / </span><span>${esc(page.breadcrumb)}</span>` : ""}
+          ${page.path !== "/" ? `<span aria-hidden="true"> / </span><span>${esc(hubGuide ? "Guías" : page.breadcrumb)}</span>` : ""}
         </nav>
-        <p class="section-label">${esc(page.type === "service" ? "Servicio" : page.type === "territory" ? "Territorio" : page.breadcrumb)}</p>
-        <h1>${esc(page.h1)}</h1>
-        <p class="section-intro">${esc(page.intro)}</p>
+        <p class="section-label">${esc(hubGuide ? "Guía" : page.type === "service" ? "Servicio" : page.type === "territory" ? "Territorio" : page.breadcrumb)}</p>
+        <h1>${esc(pageView.h1)}</h1>
+        <p class="section-intro">${esc(pageView.intro)}</p>
         ${serviceBlock}
-        <div class="seo-hero-actions">
+        ${
+          hubGuide
+            ? ""
+            : `<div class="seo-hero-actions">
           <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="${cta.event}">${esc(cta.label)}</a>
           <a href="${site.whatsapp}" class="btn btn-glass" target="_blank" rel="noopener noreferrer" data-track="cta_whatsapp">WhatsApp</a>
-        </div>
+        </div>`
+        }
       </div>
     </section>
     <section class="seo-body">
       <div class="container" data-reveal>
         ${extraContent}
-        ${buildInternalLinks(page, prefix)}
+        ${hubGuide ? "" : buildInternalLinks(page, prefix)}
       </div>
     </section>
     <section class="cta-band">
       <div class="container">
-        <h2>Inteligencia territorial antes de invertir</h2>
-        <p>Reunión estratégica para ordenar tu decisión con criterio de mercado y territorio.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <h2>${hubGuide ? "¿Evaluando terreno en el sur de Chile?" : "Inteligencia territorial antes de invertir"}</h2>
+        <p>${hubGuide ? "Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial." : "Reunión estratégica para ordenar tu decisión con criterio de mercado y territorio."}</p>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="${hubGuide ? ctaEvent : "cta_contacto"}">${esc(hubGuide ? ctaLabel : "Agendar reunión estratégica")}</a>
       </div>
     </section>
   </main>
@@ -1060,10 +1001,6 @@ function buildSitemap() {
       path: `/blog/${post.slug}/`,
       type: "blog-post",
     })),
-    ...guides.map((guide) => ({
-      path: `/guias/${guide.slug}/`,
-      type: "guide",
-    })),
   ];
   const urls = allPages
     .map((p) => {
@@ -1071,9 +1008,11 @@ function buildSitemap() {
       const priority =
         p.path === "/"
           ? "1.0"
-          : p.type === "guide"
+          : p.type === "guide-hub"
             ? "0.85"
-            : p.type === "service" || p.type === "territory"
+            : p.type === "guide"
+              ? "0.85"
+              : p.type === "service" || p.type === "territory"
               ? "0.8"
               : p.type === "blog-post"
                 ? "0.75"

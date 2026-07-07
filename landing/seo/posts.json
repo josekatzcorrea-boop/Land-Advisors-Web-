@@ -248,7 +248,7 @@
         }
       ],
       "related": [
-        { "label": "Guía: comprar terreno en el sur de Chile", "href": "guias/comprar-terreno-sur-chile/" },
+        { "label": "Guía: comprar terreno en el sur de Chile", "href": "guias/" },
         { "label": "Búsqueda personalizada de terrenos", "href": "servicios/busqueda-personalizada/" },
         { "label": "Territorios donde operamos", "href": "territorios/" }
       ]
@@ -310,7 +310,7 @@
       "related": [
         { "label": "Plusvalía en contorno rural de Puerto Varas", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
         { "label": "Inversión inmobiliaria en Puerto Varas", "href": "territorios/puerto-varas/" },
-        { "label": "Guía: comprar terreno en el sur", "href": "guias/comprar-terreno-sur-chile/" }
+        { "label": "Guía: comprar terreno en el sur", "href": "guias/" }
       ]
     }
   ]

@@ -152,12 +152,13 @@
   {
     "path": "/guias/",
     "file": "guias/index.html",
-    "title": "Guías para comprar terreno en el sur de Chile | Land Advisors",
-    "description": "Guías prácticas para comprar terreno en Puerto Varas, Frutillar, Llanquihue y Malalcahuello: contorno rural, criterio territorial y decisiones con respaldo.",
-    "type": "hub",
+    "primaryGuide": "comprar-terreno-sur-chile",
+    "title": "Cómo comprar terreno en el sur de Chile | Guía Land Advisors",
+    "description": "Guía paso a paso para comprar terreno en el sur de Chile: definir zonas según tu objetivo, filtrar oferta con criterio (presupuesto, servicios, acceso, normativa) y decidir con datos. Puerto Varas, Frutillar, Llanquihue.",
+    "type": "guide-hub",
     "breadcrumb": "Guías",
-    "h1": "Guías para comprar terreno en el sur de Chile",
-    "intro": "Recursos para quien evalúa terreno en el contorno rural: criterio territorial, costos reales y cuándo conviene asesoría especializada — sin catálogo masivo.",
+    "h1": "Cómo comprar terreno en el sur de Chile",
+    "intro": "Comprar un terreno en el sur de Chile puede ser una gran decisión — y hay mucha oferta bonita. La clave no es ver menos avisos, sino seguir un orden: primero el territorio y tu objetivo, después el filtro técnico, al final el gusto y el precio con criterio.",
     "keywords": ["comprar terreno sur de chile", "guía comprar terreno", "terreno puerto varas", "asesoría compra terreno"]
   },
   {
