@@ -1,5 +1,5 @@
 /**
- * Land Advisors — landing de campaña (WhatsApp prellenado + calendario)
+ * Land Advisors — landing de campaña (WhatsApp prellenado + calendario + CTAs flotantes)
  */
 (function () {
   const root = document.documentElement;
@@ -42,9 +42,37 @@
     });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", wireCtas);
-  } else {
+  function initFloatCtas() {
+    const float = document.querySelector(".campaign-float-cta");
+    const hero = document.querySelector(".campaign-hero");
+    if (!float || !hero) return;
+
+    const setVisible = (visible) => {
+      float.classList.toggle("is-visible", visible);
+      float.hidden = !visible;
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => setVisible(!entry.isIntersecting),
+        { threshold: 0, rootMargin: "-8% 0px 0px 0px" }
+      );
+      observer.observe(hero);
+    } else {
+      const onScroll = () => setVisible(window.scrollY > hero.offsetHeight * 0.55);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    }
+  }
+
+  function init() {
     wireCtas();
+    initFloatCtas();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
 })();
