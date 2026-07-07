@@ -1,0 +1,258 @@
+/* Landing de campaña — búsqueda personalizada 30% */
+.seo-page--campaign .campaign-hero {
+  position: relative;
+  min-height: clamp(28rem, 72vh, 40rem);
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(5rem, 10vw, 7rem) 0 clamp(2.5rem, 6vw, 4rem);
+  overflow: hidden;
+}
+
+.seo-page--campaign .campaign-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.seo-page--campaign .campaign-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seo-page--campaign .campaign-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 44, 77, 0.35) 0%,
+    rgba(5, 44, 77, 0.82) 55%,
+    rgba(5, 44, 77, 0.95) 100%
+  );
+}
+
+.seo-page--campaign .campaign-hero__inner {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 44rem;
+}
+
+.seo-page--campaign .campaign-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.seo-page--campaign .campaign-hero h1 {
+  max-width: 16ch;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.seo-page--campaign .campaign-hero__lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.seo-page--campaign .campaign-pricing {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.seo-page--campaign .campaign-pricing__label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+.seo-page--campaign .campaign-pricing__price {
+  display: block;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.seo-page--campaign .campaign-pricing__was {
+  font-size: 0.95rem;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.seo-page--campaign .campaign-pricing__bonus {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.seo-page--campaign .campaign-pricing__bonus-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #3d6b5e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.2rem 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.seo-page--campaign .campaign-pricing__muted {
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.seo-page--campaign .campaign-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.seo-page--campaign .campaign-hero__note {
+  font-size: 0.88rem;
+  opacity: 0.82;
+  margin: 0;
+}
+
+.seo-page--campaign .campaign-body {
+  padding: 2.5rem 0 5rem;
+}
+
+.seo-page--campaign .campaign-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 900px) {
+  .seo-page--campaign .campaign-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.seo-page--campaign .campaign-panel {
+  padding: 1.5rem;
+}
+
+.seo-page--campaign .campaign-panel__title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.seo-page--campaign .campaign-includes {
+  margin: 0 0 1rem;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.seo-page--campaign .campaign-panel__foot {
+  font-size: 0.92rem;
+  color: var(--text-muted, #5a6a75);
+  margin: 0;
+}
+
+.seo-page--campaign .campaign-steps__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.seo-page--campaign .campaign-step {
+  padding: 1.15rem 1.25rem;
+}
+
+.seo-page--campaign .campaign-step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--brand-deep, #052c4d);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.seo-page--campaign .campaign-step__title {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.seo-page--campaign .campaign-ally {
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.seo-page--campaign .campaign-ally h2 {
+  margin-bottom: 0.75rem;
+}
+
+.seo-page--campaign .campaign-legal {
+  font-size: 0.82rem;
+  color: var(--text-muted, #5a6a75);
+  margin-top: 2rem;
+}
+
+/* Sticky CTA móvil */
+.campaign-sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom, 0));
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid rgba(5, 44, 77, 0.12);
+  box-shadow: 0 -4px 24px rgba(5, 44, 77, 0.08);
+}
+
+.campaign-sticky-cta__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.campaign-sticky-cta .btn {
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.7rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .campaign-sticky-cta {
+    display: none;
+  }
+}
+
+.seo-page--campaign .site-footer {
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .seo-page--campaign .site-footer {
+    padding-bottom: 0;
+  }
+}

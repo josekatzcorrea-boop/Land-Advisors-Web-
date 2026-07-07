@@ -18,6 +18,8 @@ const blogData = JSON.parse(fs.readFileSync(path.join(SEO, "posts.json"), "utf8"
 const blogPosts = blogData.posts || [];
 const guidesData = JSON.parse(fs.readFileSync(path.join(SEO, "guides.json"), "utf8"));
 const guides = guidesData.guides || [];
+const campaignsData = JSON.parse(fs.readFileSync(path.join(SEO, "campaigns.json"), "utf8"));
+const campaigns = campaignsData.campaigns || [];
 
 function depthFromPath(p) {
   const segs = p.replace(/\/$/, "").split("/").filter(Boolean);
@@ -722,6 +724,187 @@ ${navLinks(prefix)}
 </html>`;
 }
 
+function campaignFooterScripts(prefix, campaign) {
+  const track = campaign.serviceEvent || "cta_busqueda";
+  return `  <div id="la-chat-widget" aria-label="Contacto"></div>
+  <aside class="campaign-sticky-cta" aria-label="Acciones de campaña">
+    <div class="campaign-sticky-cta__inner">
+      <a href="#" class="btn btn-primary btn-glow" data-campaign-wa data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="#" class="btn btn-glass" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">Agendar reunión</a>
+    </div>
+  </aside>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="${prefix}landing-ui.js" defer></script>
+  <script src="${prefix}calendar-config.js" defer></script>
+  <script src="${prefix}campaign-landing.js" defer></script>
+  <script src="${prefix}analytics-config.js" defer></script>
+  <script src="${prefix}analytics.js" defer></script>
+  <script src="${prefix}conversion-tracking.js" defer></script>
+  <script src="${prefix}chat-widget.js" defer></script>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle?.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open);
+    });
+  </script>`;
+}
+
+function buildCampaignPage(campaign) {
+  const pagePath = `/campanas/${campaign.slug}/`;
+  const prefix = rootPrefix(pagePath);
+  const assets = assetPrefix();
+  const page = {
+    path: pagePath,
+    title: campaign.title,
+    description: campaign.description,
+    breadcrumb: "Oferta",
+    h1: campaign.h1,
+    intro: campaign.heroLead,
+    image: campaign.image,
+    type: "campaign",
+  };
+  const schemas = buildSchemas(page);
+  schemas.push(websiteSchema());
+  if (campaign.faq?.length) schemas.push(faqPageSchema(campaign.faq));
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    name: "Búsqueda personalizada de terrenos — promoción 30%",
+    description: campaign.description,
+    price: campaign.pricePromo,
+    priceCurrency: "CLF",
+    validThrough: campaign.deadline,
+    seller: { "@type": "Organization", name: site.name, url: site.url },
+    url: site.url + pagePath,
+  });
+
+  const includes = (campaign.includes || [])
+    .map((item) => `<li>${esc(item)}</li>`)
+    .join("");
+  const steps = (campaign.steps || [])
+    .map(
+      (step) => `<article class="campaign-step glass-card">
+        <span class="campaign-step__num">${esc(step.num)}</span>
+        <h3 class="campaign-step__title">${esc(step.title)}</h3>
+        <p>${esc(step.text)}</p>
+      </article>`
+    )
+    .join("");
+  const faq = (campaign.faq || [])
+    .map(
+      (item) => `<details class="faq-item">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+    )
+    .join("");
+  const track = campaign.serviceEvent || "cta_busqueda";
+  const imgSrc = `${prefix}${(campaign.image || site.defaultOgImage).replace(/^\//, "")}`;
+
+  return `<!DOCTYPE html>
+<html lang="es" data-wa-intro="${esc(campaign.whatsappIntro)}">
+<head>
+${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: "website" })}
+  <link rel="stylesheet" href="${prefix}styles-campaign.css">
+  ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
+</head>
+<body class="site-v2 seo-page seo-page--campaign">
+  <header class="site-header">
+    <div class="header-shell">
+      <div class="header-inner">
+        <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
+          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+${navLinks(prefix)}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="campaign-hero">
+      <div class="campaign-hero__bg" aria-hidden="true">
+        <img src="${imgSrc}" alt="" width="1600" height="900" loading="eager" decoding="async">
+        <div class="campaign-hero__overlay"></div>
+      </div>
+      <div class="container campaign-hero__inner" data-reveal>
+        <p class="campaign-badge">Oferta hasta el ${esc(campaign.deadlineLabel)}</p>
+        <p class="section-label">Búsqueda personalizada</p>
+        <h1>${esc(campaign.h1)}<br><span class="text-gradient">con 30% de descuento</span></h1>
+        <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
+
+        <div class="campaign-pricing glass-card">
+          <div class="campaign-pricing__main">
+            <span class="campaign-pricing__label">Precio promocional</span>
+            <strong class="campaign-pricing__price">${esc(campaign.pricePromo)}</strong>
+            <span class="campaign-pricing__was">Antes ${esc(campaign.priceRegular)}</span>
+          </div>
+          <div class="campaign-pricing__bonus">
+            <span class="campaign-pricing__bonus-tag">Incluido</span>
+            <p><strong>Diagnóstico estratégico gratis</strong> <span class="campaign-pricing__muted">(valor ${esc(campaign.priceDiagnostic)})</span></p>
+          </div>
+        </div>
+
+        <div class="campaign-hero__actions">
+          <a href="#" class="btn btn-primary btn-glow" data-campaign-wa data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+          <a href="#" class="btn btn-glass" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">Agendar reunión</a>
+        </div>
+        <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
+      </div>
+    </section>
+
+    <section class="campaign-body">
+      <div class="container" data-reveal>
+        <div class="campaign-grid">
+          <section class="campaign-panel glass-card" aria-labelledby="campaign-includes-title">
+            <p class="section-label">Qué incluye</p>
+            <h2 class="campaign-panel__title" id="campaign-includes-title">Todo el proceso, con criterio territorial</h2>
+            <ul class="campaign-includes">${includes}</ul>
+            <p class="campaign-panel__foot">No somos corredora: no vendemos terrenos. Te acompañamos a comprar el correcto.</p>
+          </section>
+
+          <section class="campaign-steps" aria-labelledby="campaign-steps-title">
+            <h2 class="campaign-panel__title" id="campaign-steps-title">Cómo funciona</h2>
+            <div class="campaign-steps__grid">${steps}</div>
+          </section>
+        </div>
+
+        <section class="campaign-ally glass-card">
+          <p class="section-label">De tu lado</p>
+          <h2>Enamorarse del terreno está bien</h2>
+          <p>Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Eso es lo que hacemos cada semana en la cuenca del Lago Llanquihue y Malalcahuello.</p>
+          <a href="${prefix}guias/" class="btn btn-glass">Ver guía para comprar terreno →</a>
+        </section>
+
+        ${
+          faq
+            ? `<section class="campaign-faq seo-guide-faq" aria-labelledby="campaign-faq-title">
+          <h2 id="campaign-faq-title" class="blog-article__h2">Preguntas frecuentes</h2>
+          <div class="faq-list">${faq}</div>
+        </section>`
+            : ""
+        }
+
+        <p class="campaign-legal">${esc(campaign.legal)}</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
+    </div>
+  </footer>
+
+${campaignFooterScripts(prefix, campaign)}
+</body>
+</html>`;
+}
+
 function navLinks(prefix) {
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
@@ -1000,6 +1183,10 @@ function buildSitemap() {
       path: `/blog/${post.slug}/`,
       type: "blog-post",
     })),
+    ...campaigns.map((campaign) => ({
+      path: `/campanas/${campaign.slug}/`,
+      type: "campaign",
+    })),
   ];
   const urls = allPages
     .map((p) => {
@@ -1009,6 +1196,8 @@ function buildSitemap() {
           ? "1.0"
           : p.type === "guide-hub"
             ? "0.85"
+            : p.type === "campaign"
+              ? "0.85"
             : p.type === "guide"
               ? "0.85"
               : p.type === "service" || p.type === "territory"
@@ -1054,6 +1243,14 @@ for (const guide of guides) {
   const out = path.join(ROOT, file);
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, buildGuidePage(guide), "utf8");
+  console.log("wrote", file);
+}
+
+for (const campaign of campaigns) {
+  const file = `campanas/${campaign.slug}/index.html`;
+  const out = path.join(ROOT, file);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildCampaignPage(campaign), "utf8");
   console.log("wrote", file);
 }
 

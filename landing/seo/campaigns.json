@@ -1,0 +1,68 @@
+{
+  "campaigns": [
+    {
+      "slug": "busqueda-personalizada-30",
+      "title": "Búsqueda personalizada 30% dto. | Diagnóstico gratis | Land Advisors",
+      "description": "Oferta hasta 30 de septiembre: búsqueda personalizada de terrenos en el sur de Chile por 3,5 UF (antes 5 UF) con diagnóstico estratégico incluido. Puerto Varas, Frutillar, Llanquihue.",
+      "h1": "Búsqueda personalizada de terrenos",
+      "heroLead": "Te ayudamos a comprar el terreno correcto en el sur de Chile — con criterio territorial, no catálogo masivo. Enamorarse del terreno está bien; nosotros acompañamos con datos.",
+      "deadline": "2026-09-30",
+      "deadlineLabel": "30 de septiembre de 2026",
+      "pricePromo": "3,5 UF",
+      "priceRegular": "5 UF",
+      "priceDiagnostic": "1 UF",
+      "discountPercent": 30,
+      "whatsappIntro": "Hola, vi la oferta de Búsqueda personalizada (30% dto., válida hasta 30 de septiembre). Me interesa saber si aplica para mi caso.",
+      "image": "/images/galeria/galeria-04.jpg",
+      "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
+      "serviceEvent": "cta_busqueda",
+      "includes": [
+        "Diagnóstico estratégico incluido (sin costo adicional en esta promoción)",
+        "Selección de al menos 4 alternativas alineadas a tu objetivo y presupuesto",
+        "Reunión contigo para definir las 3 mejores opciones en conjunto",
+        "Informe comparativo de las 3 seleccionadas y recomendación de compra"
+      ],
+      "steps": [
+        {
+          "num": "1",
+          "title": "Reunión inicial",
+          "text": "Entendemos tu objetivo: vivienda, inversión, cabañas o proyecto de vida en el contorno rural del sur."
+        },
+        {
+          "num": "2",
+          "title": "Búsqueda con criterio",
+          "text": "Filtramos territorio, normativa, servicios y precio — no solo lo más visible en portales."
+        },
+        {
+          "num": "3",
+          "title": "Short list e informe",
+          "text": "Elegimos juntos las 3 mejores alternativas y te entregamos comparación con recomendación."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué incluye el diagnóstico estratégico gratis?",
+          "a": "Reunión estratégica, zonas recomendadas según tu objetivo y criterios para evaluar terrenos antes de ofertar. En condiciones normales vale 1 UF; en esta promoción va incluido al contratar la búsqueda personalizada."
+        },
+        {
+          "q": "¿Hasta cuándo vale la oferta de 3,5 UF?",
+          "a": "Válida para contrataciones confirmadas hasta el 30 de septiembre de 2026, sujeto a disponibilidad de agenda."
+        },
+        {
+          "q": "¿Trabajan con compradores fuera del sur?",
+          "a": "Sí. Muchos clientes viven en Santiago o en el norte de Chile y compran en la cuenca del Lago Llanquihue y Malalcahuello. La reunión inicial puede ser online."
+        },
+        {
+          "q": "¿Son corredora de propiedades?",
+          "a": "No. Land Advisors es consultoría territorial: no vendemos terrenos propios; te ayudamos a comprar el correcto con lectura de territorio y mercado local."
+        }
+      ],
+      "legal": "Precios en UF · sujetos a confirmación en reunión estratégica. No somos corredora ni portal inmobiliario.",
+      "ads": {
+        "utmCampaign": "busqueda-30-sep2026",
+        "audienceNotes": "RM + sur prioritario + zona norte con altos ingresos (minería). Intereses: inversión inmobiliaria, terreno sur Chile, Puerto Varas, calidad de vida.",
+        "suggestedDailyBudgetClp": "15000-25000"
+      }
+    }
+  ]
+}
