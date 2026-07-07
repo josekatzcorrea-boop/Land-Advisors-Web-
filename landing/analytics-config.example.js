@@ -12,4 +12,11 @@ window.LA_ANALYTICS = {
   metaPixelId: "1067824015463958", // Land Advisors Chile — Events Manager
   googleAdsConversionId: "", // AW-XXXXXXXXX
   debug: false,
+  ga4ConversionEvents: [
+    "generate_lead",
+    "cta_busqueda",
+    "cta_diagnostico",
+    "cta_contacto",
+    "form_success",
+  ],
 };

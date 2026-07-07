@@ -5,6 +5,30 @@
 (function () {
   const cfg = window.LA_ANALYTICS || { enabled: false };
 
+  const GA4_STANDARD_EVENTS = {
+    cta_diagnostico: "generate_lead",
+    cta_busqueda: "generate_lead",
+    cta_estudio: "generate_lead",
+    cta_estructuracion: "generate_lead",
+    cta_contacto: "generate_lead",
+    cta_whatsapp: "generate_lead",
+    cta_calendar: "generate_lead",
+    form_submit: "generate_lead",
+    form_success: "generate_lead",
+    partner_lead_submit: "generate_lead",
+    partner_redirect: "generate_lead",
+  };
+
+  window.LA_getUtmParams = function () {
+    const q = new URLSearchParams(location.search);
+    return {
+      utm_source: q.get("utm_source") || "",
+      utm_medium: q.get("utm_medium") || "",
+      utm_campaign: q.get("utm_campaign") || "",
+      utm_content: q.get("utm_content") || "",
+    };
+  };
+
   function log() {
     if (cfg.debug) console.log("[LA Analytics]", ...arguments);
   }
@@ -27,12 +51,19 @@
 
   function initGA4() {
     if (!cfg.ga4MeasurementId) return;
+    const urlDebug = new URLSearchParams(location.search).has("la_debug");
+    const debugMode = Boolean(cfg.debug || urlDebug);
     injectScript("https://www.googletagmanager.com/gtag/js?id=" + cfg.ga4MeasurementId);
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
-    window.gtag("config", cfg.ga4MeasurementId, { anonymize_ip: true, send_page_view: true });
-    log("GA4", cfg.ga4MeasurementId);
+    window.gtag("config", cfg.ga4MeasurementId, {
+      anonymize_ip: true,
+      send_page_view: true,
+      debug_mode: debugMode,
+      allow_google_signals: true,
+    });
+    log("GA4", cfg.ga4MeasurementId, debugMode ? "(debug_mode)" : "");
   }
 
   function initMetaPixel() {
@@ -67,12 +98,34 @@
 
   window.LA_track = function (eventName, params) {
     params = params || {};
-    log("event", eventName, params);
+    const utm = LA_getUtmParams();
+    const payload = Object.assign(
+      {
+        page_path: params.page_path || location.pathname,
+        page_location: location.href,
+        campaign_source: utm.utm_source,
+        campaign_medium: utm.utm_medium,
+        campaign_name: utm.utm_campaign,
+        campaign_content: utm.utm_content,
+      },
+      params
+    );
+    log("event", eventName, payload);
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({ event: eventName }, params));
+    window.dataLayer.push(Object.assign({ event: eventName }, payload));
+
     if (typeof window.gtag === "function") {
-      window.gtag("event", eventName, params);
+      window.gtag("event", eventName, payload);
+      const ga4Standard = cfg.ga4StandardEvents || GA4_STANDARD_EVENTS;
+      const standardName = ga4Standard[eventName];
+      if (standardName) {
+        window.gtag("event", standardName, Object.assign({}, payload, {
+          la_event: eventName,
+          lead_source: eventName,
+        }));
+      }
     }
+
     if (typeof window.fbq === "function") {
       const map = {
         cta_diagnostico: "Lead",

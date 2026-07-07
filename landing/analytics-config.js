@@ -9,4 +9,12 @@ window.LA_ANALYTICS = {
   metaPixelId: "1067824015463958",
   googleAdsConversionId: "",
   debug: false,
+  /** Eventos custom → estándar GA4 (marcar generate_lead como conversión en Admin) */
+  ga4ConversionEvents: [
+    "generate_lead",
+    "cta_busqueda",
+    "cta_diagnostico",
+    "cta_contacto",
+    "form_success",
+  ],
 };

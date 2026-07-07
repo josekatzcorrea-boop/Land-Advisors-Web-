@@ -13,7 +13,9 @@
   }
 
   document.addEventListener("click", function (e) {
-    const el = e.target.closest("[data-track], [data-cta], .nav-cta, .btn-primary");
+    const el = e.target.closest(
+      "[data-track], [data-cta], .nav-cta, .btn-primary, .campaign-cta"
+    );
     if (el) track(el);
   });
 
