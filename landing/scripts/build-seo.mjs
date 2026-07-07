@@ -802,6 +802,15 @@ function buildCampaignPage(campaign) {
     .join("");
   const track = campaign.serviceEvent || "cta_busqueda";
   const imgSrc = `${prefix}${(campaign.image || site.defaultOgImage).replace(/^\//, "")}`;
+  const imgW = campaign.imageWidth || 1600;
+  const imgH = campaign.imageHeight || 900;
+  const imgPos = campaign.imagePosition || "center center";
+  const commissionBlock = campaign.commissionCredit
+    ? `<div class="campaign-pricing__commission">
+            <span class="campaign-pricing__bonus-tag">Si compras</span>
+            <p>${esc(campaign.commissionCredit)}</p>
+          </div>`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="es" data-wa-intro="${esc(campaign.whatsappIntro)}">
@@ -826,7 +835,7 @@ ${navLinks(prefix)}
   <main>
     <section class="campaign-hero">
       <div class="campaign-hero__bg" aria-hidden="true">
-        <img src="${imgSrc}" alt="" width="1600" height="900" loading="eager" decoding="async">
+        <img src="${imgSrc}" alt="" width="${imgW}" height="${imgH}" loading="eager" decoding="async" style="object-position: ${esc(imgPos)}">
         <div class="campaign-hero__overlay"></div>
       </div>
       <div class="container campaign-hero__inner" data-reveal>
@@ -845,6 +854,7 @@ ${navLinks(prefix)}
             <span class="campaign-pricing__bonus-tag">Incluido</span>
             <p><strong>Diagnóstico estratégico gratis</strong> <span class="campaign-pricing__muted">(valor ${esc(campaign.priceDiagnostic)})</span></p>
           </div>
+          ${commissionBlock}
         </div>
 
         <div class="campaign-hero__actions">
@@ -874,7 +884,7 @@ ${navLinks(prefix)}
         <section class="campaign-ally glass-card">
           <p class="section-label">De tu lado</p>
           <h2>Enamorarse del terreno está bien</h2>
-          <p>Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Eso es lo que hacemos cada semana en la cuenca del Lago Llanquihue y Malalcahuello.</p>
+          <p>${esc(campaign.allyText || "Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Eso es lo que hacemos cada semana en la cuenca del Lago Llanquihue y Malalcahuello.")}</p>
           <a href="${prefix}guias/" class="btn btn-glass">Ver guía para comprar terreno →</a>
         </section>
 

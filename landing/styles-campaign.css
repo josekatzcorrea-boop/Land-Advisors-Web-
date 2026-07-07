@@ -100,6 +100,17 @@
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.seo-page--campaign .campaign-pricing__commission {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.seo-page--campaign .campaign-pricing__commission p {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
 .seo-page--campaign .campaign-pricing__bonus-tag {
   display: inline-block;
   font-size: 0.72rem;

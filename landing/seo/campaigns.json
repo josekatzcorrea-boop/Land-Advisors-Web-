@@ -3,24 +3,29 @@
     {
       "slug": "busqueda-personalizada-30",
       "title": "Búsqueda personalizada 30% dto. | Diagnóstico gratis | Land Advisors",
-      "description": "Oferta hasta 30 de septiembre: búsqueda personalizada de terrenos en el sur de Chile por 3,5 UF (antes 5 UF) con diagnóstico estratégico incluido. Puerto Varas, Frutillar, Llanquihue.",
+      "description": "Oferta hasta 30 de septiembre: búsqueda personalizada de terrenos en el sur de Chile por 3,5 UF (antes 5 UF), diagnóstico incluido y acompañamiento integral hasta la compra. Las 3,5 UF se descuentan de la comisión si compras.",
       "h1": "Búsqueda personalizada de terrenos",
-      "heroLead": "Te ayudamos a comprar el terreno correcto en el sur de Chile — con criterio territorial, no catálogo masivo. Enamorarse del terreno está bien; nosotros acompañamos con datos.",
+      "heroLead": "Te ayudamos a comprar el terreno correcto en el sur de Chile — con criterio territorial, no catálogo masivo. Te acompañamos de manera integral durante todo el proceso de compra. Enamorarse del terreno está bien; nosotros ordenamos con datos.",
       "deadline": "2026-09-30",
       "deadlineLabel": "30 de septiembre de 2026",
       "pricePromo": "3,5 UF",
       "priceRegular": "5 UF",
       "priceDiagnostic": "1 UF",
       "discountPercent": 30,
+      "commissionCredit": "Si llegas a una decisión de compra, las 3,5 UF se descuentan del honorario de asesoría (2,5% del valor de compra).",
       "whatsappIntro": "Hola, vi la oferta de Búsqueda personalizada (30% dto., válida hasta 30 de septiembre). Me interesa saber si aplica para mi caso.",
-      "image": "/images/galeria/galeria-04.jpg",
-      "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
+      "image": "/images/hero.jpg",
+      "imageAlt": "Paisaje del contorno rural en la cuenca del Lago Llanquihue",
+      "imageWidth": 1600,
+      "imageHeight": 1067,
+      "imagePosition": "center 35%",
       "serviceEvent": "cta_busqueda",
       "includes": [
         "Diagnóstico estratégico incluido (sin costo adicional en esta promoción)",
         "Selección de al menos 4 alternativas alineadas a tu objetivo y presupuesto",
         "Reunión contigo para definir las 3 mejores opciones en conjunto",
-        "Informe comparativo de las 3 seleccionadas y recomendación de compra"
+        "Informe comparativo de las 3 seleccionadas y recomendación de compra",
+        "Acompañamiento integral durante todo el proceso — desde la búsqueda hasta la decisión de compra"
       ],
       "steps": [
         {
@@ -37,12 +42,22 @@
           "num": "3",
           "title": "Short list e informe",
           "text": "Elegimos juntos las 3 mejores alternativas y te entregamos comparación con recomendación."
+        },
+        {
+          "num": "4",
+          "title": "Hasta la compra",
+          "text": "Si avanzas a la adquisición, seguimos contigo en negociación, revisión documental y cierre — con las 3,5 UF descontadas de la comisión de asesoría."
         }
       ],
+      "allyText": "Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Acompañamos de manera integral a nuestros clientes durante todo el proceso de compra — no solo en la búsqueda.",
       "faq": [
         {
           "q": "¿Qué incluye el diagnóstico estratégico gratis?",
           "a": "Reunión estratégica, zonas recomendadas según tu objetivo y criterios para evaluar terrenos antes de ofertar. En condiciones normales vale 1 UF; en esta promoción va incluido al contratar la búsqueda personalizada."
+        },
+        {
+          "q": "¿Las 3,5 UF se descuentan si compro un terreno?",
+          "a": "Sí. Si llegas a una decisión de compra y contratas nuestra asesoría de adquisición (2,5% del valor), las 3,5 UF pagadas por la búsqueda personalizada se descuentan de ese honorario."
         },
         {
           "q": "¿Hasta cuándo vale la oferta de 3,5 UF?",
@@ -57,7 +72,7 @@
           "a": "No. Land Advisors es consultoría territorial: no vendemos terrenos propios; te ayudamos a comprar el correcto con lectura de territorio y mercado local."
         }
       ],
-      "legal": "Precios en UF · sujetos a confirmación en reunión estratégica. No somos corredora ni portal inmobiliario.",
+      "legal": "Precios en UF · sujetos a confirmación en reunión estratégica. Descuento de 3,5 UF aplica al contratar asesoría de compra. No somos corredora ni portal inmobiliario.",
       "ads": {
         "utmCampaign": "busqueda-30-sep2026",
         "audienceNotes": "RM + sur prioritario + zona norte con altos ingresos (minería). Intereses: inversión inmobiliaria, terreno sur Chile, Puerto Varas, calidad de vida.",
