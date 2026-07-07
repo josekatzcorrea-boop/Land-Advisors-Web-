@@ -155,8 +155,41 @@
 @media (min-width: 900px) {
   .seo-page--campaign .campaign-grid {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: stretch;
   }
+}
+
+.seo-page--campaign .campaign-grid__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.seo-page--campaign .campaign-side-photo {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 14rem;
+}
+
+.seo-page--campaign .campaign-side-photo img {
+  width: 100%;
+  flex: 1;
+  min-height: 12rem;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+.seo-page--campaign .campaign-side-photo figcaption {
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text-muted, #5a6a75);
+  border-top: 1px solid rgba(5, 44, 77, 0.08);
 }
 
 .seo-page--campaign .campaign-panel {

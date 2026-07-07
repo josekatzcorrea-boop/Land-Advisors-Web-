@@ -19,6 +19,9 @@
       "imageWidth": 1600,
       "imageHeight": 1067,
       "imagePosition": "center 35%",
+      "sideImage": "/images/galeria/galeria-12.jpg",
+      "sideImageAlt": "Exploración en terreno con clientes en la cuenca del sur de Chile",
+      "sideImageCaption": "Recorrer terrenos es parte natural del proceso — te acompañamos en cada etapa.",
       "serviceEvent": "cta_busqueda",
       "includes": [
         "Diagnóstico estratégico incluido (sin costo adicional en esta promoción)",

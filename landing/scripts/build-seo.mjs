@@ -811,6 +811,12 @@ function buildCampaignPage(campaign) {
             <p>${esc(campaign.commissionCredit)}</p>
           </div>`
     : "";
+  const sidePhoto = campaign.sideImage
+    ? `<figure class="campaign-side-photo glass-card">
+            <img src="${prefix}${campaign.sideImage.replace(/^\//, "")}" alt="${esc(campaign.sideImageAlt || "")}" width="720" height="480" loading="lazy" decoding="async">
+            ${campaign.sideImageCaption ? `<figcaption>${esc(campaign.sideImageCaption)}</figcaption>` : ""}
+          </figure>`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="es" data-wa-intro="${esc(campaign.whatsappIntro)}">
@@ -868,12 +874,15 @@ ${navLinks(prefix)}
     <section class="campaign-body">
       <div class="container" data-reveal>
         <div class="campaign-grid">
+          <div class="campaign-grid__left">
           <section class="campaign-panel glass-card" aria-labelledby="campaign-includes-title">
             <p class="section-label">Qué incluye</p>
             <h2 class="campaign-panel__title" id="campaign-includes-title">Todo el proceso, con criterio territorial</h2>
             <ul class="campaign-includes">${includes}</ul>
             <p class="campaign-panel__foot">No somos corredora: no vendemos terrenos. Te acompañamos a comprar el correcto.</p>
           </section>
+          ${sidePhoto}
+          </div>
 
           <section class="campaign-steps" aria-labelledby="campaign-steps-title">
             <h2 class="campaign-panel__title" id="campaign-steps-title">Cómo funciona</h2>
