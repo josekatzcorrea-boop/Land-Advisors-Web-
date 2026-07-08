@@ -16,6 +16,9 @@ const pages = JSON.parse(fs.readFileSync(path.join(SEO, "pages.json"), "utf8"));
 const catalog = JSON.parse(fs.readFileSync(path.join(SEO, "services-catalog.json"), "utf8"));
 const blogData = JSON.parse(fs.readFileSync(path.join(SEO, "posts.json"), "utf8"));
 const blogPosts = blogData.posts || [];
+const retiredPosts = blogData.retired || [];
+const casesData = JSON.parse(fs.readFileSync(path.join(SEO, "cases.json"), "utf8"));
+const caseStudies = casesData.cases || [];
 const guidesData = JSON.parse(fs.readFileSync(path.join(SEO, "guides.json"), "utf8"));
 const guides = guidesData.guides || [];
 const campaignsData = JSON.parse(fs.readFileSync(path.join(SEO, "campaigns.json"), "utf8"));
@@ -164,6 +167,7 @@ function localBusinessSchema() {
 }
 
 function personSchema() {
+  const sameAs = [site.social?.linkedin, site.social?.instagram].filter(Boolean);
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -171,6 +175,79 @@ function personSchema() {
     jobTitle: site.founder.jobTitle,
     worksFor: { "@type": "Organization", name: site.name },
     url: site.founder.url,
+    ...(sameAs.length ? { sameAs } : {}),
+  };
+}
+
+function formatContentDate(iso) {
+  if (!iso) return "";
+  return new Date(`${iso}T12:00:00`).toLocaleDateString("es-CL", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+function buildEeatByline(content, prefix) {
+  const author = content.author || site.founder.name;
+  const published = content.datePublished;
+  const modified = content.dateModified || published;
+  const readMin = content.readMinutes;
+  const metaParts = [];
+  if (published) {
+    metaParts.push(
+      `Publicado <time datetime="${esc(published)}">${esc(formatContentDate(published))}</time>`
+    );
+  }
+  if (modified) {
+    metaParts.push(
+      `Actualizado <time datetime="${esc(modified)}">${esc(formatContentDate(modified))}</time>`
+    );
+  }
+  if (readMin) metaParts.push(`${readMin} min lectura`);
+  return `<div class="eeat-byline">
+      <p class="eeat-byline__author">Por <a href="${prefix}#nosotros">${esc(author)}</a> · Consultoría territorial · Land Advisors Chile</p>
+      ${metaParts.length ? `<p class="eeat-byline__meta">${metaParts.join(" · ")}</p>` : ""}
+    </div>`;
+}
+
+function articleSchema(article, pagePath) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.h1,
+    description: article.description,
+    image: site.url + article.image,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    author: {
+      "@type": "Person",
+      name: article.author || site.founder.name,
+      url: site.founder.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      logo: { "@type": "ImageObject", url: site.url + "/assets/logo-horizontal-3d.jpg" },
+    },
+    mainEntityOfPage: site.url + pagePath,
+  };
+}
+
+function caseStudySchema(caseStudy, pagePath) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": site.url + pagePath,
+    headline: caseStudy.h1,
+    description: caseStudy.description,
+    image: site.url + caseStudy.image,
+    datePublished: caseStudy.datePublished,
+    dateModified: caseStudy.dateModified || caseStudy.datePublished,
+    author: { "@type": "Person", name: caseStudy.author || site.founder.name },
+    publisher: { "@type": "Organization", name: site.name },
+    articleSection: "Casos de estudio",
+    about: { "@type": "Place", name: caseStudy.territory },
   };
 }
 
@@ -279,7 +356,19 @@ function buildInternalLinks(page, prefix) {
     links.push(
       { href: `${prefix}servicios/busqueda-personalizada/`, label: "Búsqueda personalizada" },
       { href: `${prefix}blog/`, label: "Artículos del blog" },
+      { href: `${prefix}casos-de-estudio/`, label: "Casos de estudio" }
+    );
+  } else if (p === "/casos-de-estudio/") {
+    links.push(
+      { href: `${prefix}guias/`, label: "Guía: comprar terreno en el sur" },
+      { href: `${prefix}blog/plusvalia-contorno-rural-puerto-varas/`, label: "Plusvalía en contorno rural" },
       { href: `${prefix}territorios/`, label: "Territorios" }
+    );
+  } else if (page.type === "case-study") {
+    links.push(
+      { href: `${prefix}casos-de-estudio/`, label: "Todos los casos" },
+      { href: `${prefix}guias/`, label: "Guía para comprar terreno" },
+      { href: `${prefix}servicios/busqueda-personalizada/`, label: "Búsqueda personalizada" }
     );
   }
 
@@ -326,6 +415,7 @@ function buildGuideBody(guide, prefix, options = {}) {
         <figure class="blog-article__figure">
           <img src="${prefix}${guide.image.replace(/^\//, "")}" alt="${esc(guide.imageAlt || guide.h1)}" width="900" height="600" loading="lazy">
         </figure>
+        ${buildEeatByline(guide, prefix)}
       </header>
       <div class="blog-article__content blog-article__content--guide">
         ${options.skipLead ? "" : `<p class="blog-article__lead">${esc(guide.intro)}</p>`}
@@ -376,6 +466,26 @@ function buildGuideRedirectPage(guide) {
 </head>
 <body>
   <p><a href="${redirectTarget}">Ir a ${esc(guide.h1)}</a></p>
+</body>
+</html>`;
+}
+
+function buildRetiredPostRedirect(entry) {
+  const redirectTarget = "/" + entry.redirectTo.replace(/^\//, "");
+  const canonical = site.url + redirectTarget;
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="${canonical}">
+  <meta http-equiv="refresh" content="0; url=${redirectTarget}">
+  <title>${esc(entry.title || "Artículo")} | Land Advisors</title>
+  <script>location.replace("${redirectTarget}");</script>
+</head>
+<body>
+  <p><a href="${redirectTarget}">Continuar leyendo →</a></p>
 </body>
 </html>`;
 }
@@ -599,15 +709,9 @@ function buildBlogArticleBody(post, prefix) {
     })
     .join("");
 
-  const date = new Date(`${post.datePublished}T12:00:00`).toLocaleDateString("es-CL", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
   return `<article class="blog-article glass-card">
       <header class="blog-article__header">
-        <p class="blog-article__meta">${esc(date)} · ${post.readMinutes || 5} min · ${esc(post.author || site.founder.name)}</p>
+        ${buildEeatByline(post, prefix)}
         <figure class="blog-article__figure">
           <img src="${prefix}${post.image.replace(/^\//, "")}" alt="${esc(post.imageAlt || post.h1)}" width="900" height="600" loading="lazy">
         </figure>
@@ -628,6 +732,169 @@ function buildBlogArticleBody(post, prefix) {
         }
       </footer>
     </article>`;
+}
+
+function buildCasesHubContent(prefix) {
+  return caseStudies
+    .map((cs) => {
+      const href = `${prefix}casos-de-estudio/${cs.slug}/`;
+      const imgSrc = `${prefix}${cs.image.replace(/^\//, "")}`;
+      return `<article class="seo-card glass-card case-card">
+        <a href="${href}" class="case-card__media" tabindex="-1" aria-hidden="true">
+          <img src="${imgSrc}" alt="${esc(cs.imageAlt || cs.h1)}" width="640" height="400" loading="lazy">
+        </a>
+        <p class="case-card__territory">${esc(cs.territory)}</p>
+        <h2><a href="${href}">${esc(cs.h1)}</a></h2>
+        <p class="case-card__metric"><strong>${esc(cs.metric)}</strong></p>
+        <p>${esc(cs.intro)}</p>
+        <a href="${href}" class="btn btn-glass">Leer caso completo →</a>
+      </article>`;
+    })
+    .join("");
+}
+
+function buildCaseStudyBody(caseStudy, prefix) {
+  const sections = (caseStudy.sections || []).map(renderBlogSection).join("\n        ");
+  const tags = (caseStudy.tags || [])
+    .map((t) => `<span class="blog-tag">${esc(t)}</span>`)
+    .join("");
+  const related = (caseStudy.related || [])
+    .map((r) => `<li><a href="${prefix}${r.href}">${esc(r.label)}</a></li>`)
+    .join("");
+  const faq = (caseStudy.faq || [])
+    .map(
+      (item) => `<details class="faq-item">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+    )
+    .join("");
+
+  return `<article class="blog-article blog-article--case glass-card">
+      <header class="blog-article__header">
+        <p class="case-study__territory">${esc(caseStudy.territory)}</p>
+        <p class="case-study__metric">${esc(caseStudy.metric)}</p>
+        ${buildEeatByline(caseStudy, prefix)}
+        <figure class="blog-article__figure">
+          <img src="${prefix}${caseStudy.image.replace(/^\//, "")}" alt="${esc(caseStudy.imageAlt || caseStudy.h1)}" width="900" height="600" loading="lazy">
+        </figure>
+      </header>
+      <div class="blog-article__content">
+        <p class="blog-article__lead">${esc(caseStudy.intro)}</p>
+        ${sections}
+      </div>
+      ${
+        faq
+          ? `<section class="seo-guide-faq" aria-labelledby="case-faq-title">
+        <h2 id="case-faq-title" class="blog-article__h2">Preguntas frecuentes</h2>
+        <div class="faq-list">${faq}</div>
+      </section>`
+          : ""
+      }
+      <footer class="blog-article__footer">
+        <div class="blog-tags">${tags}</div>
+        ${
+          related
+            ? `<nav class="blog-related" aria-label="Enlaces relacionados">
+          <p class="blog-related__label">Relacionado</p>
+          <ul>${related}</ul>
+        </nav>`
+            : ""
+        }
+      </footer>
+    </article>`;
+}
+
+function buildCaseStudyPage(caseStudy) {
+  const pagePath = `/casos-de-estudio/${caseStudy.slug}/`;
+  const prefix = rootPrefix(pagePath);
+  const assets = assetPrefix();
+  const page = {
+    path: pagePath,
+    title: caseStudy.title,
+    description: caseStudy.description,
+    breadcrumb: caseStudy.h1,
+    h1: caseStudy.h1,
+    intro: caseStudy.intro,
+    image: caseStudy.image,
+    type: "case-study",
+  };
+  const schemas = buildSchemas(page);
+  schemas.push(caseStudySchema(caseStudy, pagePath));
+  if (caseStudy.faq?.length) schemas.push(faqPageSchema(caseStudy.faq));
+  const ctaHref = prefix + "#contacto-form";
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + caseStudy.image })}
+  ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
+</head>
+<body class="site-v2 seo-page seo-page--case-study">
+  <header class="site-header">
+    <div class="header-shell">
+      <div class="header-inner">
+        <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
+          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+${navLinks(prefix)}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="seo-hero seo-hero--article">
+      <div class="container" data-reveal>
+        <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+          <a href="${prefix}">Inicio</a>
+          <span aria-hidden="true"> / </span><a href="${prefix}casos-de-estudio/">Casos</a>
+          <span aria-hidden="true"> / </span><span>${esc(caseStudy.territory)}</span>
+        </nav>
+        <p class="section-label">Caso de estudio</p>
+        <h1>${esc(caseStudy.h1)}</h1>
+      </div>
+    </section>
+    <section class="seo-body">
+      <div class="container" data-reveal>
+        ${buildCaseStudyBody(caseStudy, prefix)}
+        ${buildInternalLinks(page, prefix)}
+      </div>
+    </section>
+    <section class="cta-band">
+      <div class="container">
+        <h2>¿Evaluando un terreno en el sur de Chile?</h2>
+        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
+    </div>
+  </footer>
+
+  <div id="la-chat-widget" aria-label="Contacto"></div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="${prefix}landing-ui.js" defer></script>
+  <script src="${prefix}analytics-config.js" defer></script>
+  <script src="${prefix}analytics.js" defer></script>
+  <script src="${prefix}conversion-tracking.js" defer></script>
+  <script src="${prefix}chat-widget.js" defer></script>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle?.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open);
+    });
+  </script>
+</body>
+</html>`;
 }
 
 function buildBlogPostPage(post) {
@@ -937,7 +1204,7 @@ function navLinks(prefix) {
           <div class="nav-links">
             <a href="${prefix}servicios/">Servicios</a>
             <a href="${prefix}territorios/">Territorios</a>
-            <a href="${prefix}#casos">Casos</a>
+            <a href="${prefix}casos-de-estudio/">Casos</a>
             <a href="${prefix}blog/">Blog</a>
             <a href="${prefix}guias/">Guías</a>
             <a href="${prefix}#nosotros">Nosotros</a>
@@ -1079,6 +1346,7 @@ function buildSecondaryPage(page) {
   const schemas = buildSchemas(pageView);
   if (hubGuide) {
     schemas.push(websiteSchema());
+    schemas.push(articleSchema(hubGuide, page.path));
     if (hubGuide.faq?.length) schemas.push(faqPageSchema(hubGuide.faq));
   }
   const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
@@ -1090,11 +1358,7 @@ function buildSecondaryPage(page) {
   if (page.path === "/servicios/") extraContent = buildServicesCatalog(prefix);
   else if (page.path === "/territorios/") extraContent = `<div class="seo-card-grid">${territoryLinks(prefix)}</div>`;
   else if (page.path === "/casos-de-estudio/") {
-    extraContent = `<div class="seo-card-grid">
-      <article class="seo-card glass-card"><h2>Puerto Varas</h2><p>De restricción rural a vocación comercial: arbitraje con alzamiento de prohibición y captura de plusvalía.</p><a href="${prefix}#casos" class="btn btn-glass">Ver en inicio →</a></article>
-      <article class="seo-card glass-card"><h2>Frutillar</h2><p>Oportunidad en brecha de precio y liquidez del vendedor.</p><a href="${prefix}#casos" class="btn btn-glass">Ver en inicio →</a></article>
-      <article class="seo-card glass-card"><h2>Llanquihue</h2><p>Valor presente vs. valor futuro en proyecto a medio urbanizar.</p><a href="${prefix}#casos" class="btn btn-glass">Ver en inicio →</a></article>
-    </div>`;
+    extraContent = `<div class="seo-card-grid">${buildCasesHubContent(prefix)}</div>`;
   } else if (page.path === "/blog/") {
     extraContent = buildBlogIndexContent(prefix);
   } else if (page.path === "/guias/") {
@@ -1124,7 +1388,7 @@ ${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.
   <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
-  ${hubGuide && hubGuide.faq?.length ? `<script type="application/ld+json">${JSON.stringify(schemas[schemas.length - 1])}</script>` : ""}
+  ${schemas.slice(page.service ? 5 : 4).map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}
 </head>
 <body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : ""}">
   <header class="site-header">
@@ -1210,6 +1474,10 @@ function buildSitemap() {
       path: `/blog/${post.slug}/`,
       type: "blog-post",
     })),
+    ...caseStudies.map((cs) => ({
+      path: `/casos-de-estudio/${cs.slug}/`,
+      type: "case-study",
+    })),
     ...campaigns.map((campaign) => ({
       path: `/campanas/${campaign.slug}/`,
       type: "campaign",
@@ -1231,7 +1499,9 @@ function buildSitemap() {
               ? "0.8"
               : p.type === "blog-post"
                 ? "0.75"
-                : "0.7";
+                : p.type === "case-study"
+                  ? "0.8"
+                  : "0.7";
       const changefreq = p.type === "blog" || p.type === "blog-post" ? "weekly" : "monthly";
       return `  <url>
     <loc>${loc}</loc>
@@ -1262,6 +1532,22 @@ for (const post of blogPosts) {
   const out = path.join(ROOT, file);
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, buildBlogPostPage(post), "utf8");
+  console.log("wrote", file);
+}
+
+for (const entry of retiredPosts) {
+  const file = `blog/${entry.slug}/index.html`;
+  const out = path.join(ROOT, file);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildRetiredPostRedirect(entry), "utf8");
+  console.log("wrote redirect", file);
+}
+
+for (const caseStudy of caseStudies) {
+  const file = `casos-de-estudio/${caseStudy.slug}/index.html`;
+  const out = path.join(ROOT, file);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildCaseStudyPage(caseStudy), "utf8");
   console.log("wrote", file);
 }
 

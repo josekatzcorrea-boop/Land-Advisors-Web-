@@ -10,6 +10,8 @@
       "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
       "readMinutes": 10,
       "datePublished": "2026-07-07",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
       "cta": {
         "href": "servicios/busqueda-personalizada/",
         "label": "Solicitar búsqueda personalizada",
@@ -94,6 +96,13 @@
             "Corredoras: muestran su cartera; contrasta siempre con el mercado del sector.",
             "Boca a boca y terrenos sin aviso profesional: a veces las mejores opciones, pero exigen más verificación."
           ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "icon": "browse",
+          "title": "Leer el mercado sin ser corredora",
+          "text": "El mercado inmobiliario del sur de Chile no es un solo mercado: Puerto Varas, Frutillar y Llanquihue tienen dinámicas distintas. Los portales concentran lo publicado, no necesariamente lo que conviene para tu objetivo. Para inversionistas patrimoniales (1.000–5.000 UF), conviene contrastar valor de entrada, costos de habilitación y escenario conservador de salida — no solo la narrativa de plusvalía."
         },
         {
           "type": "criteria",
@@ -208,6 +217,7 @@
         { "label": "Búsqueda personalizada de terrenos", "href": "servicios/busqueda-personalizada/" },
         { "label": "Plusvalía en contorno rural de Puerto Varas", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
         { "label": "Costos de habilitación en contorno rural", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
+        { "label": "Caso Puerto Varas: restricción comercial", "href": "casos-de-estudio/puerto-varas-restriccion-comercial/" },
         { "label": "Inversión inmobiliaria en Puerto Varas", "href": "territorios/puerto-varas/" }
       ]
     }

@@ -11,7 +11,7 @@
       "h1": "Plusvalía inmobiliaria en el contorno rural de Puerto Varas",
       "intro": "El precio de un terreno en la periferia de Puerto Varas rara vez explica por sí solo su potencial. Entender la plusvalía —y cuándo el retorno está en el precio mismo— exige leer territorio, mercado local y la trayectoria de crecimiento de la ciudad.",
       "datePublished": "2026-06-18",
-      "dateModified": "2026-06-18",
+      "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
       "image": "/images/caso-puerto-varas.jpg",
       "imageAlt": "Puerto Varas y entorno del Lago Llanquihue",
@@ -101,6 +101,22 @@
           "text": "Comprar con lectura de territorio permite distinguir si el precio actual ya incorpora esa valorización futura, o si el retorno está en la compra misma y no en la espera. Pero la plusvalía en papel no cierra la decisión: hay que contrastarla con los costos reales de habilitar el predio — tema que desarrollamos en el segundo artículo de esta serie."
         },
         {
+          "type": "h2",
+          "text": "Relación ciudad ↔ contorno rural"
+        },
+        {
+          "type": "p",
+          "text": "Entender cómo se proyecta el crecimiento de Puerto Varas, Frutillar o Llanquihue ayuda a ubicar el terreno en el mapa correcto: no campo lejano, no ciudad consolidada, sino el anillo donde conviven calidad de vida y conectividad. Ese es el foco de Land Advisors."
+        },
+        {
+          "type": "h3",
+          "text": "Oportunidad no es solo «barato»"
+        },
+        {
+          "type": "p",
+          "text": "Un terreno en expansión puede verse atractivo por precio y ser caro si los costos de habilitación o la normativa no acompañan. La oportunidad aparece cuando valor presente, vocación del suelo y trayectoria urbana calzan — no cuando el aviso promete plusvalía sin respaldo."
+        },
+        {
           "type": "note",
           "text": "Resultados pasados no garantizan resultados futuros. Este artículo es educativo y no constituye asesoría personalizada ni promesa de rentabilidad."
         },
@@ -112,7 +128,8 @@
       "related": [
         { "label": "Parte 2: Costos y factibilidad de habilitación", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
         { "label": "Inversión inmobiliaria en Puerto Varas", "href": "territorios/puerto-varas/" },
-        { "label": "Ver casos de resultado en la landing", "href": "#casos" }
+        { "label": "Caso: Puerto Varas restricción comercial", "href": "casos-de-estudio/puerto-varas-restriccion-comercial/" },
+        { "label": "Ver casos de estudio", "href": "casos-de-estudio/" }
       ]
     },
     {
@@ -198,120 +215,18 @@
         { "label": "Estudio de potencial inmobiliario", "href": "servicios/estudio-potencial-inmobiliario/" },
         { "label": "Diagnóstico estratégico (1 UF)", "href": "servicios/diagnostico-estrategico/" }
       ]
+    }
+  ],
+  "retired": [
+    {
+      "slug": "expansion-urbana-contorno-rural-oportunidades",
+      "redirectTo": "blog/plusvalia-contorno-rural-puerto-varas/",
+      "title": "Expansión urbana y oportunidades en el contorno rural | Land Advisors"
     },
     {
       "slug": "mercado-inmobiliario-sur-chile-inversionistas",
-      "title": "Mercado inmobiliario del sur de Chile para inversionistas | Land Advisors",
-      "description": "Lectura del mercado inmobiliario del sur de Chile para inversionistas: contorno rural, plusvalía, liquidez y por qué el precio del aviso no basta para decidir.",
-      "h1": "Mercado inmobiliario del sur de Chile: lectura para inversionistas",
-      "intro": "Quien invierte desde Santiago u otra región suele llegar con ofertas mezcladas: parcelaciones, proyectos a medio urbanizar y terrenos sin contexto. Sin lectura local, todos parecen comparables — y no lo son.",
-      "datePublished": "2026-07-01",
-      "dateModified": "2026-07-01",
-      "author": "José Hernán Katz C.",
-      "image": "/images/galeria/galeria-05.jpg",
-      "imageAlt": "Terreno en desarrollo con vista al lago y volcanes",
-      "readMinutes": 7,
-      "category": "Mercado inmobiliario",
-      "tags": ["mercado inmobiliario sur de Chile", "inversión inmobiliaria", "contorno rural", "inversionistas"],
-      "sections": [
-        {
-          "type": "p",
-          "text": "El mercado inmobiliario del sur de Chile no es un solo mercado. Puerto Varas, Frutillar y Llanquihue tienen dinámicas distintas de demanda, turismo, segunda vivienda y urbanización en expansión. Tratarlos como un promedio regional es uno de los errores más frecuentes al invertir desde fuera."
-        },
-        {
-          "type": "h2",
-          "text": "Oferta visible vs. oportunidades reales"
-        },
-        {
-          "type": "p",
-          "text": "Los portales concentran lo que está publicado, no necesariamente lo que conviene para tu objetivo. Hay alternativas menos publicitadas, brechas de precio por liquidez del vendedor y terrenos mal posicionados en el mapa del comprador. La consultoría territorial ordena ese ruido antes de que compres."
-        },
-        {
-          "type": "h2",
-          "text": "Liquidez, plazos y valor de salida"
-        },
-        {
-          "type": "p",
-          "text": "Un terreno puede tener «potencial» en papel y ser difícil de vender después si el sector no tiene demanda sostenida o si los costos de habilitación encarecen el activo terminado. Para inversionistas patrimoniales (1.000–5.000 UF), conviene contrastar valor de entrada, costos y escenario conservador de salida — no solo la narrativa de plusvalía."
-        },
-        {
-          "type": "h2",
-          "text": "Cuándo tiene sentido un diagnóstico o una búsqueda personalizada"
-        },
-        {
-          "type": "p",
-          "text": "Si aún no tienes zona ni criterio, el diagnóstico estratégico (1 UF) ordena el mapa. Si ya sabes qué buscas pero no confías en comparar solo con avisos, la búsqueda personalizada entrega al menos 4 alternativas, reunión para elegir las 3 mejores contigo e informe comparativo."
-        },
-        {
-          "type": "note",
-          "text": "Resultados pasados no garantizan resultados futuros. Este artículo es educativo y no constituye asesoría personalizada ni promesa de rentabilidad."
-        }
-      ],
-      "related": [
-        { "label": "Guía: comprar terreno en el sur de Chile", "href": "guias/" },
-        { "label": "Búsqueda personalizada de terrenos", "href": "servicios/busqueda-personalizada/" },
-        { "label": "Territorios donde operamos", "href": "territorios/" }
-      ]
-    },
-    {
-      "slug": "expansion-urbana-contorno-rural-oportunidades",
-      "title": "Expansión urbana y oportunidades en el contorno rural | Land Advisors",
-      "description": "Cómo la expansión urbana genera oportunidades en el contorno rural de Puerto Varas, Frutillar y Llanquihue: conectividad, servicios y lectura territorial.",
-      "h1": "Expansión urbana y oportunidades de inversión en el contorno rural",
-      "intro": "Las ciudades del sur de Chile no crecen solo hacia adentro. El contorno rural — donde la periferia se conecta con la vida urbana — es donde muchas veces aparece valor antes de que el mercado masivo lo refleje.",
-      "datePublished": "2026-07-04",
-      "dateModified": "2026-07-04",
-      "author": "José Hernán Katz C.",
-      "image": "/images/caso-puerto-varas.jpg",
-      "imageAlt": "Puerto Varas y entorno del Lago Llanquihue",
-      "readMinutes": 6,
-      "category": "Expansión urbana",
-      "tags": ["expansión urbana", "contorno rural", "inversión territorial", "Puerto Varas"],
-      "sections": [
-        {
-          "type": "p",
-          "text": "La expansión urbana no es solo más edificios en el centro. En la cuenca del Lago Llanquihue implica nuevos ejes de conectividad, urbanización de sectores periurbanos, llegada de servicios y cambio de vocación de suelos en el borde rural. Quien compra terreno ahí sin leer esa trayectoria paga un futuro que a veces ya está — o que nunca llegará."
-        },
-        {
-          "type": "h2",
-          "text": "Señales que miramos en el contorno rural"
-        },
-        {
-          "type": "ul",
-          "items": [
-            "Mejoras de accesos y tiempos reales hacia servicios urbanos",
-            "Extensión de agua, electricidad y telecomunicaciones",
-            "Inversión municipal y regional en equipamiento",
-            "Dinámica de parcelaciones y urbanización en sectores aledaños",
-            "Demanda sostenida de vivienda, turismo o segunda residencia"
-          ]
-        },
-        {
-          "type": "h2",
-          "text": "Oportunidad no es solo «barato»"
-        },
-        {
-          "type": "p",
-          "text": "Un terreno en expansión puede verse atractivo por precio y ser caro si los costos de habilitación o la normativa no acompañan. La oportunidad aparece cuando valor presente, vocación del suelo y trayectoria urbana calzan — no cuando el aviso promete plusvalía sin respaldo."
-        },
-        {
-          "type": "h2",
-          "text": "Relación ciudad ↔ contorno rural"
-        },
-        {
-          "type": "p",
-          "text": "Entender cómo se proyecta el crecimiento de Puerto Varas, Frutillar o Llanquihue ayuda a ubicar el terreno en el mapa correcto: no campo lejano, no ciudad consolidada, sino el anillo donde conviven calidad de vida y conectividad. Ese es el foco de Land Advisors."
-        },
-        {
-          "type": "note",
-          "text": "Resultados pasados no garantizan resultados futuros. Este artículo es educativo y no constituye asesoría personalizada ni promesa de rentabilidad."
-        }
-      ],
-      "related": [
-        { "label": "Plusvalía en contorno rural de Puerto Varas", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
-        { "label": "Inversión inmobiliaria en Puerto Varas", "href": "territorios/puerto-varas/" },
-        { "label": "Guía: comprar terreno en el sur", "href": "guias/" }
-      ]
+      "redirectTo": "guias/",
+      "title": "Mercado inmobiliario del sur de Chile para inversionistas | Land Advisors"
     }
   ]
 }
