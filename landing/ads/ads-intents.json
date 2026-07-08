@@ -1,0 +1,124 @@
+{
+  "version": "1.0",
+  "updated": "2026-07-08",
+  "defaultUtm": {
+    "source": "google",
+    "medium": "cpc"
+  },
+  "conversionEvents": {
+    "comprar-terreno-sur": "cta_diagnostico",
+    "invertir-terreno-sur": "cta_diagnostico",
+    "evaluar-terreno-encontrado": "cta_estudio",
+    "valorizar-terreno-sur": "cta_estudio",
+    "busqueda-personalizada-30": "cta_busqueda"
+  },
+  "intents": [
+    {
+      "id": "A",
+      "slug": "comprar-terreno-sur",
+      "label": "Comprador de terreno",
+      "servicePrimary": "diagnostico-estrategico",
+      "serviceUpsell": "busqueda-personalizada",
+      "googleAdsCampaign": "LA-SEARCH-COMPRAR",
+      "whatsappToken": "LA-A-COMPRAR",
+      "keywords": [
+        { "text": "comprar terreno sur de chile", "match": "phrase" },
+        { "text": "terreno puerto varas", "match": "phrase" },
+        { "text": "terreno frutillar", "match": "phrase" },
+        { "text": "terreno llanquihue", "match": "phrase" },
+        { "text": "terreno contorno rural", "match": "phrase" },
+        { "text": "comprar terreno desde santiago", "match": "phrase" }
+      ],
+      "negativeKeywords": ["arriendo", "corredora", "portal inmobiliario", "gratis", "trabajo"],
+      "adHeadlines": [
+        "Comprar terreno en el sur",
+        "Consultoría — no corredora",
+        "Sesión estratégica · 1 UF",
+        "Filtra con criterio territorial"
+      ],
+      "adDescriptions": [
+        "¿Muchos avisos y poca claridad? Te ayudamos a comprar el terreno correcto en la cuenca del Lago Llanquihue. Agenda tu sesión.",
+        "No vendemos terrenos. Leemos territorio, normativa y precio real antes de recomendar. Reunión online desde Santiago."
+      ]
+    },
+    {
+      "id": "B",
+      "slug": "invertir-terreno-sur",
+      "label": "Inversionista patrimonial",
+      "servicePrimary": "diagnostico-estrategico",
+      "serviceUpsell": "estudio-potencial-inmobiliario",
+      "googleAdsCampaign": "LA-SEARCH-INVERTIR",
+      "whatsappToken": "LA-B-INVERTIR",
+      "keywords": [
+        { "text": "invertir terreno sur chile", "match": "phrase" },
+        { "text": "inversión inmobiliaria puerto varas", "match": "phrase" },
+        { "text": "plusvalía terreno rural", "match": "phrase" },
+        { "text": "inversión patrimonial terreno", "match": "phrase" },
+        { "text": "terreno segunda vivienda sur", "match": "phrase" }
+      ],
+      "negativeKeywords": ["rentabilidad garantizada", "retorno 20%", "crowdfunding"],
+      "adHeadlines": [
+        "Invertir en terreno en el sur",
+        "Plusvalía con criterio",
+        "Consultoría patrimonial",
+        "No somos corredora"
+      ],
+      "adDescriptions": [
+        "¿El precio ya incorpora la plusvalía futura? Leemos territorio y mercado local antes de recomendar. Sesión estratégica sin compromiso.",
+        "Inversión inmobiliaria en contorno rural: Puerto Varas, Frutillar, Llanquihue. Datos verificables, no promesas."
+      ]
+    },
+    {
+      "id": "C",
+      "slug": "evaluar-terreno-encontrado",
+      "label": "Due diligence — terreno en vista",
+      "servicePrimary": "estudio-potencial-inmobiliario",
+      "serviceUpsell": "asesoria-compra",
+      "googleAdsCampaign": "LA-SEARCH-EVALUAR",
+      "whatsappToken": "LA-C-EVALUAR",
+      "keywords": [
+        { "text": "evaluar terreno antes de comprar", "match": "phrase" },
+        { "text": "estudio factibilidad terreno", "match": "phrase" },
+        { "text": "due diligence terreno chile", "match": "phrase" },
+        { "text": "revisar terreno antes de ofertar", "match": "phrase" }
+      ],
+      "negativeKeywords": ["tasación gratis", "perito judicial"],
+      "adHeadlines": [
+        "¿Este terreno conviene?",
+        "Estudio antes de ofertar",
+        "Normativa + precio real",
+        "Consultoría territorial"
+      ],
+      "adDescriptions": [
+        "Ya encontraste un terreno. Antes de ofertar: PRC, acceso, servicios y comparables locales. Estudio desde 10 UF.",
+        "La foto abre la visita — los números cierran la decisión. Agenda sesión para evaluar tu caso."
+      ]
+    },
+    {
+      "id": "D",
+      "slug": "valorizar-terreno-sur",
+      "label": "Valorización y potencial",
+      "servicePrimary": "estudio-potencial-inmobiliario",
+      "serviceUpsell": "estructuracion-proyectos",
+      "googleAdsCampaign": "LA-SEARCH-VALORIZAR",
+      "whatsappToken": "LA-D-VALORIZAR",
+      "keywords": [
+        { "text": "valorizar terreno rural", "match": "phrase" },
+        { "text": "potencial terreno turismo", "match": "phrase" },
+        { "text": "cambio uso suelo terreno", "match": "phrase" },
+        { "text": "cuanto vale mi terreno sur", "match": "phrase" }
+      ],
+      "negativeKeywords": ["tasador online gratis", "avaluo bancario"],
+      "adHeadlines": [
+        "Valorización con criterio",
+        "¿Potencial real o en el precio?",
+        "Estudio territorial",
+        "Turismo · patrimonio · uso"
+      ],
+      "adDescriptions": [
+        "¿El terreno vale lo que piden — o la plusvalía ya está en el precio? Estudio de vocación y escenarios conservadores.",
+        "Cabañas, patrimonio o cambio de uso: verificamos normativa antes de proyectar valor. Consultoría, no corredora."
+      ]
+    }
+  ]
+}

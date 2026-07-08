@@ -1,7 +1,276 @@
 {
   "campaigns": [
     {
+      "slug": "comprar-terreno-sur",
+      "template": "intent",
+      "intent": "A",
+      "title": "Comprar terreno en el sur de Chile | Sesión estratégica | Land Advisors",
+      "description": "Consultoría para comprar el terreno correcto en Puerto Varas, Frutillar y Llanquihue. No somos corredora: filtramos con criterio territorial antes de que ofertes.",
+      "h1": "Comprar terreno en el sur sin perder meses en avisos que no calzan",
+      "heroProblem": "Portales saturados, poca claridad normativa y precios que no se comparan con criterio local.",
+      "heroWhyUs": "Consultoría de inteligencia territorial — no corredora, sin cartera de terrenos propios.",
+      "heroGain": "En la sesión estratégica ordenas zona, presupuesto total y próximos pasos con datos de la cuenca.",
+      "ctaLabel": "Agenda una sesión estratégica",
+      "heroLead": "Enamorarse del terreno está bien. Nosotros te ayudamos a confirmar si cumple tu objetivo, si el precio calza y qué alternativas existen — antes de viajar al sur a ciegas.",
+      "sectionLabel": "Comprador de terreno",
+      "priceAnchor": "Diagnóstico estratégico · 1 UF · reunión online o presencial",
+      "serviceEvent": "cta_diagnostico",
+      "calendarIntent": "diagnostico",
+      "whatsappIntro": "Hola, llegué desde Google. Quiero agendar una sesión estratégica para comprar terreno en el sur de Chile.",
+      "image": "/images/caso-puerto-varas.jpg",
+      "imageAlt": "Puerto Varas y contorno rural — cuenca del Lago Llanquihue",
+      "imagePosition": "center 40%",
+      "includesTitle": "Qué resuelve la sesión estratégica",
+      "includes": [
+        "Objetivo claro: vivienda, patrimonio, cabañas o proyecto de vida",
+        "Comunas compatibles según tu presupuesto y conectividad",
+        "Criterios para filtrar terrenos — normativa, acceso, comparables",
+        "Ruta recomendada: diagnóstico, búsqueda personalizada o estudio",
+        "Sin presión por vender un lote concreto — somos consultores"
+      ],
+      "steps": [
+        { "num": "1", "title": "Sesión estratégica", "text": "30–45 min online o en Puerto Varas. Entendemos tu objetivo y restricciones reales." },
+        { "num": "2", "title": "Mapa territorial", "text": "Te entregamos zonas recomendadas y criterios para evaluar avisos — no un catálogo masivo." },
+        { "num": "3", "title": "Short list (opcional)", "text": "Si avanzas a búsqueda personalizada: ≥4 alternativas, reunión contigo y informe de las 3 mejores." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "4+", "label": "comunas en la cuenca" },
+          { "value": "≥4", "label": "alternativas filtradas en búsqueda" },
+          { "value": "1 UF", "label": "diagnóstico estratégico" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — brecha de precio", "metric": "26M → 42M" },
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — vocación comercial", "metric": "+50%" }
+        ],
+        "quotes": [
+          { "text": "«Teníamos decenas de avisos abiertos y ningún criterio para comparar. La sesión ordenó zona y presupuesto antes de viajar.»", "source": "Comprador desde Santiago" },
+          { "text": "«No buscábamos corredora — buscábamos alguien de nuestro lado antes de ofertar.»", "source": "Familia, contorno rural" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Guía gratuita: 5 pasos para comprar terreno en el sur",
+        "description": "Proceso completo, errores frecuentes y cuándo conviene cada servicio — sin hype.",
+        "href": "guias/comprar-terreno-sur-chile/",
+        "cta": "Leer guía completa →"
+      },
+      "allyText": "La foto abre la visita. La decisión la cierran territorio, normativa y números — te acompañamos en ese orden, sin apagar la emoción.",
+      "faq": [
+        { "q": "¿Venden terrenos?", "a": "No. Land Advisors es consultoría territorial. No tenemos cartera propia ni comisión del vendedor." },
+        { "q": "¿Puedo contratar solo la sesión?", "a": "Sí. El diagnóstico estratégico (1 UF) es el punto de partida. La búsqueda personalizada es el siguiente paso si quieres alternativas filtradas." },
+        { "q": "¿Trabajan con compradores fuera del sur?", "a": "Sí. Muchos clientes viven en Santiago. La sesión inicial es online; las visitas se planifican sobre short list." }
+      ],
+      "legal": "Precios en UF · sujetos a confirmación en reunión. Contenido educativo. No somos corredora ni portal inmobiliario.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-COMPRAR",
+        "whatsappToken": "LA-A-COMPRAR",
+        "suggestedDailyBudgetClp": "20000-35000"
+      }
+    },
+    {
+      "slug": "invertir-terreno-sur",
+      "template": "intent",
+      "intent": "B",
+      "title": "Invertir en terreno en el sur de Chile | Consultoría patrimonial",
+      "description": "Inversión inmobiliaria territorial en Puerto Varas, Frutillar y Llanquihue. Plusvalía con criterio — no promesas de rentabilidad.",
+      "h1": "Invertir en terreno en el sur: ¿plusvalía real o ya está en el precio?",
+      "heroProblem": "Proyecciones optimistas en avisos, pocos comparables locales y normativa que no aparece en la ficha.",
+      "heroWhyUs": "Leemos expansión urbana, conectividad y mercado local antes de validar una inversión patrimonial.",
+      "heroGain": "Sesión estratégica para distinguir oportunidad verificable de precio inflado por narrativa turística.",
+      "ctaLabel": "Agenda una sesión estratégica",
+      "heroLead": "Invertir en contorno rural puede tener sentido — si el valor presente cierra con datos, no con una presentación optimista.",
+      "sectionLabel": "Inversión patrimonial",
+      "priceAnchor": "Diagnóstico 1 UF · Estudio de potencial desde 10 UF",
+      "serviceEvent": "cta_diagnostico",
+      "calendarIntent": "diagnostico",
+      "whatsappIntro": "Hola, llegué desde Google. Busco asesoría para invertir en terreno en el sur de Chile.",
+      "image": "/images/blog-plusvalia.jpg",
+      "imageAlt": "Cuenca del Lago Llanquihue — lectura de plusvalía territorial",
+      "imagePosition": "center 35%",
+      "includesTitle": "Qué analizamos en tu caso",
+      "includes": [
+        "Plusvalía vs. precio de entrada — ¿retorno en la compra o en la espera?",
+        "Expansión urbana, conectividad e inversión municipal en el sector",
+        "Costos de habilitación sumados al precio de lista",
+        "Escenario conservador de valor de salida con comparables",
+        "Recomendación de proceder, negociar o descartar"
+      ],
+      "steps": [
+        { "num": "1", "title": "Sesión estratégica", "text": "Definimos perfil patrimonial, horizonte y tolerancia a riesgo territorial." },
+        { "num": "2", "title": "Lectura de mercado", "text": "Contrastamos oferta visible con dinámica local por comuna y sector." },
+        { "num": "3", "title": "Estudio (si aplica)", "text": "Con terreno en vista: informe de vocación, normativa y escenarios desde 10 UF." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "3", "label": "casos documentados en cuenca" },
+          { "value": "10 UF", "label": "estudio de potencial desde" },
+          { "value": "0", "label": "terrenos propios en venta" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/llanquihue-valor-presente-futuro/", "label": "Llanquihue — valor presente vs. futuro", "metric": "4.400 UF" },
+          { "href": "blog/plusvalia-contorno-rural-puerto-varas/", "label": "Serie: plusvalía en contorno rural", "metric": "Artículo" }
+        ],
+        "quotes": [
+          { "text": "«El vendedor prometía plusvalía en tres años. Los comparables del sector contaban otra historia.»", "source": "Inversionista patrimonial" },
+          { "text": "«Necesitábamos alguien que leyera territorio, no que empujara un lote.»", "source": "Cliente RM" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Artículo: cómo leer plusvalía en contorno rural",
+        "description": "Argumentos de valorización, costos de habilitación y cuándo el retorno está en el precio de compra.",
+        "href": "blog/plusvalia-contorno-rural-puerto-varas/",
+        "cta": "Leer artículo →"
+      },
+      "allyText": "Resultados pasados no garantizan resultados futuros. Nuestro rol es darte criterio verificable — no una promesa de rentabilidad.",
+      "faq": [
+        { "q": "¿Prometen rentabilidad?", "a": "No. Trabajamos con escenarios conservadores y datos locales. La decisión final es tuya." },
+        { "q": "¿Qué diferencia hay con una corredora?", "a": "No vendemos inventario. Cobramos por consultoría y no tenemos incentivo por impulsar un terreno concreto." },
+        { "q": "¿Desde cuánto puedo invertir?", "a": "Trabajamos compradores desde ~1.000 UF de presupuesto total (compra + habilitación). El diagnóstico ordena si el sur calza con tu perfil." }
+      ],
+      "legal": "Contenido educativo. No constituye asesoría de inversión ni promesa de rentabilidad.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-INVERTIR",
+        "whatsappToken": "LA-B-INVERTIR",
+        "suggestedDailyBudgetClp": "15000-25000"
+      }
+    },
+    {
+      "slug": "evaluar-terreno-encontrado",
+      "template": "intent",
+      "intent": "C",
+      "title": "Evaluar un terreno antes de comprar | Estudio territorial | Land Advisors",
+      "description": "¿Ya tienes un terreno en vista? Estudio de potencial: normativa, acceso, servicios, comparables y recomendación antes de ofertar.",
+      "h1": "Encontraste un terreno. ¿Conviene ofertar?",
+      "heroProblem": "La visita fue bien, pero faltan PRC, reglamento de parcelación, acceso inscrito y comparables del sector.",
+      "heroWhyUs": "Due diligence territorial antes de la oferta — no tasación comercial ni corretaje.",
+      "heroGain": "Informe con vocación, riesgos y recomendación de proceder, negociar o descartar.",
+      "ctaLabel": "Agenda una sesión estratégica",
+      "heroLead": "Un terreno bonito puede ser caro si la normativa no acompaña o si el precio ya incorpora valor futuro sin respaldo.",
+      "sectionLabel": "Terreno en vista",
+      "priceAnchor": "Estudio de potencial inmobiliario · desde 10 UF",
+      "serviceEvent": "cta_estudio",
+      "calendarIntent": "estudio",
+      "whatsappIntro": "Hola, llegué desde Google. Ya tengo un terreno en vista y quiero evaluarlo antes de ofertar.",
+      "image": "/images/caso-elegir.jpg",
+      "imageAlt": "Evaluación de terreno en contorno rural del sur de Chile",
+      "imagePosition": "center 45%",
+      "includesTitle": "Qué incluye el estudio",
+      "includes": [
+        "Análisis territorial y normativo (PRC, reglamento, acceso)",
+        "Conectividad real y costos de habilitación estimados",
+        "Comparables locales — ventas, no solo avisos activos",
+        "Escenarios de valorización y riesgos identificados",
+        "Recomendación explícita: proceder, negociar o descartar"
+      ],
+      "steps": [
+        { "num": "1", "title": "Sesión inicial", "text": "Recopilamos antecedentes del predio, tu objetivo y el precio pedido." },
+        { "num": "2", "title": "Trabajo de campo", "text": "Verificamos normativa, acceso, servicios y comparables del sector." },
+        { "num": "3", "title": "Informe y reunión", "text": "Entregamos conclusiones con respaldo verificable y margen de negociación sugerido." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "10 UF", "label": "estudio desde" },
+          { "value": "3", "label": "escenarios por informe" },
+          { "value": "100%", "label": "independientes del vendedor" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — restricción en ficha", "metric": "+50%" },
+          { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — error de precio", "metric": "26M → 42M" }
+        ],
+        "quotes": [
+          { "text": "«El reglamento prohibía lo que el vendedor prometía. El estudio nos ahorró una oferta incorrecta.»", "source": "Comprador, parcelación tipo B" },
+          { "text": "«Necesitábamos comparables reales del sector — no el promedio del portal.»", "source": "Cliente evaluando Llanquihue" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Checklist: PRC y reglamento antes de ofertar",
+        "description": "Qué verificar en contorno rural — tercera parte de la serie contorno rural.",
+        "href": "blog/prc-contorno-rural-puerto-varas/",
+        "cta": "Ver checklist normativo →"
+      },
+      "allyText": "Enamorarse del terreno está bien. Ofertar sin due diligence es lo que conviene evitar — te decimos con honestidad si conviene avanzar.",
+      "faq": [
+        { "q": "¿Es lo mismo que una tasación?", "a": "No. No certificamos valor comercial para crédito. Evaluamos vocación, riesgos y coherencia precio-mercado para tu decisión de compra." },
+        { "q": "¿Puedo enviar solo el link del aviso?", "a": "Sirve como punto de partida. El estudio profundiza normativa, acceso y comparables que no están en la ficha." },
+        { "q": "¿Cuánto demora?", "a": "Depende del predio y comuna. En la sesión inicial te damos plazo estimado y alcance en UF." }
+      ],
+      "legal": "Alcance y fee final según complejidad. No constituye asesoría legal.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-EVALUAR",
+        "whatsappToken": "LA-C-EVALUAR",
+        "suggestedDailyBudgetClp": "12000-20000"
+      }
+    },
+    {
+      "slug": "valorizar-terreno-sur",
+      "template": "intent",
+      "intent": "D",
+      "title": "Valorizar terreno en el sur | Potencial y cambio de uso | Land Advisors",
+      "description": "Estudio de valorización y vocación de terreno rural en la cuenca del Lago Llanquihue. Turismo, patrimonio o cambio de uso — con respaldo normativo.",
+      "h1": "¿Tu terreno tiene potencial real — o ya está en el precio?",
+      "heroProblem": "Te vendieron «futuro turístico» o cambio de uso sin verificar PRC, reglamento ni demanda del sector.",
+      "heroWhyUs": "Estudiamos vocación comercial del suelo con normativa vigente — no proyecciones en PowerPoint.",
+      "heroGain": "Escenarios de valorización conservadores y recomendación de proceder o no con respaldo territorial.",
+      "ctaLabel": "Agenda una sesión estratégica",
+      "heroLead": "Cabañas, patrimonio o comercio pueden calzar — pero no en todo predio ni con toda normativa.",
+      "sectionLabel": "Valorización territorial",
+      "priceAnchor": "Estudio de potencial · desde 10 UF · Estructuración desde 20 UF",
+      "serviceEvent": "cta_estudio",
+      "calendarIntent": "estudio",
+      "whatsappIntro": "Hola, llegué desde Google. Quiero evaluar el potencial de valorización de un terreno en el sur.",
+      "image": "/images/blog-cambio-uso.jpg",
+      "imageAlt": "Potencial turístico y habitacional en contorno rural del sur",
+      "imagePosition": "center 30%",
+      "includesTitle": "Qué establece el estudio",
+      "includes": [
+        "Vocación comercial del terreno: casa, cabañas, patrimonio, comercio",
+        "Cambio de uso: qué es verificable vs. hipotético",
+        "Demanda turística y conectividad del sector",
+        "Costos de habilitación vs. valor de salida conservador",
+        "Hoja de ruta si conviene estructurar proyecto (desde 20 UF)"
+      ],
+      "steps": [
+        { "num": "1", "title": "Definir objetivo", "text": "¿Patrimonio, renta turística, reventa o proyecto propio?" },
+        { "num": "2", "title": "Estudio territorial", "text": "Normativa, mercado local y escenarios de valor en informe." },
+        { "num": "3", "title": "Decisión informada", "text": "Proceder, renegociar precio o buscar alternativa con mejor relación riesgo-retorno." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "+50%", "label": "caso PV — vocación comercial" },
+          { "value": "4.400 UF", "label": "caso Llanquihue" },
+          { "value": "5", "label": "partes serie contorno rural" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Cambio de vocación comercial", "metric": "+50%" },
+          { "href": "blog/cambio-uso-suelo-contorno-rural/", "label": "Artículo: cambio de uso", "metric": "8 min" }
+        ],
+        "quotes": [
+          { "text": "«Pensábamos que todo terreno servía para cabañas. El PRC y el reglamento dijeron otra cosa.»", "source": "Proyecto turístico" },
+          { "text": "«Queríamos saber si el potencial ya estaba pagado en el precio. Eso cambió la negociación.»", "source": "Inversionista, Frutillar" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Informe: cambio de uso y turismo inmobiliario",
+        "description": "Cuándo tiene sentido económico — y cuándo desconfiar de la promesa del vendedor.",
+        "href": "blog/cambio-uso-suelo-contorno-rural/",
+        "cta": "Leer informe →"
+      },
+      "allyText": "La plusvalía en papel es fácil de dibujar. Entenderla con criterio exige desmenuzar argumentos concretos — eso es lo que hacemos.",
+      "faq": [
+        { "q": "¿Garantizan valorización?", "a": "No. Entregamos escenarios con supuestos explícitos y recomendación basada en datos locales." },
+        { "q": "¿Sirve para vender mi terreno?", "a": "El foco es decisión de compra o proyecto. Si eres vendedor, podemos orientar posicionamiento — pero no somos corredora." },
+        { "q": "¿Incluye tramitación de cambio de uso?", "a": "Identificamos viabilidad. La tramitación requiere profesionales competentes; coordinamos si contratas asesoría de compra." }
+      ],
+      "legal": "Resultados pasados no garantizan resultados futuros. Contenido educativo.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-VALORIZAR",
+        "whatsappToken": "LA-D-VALORIZAR",
+        "suggestedDailyBudgetClp": "10000-18000"
+      }
+    },
+    {
       "slug": "busqueda-personalizada-30",
+      "template": "promo",
       "title": "Búsqueda personalizada 30% dto. | Diagnóstico gratis | Land Advisors",
       "description": "Oferta hasta 30 de septiembre: búsqueda personalizada de terrenos en el sur de Chile por 3,5 UF (antes 5 UF), diagnóstico incluido y acompañamiento integral hasta la compra. Las 3,5 UF se descuentan de la comisión si compras.",
       "h1": "Búsqueda personalizada de terrenos",

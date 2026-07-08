@@ -1140,22 +1140,225 @@ ${navLinks(prefix)}
 </html>`;
 }
 
-function campaignCtaMarkup(track, variant = "float") {
+function campaignCtaMarkup(campaign, variant = "float") {
+  const track = campaign.serviceEvent || "cta_busqueda";
+  const template = campaign.template || "promo";
+  const label = campaign.ctaLabel || "Agenda una sesión estratégica";
+  const sizeClass = variant === "hero" ? " campaign-cta--lg" : "";
+  const calIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`;
+
+  if (template === "intent") {
+    return `<a href="#" class="campaign-cta campaign-cta--cal campaign-cta--primary${sizeClass}" data-campaign-calendar data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${esc(label)}</span></a>`;
+  }
+
   const waLabel = variant === "hero" ? "Consultar por WhatsApp" : "WhatsApp";
   const calLabel = "Agendar reunión";
-  const sizeClass = variant === "hero" ? " campaign-cta--lg" : "";
   const waIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
-  const calIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`;
   return `<a href="#" class="campaign-cta campaign-cta--wa${sizeClass}" data-campaign-wa data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>
           <a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>`;
 }
 
+function campaignHtmlAttrs(campaign) {
+  const phone = (campaign.ads?.whatsappPhone || site.phone || "+56974533265").replace(/\D/g, "");
+  const token = campaign.ads?.whatsappToken || "LA-CAMP";
+  const calIntent = campaign.calendarIntent || "diagnostico";
+  return `data-wa-intro="${esc(campaign.whatsappIntro || "")}" data-wa-token="${esc(token)}" data-wa-phone="${esc(phone)}" data-calendar-intent="${esc(calIntent)}"`;
+}
+
+function buildCampaignProof(campaign, prefix) {
+  const proof = campaign.proof;
+  if (!proof) return "";
+  const stats = (proof.stats || [])
+    .map(
+      (s) => `<div class="campaign-stat">
+        <strong class="campaign-stat__value">${esc(s.value)}</strong>
+        <span class="campaign-stat__label">${esc(s.label)}</span>
+      </div>`
+    )
+    .join("");
+  const cases = (proof.cases || [])
+    .map(
+      (c) => `<li><a href="${prefix}${c.href}">${esc(c.label)}</a>${c.metric ? ` <span class="campaign-case__metric">${esc(c.metric)}</span>` : ""}</li>`
+    )
+    .join("");
+  const quotes = (proof.quotes || [])
+    .map(
+      (q) => `<blockquote class="campaign-quote glass-card">
+        <p>${esc(q.text)}</p>
+        <cite>${esc(q.source)}</cite>
+      </blockquote>`
+    )
+    .join("");
+  return `<section class="campaign-proof" aria-labelledby="campaign-proof-title">
+        <p class="section-label">Resultados reales</p>
+        <h2 id="campaign-proof-title" class="campaign-panel__title">Confianza con datos — no con promesas</h2>
+        ${stats ? `<div class="campaign-stats">${stats}</div>` : ""}
+        ${cases ? `<ul class="campaign-cases">${cases}</ul>` : ""}
+        ${quotes ? `<div class="campaign-quotes">${quotes}</div>` : ""}
+      </section>`;
+}
+
+function buildCampaignLeadMagnet(campaign, prefix) {
+  const lm = campaign.leadMagnet;
+  if (!lm) return "";
+  return `<aside class="campaign-leadmagnet glass-card" aria-labelledby="campaign-lm-title">
+        <p class="section-label">¿Aún no estás listo?</p>
+        <h2 id="campaign-lm-title" class="campaign-leadmagnet__title">${esc(lm.title)}</h2>
+        <p>${esc(lm.description)}</p>
+        <a href="${prefix}${lm.href}" class="btn btn-glass" data-track="lead_magnet_click">${esc(lm.cta || "Descargar recurso →")}</a>
+      </aside>`;
+}
+
+function buildIntentCampaignPage(campaign) {
+  const pagePath = `/campanas/${campaign.slug}/`;
+  const prefix = rootPrefix(pagePath);
+  const assets = assetPrefix();
+  const page = {
+    path: pagePath,
+    title: campaign.title,
+    description: campaign.description,
+    breadcrumb: "Consultoría",
+    h1: campaign.h1,
+    intro: campaign.heroLead,
+    image: campaign.image,
+    type: "campaign",
+  };
+  const schemas = buildSchemas(page);
+  schemas.push(websiteSchema());
+  if (campaign.faq?.length) schemas.push(faqPageSchema(campaign.faq));
+
+  const includes = (campaign.includes || [])
+    .map((item) => `<li>${esc(item)}</li>`)
+    .join("");
+  const steps = (campaign.steps || [])
+    .map(
+      (step) => `<article class="campaign-step glass-card">
+        <span class="campaign-step__num">${esc(step.num)}</span>
+        <h3 class="campaign-step__title">${esc(step.title)}</h3>
+        <p>${esc(step.text)}</p>
+      </article>`
+    )
+    .join("");
+  const faq = (campaign.faq || [])
+    .map(
+      (item) => `<details class="faq-item glass-card">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+    )
+    .join("");
+  const track = campaign.serviceEvent || "cta_contacto";
+  const imgSrc = `${prefix}${(campaign.image || site.defaultOgImage).replace(/^\//, "")}`;
+  const imgPos = campaign.imagePosition || "center center";
+  const heroQa = `<ul class="campaign-hero-qa">
+        <li><strong>Problema:</strong> ${esc(campaign.heroProblem)}</li>
+        <li><strong>Por qué nosotros:</strong> ${esc(campaign.heroWhyUs)}</li>
+        <li><strong>Qué ganas:</strong> ${esc(campaign.heroGain)}</li>
+      </ul>`;
+
+  return `<!DOCTYPE html>
+<html lang="es" ${campaignHtmlAttrs(campaign)}>
+<head>
+${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: "website" })}
+  <link rel="stylesheet" href="${prefix}styles-campaign.css">
+  ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
+</head>
+<body class="site-v2 seo-page seo-page--campaign seo-page--campaign-intent">
+  <header class="site-header">
+    <div class="header-shell">
+      <div class="header-inner">
+        <a href="${prefix}" class="logo-link" aria-label="Land Advisors — inicio">
+          <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+${navLinks(prefix, campaign)}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="campaign-hero campaign-hero--intent">
+      <div class="campaign-hero__bg" aria-hidden="true">
+        <img src="${imgSrc}" alt="" width="1600" height="900" loading="eager" decoding="async" style="object-position: ${esc(imgPos)}">
+        <div class="campaign-hero__overlay"></div>
+      </div>
+      <div class="container campaign-hero__inner" data-reveal>
+        <p class="campaign-intent-badge">Consultoría territorial · No corredora</p>
+        <p class="section-label">${esc(campaign.sectionLabel || "Asesoría estratégica")}</p>
+        <h1>${esc(campaign.h1)}</h1>
+        ${heroQa}
+        <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
+        <div class="campaign-hero__actions campaign-hero__actions--single">
+          ${campaignCtaMarkup(campaign, "hero")}
+        </div>
+        ${campaign.priceAnchor ? `<p class="campaign-hero__note">${esc(campaign.priceAnchor)}</p>` : ""}
+      </div>
+    </section>
+
+    <section class="campaign-body">
+      <div class="container" data-reveal>
+        <div class="campaign-grid">
+          <section class="campaign-panel glass-card" aria-labelledby="campaign-includes-title">
+            <p class="section-label">Beneficio</p>
+            <h2 class="campaign-panel__title" id="campaign-includes-title">${esc(campaign.includesTitle || "Qué obtienes")}</h2>
+            <ul class="campaign-includes">${includes}</ul>
+            <p class="campaign-panel__foot">No somos corredora: no vendemos terrenos. Te ayudamos a decidir con criterio.</p>
+          </section>
+
+          <section class="campaign-steps" aria-labelledby="campaign-steps-title">
+            <h2 class="campaign-panel__title" id="campaign-steps-title">Cómo funciona</h2>
+            <div class="campaign-steps__grid">${steps}</div>
+          </section>
+        </div>
+
+        ${buildCampaignProof(campaign, prefix)}
+
+        <section class="campaign-ally glass-card">
+          <p class="section-label">De tu lado</p>
+          <h2>Enamorarse del terreno está bien</h2>
+          <p>${esc(campaign.allyText || "")}</p>
+        </section>
+
+        ${buildCampaignLeadMagnet(campaign, prefix)}
+
+        ${
+          faq
+            ? `<section class="campaign-faq seo-guide-faq" aria-labelledby="campaign-faq-title">
+          <h2 id="campaign-faq-title" class="blog-article__h2">Preguntas frecuentes</h2>
+          <div class="faq-list">${faq}</div>
+        </section>`
+            : ""
+        }
+
+        <section class="campaign-final-cta glass-card">
+          <h2>¿Listo para decidir con criterio?</h2>
+          <p>Primera sesión sin compromiso de compra — solo claridad territorial.</p>
+          <div class="campaign-hero__actions campaign-hero__actions--single">${campaignCtaMarkup(campaign, "hero")}</div>
+        </section>
+
+        <p class="campaign-legal">${esc(campaign.legal)}</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
+    </div>
+  </footer>
+
+${campaignFooterScripts(prefix, campaign)}
+</body>
+</html>`;
+}
+
 function campaignFooterScripts(prefix, campaign) {
-  const track = campaign.serviceEvent || "cta_busqueda";
   return `  <div id="la-chat-widget" aria-label="Contacto"></div>
   <aside class="campaign-float-cta" aria-label="Acciones de campaña" hidden>
     <div class="campaign-float-cta__inner">
-      ${campaignCtaMarkup(track, "float")}
+      ${campaignCtaMarkup(campaign, "float")}
     </div>
   </aside>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
@@ -1177,6 +1380,9 @@ function campaignFooterScripts(prefix, campaign) {
 }
 
 function buildCampaignPage(campaign) {
+  if ((campaign.template || "promo") === "intent") {
+    return buildIntentCampaignPage(campaign);
+  }
   const pagePath = `/campanas/${campaign.slug}/`;
   const prefix = rootPrefix(pagePath);
   const assets = assetPrefix();
@@ -1244,7 +1450,7 @@ function buildCampaignPage(campaign) {
     : "";
 
   return `<!DOCTYPE html>
-<html lang="es" data-wa-intro="${esc(campaign.whatsappIntro)}">
+<html lang="es" ${campaignHtmlAttrs(campaign)}>
 <head>
 ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: "website" })}
   <link rel="stylesheet" href="${prefix}styles-campaign.css">
@@ -1258,14 +1464,7 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix)}
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="campaign-hero">
-      <div class="campaign-hero__bg" aria-hidden="true">
+${navLinks(prefix, campaign)}
         <img src="${imgSrc}" alt="" width="${imgW}" height="${imgH}" loading="eager" decoding="async" style="object-position: ${esc(imgPos)}">
         <div class="campaign-hero__overlay"></div>
       </div>
@@ -1289,7 +1488,7 @@ ${navLinks(prefix)}
         </div>
 
         <div class="campaign-hero__actions campaign-hero__actions--cta">
-          ${campaignCtaMarkup(track, "hero")}
+          ${campaignCtaMarkup(campaign, "hero")}
         </div>
         <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
       </div>
@@ -1348,7 +1547,11 @@ ${campaignFooterScripts(prefix, campaign)}
 </html>`;
 }
 
-function navLinks(prefix) {
+function navLinks(prefix, campaign) {
+  const navCta =
+    (campaign?.template || "promo") === "intent"
+      ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_contacto")}">Sesión estratégica</a>`
+      : `<a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>`;
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
             <a href="${prefix}servicios/">Servicios</a>
@@ -1359,7 +1562,7 @@ function navLinks(prefix) {
             <a href="${prefix}guias/">Guías</a>
             <a href="${prefix}#nosotros">Nosotros</a>
           </div>
-          <a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
+          ${navCta}
         </nav>`;
 }
 

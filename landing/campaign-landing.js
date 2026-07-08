@@ -1,20 +1,22 @@
 /**
- * Land Advisors — landing de campaña (WhatsApp prellenado + calendario + CTAs flotantes)
+ * Land Advisors — landing de campaña (calendario + WhatsApp + CTAs flotantes)
  */
 (function () {
   const root = document.documentElement;
   const waIntro = root.getAttribute("data-wa-intro") || "";
-  const phone = "56999163518";
+  const waToken = root.getAttribute("data-wa-token") || "LA-CAMP";
+  const phone = (root.getAttribute("data-wa-phone") || "56974533265").replace(/\D/g, "");
+  const calendarIntent = root.getAttribute("data-calendar-intent") || "diagnostico";
 
   function calendarUrl() {
     const cfg = window.LA_CALENDAR || {};
     if (!cfg.enabled || !cfg.url) return "";
-    return cfg.events?.busqueda || cfg.url;
+    return cfg.events?.[calendarIntent] || cfg.url;
   }
 
   function buildWhatsAppHref() {
     const params = new URLSearchParams(location.search);
-    const parts = [waIntro, "[Ref: LA-BUSQ30]"];
+    const parts = [waIntro, "[Ref: " + waToken + "]"];
     const utm = ["utm_source", "utm_medium", "utm_campaign", "utm_content"]
       .map((k) => params.get(k))
       .filter(Boolean);
