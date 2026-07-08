@@ -1320,12 +1320,93 @@
 }
 
 .territory-definition {
-  margin-bottom: 1.25rem;
-  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  padding: 1.1rem 1.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .territory-definition p {
+  margin: 0;
+}
+
+/* SEO glass cards — padding consistente en recuadros blancos */
+.seo-page .seo-card {
+  padding: 1.35rem 1.5rem 1.5rem;
+}
+
+.seo-page .case-card {
+  padding: 0 1.35rem 1.5rem;
+  overflow: hidden;
+}
+
+.seo-page .case-card .case-card__media {
+  margin: 0 -1.35rem 1rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.seo-page .case-card .case-card__territory {
+  margin-top: 0;
+}
+
+.seo-page .case-card > p {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted, #5a6a75);
+  line-height: 1.6;
+}
+
+.seo-page .case-card .btn {
+  margin-top: 0.25rem;
+}
+
+.seo-page .seo-card > .section-label,
+.seo-page .intel-cluster .section-label,
+.seo-page .seo-internal-links .section-label {
+  margin: 0 0 0.75rem;
+}
+
+.seo-page .faq-item {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(5, 44, 77, 0.12);
+}
+
+.seo-page .faq-item .faq-answer p {
+  margin: 0;
+}
+
+.blog-article--territory > .seo-guide-faq,
+.blog-article--case > .seo-guide-faq {
+  padding: 0.5rem 1.5rem 0.25rem;
+}
+
+.blog-article--territory > .seo-guide-faq .blog-article__h2,
+.blog-article--case > .seo-guide-faq .blog-article__h2 {
+  margin: 0 0 1rem;
+}
+
+.seo-page--intel .intel-faq .blog-article__h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.blog-article__content .blog-article__note {
+  margin: 1.5rem 0 0;
+}
+
+.eeat-byline {
+  padding: 1.15rem 1.5rem 1rem;
+  margin-bottom: 0;
+}
+
+.blog-article--intel .eeat-byline {
+  padding-bottom: 1rem;
+}
+
+.blog-article__content {
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.blog-article--intel .blog-article__lead {
   margin: 0;
 }

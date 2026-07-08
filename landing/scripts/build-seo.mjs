@@ -1556,7 +1556,18 @@ function buildSecondaryPage(page) {
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
-${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.image } : isIntelHub ? { ogImage: site.url + (intelligenceHub.image || site.defaultOgImage) } : {})}
+${buildHead(
+    pageView,
+    prefix,
+    assets,
+    hubGuide
+      ? { ogImage: site.url + hubGuide.image }
+      : isIntelHub
+        ? { ogImage: site.url + (intelligenceHub.image || site.defaultOgImage) }
+        : territoryRich?.image
+          ? { ogImage: site.url + territoryRich.image }
+          : {}
+  )}
   <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>

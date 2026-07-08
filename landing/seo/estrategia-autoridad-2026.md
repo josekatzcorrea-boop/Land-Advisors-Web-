@@ -65,10 +65,14 @@
 - Artículo nacional: comprar desde Santiago
 - Hub inteligencia: imagen hero + padding en clusters
 
-### Fase 4 — próximo
-- Contenido nacional «desde Santiago»
-- Guest experts (notario, arquitecto)
-- Actualización trimestral de hubs
+### Fase 4 — jul 2026 ✓
+- Comparativa Puerto Varas vs. Frutillar vs. Llanquihue
+- Cambio de uso de suelo / turismo inmobiliario en cuenca
+- Imágenes curadas en `landing/images/` alineadas a contenido
+- Puente RRSS → URLs blog en captions (E, T, reel conectividad)
+- CSS: padding consistente en recuadros blancos SEO
+
+### Fase 5 — próximo
 
 ---
 
@@ -79,7 +83,8 @@
 | Carrusel educativo (E) | Artículo cluster |
 | Single (S) | `/guias/` o servicio |
 | Aliado (A) | Caso de estudio |
-| Reel conectividad | Futuro: conectividad real |
+| Reel conectividad | `blog/conectividad-real-contorno-rural/` |
+| Carrusel comparativa comunas | `blog/comparativa-puerto-varas-frutillar-llanquihue/` |
 
 ---
 

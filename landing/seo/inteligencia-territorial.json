@@ -5,8 +5,8 @@
   "datePublished": "2026-07-08",
   "dateModified": "2026-07-08",
   "readMinutes": 8,
-  "image": "/images/galeria/galeria-04.jpg",
-  "imageAlt": "Contorno rural y lectura territorial en la cuenca del Lago Llanquihue",
+  "image": "/images/intel-territorial.jpg",
+  "imageAlt": "Vista aérea de parcelación con lago y volcán — lectura territorial en la cuenca",
   "clusters": [
     {
       "label": "Serie: contorno rural de Puerto Varas",
@@ -36,6 +36,15 @@
         { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — restricción comercial", "meta": "+50%" },
         { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — brecha de precio", "meta": "26M → 42M" },
         { "href": "casos-de-estudio/llanquihue-valor-presente-futuro/", "label": "Llanquihue — valor presente vs. futuro", "meta": "4.400 UF" }
+      ]
+    },
+    {
+      "label": "Comparar comunas",
+      "description": "Puerto Varas, Frutillar y Llanquihue no son el mismo mercado — criterios para elegir.",
+      "links": [
+        { "href": "blog/comparativa-puerto-varas-frutillar-llanquihue/", "label": "Comparativa territorial", "meta": "9 min" },
+        { "href": "blog/comprar-terreno-sur-chile-desde-santiago/", "label": "Comprar desde Santiago", "meta": "8 min" },
+        { "href": "blog/cambio-uso-suelo-contorno-rural/", "label": "Cambio de uso de suelo", "meta": "8 min" }
       ]
     },
     {

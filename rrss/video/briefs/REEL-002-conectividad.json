@@ -1,0 +1,36 @@
+{
+  "id": "REEL-002-conectividad",
+  "titulo": "«15 min de Puerto Varas» — la realidad en ruta",
+  "estado": "en_produccion",
+  "version": "v2-narrativa-casos",
+  "apoyo_post": "2026-07-07-T1",
+  "formato": "reel",
+  "dimensiones": "1080x1920",
+  "duracion_objetivo_seg": 42,
+  "pilar": "T",
+  "enfoque": "narrativa identificable — fin de semana visitando terrenos — informativo, sin pitch",
+  "hook": "Lees «a 15 minutos de Puerto Varas»…",
+  "angulo": "Los minutos del aviso suelen ser aproximación optimista; conectividad real define calidad de vida",
+  "playbook": "rrss/video/PLAYBOOK-reel.md",
+  "guia_grabacion": "rrss/video/briefs/REEL-002-grabacion.md",
+  "voz": {
+    "script": "rrss/video/briefs/REEL-002-vo-script.txt",
+    "modo_recomendado": "jose_camara_narrativo o vo-jose.m4a",
+    "tono": "conversacional, como contando algo que le pasa a muchos — no sermón ni venta"
+  },
+  "textos_pantalla": [
+    "15 min → 25 km",
+    "Km 10 Ensenada · 40 min vuelta",
+    "2 terrenos / 1 día",
+    "Miles de avisos en la cuenca",
+    "Mapa ≠ ruta real"
+  ],
+  "inbox": "rrss/video/inbox/REEL-002-conectividad/",
+  "caption_ig": "«A 15 minutos de Puerto Varas» suena bien en el aviso.\n\nLlegas y son 25 km. Vas a Ensenada al km 10 y vuelves en 40 minutos. Se pasó el día y viste 2 terrenos.\n\nEn la cuenca del Lago Llanquihue hay miles de avisos — un fin de semana no alcanza para recorrerlos con criterio.\n\nLa conectividad del terreno (camino, servicios, tiempo real a la ciudad) pesa más en tu calidad de vida que casi cualquier otra línea del anuncio.\n\nArtículo en el blog 👇\nwww.landadvisors.cl/blog/conectividad-real-contorno-rural/\n\nGuarda si estás en búsqueda 👇 ¿Te ha pasado con los «minutos» del aviso?\n\nContenido educativo. Cada terreno requiere evaluación específica.\n\n#LandAdvisors #SurDeChile #TerrenosChile #PuertoVaras #Ensenada #LagoLlanquihue #Conectividad #ContornoRural #Reels #EstrategiaInmobiliaria",
+  "seo_url": "https://www.landadvisors.cl/blog/conectividad-real-contorno-rural/",
+  "publicacion_sugerida": {
+    "fecha": "2026-07-07",
+    "hora": "18:00",
+    "zona_horaria": "America/Santiago"
+  }
+}

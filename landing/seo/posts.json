@@ -1,8 +1,7 @@
 {
   "upcoming": [
-    "Cambio de uso de suelo: cuándo tiene sentido económico",
-    "Turismo inmobiliario en la cuenca del Lago Llanquihue",
-    "Comparativa Puerto Varas vs. Frutillar vs. Llanquihue"
+    "Guest experts (notario, arquitecto)",
+    "Actualización trimestral de hubs"
   ],
   "posts": [
     {
@@ -14,8 +13,8 @@
       "datePublished": "2026-06-18",
       "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
-      "image": "/images/caso-puerto-varas.jpg",
-      "imageAlt": "Puerto Varas y entorno del Lago Llanquihue",
+      "image": "/images/blog-plusvalia.jpg",
+      "imageAlt": "Vista al volcán Osorno desde el contorno rural de la cuenca del Lago Llanquihue",
       "readMinutes": 6,
       "series": "Contorno rural de Puerto Varas",
       "seriesPart": 1,
@@ -142,8 +141,8 @@
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "author": "José Hernán Katz C.",
-      "image": "/images/caso-llanquihue.jpg",
-      "imageAlt": "Sector rural en Llanquihue con potencial de desarrollo",
+      "image": "/images/blog-habilitacion.jpeg",
+      "imageAlt": "Infraestructura y servicios en terreno del contorno rural",
       "readMinutes": 5,
       "series": "Contorno rural de Puerto Varas",
       "seriesPart": 2,
@@ -227,8 +226,8 @@
       "datePublished": "2026-07-08",
       "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
-      "image": "/images/caso-puerto-varas.jpg",
-      "imageAlt": "Contorno rural de Puerto Varas",
+      "image": "/images/blog-prc.jpg",
+      "imageAlt": "Plan regulador comunal y normativa aplicable al contorno rural",
       "readMinutes": 7,
       "series": "Contorno rural de Puerto Varas",
       "seriesPart": 3,
@@ -264,8 +263,8 @@
       "datePublished": "2026-07-08",
       "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
-      "image": "/images/galeria/galeria-05.jpg",
-      "imageAlt": "Conectividad en contorno rural del sur de Chile",
+      "image": "/images/blog-conectividad.jpg",
+      "imageAlt": "Camino rural de acceso en el contorno periurbano del sur de Chile",
       "readMinutes": 6,
       "series": "Contorno rural de Puerto Varas",
       "seriesPart": 4,
@@ -299,8 +298,8 @@
       "datePublished": "2026-07-08",
       "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
-      "image": "/images/galeria/galeria-04.jpg",
-      "imageAlt": "Vocación habitacional y turística en contorno rural",
+      "image": "/images/blog-vocacion.jpg",
+      "imageAlt": "Contorno rural con vocación habitacional y turística",
       "readMinutes": 7,
       "series": "Contorno rural de Puerto Varas",
       "seriesPart": 5,
@@ -336,8 +335,8 @@
       "datePublished": "2026-07-08",
       "dateModified": "2026-07-08",
       "author": "José Hernán Katz C.",
-      "image": "/images/caso-elegir.jpg",
-      "imageAlt": "Comprador evaluando terrenos en el sur de Chile",
+      "image": "/images/blog-santiago.jpg",
+      "imageAlt": "Mapa de conectividad en la cuenca del Lago Llanquihue — lectura desde Santiago",
       "readMinutes": 8,
       "category": "Compradores desde Santiago",
       "tags": ["comprar terreno sur de chile", "Santiago", "Puerto Varas", "contorno rural"],
@@ -360,6 +359,84 @@
         { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
         { "label": "Diagnóstico estratégico", "href": "servicios/diagnostico-estrategico/" },
         { "label": "Territorio Puerto Varas", "href": "territorios/puerto-varas/" }
+      ]
+    },
+    {
+      "slug": "comparativa-puerto-varas-frutillar-llanquihue",
+      "title": "Puerto Varas vs. Frutillar vs. Llanquihue | Comparativa territorial",
+      "description": "Comparativa para comprar terreno en la cuenca del Lago Llanquihue: demanda, precio, conectividad y vocación en Puerto Varas, Frutillar y Llanquihue.",
+      "h1": "Puerto Varas vs. Frutillar vs. Llanquihue: cómo elegir comuna",
+      "intro": "Las tres comunas comparten lago, paisaje y segunda vivienda — pero no comparten mercado. Comparar terrenos sin distinguir comuna es uno de los errores más frecuentes de quien compra desde Santiago.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/blog-comparativa.jpg",
+      "imageAlt": "Mapa de conectividad en la cuenca del Lago Llanquihue",
+      "readMinutes": 9,
+      "category": "Comparativa territorial",
+      "tags": ["Puerto Varas", "Frutillar", "Llanquihue", "comparar terrenos", "contorno rural"],
+      "sections": [
+        { "type": "p", "text": "Puerto Varas, Frutillar y Llanquihue aparecen juntas en casi todo aviso de la región. Pero cada comuna tiene dinámica de demanda, conectividad y oferta distinta. Esta comparativa ordena criterios — no declara un ganador universal." },
+        { "type": "h2", "text": "Puerto Varas: demanda amplia y mercado más líquido" },
+        { "type": "p", "text": "Concentra turismo, comercio, servicios de salud y educación. El contorno rural conectado suele tener precio más alto — pero también más comparables y salida más predecible. Conviene para quien busca vivienda permanente, segunda residencia con servicios cercanos o proyectos comerciales en nodos de expansión." },
+        { "type": "h2", "text": "Frutillar: patrimonio, calma y prima de marca" },
+        { "type": "p", "text": "Mercado más pausado, fuerte vocación patrimonial y turística. Algunos sectores incorporan una prima «Frutillar» en el precio que no siempre viene acompañada de habilitación o conectividad. Oportunidades aparecen en brechas de precio y liquidez del vendedor — ver nuestro caso real." },
+        { "type": "h2", "text": "Llanquihue: expansión, parcelaciones y valor presente" },
+        { "type": "p", "text": "Urbanización activa y oferta de proyectos a distinto grado de urbanización. La pregunta clave no es «¿es más barato?», sino si el valor presente compensa costos pendientes y plazos. Muchos compradores comparan con Puerto Varas sin ajustar por tiempo real hacia servicios." },
+        { "type": "h2", "text": "Tabla mental de decisión" },
+        { "type": "ul", "items": ["Servicios y liquidez → Puerto Varas suele liderar", "Patrimonio y turismo pausado → Frutillar", "Entrada por precio con urbanización en curso → Llanquihue", "En las tres: verificar PRC, reglamento, acceso inscrito y comparables locales"] },
+        { "type": "h2", "text": "Qué hacer antes de elegir comuna" },
+        { "type": "p", "text": "Define objetivo (vivienda, cabañas, patrimonio, comercio), presupuesto total — compra más habilitación — y tolerancia a plazos. Un diagnóstico estratégico ordena comunas compatibles; la búsqueda personalizada filtra alternativas concretas en al menos dos comunas si aún no tienes zona fija." },
+        { "type": "note", "text": "Contenido educativo. No constituye asesoría personalizada ni promesa de rentabilidad." }
+      ],
+      "faq": [
+        { "q": "¿Cuál comuna es más barata?", "a": "Depende del sector y del estado del terreno. Llanquihue puede mostrar precios de entrada menores; Frutillar y Puerto Varas tienen sectores premium. La habilitación puede invertir la cuenta." },
+        { "q": "¿Puedo comprar en dos comunas a la vez?", "a": "Sí. Muchos clientes desde Santiago acotan short list en Puerto Varas y Frutillar, o Llanquihue y Puerto Varas, tras reunión online y filtros territoriales." },
+        { "q": "¿Dónde profundizo cada comuna?", "a": "En las guías territoriales de Puerto Varas, Frutillar y Llanquihue — y en los casos de estudio vinculados a cada una." }
+      ],
+      "related": [
+        { "label": "Territorio: Puerto Varas", "href": "territorios/puerto-varas/" },
+        { "label": "Territorio: Frutillar", "href": "territorios/frutillar/" },
+        { "label": "Territorio: Llanquihue", "href": "territorios/llanquihue/" },
+        { "label": "Comprar desde Santiago", "href": "blog/comprar-terreno-sur-chile-desde-santiago/" }
+      ]
+    },
+    {
+      "slug": "cambio-uso-suelo-contorno-rural",
+      "title": "Cambio de uso de suelo en contorno rural | Land Advisors",
+      "description": "Cuándo tiene sentido económico un cambio de uso de suelo en el contorno rural: turismo inmobiliario, normativa y factibilidad en la cuenca del Lago Llanquihue.",
+      "h1": "Cambio de uso de suelo: cuándo cierra la cuenta",
+      "intro": "Muchos terrenos se venden con la promesa de «potencial turístico» o «futuro comercial». El cambio de uso puede ser vía de valorización — o un costo que nunca se recupera. La diferencia está en normativa, mercado local y números.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/blog-cambio-uso.jpg",
+      "imageAlt": "Paisaje del sur de Chile con vocación turística y habitacional",
+      "readMinutes": 8,
+      "category": "Normativa y valorización",
+      "tags": ["cambio de uso", "turismo inmobiliario", "contorno rural", "Lago Llanquihue"],
+      "sections": [
+        { "type": "p", "text": "En el contorno rural de Puerto Varas, Frutillar y Llanquihue aparece a menudo la narrativa de cambio de uso: de agrícola a habitacional, de rural a turismo, de restricción a comercio. A veces es real; muchas veces está en el precio o bloqueada por PRC y reglamento." },
+        { "type": "h2", "text": "Turismo inmobiliario en la cuenca" },
+        { "type": "p", "text": "Cabañas, alojamiento y segunda vivienda con uso recreativo tienen demanda comprobada en sectores conectados — no en todo el contorno. Antes de pagar prima turística conviene verificar que el suelo y el reglamento permiten alojamiento, que hay demanda sostenida y que los costos de habilitación no comen el retorno." },
+        { "type": "h2", "text": "Cuándo puede tener sentido económico" },
+        { "type": "ul", "items": ["El uso objetivo ya está permitido o la vía de cambio es verificable — no hipotética", "Comparables locales muestran valor de salida con ese uso", "Costos de tramitación, obras y plazos están en el flujo — no fuera", "El precio de compra no incorpora ya el escenario optimista"] },
+        { "type": "h2", "text": "Cuándo desconfiar" },
+        { "type": "ul", "items": ["El vendedor promete cambio «en trámite» sin antecedentes", "Reglamento de copropiedad prohíbe el uso que imaginas", "El terreno está aislado pero se vende como turístico", "Solo cierra si la plusvalía futura es máxima — sin plan B conservador"] },
+        { "type": "h2", "text": "Relación con nuestros casos" },
+        { "type": "p", "text": "En Puerto Varas vimos un terreno descartado por restricción comercial donde la lectura territorial mostró otra vocación. En Frutillar, la oportunidad estaba en la brecha de precio, no en cambio de uso. En Llanquihue, el valor estaba en el presente del proyecto, no en una transformación futura. Cada predio pide su propia lectura." },
+        { "type": "note", "text": "Contenido educativo. No constituye asesoría legal. Valida normativa con profesionales antes de ofertar." }
+      ],
+      "faq": [
+        { "q": "¿Puedo convertir cualquier terreno rural en cabañas?", "a": "No. PRC, reglamento de parcelación y servicios pueden limitar alojamiento turístico en un predio concreto." },
+        { "q": "¿El cambio de uso siempre sube el valor?", "a": "No necesariamente. Si el mercado ya precifica ese uso o los costos de habilitación son altos, el retorno puede quedar en la compra misma — o no existir." },
+        { "q": "¿Qué servicio encaja después de leer esto?", "a": "Estudio de potencial inmobiliario si ya tienes un terreno en vista; búsqueda personalizada si buscas alternativas filtradas por vocación." }
+      ],
+      "related": [
+        { "label": "Parte 3: PRC y contorno rural", "href": "blog/prc-contorno-rural-puerto-varas/" },
+        { "label": "Parte 5: Vocación del suelo", "href": "blog/vocacion-suelo-contorno-rural/" },
+        { "label": "Caso Puerto Varas: restricción comercial", "href": "casos-de-estudio/puerto-varas-restriccion-comercial/" },
+        { "label": "Estudio de potencial inmobiliario", "href": "servicios/estudio-potencial-inmobiliario/" }
       ]
     }
   ],
