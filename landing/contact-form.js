@@ -22,7 +22,6 @@
 
   const TRACK_INTENT = {
     cta_diagnostico: "diagnostico",
-    cta_contacto: "diagnostico",
     cta_busqueda: "busqueda",
     cta_estudio: "estudio",
     cta_estructuracion: "estructuracion",
@@ -291,6 +290,12 @@
       const link = e.target.closest('a[href*="#contacto-form"], a[href*="#contacto"]');
       if (!link) return;
       const track = link.getAttribute("data-track") || "";
+      if (track === "cta_contacto") {
+        window.setTimeout(function () {
+          applyFormCopy(form, "default");
+        }, 50);
+        return;
+      }
       const intent = TRACK_INTENT[track] || link.getAttribute("data-form-intent") || "";
       if (intent) {
         window.setTimeout(function () {
@@ -369,7 +374,7 @@
   function initForm(form) {
     const urlIntent = readIntentFromUrl();
     if (urlIntent) setIntent(form, urlIntent);
-    else applyFormCopy(form, form.querySelector('[name="intent"]')?.value || "diagnostico");
+    else applyFormCopy(form, form.querySelector('[name="intent"]')?.value || "default");
 
     form.querySelector('[name="intent"]')?.addEventListener("change", function (e) {
       applyFormCopy(form, e.target.value || "diagnostico");

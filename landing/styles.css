@@ -2113,3 +2113,25 @@ section {
     max-height: 240px;
   }
 }
+
+/* Home CRO — consecuencias 4 cols · stats casos */
+#consecuencias .steps {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  #consecuencias .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #consecuencias .steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.casos-stats {
+  flex-wrap: wrap;
+  justify-content: center;
+}

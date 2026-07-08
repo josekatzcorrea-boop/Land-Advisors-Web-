@@ -4,7 +4,7 @@
 (function () {
   const root = document.documentElement;
   const waIntro = root.getAttribute("data-wa-intro") || "";
-  const phone = "56974533265";
+  const phone = "56999163518";
 
   function calendarUrl() {
     const cfg = window.LA_CALENDAR || {};
