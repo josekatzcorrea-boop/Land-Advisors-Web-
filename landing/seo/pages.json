@@ -51,8 +51,25 @@
     "cta": { "label": "Solicitar búsqueda personalizada", "event": "cta_busqueda" },
     "keywords": ["búsqueda personalizada terrenos", "asesoría compra terreno", "consultoría inmobiliaria sur chile"]
   },
-  {
-    "path": "/servicios/estudio-potencial-inmobiliario/",
+    {
+      "path": "/servicios/asesoria-compra/",
+      "file": "servicios/asesoria-compra/index.html",
+      "title": "Asesoría de compra de terrenos | Land Advisors Chile",
+      "description": "Acompañamiento en negociación, revisión documental y cierre hasta escrituración. Honorario 2,5% del valor de compra. Descuento si contrataste búsqueda personalizada.",
+      "type": "service",
+      "breadcrumb": "Asesoría de compra",
+      "h1": "Asesoría de compra y adquisición",
+      "intro": "Para quien ya eligió un terreno y necesita negociar con respaldo, revisar antecedentes y cerrar hasta la escrituración — sin improvisar.",
+      "service": {
+        "name": "Asesoría de compra y adquisición",
+        "price": "2,5% del valor de compra",
+        "description": "Estrategia de negociación, revisión documental, coordinación con notaría y checklist de cierre. Menos 5 UF si contrataste búsqueda personalizada previamente."
+      },
+      "cta": { "label": "Consultar asesoría de compra", "event": "cta_contacto" },
+      "keywords": ["asesoría compra terreno", "negociación terreno", "cierre compra terreno Chile"]
+    },
+    {
+      "path": "/servicios/estudio-potencial-inmobiliario/",
     "file": "servicios/estudio-potencial-inmobiliario/index.html",
     "title": "Estudio de potencial inmobiliario | Land Advisors",
     "description": "Tesis de inversión con territorio, normativa, escenarios y recomendaciones. Desde 10 UF para proyectos con plusvalía en el sur de Chile.",
@@ -137,6 +154,17 @@
     "h1": "Inversión inmobiliaria en Malalcahuello",
     "intro": "Malalcahuello abre oportunidades de turismo inmobiliario y segunda vivienda con lectura de conectividad y vocación del territorio.",
     "keywords": ["inversión inmobiliaria Malalcahuello", "terrenos Malalcahuello"]
+  },
+  {
+    "path": "/inteligencia-territorial/",
+    "file": "inteligencia-territorial/index.html",
+    "title": "Inteligencia territorial | Biblioteca Land Advisors Chile",
+    "description": "Serie contorno rural, territorios, casos reales y guías para decidir bien al comprar terreno en el sur de Chile. Consultoría territorial, no corredora.",
+    "type": "intelligence-hub",
+    "breadcrumb": "Inteligencia territorial",
+    "h1": "Inteligencia territorial",
+    "intro": "Biblioteca para leer suelo, normativa, conectividad y mercado antes de comprar un terreno en la cuenca del Lago Llanquihue y Malalcahuello.",
+    "keywords": ["inteligencia territorial", "contorno rural", "comprar terreno sur de Chile", "consultoría inmobiliaria"]
   },
   {
     "path": "/casos-de-estudio/",

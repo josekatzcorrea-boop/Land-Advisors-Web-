@@ -19,6 +19,8 @@ const blogPosts = blogData.posts || [];
 const retiredPosts = blogData.retired || [];
 const casesData = JSON.parse(fs.readFileSync(path.join(SEO, "cases.json"), "utf8"));
 const caseStudies = casesData.cases || [];
+const intelligenceHub = JSON.parse(fs.readFileSync(path.join(SEO, "inteligencia-territorial.json"), "utf8"));
+const territoriesContent = JSON.parse(fs.readFileSync(path.join(SEO, "territories-content.json"), "utf8"));
 const guidesData = JSON.parse(fs.readFileSync(path.join(SEO, "guides.json"), "utf8"));
 const guides = guidesData.guides || [];
 const campaignsData = JSON.parse(fs.readFileSync(path.join(SEO, "campaigns.json"), "utf8"));
@@ -324,15 +326,32 @@ function blogPostSchema(post, pagePath) {
   };
 }
 
+function territorySlugFromPath(pagePath) {
+  const parts = (pagePath || "").split("/").filter(Boolean);
+  return parts[parts.length - 1] || "";
+}
+
+function territoryBlogLink(slug) {
+  const links = {
+    "puerto-varas": "blog/plusvalia-contorno-rural-puerto-varas/",
+    frutillar: "casos-de-estudio/frutillar-brecha-precio/",
+    llanquihue: "casos-de-estudio/llanquihue-valor-presente-futuro/",
+    malalcahuello: "blog/vocacion-suelo-contorno-rural/",
+  };
+  return links[slug] || "blog/plusvalia-contorno-rural-puerto-varas/";
+}
+
 function buildInternalLinks(page, prefix) {
   const links = [];
   const p = page.path || "";
 
   if (page.type === "territory") {
+    const slug = territorySlugFromPath(p);
     links.push(
       { href: `${prefix}guias/`, label: "Guía: comprar terreno en el sur" },
       { href: `${prefix}servicios/busqueda-personalizada/`, label: "Búsqueda personalizada de terrenos" },
-      { href: `${prefix}blog/plusvalia-contorno-rural-puerto-varas/`, label: "Plusvalía en contorno rural" }
+      { href: `${prefix}${territoryBlogLink(slug)}`, label: "Artículo territorial relacionado" },
+      { href: `${prefix}inteligencia-territorial/`, label: "Inteligencia territorial" }
     );
   } else if (page.type === "blog-post") {
     links.push(
@@ -348,9 +367,15 @@ function buildInternalLinks(page, prefix) {
     );
   } else if (p === "/blog/") {
     links.push(
+      { href: `${prefix}inteligencia-territorial/`, label: "Biblioteca de inteligencia territorial" },
       { href: `${prefix}guias/`, label: "Guías para comprar terreno" },
-      { href: `${prefix}servicios/diagnostico-estrategico/`, label: "Diagnóstico estratégico (1 UF)" },
-      { href: `${prefix}territorios/puerto-varas/`, label: "Inversión en Puerto Varas" }
+      { href: `${prefix}servicios/diagnostico-estrategico/`, label: "Diagnóstico estratégico (1 UF)" }
+    );
+  } else if (p === "/inteligencia-territorial/") {
+    links.push(
+      { href: `${prefix}guias/`, label: "Guía: comprar terreno en el sur" },
+      { href: `${prefix}blog/plusvalia-contorno-rural-puerto-varas/`, label: "Serie contorno rural — Parte 1" },
+      { href: `${prefix}casos-de-estudio/`, label: "Casos de estudio" }
     );
   } else if (p === "/guias/") {
     links.push(
@@ -720,6 +745,21 @@ function buildBlogArticleBody(post, prefix) {
         <p class="blog-article__lead">${esc(post.intro)}</p>
         ${sections}
       </div>
+      ${
+        (post.faq || []).length
+          ? `<section class="seo-guide-faq" aria-labelledby="post-faq-${esc(post.slug)}">
+        <h2 id="post-faq-${esc(post.slug)}" class="blog-article__h2">Preguntas frecuentes</h2>
+        <div class="faq-list">${(post.faq || [])
+            .map(
+              (item) => `<details class="faq-item">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+            )
+            .join("")}</div>
+      </section>`
+          : ""
+      }
       <footer class="blog-article__footer">
         <div class="blog-tags">${tags}</div>
         ${
@@ -731,6 +771,110 @@ function buildBlogArticleBody(post, prefix) {
             : ""
         }
       </footer>
+    </article>`;
+}
+
+function buildIntelligenceHubContent(prefix) {
+  const clusters = (intelligenceHub.clusters || [])
+    .map((cluster) => {
+      const items = (cluster.links || [])
+        .map(
+          (link) => `<li><a href="${prefix}${link.href}">${esc(link.label)}</a>${link.meta ? `<span class="intel-cluster__meta">${esc(link.meta)}</span>` : ""}</li>`
+        )
+        .join("");
+      return `<section class="intel-cluster glass-card">
+        <p class="section-label">${esc(cluster.label)}</p>
+        ${cluster.description ? `<p class="intel-cluster__desc">${esc(cluster.description)}</p>` : ""}
+        <ul class="intel-cluster__list">${items}</ul>
+      </section>`;
+    })
+    .join("");
+
+  const faq = (intelligenceHub.faq || [])
+    .map(
+      (item) => `<details class="faq-item">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+    )
+    .join("");
+
+  return `<article class="blog-article blog-article--intel glass-card">
+      ${buildEeatByline(intelligenceHub, prefix)}
+      <div class="blog-article__content">
+        <p class="blog-article__lead">${esc(intelligenceHub.intro)}</p>
+      </div>
+    </article>
+    <div class="intel-clusters">${clusters}</div>
+    ${
+      faq
+        ? `<section class="seo-guide-faq" aria-labelledby="intel-faq-title">
+      <h2 id="intel-faq-title" class="blog-article__h2">Preguntas frecuentes</h2>
+      <div class="faq-list">${faq}</div>
+    </section>`
+        : ""
+    }`;
+}
+
+function buildTerritoryRichContent(page, prefix) {
+  const slug = territorySlugFromPath(page.path);
+  const content = territoriesContent[slug];
+  if (!content) {
+    return page.keywords
+      ? `<p class="seo-keywords">Búsquedas relacionadas: ${page.keywords.map(esc).join(" · ")}</p>`
+      : "";
+  }
+
+  const sections = (content.sections || []).map(renderBlogSection).join("\n        ");
+  const related = (content.related || [])
+    .map((r) => `<li><a href="${prefix}${r.href}">${esc(r.label)}</a></li>`)
+    .join("");
+  const faq = (content.faq || [])
+    .map(
+      (item) => `<details class="faq-item">
+        <summary>${esc(item.q)}</summary>
+        <div class="faq-answer"><p>${esc(item.a)}</p></div>
+      </details>`
+    )
+    .join("");
+
+  return `<article class="blog-article blog-article--territory glass-card">
+      <header class="blog-article__header">
+        ${
+          content.image
+            ? `<figure class="blog-article__figure">
+          <img src="${prefix}${content.image.replace(/^\//, "")}" alt="${esc(content.imageAlt || page.h1)}" width="900" height="600" loading="lazy">
+        </figure>`
+            : ""
+        }
+        ${buildEeatByline(content, prefix)}
+      </header>
+      <div class="blog-article__content">
+        ${
+          content.definition
+            ? `<aside class="territory-definition glass-card"><p><strong>Definición:</strong> ${esc(content.definition)}</p></aside>`
+            : ""
+        }
+        ${sections}
+      </div>
+      ${
+        faq
+          ? `<section class="seo-guide-faq" aria-labelledby="territory-faq-${esc(slug)}">
+        <h2 id="territory-faq-${esc(slug)}" class="blog-article__h2">Preguntas frecuentes</h2>
+        <div class="faq-list">${faq}</div>
+      </section>`
+          : ""
+      }
+      ${
+        related
+          ? `<footer class="blog-article__footer">
+        <nav class="blog-related" aria-label="Enlaces relacionados">
+          <p class="blog-related__label">Relacionado</p>
+          <ul>${related}</ul>
+        </nav>
+      </footer>`
+          : ""
+      }
     </article>`;
 }
 
@@ -912,17 +1056,14 @@ function buildBlogPostPage(post) {
   };
   const schemas = buildSchemas({ ...page, type: "blog-post" });
   schemas.push(blogPostSchema(post, pagePath));
+  if (post.faq?.length) schemas.push(faqPageSchema(post.faq));
   const ctaHref = prefix + "#contacto-form";
 
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
 ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.image })}
-  <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[3])}</script>
-  <script type="application/ld+json">${JSON.stringify(schemas[4])}</script>
+  ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
 </head>
 <body class="site-v2 seo-page seo-page--blog-post">
   <header class="site-header">
@@ -1204,6 +1345,7 @@ function navLinks(prefix) {
           <div class="nav-links">
             <a href="${prefix}servicios/">Servicios</a>
             <a href="${prefix}territorios/">Territorios</a>
+            <a href="${prefix}inteligencia-territorial/">Inteligencia</a>
             <a href="${prefix}casos-de-estudio/">Casos</a>
             <a href="${prefix}blog/">Blog</a>
             <a href="${prefix}guias/">Guías</a>
@@ -1333,6 +1475,7 @@ function buildSecondaryPage(page) {
   const prefix = rootPrefix(page.path);
   const assets = assetPrefix();
   const hubGuide = page.path === "/guias/" ? hubGuideForPage(page) : null;
+  const isIntelHub = page.path === "/inteligencia-territorial/";
   const pageView = hubGuide
     ? {
         ...page,
@@ -1349,6 +1492,17 @@ function buildSecondaryPage(page) {
     schemas.push(articleSchema(hubGuide, page.path));
     if (hubGuide.faq?.length) schemas.push(faqPageSchema(hubGuide.faq));
   }
+  if (isIntelHub) {
+    schemas.push(websiteSchema());
+    schemas.push(articleSchema({ ...intelligenceHub, h1: page.h1, description: page.description, image: site.defaultOgImage }, page.path));
+    if (intelligenceHub.faq?.length) schemas.push(faqPageSchema(intelligenceHub.faq));
+  }
+  const territorySlug = page.type === "territory" ? territorySlugFromPath(page.path) : "";
+  const territoryRich = territorySlug ? territoriesContent[territorySlug] : null;
+  if (territoryRich) {
+    schemas.push(articleSchema({ ...territoryRich, h1: page.h1, description: page.description }, page.path));
+    if (territoryRich.faq?.length) schemas.push(faqPageSchema(territoryRich.faq));
+  }
   const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
   const ctaHref = prefix + (hubGuide ? "servicios/busqueda-personalizada/" : "#contacto-form");
   const ctaEvent = hubGuide ? "cta_busqueda" : cta.event;
@@ -1363,8 +1517,10 @@ function buildSecondaryPage(page) {
     extraContent = buildBlogIndexContent(prefix);
   } else if (page.path === "/guias/") {
     extraContent = buildGuidesHubContent(page, prefix);
-  } else if (page.type === "territory" && page.keywords) {
-    extraContent = `<p class="seo-keywords">Búsquedas relacionadas: ${page.keywords.map(esc).join(" · ")}</p>`;
+  } else if (page.path === "/inteligencia-territorial/") {
+    extraContent = buildIntelligenceHubContent(prefix);
+  } else if (page.type === "territory") {
+    extraContent = buildTerritoryRichContent(page, prefix);
   } else if (page.type === "service") {
     const slug = page.path.split("/").filter(Boolean).pop();
     const svc = catalogBySlug(slug);
@@ -1390,7 +1546,7 @@ ${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
   ${schemas.slice(page.service ? 5 : 4).map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}
 </head>
-<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : ""}">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : isIntelHub ? " seo-page--intel" : page.type === "territory" && territoryRich ? " seo-page--territory-rich" : ""}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -1491,7 +1647,9 @@ function buildSitemap() {
           ? "1.0"
           : p.type === "guide-hub"
             ? "0.85"
-            : p.type === "campaign"
+            : p.type === "intelligence-hub"
+              ? "0.88"
+              : p.type === "campaign"
               ? "0.85"
             : p.type === "guide"
               ? "0.85"

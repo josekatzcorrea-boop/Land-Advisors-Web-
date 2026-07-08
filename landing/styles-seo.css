@@ -1230,3 +1230,57 @@
 .blog-article--guide .eeat-byline {
   padding-top: 1.25rem;
 }
+
+/* Hub inteligencia territorial */
+.intel-clusters {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .intel-clusters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.intel-cluster__desc {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #5a6a75);
+  font-size: 0.95rem;
+}
+
+.intel-cluster__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intel-cluster__list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(5, 44, 77, 0.06);
+}
+
+.intel-cluster__list li:last-child {
+  border-bottom: none;
+}
+
+.intel-cluster__meta {
+  font-size: 0.78rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.territory-definition {
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.territory-definition p {
+  margin: 0;
+}

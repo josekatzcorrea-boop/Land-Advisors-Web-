@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.landadvisors.cl/servicios/asesoria-compra/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.landadvisors.cl/servicios/estudio-potencial-inmobiliario/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -67,6 +73,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.landadvisors.cl/inteligencia-territorial/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
     <loc>https://www.landadvisors.cl/casos-de-estudio/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -92,6 +104,24 @@
   </url>
   <url>
     <loc>https://www.landadvisors.cl/blog/costos-habilitacion-terreno-contorno-rural/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.landadvisors.cl/blog/prc-contorno-rural-puerto-varas/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.landadvisors.cl/blog/conectividad-real-contorno-rural/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.landadvisors.cl/blog/vocacion-suelo-contorno-rural/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>

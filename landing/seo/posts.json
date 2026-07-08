@@ -212,8 +212,118 @@
       ],
       "related": [
         { "label": "Parte 1: Plusvalía en el contorno rural", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
+        { "label": "Parte 3: PRC y contorno rural", "href": "blog/prc-contorno-rural-puerto-varas/" },
         { "label": "Estudio de potencial inmobiliario", "href": "servicios/estudio-potencial-inmobiliario/" },
         { "label": "Diagnóstico estratégico (1 UF)", "href": "servicios/diagnostico-estrategico/" }
+      ]
+    },
+    {
+      "slug": "prc-contorno-rural-puerto-varas",
+      "title": "PRC y contorno rural de Puerto Varas | Land Advisors",
+      "description": "Cómo leer el Plan Regulador Comunal en el contorno rural de Puerto Varas: usos permitidos, restricciones y qué verificar antes de ofertar.",
+      "h1": "PRC y contorno rural: qué verificar antes de ofertar",
+      "intro": "El Plan Regulador Comunal (PRC) define qué puedes hacer con un terreno. En el contorno rural de Puerto Varas, entenderlo evita pagar por un potencial que la normativa no respalda.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/caso-puerto-varas.jpg",
+      "imageAlt": "Contorno rural de Puerto Varas",
+      "readMinutes": 7,
+      "series": "Contorno rural de Puerto Varas",
+      "seriesPart": 3,
+      "category": "Normativa territorial",
+      "tags": ["PRC Puerto Varas", "plan regulador comunal", "contorno rural", "normativa terrenos"],
+      "sections": [
+        { "type": "p", "text": "Tercera parte de la serie contorno rural. Tras plusvalía y costos de habilitación, el foco es normativo: qué permite el suelo y qué verificar antes de negociar." },
+        { "type": "h2", "text": "¿Qué es el PRC y por qué importa en el contorno?" },
+        { "type": "p", "text": "El Plan Regulador Comunal ordena zonas, usos, densidades y restricciones. En el periurbano, muchos terrenos tienen reglas distintas al centro urbano. Un aviso puede decir ideal para cabañas y el PRC o reglamento de copropiedad decir otra cosa." },
+        { "type": "h2", "text": "Qué revisamos en un terreno del contorno" },
+        { "type": "ul", "items": ["Zona PRC y usos permitidos", "Restricciones del predio y áreas de riesgo", "Reglamento de copropiedad en parcelaciones", "Coherencia entre promesa del vendedor e instrumento vigente"] },
+        { "type": "h2", "text": "PRC como mapa de lo factible" },
+        { "type": "p", "text": "Usamos la normativa para acotar qué proyectos tienen sentido — no para asustar. Enamorarse del terreno está bien; después conviene preguntar si tu objetivo calza con lo que el suelo permite." },
+        { "type": "note", "text": "Contenido educativo. No constituye asesoría legal. Valida antecedentes con profesionales antes de ofertar." }
+      ],
+      "faq": [
+        { "q": "¿Dónde consulto el PRC de Puerto Varas?", "a": "En la Dirección de Obras Municipales y publicaciones oficiales de la comuna. Conviene revisar la versión vigente." },
+        { "q": "¿El reglamento de copropiedad vale más que el PRC?", "a": "Pueden coexistir restricciones. En parcelaciones, el reglamento puede limitar usos aunque el PRC sea más permisivo." }
+      ],
+      "related": [
+        { "label": "Parte 2: Costos de habilitación", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
+        { "label": "Parte 4: Conectividad real", "href": "blog/conectividad-real-contorno-rural/" },
+        { "label": "Territorio: Puerto Varas", "href": "territorios/puerto-varas/" },
+        { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" }
+      ]
+    },
+    {
+      "slug": "conectividad-real-contorno-rural",
+      "title": "Conectividad real en el contorno rural | Land Advisors",
+      "description": "Cómo evaluar conectividad real al comprar terreno en el contorno rural: tiempos, accesos inscritos y servicios.",
+      "h1": "Conectividad real vs. distancia en el mapa",
+      "intro": "Un terreno puede estar a pocos kilómetros en línea recta y a muchos minutos por camino sin mantención — o más lejos en mapa pero mejor conectado. Esa diferencia cambia precio y vocación.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/galeria/galeria-05.jpg",
+      "imageAlt": "Conectividad en contorno rural del sur de Chile",
+      "readMinutes": 6,
+      "series": "Contorno rural de Puerto Varas",
+      "seriesPart": 4,
+      "category": "Conectividad territorial",
+      "tags": ["conectividad rural", "acceso terrenos", "Puerto Varas", "contorno rural"],
+      "sections": [
+        { "type": "p", "text": "Cuarta parte de la serie. La conectividad es uno de los argumentos de plusvalía más citados — y de los más mal medidos por quien compra desde fuera de la región." },
+        { "type": "h2", "text": "¿Qué es conectividad real?" },
+        { "type": "p", "text": "Tiempo en auto en distintas condiciones, estado del camino, acceso legal inscrito, proximidad a colegios, salud, comercio e internet — todo el año." },
+        { "type": "h2", "text": "Checklist de conectividad" },
+        { "type": "ul", "items": ["Acceso inscrito o camino público estable", "Tiempo real hacia servicios urbanos", "Estado del camino y cruce de quebradas", "Servicios existentes o costo de extensión", "Consolidación del sector aledaño"] },
+        { "type": "note", "text": "Contenido educativo. No constituye asesoría personalizada." }
+      ],
+      "faq": [
+        { "q": "¿Qué es un acceso inscrito?", "a": "Derecho de paso registrado en el Conservador sobre el camino al terreno. Sin acceso legal estable, el predio puede ser difícil de financiar o revender." },
+        { "q": "¿Basta ver el terreno un día soleado?", "a": "Conviene contrastar invierno y verano. El clima lluvioso cambia tiempos y habitabilidad percibida." }
+      ],
+      "related": [
+        { "label": "Parte 3: PRC", "href": "blog/prc-contorno-rural-puerto-varas/" },
+        { "label": "Parte 5: Vocación del suelo", "href": "blog/vocacion-suelo-contorno-rural/" },
+        { "label": "Guía comprar terreno", "href": "guias/" },
+        { "label": "Caso Puerto Varas", "href": "casos-de-estudio/puerto-varas-restriccion-comercial/" }
+      ]
+    },
+    {
+      "slug": "vocacion-suelo-contorno-rural",
+      "title": "Vocación del suelo en el contorno rural | Land Advisors",
+      "description": "Casa, cabañas, patrimonio o comercio: cómo identificar la vocación real de un terreno en el contorno rural antes de comprar.",
+      "h1": "Vocación del suelo: casa, cabañas, patrimonio o negocio",
+      "intro": "No todo terreno bonito sirve para todo proyecto. La vocación del suelo cierra la serie contorno rural: qué uso tiene sentido en ese predio y sector.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/galeria/galeria-04.jpg",
+      "imageAlt": "Vocación habitacional y turística en contorno rural",
+      "readMinutes": 7,
+      "series": "Contorno rural de Puerto Varas",
+      "seriesPart": 5,
+      "category": "Vocación territorial",
+      "tags": ["vocación suelo", "cabañas sur de Chile", "contorno rural", "Puerto Varas"],
+      "sections": [
+        { "type": "p", "text": "Quinta parte de la serie. Integramos plusvalía, costos, normativa y conectividad: ¿para qué proyecto calza este terreno?" },
+        { "type": "h2", "text": "Cuatro objetivos frecuentes" },
+        { "type": "ul", "items": ["Familia y calidad de vida", "Cabañas o turismo", "Inversión patrimonial", "Comercio o servicios"] },
+        { "type": "h2", "text": "Señales por vocación" },
+        { "type": "ul", "items": ["Vivienda → ruta estable, servicios, habitabilidad anual", "Cabañas → demanda turística, reglamento sin prohibición de alojamiento", "Patrimonio → precio entrada vs. salida conservador", "Comercio → flujo vehicular y uso permitido en PRC"] },
+        { "type": "h2", "text": "Cierre de la serie" },
+        { "type": "p", "text": "Comprar con criterio implica leer plusvalía, sumar costos, verificar normativa, medir conectividad y alinear vocación. La reunión estratégica ordena próximos pasos; la búsqueda personalizada filtra alternativas con este marco." },
+        { "type": "note", "text": "Contenido educativo. No promesa de rentabilidad." }
+      ],
+      "faq": [
+        { "q": "¿Puedo armar cabañas en cualquier terreno rural?", "a": "No. PRC, reglamento y servicios pueden limitar alojamiento turístico en un predio concreto." },
+        { "q": "¿Qué servicio encaja después de la serie?", "a": "Diagnóstico si no tienes zona; búsqueda personalizada para alternativas filtradas; estudio de potencial si ya tienes un terreno en vista." }
+      ],
+      "related": [
+        { "label": "Parte 1: Plusvalía", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
+        { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
+        { "label": "Guía comprar terreno", "href": "guias/" },
+        { "label": "Búsqueda personalizada", "href": "servicios/busqueda-personalizada/" }
       ]
     }
   ],

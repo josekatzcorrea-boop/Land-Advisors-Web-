@@ -54,11 +54,11 @@
 - EEAT byline en guía y blog
 - Hub casos actualizado
 
-### Fase 2 — sep–nov 2026
-- Serie contorno rural parts 3–5
-- Enriquecer páginas territorio (1.500+ palabras)
-- Hub `/inteligencia-territorial/` (índice)
-- Página asesoría de compra 2,5%
+### Fase 2 — jul 2026 ✓
+- Serie contorno rural parts 3–5 (PRC, conectividad, vocación)
+- Puerto Varas enriquecido (~1.500 palabras + FAQ)
+- Hub `/inteligencia-territorial/`
+- Página `/servicios/asesoria-compra/`
 
 ### Fase 3 — dic 2026–jun 2027
 - Contenido nacional «desde Santiago»

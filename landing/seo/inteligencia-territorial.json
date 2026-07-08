@@ -1,0 +1,63 @@
+{
+  "h1": "Inteligencia territorial",
+  "intro": "Leemos suelo, normativa, conectividad y mercado local antes de recomendar un terreno. Esta biblioteca reúne la serie sobre contorno rural, territorios donde operamos y casos reales — para decidir con criterio, no con el impulso del aviso.",
+  "author": "José Hernán Katz C.",
+  "datePublished": "2026-07-08",
+  "dateModified": "2026-07-08",
+  "readMinutes": 8,
+  "clusters": [
+    {
+      "label": "Serie: contorno rural de Puerto Varas",
+      "description": "Cinco partes para leer plusvalía, costos, normativa, conectividad y vocación del suelo en el periurbano.",
+      "links": [
+        { "href": "blog/plusvalia-contorno-rural-puerto-varas/", "label": "Parte 1 — Plusvalía territorial", "meta": "6 min" },
+        { "href": "blog/costos-habilitacion-terreno-contorno-rural/", "label": "Parte 2 — Costos de habilitación", "meta": "5 min" },
+        { "href": "blog/prc-contorno-rural-puerto-varas/", "label": "Parte 3 — PRC y contorno rural", "meta": "7 min" },
+        { "href": "blog/conectividad-real-contorno-rural/", "label": "Parte 4 — Conectividad real vs. mapa", "meta": "6 min" },
+        { "href": "blog/vocacion-suelo-contorno-rural/", "label": "Parte 5 — Vocación del suelo", "meta": "7 min" }
+      ]
+    },
+    {
+      "label": "Territorios",
+      "description": "Lectura de mercado por comuna en la cuenca del Lago Llanquihue y Malalcahuello.",
+      "links": [
+        { "href": "territorios/puerto-varas/", "label": "Puerto Varas", "meta": "Guía territorial" },
+        { "href": "territorios/frutillar/", "label": "Frutillar", "meta": "Guía territorial" },
+        { "href": "territorios/llanquihue/", "label": "Llanquihue", "meta": "Guía territorial" },
+        { "href": "territorios/malalcahuello/", "label": "Malalcahuello", "meta": "Guía territorial" }
+      ]
+    },
+    {
+      "label": "Casos y aprendizajes",
+      "description": "Decisiones reales con problema, análisis, resultado y aprendizaje transferible.",
+      "links": [
+        { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — restricción comercial", "meta": "+50%" },
+        { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — brecha de precio", "meta": "26M → 42M" },
+        { "href": "casos-de-estudio/llanquihue-valor-presente-futuro/", "label": "Llanquihue — valor presente vs. futuro", "meta": "4.400 UF" }
+      ]
+    },
+    {
+      "label": "Comprar mejor",
+      "description": "El punto de partida si aún no tienes zona ni criterio definido.",
+      "links": [
+        { "href": "guias/", "label": "Guía: comprar terreno en el sur de Chile", "meta": "10 min" },
+        { "href": "servicios/diagnostico-estrategico/", "label": "Diagnóstico estratégico (1 UF)", "meta": "Servicio" },
+        { "href": "servicios/busqueda-personalizada/", "label": "Búsqueda personalizada (5 UF)", "meta": "Servicio" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es inteligencia territorial en Land Advisors?",
+      "a": "Es la lectura integrada de suelo, normativa, conectividad, mercado local y vocación del predio — antes de recomendar comprar o descartar un terreno. No mostramos propiedades: ayudamos a decidir con criterio."
+    },
+    {
+      "q": "¿Por dónde empiezo si nunca he comprado en el sur?",
+      "a": "La guía para comprar terreno en el sur de Chile ordena el proceso en cinco pasos. Si aún no tienes zona definida, el diagnóstico estratégico (1 UF) es el primer servicio habitual."
+    },
+    {
+      "q": "¿Esto reemplaza asesoría legal?",
+      "a": "No. Nuestros contenidos son educativos y de consultoría territorial. Antes de ofertar conviene contrastar normativa y documentos con abogado y profesionales competentes."
+    }
+  ]
+}
