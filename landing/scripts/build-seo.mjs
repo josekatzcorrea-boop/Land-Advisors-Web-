@@ -775,6 +775,9 @@ function buildBlogArticleBody(post, prefix) {
 }
 
 function buildIntelligenceHubContent(prefix) {
+  const hubImage = intelligenceHub.image || "/images/galeria/galeria-04.jpg";
+  const hubImageAlt = intelligenceHub.imageAlt || "Inteligencia territorial — sur de Chile";
+
   const clusters = (intelligenceHub.clusters || [])
     .map((cluster) => {
       const items = (cluster.links || [])
@@ -800,15 +803,20 @@ function buildIntelligenceHubContent(prefix) {
     .join("");
 
   return `<article class="blog-article blog-article--intel glass-card">
-      ${buildEeatByline(intelligenceHub, prefix)}
-      <div class="blog-article__content">
+      <header class="blog-article__header">
+        <figure class="blog-article__figure">
+          <img src="${prefix}${hubImage.replace(/^\//, "")}" alt="${esc(hubImageAlt)}" width="900" height="506" loading="eager">
+        </figure>
+        ${buildEeatByline(intelligenceHub, prefix)}
+      </header>
+      <div class="blog-article__content blog-article__content--intel">
         <p class="blog-article__lead">${esc(intelligenceHub.intro)}</p>
       </div>
     </article>
     <div class="intel-clusters">${clusters}</div>
     ${
       faq
-        ? `<section class="seo-guide-faq" aria-labelledby="intel-faq-title">
+        ? `<section class="seo-guide-faq intel-faq" aria-labelledby="intel-faq-title">
       <h2 id="intel-faq-title" class="blog-article__h2">Preguntas frecuentes</h2>
       <div class="faq-list">${faq}</div>
     </section>`
@@ -1494,7 +1502,17 @@ function buildSecondaryPage(page) {
   }
   if (isIntelHub) {
     schemas.push(websiteSchema());
-    schemas.push(articleSchema({ ...intelligenceHub, h1: page.h1, description: page.description, image: site.defaultOgImage }, page.path));
+    schemas.push(
+      articleSchema(
+        {
+          ...intelligenceHub,
+          h1: page.h1,
+          description: page.description,
+          image: intelligenceHub.image || site.defaultOgImage,
+        },
+        page.path
+      )
+    );
     if (intelligenceHub.faq?.length) schemas.push(faqPageSchema(intelligenceHub.faq));
   }
   const territorySlug = page.type === "territory" ? territorySlugFromPath(page.path) : "";
@@ -1538,7 +1556,7 @@ function buildSecondaryPage(page) {
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
-${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.image } : {})}
+${buildHead(pageView, prefix, assets, hubGuide ? { ogImage: site.url + hubGuide.image } : isIntelHub ? { ogImage: site.url + (intelligenceHub.image || site.defaultOgImage) } : {})}
   <script type="application/ld+json">${JSON.stringify(schemas[0])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[1])}</script>
   <script type="application/ld+json">${JSON.stringify(schemas[2])}</script>

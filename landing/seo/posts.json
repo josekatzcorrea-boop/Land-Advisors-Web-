@@ -1,7 +1,8 @@
 {
   "upcoming": [
     "Cambio de uso de suelo: cuándo tiene sentido económico",
-    "Turismo inmobiliario en la cuenca del Lago Llanquihue"
+    "Turismo inmobiliario en la cuenca del Lago Llanquihue",
+    "Comparativa Puerto Varas vs. Frutillar vs. Llanquihue"
   ],
   "posts": [
     {
@@ -324,6 +325,41 @@
         { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
         { "label": "Guía comprar terreno", "href": "guias/" },
         { "label": "Búsqueda personalizada", "href": "servicios/busqueda-personalizada/" }
+      ]
+    },
+    {
+      "slug": "comprar-terreno-sur-chile-desde-santiago",
+      "title": "Comprar terreno en el sur de Chile desde Santiago | Land Advisors",
+      "description": "Guía para compradores en Santiago: cómo evaluar terrenos en el sur sin conocer la dinámica local, planificar visitas y decidir con criterio territorial.",
+      "h1": "Comprar terreno en el sur de Chile viviendo en Santiago",
+      "intro": "Muchos de nuestros clientes viven en Santiago o en el norte del país. Comprar en Puerto Varas, Frutillar o Llanquihue desde lejos es posible — pero exige un orden distinto al de mirar avisos los fines de semana.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "author": "José Hernán Katz C.",
+      "image": "/images/caso-elegir.jpg",
+      "imageAlt": "Comprador evaluando terrenos en el sur de Chile",
+      "readMinutes": 8,
+      "category": "Compradores desde Santiago",
+      "tags": ["comprar terreno sur de chile", "Santiago", "Puerto Varas", "contorno rural"],
+      "sections": [
+        { "type": "p", "text": "El error más frecuente es enamorarse de la foto en un fin de semana largo y ofertar sin short list filtrada. Desde Santiago conviene invertir primero en criterio territorial — zona, normativa, conectividad, presupuesto total — y después en visitas." },
+        { "type": "h2", "text": "Respuesta directa" },
+        { "type": "p", "text": "Sí, puedes comprar terreno en el sur de Chile viviendo en Santiago. La reunión inicial puede ser online; las visitas se planifican sobre al menos cuatro alternativas filtradas con criterio local — no sobre veinte avisos sueltos." },
+        { "type": "h2", "text": "Orden recomendado" },
+        { "type": "ul", "items": ["Definir objetivo: vivienda, patrimonio, cabañas, comercio", "Acotar comunas compatibles (Puerto Varas, Frutillar, Llanquihue, Malalcahuello)", "Filtrar por presupuesto total: compra + habilitación", "Reunión estratégica online (diagnóstico 1 UF)", "Visita corta al sur con short list — no tour masivo de portales"] },
+        { "type": "h2", "text": "Qué no alcanza desde Santiago" },
+        { "type": "p", "text": "Google Maps no reemplaza tiempos reales de invierno, reglamentos de parcelación ni comparables locales. Por eso existe la búsqueda personalizada: al menos cuatro alternativas, reunión contigo para elegir las tres mejores e informe comparativo." },
+        { "type": "note", "text": "Contenido educativo. No constituye asesoría personalizada." }
+      ],
+      "faq": [
+        { "q": "¿Cuántos viajes necesito al sur?", "a": "Muchos clientes cierran con uno o dos viajes bien planificados, tras filtrar online y en reunión. Depende del avance de la short list y de la negociación." },
+        { "q": "¿Puedo confiar solo en videos del vendedor?", "a": "Son útiles como primera impresión, no como due diligence. Acceso, servicios y normativa requieren verificación territorial." }
+      ],
+      "related": [
+        { "label": "Guía completa: comprar terreno", "href": "guias/" },
+        { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
+        { "label": "Diagnóstico estratégico", "href": "servicios/diagnostico-estrategico/" },
+        { "label": "Territorio Puerto Varas", "href": "territorios/puerto-varas/" }
       ]
     }
   ],

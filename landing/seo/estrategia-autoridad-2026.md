@@ -60,7 +60,12 @@
 - Hub `/inteligencia-territorial/`
 - Página `/servicios/asesoria-compra/`
 
-### Fase 3 — dic 2026–jun 2027
+### Fase 3 — jul 2026 ✓
+- Frutillar, Llanquihue y Malalcahuello enriquecidos (guías territoriales)
+- Artículo nacional: comprar desde Santiago
+- Hub inteligencia: imagen hero + padding en clusters
+
+### Fase 4 — próximo
 - Contenido nacional «desde Santiago»
 - Guest experts (notario, arquitecto)
 - Actualización trimestral de hubs

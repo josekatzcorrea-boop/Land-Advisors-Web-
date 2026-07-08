@@ -1238,6 +1238,51 @@
   margin-top: 1.5rem;
 }
 
+.intel-cluster {
+  padding: 1.35rem 1.5rem 1.5rem;
+}
+
+.intel-cluster .section-label {
+  margin: 0 0 0.65rem;
+}
+
+.blog-article--intel {
+  overflow: hidden;
+}
+
+.blog-article--intel .blog-article__figure {
+  margin: 0;
+}
+
+.blog-article--intel .eeat-byline {
+  padding: 1rem 1.5rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(5, 44, 77, 0.08);
+}
+
+.blog-article--intel .blog-article__content--intel {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.seo-page--intel .intel-faq {
+  margin-top: 2rem;
+}
+
+.seo-page--intel .intel-faq .blog-article__h2 {
+  padding: 0 0.25rem;
+}
+
+.intel-cluster__list a {
+  color: var(--brand-deep, #052c4d);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.intel-cluster__list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 @media (min-width: 768px) {
   .intel-clusters {
     grid-template-columns: repeat(2, 1fr);

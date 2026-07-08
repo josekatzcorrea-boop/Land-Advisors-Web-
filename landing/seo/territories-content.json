@@ -105,5 +105,87 @@
       { "label": "Inteligencia territorial — biblioteca", "href": "inteligencia-territorial/" },
       { "label": "Búsqueda personalizada", "href": "servicios/busqueda-personalizada/" }
     ]
+  },
+  "frutillar": {
+    "author": "José Hernán Katz C.",
+    "datePublished": "2026-07-08",
+    "dateModified": "2026-07-08",
+    "readMinutes": 11,
+    "image": "/images/caso-frutillar.jpg",
+    "imageAlt": "Contorno rural de Frutillar, Cuenca del Lago Llanquihue",
+    "definition": "Contorno rural de Frutillar: periurbano conectado a la ciudad, con fuerte vocación patrimonial, turística y de segunda vivienda — distinto del campo aislado.",
+    "sections": [
+      { "type": "p", "text": "Frutillar combina patrimonio cultural, turismo y demanda de segunda vivienda con un mercado más pausado que Puerto Varas. Comprar terreno aquí exige leer qué sectores tienen conectividad real, cuáles están sobrevalorados por la marca «Frutillar» y dónde aún hay brechas de precio verificables." },
+      { "type": "h2", "text": "Dinámica local" },
+      { "type": "p", "text": "La oferta mezcla parcelaciones orientadas a vivienda y turismo, terrenos sueltos con acceso variable y proyectos con narrativa patrimonial. Muchos compradores llegan desde fuera de la región atraídos por calidad de vida; no todos los predios calzan con cabañas, vivienda permanente o patrimonio a largo plazo." },
+      { "type": "ul", "items": ["Segunda vivienda y turismo en sectores con demanda comprobada", "Precios que a veces incorporan prima «Frutillar» sin respaldo de habilitación", "Oportunidades en brecha de precio y liquidez del vendedor — ver caso real", "Normativa y reglamentos de copropiedad críticos para alojamiento turístico"] },
+      { "type": "h2", "text": "Qué miramos antes de recomendar" },
+      { "type": "ul", "items": ["Conectividad real hacia centro, Teatro del Lago y servicios", "Reglamento de parcelación y usos permitidos", "Comparables locales — no promedio regional", "Costos de habilitación vs. valor de salida conservador"] },
+      { "type": "note", "text": "Contenido educativo. No constituye asesoría legal ni promesa de rentabilidad." }
+    ],
+    "faq": [
+      { "q": "¿Frutillar es más barato que Puerto Varas?", "a": "Depende del sector y del estado del terreno. Algunos contornos de Frutillar tienen precio por metro cuadrado menor, pero la habilitación o la conectividad pueden cerrar la brecha." },
+      { "q": "¿Conviene Frutillar para cabañas?", "a": "Puede convenir en sectores con demanda turística comprobada y normativa que lo permita. Hay que verificar PRC y reglamento antes de ofertar." }
+    ],
+    "related": [
+      { "label": "Caso Frutillar: brecha de precio", "href": "casos-de-estudio/frutillar-brecha-precio/" },
+      { "label": "Guía comprar terreno sur", "href": "guias/" },
+      { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
+      { "label": "Puerto Varas — guía territorial", "href": "territorios/puerto-varas/" }
+    ]
+  },
+  "llanquihue": {
+    "author": "José Hernán Katz C.",
+    "datePublished": "2026-07-08",
+    "dateModified": "2026-07-08",
+    "readMinutes": 11,
+    "image": "/images/caso-llanquihue.jpg",
+    "imageAlt": "Sector rural en Llanquihue con potencial de desarrollo",
+    "definition": "Contorno rural de Llanquihue: periurbano en expansión, con parcelaciones activas y dinámica distinta a Puerto Varas y Frutillar — clave distinguir valor presente vs. valor futuro.",
+    "sections": [
+      { "type": "p", "text": "Llanquihue muestra urbanización y parcelaciones en crecimiento. El mercado mezcla proyectos a medio urbanizar, lotes sueltos y terrenos con potencial post-habilitación. Es un territorio donde conviene contrastar precio de lista con costos pendientes y liquidez real." },
+      { "type": "h2", "text": "Valor presente vs. valor futuro" },
+      { "type": "p", "text": "Un proyecto «a medio urbanizar» puede verse barato por lote, pero los costos de urbanización pendientes, cuotas de copropiedad y plazos de tramitación cambian la cuenta. En nuestro caso Llanquihue (4 terrenos, 4.400 UF) la oportunidad estaba en valor presente negociado con liquidez del desarrollador — no en una promesa de plusvalía lejana." },
+      { "type": "h2", "text": "Señales territoriales" },
+      { "type": "ul", "items": ["Estado de urbanización y servicios efectivos", "Distancia y tiempo real a Puerto Varas y Frutillar", "Demanda por vivienda permanente vs. inversión especulativa", "Comparables post-habilitación en el mismo sector"] },
+      { "type": "note", "text": "Resultados pasados no garantizan resultados futuros. Contenido educativo." }
+    ],
+    "faq": [
+      { "q": "¿Conviene comprar en un loteo a medio urbanizar?", "a": "Puede convenir si el valor presente cierra con comparables y los costos pendientes están cuantificados. Si el precio ya incorpora valor futuro sin respaldo, el riesgo sube." },
+      { "q": "¿Llanquihue compite con Puerto Varas?", "a": "Son mercados relacionados pero distintos. Muchos compradores comparan ambos sin ajustar por conectividad, servicios y tipo de oferta." }
+    ],
+    "related": [
+      { "label": "Caso Llanquihue: valor presente vs. futuro", "href": "casos-de-estudio/llanquihue-valor-presente-futuro/" },
+      { "label": "Parte 2: Costos de habilitación", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
+      { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
+      { "label": "Búsqueda personalizada", "href": "servicios/busqueda-personalizada/" }
+    ]
+  },
+  "malalcahuello": {
+    "author": "José Hernán Katz C.",
+    "datePublished": "2026-07-08",
+    "dateModified": "2026-07-08",
+    "readMinutes": 10,
+    "image": "/images/galeria/galeria-05.jpg",
+    "imageAlt": "Paisaje de Malalcahuello y entorno cordillerano",
+    "definition": "Malalcahuello: territorio de turismo inmobiliario y segunda vivienda con lógica distinta a la cuenca del Lago Llanquihue — conectividad, estacionalidad y vocación del suelo son variables críticas.",
+    "sections": [
+      { "type": "p", "text": "Malalcahuello atrae compradores por paisaje, nieve y segunda vivienda. No es una extensión de Puerto Varas: los tiempos de viaje, la estacionalidad turística y la oferta de servicios condicionan qué proyectos tienen sentido." },
+      { "type": "h2", "text": "Turismo inmobiliario con criterio" },
+      { "type": "p", "text": "Cabañas, renta corta o patrimonio pueden calzar — pero no en todo predio ni en toda temporada. Revisamos normativa local, acceso invernal, demanda real de alojamiento y costos de habilitación antes de validar un precio." },
+      { "type": "h2", "text": "Qué evaluamos" },
+      { "type": "ul", "items": ["Conectividad todo el año — no solo verano", "Servicios básicos y costo de extensión", "Instrumentos de planificación y reglamentos", "Liquidez de salida en escenario conservador"] },
+      { "type": "note", "text": "Contenido educativo. Verifica normativa y antecedentes con profesionales." }
+    ],
+    "faq": [
+      { "q": "¿Malalcahuello es comparable con Puerto Varas?", "a": "No directamente. Son cuencas y dinámicas distintas. Comparar precios sin ajustar por conectividad, servicios y vocación lleva a decisiones erróneas." },
+      { "q": "¿Land Advisors opera en Malalcahuello?", "a": "Sí, con lectura territorial específica. No vendemos terrenos: filtramos y recomendamos según tu objetivo." }
+    ],
+    "related": [
+      { "label": "Parte 5: Vocación del suelo", "href": "blog/vocacion-suelo-contorno-rural/" },
+      { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" },
+      { "label": "Diagnóstico estratégico", "href": "servicios/diagnostico-estrategico/" },
+      { "label": "Guía comprar terreno", "href": "guias/" }
+    ]
   }
 }

@@ -5,6 +5,8 @@
   "datePublished": "2026-07-08",
   "dateModified": "2026-07-08",
   "readMinutes": 8,
+  "image": "/images/galeria/galeria-04.jpg",
+  "imageAlt": "Contorno rural y lectura territorial en la cuenca del Lago Llanquihue",
   "clusters": [
     {
       "label": "Serie: contorno rural de Puerto Varas",
@@ -21,10 +23,10 @@
       "label": "Territorios",
       "description": "Lectura de mercado por comuna en la cuenca del Lago Llanquihue y Malalcahuello.",
       "links": [
-        { "href": "territorios/puerto-varas/", "label": "Puerto Varas", "meta": "Guía territorial" },
-        { "href": "territorios/frutillar/", "label": "Frutillar", "meta": "Guía territorial" },
-        { "href": "territorios/llanquihue/", "label": "Llanquihue", "meta": "Guía territorial" },
-        { "href": "territorios/malalcahuello/", "label": "Malalcahuello", "meta": "Guía territorial" }
+        { "href": "territorios/puerto-varas/", "label": "Puerto Varas", "meta": "Guía completa" },
+        { "href": "territorios/frutillar/", "label": "Frutillar", "meta": "Guía completa" },
+        { "href": "territorios/llanquihue/", "label": "Llanquihue", "meta": "Guía completa" },
+        { "href": "territorios/malalcahuello/", "label": "Malalcahuello", "meta": "Guía completa" }
       ]
     },
     {
