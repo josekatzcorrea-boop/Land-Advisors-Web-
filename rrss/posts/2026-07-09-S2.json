@@ -5,7 +5,7 @@
   "zona_horaria": "America/Santiago",
   "pilar": "S",
   "campana": null,
-  "tema": "Organiza tu ruta de visitas con mapa de mercado y criterio (1 UF)",
+  "tema": "Diagnóstico 1 UF — ordena el viaje al sur",
   "formato": "single",
   "slides_count": 1,
   "redes": ["instagram", "facebook"],
@@ -15,13 +15,14 @@
   "post_generado": "rrss/posts/2026-07-09-S2.json",
   "piezas_visuales": "rrss/posts/2026-07-09-S2/index.html",
   "export_output": "rrss/output/2026-07-09-S2/",
-  "titulo_interno": "Servicio — diagnóstico estratégico 1 UF · pilar S",
-  "caption_ig": "Antes de recorrer terrenos en el sur, un mapa de mercado te ahorra viajes — y te deja espacio para sorprenderte con lo correcto.\n\nDiagnóstico estratégico · 1 UF\n\n→ Reunión para entender tu objetivo y presupuesto\n→ Zonas recomendadas en la cuenca del Lago Llanquihue y Malalcahuello\n→ Criterios para filtrar oferta antes de visitar\n→ Ruta de visitas más ordenada\n\nIdeal si vienes desde Santiago o si ya viste avisos y quieres llegar con claridad.\n\n¿Planeas visitar el sur en las próximas semanas?\n\nAgenda tu diagnóstico — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #DiagnósticoEstratégico #TerrenosChile #SurDeChile #PuertoVaras #ContornoRural #InversiónInmobiliaria #InteligenciaTerritorial",
-  "caption_fb": "Diagnóstico estratégico · 1 UF — ordena tu ruta antes de recorrer terrenos en el sur.\n\nIncluye reunión, zonas recomendadas y criterios para filtrar oferta en la cuenca del Lago Llanquihue y Malalcahuello.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-diagnostico-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile #DiagnósticoEstratégico",
+  "titulo_interno": "Servicio — diagnóstico 1 UF · single cover-light",
+  "caption_ig": "¿Vas a recorrer terrenos en el sur en las próximas semanas?\n\nUn diagnóstico estratégico ordena el viaje antes de que empiece: qué buscas, dónde tiene sentido mirar y con qué preguntas enfrentar cada terreno.\n\nDiagnóstico estratégico · 1 UF\n\n→ Reunión para definir objetivo y presupuesto\n→ Zonas recomendadas en Puerto Varas, Frutillar, Llanquihue y Malalcahuello\n→ Criterios para filtrar avisos antes de visitar\n→ Ruta de recorridos más eficiente\n\nIdeal si vienes desde Santiago o si ya viste publicaciones y quieres llegar con foco.\n\nAgenda tu diagnóstico — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #DiagnósticoEstratégico #PuertoVaras #LagoLlanquihue",
+  "caption_fb": "Diagnóstico estratégico · 1 UF — mapa y ruta antes de recorrer terrenos en el sur.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-diagnostico-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
   "cta_texto": "Agenda tu diagnóstico estratégico",
   "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-diagnostico-jul2026",
   "notas_diseno": {
     "formato": "1080×1350 vertical · single",
-    "instagram_prefix": "land-advisors-diagnostico"
+    "instagram_prefix": "land-advisors-diagnostico",
+    "layouts": "cover-light blanco · sin foto full"
   }
 }

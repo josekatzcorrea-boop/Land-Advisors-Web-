@@ -1,0 +1,28 @@
+{
+  "id": "2026-07-15-E3",
+  "fecha_publicacion": "2026-07-15",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "E",
+  "campana": null,
+  "tema": "¿Ya tienes un terreno en mente? Afina antes de ofertar",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": true,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-15-E3.json",
+  "piezas_visuales": "rrss/posts/2026-07-15-E3/index.html",
+  "export_output": "rrss/output/2026-07-15-E3/",
+  "titulo_interno": "Educación — afinar elección · layouts mixtos",
+  "caption_ig": "¿Encontraste un terreno que te convence después de la visita?\n\nEs un buen momento para pausar y contrastar: precio frente al mercado local, acceso real, reglamento y si tu proyecto cabe en el lote.\n\nSi resiste el análisis, avanzas con más respaldo. Si no, se puede seguir buscando hasta una alternativa sólida.\n\nDesliza el carrusel 👉\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #ContornoRural #EducaciónInmobiliaria",
+  "caption_fb": "¿Ya tienes un terreno en mente? Cómo afinar la elección antes de ofertar.\n\nContenido educativo. Cada terreno requiere evaluación específica.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-afinar-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-afinar-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-afinar-eleccion",
+    "layouts": "split · cover-light · stat · light chips · photo-natural · cta oscuro"
+  }
+}

@@ -5,7 +5,7 @@
   "zona_horaria": "America/Santiago",
   "pilar": "E",
   "campana": null,
-  "tema": "¿Casa, cabañas o negocio? Confirmemos juntos que el suelo acompaña tu idea",
+  "tema": "¿Casa, cabañas o negocio? Proyecto claro + terreno compatible",
   "formato": "carrusel",
   "slides_count": 6,
   "redes": ["instagram", "facebook"],
@@ -15,14 +15,14 @@
   "post_generado": "rrss/posts/2026-07-08-E2.json",
   "piezas_visuales": "rrss/posts/2026-07-08-E2/index.html",
   "export_output": "rrss/output/2026-07-08-E2/",
-  "titulo_interno": "Educación — uso de suelo vs proyecto · pilar E",
-  "caption_ig": "¿Casa, cabañas o negocio? Si ya imaginas el proyecto, el siguiente paso es confirmar que el suelo lo acompaña.\n\nEnamorarse del terreno está bien. Después conviene cruzar tu idea con las reglas del lugar, el reglamento del loteo y la realidad del entorno — sin apagar la emoción.\n\nDesliza el carrusel 👉\n→ Tres proyectos que suelen mezclarse en la visita\n→ Qué reglas conviene revisar\n→ Señales en el terreno y el acceso\n→ Cómo validar sin perder lo que te gustó del lugar\n\n¿Qué proyecto imaginas para tu terreno en el sur?\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #TerrenosChile #SurDeChile #UsoDeSuelo #ContornoRural #PuertoVaras #EducaciónInmobiliaria #InteligenciaTerritorial #LagoLlanquihue",
-  "caption_fb": "¿Casa, cabañas o negocio? Antes de ofertar, conviene confirmar que el suelo acompaña tu idea.\n\nCarrusel educativo:\n\n• Tres tipos de proyecto frecuentes en el contorno rural\n• Normas del país, de la comuna y reglamento del loteo\n• Acceso, servicios y entorno\n• Validar con calma — sin perder lo que te emocionó\n\nContenido educativo. Cada terreno requiere evaluación específica.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-uso-suelo-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile #UsoDeSuelo",
+  "titulo_interno": "Educación — proyecto + terreno · layouts variados",
+  "caption_ig": "¿Casa, cabañas o negocio en el sur?\n\nTener una imagen clara del proyecto es un buen comienzo. El paso siguiente es revisar si el terreno la sostiene: precio, acceso, reglamento y uso real del lugar.\n\nDesliza el carrusel 👉\n→ Tres tipos de proyecto que suelen mezclarse\n→ Preguntas antes de ofertar\n→ Qué mirar más allá de la foto\n→ Cómo comparar sin apurar la decisión\n\n¿Qué proyecto imaginas para el sur?\n\nContenido educativo. Cada terreno requiere evaluación específica según normativa vigente.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #ContornoRural #LagoLlanquihue",
+  "caption_fb": "¿Casa, cabañas o negocio? Carrusel educativo sobre proyecto y terreno compatible en el sur de Chile.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-proyecto-terreno-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
   "cta_texto": "Agenda tu reunión estratégica",
-  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-uso-suelo-jul2026",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-proyecto-terreno-jul2026",
   "notas_diseno": {
     "formato": "1080×1350 vertical",
-    "instagram_prefix": "land-advisors-uso-suelo",
-    "tono": "aliado_sutil · validar emoción + factibilidad"
+    "instagram_prefix": "land-advisors-proyecto-terreno",
+    "layouts": "intro-blanco · contraste · split · cover azul · photo-hero · cta-minimal"
   }
 }

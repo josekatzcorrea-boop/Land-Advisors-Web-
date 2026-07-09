@@ -275,18 +275,21 @@
     {
       "slug": "busqueda-personalizada-30",
       "template": "promo",
-      "title": "Búsqueda personalizada 30% dto. | Diagnóstico gratis | Land Advisors",
-      "description": "Oferta hasta 30 de septiembre: búsqueda personalizada de terrenos en el sur de Chile por 3,5 UF (antes 5 UF), diagnóstico incluido y acompañamiento integral hasta la compra. Las 3,5 UF se descuentan de la comisión si compras.",
-      "h1": "Búsqueda personalizada de terrenos",
-      "heroLead": "Te ayudamos a comprar el terreno correcto en el sur de Chile — con criterio territorial, no catálogo masivo. Te acompañamos de manera integral durante todo el proceso de compra. Enamorarse del terreno está bien; nosotros ordenamos con datos.",
+      "promoFlow": "diagnostico-first",
+      "title": "Diagnóstico estratégico gratis | Búsqueda 30% dto. | Land Advisors",
+      "description": "Promoción hasta 30 de septiembre: diagnóstico estratégico gratis (valor 1 UF) sin compromiso. Luego, si te sirve, cotización de búsqueda personalizada a 3,5 UF (antes 5 UF) en Puerto Varas, Frutillar y Llanquihue.",
+      "sectionLabel": "Diagnóstico estratégico",
+      "h1": "Obtén tu diagnóstico gratis",
+      "h1Gradient": "y cotiza búsqueda con 30% dto.",
+      "heroLead": "¿Buscas terreno en el sur y no sabes por dónde empezar? Primero ordenamos tu objetivo, zonas y criterios — sin costo y sin obligación de contratar más. Si después quieres que busquemos contigo, la búsqueda personalizada tiene 30% de descuento hasta el 30 de septiembre.",
       "deadline": "2026-09-30",
       "deadlineLabel": "30 de septiembre de 2026",
       "pricePromo": "3,5 UF",
       "priceRegular": "5 UF",
       "priceDiagnostic": "1 UF",
       "discountPercent": 30,
-      "commissionCredit": "Si llegas a una decisión de compra, las 3,5 UF se descuentan del honorario de asesoría (2,5% del valor de compra).",
-      "whatsappIntro": "Hola, vi la oferta de Búsqueda personalizada (30% dto., válida hasta 30 de septiembre). Me interesa saber si aplica para mi caso.",
+      "commissionCredit": "Si más adelante compras con nuestra asesoría (2,5%), las 3,5 UF pagadas por la búsqueda se descuentan de ese honorario.",
+      "whatsappIntro": "Hola, vi la promoción de diagnóstico estratégico gratis (válida hasta 30 de septiembre). Quiero agendar mi sesión sin compromiso.",
       "image": "/images/hero.jpg",
       "imageAlt": "Paisaje del contorno rural en la cuenca del Lago Llanquihue",
       "imageWidth": 1600,
@@ -295,49 +298,57 @@
       "sideImage": "/images/galeria/galeria-12.jpg",
       "sideImageAlt": "Exploración en terreno con clientes en la cuenca del sur de Chile",
       "sideImageCaption": "Recorrer terrenos es parte natural del proceso — te acompañamos en cada etapa.",
-      "serviceEvent": "cta_busqueda",
+      "serviceEvent": "cta_diagnostico",
       "includes": [
-        "Diagnóstico estratégico incluido (sin costo adicional en esta promoción)",
-        "Selección de al menos 4 alternativas alineadas a tu objetivo y presupuesto",
-        "Reunión contigo para definir las 3 mejores opciones en conjunto",
-        "Informe comparativo de las 3 seleccionadas y recomendación de compra",
-        "Acompañamiento integral durante todo el proceso — desde la búsqueda hasta la decisión de compra"
+        "Diagnóstico estratégico gratis: reunión online o presencial, zonas recomendadas y criterios para evaluar terrenos",
+        "Sin compromiso de contratar búsqueda ni ningún otro servicio",
+        "Si después te sirve: cotización de búsqueda personalizada a 3,5 UF (antes 5 UF) — 30% de descuento",
+        "Búsqueda opcional: ≥4 alternativas, reunión contigo, informe de las 3 mejores y recomendación",
+        "No somos corredora: no vendemos terrenos propios"
       ],
       "steps": [
         {
           "num": "1",
-          "title": "Reunión inicial",
-          "text": "Entendemos tu objetivo: vivienda, inversión, cabañas o proyecto de vida en el contorno rural del sur."
+          "title": "Diagnóstico gratis",
+          "text": "Sesión estratégica sin costo: objetivo, presupuesto, zonas con sentido en Puerto Varas, Frutillar, Llanquihue y Malalcahuello, y en qué fijarte antes de visitar."
         },
         {
           "num": "2",
+          "title": "Cotización sin presión",
+          "text": "Si quieres avanzar, te cotizamos la búsqueda personalizada a 3,5 UF (30% dto.). Si no, te quedas con el mapa y los criterios — sin compromiso extra."
+        },
+        {
+          "num": "3",
           "title": "Búsqueda con criterio",
           "text": "Filtramos territorio, normativa, servicios y precio — no solo lo más visible en portales."
         },
         {
-          "num": "3",
-          "title": "Short list e informe",
-          "text": "Elegimos juntos las 3 mejores alternativas y te entregamos comparación con recomendación."
-        },
-        {
           "num": "4",
-          "title": "Hasta la compra",
-          "text": "Si avanzas a la adquisición, seguimos contigo en negociación, revisión documental y cierre — con las 3,5 UF descontadas de la comisión de asesoría."
+          "title": "Informe y decisión",
+          "text": "Elegimos juntos las 3 mejores alternativas. Si compras con nuestra asesoría, las 3,5 UF se descuentan de la comisión."
         }
       ],
-      "allyText": "Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Acompañamos de manera integral a nuestros clientes durante todo el proceso de compra — no solo en la búsqueda.",
+      "allyText": "Enamorarse del terreno está bien. El diagnóstico ordena zona y criterios antes de perder otro viaje al sur. La búsqueda es opcional — de tu lado, sin presión.",
       "faq": [
         {
+          "q": "¿Debo contratar la búsqueda para obtener el diagnóstico gratis?",
+          "a": "No. El diagnóstico estratégico es gratuito en esta promoción, sin obligación de contratar la búsqueda ni ningún otro servicio."
+        },
+        {
           "q": "¿Qué incluye el diagnóstico estratégico gratis?",
-          "a": "Reunión estratégica, zonas recomendadas según tu objetivo y criterios para evaluar terrenos antes de ofertar. En condiciones normales vale 1 UF; en esta promoción va incluido al contratar la búsqueda personalizada."
+          "a": "Reunión estratégica (online o presencial), zonas recomendadas según tu objetivo y criterios para evaluar terrenos antes de ofertar. Valor habitual: 1 UF."
+        },
+        {
+          "q": "¿Cuándo entra la búsqueda personalizada a 3,5 UF?",
+          "a": "Solo si después del diagnóstico decides que quieres que busquemos contigo. Te entregamos cotización clara; no hay compromiso automático."
         },
         {
           "q": "¿Las 3,5 UF se descuentan si compro un terreno?",
-          "a": "Sí. Si llegas a una decisión de compra y contratas nuestra asesoría de adquisición (2,5% del valor), las 3,5 UF pagadas por la búsqueda personalizada se descuentan de ese honorario."
+          "a": "Sí. Si contratas nuestra asesoría de adquisición (2,5% del valor), las 3,5 UF pagadas por la búsqueda personalizada se descuentan de ese honorario."
         },
         {
-          "q": "¿Hasta cuándo vale la oferta de 3,5 UF?",
-          "a": "Válida para contrataciones confirmadas hasta el 30 de septiembre de 2026, sujeto a disponibilidad de agenda."
+          "q": "¿Hasta cuándo vale la promoción?",
+          "a": "Diagnóstico gratis y búsqueda a 3,5 UF válidos para agendas confirmadas hasta el 30 de septiembre de 2026, sujeto a disponibilidad."
         },
         {
           "q": "¿Trabajan con compradores fuera del sur?",
@@ -348,12 +359,12 @@
           "a": "No. Land Advisors es consultoría territorial: no vendemos terrenos propios; te ayudamos a comprar el correcto con lectura de territorio y mercado local."
         }
       ],
-      "legal": "Precios en UF · sujetos a confirmación en reunión estratégica. Descuento de 3,5 UF aplica al contratar asesoría de compra. No somos corredora ni portal inmobiliario.",
+      "legal": "Diagnóstico gratis sin obligación de contratar otros servicios. Búsqueda a 3,5 UF sujeta a cotización y confirmación. Precios en UF. No somos corredora ni portal inmobiliario.",
       "ads": {
         "utmCampaign": "busqueda-30-sep2026",
         "whatsappToken": "LA-BUSQ30",
         "whatsappPhone": "56999163518",
-        "googleAdsWaUrl": "https://wa.me/56999163518?text=Hola%2C%20vi%20la%20oferta%20de%20B%C3%BAsqueda%20personalizada%20(30%25%20dto.%2C%20v%C3%A1lida%20hasta%2030%20de%20septiembre).%20Me%20interesa%20saber%20si%20aplica%20para%20mi%20caso.%0A%0A%5BRef%3A%20LA-BUSQ30%5D%0A%0A(Ref%3A%20google%20%2F%20paid%20%2F%20busqueda-30-sep2026)",
+        "googleAdsWaUrl": "https://wa.me/56999163518?text=Hola%2C%20vi%20la%20promoci%C3%B3n%20de%20diagn%C3%B3stico%20estrat%C3%A9gico%20gratis%20(v%C3%A1lida%20hasta%2030%20de%20septiembre).%20Quiero%20agendar%20mi%20sesi%C3%B3n%20sin%20compromiso.%0A%0A%5BRef%3A%20LA-BUSQ30%5D%0A%0A(Ref%3A%20google%20%2F%20paid%20%2F%20busqueda-30-sep2026)",
         "audienceNotes": "RM + sur prioritario + zona norte con altos ingresos (minería). Intereses: inversión inmobiliaria, terreno sur Chile, Puerto Varas, calidad de vida.",
         "suggestedDailyBudgetClp": "15000-25000"
       }

@@ -1,0 +1,28 @@
+{
+  "id": "2026-07-14-M2",
+  "fecha_publicacion": "2026-07-14",
+  "hora": "12:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "M",
+  "campana": null,
+  "tema": "Cinco preguntas útiles en la visita al terreno",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-14-M2.json",
+  "piezas_visuales": "rrss/posts/2026-07-14-M2/index.html",
+  "export_output": "rrss/output/2026-07-14-M2/",
+  "titulo_interno": "Metodología — preguntas visita · layouts alternados",
+  "caption_ig": "Recorrer terrenos en el sur es parte natural de comprar. Una buena impresión en sitio no basta para firmar.\n\nCinco preguntas simples — invierno, precio, proyecto, entorno y reflexión al día siguiente — ayudan a decidir con más sustancia.\n\nDesliza 👉\n\n¿Cuál te cuesta más hacer cuando visitas un terreno?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #ContornoRural #Metodología",
+  "caption_fb": "Cinco preguntas para una visita a terreno en el sur — metodología Land Advisors.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-visita-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-visita-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-preguntas-visita",
+    "layouts": "photo-card · light · cover · light · split · cta-minimal"
+  }
+}

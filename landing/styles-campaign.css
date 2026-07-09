@@ -508,6 +508,28 @@
 
 .seo-page--campaign .campaign-body {
   padding: 2.5rem 0 calc(2.5rem + var(--campaign-float-space));
+  background: linear-gradient(180deg, var(--surface-elevated, #f4f7f8) 0%, #fff 100%);
+  color: var(--text, #1a2a33);
+}
+
+/* Visible de inmediato — no depender del scroll reveal (mismo criterio que .seo-body) */
+.seo-page--campaign .campaign-body,
+.seo-page--campaign .campaign-body [data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+.seo-page--campaign .campaign-panel,
+.seo-page--campaign .campaign-step,
+.seo-page--campaign .campaign-ally {
+  color: var(--text, #1a2a33);
+}
+
+.seo-page--campaign .campaign-includes li,
+.seo-page--campaign .campaign-step p,
+.seo-page--campaign .campaign-ally p {
+  color: var(--text-muted, #3d4f5c);
+  line-height: 1.55;
 }
 
 .seo-page--campaign .campaign-grid {

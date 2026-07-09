@@ -34,9 +34,29 @@ function depthFromPath(p) {
   return segs.length;
 }
 
-function assetPrefix() {
-  // Root-absolute: works in production (landing/ = site root) and local serve.ps1 (Contexto root).
-  return "/assets/";
+function assetPrefix(pagePath = "/") {
+  // Rutas relativas: funcionan en file://, serve local y GitHub Pages (landing/ = raíz del sitio).
+  const d = depthFromPath(pagePath);
+  return d === 0 ? "assets/" : "../".repeat(d) + "assets/";
+}
+
+function syncLandingAssets() {
+  const repoAssets = path.join(ROOT, "..", "assets");
+  const dest = path.join(ROOT, "assets");
+  if (!fs.existsSync(repoAssets)) return;
+  fs.mkdirSync(dest, { recursive: true });
+  const files = [
+    "logo-horizontal-3d.jpg",
+    "logo-isotipo-3d.png",
+    "logo-isotipo-3d-transparente.png",
+    "logo-grande-3d-transparente.png",
+  ];
+  for (const file of files) {
+    const src = path.join(repoAssets, file);
+    if (fs.existsSync(src)) {
+      fs.copyFileSync(src, path.join(dest, file));
+    }
+  }
 }
 
 function rootPrefix(pagePath) {
@@ -660,7 +680,7 @@ function renderBlogSection(section) {
 }
 
 function buildBlogIndexContent(prefix) {
-  const assets = assetPrefix();
+  const assets = assetPrefix("/blog/");
   const cards = blogPosts
     .map((post) => {
       const href = `${prefix}blog/${post.slug}/`;
@@ -1148,7 +1168,7 @@ function buildCaseStudyBody(caseStudy, prefix) {
 function buildCaseStudyPage(caseStudy) {
   const pagePath = `/casos-de-estudio/${caseStudy.slug}/`;
   const prefix = rootPrefix(pagePath);
-  const assets = assetPrefix();
+  const assets = assetPrefix(pagePath);
   const page = {
     path: pagePath,
     title: caseStudy.title,
@@ -1240,7 +1260,7 @@ ${navLinks(prefix)}
 function buildBlogPostPage(post) {
   const pagePath = `/blog/${post.slug}/`;
   const prefix = rootPrefix(pagePath);
-  const assets = assetPrefix();
+  const assets = assetPrefix(pagePath);
   const page = {
     path: pagePath,
     title: post.title,
@@ -1400,7 +1420,7 @@ function buildCampaignLeadMagnet(campaign, prefix) {
 function buildIntentCampaignPage(campaign) {
   const pagePath = `/campanas/${campaign.slug}/`;
   const prefix = rootPrefix(pagePath);
-  const assets = assetPrefix();
+  const assets = assetPrefix(pagePath);
   const page = {
     path: pagePath,
     title: campaign.title,
@@ -1573,7 +1593,7 @@ function buildCampaignPage(campaign) {
   }
   const pagePath = `/campanas/${campaign.slug}/`;
   const prefix = rootPrefix(pagePath);
-  const assets = assetPrefix();
+  const assets = assetPrefix(pagePath);
   const page = {
     path: pagePath,
     title: campaign.title,
@@ -1587,17 +1607,6 @@ function buildCampaignPage(campaign) {
   const schemas = buildSchemas(page);
   schemas.push(websiteSchema());
   if (campaign.faq?.length) schemas.push(faqPageSchema(campaign.faq));
-  schemas.push({
-    "@context": "https://schema.org",
-    "@type": "Offer",
-    name: "Búsqueda personalizada de terrenos — promoción 30%",
-    description: campaign.description,
-    price: campaign.pricePromo,
-    priceCurrency: "CLF",
-    validThrough: campaign.deadline,
-    seller: { "@type": "Organization", name: site.name, url: site.url },
-    url: site.url + pagePath,
-  });
 
   const includes = (campaign.includes || [])
     .map((item) => `<li>${esc(item)}</li>`)
@@ -1630,6 +1639,64 @@ function buildCampaignPage(campaign) {
             <p>${esc(campaign.commissionCredit)}</p>
           </div>`
     : "";
+  const isDiagnosticoFirst = campaign.promoFlow === "diagnostico-first";
+  const sectionLabel = esc(campaign.sectionLabel || "Búsqueda personalizada");
+  const h1Main = esc(campaign.h1 || "Búsqueda personalizada de terrenos");
+  const h1Gradient = campaign.h1Gradient
+    ? `<br><span class="text-gradient">${esc(campaign.h1Gradient)}</span>`
+    : isDiagnosticoFirst
+      ? ""
+      : `<br><span class="text-gradient">con 30% de descuento</span>`;
+  const pricingBlock = isDiagnosticoFirst
+    ? `<div class="campaign-pricing glass-card">
+          <div class="campaign-pricing__main">
+            <span class="campaign-pricing__label">Paso 1 · sin costo</span>
+            <strong class="campaign-pricing__price">Diagnóstico gratis</strong>
+            <span class="campaign-pricing__was">Valor habitual ${esc(campaign.priceDiagnostic)}</span>
+          </div>
+          <div class="campaign-pricing__bonus">
+            <span class="campaign-pricing__bonus-tag">Paso 2 · opcional</span>
+            <p><strong>Búsqueda personalizada ${esc(campaign.pricePromo)}</strong> <span class="campaign-pricing__muted">(antes ${esc(campaign.priceRegular)} · 30% dto.)</span></p>
+            <p class="campaign-pricing__muted" style="margin-top:8px;">Cotización después del diagnóstico — sin compromiso extra.</p>
+          </div>
+          ${commissionBlock}
+        </div>`
+    : `<div class="campaign-pricing glass-card">
+          <div class="campaign-pricing__main">
+            <span class="campaign-pricing__label">Precio promocional</span>
+            <strong class="campaign-pricing__price">${esc(campaign.pricePromo)}</strong>
+            <span class="campaign-pricing__was">Antes ${esc(campaign.priceRegular)}</span>
+          </div>
+          <div class="campaign-pricing__bonus">
+            <span class="campaign-pricing__bonus-tag">Incluido</span>
+            <p><strong>Diagnóstico estratégico gratis</strong> <span class="campaign-pricing__muted">(valor ${esc(campaign.priceDiagnostic)})</span></p>
+          </div>
+          ${commissionBlock}
+        </div>`;
+  const offerSchema = isDiagnosticoFirst
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        name: "Diagnóstico estratégico gratis — promoción Land Advisors",
+        description: campaign.description,
+        price: "0",
+        priceCurrency: "CLF",
+        validThrough: campaign.deadline,
+        seller: { "@type": "Organization", name: site.name, url: site.url },
+        url: site.url + pagePath,
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        name: "Búsqueda personalizada de terrenos — promoción 30%",
+        description: campaign.description,
+        price: campaign.pricePromo,
+        priceCurrency: "CLF",
+        validThrough: campaign.deadline,
+        seller: { "@type": "Organization", name: site.name, url: site.url },
+        url: site.url + pagePath,
+      };
+  schemas.push(offerSchema);
   const sidePhoto = campaign.sideImage
     ? `<figure class="campaign-side-photo glass-card">
             <img src="${prefix}${campaign.sideImage.replace(/^\//, "")}" alt="${esc(campaign.sideImageAlt || "")}" width="720" height="480" loading="lazy" decoding="async">
@@ -1653,27 +1720,23 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
 ${navLinks(prefix, campaign)}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="campaign-hero">
+      <div class="campaign-hero__bg" aria-hidden="true">
         <img src="${imgSrc}" alt="" width="${imgW}" height="${imgH}" loading="eager" decoding="async" style="object-position: ${esc(imgPos)}">
         <div class="campaign-hero__overlay"></div>
       </div>
       <div class="container campaign-hero__inner" data-reveal>
         <p class="campaign-badge">Oferta hasta el ${esc(campaign.deadlineLabel)}</p>
-        <p class="section-label">Búsqueda personalizada</p>
-        <h1>${esc(campaign.h1)}<br><span class="text-gradient">con 30% de descuento</span></h1>
+        <p class="section-label">${sectionLabel}</p>
+        <h1>${h1Main}${h1Gradient}</h1>
         <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
 
-        <div class="campaign-pricing glass-card">
-          <div class="campaign-pricing__main">
-            <span class="campaign-pricing__label">Precio promocional</span>
-            <strong class="campaign-pricing__price">${esc(campaign.pricePromo)}</strong>
-            <span class="campaign-pricing__was">Antes ${esc(campaign.priceRegular)}</span>
-          </div>
-          <div class="campaign-pricing__bonus">
-            <span class="campaign-pricing__bonus-tag">Incluido</span>
-            <p><strong>Diagnóstico estratégico gratis</strong> <span class="campaign-pricing__muted">(valor ${esc(campaign.priceDiagnostic)})</span></p>
-          </div>
-          ${commissionBlock}
-        </div>
+        ${pricingBlock}
 
         <div class="campaign-hero__actions campaign-hero__actions--cta">
           ${campaignCtaMarkup(campaign, "hero")}
@@ -1736,9 +1799,12 @@ ${campaignFooterScripts(prefix, campaign)}
 }
 
 function navLinks(prefix, campaign) {
-  const navCta =
-    (campaign?.template || "promo") === "intent"
-      ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_contacto")}">Sesión estratégica</a>`
+  const isIntent = (campaign?.template || "promo") === "intent";
+  const isDiagnosticoFirst = campaign?.promoFlow === "diagnostico-first";
+  const navCta = isIntent
+    ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_contacto")}">Sesión estratégica</a>`
+    : isDiagnosticoFirst
+      ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_diagnostico")}">Diagnóstico estratégico</a>`
       : `<a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>`;
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
@@ -1872,7 +1938,7 @@ function buildServicesCatalog(prefix) {
 
 function buildSecondaryPage(page) {
   const prefix = rootPrefix(page.path);
-  const assets = assetPrefix();
+  const assets = assetPrefix(page.path);
   const hubGuide = page.path === "/guias/" ? hubGuideForPage(page) : null;
   const isIntelHub = page.path === "/inteligencia-territorial/";
   const isIlaHub = page.path === "/indice-territorial/";
@@ -2169,3 +2235,5 @@ for (const campaign of campaigns) {
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap(), "utf8");
 console.log("wrote sitemap.xml");
+syncLandingAssets();
+console.log("synced landing/assets logos");
