@@ -6,7 +6,7 @@
   const CONFIG = {
     provider: "whatsapp",
     whatsapp: {
-      href: "https://wa.me/56974533265",
+      href: "https://wa.me/56999163518",
       label: "Contactar por WhatsApp — Land Advisors",
       phoneDisplay: "+56 9 7453 3265",
     },

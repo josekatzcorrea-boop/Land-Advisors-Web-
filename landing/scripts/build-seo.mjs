@@ -1347,7 +1347,7 @@ function campaignCtaMarkup(campaign, variant = "float") {
 }
 
 function campaignHtmlAttrs(campaign) {
-  const phone = (campaign.ads?.whatsappPhone || site.phone || "+56974533265").replace(/\D/g, "");
+  const phone = (campaign.ads?.whatsappPhone || site.whatsappBot || site.phone || "+56999163518").replace(/\D/g, "");
   const token = campaign.ads?.whatsappToken || "LA-CAMP";
   const calIntent = campaign.calendarIntent || "diagnostico";
   return `data-wa-intro="${esc(campaign.whatsappIntro || "")}" data-wa-token="${esc(token)}" data-wa-phone="${esc(phone)}" data-calendar-intent="${esc(calIntent)}"`;

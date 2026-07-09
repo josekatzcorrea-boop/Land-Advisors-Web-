@@ -8,6 +8,8 @@
   "scripts": {
     "start": "node server.mjs",
     "verify": "node scripts/verify-wa-config.mjs",
+    "diagnose": "node scripts/diagnose-phone.mjs",
+    "register": "node scripts/register-phone.mjs",
     "fix-webhook": "node scripts/fix-webhook-subscription.mjs",
     "test-webhook": "node scripts/test-webhook-flow.mjs"
   }
