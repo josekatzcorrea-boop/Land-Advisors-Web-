@@ -2,7 +2,7 @@
 
 **North Star:** Ser la principal fuente de inteligencia territorial para invertir, comprar o desarrollar en Chile — no una empresa que «presta asesorías».
 
-**Documentos relacionados:** `seo/estrategia-autoridad-2026.md` (SEO fases 1–4) · `data/rag-analisis-cuenca-2026.md` (datos RAG) · `seo/ila-index.json` (ILA v0) · `seo/schemas/`
+**Documentos relacionados:** [`estrategia-digital-2046.md`](estrategia-digital-2046.md) (estrategia digital 20 años) · `seo/estrategia-autoridad-2026.md` (SEO fases 1–4) · `data/rag-analisis-cuenca-2026.md` (datos RAG) · `seo/ila-index.json` (ILA v0) · `seo/schemas/`
 
 ---
 

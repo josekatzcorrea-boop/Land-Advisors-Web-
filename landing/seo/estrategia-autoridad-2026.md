@@ -4,6 +4,8 @@
 
 **Posicionamiento:** Consultoría de inteligencia territorial. No corredora. No portal.
 
+**Estrategia digital (20 años):** [`../estrategia-digital-2046.md`](../estrategia-digital-2046.md) · Plataforma técnica: [`../estrategia-plataforma-2036.md`](../estrategia-plataforma-2036.md)
+
 ---
 
 ## Cuatro pilares

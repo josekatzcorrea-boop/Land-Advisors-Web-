@@ -21,8 +21,9 @@ Los archivos en **`landing/`** (raíz de la carpeta: `index.html`, `styles.css`,
 
 ## SEO y plataforma territorial
 
-- Estrategia autoridad: `seo/estrategia-autoridad-2026.md`
+- **Estrategia digital 2046:** `estrategia-digital-2046.md` (productos, ingresos, priorización)
 - Estrategia plataforma 2036: `estrategia-plataforma-2036.md`
+- Estrategia autoridad SEO: `seo/estrategia-autoridad-2026.md`
 - Índice ILA v0: `seo/ila-index.json` → `/indice-territorial/`
 - Regenerar páginas SEO: `node landing/scripts/build-seo.mjs`
 
