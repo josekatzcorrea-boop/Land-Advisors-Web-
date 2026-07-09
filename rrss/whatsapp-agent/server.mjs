@@ -6,10 +6,15 @@
  * GET  /health  — ping
  */
 import http from "http";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import { isCampaignSource } from "./lib/activation.mjs";
 import { config } from "./lib/config.mjs";
 import { createSession, handleInbound } from "./lib/flow-engine.mjs";
 import { loadAllSessions, loadSession } from "./lib/sessions-store.mjs";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const sessions = new Map();
 const seenMessageIds = new Set();
@@ -80,6 +85,13 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "GET" && url.pathname === "/health") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ ok: true, service: "land-advisors-whatsapp-agent" }));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/coexistencia") {
+    const htmlPath = path.join(__dirname, "coexistence-signup.html");
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+    res.end(fs.readFileSync(htmlPath, "utf8"));
     return;
   }
 

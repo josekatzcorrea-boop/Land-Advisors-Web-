@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Land Advisors — Vincular WhatsApp (coexistencia)</title>
+  <style>
+    :root { --brand: #052c4d; --bg: #f4f7f8; --card: #fff; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      background: var(--bg);
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+    h1 { color: var(--brand); font-size: 1.35rem; margin: 0 0 0.5rem; }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin: 1rem 0;
+      box-shadow: 0 1px 3px rgba(5, 44, 77, 0.08);
+    }
+    label { display: block; font-weight: 600; margin: 0.75rem 0 0.25rem; font-size: 0.9rem; }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #c8d0d6;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    button {
+      margin-top: 1rem;
+      background: var(--brand);
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      padding: 0.85rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    pre {
+      background: #0f1720;
+      color: #d8e6ef;
+      padding: 0.75rem;
+      border-radius: 8px;
+      overflow: auto;
+      font-size: 0.78rem;
+      max-height: 220px;
+    }
+    ol { padding-left: 1.2rem; }
+    li + li { margin-top: 0.35rem; }
+    .warn { color: #8a4b00; font-size: 0.9rem; }
+    .err { color: #b00020; font-size: 0.9rem; }
+    a { color: #1a5f72; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Vincular +56974533265 con Cloud API</h1>
+    <p>Flujo oficial de <strong>coexistencia</strong>: mantienes WhatsApp Business en el celular y activas la API para el bot.</p>
+
+    <div class="card">
+      <p class="warn"><strong>Antes:</strong> actualiza WhatsApp Business a la última versión. Ten el celular con +56974533265 a mano.</p>
+      <label for="appId">App ID (W API)</label>
+      <input id="appId" value="1051202557331613" />
+      <label for="configId">Configuration ID (Embedded Signup)</label>
+      <input id="configId" value="1960932688643433" placeholder="Pega el config_id de Meta Developers" />
+      <button id="launch" type="button">Iniciar vinculación (coexistencia)</button>
+    </div>
+
+    <div class="card err">
+      <strong>Si el popup se cierra solo</strong>
+      <p>Antes de reintentar, en Meta Developers → W API → <strong>Inicio de sesión con Facebook para empresas → Ajustes</strong>:</p>
+      <ol>
+        <li><strong>Dominios de la app</strong> → agrega <code>localhost</code></li>
+        <li><strong>URI de redireccionamiento OAuth válidos</strong> → agrega <code>http://localhost:8787/coexistencia</code></li>
+        <li>Guarda cambios</li>
+      </ol>
+      <p>O usa el builder oficial de Meta (más estable):<br>
+        <a href="https://developers.facebook.com/apps/1051202557331613/whatsapp-business/wa-embedded-signup/" target="_blank" rel="noopener">Abrir Embedded Signup Builder en Meta</a>
+      </p>
+    </div>
+      <ol>
+        <li>Meta abre un popup (inicia sesión si hace falta).</li>
+        <li>Elige <strong>conectar cuenta existente de WhatsApp Business</strong> (no crear número nuevo).</li>
+        <li>En el celular puede llegar un mensaje de <em>Facebook Business</em> con botón <strong>Conectar</strong>.</li>
+        <li>Al terminar, el número queda <code>CLOUD_API</code> + app del celular.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <strong>Eventos</strong>
+      <pre id="log">Esperando…</pre>
+    </div>
+  </main>
+
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js"></script>
+  <script>
+    const logEl = document.getElementById("log");
+    const launchBtn = document.getElementById("launch");
+    const appIdInput = document.getElementById("appId");
+    const configIdInput = document.getElementById("configId");
+
+    function log(msg, data) {
+      const line = data ? msg + "\n" + JSON.stringify(data, null, 2) : msg;
+      logEl.textContent = line + "\n\n" + logEl.textContent;
+    }
+
+    function updateLaunchState() {
+      launchBtn.disabled = !configIdInput.value.trim();
+    }
+
+    configIdInput.addEventListener("input", updateLaunchState);
+    updateLaunchState();
+
+    window.addEventListener("message", (event) => {
+      if (!["https://www.facebook.com", "https://web.facebook.com"].includes(event.origin)) return;
+      try {
+        const data = JSON.parse(event.data);
+        if (data.type === "WA_EMBEDDED_SIGNUP") {
+          log("WA_EMBEDDED_SIGNUP", data);
+          if (data.event === "FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING") {
+            log("✅ Coexistencia completada. Verifica platform_type=CLOUD_API en verify-wa-config.");
+          }
+        }
+      } catch (_) {}
+    });
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: appIdInput.value.trim(),
+        cookie: true,
+        xfbml: true,
+        version: "v25.0",
+      });
+      log("SDK listo. Pulsa el botón o espera inicio automático.");
+      if (new URLSearchParams(location.search).get("auto") === "1") {
+        setTimeout(() => launchBtn.click(), 800);
+      }
+    };
+
+    function startSignup() {
+      const configId = configIdInput.value.trim();
+      const appId = appIdInput.value.trim();
+      if (!configId) return;
+
+      FB.init({ appId, cookie: true, xfbml: true, version: "v25.0" });
+
+      FB.login(
+        (response) => {
+          log("FB.login response", response);
+          if (response.authResponse?.code) {
+            log("Código OAuth recibido: " + response.authResponse.code);
+            log("Si no viste pantallas de WhatsApp, revisa OAuth (localhost) y reintenta.");
+          } else if (response.status === "not_authorized") {
+            log("❌ No autorizado. Pulsa Editar configuración en el popup de Meta.");
+          } else {
+            log("❌ Popup cerrado sin completar. Revisa OAuth o usa Embedded Signup Builder de Meta.");
+          }
+        },
+        {
+          config_id: configId,
+          auth_type: "rerequest",
+          response_type: "code",
+          override_default_response_type: true,
+          extras: {
+            setup: {},
+            featureType: "whatsapp_business_app_onboarding",
+            sessionInfoVersion: "3",
+          },
+        }
+      );
+    }
+
+    launchBtn.addEventListener("click", startSignup);
+  </script>
+</body>
+</html>
