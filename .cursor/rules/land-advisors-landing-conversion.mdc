@@ -1,0 +1,40 @@
+---
+description: Landing home — arquitectura de conversión a reunión estratégica
+globs: landing/index.html
+alwaysApply: false
+---
+
+# Landing home — conversión
+
+Fuente: brief CRO Land Advisors · `landing/PROPUESTA-COPY-comprador-terreno.md`
+
+## Orden de secciones (funnel)
+
+1. Hero — qué hacen, por qué, qué gano, CTA
+2. `#problema` — dolor (mala decisión, no falta de oferta)
+3. `#consecuencias` — costo de decidir solo
+4. `#solucion` — cómo reducimos riesgo (beneficios, no tech)
+5. `#casos` — evidencia + números
+6. `#servicios` — después del problema y prueba
+7. `#oportunidades` — proceso (3 pasos simples)
+8. `#faq` — objeciones
+9. `#contacto` + `#cta`
+
+Secundario (después del funnel): tech-marquee, innovación, territorios, blog, nosotros, partners.
+
+## CTA único
+
+Texto: **Solicitar reunión estratégica** → `#contacto-form`
+
+No competir con «Diagnóstico estratégico» en hero/nav/sticky.
+
+## Copy
+
+- Problema del cliente = **mala decisión**, no encontrar terrenos
+- Beneficios antes que metodología / SIG / RAG en el funnel principal
+- Sin siglas en above-the-fold; transparencia (no «honestidad cariñosa»)
+- **Terreno**, no parcela
+
+## Reordenar secciones
+
+`python landing/scripts/reorder-home.py` tras mover bloques `<section>`.

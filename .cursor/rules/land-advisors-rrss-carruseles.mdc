@@ -1,0 +1,36 @@
+---
+description: Carruseles y singles RRSS Instagram — copy, legibilidad y fotos
+globs: rrss/posts/**/*
+alwaysApply: false
+---
+
+# RRSS carruseles Land Advisors
+
+Fuente CSS: `rrss/templates/carousel.css` (copiar al crear post nuevo).
+
+## Copy en slides
+
+- En **slides y captions IG/FB**: decir **transparencia**, no «honestidad cariñosa».
+- **Lenguaje básico**: evitar siglas (LGUC, OGUC, PRC) en slides. Usar: normas del país, normas de la comuna, reglamento del loteo.
+- Usar **terreno**, no parcela (salvo cita normativa histórica).
+- Tono aliado: validar emoción primero; datos después, sin sermón.
+
+## Legibilidad (1080×1350)
+
+- Cuerpo principal `.slide__body`: ≥ 38px.
+- Split `.slide--split .slide__body`: ≥ 36px.
+- Chips, listas, step-cards: ≥ 28–30px.
+- Disclaimer: clase `.slide__disclaimer` a 30px — **no** `font-size:24px` inline.
+- Revisar visualmente tras exportar PNG antes de marcar `listo_publicar`.
+
+## Fotos
+
+- Rotar desde `Selección de fotografías/` → `rrss/assets/fotos-seleccion/` (nombre ASCII).
+- Grep `fotos-seleccion/` en `rrss/posts/` antes de elegir; no repetir en la misma semana.
+
+## Checklist nuevo post
+
+1. Copy sin siglas técnicas en slides
+2. Tamaños según bloque legibilidad en `carousel.css`
+3. Fotos no usadas recientemente
+4. Export + revisión visual de cada slide
