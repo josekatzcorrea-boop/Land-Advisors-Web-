@@ -1,0 +1,32 @@
+{
+  "id": "LI-2026-07-09-E2",
+  "fecha_publicacion": "2026-07-09",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "canal": "empresa",
+  "autor": "Land Advisors Chile",
+  "pilar": "S",
+  "embudo": "consideracion",
+  "campana": "linkedin-semana-04-jul2026",
+  "tema": "Caso Llanquihue (anonimizado) — de muchas visitas a short list con criterio",
+  "formato": "carrusel",
+  "slides_count": 6,
+  "redes": ["linkedin"],
+  "cta": "reunion_estrategica",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-07-09-E2.json",
+  "piezas_visuales": "rrss/posts/2026-07-08-E2/index.html",
+  "nota_reutilizacion": "Reutilizar export carrusel 2026-07-08-E2 o adaptar slides abajo para PDF LinkedIn",
+  "titulo_interno": "Caso anonimizado Llanquihue · empresa · pilar S",
+  "slides_linkedin": [
+    {"n": 1, "titulo": "Contexto", "texto": "Familia desde RM · objetivo: segunda residencia en contorno rural · 6 visitas sin decidir"},
+    {"n": 2, "titulo": "Dolor", "texto": "Mucha oferta bonita · poca claridad en acceso, normativa y precio de mercado"},
+    {"n": 3, "titulo": "Enfoque", "texto": "Diagnóstico estratégico: zonas, filtros y criterios antes de nueva ronda de visitas"},
+    {"n": 4, "titulo": "Resultado", "texto": "Short list de 3 alternativas · visitas focalizadas · decisión en 8 semanas"},
+    {"n": 5, "titulo": "Aprendizaje", "texto": "La foto abre la visita · el mapa territorial ordena la decisión"},
+    {"n": 6, "titulo": "Land Advisors", "texto": "Consultoría independiente · cuenca Lago Llanquihue · landadvisors.cl"}
+  ],
+  "caption_linkedin": "Caso (anonimizado) — Llanquihue · contorno rural\n\nUna familia desde Santiago había recorrido varios terrenos sin cerrar. No les faltaba motivación: les faltaba un mapa.\n\nCon diagnóstico estratégico definimos zonas, presupuesto realista y criterios de filtro. La siguiente ronda fue a 3 alternativas — no a 6.\n\nDesliza el carrusel 👉 contexto, enfoque y resultado.\n\n¿Te suena haber visitado «el lindo» sin saber si calzaba con tu proyecto?\n\nAgenda reunión estratégica: https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=social&utm_campaign=li-caso-llanquihue-jul2026\n\n#LandAdvisors #EstrategiaInmobiliaria #SurDeChile #Llanquihue #TerrenosChile #InteligenciaTerritorial",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=linkedin&utm_medium=social&utm_campaign=li-caso-llanquihue-jul2026"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "LI-2026-07-10-P2",
+  "fecha_publicacion": "2026-07-10",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "S",
+  "embudo": "consideracion",
+  "campana": "linkedin-semana-04-jul2026",
+  "tema": "Mini caso Frutillar — cuando el precio «se veía bien»",
+  "formato": "texto",
+  "imagen_adjunta": {
+    "tipo": "foto_territorial",
+    "asset_sugerido": "brochure/images/caso-frutillar.jpg",
+    "alternativas": ["rrss/assets/fotos-seleccion/paisaje-sur.jpg"],
+    "notas": "Paisaje Frutillar / lago. Sin texto en imagen."
+  },
+  "redes": ["linkedin"],
+  "cta": "conversacion",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-07-10-P2.json",
+  "titulo_interno": "Mini caso Frutillar · opinión personal",
+  "nota_canal": "Personal — historia de campo. Mención sutil a criterio, sin catálogo de servicios.",
+  "caption_linkedin": "Mini caso de campo — Frutillar\n\nHace un tiempo un comprador me mostró un terreno con vista al lago y un precio que «se veía bien» frente a otros avisos.\n\nLa vista era real. El precio, comparado solo con portales, también parecía razonable.\n\nLo que no estaba en la foto: reglas del loteo sobre altura y materiales, un acceso que en invierno se complica, y una zona donde la presión turística ya había empuzado ciertos precios por encima del valor de suelo comparable un poco más al sur.\n\nNo era mal terreno. No era mal comprador. Era una decisión tomada con mitad de la información.\n\nCuando cruzamos reglamento, acceso y mapa de mercado local, el mismo comprador eligió otra alternativa — menos espectacular en foto, más coherente con su proyecto de cabañas.\n\nEso es lo que intento decir con «territorio antes del activo».\n\n—\n¿Te ha pasado que el precio «calzaba» hasta que miraste el entorno con más detalle?\n\n#InversiónInmobiliaria #Frutillar #SurDeChile #TerrenosChile #RealEstate",
+  "checklist_marca": {
+    "tono_opinion_personal": true,
+    "sin_cta_comercial_agresivo": true,
+    "sin_promesas_rentabilidad": true
+  }
+}

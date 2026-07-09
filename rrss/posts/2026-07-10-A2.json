@@ -1,0 +1,27 @@
+{
+  "id": "2026-07-10-A2",
+  "fecha_publicacion": "2026-07-10",
+  "hora": "11:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "A",
+  "campana": null,
+  "tema": "De tu lado: años conociendo la cuenca para que elijas con confianza",
+  "formato": "single",
+  "slides_count": 1,
+  "redes": ["instagram", "facebook"],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-10-A2.json",
+  "piezas_visuales": "rrss/posts/2026-07-10-A2/index.html",
+  "export_output": "rrss/output/2026-07-10-A2/",
+  "titulo_interno": "Autoridad — aliado territorial · pilar A",
+  "caption_ig": "Años recorriendo la cuenca nos enseñan algo simple: lo especial existe — a veces fuera del radar del portal.\n\nEstamos de tu lado:\n\n→ Conocemos oferta visible y alternativas menos publicitadas\n→ Territorio antes del activo\n→ Te ayudamos con precio, viabilidad y negociación — sin presión por vender un lote\n\nNo somos corredora. Somos consultoría de estrategia inmobiliaria en el sur de Chile.\n\n¿Buscas un aliado que ya lea el territorio?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #EstrategiaInmobiliaria #SurDeChile #TerrenosChile #InteligenciaTerritorial #PuertoVaras #Frutillar #LagoLlanquihue #DeTuLado #ContornoRural",
+  "caption_fb": "De tu lado en la cuenca del Lago Llanquihue y Malalcahuello — consultoría independiente, no corredora.\n\nTerritorio antes del activo · años de recorrido · criterio de mercado sin presión por vender un lote concreto.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-aliado-jul2026\n\n#LandAdvisors #SurDeChile #EstrategiaInmobiliaria",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-aliado-jul2026",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical · single",
+    "instagram_prefix": "land-advisors-aliado"
+  }
+}

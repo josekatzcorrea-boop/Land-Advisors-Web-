@@ -1115,3 +1115,50 @@ img {
 .slide--photo-card .slide__title {
   font-size: 60px;
 }
+
+/* ── Legibilidad carrusel IG (1080×1350) — mínimos ── */
+.slide__disclaimer {
+  margin-top: 28px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.step-card__num {
+  font-size: 28px;
+}
+
+.step-card__title {
+  font-size: 32px;
+}
+
+.step-card__text {
+  font-size: 28px;
+}
+
+.trait-chip {
+  font-size: 30px;
+  padding: 16px 24px;
+}
+
+.slide--split .slide__title {
+  font-size: 56px;
+}
+
+.slide--split .slide__body {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.contrast-list li {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.pillar-item__text {
+  font-size: 28px;
+}
+
+.pillar-item__num {
+  font-size: 24px;
+}

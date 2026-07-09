@@ -1,0 +1,25 @@
+REEL-002 — Conectividad: lo que el aviso no dice
+================================================
+
+Guía completa: rrss/video/briefs/REEL-002-grabacion.md
+Guion texto: rrss/video/briefs/REEL-002-vo-script.txt
+
+Carpetas:
+  talking/   → José a cámara (con audio)
+  elevada/   → trípode 2 m + manual ~3,5 m (sin hablar)
+  broll/     → poste luz, ripio, detalles
+  broll/dron-archivo/ → clips antiguos Puerto Varas (opcional)
+  audio/     → vo-jose.m4a si grabas voz aparte
+
+Archivos esperados (ver tabla en guía):
+  talking-hook-01.mp4
+  talking-lista-01.mp4
+  elevada-camino-01.mp4
+  elevada-manual-01.mp4
+  talking-contraste-01.mp4
+  broll-poste-luz-01.mp4
+  broll-ruedas-ripio-01.mp4
+  talking-cierre-01.mp4
+  talking-marca-01.mp4 (opcional)
+
+Atajo: talking-completo-01.mp4 (todo el guion) + b-roll mudo

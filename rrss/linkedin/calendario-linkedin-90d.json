@@ -301,11 +301,12 @@
       "canal": "personal",
       "formato": "texto",
       "pilar": "M",
-      "tema": "Cuándo NO comprar (confianza intelectual)",
+      "tema": "Enamorarse del terreno: qué miro después (opinión personal)",
       "tema_rector": "Educación + primer partner",
-      "estado": "planificado",
-      "brief": null,
-      "guia": "rrss/LINKEDIN-estrategia-2026.md"
+      "estado": "listo_publicar",
+      "brief": "rrss/linkedin/posts/LI-2026-07-03-P2.json",
+      "guia": "rrss/linkedin/guia-publicacion-P2-jul03-personal.md",
+      "notas": "Personal = opinión sin pitch. Venta → empresa."
     },
     {
       "id": "LI-2026-07-04-P3-W03",
@@ -378,8 +379,8 @@
       "pilar": "E",
       "tema": "Artículo: decisión inmobiliaria empieza antes del terreno",
       "tema_rector": "Conversión suave",
-      "estado": "planificado",
-      "brief": null,
+      "estado": "listo_publicar",
+      "brief": "rrss/linkedin/posts/LI-2026-07-08-P1.json",
       "guia": "rrss/LINKEDIN-estrategia-2026.md"
     },
     {
@@ -393,8 +394,8 @@
       "pilar": "S",
       "tema": "Caso Llanquihue (anonimizado)",
       "tema_rector": "Conversión suave",
-      "estado": "planificado",
-      "brief": null,
+      "estado": "listo_publicar",
+      "brief": "rrss/linkedin/posts/LI-2026-07-09-E2.json",
       "guia": "rrss/LINKEDIN-estrategia-2026.md"
     },
     {
@@ -408,8 +409,8 @@
       "pilar": "S",
       "tema": "Mini caso Frutillar",
       "tema_rector": "Conversión suave",
-      "estado": "planificado",
-      "brief": null,
+      "estado": "listo_publicar",
+      "brief": "rrss/linkedin/posts/LI-2026-07-10-P2.json",
       "guia": "rrss/LINKEDIN-estrategia-2026.md"
     },
     {

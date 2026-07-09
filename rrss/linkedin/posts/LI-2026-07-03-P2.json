@@ -1,0 +1,51 @@
+{
+  "id": "LI-2026-07-03-P2",
+  "fecha_publicacion": "2026-07-03",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "M",
+  "embudo": "awareness",
+  "campana": "linkedin-semana-03-jul2026",
+  "tema": "Enamorarse del terreno: qué miro después (opinión de campo)",
+  "formato": "texto",
+  "imagen_adjunta": {
+    "tipo": "foto_territorial",
+    "asset_sugerido": "brochure/images/galeria-04.jpg",
+    "alternativas": [
+      "brochure/images/caso-frutillar.jpg",
+      "rrss/assets/fotos-seleccion/infraestructura-rural.jpeg"
+    ],
+    "notas": "Foto de recorrido en terreno. Sin texto en imagen. Sin logo comercial."
+  },
+  "redes": ["linkedin"],
+  "cta": "conversacion",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-07-03-P2.json",
+  "titulo_interno": "Opinión personal · enamorarse del terreno · sin pitch",
+  "nota_canal": "Perfil personal = opinión, reflexión, campo. Venta y servicios → página empresa Land Advisors.",
+  "nota_reutilizacion": "Ángulo distinto al carrusel IG búsqueda (empresa/conversión). No mencionar Land Advisors ni servicios en caption.",
+  "caption_linkedin": "La foto del terreno casi nunca miente. Pero tampoco cuenta toda la historia.\n\nLlevo años recorriendo la cuenca del Lago Llanquihue y me sigue pasando lo mismo: la vista emociona primero — y eso me parece sano. Lo que cambia una decisión patrimonial no es apagar esa emoción, sino qué preguntas haces después.\n\nHay tres que a mí me han servido más que cualquier aviso:\n\n→ ¿Cómo se vive este lugar día a día?\n→ ¿Qué pasa con el terreno y el acceso si llueve una semana seguida?\n→ ¿Cómo va a afectar el crecimiento de la ciudad y del entorno a este terreno en los próximos 5-10 años?\n\nNo son preguntas para «enfriar» al comprador. Son para que la decisión dure.\n\nY responderlas bien no se resuelve con intuición ni con una sola visita. Se resuelve con información y experiencia local: conocer el Plan Regulador Comunal, revisar el Plan de Desarrollo Comunal, y observar con el tiempo cómo evoluciona la ciudad — qué construyen, cómo se mueven quienes ya viven el entorno, hacia dónde apunta el crecimiento.\n\nUna decisión importante requiere información.\n\nHe visto proyectos que calzan perfecto porque alguien se tomó el tiempo de armar ese mapa antes de ofertar. Y otros que arrancan con entusiasmo y se complican porque la emoción fue más rápida que el territorio.\n\nNo creo que el sur esté lleno de trampas. Creo que hay lugares extraordinarios — y que merecen una decisión sin prisa.\n\n—\n¿Qué miras tú después de enamorarte de un terreno: la vista, el precio o el entorno que viene?\n\n#InversiónInmobiliaria #SurDeChile #TerrenosChile #PuertoVaras #RealEstate",
+  "comentario_fijado": null,
+  "acciones_post_publicacion": [
+    "Sin comentario fijado comercial",
+    "Responder cada comentario con opinión o pregunta — no redirigir a servicios salvo que pregunten",
+    "Opcional: la página empresa puede compartir con comentario propio si hay post de servicio el mismo día"
+  ],
+  "cta_texto": null,
+  "cta_url": null,
+  "notas_diseno": {
+    "formato_imagen": "1200×627 px mínimo o 1080×1080",
+    "sin_texto_en_imagen": true,
+    "tono": "Primera persona, opinión fundamentada, cero pitch"
+  },
+  "checklist_marca": {
+    "pilar_unico": true,
+    "tono_opinion_personal": true,
+    "sin_mencion_marca_en_caption": true,
+    "sin_cta_comercial": true,
+    "sin_lista_servicios": true,
+    "sin_promesas_rentabilidad": true
+  }
+}

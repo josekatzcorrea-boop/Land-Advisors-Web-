@@ -1,0 +1,30 @@
+{
+  "id": "LI-2026-07-08-P1",
+  "fecha_publicacion": "2026-07-08",
+  "hora": "08:30",
+  "zona_horaria": "America/Santiago",
+  "canal": "personal",
+  "autor": "José Hernán Katz C.",
+  "pilar": "E",
+  "embudo": "awareness",
+  "campana": "linkedin-semana-04-jul2026",
+  "tema": "La decisión inmobiliaria empieza antes del terreno",
+  "formato": "articulo",
+  "imagen_adjunta": {
+    "tipo": "foto_territorial",
+    "asset_sugerido": "rrss/assets/fotos-seleccion/terreno-vista.jpg",
+    "notas": "Vista territorial. Sin texto en imagen."
+  },
+  "redes": ["linkedin"],
+  "cta": "conversacion",
+  "estado": "listo_publicar",
+  "post_generado": "rrss/linkedin/posts/LI-2026-07-08-P1.json",
+  "titulo_interno": "Artículo personal · decisión antes del terreno",
+  "nota_canal": "Perfil personal — reflexión. Sin pitch directo.",
+  "caption_linkedin": "La decisión inmobiliaria empieza antes del terreno.\n\nLo digo por experiencia en la cuenca del Lago Llanquihue: muchos compradores llegan con una foto en la cabeza — y eso está bien. El error no es enamorarse; es saltarse las preguntas que ordenan la decisión.\n\nAntes de buscar «el lote perfecto», conviene definir tres cosas:\n\n1️⃣ Objetivo real — ¿vivienda, patrimonio, turismo, negocio? No son lo mismo en normativa ni en mercado.\n\n2️⃣ Horizonte — ¿proyecto en 2 años o en 10? Eso cambia qué zonas tienen sentido hoy.\n\n3️⃣ Tolerancia operativa — ¿cuántos viajes al sur, qué pasa si el acceso es complejo, qué nivel de obra imaginas?\n\nCon eso claro, el terreno deja de ser un catálogo infinito y pasa a ser un filtro inteligente.\n\nHe visto decisiones excelentes cuando alguien llega al sur con mapa mental — y frustraciones cuando la emoción de la visita llegó antes que el criterio.\n\nNo propongo enfriar la compra. Propongo que la emoción encuentre suelo compatible.\n\n—\n¿Qué defines primero tú: zona, presupuesto o tipo de proyecto?\n\n#InversiónInmobiliaria #SurDeChile #TerrenosChile #RealEstate #PuertoVaras #EstrategiaPatrimonial",
+  "checklist_marca": {
+    "tono_opinion_personal": true,
+    "sin_lista_servicios": true,
+    "sin_promesas_rentabilidad": true
+  }
+}

@@ -14,18 +14,20 @@
       "fecha": "2026-07-07",
       "hora": "18:00",
       "pilar": "T",
-      "tema": "Conectividad: lo que el aviso no dice",
+      "tema": "«15 min de Puerto Varas» — conectividad real vs el aviso (narrativa)",
       "apoyo_post_sugerido": "Carrusel T — conectividad cuenca Llanquihue (jul sem 1)",
       "jose_camara": true,
-      "estado": "planificado"
+      "estado": "en_produccion",
+      "brief": "rrss/video/briefs/REEL-002-conectividad.json",
+      "guia_grabacion": "rrss/video/briefs/REEL-002-grabacion.md"
     },
     {
       "id": "REEL-003",
       "fecha": "2026-07-14",
       "hora": "18:00",
       "pilar": "E",
-      "tema": "Parcela sin leer el reglamento = sorpresa cara",
-      "apoyo_post_sugerido": "Carrusel E — documentación y copropiedad (jul sem 2)",
+      "tema": "Reglamento de copropiedad: qué leer antes de ofertar",
+      "apoyo_post_sugerido": "Carrusel E — reglamento copropiedad (2-jul)",
       "jose_camara": true,
       "estado": "planificado"
     },

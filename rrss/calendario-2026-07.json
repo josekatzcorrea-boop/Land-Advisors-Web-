@@ -76,9 +76,9 @@
       "fecha": "2026-07-02",
       "hora": "10:00",
       "pilar": "E",
-      "tema": "Encontraste uno que te inspira — revisemos juntos el reglamento antes de ofertar",
-      "angulo_educativo": "Reglamento de copropiedad en parcelaciones",
-      "hook_sueño": "Cuidar tu proyecto sin apagar la ilusión",
+      "tema": "Reglamento de copropiedad en parcelaciones: guía informativa",
+      "angulo_educativo": "Qué es el reglamento, qué regula y cómo obtenerlo — sin ángulo comercial",
+      "hook_sueño": "Entender el documento antes de imaginar el proyecto",
       "formato": "carrusel",
       "slides": 6,
       "disclaimer": true,
@@ -152,7 +152,8 @@
       "disclaimer": true,
       "cta": "reunion_estrategica",
       "content_ref": "2026-07-08-E2",
-      "estado": "planificado",
+      "export_output": "rrss/output/2026-07-08-E2/instagram/",
+      "estado": "listo_publicar",
       "notas": "Sem 2 · sueño + factibilidad normativa. Mié 8-jul 10:00."
     },
     {
@@ -168,7 +169,8 @@
       "disclaimer": false,
       "cta": "diagnostico_estrategico",
       "content_ref": "2026-07-09-S2",
-      "estado": "planificado",
+      "export_output": "rrss/output/2026-07-09-S2/instagram/",
+      "estado": "listo_publicar",
       "notas": "Sem 2 · servicio diagnóstico 1 UF · puerta de entrada aspiracional. Jue 9-jul 18:00."
     },
     {
@@ -184,7 +186,8 @@
       "disclaimer": false,
       "cta": "reunion_estrategica",
       "content_ref": "2026-07-10-A2",
-      "estado": "planificado",
+      "export_output": "rrss/output/2026-07-10-A2/instagram/",
+      "estado": "listo_publicar",
       "notas": "Sem 2 · marca confianza + sueño. Vie 10-jul 11:00."
     },
     {
