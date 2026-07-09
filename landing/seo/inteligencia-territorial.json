@@ -9,6 +9,14 @@
   "imageAlt": "Vista aérea de parcelación con lago y volcán — lectura territorial en la cuenca",
   "clusters": [
     {
+      "label": "Índice y observatorio",
+      "description": "ILA v0 — score territorial por sector y piloto Observatorio 2026 con datos Censo y planificación comunal.",
+      "links": [
+        { "href": "indice-territorial/", "label": "Índice Land Advisors (ILA)", "meta": "16 sectores" },
+        { "href": "indice-territorial/#observatorio-2026", "label": "Observatorio Cuenca 2026", "meta": "Piloto" }
+      ]
+    },
+    {
       "label": "Serie: contorno rural de Puerto Varas",
       "description": "Cinco partes para leer plusvalía, costos, normativa, conectividad y vocación del suelo en el periurbano.",
       "links": [

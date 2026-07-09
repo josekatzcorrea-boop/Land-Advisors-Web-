@@ -19,13 +19,34 @@ Los archivos en **`landing/`** (raíz de la carpeta: `index.html`, `styles.css`,
 - `landing-ui.js`, `pensamos-video.js`, `territory-carousel.js`
 - `chat-widget.js`, `chat-widget.css`
 
+## SEO y plataforma territorial
+
+- Estrategia autoridad: `seo/estrategia-autoridad-2026.md`
+- Estrategia plataforma 2036: `estrategia-plataforma-2036.md`
+- Índice ILA v0: `seo/ila-index.json` → `/indice-territorial/`
+- Regenerar páginas SEO: `node landing/scripts/build-seo.mjs`
+
 ## Servidor local
+
+**Importante:** el servidor debe estar corriendo y usar la URL con `/landing/`.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File landing\restart-serve.ps1
+```
+
+O manualmente (deja la terminal abierta):
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File landing\serve.ps1
 ```
 
-Abrir: http://127.0.0.1:8765/landing/index.html
+URLs de prueba:
+
+- Home: http://127.0.0.1:8765/landing/index.html
+- Índice ILA: http://127.0.0.1:8765/landing/indice-territorial/
+- Inteligencia: http://127.0.0.1:8765/landing/inteligencia-territorial/
+
+Si ves `ERR_CONNECTION_REFUSED`, el servidor no está activo. Si ves `404` en rutas con `/` al final, reinicia con `restart-serve.ps1` (versión actualizada de `serve.ps1`).
 
 ## Logo
 

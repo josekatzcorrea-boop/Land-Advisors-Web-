@@ -1,0 +1,87 @@
+{
+  "year": 2026,
+  "title": "Observatorio Land Advisors — Cuenca Lago Llanquihue",
+  "subtitle": "Piloto 2026 · demografía, tesis territorial y ranking ILA",
+  "datePublished": "2026-07-09",
+  "author": "José Hernán Katz C.",
+  "disclaimer": "Contenido educativo basado en Censo 2024 (INE), instrumentos de planificación comunal y metodología Land Advisors. No constituye asesoría personalizada ni promesa de rentabilidad.",
+  "executiveSummary": "La cuenca del Lago Llanquihue sigue atrayendo compradores desde fuera de la región, pero cada comuna juega un rol distinto: Puerto Varas concentra crecimiento e inmigración; Frutillar vende patrimonio con demografía envejecida; Llanquihue exige leer urbanización pendiente. El ILA v0 ordena sectores por perfil de inversión — no por precio de aviso.",
+  "demographics": [
+    {
+      "comuna": "Puerto Varas",
+      "population2024": 52942,
+      "population2017": 44578,
+      "growthPct": 18.8,
+      "immigrantsPct": 5.4,
+      "age60PlusPct": 17.4,
+      "unemploymentPct": 5.4,
+      "autoDependencyPct": 68.9,
+      "thesis": "Hub demográfico y de atracción externa. Priorizar conectividad verificada y normativa sobre narrativa del aviso."
+    },
+    {
+      "comuna": "Frutillar",
+      "population2024": 22554,
+      "growthPct": 25,
+      "immigrantsPct": 2.3,
+      "age60PlusPct": 19.9,
+      "unemploymentPct": 7.5,
+      "autoDependencyPct": 61.6,
+      "thesis": "Prima de marca sin inmigración significativa. Validar habilitación antes de pagar «Frutillar»."
+    },
+    {
+      "comuna": "Llanquihue",
+      "population2024": 18088,
+      "growthPct": 29,
+      "immigrantsPct": 2.4,
+      "age60PlusPct": 21.1,
+      "unemploymentPct": 7.8,
+      "autoDependencyPct": 53.4,
+      "thesis": "Parcelaciones y valor presente vs. futuro. Cuantificar urbanización pendiente siempre."
+    },
+    {
+      "comuna": "Ensenada",
+      "population2024": 12320,
+      "immigrantsPct": 1.3,
+      "age60PlusPct": 25.3,
+      "unemploymentPct": 8.9,
+      "thesis": "Contorno de baja densidad y alto envejecimiento. Segmento segunda vivienda / retiro con liquidez distinta."
+    }
+  ],
+  "structuralForces": [
+    {
+      "label": "Migración hacia Puerto Varas",
+      "source": "PLADECO PV 2022–2030",
+      "impact": "Sostiene demanda residencial en contorno conectado; presiona precios en sectores ya habilitados."
+    },
+    {
+      "label": "Zona Interés Turístico Lago Llanquihue",
+      "source": "PLADECO PV",
+      "impact": "Vocación alojamiento con normativa específica — oportunidad y restricción según predio."
+    },
+    {
+      "label": "Saturación calidad del aire macrozona",
+      "source": "PLADECO PV",
+      "impact": "Limita ciertos usos industriales/comerciales; relevante para vocación comercial."
+    },
+    {
+      "label": "PRI Rivera Llanquihue",
+      "source": "Planificación intercomunal",
+      "impact": "Eje estructural de plusvalía por conectividad en corredor PV–LL."
+    },
+    {
+      "label": "Protección aguas Lago Llanquihue",
+      "source": "PRC Llanquihue",
+      "impact": "Restricciones ambientales en habilitación y cambio de uso en orillas."
+    }
+  ],
+  "rankings": {
+    "patrimonio": ["LA-PV-001", "LA-FR-001", "LA-EN-002", "LA-PV-005", "LA-FR-003"],
+    "turismo": ["LA-PV-006", "LA-FR-003", "LA-FR-001", "LA-PV-001", "LA-EN-002"],
+    "comercial": ["LA-PV-004", "LA-PV-005", "LA-PV-002", "LA-LL-001", "LA-FR-001"],
+    "desarrollo": ["LA-PV-005", "LA-LL-003", "LA-PV-003", "LA-FR-002", "LA-LL-001"]
+  },
+  "cta": {
+    "label": "Solicitar diagnóstico con mapa ILA de tu perfil",
+    "href": "#contacto-form"
+  }
+}

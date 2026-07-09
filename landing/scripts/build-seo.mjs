@@ -25,6 +25,9 @@ const guidesData = JSON.parse(fs.readFileSync(path.join(SEO, "guides.json"), "ut
 const guides = guidesData.guides || [];
 const campaignsData = JSON.parse(fs.readFileSync(path.join(SEO, "campaigns.json"), "utf8"));
 const campaigns = campaignsData.campaigns || [];
+const ilaIndex = JSON.parse(fs.readFileSync(path.join(SEO, "ila-index.json"), "utf8"));
+const ilaSectors = ilaIndex.sectors || [];
+const observatorio2026 = JSON.parse(fs.readFileSync(path.join(SEO, "observatorio-2026.json"), "utf8"));
 
 function depthFromPath(p) {
   const segs = p.replace(/\/$/, "").split("/").filter(Boolean);
@@ -774,6 +777,189 @@ function buildBlogArticleBody(post, prefix) {
     </article>`;
 }
 
+function ilaScoreTier(score) {
+  if (score >= 80) return "ila-score--high";
+  if (score >= 65) return "ila-score--mid";
+  return "ila-score--low";
+}
+
+function ilaSectorById(id) {
+  return ilaSectors.find((s) => s.id === id);
+}
+
+function ilaSectorsForTerritory(slug) {
+  return ilaSectors.filter((s) => s.relatedTerritory === slug);
+}
+
+function buildIlaDimensionBars(scores, dimensions) {
+  return (dimensions || ilaIndex.dimensions)
+    .map((dim) => {
+      const val = scores[dim.id];
+      if (val == null) return "";
+      return `<div class="ila-dim">
+        <div class="ila-dim__head"><span>${esc(dim.label)}</span><strong>${val}</strong></div>
+        <div class="ila-dim__bar" role="presentation"><span class="ila-dim__fill ${ilaScoreTier(val)}" style="width:${val}%"></span></div>
+      </div>`;
+    })
+    .join("");
+}
+
+function buildIlaSectorCard(sector, prefix, profile = "patrimonio") {
+  const profileScore = sector.profileScores?.[profile] ?? sector.scores.global;
+  const caseLink = sector.relatedCase
+    ? `<p class="ila-card__case"><a href="${prefix}casos-de-estudio/${sector.relatedCase}/">Caso relacionado →</a></p>`
+    : "";
+  return `<article class="ila-card glass-card" id="sector-${esc(sector.id)}" data-sector-id="${esc(sector.id)}" data-comuna="${esc(sector.comuna)}" data-profiles="${esc((sector.profiles || []).join(","))}" data-profile-scores="${esc(JSON.stringify(sector.profileScores || {}))}" data-global-score="${sector.scores.global}">
+    <header class="ila-card__header">
+      <p class="ila-card__meta">${esc(sector.comuna)} · ${esc(sector.eje)}</p>
+      <h3 class="ila-card__title">${esc(sector.name)}</h3>
+      <div class="ila-card__score ${ilaScoreTier(profileScore)}" aria-label="ILA perfil ${profile}: ${profileScore}">
+        <span class="ila-card__score-num">${profileScore}</span>
+        <span class="ila-card__score-label">ILA</span>
+        <span class="ila-card__confidence" title="Confianza del dato">Confianza ${esc(sector.confidence)}</span>
+      </div>
+    </header>
+    <p class="ila-card__def">${esc(sector.definition)}</p>
+    <div class="ila-card__dims">${buildIlaDimensionBars(sector.scores)}</div>
+    ${
+      sector.signals?.length
+        ? `<ul class="ila-card__signals">${sector.signals.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>`
+        : ""
+    }
+    ${caseLink}
+  </article>`;
+}
+
+function buildIlaHubContent(prefix) {
+  const profileTabs = (ilaIndex.profiles || [])
+    .map(
+      (p, i) =>
+        `<button type="button" class="ila-profile-tab${i === 0 ? " is-active" : ""}" data-ila-profile="${esc(p.id)}" aria-pressed="${i === 0 ? "true" : "false"}">${esc(p.label)}</button>`
+    )
+    .join("");
+
+  const comunaFilters = ["Todos", ...new Set(ilaSectors.map((s) => s.comuna))]
+    .map(
+      (c, i) =>
+        `<button type="button" class="ila-comuna-tab${i === 0 ? " is-active" : ""}" data-ila-comuna="${esc(c === "Todos" ? "all" : c)}" aria-pressed="${i === 0 ? "true" : "false"}">${esc(c)}</button>`
+    )
+    .join("");
+
+  const cards = ilaSectors.map((s) => buildIlaSectorCard(s, prefix, "patrimonio")).join("");
+
+  const obs = observatorio2026;
+  const demoRows = (obs.demographics || [])
+    .map(
+      (d) => `<tr>
+        <th scope="row">${esc(d.comuna)}</th>
+        <td>${d.population2024 ? d.population2024.toLocaleString("es-CL") : "—"}</td>
+        <td>${d.growthPct != null ? `+${d.growthPct}%` : "—"}</td>
+        <td>${d.immigrantsPct != null ? `${d.immigrantsPct}%` : "—"}</td>
+        <td>${d.age60PlusPct != null ? `${d.age60PlusPct}%` : "—"}</td>
+        <td>${esc(d.thesis)}</td>
+      </tr>`
+    )
+    .join("");
+
+  const forces = (obs.structuralForces || [])
+    .map(
+      (f) => `<li><strong>${esc(f.label)}</strong> <span class="obs-source">(${esc(f.source)})</span> — ${esc(f.impact)}</li>`
+    )
+    .join("");
+
+  const rankings = Object.entries(obs.rankings || {})
+    .map(([profile, ids]) => {
+      const items = ids
+        .map((id) => {
+          const sec = ilaSectorById(id);
+          return sec ? `<li><span class="ila-rank-id">${esc(id)}</span> ${esc(sec.name)} <strong>${sec.profileScores?.[profile] ?? sec.scores.global}</strong></li>` : "";
+        })
+        .join("");
+      const label = (ilaIndex.profiles || []).find((p) => p.id === profile)?.label || profile;
+      return `<div class="obs-ranking glass-card">
+        <p class="section-label">Top ${esc(label)}</p>
+        <ol class="obs-ranking__list">${items}</ol>
+      </div>`;
+    })
+    .join("");
+
+  return `<div class="ila-hub-intro glass-card">
+      <p class="blog-article__lead">${esc(ilaIndex.methodology)}</p>
+      <p class="ila-hub-version">Versión ${esc(ilaIndex.version)} · Actualizado <time datetime="${ilaIndex.dateModified}">${ilaIndex.dateModified}</time></p>
+    </div>
+    <div class="ila-controls glass-card" data-ila-controls>
+      <div class="ila-controls__group">
+        <p class="ila-controls__label">Perfil de inversión</p>
+        <div class="ila-profile-tabs" role="tablist">${profileTabs}</div>
+      </div>
+      <div class="ila-controls__group">
+        <p class="ila-controls__label">Comuna</p>
+        <div class="ila-comuna-tabs">${comunaFilters}</div>
+      </div>
+    </div>
+    <div class="ila-grid" id="ila-sector-grid">${cards}</div>
+    <section class="observatorio-block" id="observatorio-2026" aria-labelledby="obs-title">
+      <h2 id="obs-title" class="blog-article__h2">${esc(obs.title)}</h2>
+      <p class="section-intro">${esc(obs.executiveSummary)}</p>
+      <div class="obs-table-wrap glass-card">
+        <table class="obs-table">
+          <caption class="sr-only">Demografía Censo 2024 por comuna</caption>
+          <thead><tr><th>Comuna</th><th>Población 2024</th><th>Crecimiento</th><th>Inmigrantes</th><th>60+</th><th>Tesis LA</th></tr></thead>
+          <tbody>${demoRows}</tbody>
+        </table>
+      </div>
+      <h3 class="blog-article__h3">Fuerzas estructurales</h3>
+      <ul class="obs-forces">${forces}</ul>
+      <h3 class="blog-article__h3">Ranking ILA v0 por perfil</h3>
+      <div class="obs-rankings">${rankings}</div>
+      <aside class="blog-article__note glass-card"><p>${esc(obs.disclaimer)}</p></aside>
+    </section>`;
+}
+
+function buildTerritoryIlaStrip(slug, prefix) {
+  const sectors = ilaSectorsForTerritory(slug);
+  if (!sectors.length) return "";
+  const top = [...sectors].sort((a, b) => b.scores.global - a.scores.global).slice(0, 3);
+  const items = top
+    .map(
+      (s) => `<li class="ila-strip__item">
+        <a href="${prefix}indice-territorial/#sector-${esc(s.id)}">
+          <span class="ila-strip__name">${esc(s.name)}</span>
+          <span class="ila-strip__score ${ilaScoreTier(s.scores.global)}">${s.scores.global}</span>
+        </a>
+      </li>`
+    )
+    .join("");
+  return `<aside class="ila-territory-strip glass-card" aria-label="Índice Land Advisors en este territorio">
+      <p class="section-label">Índice Land Advisors · v0</p>
+      <p class="ila-strip__intro">Sectores del contorno con mayor score global en ${esc(top[0]?.comuna || slug)}.</p>
+      <ol class="ila-strip__list">${items}</ol>
+      <a href="${prefix}indice-territorial/" class="btn btn-outline">Ver índice completo →</a>
+    </aside>`;
+}
+
+function buildCaseIlaAside(caseStudy, prefix) {
+  const ila = caseStudy.ila;
+  if (!ila) return "";
+  const sector = ila.sectorId ? ilaSectorById(ila.sectorId) : null;
+  const dims = (ila.dimensionsValidated || [])
+    .map((d) => {
+      const label = (ilaIndex.dimensions || []).find((x) => x.id === d)?.label || d;
+      return `<span class="ila-case-dim">${esc(label)}</span>`;
+    })
+    .join("");
+  return `<aside class="ila-case-aside glass-card" aria-label="Lectura ILA del caso">
+      <p class="section-label">Índice Land Advisors</p>
+      ${sector ? `<p class="ila-case-aside__sector"><a href="${prefix}indice-territorial/#sector-${esc(sector.id)}">${esc(sector.name)}</a> · ${esc(sector.id)}</p>` : ""}
+      ${ila.contextScore != null ? `<p class="ila-case-aside__score">Score contexto sector: <strong class="${ilaScoreTier(ila.contextScore)}">${ila.contextScore}</strong></p>` : ""}
+      <div class="ila-case-thesis">
+        <p><strong>Mercado:</strong> ${esc(ila.thesisMarket)}</p>
+        <p><strong>Territorio:</strong> ${esc(ila.thesisTerritory)}</p>
+      </div>
+      ${dims ? `<div class="ila-case-dims">${dims}</div>` : ""}
+    </aside>`;
+}
+
 function buildIntelligenceHubContent(prefix) {
   const hubImage = intelligenceHub.image || "/images/galeria/galeria-04.jpg";
   const hubImageAlt = intelligenceHub.imageAlt || "Inteligencia territorial — sur de Chile";
@@ -863,6 +1049,7 @@ function buildTerritoryRichContent(page, prefix) {
             ? `<aside class="territory-definition glass-card"><p><strong>Definición:</strong> ${esc(content.definition)}</p></aside>`
             : ""
         }
+        ${buildTerritoryIlaStrip(slug, prefix)}
         ${sections}
       </div>
       ${
@@ -933,6 +1120,7 @@ function buildCaseStudyBody(caseStudy, prefix) {
       </header>
       <div class="blog-article__content">
         <p class="blog-article__lead">${esc(caseStudy.intro)}</p>
+        ${buildCaseIlaAside(caseStudy, prefix)}
         ${sections}
       </div>
       ${
@@ -1687,6 +1875,7 @@ function buildSecondaryPage(page) {
   const assets = assetPrefix();
   const hubGuide = page.path === "/guias/" ? hubGuideForPage(page) : null;
   const isIntelHub = page.path === "/inteligencia-territorial/";
+  const isIlaHub = page.path === "/indice-territorial/";
   const pageView = hubGuide
     ? {
         ...page,
@@ -1718,6 +1907,22 @@ function buildSecondaryPage(page) {
     );
     if (intelligenceHub.faq?.length) schemas.push(faqPageSchema(intelligenceHub.faq));
   }
+  if (isIlaHub) {
+    schemas.push(websiteSchema());
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: "Índice Land Advisors (ILA) v0",
+      description: ilaIndex.methodology,
+      url: site.url + page.path,
+      creator: { "@type": "Organization", name: site.name },
+      dateModified: ilaIndex.dateModified,
+      spatialCoverage: {
+        "@type": "Place",
+        name: "Cuenca del Lago Llanquihue, Los Lagos, Chile",
+      },
+    });
+  }
   const territorySlug = page.type === "territory" ? territorySlugFromPath(page.path) : "";
   const territoryRich = territorySlug ? territoriesContent[territorySlug] : null;
   if (territoryRich) {
@@ -1740,6 +1945,8 @@ function buildSecondaryPage(page) {
     extraContent = buildGuidesHubContent(page, prefix);
   } else if (page.path === "/inteligencia-territorial/") {
     extraContent = buildIntelligenceHubContent(prefix);
+  } else if (isIlaHub) {
+    extraContent = buildIlaHubContent(prefix);
   } else if (page.type === "territory") {
     extraContent = buildTerritoryRichContent(page, prefix);
   } else if (page.type === "service") {
@@ -1778,7 +1985,7 @@ ${buildHead(
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
   ${schemas.slice(page.service ? 5 : 4).map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}
 </head>
-<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : isIntelHub ? " seo-page--intel" : page.type === "territory" && territoryRich ? " seo-page--territory-rich" : ""}">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : isIntelHub ? " seo-page--intel" : isIlaHub ? " seo-page--ila" : page.type === "territory" && territoryRich ? " seo-page--territory-rich" : ""}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -1842,6 +2049,7 @@ ${navLinks(prefix)}
   <script src="${prefix}analytics.js" defer></script>
   <script src="${prefix}conversion-tracking.js" defer></script>
   <script src="${prefix}chat-widget.js" defer></script>
+  ${isIlaHub ? `<script src="${prefix}ila-widget.js" defer></script>` : ""}
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
@@ -1881,6 +2089,8 @@ function buildSitemap() {
             ? "0.85"
             : p.type === "intelligence-hub"
               ? "0.88"
+              : p.type === "ila-hub"
+                ? "0.9"
               : p.type === "campaign"
               ? "0.85"
             : p.type === "guide"

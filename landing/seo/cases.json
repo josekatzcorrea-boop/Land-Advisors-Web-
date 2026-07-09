@@ -15,6 +15,16 @@
       "image": "/images/caso-puerto-varas.jpg",
       "imageAlt": "Puerto Varas y entorno del Lago Llanquihue",
       "tags": ["Puerto Varas", "cambio de uso", "plusvalía", "contorno rural"],
+      "ila": {
+        "sectorId": "LA-PV-004",
+        "profile": "comercial",
+        "thesisMarket": "La prohibición de uso comercial en la ficha cerró la conversación para el mercado.",
+        "thesisTerritory": "Conectividad, urbanización aledaña y trayectoria del eje sugerían vocación comercial distinta a la del listing.",
+        "dimensionsValidated": ["conectividad", "normativa", "mercado"],
+        "contextScore": 68
+      },
+      "servicesUsed": ["estudio-potencial-inmobiliario", "asesoria-compra"],
+      "authorityScore": 9,
       "sections": [
         {
           "type": "h2",
@@ -105,6 +115,16 @@
       "image": "/images/caso-frutillar.jpg",
       "imageAlt": "Terreno en Frutillar, Cuenca del Lago Llanquihue",
       "tags": ["Frutillar", "arbitraje inmobiliario", "precio de compra", "liquidez"],
+      "ila": {
+        "sectorId": "LA-FR-004",
+        "profile": "patrimonio",
+        "thesisMarket": "Para el mercado era un terreno más en la oferta visible de Frutillar.",
+        "thesisTerritory": "La brecha estaba en liquidez del vendedor y comparables locales — no en plusvalía futura del sector.",
+        "dimensionsValidated": ["mercado", "demografia", "habilitacion"],
+        "contextScore": 67
+      },
+      "servicesUsed": ["busqueda-personalizada", "asesoria-compra"],
+      "authorityScore": 8,
       "sections": [
         {
           "type": "h2",
@@ -186,6 +206,16 @@
       "image": "/images/caso-llanquihue.jpg",
       "imageAlt": "Sector rural en Llanquihue con potencial de desarrollo",
       "tags": ["Llanquihue", "urbanización", "valor presente", "inversión patrimonial"],
+      "ila": {
+        "sectorId": "LA-LL-003",
+        "profile": "desarrollo",
+        "thesisMarket": "El precio por lote parecía competitivo frente a alternativas sueltas.",
+        "thesisTerritory": "La oportunidad estaba en valor presente negociado con liquidez del desarrollador — no en promesa de plusvalía lejana.",
+        "dimensionsValidated": ["habilitacion", "mercado", "normativa"],
+        "contextScore": 63
+      },
+      "servicesUsed": ["busqueda-personalizada", "estudio-potencial-inmobiliario"],
+      "authorityScore": 9,
       "sections": [
         {
           "type": "h2",

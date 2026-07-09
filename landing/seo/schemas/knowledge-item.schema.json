@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.landadvisors.cl/schemas/knowledge-item.json",
+  "title": "KnowledgeItem",
+  "description": "Objeto unificado biblioteca territorial Land Advisors",
+  "type": "object",
+  "required": ["id", "type", "title", "href", "territory", "stage"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["guide", "article", "case", "territory", "observatory", "ila-sector", "service"]
+    },
+    "title": { "type": "string" },
+    "href": { "type": "string" },
+    "summary": { "type": "string" },
+    "territory": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cluster": {
+      "type": "string",
+      "enum": [
+        "contorno-rural",
+        "comparar-comunas",
+        "normativa",
+        "desde-santiago",
+        "turismo-inmobiliario",
+        "observatorio",
+        "comprar-mejor",
+        "casos"
+      ]
+    },
+    "stage": {
+      "type": "string",
+      "enum": ["explorar", "comparar", "due-diligence", "post-compra"]
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "readMinutes": { "type": "integer" },
+    "dateModified": { "type": "string", "format": "date" },
+    "ilaSectorId": { "type": "string" }
+  }
+}

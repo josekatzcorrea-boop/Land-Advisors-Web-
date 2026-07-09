@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.landadvisors.cl/schemas/case-study-v2.json",
+  "title": "CaseStudy v2",
+  "description": "Caso de estudio Land Advisors con metadatos ILA y autoridad",
+  "type": "object",
+  "allOf": [
+    {
+      "type": "object",
+      "required": ["slug", "title", "h1", "territory", "sections"],
+      "properties": {
+        "slug": { "type": "string" },
+        "title": { "type": "string" },
+        "h1": { "type": "string" },
+        "territory": { "type": "string" },
+        "metric": { "type": "string" },
+        "sections": { "type": "array" }
+      }
+    },
+    {
+      "type": "object",
+      "properties": {
+        "ila": {
+          "type": "object",
+          "properties": {
+            "sectorId": { "type": "string" },
+            "profile": {
+              "type": "string",
+              "enum": ["patrimonio", "turismo", "comercial", "desarrollo"]
+            },
+            "thesisMarket": { "type": "string" },
+            "thesisTerritory": { "type": "string" },
+            "dimensionsValidated": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["conectividad", "normativa", "demografia", "mercado", "habilitacion"]
+              }
+            },
+            "contextScore": { "type": "integer", "minimum": 0, "maximum": 100 }
+          }
+        },
+        "servicesUsed": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "authorityScore": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    }
+  ]
+}

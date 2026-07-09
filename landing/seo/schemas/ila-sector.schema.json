@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.landadvisors.cl/schemas/ila-sector.json",
+  "title": "ILA Sector",
+  "description": "Sector territorial Land Advisors con score Índice Land Advisors (ILA)",
+  "type": "object",
+  "required": ["id", "name", "comuna", "scores", "confidence"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^LA-[A-Z]{2}-[0-9]{3}$" },
+    "name": { "type": "string" },
+    "comuna": { "type": "string" },
+    "eje": { "type": "string" },
+    "definition": { "type": "string" },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["patrimonio", "turismo", "comercial", "desarrollo"]
+      }
+    },
+    "scores": {
+      "type": "object",
+      "required": ["global", "conectividad", "normativa", "demografia", "mercado", "habilitacion"],
+      "properties": {
+        "global": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "conectividad": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "normativa": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "demografia": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "mercado": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "habilitacion": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "profileScores": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 100 }
+    },
+    "confidence": { "type": "string", "enum": ["A", "B", "C"] },
+    "signals": { "type": "array", "items": { "type": "string" } },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "relatedCase": { "type": "string" },
+    "relatedTerritory": { "type": "string" },
+    "version": { "type": "string", "default": "0.1" },
+    "dateModified": { "type": "string", "format": "date" }
+  }
+}

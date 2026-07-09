@@ -1411,3 +1411,362 @@
 .blog-article--intel .blog-article__lead {
   margin: 0;
 }
+
+/* —— Índice Land Advisors (ILA) v0 —— */
+.seo-page--ila .ila-hub-intro {
+  padding: 1.5rem 1.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.ila-hub-version {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted-dark);
+}
+
+.ila-controls {
+  padding: 1.25rem 1.5rem 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.ila-controls__group + .ila-controls__group {
+  margin-top: 1rem;
+}
+
+.ila-controls__label {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lake);
+}
+
+.ila-profile-tabs,
+.ila-comuna-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.ila-profile-tab,
+.ila-comuna-tab {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(5, 44, 77, 0.18);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.ila-profile-tab.is-active,
+.ila-comuna-tab.is-active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+.ila-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 720px) {
+  .ila-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .ila-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ila-card {
+  padding: 1.35rem 1.5rem 1.5rem;
+  scroll-margin-top: 5rem;
+  transition: box-shadow 0.25s ease;
+}
+
+.ila-card--highlight {
+  box-shadow: 0 0 0 2px rgba(91, 143, 160, 0.55), 0 12px 32px rgba(5, 44, 77, 0.12);
+}
+
+.ila-card__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem 1rem;
+  align-items: start;
+  margin-bottom: 0.75rem;
+}
+
+.ila-card__meta {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted-dark);
+}
+
+.ila-card__title {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  color: var(--blue);
+}
+
+.ila-card__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 3.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 10px;
+  background: rgba(244, 247, 248, 0.9);
+  border: 1px solid rgba(5, 44, 77, 0.1);
+}
+
+.ila-card__score-num {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ila-card__score-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted-dark);
+}
+
+.ila-card__confidence {
+  margin-top: 0.2rem;
+  font-size: 0.58rem;
+  color: var(--text-muted-dark);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.ila-score--high .ila-card__score-num,
+.ila-score--high strong {
+  color: #1a5f72;
+}
+
+.ila-score--mid .ila-card__score-num,
+.ila-score--mid strong {
+  color: #3d6b5e;
+}
+
+.ila-score--low .ila-card__score-num,
+.ila-score--low strong {
+  color: #8b6914;
+}
+
+.ila-card__def {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted-dark);
+}
+
+.ila-dim + .ila-dim {
+  margin-top: 0.45rem;
+}
+
+.ila-dim__head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+  color: var(--blue);
+}
+
+.ila-dim__bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(5, 44, 77, 0.08);
+  overflow: hidden;
+}
+
+.ila-dim__fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #5b8fa0, #1a5f72);
+}
+
+.ila-dim__fill.ila-score--low {
+  background: linear-gradient(90deg, #c4a35a, #8b6914);
+}
+
+.ila-card__signals {
+  margin: 0.85rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted-dark);
+}
+
+.ila-card__case {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ila-territory-strip {
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.ila-strip__intro {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.ila-strip__list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ila-strip__item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(5, 44, 77, 0.08);
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.ila-strip__score {
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(244, 247, 248, 0.95);
+}
+
+.ila-case-aside {
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.ila-case-aside__sector {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.ila-case-thesis p {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.ila-case-dims {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.ila-case-dim {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(91, 143, 160, 0.15);
+  color: var(--blue);
+}
+
+.observatorio-block {
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+}
+
+.obs-table-wrap {
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.obs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.obs-table th,
+.obs-table td {
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(5, 44, 77, 0.1);
+  vertical-align: top;
+}
+
+.obs-table th {
+  color: var(--lake);
+  font-weight: 600;
+}
+
+.obs-forces {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.obs-source {
+  font-weight: 400;
+  color: var(--text-muted-dark);
+  font-size: 0.82rem;
+}
+
+.obs-rankings {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .obs-rankings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.obs-ranking {
+  padding: 1.15rem 1.35rem;
+}
+
+.obs-ranking__list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.obs-ranking__list .ila-rank-id {
+  font-size: 0.72rem;
+  color: var(--text-muted-dark);
+  margin-right: 0.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

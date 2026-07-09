@@ -72,7 +72,14 @@
 - Puente RRSS → URLs blog en captions (E, T, reel conectividad)
 - CSS: padding consistente en recuadros blancos SEO
 
-### Fase 5 — próximo
+### Fase 5 — plataforma (en curso · jul 2026)
+
+- Documento maestro: `../estrategia-plataforma-2036.md`
+- Análisis RAG cuenca: `../data/rag-analisis-cuenca-2026.md`
+- ILA v0: `ila-index.json` → `/indice-territorial/`
+- Observatorio piloto: `observatorio-2026.json`
+- Schemas: `schemas/ila-sector.schema.json`, `case-study-v2.schema.json`, `knowledge-item.schema.json`
+- Casos migrados a metadatos ILA en `cases.json`
 
 ---
 

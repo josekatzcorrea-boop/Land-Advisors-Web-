@@ -156,6 +156,17 @@
     "keywords": ["inversión inmobiliaria Malalcahuello", "terrenos Malalcahuello"]
   },
   {
+    "path": "/indice-territorial/",
+    "file": "indice-territorial/index.html",
+    "title": "Índice Land Advisors (ILA) | Inteligencia territorial sur de Chile",
+    "description": "Índice territorial Land Advisors v0: score por sector en Puerto Varas, Frutillar, Llanquihue y Ensenada. Conectividad, normativa, mercado y habilitación — no precio de aviso.",
+    "type": "ila-hub",
+    "breadcrumb": "Índice territorial",
+    "h1": "Índice Land Advisors",
+    "intro": "Score territorial por sector del contorno rural. Calibrado con Censo 2024, normativa comunal y casos reales — para comparar zonas con criterio, no con el impulso del listing.",
+    "keywords": ["índice territorial", "inteligencia territorial Chile", "invertir terreno sur", "Puerto Varas Frutillar Llanquihue"]
+  },
+  {
     "path": "/inteligencia-territorial/",
     "file": "inteligencia-territorial/index.html",
     "title": "Inteligencia territorial | Biblioteca Land Advisors Chile",
