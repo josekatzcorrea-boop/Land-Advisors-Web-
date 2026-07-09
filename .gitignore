@@ -39,6 +39,10 @@ rrss/video/assets/music/*
 # Analítica con IDs reales (mantener analytics-config.example.js en repo)
 landing/analytics-config.local.js
 
+# Land Advisors Brain (app interna)
+brain/.env.local
+brain/.next/
+
 # Servicios gallery: keep only optimized *-opt.jpg in git
 landing/servicios/*.jpg
 landing/servicios/images/*.jpg
