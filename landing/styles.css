@@ -1442,6 +1442,41 @@ section {
   color: var(--text-muted-dark);
 }
 
+.case .service-card-link {
+  display: inline-block;
+  margin: 0.35rem 1.5rem 1.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.case .service-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Tarjetas SEO en home (blog / inteligencia teaser) */
+.seo-card-grid .seo-card.glass-card,
+.section-blog-teaser .seo-card.glass-card {
+  padding: 1.5rem 1.65rem 1.65rem;
+}
+
+.seo-card-grid .seo-card.glass-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.seo-card-grid .seo-card.glass-card p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+  color: var(--text-muted-dark);
+}
+
+.seo-card-grid .seo-card.glass-card .btn {
+  margin-top: 0.15rem;
+}
+
 /* Territories */
 .territory-tags {
   display: flex;
@@ -2134,4 +2169,13 @@ section {
 .casos-stats {
   flex-wrap: wrap;
   justify-content: center;
+  border-top-color: rgba(5, 44, 77, 0.14);
+}
+
+#casos .casos-stats .hero-metric-label {
+  color: var(--lake);
+}
+
+#casos .casos-stats .hero-metric strong {
+  color: var(--blue);
 }

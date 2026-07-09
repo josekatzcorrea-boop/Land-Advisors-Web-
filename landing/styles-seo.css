@@ -85,7 +85,7 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding: 1.35rem 1.5rem;
+  padding: 1.5rem 1.65rem;
   margin-bottom: 1.75rem;
   background: linear-gradient(135deg, #f4f7f8 0%, #eef6f8 55%, #fff 100%);
   border: 1px solid rgba(91, 143, 160, 0.22);
@@ -199,7 +199,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1.25rem 1.35rem 1.35rem;
+  padding: 1.5rem 1.65rem 1.65rem;
 }
 
 .blog-card__meta {
@@ -732,7 +732,7 @@
 /* Internal linking blocks (SEO) */
 .seo-internal-links {
   margin-top: 2rem;
-  padding: 1.25rem 1.35rem;
+  padding: 1.5rem 1.65rem;
   max-width: 42rem;
 }
 
@@ -1239,7 +1239,7 @@
 }
 
 .intel-cluster {
-  padding: 1.35rem 1.5rem 1.5rem;
+  padding: 1.5rem 1.65rem 1.65rem;
 }
 
 .intel-cluster .section-label {
@@ -1261,7 +1261,7 @@
 }
 
 .blog-article--intel .blog-article__content--intel {
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: 1.5rem 1.65rem 1.65rem;
 }
 
 .seo-page--intel .intel-faq {
@@ -1333,16 +1333,16 @@
 
 /* SEO glass cards — padding consistente en recuadros blancos */
 .seo-page .seo-card {
-  padding: 1.35rem 1.5rem 1.5rem;
+  padding: 1.5rem 1.65rem 1.65rem;
 }
 
 .seo-page .case-card {
-  padding: 0 1.35rem 1.5rem;
+  padding: 0 1.65rem 1.65rem;
   overflow: hidden;
 }
 
 .seo-page .case-card .case-card__media {
-  margin: 0 -1.35rem 1rem;
+  margin: 0 -1.65rem 1rem;
   border-radius: 12px 12px 0 0;
 }
 
@@ -1357,7 +1357,8 @@
 }
 
 .seo-page .case-card .btn {
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.15rem;
 }
 
 .seo-page .seo-card > .section-label,

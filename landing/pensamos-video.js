@@ -1,5 +1,5 @@
 (function () {
-  const section = document.getElementById("pensamos");
+  const section = document.getElementById("solucion") || document.querySelector(".section-pensamos");
   const video = document.getElementById("territorio-video");
   const figure = document.querySelector(".section-media-video");
   const replayBtn = document.getElementById("territorio-video-replay");
@@ -159,7 +159,10 @@
   }
 
   async function init() {
-    const src = await resolveSrc();
+    let src = video.getAttribute("src") || video.currentSrc;
+    if (!src) {
+      src = await resolveSrc();
+    }
     if (!src) {
       showPosterFallback();
       return;
@@ -169,8 +172,11 @@
     frozen = false;
     holdTime = null;
     setReplayVisible(false);
-    video.src = src;
-    video.load();
+    if (video.getAttribute("src") !== src) {
+      video.src = src;
+      video.load();
+    }
+    video.addEventListener("error", showPosterFallback, { once: true });
     bindPlayback();
   }
 
