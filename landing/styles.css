@@ -1196,9 +1196,200 @@ section {
   cursor: pointer;
 }
 
-.service-card-link {
+.service-card-link,
+.promo-deal {
   position: relative;
   z-index: 2;
+}
+
+.service-card--promo {
+  border-color: rgba(61, 107, 94, 0.35);
+  box-shadow: 0 8px 28px rgba(5, 44, 77, 0.08);
+}
+
+/* ── Promo deal (shiny offer card) ── */
+.promo-deal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0.65rem 0 0.35rem;
+  padding: 0.7rem 0.75rem 0.65rem;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(61, 107, 94, 0.35);
+  background:
+    linear-gradient(145deg, #f7fcfa 0%, #e8f4f0 42%, #f0f7fa 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    0 6px 18px rgba(5, 44, 77, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.promo-deal:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 10px 24px rgba(5, 44, 77, 0.12);
+}
+
+.promo-deal__shine {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.55) 48%,
+    transparent 58%,
+    transparent 100%
+  );
+  background-size: 220% 100%;
+  animation: promo-shine 3.6s ease-in-out infinite;
+}
+
+@keyframes promo-shine {
+  0%,
+  55% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -40% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .promo-deal__shine {
+    animation: none;
+  }
+}
+
+.promo-deal > *:not(.promo-deal__shine) {
+  position: relative;
+  z-index: 1;
+}
+
+.promo-deal__badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 0 0.15rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #3d6b5e;
+}
+
+.promo-deal__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin: 0.15rem 0 0.1rem;
+}
+
+.promo-deal__prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.promo-deal__old {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.promo-deal__old-value {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7a8791;
+}
+
+.promo-deal__slash {
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  top: 46%;
+  height: 3px;
+  background: #c62828;
+  transform: rotate(-18deg);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(198, 40, 40, 0.35);
+}
+
+.promo-deal__new {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #052c4d;
+}
+
+.promo-deal--free .promo-deal__new {
+  color: #1b5e45;
+  font-size: 1.45rem;
+}
+
+.promo-deal__pct {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.85rem;
+  padding: 0.35rem 0.4rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(160deg, #c62828 0%, #8e1b1b 100%);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(198, 40, 40, 0.35);
+  line-height: 1;
+}
+
+.promo-deal__pct-num {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.promo-deal__pct-label {
+  font-size: 0.52rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+}
+
+.promo-deal__highlight {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #1a5f72;
+  line-height: 1.25;
+}
+
+.promo-deal__sub {
+  font-size: 0.62rem;
+  color: #5a6a75;
+  line-height: 1.3;
+}
+
+.promo-deal__cta {
+  margin-top: 0.2rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #1a5f72;
+}
+
+.promo-deal--sm {
+  margin-top: 0.55rem;
 }
 
 .service-card-head {

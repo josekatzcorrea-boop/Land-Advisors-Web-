@@ -1865,6 +1865,86 @@ function catalogBySlug(slug) {
   return catalog.services.find((s) => s.slug === slug);
 }
 
+function promoHref(prefix) {
+  const promo = catalog.promo;
+  if (!promo?.active || !promo.href) return "";
+  const href = promo.href.startsWith("/") ? promo.href.slice(1) : promo.href;
+  return `${prefix}${href}`;
+}
+
+function serviceAppliesPromo(slug) {
+  const list = catalog.promo?.services || [];
+  return Boolean(catalog.promo?.active && list.includes(slug));
+}
+
+function promoDealFor(slug) {
+  if (!serviceAppliesPromo(slug)) return null;
+  return catalog.promo?.deals?.[slug] || null;
+}
+
+/** Visual promo deal: struck old price + big new offer */
+function buildPromoDeal(slug, prefix, { size = "md" } = {}) {
+  const deal = promoDealFor(slug);
+  const href = promoHref(prefix);
+  if (!deal || !href) return "";
+  const sizeClass = size === "sm" ? " promo-deal--sm" : size === "lg" ? " promo-deal--lg" : "";
+  const variantClass = deal.variant === "free" ? " promo-deal--free" : " promo-deal--discount";
+  const pct =
+    deal.pct
+      ? `<span class="promo-deal__pct" aria-hidden="true"><span class="promo-deal__pct-num">${esc(deal.pct)}</span><span class="promo-deal__pct-label">dto.</span></span>`
+      : "";
+  return `<a href="${href}" class="promo-deal${sizeClass}${variantClass}" data-track="cta_promo_busq30" aria-label="${esc(deal.highlight)} — ver promoción">
+    <span class="promo-deal__shine" aria-hidden="true"></span>
+    <span class="promo-deal__badge">${esc(catalog.promo.badge)} · ${esc(catalog.promo.deadlineLabel)}</span>
+    <span class="promo-deal__row">
+      <span class="promo-deal__prices">
+        <span class="promo-deal__old"><span class="promo-deal__old-value">${esc(deal.oldPrice)}</span><span class="promo-deal__slash" aria-hidden="true"></span></span>
+        <span class="promo-deal__new">${esc(deal.newPrice)}</span>
+      </span>
+      ${pct}
+    </span>
+    <span class="promo-deal__highlight">${esc(deal.highlight)}</span>
+    <span class="promo-deal__sub">${esc(deal.sub)}</span>
+    <span class="promo-deal__cta">${esc(catalog.promo.cta)}</span>
+  </a>`;
+}
+
+function buildPromoBanner(prefix) {
+  const promo = catalog.promo;
+  if (!promo?.active) return "";
+  const href = promoHref(prefix);
+  if (!href) return "";
+  const deals = (promo.services || [])
+    .map((slug) => buildPromoDeal(slug, prefix, { size: "md" }))
+    .filter(Boolean)
+    .join("");
+  return `<aside class="promo-banner" aria-label="Promoción vigente">
+    <div class="promo-banner__head">
+      <p class="promo-banner__eyebrow">${esc(promo.badge)}</p>
+      <p class="promo-banner__title">${esc(promo.title)}</p>
+      <p class="promo-banner__text">${esc(promo.text)}</p>
+    </div>
+    <div class="promo-banner__deals">${deals}</div>
+  </aside>`;
+}
+
+function buildServicePriceBlock(page, prefix) {
+  if (!page.service) return "";
+  const slug = page.path.split("/").filter(Boolean).pop();
+  const deal = promoDealFor(slug);
+  if (deal) {
+    return `<div class="seo-service-meta glass-card seo-service-meta--promo">
+      <p class="seo-service-meta__label">Inversión</p>
+      ${buildPromoDeal(slug, prefix, { size: "lg" })}
+      <p>${esc(page.service.description)}</p>
+    </div>`;
+  }
+  return `<div class="seo-service-meta glass-card">
+      <p><strong>Inversión:</strong> ${esc(page.service.price)}</p>
+      <p>${esc(page.service.description)}</p>
+    </div>`;
+}
+
 function serviceIconSvg(num) {
   const icons = {
     "01": `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.75"/><circle cx="16" cy="16" r="2.5" fill="currentColor"/><path d="M16 5v4M16 23v4M5 16h4M23 16h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M8.5 8.5l2.8 2.8M20.7 20.7l2.8 2.8M23.5 8.5l-2.8 2.8M11.3 20.7l-2.8 2.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
@@ -1915,15 +1995,20 @@ function buildServicesCatalog(prefix) {
       const title = svc.slug
         ? `<a href="${href}">${esc(svc.title)}</a>`
         : esc(svc.title);
-      return `<article class="services-catalog-item glass-card${alt}">
+      const deal = promoDealFor(svc.slug);
+      const priceBlock = deal
+        ? buildPromoDeal(svc.slug, prefix, { size: "sm" })
+        : `<p class="services-catalog-price">${esc(svc.price)}</p>`;
+      return `<article class="services-catalog-item glass-card${alt}${deal ? " services-catalog-item--promo" : ""}">
       <div class="services-catalog-head">
         <span class="services-catalog-icon" aria-hidden="true">${serviceIconSvg(svc.num)}</span>
         <div class="services-catalog-heading">
           <span class="services-catalog-num">${esc(svc.num)}</span>
           <h2>${title}</h2>
-          <p class="services-catalog-price">${esc(svc.price)}</p>
+          ${deal ? "" : priceBlock}
         </div>
       </div>
+      ${deal ? priceBlock : ""}
       ${serviceDeliverablesBlock(svc)}
       <a href="${href}" class="service-card-link" data-track="${esc(svc.cta.event)}">${esc(svc.cta.label)}</a>
     </article>`;
@@ -1931,6 +2016,7 @@ function buildServicesCatalog(prefix) {
     .join("\n");
 
   return `${buildServicesGallery(prefix)}
+    ${buildPromoBanner(prefix)}
     <p class="services-catalog-price-note">${esc(catalog.priceNote)}</p>
     <div class="services-catalog-list" role="list">${items}</div>
     <p class="services-catalog-legal">${esc(catalog.legal)}</p>`;
@@ -2018,16 +2104,13 @@ function buildSecondaryPage(page) {
   } else if (page.type === "service") {
     const slug = page.path.split("/").filter(Boolean).pop();
     const svc = catalogBySlug(slug);
-    if (svc) extraContent = `<div class="service-detail glass-card">${serviceDeliverablesBlock(svc)}</div>`;
+    if (svc) {
+      // Deal lives in service price block; avoid duplicating banner here
+      extraContent = `<div class="service-detail glass-card">${serviceDeliverablesBlock(svc)}</div>`;
+    }
   }
 
-  const serviceBlock =
-    page.service
-      ? `<div class="seo-service-meta glass-card">
-      <p><strong>Inversión:</strong> ${esc(page.service.price)}</p>
-      <p>${esc(page.service.description)}</p>
-    </div>`
-      : "";
+  const serviceBlock = buildServicePriceBlock(page, prefix);
 
   return `<!DOCTYPE html>
 <html lang="es">

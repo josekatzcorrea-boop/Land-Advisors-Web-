@@ -710,6 +710,159 @@
   color: var(--brand-mid, #1a5f72);
 }
 
+/* ── Promo banner + deal cards (SEO / servicios) ── */
+.promo-banner {
+  margin: 0 0 1.75rem;
+  padding: 1.35rem 1.4rem 1.5rem;
+  border: 1px solid rgba(61, 107, 94, 0.3);
+  background:
+    linear-gradient(135deg, rgba(230, 239, 233, 0.95) 0%, rgba(232, 241, 243, 0.98) 55%, #fff 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 10px 28px rgba(5, 44, 77, 0.07);
+}
+
+.promo-banner__eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3d6b5e;
+}
+
+.promo-banner__title {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  font-weight: 700;
+  color: var(--brand-deep, #052c4d);
+  line-height: 1.25;
+}
+
+.promo-banner__text {
+  margin: 0 0 1.1rem;
+  max-width: 40rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-muted, #3d4f5c);
+}
+
+.promo-banner__deals {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 720px) {
+  .promo-banner__deals {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.promo-deal--lg {
+  margin: 0.5rem 0 1rem;
+  padding: 1.15rem 1.25rem 1.1rem;
+}
+
+.promo-deal--lg .promo-deal__badge {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.promo-deal--lg .promo-deal__old-value {
+  font-size: 1.05rem;
+}
+
+.promo-deal--lg .promo-deal__slash {
+  height: 3.5px;
+}
+
+.promo-deal--lg .promo-deal__new {
+  font-size: 2.15rem;
+}
+
+.promo-deal--lg.promo-deal--free .promo-deal__new {
+  font-size: 2.35rem;
+}
+
+.promo-deal--lg .promo-deal__pct {
+  min-width: 4.25rem;
+  padding: 0.55rem 0.5rem;
+}
+
+.promo-deal--lg .promo-deal__pct-num {
+  font-size: 1.55rem;
+}
+
+.promo-deal--lg .promo-deal__pct-label {
+  font-size: 0.65rem;
+}
+
+.promo-deal--lg .promo-deal__highlight {
+  font-size: 1.05rem;
+  margin-top: 0.15rem;
+}
+
+.promo-deal--lg .promo-deal__sub {
+  font-size: 0.88rem;
+}
+
+.promo-deal--lg .promo-deal__cta {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.promo-deal--md .promo-deal__new,
+.promo-banner .promo-deal .promo-deal__new {
+  font-size: 1.65rem;
+}
+
+.promo-banner .promo-deal.promo-deal--free .promo-deal__new {
+  font-size: 1.8rem;
+}
+
+.promo-banner .promo-deal .promo-deal__old-value {
+  font-size: 0.95rem;
+}
+
+.promo-banner .promo-deal .promo-deal__pct {
+  min-width: 3.5rem;
+  padding: 0.45rem 0.4rem;
+}
+
+.promo-banner .promo-deal .promo-deal__pct-num {
+  font-size: 1.25rem;
+}
+
+.promo-banner .promo-deal .promo-deal__highlight {
+  font-size: 0.95rem;
+}
+
+.promo-banner .promo-deal .promo-deal__cta {
+  font-size: 0.88rem;
+}
+
+.services-catalog-item--promo {
+  border-color: rgba(61, 107, 94, 0.32);
+}
+
+.services-catalog-item .promo-deal {
+  margin: 0.85rem 0 1rem;
+  max-width: 22rem;
+}
+
+.seo-service-meta--promo {
+  padding-bottom: 1.1rem;
+}
+
+.seo-service-meta__label {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted, #5a6a75);
+}
+
 .services-catalog-legal {
   max-width: 42rem;
   margin: 1.35rem auto 0;

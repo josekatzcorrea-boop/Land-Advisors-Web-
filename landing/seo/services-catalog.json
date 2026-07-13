@@ -2,6 +2,34 @@
   "lead": "Consultoría para comprar el terreno correcto en la cuenca del Lago Llanquihue y Malalcahuello. Territorio primero, activo después — cada servicio se contrata de forma independiente.",
   "priceNote": "Precios en UF · sujetos a confirmación en reunión estratégica.",
   "legal": "No somos corredora ni portal inmobiliario. Cada terreno requiere evaluación específica.",
+  "promo": {
+    "active": true,
+    "validThrough": "2026-09-30",
+    "deadlineLabel": "hasta el 30 de septiembre",
+    "href": "/campanas/busqueda-personalizada-30/",
+    "badge": "Promoción vigente",
+    "title": "Diagnóstico gratis · búsqueda con 30% dto.",
+    "text": "Sin obligación de contratar más. Si después te sirve, la búsqueda queda en 3,5 UF.",
+    "cta": "Ver promoción completa →",
+    "services": ["diagnostico-estrategico", "busqueda-personalizada"],
+    "deals": {
+      "diagnostico-estrategico": {
+        "oldPrice": "1 UF",
+        "newPrice": "GRATIS",
+        "highlight": "Diagnóstico gratis",
+        "sub": "Sin compromiso de contratar más",
+        "variant": "free"
+      },
+      "busqueda-personalizada": {
+        "oldPrice": "5 UF",
+        "newPrice": "3,5 UF",
+        "highlight": "30% de descuento",
+        "sub": "Diagnóstico estratégico gratis incluido",
+        "variant": "discount",
+        "pct": "30%"
+      }
+    }
+  },
   "gallery": {
     "eyebrow": "Más que un terreno",
     "phrase": "Así puede verse tu futuro en el sur de Chile — familia, paisaje y calidad de vida en zonas con potencial turístico. Con el terreno correcto y nuestra ayuda, la inversión también se siente así.",
@@ -41,6 +69,7 @@
         "Próximos pasos concretos según tu presupuesto y objetivo"
       ],
       "notes": ["Ideal si aún no sabes en qué zona ni con qué criterio avanzar."],
+      "promoNote": "Hasta el 30 de septiembre: diagnóstico gratis sin compromiso.",
       "cta": { "label": "Agendar diagnóstico →", "event": "cta_diagnostico" }
     },
     {
@@ -59,6 +88,7 @@
         "Para quien quiere opciones con criterio, no un catálogo masivo."
       ],
       "highlightNote": "Incluye diagnóstico estratégico.",
+      "promoNote": "Promoción: diagnóstico gratis + búsqueda a 3,5 UF (antes 5 UF) hasta el 30 de septiembre.",
       "cta": { "label": "Solicitar búsqueda →", "event": "cta_busqueda" }
     },
     {
