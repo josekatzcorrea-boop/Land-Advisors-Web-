@@ -1704,25 +1704,14 @@ function buildCampaignPage(campaign) {
           </figure>`
     : "";
 
-  const videoBlock = campaign.video?.src
+  const heroVideo = campaign.video?.src
     ? (() => {
         const v = campaign.video;
         const vSrc = `${prefix}${v.src.replace(/^\//, "")}`;
         const vPoster = v.poster ? `${prefix}${v.poster.replace(/^\//, "")}` : "";
-        const calLabel = esc(v.ctaLabel || "Agendar reunión estratégica");
-        const calIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`;
-        const cta = `<a href="#" class="campaign-cta campaign-cta--cal campaign-cta--primary campaign-cta--lg" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>`;
-        return `<section class="campaign-video" aria-labelledby="campaign-video-title">
-      <div class="container campaign-video__inner" data-reveal>
-        <div class="campaign-video__copy">
-          <p class="section-label">Video</p>
-          <h2 id="campaign-video-title">${esc(v.title || "Mira el video de la promoción")}</h2>
-          <p class="campaign-video__caption">${esc(v.caption || "")}</p>
-          <div class="campaign-video__actions">${cta}</div>
-        </div>
-        <figure class="campaign-video__player glass-card">
+        return `<figure class="campaign-hero__video">
           <video
-            class="campaign-video__media"
+            class="campaign-hero__video-media"
             controls
             playsinline
             preload="metadata"
@@ -1733,12 +1722,11 @@ function buildCampaignPage(campaign) {
             <source src="${vSrc}" type="video/mp4">
             Tu navegador no reproduce video HTML5.
           </video>
-          <figcaption class="campaign-video__hint">Toca play cuando quieras verlo · ~40 s</figcaption>
-        </figure>
-      </div>
-    </section>`;
+          <figcaption class="campaign-hero__video-hint">Toca play · ~40 s</figcaption>
+        </figure>`;
       })()
     : "";
+  const heroSplitClass = heroVideo ? " campaign-hero__inner--split" : "";
 
   return `<!DOCTYPE html>
 <html lang="es" ${campaignHtmlAttrs(campaign)}>
@@ -1761,27 +1749,28 @@ ${navLinks(prefix, campaign)}
   </header>
 
   <main>
-    <section class="campaign-hero">
+    <section class="campaign-hero${heroVideo ? " campaign-hero--has-video" : ""}">
       <div class="campaign-hero__bg" aria-hidden="true">
         <img src="${imgSrc}" alt="" width="${imgW}" height="${imgH}" loading="eager" decoding="async" style="object-position: ${esc(imgPos)}">
         <div class="campaign-hero__overlay"></div>
       </div>
-      <div class="container campaign-hero__inner" data-reveal>
-        <p class="campaign-badge">Oferta hasta el ${esc(campaign.deadlineLabel)}</p>
-        <p class="section-label">${sectionLabel}</p>
-        <h1>${h1Main}${h1Gradient}</h1>
-        <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
+      <div class="container campaign-hero__inner${heroSplitClass}" data-reveal>
+        <div class="campaign-hero__copy">
+          <p class="campaign-badge">Oferta hasta el ${esc(campaign.deadlineLabel)}</p>
+          <p class="section-label">${sectionLabel}</p>
+          <h1>${h1Main}${h1Gradient}</h1>
+          <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
 
-        ${pricingBlock}
+          ${pricingBlock}
 
-        <div class="campaign-hero__actions campaign-hero__actions--cta">
-          ${campaignCtaMarkup(campaign, "hero")}
+          <div class="campaign-hero__actions campaign-hero__actions--cta">
+            ${campaignCtaMarkup(campaign, "hero")}
+          </div>
+          <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
         </div>
-        <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
+        ${heroVideo}
       </div>
     </section>
-
-    ${videoBlock}
 
     <section class="campaign-body">
       <div class="container" data-reveal>
