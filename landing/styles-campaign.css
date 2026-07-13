@@ -411,41 +411,58 @@
   margin-bottom: 1.15rem;
 }
 
+/* Pricing + video siempre en fila (salvo móvil estrecho) */
 .seo-page--campaign .campaign-hero__offer {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: row;
   align-items: stretch;
+  gap: 0.85rem;
   margin-bottom: 1.15rem;
+  width: 100%;
 }
 
-@media (min-width: 900px) {
-  .seo-page--campaign .campaign-hero__offer {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1.15rem;
-    align-items: stretch;
-  }
-
-  .seo-page--campaign .campaign-hero--has-video {
-    align-items: center;
-  }
+.seo-page--campaign .campaign-hero--has-video {
+  align-items: center;
 }
 
 .seo-page--campaign .campaign-hero__offer .campaign-pricing {
   margin: 0;
-  height: 100%;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem 1.15rem;
+  gap: 0.75rem;
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .seo-page--campaign .campaign-hero__video {
+    flex-basis: 170px;
+    width: 170px;
+    max-width: 170px;
+  }
+
+  .seo-page--campaign .campaign-hero__offer .campaign-pricing {
+    padding: 0.85rem 1rem;
+    gap: 0.55rem;
+  }
+
+  .seo-page--campaign .campaign-pricing__price {
+    font-size: 1.35rem;
+  }
 }
 
 .seo-page--campaign .campaign-hero__video {
   margin: 0;
-  width: min(100%, 220px);
-  justify-self: center;
-  height: 100%;
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 200px;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
-  padding: 0.4rem;
+  padding: 0.35rem;
   border-radius: 0.75rem;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.28);
@@ -454,37 +471,41 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 900px) {
-  .seo-page--campaign .campaign-hero__video {
-    width: 220px;
-    justify-self: end;
-  }
-}
-
 .seo-page--campaign .campaign-hero__video-media {
   display: block;
   width: 100%;
   flex: 1 1 auto;
   min-height: 0;
-  aspect-ratio: 9 / 16;
+  height: 100%;
   border-radius: 0.45rem;
   background: #052c4d;
   object-fit: cover;
 }
 
-@media (min-width: 900px) {
-  .seo-page--campaign .campaign-hero__offer .campaign-hero__video-media {
-    aspect-ratio: auto;
-    height: 100%;
-  }
-}
-
 .seo-page--campaign .campaign-hero__video-hint {
-  margin: 0.35rem 0 0.05rem;
+  margin: 0.3rem 0 0.05rem;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: rgba(255, 255, 255, 0.78);
   flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .seo-page--campaign .campaign-hero__offer {
+    flex-direction: column;
+  }
+
+  .seo-page--campaign .campaign-hero__video {
+    flex: 0 0 auto;
+    width: min(100%, 200px);
+    max-width: 200px;
+    align-self: center;
+  }
+
+  .seo-page--campaign .campaign-hero__video-media {
+    aspect-ratio: 9 / 16;
+    height: auto;
+  }
 }
 
 .seo-page--campaign .campaign-badge {
