@@ -337,6 +337,42 @@
         }
       ],
       "allyText": "Enamorarse del terreno está bien. El diagnóstico ordena zona y criterios antes de perder otro viaje al sur. La búsqueda es opcional — de tu lado, sin presión.",
+      "trust": {
+        "metric": "Más de 100.000 UF invertidas a través de nuestra consultoría",
+        "galleryLabel": "Nuestros clientes nos avalan",
+        "gallery": [
+          {
+            "file": "images/clientes/cliente-01.jpg",
+            "alt": "Cliente satisfecha en su terreno en el sur de Chile",
+            "position": "center 28%"
+          },
+          {
+            "file": "images/clientes/cliente-02.jpg",
+            "alt": "Visita en terreno con vista al lago y volcán",
+            "position": "center 35%"
+          },
+          {
+            "file": "images/clientes/cliente-03.jpg",
+            "alt": "Cliente celebrando en su terreno",
+            "position": "center 30%"
+          },
+          {
+            "file": "images/clientes/cliente-04.jpg",
+            "alt": "Clientes en visita a terreno rural",
+            "position": "center 40%"
+          },
+          {
+            "file": "images/clientes/cliente-05.jpg",
+            "alt": "Exploración territorial junto a lago y montañas",
+            "position": "center 45%"
+          },
+          {
+            "file": "images/clientes/cliente-06.jpg",
+            "alt": "Recorrido de terreno junto a un río en el sur",
+            "position": "center 40%"
+          }
+        ]
+      },
       "faq": [
         {
           "q": "¿Debo contratar la búsqueda para obtener el diagnóstico gratis?",

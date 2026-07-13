@@ -1728,6 +1728,39 @@ function buildCampaignPage(campaign) {
     : "";
   const heroSplitClass = heroVideo ? " campaign-hero__inner--with-video" : "";
 
+  const trustBlock = (() => {
+    const t = campaign.trust;
+    if (!t) return "";
+    const reasons = (t.reasons || [])
+      .map(
+        (r) => `<li class="campaign-trust__reason">
+            <strong>${esc(r.title)}</strong>
+            <span>${esc(r.text)}</span>
+          </li>`
+      )
+      .join("");
+    const galleryImgs = (t.gallery || [])
+      .map((img) => {
+        const pos = img.position ? ` style="object-position:${esc(img.position)}"` : "";
+        return `<figure class="campaign-trust__item"><img src="${prefix}${esc(img.file)}" alt="${esc(img.alt || "")}" width="640" height="480" loading="lazy" decoding="async"${pos}></figure>`;
+      })
+      .join("");
+    return `<section class="campaign-trust" aria-label="Por qué confiar en Land Advisors">
+      <div class="container campaign-trust__inner" data-reveal>
+        <p class="campaign-trust__metric">${esc(t.metric)}</p>
+        ${reasons ? `<ul class="campaign-trust__reasons">${reasons}</ul>` : ""}
+        ${
+          galleryImgs
+            ? `<div class="campaign-trust__gallery">
+          <p class="campaign-trust__gallery-label">${esc(t.galleryLabel || "Nuestros clientes nos avalan")}</p>
+          <div class="campaign-trust__grid">${galleryImgs}</div>
+        </div>`
+            : ""
+        }
+      </div>
+    </section>`;
+  })();
+
   return `<!DOCTYPE html>
 <html lang="es" ${campaignHtmlAttrs(campaign)}>
 <head>
@@ -1773,6 +1806,8 @@ ${navLinks(prefix, campaign)}
         <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
       </div>
     </section>
+
+    ${trustBlock}
 
     <section class="campaign-body">
       <div class="container" data-reveal>
