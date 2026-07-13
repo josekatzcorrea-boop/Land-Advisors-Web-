@@ -1225,7 +1225,7 @@ ${navLinks(prefix)}
       <div class="container">
         <h2>¿Evaluando un terreno en el sur de Chile?</h2>
         <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_contacto">Agendar reunión estratégica</a>
       </div>
     </section>
   </main>
@@ -1316,7 +1316,7 @@ ${navLinks(prefix)}
       <div class="container">
         <h2>¿Evaluando un terreno en el sur de Chile?</h2>
         <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_contacto">Agendar reunión estratégica</a>
       </div>
     </section>
   </main>
@@ -1367,7 +1367,7 @@ function campaignCtaMarkup(campaign, variant = "float") {
 }
 
 function campaignHtmlAttrs(campaign) {
-  const phone = (campaign.ads?.whatsappPhone || site.whatsappBot || site.phone || "+56999163518").replace(/\D/g, "");
+  const phone = (campaign.ads?.whatsappPhone || site.whatsappBot || site.phone || "+56974533265").replace(/\D/g, "");
   const token = campaign.ads?.whatsappToken || "LA-CAMP";
   const calIntent = campaign.calendarIntent || "diagnostico";
   return `data-wa-intro="${esc(campaign.whatsappIntro || "")}" data-wa-token="${esc(token)}" data-wa-phone="${esc(phone)}" data-calendar-intent="${esc(calIntent)}"`;
@@ -2226,7 +2226,7 @@ ${navLinks(prefix)}
           hubGuide
             ? ""
             : `<div class="seo-hero-actions">
-          <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="${cta.event}">${esc(cta.label)}</a>
+          <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="${cta.event}">${esc(cta.label)}</a>
           <a href="${site.whatsapp}" class="btn btn-glass" target="_blank" rel="noopener noreferrer" data-track="cta_whatsapp">WhatsApp</a>
         </div>`
         }
@@ -2242,7 +2242,7 @@ ${navLinks(prefix)}
       <div class="container">
         <h2>${hubGuide ? "¿Evaluando terreno en el sur de Chile?" : "Inteligencia territorial antes de invertir"}</h2>
         <p>${hubGuide ? "Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial." : "Reunión estratégica para ordenar tu decisión con criterio de mercado y territorio."}</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow" data-track="${hubGuide ? ctaEvent : "cta_contacto"}">${esc(hubGuide ? ctaLabel : "Agendar reunión estratégica")}</a>
+        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="${hubGuide ? ctaEvent : "cta_contacto"}">${esc(hubGuide ? ctaLabel : "Agendar reunión estratégica")}</a>
       </div>
     </section>
   </main>

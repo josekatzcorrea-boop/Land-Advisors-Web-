@@ -1,0 +1,37 @@
+{
+  "id": "2026-07-20-MS5",
+  "fecha_publicacion": "2026-07-20",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "META-SUEÑO",
+  "campana": "meta-antesala-publicidad",
+  "tema": "Despertar lejos del ritmo de Santiago",
+  "formato": "carrusel",
+  "slides_count": 5,
+  "redes": [
+    "instagram",
+    "facebook",
+    "meta_ads"
+  ],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-20-MS5.json",
+  "piezas_visuales": "rrss/posts/2026-07-20-MS5/index.html",
+  "export_output": "rrss/output/2026-07-20-MS5/",
+  "titulo_interno": "Meta sueño 5 — despertar lejos del ritmo de Santiago",
+  "caption_ig": "Despertar lejos del ritmo de Santiago.\n\nCafé, silencio, luz del sur. No es una fantasía de Instagram: es lo que mucha gente viene a buscar al contorno rural de la cuenca del Llanquihue.\n\nEnamorarse del paisaje está bien. Nosotros te ayudamos a que el terreno detrás de esa mañana también sea el correcto.\n\nDesliza 👉\n\nGuárdalo si estás evaluando comprar en el sur.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #LagoLlanquihue #PuertoVaras #SurDeChile #TerrenosChile #CalidadDeVida",
+  "caption_fb": "Despertar lejos del ritmo de Santiago — con un terreno en la cuenca del Llanquihue elegido con sentido.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=paid&utm_campaign=meta-sueno-lago\n\n#LandAdvisors #LagoLlanquihue #SurDeChile",
+  "meta_primary_text": "Despertar lejos del ritmo de Santiago: lago cerca, menos ruido, más margen. El terreno correcto hace que la mañana se sienta distinta.",
+  "meta_headline": "Despertar lejos del ritmo de Santiago",
+  "meta_description": "Consultoría territorial en el sur de Chile. De tu lado para comprar el terreno correcto.",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=meta&utm_medium=paid&utm_campaign=land-advisors-despertar-lago",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-despertar-lago",
+    "layouts": "photo-title · photo-story · photo-story · light · cta-minimal",
+    "slide1": "Solo imagen + título + isotipo (sin texto explicativo)",
+    "fotos": "Clientes reales — rrss/assets/fotos-clientes/"
+  }
+}

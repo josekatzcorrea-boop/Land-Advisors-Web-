@@ -85,12 +85,16 @@
   }
 
   function whatsAppUrl(text) {
+    const cfg = whatsappConfig();
+    const fromCfg = cfg.phone
+      ? "https://wa.me/" + normalizePhone(cfg.phone)
+      : "";
     const widget =
       window.LAChatWidget &&
       window.LAChatWidget.CONFIG &&
       window.LAChatWidget.CONFIG.whatsapp &&
       window.LAChatWidget.CONFIG.whatsapp.href;
-    const base = widget || "https://wa.me/56974533265";
+    const base = fromCfg || widget || "https://wa.me/56974533265";
     const sep = base.includes("?") ? "&" : "?";
     return base + sep + "text=" + encodeURIComponent(text);
   }

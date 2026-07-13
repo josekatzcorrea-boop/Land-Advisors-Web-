@@ -1,0 +1,37 @@
+{
+  "id": "2026-07-18-MS3",
+  "fecha_publicacion": "2026-07-18",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "META-SUEÑO",
+  "campana": "meta-antesala-publicidad",
+  "tema": "Calidad de vida, a horas de Santiago",
+  "formato": "carrusel",
+  "slides_count": 5,
+  "redes": [
+    "instagram",
+    "facebook",
+    "meta_ads"
+  ],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-18-MS3.json",
+  "piezas_visuales": "rrss/posts/2026-07-18-MS3/index.html",
+  "export_output": "rrss/output/2026-07-18-MS3/",
+  "titulo_interno": "Meta sueño 3 — calidad de vida desde Santiago",
+  "caption_ig": "Si vives en Santiago y sientes que el tiempo se te va en tránsito y estrés, el sur no es solo vacaciones.\n\nCalidad de vida, a horas de Santiago: Puerto Varas, Frutillar, Llanquihue — contorno rural con servicios cerca y espacio de verdad.\n\nTe ayudamos a aterrizar el sueño con mapa local, antes del próximo viaje.\n\nDesliza 👉\n\n¿Vienes por vivir, invertir… o las dos?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #PuertoVaras #Frutillar #Llanquihue #SurDeChile #TerrenosChile",
+  "caption_fb": "Calidad de vida, a horas de Santiago — y un terreno elegido con criterio en la cuenca del Lago Llanquihue.\n\nReunión estratégica online o en Puerto Varas.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=paid&utm_campaign=meta-sueno-calidad-vida\n\n#LandAdvisors #SurDeChile #PuertoVaras",
+  "meta_primary_text": "Calidad de vida, a horas de Santiago: lago, contorno rural y un terreno con sentido. No es escapar — es decidir cómo quieres vivir.",
+  "meta_headline": "Calidad de vida, a horas de Santiago",
+  "meta_description": "Consultoría territorial en el sur de Chile. De tu lado para comprar el terreno correcto.",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=meta&utm_medium=paid&utm_campaign=land-advisors-calidad-vida-santiago",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-calidad-vida-santiago",
+    "layouts": "photo-title · photo-story · photo-story · light · cta-minimal",
+    "slide1": "Solo imagen + título + isotipo (sin texto explicativo)",
+    "fotos": "Clientes reales — rrss/assets/fotos-clientes/"
+  }
+}

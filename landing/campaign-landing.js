@@ -5,7 +5,7 @@
   const root = document.documentElement;
   const waIntro = root.getAttribute("data-wa-intro") || "";
   const waToken = root.getAttribute("data-wa-token") || "LA-CAMP";
-  const phone = (root.getAttribute("data-wa-phone") || "56999163518").replace(/\D/g, "");
+  const phone = (root.getAttribute("data-wa-phone") || "56974533265").replace(/\D/g, "");
   const calendarIntent = root.getAttribute("data-calendar-intent") || "diagnostico";
 
   function calendarUrl() {

@@ -8,21 +8,27 @@
   "tema": "¿Dónde tiene horizonte tu proyecto? Puerto Varas, Frutillar o Llanquihue",
   "formato": "carrusel",
   "slides_count": 6,
-  "redes": ["instagram", "facebook"],
+  "redes": [
+    "instagram",
+    "facebook"
+  ],
   "cta": "reunion_estrategica",
   "disclaimer": false,
   "estado": "listo_publicar",
   "post_generado": "rrss/posts/2026-07-13-T3.json",
   "piezas_visuales": "rrss/posts/2026-07-13-T3/index.html",
   "export_output": "rrss/output/2026-07-13-T3/",
-  "titulo_interno": "Territorio — horizonte y evolución · layouts variados",
-  "caption_ig": "Elegir terreno en el sur no es solo responder a una vista bonita.\n\nConviene preguntarse si ese rincón puede sostener tu proyecto en el tiempo: cómo crece la ciudad, qué pasa con caminos y servicios, y qué ritmo de vida ofrece cada comuna.\n\nDesliza el carrusel 👉\n→ Puerto Varas, Frutillar y Llanquihue en perspectiva\n→ Cómo evoluciona el contorno rural\n→ Variables de vida cotidiana\n→ Por qué leemos territorio antes del precio\n\n¿En qué zona imaginas tu proyecto hoy?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #Frutillar #Llanquihue #ContornoRural",
-  "caption_fb": "¿Dónde tiene horizonte tu proyecto en Puerto Varas, Frutillar o Llanquihue? Carrusel territorial en lenguaje claro.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-territorio-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
+  "titulo_interno": "Territorio — horizonte · estilo sueño",
+  "caption_ig": "Elegir terreno en el sur no es solo responder a una vista bonita.\n\nConviene preguntarse si ese rincón puede sostener tu proyecto en el tiempo: cómo crece la ciudad, qué pasa con caminos y servicios, y qué ritmo de vida ofrece cada comuna.\n\nDesliza 👉\n\n¿En qué zona imaginas tu proyecto hoy?\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #Frutillar #Llanquihue #ContornoRural",
+  "caption_fb": "¿Dónde tiene horizonte tu proyecto en Puerto Varas, Frutillar o Llanquihue?\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=social&utm_campaign=rrss-territorio-jul2026\n\n#LandAdvisors #SurDeChile #TerrenosChile",
   "cta_texto": "Agenda tu reunión estratégica",
   "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=instagram&utm_medium=social&utm_campaign=rrss-territorio-jul2026",
   "notas_diseno": {
     "formato": "1080×1350 vertical",
     "instagram_prefix": "land-advisors-territorio-futuro",
-    "layouts": "intro-blanco · stat · contraste · split · cover azul · cta oscuro"
+    "layouts": "photo-title · photo-story · photo-story · light · photo-story · cta-minimal",
+    "slide1": "Solo imagen + título + isotipo (sin texto explicativo)",
+    "fotos": "Clientes reales — rrss/assets/fotos-clientes/",
+    "estilo": "carousel-sueno (serie MS)"
   }
 }

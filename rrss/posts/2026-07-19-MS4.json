@@ -1,0 +1,37 @@
+{
+  "id": "2026-07-19-MS4",
+  "fecha_publicacion": "2026-07-19",
+  "hora": "10:00",
+  "zona_horaria": "America/Santiago",
+  "pilar": "META-SUEÑO",
+  "campana": "meta-antesala-publicidad",
+  "tema": "Tener terreno propio en el sur",
+  "formato": "carrusel",
+  "slides_count": 5,
+  "redes": [
+    "instagram",
+    "facebook",
+    "meta_ads"
+  ],
+  "cta": "reunion_estrategica",
+  "disclaimer": false,
+  "estado": "listo_publicar",
+  "post_generado": "rrss/posts/2026-07-19-MS4.json",
+  "piezas_visuales": "rrss/posts/2026-07-19-MS4/index.html",
+  "export_output": "rrss/output/2026-07-19-MS4/",
+  "titulo_interno": "Meta sueño 4 — terreno propio en el sur",
+  "caption_ig": "Tener terreno propio en el sur.\n\nEse momento en que llegas, miras alrededor y se te ordena la cabeza — no es casualidad. Es buscar con emoción y decidir con criterio.\n\nNo vendemos terrenos. Te acompañamos a comprar el correcto.\n\nDesliza 👉\n\n¿Ya viste alguno que te enamoró? Escríbenos.\n\nAgenda tu reunión estratégica — enlace en bio.\n\n#LandAdvisors #TerrenosChile #SurDeChile #PuertoVaras #ComprarTerreno",
+  "caption_fb": "Tener terreno propio en el sur — con alguien de tu lado en la decisión.\n\nhttps://www.landadvisors.cl/#contacto-form?utm_source=facebook&utm_medium=paid&utm_campaign=meta-sueno-terreno-propio\n\n#LandAdvisors #TerrenosChile #SurDeChile",
+  "meta_primary_text": "Tener terreno propio en el sur no es un eslogan: es el día en que llegas y sabes que el lugar calza. Te acompañamos hasta esa certeza.",
+  "meta_headline": "Tener terreno propio en el sur",
+  "meta_description": "Consultoría territorial en el sur de Chile. De tu lado para comprar el terreno correcto.",
+  "cta_texto": "Agenda tu reunión estratégica",
+  "cta_url": "https://www.landadvisors.cl/#contacto-form?utm_source=meta&utm_medium=paid&utm_campaign=land-advisors-terreno-propio",
+  "notas_diseno": {
+    "formato": "1080×1350 vertical",
+    "instagram_prefix": "land-advisors-terreno-propio",
+    "layouts": "photo-title · photo-story · photo-story · light · cta-minimal",
+    "slide1": "Solo imagen + título + isotipo (sin texto explicativo)",
+    "fotos": "Clientes reales — rrss/assets/fotos-clientes/"
+  }
+}

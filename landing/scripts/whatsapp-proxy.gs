@@ -14,10 +14,28 @@
 
 var DEFAULT_PHONE = "56974533265";
 var DEFAULT_APIKEY = "6937799";
+/** Número comercial legacy — redirige al personal mientras Meta no verifica el negocio. */
+var LEGACY_PHONES = ["56999163518"];
+
+function normalizePhone_(raw) {
+  return String(raw || "")
+    .replace(/\s+/g, "")
+    .replace(/^\+/, "");
+}
+
+function resolvePhone_(props) {
+  var stored = normalizePhone_(props.getProperty("LA_CALLMEBOT_PHONE"));
+  var phone = stored || DEFAULT_PHONE;
+  if (LEGACY_PHONES.indexOf(phone) >= 0) {
+    phone = DEFAULT_PHONE;
+    props.setProperty("LA_CALLMEBOT_PHONE", DEFAULT_PHONE);
+  }
+  return phone;
+}
 
 function getConfig_() {
   var props = PropertiesService.getScriptProperties();
-  var phone = (props.getProperty("LA_CALLMEBOT_PHONE") || DEFAULT_PHONE).replace(/\s+/g, "").replace(/^\+/, "");
+  var phone = resolvePhone_(props);
   var apiKey = (props.getProperty("LA_CALLMEBOT_APIKEY") || DEFAULT_APIKEY).trim();
   return { phone: phone, apiKey: apiKey };
 }
