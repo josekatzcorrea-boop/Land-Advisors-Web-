@@ -402,22 +402,27 @@
   max-width: 44rem;
 }
 
-.seo-page--campaign .campaign-hero__inner--split {
-  max-width: 72rem;
-  display: grid;
-  gap: 1.5rem;
-  align-items: end;
+.seo-page--campaign .campaign-hero__inner--with-video {
+  max-width: 68rem;
 }
 
-.seo-page--campaign .campaign-hero__copy {
-  min-width: 0;
+.seo-page--campaign .campaign-hero__intro {
+  max-width: 44rem;
+  margin-bottom: 1.15rem;
+}
+
+.seo-page--campaign .campaign-hero__offer {
+  display: grid;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 1.15rem;
 }
 
 @media (min-width: 900px) {
-  .seo-page--campaign .campaign-hero__inner--split {
-    grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
-    gap: 2rem;
-    align-items: center;
+  .seo-page--campaign .campaign-hero__offer {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.15rem;
+    align-items: stretch;
   }
 
   .seo-page--campaign .campaign-hero--has-video {
@@ -425,22 +430,33 @@
   }
 }
 
+.seo-page--campaign .campaign-hero__offer .campaign-pricing {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .seo-page--campaign .campaign-hero__video {
   margin: 0;
-  width: min(100%, 240px);
+  width: min(100%, 220px);
   justify-self: center;
-  padding: 0.45rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem;
   border-radius: 0.75rem;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(10px);
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
 }
 
 @media (min-width: 900px) {
   .seo-page--campaign .campaign-hero__video {
-    width: 100%;
-    max-width: 260px;
+    width: 220px;
     justify-self: end;
   }
 }
@@ -448,17 +464,27 @@
 .seo-page--campaign .campaign-hero__video-media {
   display: block;
   width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
   aspect-ratio: 9 / 16;
   border-radius: 0.45rem;
   background: #052c4d;
   object-fit: cover;
 }
 
+@media (min-width: 900px) {
+  .seo-page--campaign .campaign-hero__offer .campaign-hero__video-media {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+}
+
 .seo-page--campaign .campaign-hero__video-hint {
-  margin: 0.4rem 0 0.1rem;
+  margin: 0.35rem 0 0.05rem;
   text-align: center;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: rgba(255, 255, 255, 0.78);
+  flex-shrink: 0;
 }
 
 .seo-page--campaign .campaign-badge {

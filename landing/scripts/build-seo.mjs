@@ -1726,7 +1726,7 @@ function buildCampaignPage(campaign) {
         </figure>`;
       })()
     : "";
-  const heroSplitClass = heroVideo ? " campaign-hero__inner--split" : "";
+  const heroSplitClass = heroVideo ? " campaign-hero__inner--with-video" : "";
 
   return `<!DOCTYPE html>
 <html lang="es" ${campaignHtmlAttrs(campaign)}>
@@ -1755,20 +1755,22 @@ ${navLinks(prefix, campaign)}
         <div class="campaign-hero__overlay"></div>
       </div>
       <div class="container campaign-hero__inner${heroSplitClass}" data-reveal>
-        <div class="campaign-hero__copy">
+        <div class="campaign-hero__intro">
           <p class="campaign-badge">Oferta hasta el ${esc(campaign.deadlineLabel)}</p>
           <p class="section-label">${sectionLabel}</p>
           <h1>${h1Main}${h1Gradient}</h1>
           <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
-
-          ${pricingBlock}
-
-          <div class="campaign-hero__actions campaign-hero__actions--cta">
-            ${campaignCtaMarkup(campaign, "hero")}
-          </div>
-          <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
         </div>
-        ${heroVideo}
+
+        <div class="campaign-hero__offer">
+          ${pricingBlock}
+          ${heroVideo}
+        </div>
+
+        <div class="campaign-hero__actions campaign-hero__actions--cta">
+          ${campaignCtaMarkup(campaign, "hero")}
+        </div>
+        <p class="campaign-hero__note">Desde Santiago, el norte o el sur de Chile · Reunión online o presencial en Puerto Varas</p>
       </div>
     </section>
 
