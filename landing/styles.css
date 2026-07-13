@@ -2457,9 +2457,25 @@ section {
 }
 
 .casos-stats {
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1.5rem;
+  justify-content: stretch;
+  flex-wrap: unset;
   border-top-color: rgba(5, 44, 77, 0.14);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .casos-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.casos-stats .hero-metric {
+  text-align: center;
+  min-width: 0;
 }
 
 #casos .casos-stats .hero-metric-label {
@@ -2468,4 +2484,5 @@ section {
 
 #casos .casos-stats .hero-metric strong {
   color: var(--blue);
+  display: block;
 }
