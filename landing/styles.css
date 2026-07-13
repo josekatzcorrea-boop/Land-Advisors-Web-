@@ -234,6 +234,8 @@ a:hover {
   align-items: center;
   flex-shrink: 0;
   padding: 0.55rem 1rem;
+  background: var(--blue);
+  color: var(--white) !important;
   border-radius: 100px;
   font-weight: 600;
   font-size: 0.6875rem;
@@ -244,6 +246,7 @@ a:hover {
 }
 
 .nav-cta:hover {
+  background: var(--blue-dark);
   text-decoration: none;
 }
 
@@ -276,9 +279,8 @@ a:hover {
   background: var(--blue-dark);
 }
 
-/* CTA principal — Agendar reunión (rojo visible) */
-.btn-cta-agenda,
-.nav-cta {
+/* CTA principal — Agendar reunión (rojo visible; nav-cta queda azul) */
+.btn-cta-agenda {
   background: linear-gradient(135deg, #ef4444 0%, #dc2626 45%, #b91c1c 100%) !important;
   color: #fff !important;
   border: none !important;
@@ -286,8 +288,7 @@ a:hover {
   font-weight: 700;
 }
 
-.btn-cta-agenda:hover,
-.nav-cta:hover {
+.btn-cta-agenda:hover {
   background: linear-gradient(135deg, #f87171 0%, #ef4444 40%, #dc2626 100%) !important;
   color: #fff !important;
   box-shadow: 0 10px 28px rgba(220, 38, 38, 0.55);
