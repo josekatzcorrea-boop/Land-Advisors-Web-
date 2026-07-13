@@ -299,6 +299,14 @@
       "sideImageAlt": "Exploración en terreno con clientes en la cuenca del sur de Chile",
       "sideImageCaption": "Recorrer terrenos es parte natural del proceso — te acompañamos en cada etapa.",
       "serviceEvent": "cta_diagnostico",
+      "video": {
+        "src": "/videos/promo-busq30.mp4",
+        "poster": "/videos/promo-busq30-poster.jpg",
+        "title": "Mira cómo funciona el diagnóstico gratis",
+        "caption": "José te explica la promoción en ~40 segundos. Cuando estés listo, agenda tu reunión estratégica.",
+        "ctaLabel": "Agendar reunión estratégica",
+        "track": "cta_promo_video_play"
+      },
       "includes": [
         "Diagnóstico estratégico gratis: reunión online o presencial, zonas recomendadas y criterios para evaluar terrenos",
         "Sin compromiso de contratar búsqueda ni ningún otro servicio",

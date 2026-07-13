@@ -514,7 +514,9 @@
 
 /* Visible de inmediato — no depender del scroll reveal (mismo criterio que .seo-body) */
 .seo-page--campaign .campaign-body,
-.seo-page--campaign .campaign-body [data-reveal] {
+.seo-page--campaign .campaign-body [data-reveal],
+.seo-page--campaign .campaign-video,
+.seo-page--campaign .campaign-video [data-reveal] {
   opacity: 1;
   transform: none;
 }
@@ -666,4 +668,68 @@
 /* En campaña los CTAs dedicados reemplazan el widget genérico */
 .seo-page--campaign #la-chat-widget {
   display: none;
+}
+
+/* Video CTA — reproducción a demanda */
+.campaign-video {
+  padding: 2.5rem 0 1rem;
+  background: linear-gradient(180deg, #f4f7f8 0%, #fff 100%);
+}
+
+.campaign-video__inner {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .campaign-video__inner {
+    grid-template-columns: 1fr minmax(220px, 320px);
+    gap: 2.5rem;
+  }
+}
+
+.campaign-video__copy h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  color: var(--brand-deep, #052c4d);
+  line-height: 1.25;
+}
+
+.campaign-video__caption {
+  margin: 0 0 1.25rem;
+  max-width: 36rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-muted, #3d4f5c);
+}
+
+.campaign-video__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.campaign-video__player {
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+  padding: 0.65rem;
+  background: #fff;
+}
+
+.campaign-video__media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 0.35rem;
+  background: #0c2d3e;
+  object-fit: cover;
+}
+
+.campaign-video__hint {
+  margin: 0.55rem 0 0.15rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted, #5a6a75);
 }
