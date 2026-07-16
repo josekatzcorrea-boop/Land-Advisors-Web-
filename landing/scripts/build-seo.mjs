@@ -548,6 +548,10 @@ const GUIDE_ICONS = {
   filter: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 8h20M10 16h12M14 24h8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="22" cy="8" r="2" fill="currentColor"/><circle cx="18" cy="16" r="2" fill="currentColor"/><circle cx="14" cy="24" r="2" fill="currentColor"/></svg>`,
   heart: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27s-9-5.5-11.5-11C2.5 11 6 6.5 10.5 6.5c2.5 0 4 1.5 5.5 3 1.5-1.5 3-3 5.5-3C26 6.5 29.5 11 27.5 16 25 21.5 16 27 16 27z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>`,
   scale: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 6v20M8 26h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><path d="M10 14h12l-6 8-6-8z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>`,
+  purpose: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.75"/><circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M16 6v3M16 23v3M6 16h3M23 16h3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  contact: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 24v-4a4 4 0 014-4h2M24 24v-4a4 4 0 00-4-4h-2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="12" cy="11" r="3" stroke="currentColor" stroke-width="1.75"/><circle cx="20" cy="11" r="3" stroke="currentColor" stroke-width="1.75"/><path d="M14 18h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  traffic: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 20h16l-1.5-6H9.5L8 20z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M10 14l1.5-4h9L22 14" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><circle cx="11.5" cy="22" r="1.75" stroke="currentColor" stroke-width="1.5"/><circle cx="20.5" cy="22" r="1.75" stroke="currentColor" stroke-width="1.5"/><path d="M6 10h4M22 10h4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
+  tourism: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 24l8-12 5 7 3-4 8 9H4z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><circle cx="22" cy="9" r="2.5" stroke="currentColor" stroke-width="1.75"/></svg>`,
   family: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="12" cy="11" r="3" stroke="currentColor" stroke-width="1.75"/><circle cx="22" cy="12" r="2.5" stroke="currentColor" stroke-width="1.75"/><path d="M6 26c0-4 3-7 6-7s6 3 6 7M18 26c0-3 2-5 4-5s4 2 4 5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
   cabin: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 26V14l10-8 10 8v12" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M12 26v-8h8v8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M16 6v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>`,
   budget: `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="6" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.75"/><path d="M10 14h12M10 18h8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="22" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/></svg>`,
@@ -628,19 +632,33 @@ function renderGuideBlock(block) {
       </section>`;
     }
     case "decision": {
-      const items = (block.items || [])
-        .map(
-          (item) => `<article class="guide-decision-card glass-card">
+      const renderItems = (items) =>
+        (items || [])
+          .map(
+            (item) => `<article class="guide-decision-card glass-card">
         <span class="guide-decision-card__icon" aria-hidden="true">${guideIcon(item.icon)}</span>
         <h3 class="guide-decision-card__title">${esc(item.title)}</h3>
         <p>${esc(item.text)}</p>
       </article>`
-        )
-        .join("");
+          )
+          .join("");
+      const groups = block.groups?.length
+        ? block.groups
+            .map(
+              (group, idx) => `<div class="guide-decision-group">
+        <div class="guide-decision-group__head">
+          <span class="guide-decision-group__icon" aria-hidden="true">${guideIcon(group.icon || "scale")}</span>
+          <h3 class="guide-decision-group__title" id="guide-decision-group-${idx}">${esc(group.label)}</h3>
+        </div>
+        <div class="guide-decision-grid">${renderItems(group.items)}</div>
+      </div>`
+            )
+            .join("")
+        : `<div class="guide-decision-grid">${renderItems(block.items)}</div>`;
       return `<section class="guide-decision" aria-labelledby="guide-decision-title">
         <h2 class="blog-article__h2" id="guide-decision-title">${esc(block.title)}</h2>
         ${block.intro ? `<p>${esc(block.intro)}</p>` : ""}
-        <div class="guide-decision-grid">${items}</div>
+        ${groups}
       </section>`;
     }
     case "callout": {

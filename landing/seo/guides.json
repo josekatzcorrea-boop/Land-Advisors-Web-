@@ -3,14 +3,14 @@
     {
       "slug": "comprar-terreno-sur-chile",
       "title": "Cómo comprar terreno en el sur de Chile | Guía Land Advisors",
-      "description": "Guía paso a paso para comprar terreno en el sur de Chile: definir zonas según tu objetivo, filtrar oferta con criterio (presupuesto, servicios, acceso, normativa) y decidir con datos. Puerto Varas, Frutillar, Llanquihue.",
+      "description": "Guía paso a paso para comprar terreno en el sur de Chile: uso del predio, presupuesto, sectores, habilitación, urbanización y apoyo de corredoras o Land Advisors. Luego compara variables de calidad de vida o rentabilidad.",
       "h1": "Cómo comprar terreno en el sur de Chile",
-      "intro": "Comprar un terreno en el sur de Chile puede ser una gran decisión — y hay mucha oferta bonita. La clave no es ver menos avisos, sino seguir un orden: primero el territorio y tu objetivo, después el filtro técnico, al final el gusto y el precio con criterio.",
+      "intro": "Comprar un terreno en el sur de Chile puede ser una gran decisión — y hay mucha oferta bonita. La clave no es ver más avisos, sino ordenar criterios básicos primero. Con eso claro, puedes elegir alternativas que sí calzan y comparar lo que más afecta tu calidad de vida o la rentabilidad de tu proyecto.",
       "image": "/images/intel-territorial.jpg",
       "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
-      "readMinutes": 10,
+      "readMinutes": 12,
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-08",
+      "dateModified": "2026-07-16",
       "author": "José Hernán Katz C.",
       "cta": {
         "href": "servicios/busqueda-personalizada/",
@@ -21,160 +21,206 @@
         {
           "type": "roadmap",
           "label": "Ruta recomendada",
-          "title": "Cinco pasos para comprar con criterio",
+          "title": "Seis pasos antes de elegir alternativas",
           "items": [
             {
               "num": "1",
-              "icon": "map",
-              "title": "Definir zonas",
-              "text": "Compatibles con cómo quieres vivir o invertir"
+              "icon": "purpose",
+              "title": "Uso del terreno",
+              "text": "Para qué lo vas a usar"
             },
             {
               "num": "2",
-              "icon": "browse",
-              "title": "Revisar oferta",
-              "text": "Portales, corredoras y alternativas locales"
+              "icon": "budget",
+              "title": "Presupuesto",
+              "text": "Rango real de compra"
             },
             {
               "num": "3",
-              "icon": "filter",
-              "title": "Filtrar con criterio",
-              "text": "Presupuesto, servicios, acceso, clima y normativa"
+              "icon": "map",
+              "title": "Sectores",
+              "text": "Nombres de las zonas que te interesan"
             },
             {
               "num": "4",
-              "icon": "heart",
-              "title": "Elegir por gusto",
-              "text": "Entre los que ya cumplen, elige el que más te enamora"
+              "icon": "habilitation",
+              "title": "Habilitación",
+              "text": "Cuánto puedes gastar después de comprar"
             },
             {
               "num": "5",
-              "icon": "scale",
-              "title": "Decidir con datos",
-              "text": "Precio, conectividad, normativa y costos de habilitación"
+              "icon": "services",
+              "title": "Urbanización",
+              "text": "Servicios que el terreno ya debe tener"
+            },
+            {
+              "num": "6",
+              "icon": "contact",
+              "title": "Pedir ayuda",
+              "text": "Corredoras, brokers o Land Advisors"
             }
           ]
         },
         {
           "type": "step",
           "num": "1",
-          "icon": "map",
-          "title": "Define zonas de interés con factibilidad real",
+          "icon": "purpose",
+          "title": "Establece para qué vas a usar la propiedad",
           "paragraphs": [
-            "Antes de mirar fotos, define en qué sectores tiene sentido buscar. No es lo mismo criar a tus hijos cerca de colegios y clínicas que montar cabañas turísticas o guardar patrimonio a largo plazo.",
-            "En el sur de Chile — Puerto Varas, Frutillar, Llanquihue, Ensenada, Puerto Octay y contorno rural — cada zona tiene vocación distinta: algunas priorizan vida familiar y servicios; otras, demanda turística o tranquilidad con acceso razonable a la ciudad."
+            "Antes de mirar fotos, define el uso: vivir, segunda vivienda, cabañas, comercio, inversión patrimonial u otro proyecto. Ese objetivo filtra zonas, servicios, normativa y el tipo de terreno que tiene sentido.",
+            "No es lo mismo criar a tu familia cerca de la ciudad que montar un café de ruta o guardar patrimonio a largo plazo. Si el uso no está claro, casi cualquier aviso puede parecer «el indicado»."
           ],
           "examples": [
             {
               "icon": "family",
-              "title": "Familia y calidad de vida",
-              "text": "Busca zonas con acceso razonable a colegios, salud, comercio y ruta asfaltada. El contorno rural periurbano suele calzar mejor que el campo lejano."
+              "title": "Vivir o calidad de vida",
+              "text": "Prioriza contorno rural con acceso razonable a servicios, colegios y ciudad. El campo lejano suele costar más en tiempo y logística diaria."
             },
             {
               "icon": "cabin",
-              "title": "Cabañas o turismo",
-              "text": "Prioriza sectores con demanda turística comprobada y terrenos donde el uso habitacional o de alojamiento no esté bloqueado por normativa o reglamento de copropiedad."
+              "title": "Turismo o cabañas",
+              "text": "Necesitas demanda del sector, entorno atractivo y terreno donde el uso de alojamiento no esté bloqueado por reglamento o normativa."
             },
             {
               "icon": "invest",
-              "title": "Inversión patrimonial",
-              "text": "Mira conectividad futura, expansión urbana del contorno y comparables de precio. El valor suele estar donde el territorio aún no está sobrevalorado en el aviso."
+              "title": "Inversión o comercio",
+              "text": "Mira comparables de precio, flujo o plusvalía del contorno, y limitaciones al uso del suelo antes de enamorararte del paisaje."
             }
           ]
         },
         {
           "type": "step",
           "num": "2",
-          "icon": "browse",
-          "title": "Revisa portales, corredoras y oferta local",
+          "icon": "budget",
+          "title": "Establece tu rango de presupuesto",
           "paragraphs": [
-            "Con las zonas definidas, explora portales inmobiliarios, corredoras de propiedades y contactos locales. Es normal enamorarse de un terreno en la primera vuelta — y está bien.",
-            "Lo importante es no quedarte solo con lo más visible: muchas alternativas relevantes no están bien publicitadas o requieren lectura territorial para entender si realmente calzan con tu proyecto."
+            "Define un rango claro de compra (mínimo–máximo), no solo un número soñado. Así evitas perder tiempo en terrenos fuera de tu capacidad real.",
+            "Separa mentalmente el precio del terreno del dinero que necesitarás después para habilitarlo. Un aviso «barato» puede dejar sin margen el proyecto."
           ],
           "bullets": [
-            "Portales masivos: buen punto de partida, no el filtro final.",
-            "Corredoras: muestran su cartera; contrasta siempre con el mercado del sector.",
-            "Boca a boca y terrenos sin aviso profesional: a veces las mejores opciones, pero exigen más verificación."
+            "Trabaja con un rango, no con un único techo inflexible.",
+            "Incluye reserva para trámites, impuestos y imprevistos.",
+            "Si buscas crédito, confirma con tu banco qué tipo de predio financian en el sector."
           ]
         },
         {
-          "type": "callout",
-          "variant": "tip",
-          "icon": "browse",
-          "title": "Leer el mercado sin ser corredora",
-          "text": "El mercado inmobiliario del sur de Chile no es un solo mercado: Puerto Varas, Frutillar y Llanquihue tienen dinámicas distintas. Los portales concentran lo publicado, no necesariamente lo que conviene para tu objetivo. Para inversionistas patrimoniales (1.000–5.000 UF), conviene contrastar valor de entrada, costos de habilitación y escenario conservador de salida — no solo la narrativa de plusvalía."
-        },
-        {
-          "type": "criteria",
-          "title": "Filtra las alternativas más relevantes",
-          "intro": "De todo lo que encuentres, quédate con terrenos que cumplan estos cinco parámetros. Si fallan en uno, probablemente no vale la pena seguir — por bonito que sea el paisaje.",
-          "items": [
-            {
-              "num": "1",
-              "icon": "budget",
-              "title": "Dentro de tu presupuesto",
-              "text": "Incluye compra más costos de habilitación, servicios y tramitación. Un terreno «barato» en el aviso puede cerrar caro al sumar acceso, electricidad o agua."
-            },
-            {
-              "num": "2",
-              "icon": "services",
-              "title": "Servicios para tu proyecto",
-              "text": "Agua, electricidad, internet, alcantarillado o factibilidad real de obtenerlos. Lo que necesitas depende de si es vivienda permanente, segunda casa o cabañas."
-            },
-            {
-              "num": "3",
-              "icon": "road",
-              "title": "Acceso bien establecido",
-              "text": "Camino inscrito en el Conservador de Bienes Raíces o acceso por camino público. Sin esto, el terreno puede ser hermoso y aun así difícil de financiar o habitar."
-            },
-            {
-              "num": "4",
-              "icon": "climate",
-              "title": "Habitable en invierno y verano",
-              "text": "Lluvia, viento, orientación, humedad y exposición importan todo el año. Recorrer en distintas estaciones — o contrastar con quien conoce el sector — evita sorpresas."
-            },
-            {
-              "num": "5",
-              "icon": "normativa",
-              "title": "Apto para tu proyecto",
-              "text": "Revisa instrumentos de planificación, usos permitidos y reglamentos de copropiedad en parcelaciones. Un terreno puede prohibir cabañas, comercio o construcción según el reglamento."
-            }
+          "type": "step",
+          "num": "3",
+          "icon": "map",
+          "title": "Averigua cómo se llaman los sectores que te interesan",
+          "paragraphs": [
+            "«Quiero algo cerca de Puerto Varas» es un buen deseo, pero no alcanza para filtrar. Aprende los nombres locales de los sectores: Ensenada, Los Pellines, Puerto Octay, Frutillar Bajo, contorno de Llanquihue, etc.",
+            "Con nombres concretos puedes pedir alternativas a corredoras, brokers o a Land Advisors — y comparar terrenos que sí son comparables entre sí."
+          ],
+          "bullets": [
+            "Anota 2–4 sectores que te interesan y 1–2 que descartas.",
+            "Pregunta tiempos reales a la ciudad, no solo kilómetros en el mapa.",
+            "Revisa si el sector es contorno rural (conecta con la ciudad) o campo lejano."
           ]
         },
         {
           "type": "step",
           "num": "4",
-          "icon": "heart",
-          "title": "Entre los que cumplen, elige los que más te gustan",
+          "icon": "habilitation",
+          "title": "Establece cuánto puedes gastar para habilitar el terreno",
           "paragraphs": [
-            "Cuando un terreno pasa el filtro técnico, ahí sí tiene sentido dejarse llevar por la vista, la orientación, la privacidad o la sensación del lugar.",
-            "En el sur de Chile hay mucha oferta. No es un problema encontrar terrenos bonitos que además cumplan presupuesto, servicios, acceso y normativa — el desafío es llegar a esa short list con método, no por azar."
+            "Habilitar es todo lo que viene después de comprar: acceso, electricidad, agua, internet, movimiento de tierra, estudios y plazos. Ese presupuesto es tan importante como el precio del aviso.",
+            "Si no dejas margen para habilitar, el terreno puede quedar años sin uso — o forzar un gasto que no tenías previsto."
+          ],
+          "bullets": [
+            "Lista qué falta hoy en el predio típico de tus sectores.",
+            "Pide órdenes de magnitud locales (no cotizaciones de Santiago).",
+            "Suma compra + habilitación = costo real de entrar al proyecto."
           ]
         },
         {
+          "type": "step",
+          "num": "5",
+          "icon": "services",
+          "title": "Define qué servicios necesita el terreno (nivel de urbanización)",
+          "paragraphs": [
+            "Decide el nivel mínimo de urbanización que aceptas: agua potable o pozo, electricidad, alcantarillado o fosa, internet estable, camino consolidado. Lo que «ya debe venir» depende de tu uso y de tu presupuesto de habilitación.",
+            "Cuanto más exigente seas en servicios listos, más acotas la oferta — y más predecible queda el costo de entrada."
+          ],
+          "bullets": [
+            "Vivienda permanente: prioriza servicios estables todo el año.",
+            "Segunda vivienda o turismo: a veces aceptas más habilitación si el entorno lo justifica.",
+            "Comercio: revisa factibilidad de servicios y normas de uso, no solo el medidor."
+          ]
+        },
+        {
+          "type": "step",
+          "num": "6",
+          "icon": "contact",
+          "title": "Contacta corredoras, brokers o Land Advisors con esta información",
+          "paragraphs": [
+            "Cuando ya tienes uso, presupuesto, sectores, habilitación y nivel de urbanización, pide ayuda con criterio. Llegar con esa ficha cambia la conversación: dejas de recibir «lo más bonito» y empiezas a recibir lo que calza.",
+            "Puedes trabajar con corredoras o brokers (muestran cartera) y/o con Land Advisors (consultoría territorial: filtramos y comparamos según tu objetivo, sin vender terrenos propios)."
+          ],
+          "bullets": [
+            "Comparte tu ficha de criterios en el primer contacto.",
+            "Pide al menos varias alternativas que cumplan lo básico — no un solo favorito.",
+            "Si quieres método e informe comparativo, el siguiente paso habitual es la búsqueda personalizada."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "icon": "filter",
+          "title": "De criterios básicos a short list",
+          "text": "Una vez completados estos seis pasos, puedes seleccionar alternativas que cumplan los criterios básicos. Con esa short list entras a comparar las variables que más van a afectar tu calidad de vida o la rentabilidad de tu negocio — no todas pesan igual según el uso."
+        },
+        {
           "type": "decision",
-          "title": "Variables que deben predominar al decidir",
-          "intro": "Con una short list de terrenos que te gustan y cumplen lo esencial, la decisión final se ordena con estas cuatro variables — en este orden de peso:",
-          "items": [
+          "title": "Variables que más afectan tu decisión",
+          "intro": "Entre terrenos que ya cumplen lo esencial, compara según tu objetivo. Lo que importa para vivir no es idéntico a lo que importa para un proyecto comercial o una inversión.",
+          "groups": [
             {
-              "icon": "price",
-              "title": "Precio",
-              "text": "¿Calza con comparables del sector y con tu presupuesto total (compra + habilitación)? Un buen terreno a precio de mercado suele ser mejor negocio que uno barato con costos ocultos."
+              "label": "Para vivir",
+              "icon": "family",
+              "items": [
+                {
+                  "icon": "connect",
+                  "title": "Conectividad real",
+                  "text": "Distancia y tiempo reales a la ciudad, aeropuerto, supermercados, colegios y salud. El mapa engaña: lo que importa es el trayecto en un día de lluvia."
+                },
+                {
+                  "icon": "normativa",
+                  "title": "Reglamento de copropiedad",
+                  "text": "En parcelaciones, el reglamento define qué puedes construir, usos permitidos, alturas y convivencia. Léelo antes de ofertar, no después de enamorararte."
+                },
+                {
+                  "icon": "road",
+                  "title": "Calidad del acceso",
+                  "text": "Camino público o inscrito, estado en invierno, pendiente y mantención. Un acceso débil castiga la vida diaria y la reventa."
+                }
+              ]
             },
             {
-              "icon": "connect",
-              "title": "Conectividad",
-              "text": "Distancia real a ciudad, calidad del acceso, tiempo en invierno y tendencia del sector. La conectividad explica gran parte del valor futuro en contorno rural."
-            },
-            {
-              "icon": "normativa",
-              "title": "Normativa",
-              "text": "Usos permitidos, restricciones de construcción, copropiedad y tramitación. Lo que hoy parece flexible puede no serlo al momento de permisar tu proyecto."
-            },
-            {
-              "icon": "habilitation",
-              "title": "Costos de habilitación",
-              "text": "Acceso, servicios, movimiento de tierra, estudios y plazos. Suman al precio de compra y definen si el proyecto cierra financieramente."
+              "label": "Para proyecto comercial o inversión",
+              "icon": "invest",
+              "items": [
+                {
+                  "icon": "traffic",
+                  "title": "Flujo vehicular",
+                  "text": "Si el terreno es para un proyecto comercial, la visibilidad y el flujo de la ruta importan tanto como el m². Sin tráfico compatible, el local no se sostiene solo con la vista."
+                },
+                {
+                  "icon": "tourism",
+                  "title": "Atractivos, vista y entorno",
+                  "text": "En proyectos turísticos, la cercanía a atractivos, la calidad de la vista y el entorno pesan en ocupación y tarifa. Evalúa temporada baja, no solo el verano."
+                },
+                {
+                  "icon": "price",
+                  "title": "Precio vs. mercado",
+                  "text": "Si el objetivo es inversión, compara el precio de entrada con comparables del sector. Un buen terreno a precio de mercado suele ser mejor que uno «barato» con costos ocultos."
+                },
+                {
+                  "icon": "normativa",
+                  "title": "Uso del suelo y normativa",
+                  "text": "Limitaciones al uso, instrumentos de planificación y restricciones del predio pueden bloquear cabañas, comercio o densificación. Verifícalo antes de proyectar rentabilidad."
+                }
+              ]
             }
           ]
         },
@@ -183,7 +229,7 @@
           "variant": "la",
           "icon": "la",
           "title": "Esto es lo que hacemos en Land Advisors",
-          "text": "El mismo proceso — zonas, filtro, short list y decisión con datos — pero ya lo hemos hecho cientos de veces en la cuenca del Lago Llanquihue y Malalcahuello. No somos corredora: no vendemos terrenos. Te acompañamos a comprar el correcto, y por eso discernimos con criterio local cuáles son buenos precios y cuáles son solo avisos bonitos.",
+          "text": "El mismo proceso — criterios básicos, short list y comparación por uso — pero con lectura territorial de la cuenca del Lago Llanquihue y Malalcahuello. No somos corredora: no vendemos terrenos. Te acompañamos a comprar el correcto, con criterio local sobre precio, sectores y factibilidad.",
           "cta": {
             "href": "servicios/busqueda-personalizada/",
             "label": "Conocer búsqueda personalizada",
@@ -194,7 +240,7 @@
       "faq": [
         {
           "q": "¿Por dónde empiezo si nunca he comprado terreno en el sur?",
-          "a": "Define primero tu objetivo (vivienda, cabañas, inversión) y las zonas compatibles con ese proyecto. Después revisa oferta y filtra por presupuesto, servicios, acceso inscrito, habitabilidad y normativa — antes de decidirte por la foto."
+          "a": "Empieza por el uso del terreno, tu rango de presupuesto y los nombres de los sectores que te interesan. Luego define habilitación y nivel de urbanización, y recién ahí pide alternativas a corredoras, brokers o Land Advisors."
         },
         {
           "q": "¿Qué es un acceso inscrito en el Conservador?",

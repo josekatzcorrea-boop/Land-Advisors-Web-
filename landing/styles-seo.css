@@ -986,7 +986,13 @@
 
 @media (min-width: 900px) {
   .guide-roadmap__list {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .guide-roadmap__list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -1208,6 +1214,39 @@
 
 .guide-decision {
   margin-top: 2rem;
+}
+
+.guide-decision-group {
+  margin-top: 1.35rem;
+}
+
+.guide-decision-group + .guide-decision-group {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(5, 44, 77, 0.08);
+}
+
+.guide-decision-group__head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.guide-decision-group__icon {
+  display: flex;
+  color: var(--brand-mid, #1a5f72);
+}
+
+.guide-decision-group__icon svg {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+.guide-decision-group__title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--brand-deep, #052c4d);
 }
 
 .guide-decision-grid {
