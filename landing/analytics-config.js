@@ -7,7 +7,7 @@ window.LA_ANALYTICS = {
   gtmId: "",
   ga4MeasurementId: "G-F09P7G5WZK",
   metaPixelId: "1067824015463958",
-  googleAdsConversionId: "",
+  googleAdsConversionId: "AW-18311759633",
   debug: false,
   /** Eventos custom → estándar GA4 (marcar generate_lead como conversión en Admin) */
   ga4ConversionEvents: [

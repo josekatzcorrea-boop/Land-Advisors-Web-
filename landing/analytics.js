@@ -66,6 +66,18 @@
     log("GA4", cfg.ga4MeasurementId, debugMode ? "(debug_mode)" : "");
   }
 
+  function initGoogleAds() {
+    if (!cfg.googleAdsConversionId) return;
+    window.dataLayer = window.dataLayer || [];
+    if (typeof window.gtag !== "function") {
+      injectScript("https://www.googletagmanager.com/gtag/js?id=" + cfg.googleAdsConversionId);
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+    }
+    window.gtag("config", cfg.googleAdsConversionId);
+    log("Google Ads", cfg.googleAdsConversionId);
+  }
+
   function initMetaPixel() {
     if (!cfg.metaPixelId) return;
     !(function (f, b, e, v, n, t, s) {
@@ -153,5 +165,6 @@
 
   initGTM();
   initGA4();
+  initGoogleAds();
   initMetaPixel();
 })();

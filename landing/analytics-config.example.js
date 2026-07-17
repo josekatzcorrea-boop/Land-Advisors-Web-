@@ -10,7 +10,7 @@ window.LA_ANALYTICS = {
   gtmId: "", // GTM-XXXXXXX (opcional)
   ga4MeasurementId: "G-F09P7G5WZK", // Land Advisors Web — GA4
   metaPixelId: "1067824015463958", // Land Advisors Chile — Events Manager
-  googleAdsConversionId: "", // AW-XXXXXXXXX
+  googleAdsConversionId: "AW-XXXXXXXXX", // ej. AW-18311759633
   debug: false,
   ga4ConversionEvents: [
     "generate_lead",
