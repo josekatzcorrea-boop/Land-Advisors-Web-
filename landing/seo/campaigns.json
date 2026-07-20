@@ -299,11 +299,51 @@
       "sideImageAlt": "Exploración en terreno con clientes en la cuenca del sur de Chile",
       "sideImageCaption": "Recorrer terrenos es parte natural del proceso — te acompañamos en cada etapa.",
       "serviceEvent": "cta_diagnostico",
+      "leadForm": true,
+      "compare": {
+        "kicker": "La diferencia que importa",
+        "title": "¿Quién trabaja para ti al comprar un terreno?",
+        "intro": "En una corredora, el mandato suele venir del propietario que vende. En Land Advisors, el consultor trabaja solo para ti: el comprador. Misma palabra “asesorar”, incentivos distintos.",
+        "laTitle": "Land Advisors",
+        "laSubtitle": "Tu consultor",
+        "corTitle": "Corredora",
+        "corSubtitle": "Del vendedor",
+        "note": "Enamorarse del terreno está bien. Nosotros aportamos criterio territorial y mercado local para que esa decisión cierre con sentido — velando por tus intereses como comprador.",
+        "rows": [
+          {
+            "label": "¿Para quién trabaja?",
+            "spotlight": true,
+            "la": "Solo para ti — el comprador. Velamos por tu objetivo, tu presupuesto y tu decisión.",
+            "cor": "Para el propietario que vende — y además intermedia contigo. Su mandato nace del lado de la oferta."
+          },
+          {
+            "label": "Rol",
+            "la": "Un consultor que busca —entre contactos, corredoras e inmobiliarias— el terreno que mejor se ajusta a tus objetivos y necesidades.",
+            "cor": "Un vendedor que prioriza cuál de sus propios terrenos es más fácil de venderte."
+          },
+          {
+            "label": "Oferta que conoce",
+            "la": "Estudia la oferta amplia del territorio: propietarios, corredoras e inmobiliarias.",
+            "cor": "Conoce principalmente los terrenos que tiene en venta."
+          },
+          {
+            "label": "Clientes",
+            "la": "Clientes que quieren asegurarse de hacer una compra inteligente o una inversión rentable.",
+            "cor": "Cliente dispuesto a elegir un terreno con menos información del territorio."
+          },
+          {
+            "label": "Incentivo",
+            "la": "Que elijas un terreno apropiado para tu objetivo, sea cual sea.",
+            "cor": "Cerrar la venta de un activo de su stock."
+          }
+        ]
+      },
       "video": {
         "src": "/videos/promo-busq30.mp4",
         "poster": "/videos/promo-busq30-poster.jpg",
         "title": "Mira cómo funciona el diagnóstico gratis",
         "caption": "José te explica la promoción en ~25 segundos. Cuando estés listo, agenda tu reunión estratégica.",
+        "hint": "Toca play · ~25 s",
         "ctaLabel": "Agendar reunión estratégica",
         "track": "cta_promo_video_play"
       },
@@ -336,7 +376,7 @@
           "text": "Elegimos juntos las 3 mejores alternativas. Si compras con nuestra asesoría, las 3,5 UF se descuentan de la comisión."
         }
       ],
-      "allyText": "Enamorarse del terreno está bien. El diagnóstico ordena zona y criterios antes de perder otro viaje al sur. La búsqueda es opcional — de tu lado, sin presión.",
+      "allyText": "El diagnóstico ordena zona y criterios antes de otro viaje al sur. La búsqueda es opcional: te acompañamos con criterio local, sin presión.",
       "trust": {
         "metric": "Más de 100.000 UF invertidas a través de nuestra consultoría",
         "galleryLabel": "Nuestros clientes nos avalan",

@@ -1372,16 +1372,121 @@ function campaignCtaMarkup(campaign, variant = "float") {
   const label = campaign.ctaLabel || "Agenda una sesión estratégica";
   const sizeClass = variant === "hero" ? " campaign-cta--lg" : "";
   const calIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`;
+  const waIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
 
   if (template === "intent") {
     return `<a href="#" class="campaign-cta campaign-cta--cal campaign-cta--primary${sizeClass}" data-campaign-calendar data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${esc(label)}</span></a>`;
   }
 
+  // Flujo Meta: WhatsApp baja al form; Agendar = calendario (cliente más decidido)
+  if (campaign.leadForm) {
+    const waLabel = "WhatsApp";
+    const calLabel = variant === "float" ? "Agendar" : "Agendar reunión";
+    return `<a href="#campaign-lead" class="campaign-cta campaign-cta--wa${sizeClass}" data-track="cta_lead_form">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>
+          <a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>`;
+  }
+
   const waLabel = variant === "hero" ? "Consultar por WhatsApp" : "WhatsApp";
   const calLabel = "Agendar reunión";
-  const waIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
   return `<a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>
           <a href="#" class="campaign-cta campaign-cta--wa${sizeClass}" data-campaign-wa data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>`;
+}
+
+function buildCampaignCompare(campaign) {
+  const cmp = campaign.compare;
+  if (!cmp?.rows?.length) return "";
+  const head = `<div class="compare-table__head" role="row">
+            <div class="compare-table__cell compare-table__cell--label" role="columnheader"></div>
+            <div class="compare-table__cell compare-table__cell--la" role="columnheader">${esc(cmp.laTitle || "Land Advisors")}<br><span>${esc(cmp.laSubtitle || "Tu consultor")}</span></div>
+            <div class="compare-table__cell compare-table__cell--cor" role="columnheader">${esc(cmp.corTitle || "Corredora")}<br><span>${esc(cmp.corSubtitle || "Del vendedor")}</span></div>
+          </div>`;
+  const rows = cmp.rows
+    .map((row, i) => {
+      const spotlight = i === 0 || row.spotlight ? " compare-table__row--spotlight" : "";
+      return `<div class="compare-table__row${spotlight}" role="row">
+            <div class="compare-table__cell compare-table__cell--label" role="rowheader">${esc(row.label)}</div>
+            <div class="compare-table__cell compare-table__cell--la" role="cell">${esc(row.la)}</div>
+            <div class="compare-table__cell compare-table__cell--cor" role="cell">${esc(row.cor)}</div>
+          </div>`;
+    })
+    .join("");
+  return `<section class="campaign-compare" id="campaign-compare" aria-labelledby="campaign-compare-title">
+      <div class="container" data-reveal>
+        <p class="section-label">${esc(cmp.kicker || "La diferencia que importa")}</p>
+        <h2 class="campaign-panel__title" id="campaign-compare-title">${esc(cmp.title || "¿Quién trabaja para ti al comprar un terreno?")}</h2>
+        ${cmp.intro ? `<p class="campaign-compare__intro">${esc(cmp.intro)}</p>` : ""}
+        <div class="compare-table glass-card compare-table--emphasis" role="table" aria-label="Comparación Land Advisors y corredora">
+          ${head}
+          ${rows}
+        </div>
+        ${cmp.note ? `<p class="campaign-compare__note">${esc(cmp.note)}</p>` : ""}
+      </div>
+    </section>`;
+}
+
+function buildCampaignLeadForm(campaign) {
+  if (!campaign.leadForm) return "";
+  const deadline = campaign.deadlineLabel || "";
+  return `<section class="campaign-lead" id="campaign-lead" aria-labelledby="campaign-lead-title">
+      <div class="container" data-reveal>
+        <div class="campaign-lead__grid">
+          <div class="campaign-lead__copy">
+            <p class="section-label">Siguiente paso</p>
+            <h2 class="campaign-panel__title" id="campaign-lead-title">Cuéntanos qué buscas</h2>
+            <p>Completa el formulario. Luego puedes seguir por WhatsApp o agendar tu reunión estratégica${deadline ? ` (diagnóstico gratis hasta el ${esc(deadline)})` : ""}.</p>
+            <ul class="campaign-lead__bullets">
+              <li>Diagnóstico estratégico gratis, sin compromiso de contratar búsqueda.</li>
+              <li>Si te sirve, cotizamos búsqueda personalizada a ${esc(campaign.pricePromo || "3,5 UF")} (antes ${esc(campaign.priceRegular || "5 UF")}).</li>
+              <li>No somos corredora: no vendemos terrenos propios.</li>
+            </ul>
+          </div>
+
+          <form class="campaign-lead-form glass-card" id="campaign-lead-form" action="#" method="post" novalidate>
+            <div class="campaign-lead-form__fields">
+              <label for="cl-nombre">Nombre</label>
+              <input type="text" id="cl-nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+
+              <label for="cl-email">Correo</label>
+              <input type="email" id="cl-email" name="email" required autocomplete="email" placeholder="tunombre@correo.cl">
+
+              <label for="cl-objetivo">Objetivo de compra</label>
+              <select id="cl-objetivo" name="objetivo" required>
+                <option value="">Seleccionar…</option>
+                <option value="vivir">Vivir / calidad de vida</option>
+                <option value="segunda">Segunda vivienda</option>
+                <option value="inversion">Inversión patrimonial</option>
+                <option value="proyecto">Proyecto (cabañas, comercio u otro)</option>
+                <option value="otro">Otro / aún lo estoy definiendo</option>
+              </select>
+
+              <label for="cl-presupuesto">Rango de presupuesto</label>
+              <select id="cl-presupuesto" name="presupuesto" required>
+                <option value="">Seleccionar en UF…</option>
+                <option value="1500-2500">1.500 a 2.500 UF</option>
+                <option value="2500-3500">2.500 a 3.500 UF</option>
+                <option value="3500-4500">3.500 a 4.500 UF</option>
+                <option value="sobre-5000">Sobre 5.000 UF</option>
+              </select>
+
+              <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="campaign-lead-form__hp">
+              <button type="submit" class="campaign-cta campaign-cta--wa campaign-cta--lg campaign-lead-form__submit"><svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span class="campaign-cta__label">Enviar y abrir WhatsApp</span></button>
+              <p class="campaign-lead-form__hint">Al enviar podrás abrir WhatsApp o agendar reunión. No compartimos tus datos con terceros.</p>
+            </div>
+
+            <div class="campaign-lead-success" hidden>
+              <p class="campaign-lead-success__kicker">Solicitud recibida</p>
+              <h3 class="campaign-lead-success__title">Gracias. Ahora elige cómo seguir</h3>
+              <p class="campaign-lead-success__lead">Con Land Advisors buscas con un consultor que mira la oferta amplia del territorio — no solo la cartera de una corredora. El siguiente paso es conversar y agendar tu diagnóstico gratis.</p>
+              <div class="campaign-lead-success__actions">
+                <a href="#" class="campaign-cta campaign-cta--wa campaign-cta--lg" data-campaign-lead-wa data-track="cta_whatsapp" target="_blank" rel="noopener noreferrer">Continuar por WhatsApp</a>
+                <a href="#" class="campaign-cta campaign-cta--cal campaign-cta--lg" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">Agendar reunión</a>
+              </div>
+              <p class="campaign-lead-success__note">Reunión ~30 min · Online o presencial en Puerto Varas${deadline ? ` · Promoción válida hasta el ${esc(deadline)}` : ""}.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>`;
 }
 
 function campaignHtmlAttrs(campaign) {
@@ -1590,6 +1695,7 @@ function campaignFooterScripts(prefix, campaign) {
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="${prefix}landing-ui.js" defer></script>
   <script src="${prefix}calendar-config.js" defer></script>
+  <script src="${prefix}whatsapp-config.js" defer></script>
   <script src="${prefix}campaign-landing.js" defer></script>
   <script src="${prefix}analytics-config.js" defer></script>
   <script src="${prefix}analytics.js" defer></script>
@@ -1740,7 +1846,7 @@ function buildCampaignPage(campaign) {
             <source src="${vSrc}" type="video/mp4">
             Tu navegador no reproduce video HTML5.
           </video>
-          <figcaption class="campaign-hero__video-hint">Toca play · ~40 s</figcaption>
+          <figcaption class="campaign-hero__video-hint">${esc(v.hint || "Toca play · ~25 s")}</figcaption>
         </figure>`;
       })()
     : "";
@@ -1827,6 +1933,10 @@ ${navLinks(prefix, campaign)}
 
     ${trustBlock}
 
+    ${buildCampaignCompare(campaign)}
+
+    ${buildCampaignLeadForm(campaign)}
+
     <section class="campaign-body">
       <div class="container" data-reveal>
         <div class="campaign-grid">
@@ -1847,7 +1957,7 @@ ${navLinks(prefix, campaign)}
         </div>
 
         <section class="campaign-ally glass-card">
-          <p class="section-label">De tu lado</p>
+          <p class="section-label">Acompañamiento</p>
           <h2>Enamorarse del terreno está bien</h2>
           <p>${esc(campaign.allyText || "Lo que ordena la decisión es si cumple tu objetivo, si el precio calza con el mercado local y si el terreno es viable. Eso es lo que hacemos cada semana en la cuenca del Lago Llanquihue y Malalcahuello.")}</p>
           <a href="${prefix}guias/" class="btn btn-glass">Ver guía para comprar terreno →</a>
@@ -1885,9 +1995,11 @@ function navLinks(prefix, campaign) {
   const isDiagnosticoFirst = campaign?.promoFlow === "diagnostico-first";
   const navCta = isIntent
     ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_contacto")}">Sesión estratégica</a>`
-    : isDiagnosticoFirst
-      ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_diagnostico")}">Diagnóstico estratégico</a>`
-      : `<a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>`;
+    : campaign?.leadForm
+      ? `<a href="#campaign-lead" class="nav-cta nav-cta--wa" data-track="cta_lead_form">WhatsApp</a>`
+      : isDiagnosticoFirst
+        ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_diagnostico")}">Diagnóstico estratégico</a>`
+        : `<a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>`;
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
             <a href="${prefix}servicios/">Servicios</a>
