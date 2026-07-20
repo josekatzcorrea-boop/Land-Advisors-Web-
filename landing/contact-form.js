@@ -392,6 +392,8 @@
       );
     } catch (_) {}
 
+    // Abrir destino preferido (calendario si hay; si no, WhatsApp)
+    // Nota: si el submit ya abrió una ventana, estos botones quedan como respaldo.
     window.setTimeout(function () {
       panel.scrollIntoView({ behavior: "smooth", block: "center" });
     }, 100);
@@ -415,10 +417,24 @@
 
       const intent = data.get("intent") || "";
       const message = buildMessage(data);
+      const calUrl = calendarUrl(intent || "diagnostico");
+      const hasCalendar = calendarEnabled(intent || "diagnostico");
+      const visitorWa = whatsAppUrl(buildVisitorWhatsApp(data));
+      const nextUrl = hasCalendar && calUrl ? calUrl : visitorWa;
 
       if (typeof window.LA_track === "function") {
         window.LA_track("form_submit", { form_intent: intent, page_path: location.pathname });
       }
+
+      // Abrir destino en el mismo gesto del usuario (antes del fetch)
+      try {
+        if (nextUrl) {
+          const w = window.open(nextUrl, "_blank");
+          if (!w || w.closed) {
+            /* se mostrará panel con botones */
+          }
+        }
+      } catch (_) {}
 
       const cfg = whatsappConfig();
       const webhookUrl = (cfg.webhookUrl || "").trim();
@@ -427,7 +443,6 @@
 
       if (!autoSend) {
         showSuccessPanel(form, data);
-        window.open(whatsAppUrl(message), "_blank", "noopener,noreferrer");
         return;
       }
 
@@ -442,7 +457,7 @@
           showSuccessPanel(form, data);
           setStatus(
             form,
-            "Recibimos tu datos en pantalla. Si no ves el calendario, usa WhatsApp para confirmar la reunión.",
+            "Recibimos tus datos en pantalla. Si no ves el calendario, usa WhatsApp para confirmar la reunión.",
             "info"
           );
         })
