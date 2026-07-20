@@ -20,12 +20,17 @@
   function renderWhatsApp(root) {
     const link = document.createElement("a");
     link.className = "la-chat-widget__btn";
-    link.href = CONFIG.whatsapp.href;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
+    link.href = "#lead-gate";
+    link.setAttribute("data-site-wa", "");
     link.setAttribute("aria-label", CONFIG.whatsapp.label);
-    link.title = CONFIG.whatsapp.phoneDisplay;
+    link.title = "Completa un breve formulario y te abrimos WhatsApp";
     link.innerHTML = WHATSAPP_ICON;
+    link.addEventListener("click", function (e) {
+      if (window.LA_LeadGate && typeof window.LA_LeadGate.open === "function") {
+        e.preventDefault();
+        window.LA_LeadGate.open("whatsapp");
+      }
+    });
     root.appendChild(link);
   }
 

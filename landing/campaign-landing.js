@@ -46,23 +46,45 @@
   }
 
   function wireCtas(leadWaHref) {
-    const waHref = leadWaHref || buildWhatsAppHref();
+    const gate = "#lead-gate";
+    const afterLead = Boolean(leadWaHref);
+
     document.querySelectorAll("[data-campaign-wa]").forEach((el) => {
-      el.setAttribute("href", waHref);
+      if (el.closest(".campaign-lead-success")) {
+        el.setAttribute("href", leadWaHref || buildWhatsAppHref());
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener noreferrer");
+        return;
+      }
+      if (afterLead) {
+        el.setAttribute("href", leadWaHref);
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener noreferrer");
+      } else {
+        el.setAttribute("href", gate);
+        el.removeAttribute("target");
+      }
     });
+
     document.querySelectorAll("[data-campaign-lead-wa]").forEach((el) => {
-      el.setAttribute("href", leadWaHref || waHref);
+      el.setAttribute("href", leadWaHref || buildWhatsAppHref());
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener noreferrer");
     });
 
     const cal = calendarUrl();
     document.querySelectorAll("[data-campaign-calendar]").forEach((el) => {
-      if (cal) {
-        el.setAttribute("href", cal);
-        el.removeAttribute("aria-disabled");
-      } else {
-        el.setAttribute("href", "#");
-        el.setAttribute("aria-disabled", "true");
+      if (el.closest(".campaign-lead-success") || afterLead) {
+        if (cal) {
+          el.setAttribute("href", cal);
+          el.setAttribute("target", "_blank");
+          el.setAttribute("rel", "noopener noreferrer");
+          el.removeAttribute("aria-disabled");
+        }
+        return;
       }
+      el.setAttribute("href", gate);
+      el.removeAttribute("target");
     });
   }
 
@@ -159,6 +181,20 @@
       }
 
       notifyWebhook(notifyText);
+
+      try {
+        sessionStorage.setItem(
+          "la_lead_gate",
+          JSON.stringify({
+            nombre: nombre,
+            email: email,
+            telefono: "",
+            objetivo: objetivo,
+            presupuesto: presupuesto,
+            action: "whatsapp",
+          })
+        );
+      } catch (_) {}
 
       const fields = form.querySelector(".campaign-lead-form__fields");
       const success = form.querySelector(".campaign-lead-success");

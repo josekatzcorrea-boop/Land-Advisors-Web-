@@ -1,0 +1,157 @@
+/* Lead gate modal — formulario antes de WhatsApp / calendario */
+.lead-gate {
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  max-width: min(28rem, calc(100vw - 1.5rem));
+  width: 100%;
+  background: transparent;
+  color: var(--blue-dark, #052c4d);
+}
+
+.lead-gate::backdrop {
+  background: rgba(5, 44, 77, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.lead-gate__panel {
+  position: relative;
+  background: linear-gradient(165deg, #f4f7f8 0%, #eef3f5 45%, #e8f1f3 100%);
+  border: 1px solid rgba(5, 44, 77, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem 1.35rem 1.35rem;
+  box-shadow: 0 20px 50px rgba(5, 44, 77, 0.22);
+  max-height: min(92vh, 40rem);
+  overflow-y: auto;
+}
+
+.lead-gate__close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.65rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #052c4d;
+  cursor: pointer;
+  opacity: 0.55;
+}
+
+.lead-gate__close:hover {
+  opacity: 1;
+}
+
+.lead-gate__kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a5f72;
+}
+
+.lead-gate__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #052c4d;
+}
+
+.lead-gate__intro {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgba(5, 44, 77, 0.78);
+}
+
+.lead-gate__form {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.lead-gate__form label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #052c4d;
+  margin-top: 0.35rem;
+}
+
+.lead-gate__form input,
+.lead-gate__form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(5, 44, 77, 0.18);
+  background: #fff;
+  font: inherit;
+  font-size: 0.95rem;
+  color: #052c4d;
+}
+
+.lead-gate__form input:focus,
+.lead-gate__form select:focus {
+  outline: 2px solid rgba(26, 95, 114, 0.35);
+  border-color: #1a5f72;
+}
+
+.lead-gate__hp {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+}
+
+.lead-gate__submit {
+  margin-top: 0.85rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.lead-gate__hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.75rem;
+  color: rgba(5, 44, 77, 0.6);
+  text-align: center;
+}
+
+.lead-gate__status {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+}
+
+.lead-gate__success-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.lead-gate__success-actions .btn {
+  flex: 1 1 10rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead-gate__text-close {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  border: none;
+  background: transparent;
+  color: rgba(5, 44, 77, 0.65);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+body.lead-gate-open {
+  overflow: hidden;
+}
