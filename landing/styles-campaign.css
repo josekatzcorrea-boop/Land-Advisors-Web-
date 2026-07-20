@@ -293,12 +293,16 @@
   margin-bottom: 0.85rem;
 }
 
-.seo-page--campaign .campaign-hero__actions--cta .campaign-cta--cal {
-  order: -1;
+.seo-page--campaign .campaign-hero__actions--cta .campaign-cta--wa {
   flex: 1 1 14rem;
   min-width: min(100%, 12rem);
   font-size: 1.08rem;
   padding: 1.1rem 1.55rem;
+}
+
+.seo-page--campaign .campaign-hero__actions--cta .campaign-cta--cal {
+  flex: 1 1 12rem;
+  min-width: min(100%, 11rem);
 }
 
 /* CTAs flotantes al hacer scroll */
@@ -862,4 +866,329 @@
 /* En campaña los CTAs dedicados reemplazan el widget genérico */
 .seo-page--campaign #la-chat-widget {
   display: none;
+}
+
+/* —— Comparativa consultor vs corredora —— */
+.campaign-compare {
+  padding: 2.75rem 0 1.5rem;
+  background: linear-gradient(180deg, #e8f1f3 0%, #f4f7f8 55%, #fff 100%);
+}
+
+.campaign-compare .campaign-panel__title {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  max-width: 28ch;
+}
+
+.campaign-compare__intro {
+  max-width: 40rem;
+  margin: 0.65rem 0 1.5rem;
+  color: var(--text-muted, #5a6a75);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.campaign-compare__note {
+  margin: 1.15rem 0 0;
+  font-size: 0.92rem;
+  color: var(--text-muted, #5a6a75);
+  max-width: 44rem;
+}
+
+.compare-table {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.compare-table--emphasis {
+  border: 2px solid rgba(5, 44, 77, 0.14);
+  box-shadow: 0 16px 40px rgba(5, 44, 77, 0.1);
+}
+
+.compare-table__head,
+.compare-table__row {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.85fr) 1.25fr 1.15fr;
+  gap: 0;
+  border-bottom: 1px solid rgba(5, 44, 77, 0.1);
+}
+
+.compare-table__head {
+  background: #052c4d;
+}
+
+.compare-table__head .compare-table__cell--label {
+  background: #052c4d;
+}
+
+.compare-table__head .compare-table__cell--la {
+  background: #1a5f72;
+  color: #fff;
+  border-left: 0;
+}
+
+.compare-table__head .compare-table__cell--cor {
+  background: #5a6570;
+  color: #fff;
+  border-left: 0;
+}
+
+.compare-table__head .compare-table__cell span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.compare-table__cell {
+  padding: 1rem 1.05rem;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: var(--text, #1a2a33);
+}
+
+.compare-table__cell--label {
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-mid, #1a5f72);
+  background: rgba(232, 241, 243, 0.85);
+}
+
+.compare-table__cell--la {
+  background: rgba(26, 95, 114, 0.1);
+  border-left: 3px solid #1a5f72;
+}
+
+.compare-table__cell--cor {
+  background: rgba(90, 101, 112, 0.06);
+  color: #3d4a52;
+  border-left: 3px solid #8a949c;
+}
+
+.compare-table__row--spotlight .compare-table__cell--la {
+  background: rgba(26, 95, 114, 0.18);
+  font-size: 0.98rem;
+}
+
+.compare-table__row--spotlight .compare-table__cell--cor {
+  background: rgba(90, 101, 112, 0.1);
+  font-size: 0.98rem;
+}
+
+.compare-table__row--spotlight .compare-table__cell--label {
+  background: rgba(5, 44, 77, 0.1);
+  color: #052c4d;
+}
+
+.compare-table__head .compare-table__cell--la,
+.compare-table__head .compare-table__cell--cor {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.compare-table__head .compare-table__cell span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.78rem;
+  margin-top: 0.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.seo-page--campaign .nav-cta--wa {
+  background: linear-gradient(135deg, #25d366 0%, #1da851 55%, #128c3e 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+}
+
+@media (max-width: 760px) {
+  .compare-table__head {
+    display: none;
+  }
+
+  .compare-table__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0.95rem 0.95rem 1.05rem;
+    border-bottom: 1px solid rgba(5, 44, 77, 0.1);
+  }
+
+  .compare-table__cell {
+    padding: 0.45rem 0;
+    border-left: 0 !important;
+  }
+
+  .compare-table__cell--label {
+    background: transparent;
+    margin-bottom: 0.35rem;
+  }
+
+  .compare-table__cell--la::before,
+  .compare-table__cell--cor::before {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  .compare-table__cell--la::before {
+    content: "Land Advisors · Tu consultor";
+    color: #1a5f72;
+  }
+
+  .compare-table__cell--cor::before {
+    content: "Corredora · Del vendedor";
+    color: #5a6570;
+  }
+
+  .compare-table__cell--la {
+    border-radius: 0.55rem;
+    padding: 0.75rem 0.85rem;
+    margin-bottom: 0.4rem;
+    border-left: 4px solid #1a5f72 !important;
+  }
+
+  .compare-table__cell--cor {
+    border-radius: 0.55rem;
+    padding: 0.75rem 0.85rem;
+    background: rgba(90, 101, 112, 0.08);
+    border-left: 4px solid #8a949c !important;
+  }
+
+  .compare-table__row--spotlight {
+    background: rgba(26, 95, 114, 0.06);
+    border-radius: 0.65rem;
+    margin: 0.25rem 0;
+  }
+}
+
+/* —— Formulario lead campaña —— */
+.campaign-lead {
+  padding: 2.5rem 0 1rem;
+}
+
+.campaign-lead__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .campaign-lead__grid {
+    grid-template-columns: 1fr 1.05fr;
+    align-items: start;
+    gap: 2rem;
+  }
+}
+
+.campaign-lead__bullets {
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--text-muted, #5a6a75);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.campaign-lead__bullets li + li {
+  margin-top: 0.4rem;
+}
+
+.campaign-lead-form {
+  padding: 1.35rem 1.25rem 1.4rem;
+}
+
+.campaign-lead-form__fields label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--brand-deep, #052c4d);
+  margin: 0.85rem 0 0.35rem;
+}
+
+.campaign-lead-form__fields label:first-child {
+  margin-top: 0;
+}
+
+.campaign-lead-form__fields input,
+.campaign-lead-form__fields select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(5, 44, 77, 0.18);
+  border-radius: 0.55rem;
+  font: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  color: var(--text, #1a2a33);
+}
+
+.campaign-lead-form__fields input:focus,
+.campaign-lead-form__fields select:focus {
+  outline: 2px solid rgba(26, 95, 114, 0.35);
+  border-color: var(--brand-mid, #1a5f72);
+}
+
+.campaign-lead-form__submit {
+  width: 100%;
+  margin-top: 1.15rem;
+  border: none;
+}
+
+.campaign-lead-form__hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted, #5a6a75);
+  line-height: 1.4;
+}
+
+.campaign-lead-form__hp {
+  position: absolute;
+  left: -9999px;
+}
+
+.campaign-lead-success__kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lake, #5b8fa0);
+  margin: 0 0 0.35rem;
+}
+
+.campaign-lead-success__title {
+  margin: 0 0 0.55rem;
+  font-size: 1.25rem;
+  color: var(--brand-deep, #052c4d);
+}
+
+.campaign-lead-success__lead {
+  margin: 0 0 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-muted, #5a6a75);
+}
+
+.campaign-lead-success__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.campaign-lead-success__actions .campaign-cta {
+  width: 100%;
+}
+
+.campaign-lead-success__note {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted, #5a6a75);
+}
+
+.campaign-cta--outline-cal {
+  background: rgba(255, 255, 255, 0.92) !important;
+  color: var(--brand-deep, #052c4d) !important;
+  box-shadow: 0 4px 16px rgba(5, 44, 77, 0.12) !important;
+  animation: none !important;
+  border: 1px solid rgba(5, 44, 77, 0.2);
 }
