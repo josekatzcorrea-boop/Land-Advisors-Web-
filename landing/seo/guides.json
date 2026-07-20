@@ -10,7 +10,7 @@
       "imageAlt": "Contorno rural en la cuenca del Lago Llanquihue",
       "readMinutes": 12,
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-16",
+      "dateModified": "2026-07-20",
       "author": "José Hernán Katz C.",
       "cta": {
         "href": "servicios/busqueda-personalizada/",
@@ -260,6 +260,7 @@
         }
       ],
       "related": [
+        { "label": "Diagnóstico estratégico (1 UF)", "href": "servicios/diagnostico-estrategico/" },
         { "label": "Búsqueda personalizada de terrenos", "href": "servicios/busqueda-personalizada/" },
         { "label": "Plusvalía en contorno rural de Puerto Varas", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
         { "label": "Costos de habilitación en contorno rural", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
