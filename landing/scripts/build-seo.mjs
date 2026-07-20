@@ -29,6 +29,10 @@ const ilaIndex = JSON.parse(fs.readFileSync(path.join(SEO, "ila-index.json"), "u
 const ilaSectors = ilaIndex.sectors || [];
 const observatorio2026 = JSON.parse(fs.readFileSync(path.join(SEO, "observatorio-2026.json"), "utf8"));
 
+/** Atributos <html> para CTAs WhatsApp + calendario (site-ctas.js) */
+const SITE_CTA_HTML_ATTRS =
+  'data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico"';
+
 function depthFromPath(p) {
   const segs = p.replace(/\/$/, "").split("/").filter(Boolean);
   return segs.length;
@@ -1203,7 +1207,7 @@ function buildCaseStudyPage(caseStudy) {
   const ctaHref = prefix + "#contacto-form";
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="es" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + caseStudy.image })}
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
@@ -1242,8 +1246,8 @@ ${navLinks(prefix)}
     <section class="cta-band">
       <div class="container">
         <h2>¿Evaluando un terreno en el sur de Chile?</h2>
-        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <p>Diagnóstico para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
+        ${dualCtaPair()}
       </div>
     </section>
   </main>
@@ -1258,11 +1262,7 @@ ${navLinks(prefix)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  <script src="${prefix}landing-ui.js" defer></script>
-  <script src="${prefix}analytics-config.js" defer></script>
-  <script src="${prefix}analytics.js" defer></script>
-  <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>
+${seoCommonScripts(prefix)}
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
@@ -1294,7 +1294,7 @@ function buildBlogPostPage(post) {
   const ctaHref = prefix + "#contacto-form";
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="es" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.image })}
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
@@ -1333,8 +1333,8 @@ ${navLinks(prefix)}
     <section class="cta-band">
       <div class="container">
         <h2>¿Evaluando un terreno en el sur de Chile?</h2>
-        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_contacto">Agendar reunión estratégica</a>
+        <p>Diagnóstico para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
+        ${dualCtaPair()}
       </div>
     </section>
   </main>
@@ -1349,11 +1349,7 @@ ${navLinks(prefix)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  <script src="${prefix}landing-ui.js" defer></script>
-  <script src="${prefix}analytics-config.js" defer></script>
-  <script src="${prefix}analytics.js" defer></script>
-  <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>
+${seoCommonScripts(prefix)}
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
@@ -1366,30 +1362,47 @@ ${navLinks(prefix)}
 </html>`;
 }
 
+const CTA_WA_ICON = `<svg class="cta-pair__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
+const CTA_CAL_ICON = `<svg class="cta-pair__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>`;
+
+/** Par WhatsApp + Agendar diagnóstico (páginas SEO / home-style) */
+function dualCtaPair(opts = {}) {
+  const waLabel = opts.waLabel || "WhatsApp";
+  const calLabel = opts.calLabel || "Agendar diagnóstico";
+  const pairClass = opts.pairClass || "cta-pair";
+  return `<div class="${pairClass}">
+          <a href="#" class="btn btn-cta-wa" data-site-wa data-track="cta_whatsapp" target="_blank" rel="noopener noreferrer">${CTA_WA_ICON}<span>${esc(waLabel)}</span></a>
+          <a href="#" class="btn btn-primary btn-glow btn-cta-agenda" data-site-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">${CTA_CAL_ICON}<span>${esc(calLabel)}</span></a>
+        </div>`;
+}
+
+function seoCommonScripts(prefix) {
+  return `  <script src="${prefix}landing-ui.js" defer></script>
+  <script src="${prefix}calendar-config.js" defer></script>
+  <script src="${prefix}site-ctas.js" defer></script>
+  <script src="${prefix}analytics-config.js" defer></script>
+  <script src="${prefix}analytics.js" defer></script>
+  <script src="${prefix}conversion-tracking.js" defer></script>
+  <script src="${prefix}chat-widget.js" defer></script>`;
+}
+
 function campaignCtaMarkup(campaign, variant = "float") {
-  const track = campaign.serviceEvent || "cta_busqueda";
   const template = campaign.template || "promo";
-  const label = campaign.ctaLabel || "Agenda una sesión estratégica";
   const sizeClass = variant === "hero" ? " campaign-cta--lg" : "";
   const calIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`;
   const waIcon = `<svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
+  const calLabel = variant === "float" ? "Agendar" : "Agendar diagnóstico";
+  const waLabel = "WhatsApp";
 
-  if (template === "intent") {
-    return `<a href="#" class="campaign-cta campaign-cta--cal campaign-cta--primary${sizeClass}" data-campaign-calendar data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${esc(label)}</span></a>`;
-  }
-
-  // Flujo Meta: WhatsApp baja al form; Agendar = calendario (cliente más decidido)
   if (campaign.leadForm) {
-    const waLabel = "WhatsApp";
-    const calLabel = variant === "float" ? "Agendar" : "Agendar reunión";
     return `<a href="#campaign-lead" class="campaign-cta campaign-cta--wa${sizeClass}" data-track="cta_lead_form">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>
           <a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>`;
   }
 
-  const waLabel = variant === "hero" ? "Consultar por WhatsApp" : "WhatsApp";
-  const calLabel = "Agendar reunión";
-  return `<a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_diagnostico" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>
-          <a href="#" class="campaign-cta campaign-cta--wa${sizeClass}" data-campaign-wa data-track="${esc(track)}" target="_blank" rel="noopener noreferrer">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>`;
+  // Intent y promo sin form: WA directo + calendario
+  const waAttr = template === "intent" || !campaign.leadForm ? "data-campaign-wa" : "data-campaign-wa";
+  return `<a href="#" class="campaign-cta campaign-cta--wa${sizeClass}" ${waAttr} data-track="cta_whatsapp" target="_blank" rel="noopener noreferrer">${waIcon}<span class="campaign-cta__label">${waLabel}</span></a>
+          <a href="#" class="campaign-cta campaign-cta--cal${sizeClass}" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">${calIcon}<span class="campaign-cta__label">${calLabel}</span></a>`;
 }
 
 function buildCampaignCompare(campaign) {
@@ -1433,7 +1446,7 @@ function buildCampaignLeadForm(campaign) {
           <div class="campaign-lead__copy">
             <p class="section-label">Siguiente paso</p>
             <h2 class="campaign-panel__title" id="campaign-lead-title">Cuéntanos qué buscas</h2>
-            <p>Completa el formulario. Luego puedes seguir por WhatsApp o agendar tu reunión estratégica${deadline ? ` (diagnóstico gratis hasta el ${esc(deadline)})` : ""}.</p>
+            <p>Completa el formulario. Luego puedes seguir por WhatsApp o agendar tu diagnóstico${deadline ? ` (gratis hasta el ${esc(deadline)})` : ""}.</p>
             <ul class="campaign-lead__bullets">
               <li>Diagnóstico estratégico gratis, sin compromiso de contratar búsqueda.</li>
               <li>Si te sirve, cotizamos búsqueda personalizada a ${esc(campaign.pricePromo || "3,5 UF")} (antes ${esc(campaign.priceRegular || "5 UF")}).</li>
@@ -1470,7 +1483,7 @@ function buildCampaignLeadForm(campaign) {
 
               <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="campaign-lead-form__hp">
               <button type="submit" class="campaign-cta campaign-cta--wa campaign-cta--lg campaign-lead-form__submit"><svg class="campaign-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span class="campaign-cta__label">Enviar y abrir WhatsApp</span></button>
-              <p class="campaign-lead-form__hint">Al enviar podrás abrir WhatsApp o agendar reunión. No compartimos tus datos con terceros.</p>
+              <p class="campaign-lead-form__hint">Al enviar podrás abrir WhatsApp o agendar diagnóstico. No compartimos tus datos con terceros.</p>
             </div>
 
             <div class="campaign-lead-success" hidden>
@@ -1479,9 +1492,9 @@ function buildCampaignLeadForm(campaign) {
               <p class="campaign-lead-success__lead">Con Land Advisors buscas con un consultor que mira la oferta amplia del territorio — no solo la cartera de una corredora. El siguiente paso es conversar y agendar tu diagnóstico gratis.</p>
               <div class="campaign-lead-success__actions">
                 <a href="#" class="campaign-cta campaign-cta--wa campaign-cta--lg" data-campaign-lead-wa data-track="cta_whatsapp" target="_blank" rel="noopener noreferrer">Continuar por WhatsApp</a>
-                <a href="#" class="campaign-cta campaign-cta--cal campaign-cta--lg" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">Agendar reunión</a>
+                <a href="#" class="campaign-cta campaign-cta--cal campaign-cta--lg" data-campaign-calendar data-track="cta_calendar" target="_blank" rel="noopener noreferrer">Agendar diagnóstico</a>
               </div>
-              <p class="campaign-lead-success__note">Reunión ~30 min · Online o presencial en Puerto Varas${deadline ? ` · Promoción válida hasta el ${esc(deadline)}` : ""}.</p>
+              <p class="campaign-lead-success__note">Diagnóstico ~30 min · Online o presencial en Puerto Varas${deadline ? ` · Promoción válida hasta el ${esc(deadline)}` : ""}.</p>
             </div>
           </form>
         </div>
@@ -1619,7 +1632,7 @@ ${navLinks(prefix, campaign)}
         <h1>${esc(campaign.h1)}</h1>
         ${heroQa}
         <p class="campaign-hero__lead">${esc(campaign.heroLead)}</p>
-        <div class="campaign-hero__actions campaign-hero__actions--single">
+        <div class="campaign-hero__actions campaign-hero__actions--cta">
           ${campaignCtaMarkup(campaign, "hero")}
         </div>
         ${campaign.priceAnchor ? `<p class="campaign-hero__note">${esc(campaign.priceAnchor)}</p>` : ""}
@@ -1664,7 +1677,7 @@ ${navLinks(prefix, campaign)}
         <section class="campaign-final-cta glass-card">
           <h2>¿Listo para decidir con criterio?</h2>
           <p>Primera sesión sin compromiso de compra — solo claridad territorial.</p>
-          <div class="campaign-hero__actions campaign-hero__actions--single">${campaignCtaMarkup(campaign, "hero")}</div>
+          <div class="campaign-hero__actions campaign-hero__actions--cta">${campaignCtaMarkup(campaign, "hero")}</div>
         </section>
 
         <p class="campaign-legal">${esc(campaign.legal)}</p>
@@ -1991,15 +2004,23 @@ ${campaignFooterScripts(prefix, campaign)}
 }
 
 function navLinks(prefix, campaign) {
-  const isIntent = (campaign?.template || "promo") === "intent";
-  const isDiagnosticoFirst = campaign?.promoFlow === "diagnostico-first";
-  const navCta = isIntent
-    ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_contacto")}">Sesión estratégica</a>`
-    : campaign?.leadForm
-      ? `<a href="#campaign-lead" class="nav-cta nav-cta--wa" data-track="cta_lead_form">WhatsApp</a>`
-      : isDiagnosticoFirst
-        ? `<a href="#" class="nav-cta" data-campaign-calendar data-track="${esc(campaign.serviceEvent || "cta_diagnostico")}">Diagnóstico estratégico</a>`
-        : `<a href="${prefix}#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>`;
+  let navCta;
+  if (campaign?.leadForm) {
+    navCta = `<div class="nav-cta-pair">
+            <a href="#campaign-lead" class="nav-cta nav-cta--wa" data-track="cta_lead_form">WhatsApp</a>
+            <a href="#" class="nav-cta nav-cta--cal" data-campaign-calendar data-track="cta_calendar">Diagnóstico</a>
+          </div>`;
+  } else if (campaign) {
+    navCta = `<div class="nav-cta-pair">
+            <a href="#" class="nav-cta nav-cta--wa" data-campaign-wa data-track="cta_whatsapp">WhatsApp</a>
+            <a href="#" class="nav-cta nav-cta--cal" data-campaign-calendar data-track="cta_calendar">Diagnóstico</a>
+          </div>`;
+  } else {
+    navCta = `<div class="nav-cta-pair">
+            <a href="#" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp">WhatsApp</a>
+            <a href="#" class="nav-cta nav-cta--cal" data-site-calendar data-track="cta_calendar">Diagnóstico</a>
+          </div>`;
+  }
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
             <a href="${prefix}servicios/">Servicios</a>
@@ -2275,7 +2296,7 @@ function buildSecondaryPage(page) {
     schemas.push(articleSchema({ ...territoryRich, h1: page.h1, description: page.description }, page.path));
     if (territoryRich.faq?.length) schemas.push(faqPageSchema(territoryRich.faq));
   }
-  const cta = page.cta || { label: "Agendar reunión estratégica", event: "cta_contacto" };
+  const cta = page.cta || { label: "Agendar diagnóstico", event: "cta_calendar" };
   const ctaHref = prefix + (hubGuide ? "servicios/busqueda-personalizada/" : "#contacto-form");
   const ctaEvent = hubGuide ? "cta_busqueda" : cta.event;
   const ctaLabel = hubGuide ? "Solicitar búsqueda personalizada" : cta.label;
@@ -2307,7 +2328,7 @@ function buildSecondaryPage(page) {
   const serviceBlock = buildServicePriceBlock(page, prefix);
 
   return `<!DOCTYPE html>
-<html lang="es">
+<html lang="es" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(
     pageView,
@@ -2356,8 +2377,7 @@ ${navLinks(prefix)}
           hubGuide
             ? ""
             : `<div class="seo-hero-actions">
-          <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="${cta.event}">${esc(cta.label)}</a>
-          <a href="${site.whatsapp}" class="btn btn-glass" target="_blank" rel="noopener noreferrer" data-track="cta_whatsapp">WhatsApp</a>
+          ${dualCtaPair()}
         </div>`
         }
       </div>
@@ -2371,8 +2391,8 @@ ${navLinks(prefix)}
     <section class="cta-band">
       <div class="container">
         <h2>${hubGuide ? "¿Evaluando terreno en el sur de Chile?" : "Inteligencia territorial antes de invertir"}</h2>
-        <p>${hubGuide ? "Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial." : "Reunión estratégica para ordenar tu decisión con criterio de mercado y territorio."}</p>
-        <a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="${hubGuide ? ctaEvent : "cta_contacto"}">${esc(hubGuide ? ctaLabel : "Agendar reunión estratégica")}</a>
+        <p>${hubGuide ? "Diagnóstico para ordenar zona, criterio y próximos pasos con lectura territorial." : "Diagnóstico para ordenar tu decisión con criterio de mercado y territorio."}</p>
+        ${hubGuide ? `<a href="${ctaHref}" class="btn btn-primary btn-glow btn-cta-agenda" data-track="${ctaEvent}">${esc(ctaLabel)}</a>` : dualCtaPair()}
       </div>
     </section>
   </main>
@@ -2387,11 +2407,7 @@ ${navLinks(prefix)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  <script src="${prefix}landing-ui.js" defer></script>
-  <script src="${prefix}analytics-config.js" defer></script>
-  <script src="${prefix}analytics.js" defer></script>
-  <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>
+${seoCommonScripts(prefix)}
   ${isIlaHub ? `<script src="${prefix}ila-widget.js" defer></script>` : ""}
   <script>
     const toggle = document.querySelector(".menu-toggle");

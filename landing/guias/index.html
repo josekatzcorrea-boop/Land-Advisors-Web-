@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,10 @@
             <a href="../guias/">Guías</a>
             <a href="../#nosotros">Nosotros</a>
           </div>
-          <a href="../#contacto-form" class="nav-cta" data-track="cta_diagnostico">Diagnóstico estratégico</a>
+          <div class="nav-cta-pair">
+            <a href="#" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp">WhatsApp</a>
+            <a href="#" class="nav-cta nav-cta--cal" data-site-calendar data-track="cta_calendar">Diagnóstico</a>
+          </div>
         </nav>
       </div>
     </div>
@@ -287,7 +290,7 @@
     <section class="cta-band">
       <div class="container">
         <h2>¿Evaluando terreno en el sur de Chile?</h2>
-        <p>Reunión estratégica para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
+        <p>Diagnóstico para ordenar zona, criterio y próximos pasos con lectura territorial.</p>
         <a href="../servicios/busqueda-personalizada/" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_busqueda">Solicitar búsqueda personalizada</a>
       </div>
     </section>
@@ -304,6 +307,8 @@
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="../landing-ui.js" defer></script>
+  <script src="../calendar-config.js" defer></script>
+  <script src="../site-ctas.js" defer></script>
   <script src="../analytics-config.js" defer></script>
   <script src="../analytics.js" defer></script>
   <script src="../conversion-tracking.js" defer></script>

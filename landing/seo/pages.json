@@ -32,7 +32,7 @@
       "price": "1 UF",
       "description": "Reunión estratégica, informe con zonas recomendadas y próximos pasos según tu presupuesto y objetivo."
     },
-    "cta": { "label": "Agendar diagnóstico estratégico", "event": "cta_diagnostico" }
+    "cta": { "label": "Agendar diagnóstico", "event": "cta_diagnostico" }
   },
   {
     "path": "/servicios/busqueda-personalizada/",
