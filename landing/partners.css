@@ -84,6 +84,7 @@
   border-radius: calc(var(--radius) + 4px);
   background: transparent;
   overflow: visible;
+  z-index: 10050;
 }
 
 .partner-modal::backdrop {
@@ -212,6 +213,12 @@
 
 body.partner-modal-open {
   overflow: hidden;
+}
+
+body.partner-modal-open .sticky-cta-pair,
+body.partner-modal-open #la-chat-widget {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {

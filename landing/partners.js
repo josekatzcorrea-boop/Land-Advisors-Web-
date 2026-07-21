@@ -105,7 +105,10 @@
     let valid = true;
     const data = new FormData(form);
 
-    if (data.get("website")) return false;
+    if (data.get("la_hp") || data.get("website")) {
+      setFormStatus("No pudimos validar el envío. Recarga la página e intenta de nuevo.", "error");
+      return false;
+    }
 
     const nombre = String(data.get("nombre") || "").trim();
     const email = String(data.get("email") || "").trim();
@@ -227,15 +230,24 @@
       telefono: data.get("telefono"),
       comentario: data.get("comentario"),
       partner: data.get("partner") || activePartner.name,
+      partnerId: activePartner.id,
       ciudad: "",
     };
 
     setSubmitting(true);
     setFormStatus("", "");
 
-    window
-      .savePartnerLead(lead)
+    var saveFn =
+      typeof window.savePartnerLead === "function"
+        ? window.savePartnerLead
+        : function (lead) {
+            return Promise.resolve(lead);
+          };
+
+    saveFn(lead)
       .then(function () {
+        if (!activePartner) return;
+
         track("partner_lead_submit", {
           partner_id: activePartner.id,
           partner_name: activePartner.name,
@@ -249,15 +261,19 @@
           "success"
         );
 
+        var redirectUrl = activePartner.redirectUrl;
+        var partnerId = activePartner.id;
+        var partnerName = activePartner.name;
+
         window.setTimeout(function () {
           track("partner_redirect", {
-            partner_id: activePartner.id,
-            partner_name: activePartner.name,
-            redirect_url: activePartner.redirectUrl,
+            partner_id: partnerId,
+            partner_name: partnerName,
+            redirect_url: redirectUrl,
             page_path: location.pathname,
           });
-          window.location.href = activePartner.redirectUrl;
-        }, 2000);
+          window.location.href = redirectUrl;
+        }, 1200);
       })
       .catch(function () {
         setFormStatus(

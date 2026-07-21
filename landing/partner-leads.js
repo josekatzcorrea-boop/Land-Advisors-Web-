@@ -15,6 +15,7 @@ window.savePartnerLead = function savePartnerLead(lead) {
     ciudad: String(lead.ciudad || "").trim(),
     comentario: String(lead.comentario || "").trim(),
     partner: String(lead.partner || "").trim(),
+    partnerId: String(lead.partnerId || "").trim(),
     source: "Land Advisors Website",
   };
 
@@ -36,6 +37,8 @@ window.savePartnerLead = function savePartnerLead(lead) {
       method: "POST",
       headers: headers,
       body: JSON.stringify(payload),
+      // keepalive: si el usuario navega al partner, el POST igual intenta completarse
+      keepalive: true,
     }).then(function (res) {
       if (!res.ok) throw new Error("webhook_http_" + res.status);
       return res.text();
@@ -74,18 +77,15 @@ window.savePartnerLead = function savePartnerLead(lead) {
 
   persistLocal();
 
-  const tasks = [notifyWhatsApp()];
-
+  // No bloquear la UI: Apps Script + MailApp puede tardar varios segundos.
+  // Disparamos webhooks en paralelo y resolvemos de inmediato para el usuario.
   const sheetsUrl = (cfg.webhookUrl || "").trim();
   if (sheetsUrl) {
-    tasks.push(
-      postWebhook(sheetsUrl, record, true).catch(function (err) {
-        console.warn("[LA Partners] webhook Sheets", err);
-      })
-    );
+    postWebhook(sheetsUrl, record, true).catch(function (err) {
+      console.warn("[LA Partners] webhook Sheets", err);
+    });
   }
+  notifyWhatsApp();
 
-  return Promise.all(tasks).then(function () {
-    return record;
-  });
+  return Promise.resolve(record);
 };
