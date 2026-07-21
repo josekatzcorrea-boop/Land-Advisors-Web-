@@ -105,8 +105,8 @@
     let valid = true;
     const data = new FormData(form);
 
-    if (data.get("la_hp") || data.get("website")) {
-      setFormStatus("No pudimos validar el envío. Recarga la página e intenta de nuevo.", "error");
+    const hp = form.querySelector('[name="la_hp"]');
+    if (hp && (hp.type === "checkbox" ? hp.checked : String(hp.value || "").trim())) {
       return false;
     }
 
