@@ -56,10 +56,10 @@
 
 .campaign-cta--cal {
   color: #fff;
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 45%, #b91c1c 100%);
-  box-shadow: 0 6px 26px rgba(220, 38, 38, 0.55), 0 2px 8px rgba(127, 29, 29, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.22);
-  animation: campaign-cal-glow 1.8s ease-in-out infinite;
-  font-weight: 700;
+  background: linear-gradient(135deg, #1a5f72 0%, #052c4d 52%, #031d33 100%);
+  box-shadow: 0 6px 20px rgba(5, 44, 77, 0.24), 0 2px 6px rgba(91, 143, 160, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  animation: campaign-cal-glow 3s ease-in-out infinite;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
@@ -78,8 +78,8 @@
 
 .campaign-cta--cal:hover {
   animation: none;
-  box-shadow: 0 12px 34px rgba(220, 38, 38, 0.65), 0 4px 12px rgba(127, 29, 29, 0.4);
-  filter: brightness(1.08);
+  box-shadow: 0 10px 28px rgba(5, 44, 77, 0.3), 0 4px 10px rgba(91, 143, 160, 0.15);
+  filter: brightness(1.04);
 }
 
 @keyframes campaign-wa-glow {
@@ -89,10 +89,10 @@
 
 @keyframes campaign-cal-glow {
   0%, 100% {
-    box-shadow: 0 6px 26px rgba(220, 38, 38, 0.5), 0 2px 8px rgba(127, 29, 29, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(5, 44, 77, 0.22), 0 2px 6px rgba(91, 143, 160, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
   50% {
-    box-shadow: 0 10px 36px rgba(220, 38, 38, 0.75), 0 4px 14px rgba(185, 28, 28, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    box-shadow: 0 8px 28px rgba(5, 44, 77, 0.3), 0 3px 10px rgba(91, 143, 160, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 }
 
