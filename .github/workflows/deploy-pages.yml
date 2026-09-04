@@ -24,6 +24,7 @@ jobs:
       - name: Prepare site (landing/ as root)
         run: |
           node landing/scripts/build-seo.mjs
+          node landing/scripts/optimize-plh-images.mjs || true
           mkdir -p _site/assets
           rsync -a \
             --exclude 'Imágenes/' \

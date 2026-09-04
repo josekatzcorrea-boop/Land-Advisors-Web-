@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico">
+<html lang="es" class="i18n-loading" data-i18n-prefix="../../" data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="../../styles-seo.css">
+  <link rel="stylesheet" href="../../styles-i18n.css">
   <link rel="stylesheet" href="../../lead-gate.css">
   <link rel="stylesheet" href="../../chat-widget.css">
+  <link rel="stylesheet" href="../../styles-human.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Land Advisors Chile","legalName":"Land Advisors Chile","url":"https://www.landadvisors.cl","logo":"https://www.landadvisors.cl/assets/logo-horizontal-3d.jpg","email":"contacto@landadvisors.cl","telephone":"+56974533265","description":"Consultoría de inteligencia territorial e inversión inmobiliaria rural y periurbana en el sur de Chile.","address":{"@type":"PostalAddress","streetAddress":"Walker Martínez 517","addressLocality":"Puerto Varas","addressRegion":"Los Lagos","addressCountry":"CL"},"areaServed":[{"@type":"City","name":"Puerto Varas"},{"@type":"City","name":"Llanquihue"},{"@type":"City","name":"Frutillar"},{"@type":"City","name":"Puerto Octay"},{"@type":"City","name":"Ensenada"},{"@type":"City","name":"Las Cascadas"},{"@type":"City","name":"Malalcahuello"},{"@type":"City","name":"Fresia"},{"@type":"City","name":"Los Muermos"}],"founder":{"@type":"Person","name":"José Hernán Katz C."}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Land Advisors Chile","image":"https://www.landadvisors.cl/images/hero.jpg","url":"https://www.landadvisors.cl","telephone":"+56974533265","email":"contacto@landadvisors.cl","priceRange":"UF","address":{"@type":"PostalAddress","streetAddress":"Walker Martínez 517","addressLocality":"Puerto Varas","addressRegion":"Los Lagos","postalCode":"5550000","addressCountry":"CL"},"geo":{"@type":"GeoCoordinates","latitude":-41.3195,"longitude":-72.9369},"areaServed":["Puerto Varas","Llanquihue","Frutillar","Puerto Octay","Ensenada","Las Cascadas","Malalcahuello","Fresia","Los Muermos"],"description":"Consultoría inmobiliaria especializada en inversión territorial, plusvalía y oportunidades en el sur de Chile."}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"José Hernán Katz C.","jobTitle":"Fundador y consultor de estrategia inmobiliaria","worksFor":{"@type":"Organization","name":"Land Advisors Chile"},"url":"https://www.landadvisors.cl/#nosotros","sameAs":["https://www.instagram.com/landadvisorschile/"]}</script>
@@ -37,7 +39,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Asesoría de compra y adquisición","description":"Estrategia de negociación, revisión documental, coordinación con notaría y checklist de cierre. Menos 5 UF si contrataste búsqueda personalizada previamente.","provider":{"@type":"Organization","name":"Land Advisors Chile","url":"https://www.landadvisors.cl"},"areaServed":["Puerto Varas","Llanquihue","Frutillar","Puerto Octay","Ensenada","Las Cascadas","Malalcahuello","Fresia","Los Muermos"],"offers":{"@type":"Offer","price":"2,5% del valor de compra","priceCurrency":"CLF","availability":"https://schema.org/InStock"}}</script>
   
 </head>
-<body class="site-v2 seo-page">
+<body class="site-v2 seo-page" data-page="seo" data-seo-path="/servicios/asesoria-compra/">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -47,13 +49,19 @@
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
         <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
-            <a href="../../servicios/">Servicios</a>
-            <a href="../../territorios/">Territorios</a>
-            <a href="../../inteligencia-territorial/">Inteligencia</a>
-            <a href="../../casos-de-estudio/">Casos</a>
-            <a href="../../blog/">Blog</a>
-            <a href="../../guias/">Guías</a>
-            <a href="../../#nosotros">Nosotros</a>
+            <a href="../../patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
+            <a href="../../servicios/" data-i18n="nav.services">Servicios</a>
+            <a href="../../territorios/" data-i18n="nav.territories">Territorios</a>
+            <a href="../../inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
+            <a href="../../casos-de-estudio/" data-i18n="nav.cases">Casos</a>
+            <a href="../../blog/" data-i18n="nav.blog">Blog</a>
+            <a href="../../guias/" data-i18n="nav.guides">Guías</a>
+            <a href="../../#nosotros" data-i18n="nav.about">Nosotros</a>
+          </div>
+          <div class="lang-switch lang-switch--header" role="group" aria-label="Idioma">
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
           </div>
           <div class="nav-cta-pair">
             <a href="#lead-gate" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp">WhatsApp</a>
@@ -68,7 +76,7 @@
     <section class="seo-hero">
       <div class="container" data-reveal>
         <nav class="seo-breadcrumb" aria-label="Breadcrumb">
-          <a href="../../">Inicio</a>
+          <a href="../../" data-i18n="seo.breadcrumb.home">Inicio</a>
           <span aria-hidden="true"> / </span><span>Asesoría de compra</span>
         </nav>
         <p class="section-label">Servicio</p>
@@ -118,6 +126,7 @@
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="../../i18n.js" defer></script>
   <script src="../../landing-ui.js" defer></script>
   <script src="../../calendar-config.js" defer></script>
   <script src="../../whatsapp-config.js" defer></script>

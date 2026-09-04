@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es" data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico">
+<html lang="es" class="i18n-loading" data-i18n-prefix="" data-wa-intro="Hola, quiero agendar un diagnóstico con Land Advisors." data-wa-phone="56974533265" data-calendar-intent="diagnostico">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,9 @@
   <meta name="geo.region" content="CL-LL">
   <meta name="geo.placename" content="Puerto Varas">
   <link rel="canonical" href="https://www.landadvisors.cl/">
+  <link rel="alternate" hreflang="es" href="https://www.landadvisors.cl/">
+  <link rel="alternate" hreflang="en" href="https://www.landadvisors.cl/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.landadvisors.cl/">
   <title>Comprar terreno en el sur de Chile con asesoría | Land Advisors</title>
   <link rel="icon" type="image/png" href="/assets/logo-isotipo-3d.png">
   <link rel="apple-touch-icon" href="/assets/logo-isotipo-3d.png">
@@ -30,9 +33,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-seo.css">
+  <link rel="stylesheet" href="styles-i18n.css">
   <link rel="stylesheet" href="lead-gate.css">
   <link rel="stylesheet" href="chat-widget.css">
   <link rel="stylesheet" href="partners.css">
+  <link rel="stylesheet" href="styles-human.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -132,7 +137,7 @@
   }
   </script>
 </head>
-<body class="site-v2">
+<body class="site-v2" data-page="home">
   <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
   <div class="grain" aria-hidden="true"></div>
 
@@ -142,19 +147,25 @@
         <a href="#inicio" class="logo-link" aria-label="Land Advisors — inicio">
           <img src="/assets/logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="282" height="64">
         </a>
-        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="nav.menu">Menú</button>
         <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
-            <a href="#problema">El problema</a>
-            <a href="inteligencia-territorial/">Inteligencia</a>
-            <a href="casos-de-estudio/">Casos</a>
-            <a href="guias/">Guías</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#faq">Preguntas</a>
+            <a href="patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
+            <a href="#problema" data-i18n="nav.problem">El problema</a>
+            <a href="inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
+            <a href="casos-de-estudio/" data-i18n="nav.cases">Casos</a>
+            <a href="guias/" data-i18n="nav.guides">Guías</a>
+            <a href="#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+          </div>
+          <div class="lang-switch lang-switch--header" role="group" aria-label="Idioma">
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
           </div>
           <div class="nav-cta-pair">
-            <a href="#lead-gate" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp">WhatsApp</a>
-            <a href="#lead-gate" class="nav-cta nav-cta--cal" data-site-calendar data-track="cta_calendar">Diagnóstico</a>
+            <a href="#lead-gate" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp" data-i18n="cta.whatsapp">WhatsApp</a>
+            <a href="#lead-gate" class="nav-cta nav-cta--cal" data-site-calendar data-track="cta_calendar" data-i18n="nav.diagnostic">Diagnóstico</a>
           </div>
         </nav>
       </div>
@@ -380,6 +391,16 @@
           Cada servicio resuelve una etapa distinta. El punto de entrada habitual es una <strong>reunión estratégica</strong> (diagnóstico 1 UF).
         </p>
         <div class="service-track" role="list">
+          <article class="service-card glass-card service-card--featured" role="listitem">
+            <a href="patagonia-land-hunter/" class="service-card-hit" aria-label="Patagonia Land Hunter"></a>
+            <div class="service-card-head">
+              <span class="service-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2l3 7h7l-5.5 4 2 7L12 17l-6.5 3 2-7L2 9h7z"/></svg></span>
+              <span class="service-card-step">★</span>
+            </div>
+            <h3><strong>Patagonia Land Hunter</strong></h3>
+            <p>Búsqueda activa de terrenos en el sur de Chile y Patagonia — para clientes chilenos e internacionales. Local Land Acquisition Partner.</p>
+            <a href="patagonia-land-hunter/" class="service-card-link" data-track="cta_plh">Iniciar búsqueda →</a>
+          </article>
           <article class="service-card glass-card service-card--promo" role="listitem">
             <a href="servicios/diagnostico-estrategico/" class="service-card-hit" aria-label="Diagnóstico estratégico"></a>
             <div class="service-card-head">
@@ -762,11 +783,12 @@
       <img src="/assets/logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">Walker Martínez 517, Puerto Varas · Los Lagos</p>
       <nav class="footer-seo-nav" aria-label="Enlaces del sitio">
-        <a href="servicios/">Servicios</a>
-        <a href="territorios/">Territorios</a>
-        <a href="guias/">Guías</a>
-        <a href="blog/">Blog</a>
-        <a href="sitemap.xml">Mapa del sitio</a>
+        <a href="patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
+        <a href="servicios/" data-i18n="nav.services">Servicios</a>
+        <a href="territorios/" data-i18n="nav.territories">Territorios</a>
+        <a href="guias/" data-i18n="nav.guides">Guías</a>
+        <a href="blog/" data-i18n="nav.blog">Blog</a>
+        <a href="sitemap.xml" data-i18n="footer.sitemap">Mapa del sitio</a>
       </nav>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · Estrategia Inmobiliaria · Sur de Chile <a href="https://www.instagram.com/landadvisorschile/" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a></p>
     </div>
@@ -825,6 +847,7 @@
       link.addEventListener("click", () => nav.classList.remove("is-open"));
     });
   </script>
+  <script src="i18n.js" defer></script>
   <script src="analytics-config.js" defer></script>
   <script src="whatsapp-config.js" defer></script>
   <script src="calendar-config.js" defer></script>

@@ -62,8 +62,6 @@ Una marca · un grafo de datos (LAKG) · múltiples productos.
 | **API LA** | Datos agregados B2B | Concepto | 2030+ |
 | **Academy LA** | Certificación Territory Analyst | Concepto | 2032+ |
 
-**Sistema interno (operativo):** [`brain/`](../brain/) — Next.js + Supabase + pgvector + copiloto RAG.
-
 **Principio:** la web no es el producto. Es la **capa de distribución** del índice, el mapa y el observatorio.
 
 ---

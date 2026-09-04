@@ -6,6 +6,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { execSync } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -76,6 +77,14 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function languageSwitcher() {
+  return `<div class="lang-switch lang-switch--header" role="group" aria-label="Idioma">
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>`;
+}
+
 function buildHead(page, prefix, assets, options = {}) {
   const url = site.url + (page.path === "/" ? "/" : page.path);
   const ogImage = options.ogImage || site.url + (page.image || site.defaultOgImage);
@@ -117,8 +126,10 @@ ${verificationMeta ? verificationMeta + "\n" : ""}  <link rel="canonical" href="
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}styles.css">
   <link rel="stylesheet" href="${prefix}styles-seo.css">
+  <link rel="stylesheet" href="${prefix}styles-i18n.css">
   <link rel="stylesheet" href="${prefix}lead-gate.css">
-  <link rel="stylesheet" href="${prefix}chat-widget.css">`;
+  <link rel="stylesheet" href="${prefix}chat-widget.css">
+  <link rel="stylesheet" href="${prefix}styles-human.css">`;
 }
 
 function websiteSchema() {
@@ -1405,7 +1416,8 @@ function dualCtaPair(opts = {}) {
 }
 
 function seoCommonScripts(prefix) {
-  return `  <script src="${prefix}landing-ui.js" defer></script>
+  return `  <script src="${prefix}i18n.js" defer></script>
+  <script src="${prefix}landing-ui.js" defer></script>
   <script src="${prefix}calendar-config.js" defer></script>
   <script src="${prefix}whatsapp-config.js" defer></script>
   <script src="${prefix}site-ctas.js" defer></script>
@@ -2053,14 +2065,16 @@ function navLinks(prefix, campaign) {
   }
   return `        <nav id="main-nav" class="nav" aria-label="Principal">
           <div class="nav-links">
-            <a href="${prefix}servicios/">Servicios</a>
-            <a href="${prefix}territorios/">Territorios</a>
-            <a href="${prefix}inteligencia-territorial/">Inteligencia</a>
-            <a href="${prefix}casos-de-estudio/">Casos</a>
-            <a href="${prefix}blog/">Blog</a>
-            <a href="${prefix}guias/">Guías</a>
-            <a href="${prefix}#nosotros">Nosotros</a>
+            <a href="${prefix}patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
+            <a href="${prefix}servicios/" data-i18n="nav.services">Servicios</a>
+            <a href="${prefix}territorios/" data-i18n="nav.territories">Territorios</a>
+            <a href="${prefix}inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
+            <a href="${prefix}casos-de-estudio/" data-i18n="nav.cases">Casos</a>
+            <a href="${prefix}blog/" data-i18n="nav.blog">Blog</a>
+            <a href="${prefix}guias/" data-i18n="nav.guides">Guías</a>
+            <a href="${prefix}#nosotros" data-i18n="nav.about">Nosotros</a>
           </div>
+          ${languageSwitcher()}
           ${navCta}
         </nav>`;
 }
@@ -2356,7 +2370,7 @@ function buildSecondaryPage(page) {
   const serviceBlock = buildServicePriceBlock(page, prefix);
 
   return `<!DOCTYPE html>
-<html lang="es" ${SITE_CTA_HTML_ATTRS}>
+<html lang="es" class="i18n-loading" data-i18n-prefix="${prefix}" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(
     pageView,
@@ -2377,7 +2391,7 @@ ${buildHead(
   ${page.service ? `<script type="application/ld+json">${JSON.stringify(schemas[4])}</script>` : ""}
   ${schemas.slice(page.service ? 5 : 4).map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}
 </head>
-<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : isIntelHub ? " seo-page--intel" : isIlaHub ? " seo-page--ila" : page.type === "territory" && territoryRich ? " seo-page--territory-rich" : ""}">
+<body class="site-v2 seo-page${page.path === "/servicios/" ? " seo-page--servicios" : page.path === "/blog/" ? " seo-page--blog" : hubGuide ? " seo-page--guide" : isIntelHub ? " seo-page--intel" : isIlaHub ? " seo-page--ila" : page.type === "territory" && territoryRich ? " seo-page--territory-rich" : ""}" data-page="seo" data-seo-path="${esc(page.path)}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -2394,7 +2408,7 @@ ${navLinks(prefix)}
     <section class="seo-hero${hubGuide ? " seo-hero--article" : ""}">
       <div class="container" data-reveal>
         <nav class="seo-breadcrumb" aria-label="Breadcrumb">
-          <a href="${prefix}">Inicio</a>
+          <a href="${prefix}" data-i18n="seo.breadcrumb.home">Inicio</a>
           ${page.path !== "/" ? `<span aria-hidden="true"> / </span><span>${esc(hubGuide ? "Guías" : page.breadcrumb)}</span>` : ""}
         </nav>
         <p class="section-label">${esc(hubGuide ? "Guía" : page.type === "service" ? "Servicio" : page.type === "territory" ? "Territorio" : page.breadcrumb)}</p>
@@ -2470,30 +2484,34 @@ function buildSitemap() {
       path: `/campanas/${campaign.slug}/`,
       type: "campaign",
     })),
+    { path: "/patagonia-land-hunter/", type: "service", priority: "0.92" },
   ];
   const urls = allPages
     .map((p) => {
       const loc = site.url + (p.path === "/" ? "/" : p.path);
       const priority =
-        p.path === "/"
+        p.priority ||
+        (p.path === "/"
           ? "1.0"
-          : p.type === "guide-hub"
-            ? "0.85"
-            : p.type === "intelligence-hub"
-              ? "0.88"
-              : p.type === "ila-hub"
-                ? "0.9"
-              : p.type === "campaign"
+          : p.path === "/patagonia-land-hunter/"
+            ? "0.92"
+            : p.type === "guide-hub"
               ? "0.85"
-            : p.type === "guide"
-              ? "0.85"
-              : p.type === "service" || p.type === "territory"
-              ? "0.8"
-              : p.type === "blog-post"
-                ? "0.75"
-                : p.type === "case-study"
-                  ? "0.8"
-                  : "0.7";
+              : p.type === "intelligence-hub"
+                ? "0.88"
+                : p.type === "ila-hub"
+                  ? "0.9"
+                  : p.type === "campaign"
+                    ? "0.85"
+                    : p.type === "guide"
+                      ? "0.85"
+                      : p.type === "service" || p.type === "territory"
+                        ? "0.8"
+                        : p.type === "blog-post"
+                          ? "0.75"
+                          : p.type === "case-study"
+                            ? "0.8"
+                            : "0.7");
       const changefreq = p.type === "blog" || p.type === "blog-post" ? "weekly" : "monthly";
       return `  <url>
     <loc>${loc}</loc>
@@ -2563,3 +2581,10 @@ fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap(), "utf8");
 console.log("wrote sitemap.xml");
 syncLandingAssets();
 console.log("synced landing/assets logos");
+
+try {
+  execSync("node scripts/build-i18n-seo-pages.mjs", { cwd: ROOT, stdio: "inherit" });
+  execSync("node scripts/build-plh-page.mjs", { cwd: ROOT, stdio: "inherit" });
+} catch (e) {
+  console.warn("post-build scripts:", e.message);
+}

@@ -111,7 +111,6 @@ Capa 1 — Público (Censo, CASEN, OSM)
 - [x] Página `/indice-territorial/`
 - [x] Observatorio piloto 2026
 - [x] Casos con metadatos ILA
-- [x] **Land Advisors Brain** (`brain/`) — LAKG operativo interno
 - [ ] Ingesta Censo 2024 → PostGIS
 - [ ] Vectorizar PRC Puerto Varas
 

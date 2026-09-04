@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "en": {
+      "title": "Buy land in Southern Chile with advisory | Land Advisors",
+      "description": "Strategic advisory to buy the right land in Southern Chile. We don't sell land — we help you decide with less risk. Strategic meeting in Puerto Varas and online."
+    }
+  },
+  "_selectors": {
+    "#inicio .eyebrow": { "en": "Strategic advisory · Southern Chile" },
+    "#inicio h1": {
+      "en": "We help you buy<br><span class=\"text-gradient\">the right land.</span>",
+      "html": true
+    },
+    "#inicio .hero-lead": {
+      "en": "<strong>We don't sell land.</strong> We are independent consultants: we read territory and market so you choose with less risk and better negotiation — in the Lago Llanquihue and Malalcahuello basin.",
+      "html": true
+    },
+    "#inicio .hero-metrics .hero-metric:nth-child(1) .hero-metric-label": { "en": "You gain" },
+    "#inicio .hero-metrics .hero-metric:nth-child(1) strong": { "en": "Clarity · Less risk · Better negotiation" },
+    "#inicio .hero-metrics .hero-metric:nth-child(2) .hero-metric-label": { "en": "For whom" },
+    "#inicio .hero-metrics .hero-metric:nth-child(2) strong": { "en": "Anyone buying land in the south" },
+    "#inicio .btn-cta-agenda span": { "en": "Book a diagnostic session" },
+    ".sticky-cta-pair .btn-cta-agenda span": { "en": "Book" },
+
+    "#problema .section-label": { "en": "The challenge" },
+    "#problema .section-title": { "en": "You don't lack options. You lack criteria to decide." },
+    "#problema .section-intro": {
+      "en": "Finding land in the south is easy. <strong>Buying the right one</strong> — at a fair price and without surprises later — is the hard part. That's the risk we help you manage.",
+      "html": true
+    },
+    "#problema .situacion-card:nth-child(1) .situacion-quote": { "en": "«I saw dozens of listings and don't know which to compare»" },
+    "#problema .situacion-card:nth-child(1) .situacion-answer": { "en": "Too much information, too little order: you need filters before visiting." },
+    "#problema .situacion-card:nth-child(2) .situacion-quote": { "en": "«I fell in love with the place — but does it fit my project?»" },
+    "#problema .situacion-card:nth-child(2) .situacion-answer": { "en": "Home, cabins or business: validate land and surroundings before offering." },
+    "#problema .situacion-card:nth-child(3) .situacion-quote": { "en": "«I live in Santiago and don't know the local dynamics»" },
+    "#problema .situacion-card:nth-child(3) .situacion-answer": { "en": "Distance, connectivity and how the sector is evolving change the decision a lot." },
+    "#problema .situacion-card:nth-child(4) .situacion-quote": { "en": "«Am I paying a fair price?»" },
+    "#problema .situacion-card:nth-child(4) .situacion-answer": { "en": "We know how to tell good prices from bad ones — and help you negotiate with that knowledge." },
+
+    "#confianza .section-confianza__metric": { "en": "More than 100,000 UF invested through our advisory" },
+    "#confianza .section-confianza__gallery-label": { "en": "Our clients speak for us" },
+
+    "#consecuencias .section-label": { "en": "If you decide alone" },
+    "#consecuencias .section-title": { "en": "What often goes wrong" },
+    "#consecuencias .section-intro": { "en": "Buying without independent advisory doesn't always fail — but when it does, the cost in time and money is high." },
+    "#consecuencias .step:nth-child(1) h3": { "en": "Land that doesn't fit" },
+    "#consecuencias .step:nth-child(1) p": { "en": "Access, subdivision rules or distance to services the listing didn't highlight." },
+    "#consecuencias .step:nth-child(2) h3": { "en": "Above-market price" },
+    "#consecuencias .step:nth-child(2) p": { "en": "Paying for the photo without comparing real alternatives in the area." },
+    "#consecuencias .step:nth-child(3) h3": { "en": "Blocked project" },
+    "#consecuencias .step:nth-child(3) p": { "en": "Imagining cabins or retail on land where it isn't viable." },
+    "#consecuencias .step:nth-child(4) h3": { "en": "Visits without direction" },
+    "#consecuencias .step:nth-child(4) p": { "en": "Traveling south without a map or priorities — exhausting and inconclusive." },
+
+    "#solucion .section-label": { "en": "How we reduce risk" },
+    "#solucion .section-title": { "en": "On your side before you buy" },
+    "#solucion .section-intro": {
+      "en": "We work for the <strong>buyer</strong>, not the seller. We know visible supply and alternatives not on portals — and we tell you transparently when something doesn't fit.",
+      "html": true
+    },
+    "#solucion .pensamos-lead": { "en": "Less noise. Better decisions. An ally who already knows the basin." },
+    "#solucion .cards-bento .card:nth-child(1) h3": { "en": "We filter before you visit" },
+    "#solucion .cards-bento .card:nth-child(1) p": { "en": "We save you trips: zones, prices and warning signs before you go south." },
+    "#solucion .cards-bento .card:nth-child(2) h3": { "en": "We read what the listing doesn't say" },
+    "#solucion .cards-bento .card:nth-child(2) p": { "en": "Access, subdivision rules, neighbourhood and sector evolution — in plain language." },
+    "#solucion .cards-bento .card:nth-child(3) h3": { "en": "Transparency" },
+    "#solucion .cards-bento .card:nth-child(3) p": { "en": "If it's not the right alternative, we say so and keep searching with you." },
+
+    "#casos .section-label": { "en": "Real cases" },
+    "#casos .section-title": { "en": "What changes when you look before you buy" },
+    "#casos .section-intro": {
+      "en": "Three decisions in the Lago Llanquihue basin. Past results don't guarantee future results; they show how we work when market and territory data are available."
+    },
+    "#casos .casos-stats .hero-metric:nth-child(1) strong": { "en": "+50% value captured" },
+    "#casos .casos-stats .hero-metric:nth-child(2) strong": { "en": "26M → 42M in 2 months" },
+    "#casos .casos-stats .hero-metric:nth-child(3) strong": { "en": "4 plots · 4,400 UF" },
+    "#casos .case:nth-child(1) h3 a": { "en": "From rural restriction to commercial potential" },
+    "#casos .case:nth-child(1) .case-dl dt:nth-of-type(1)": { "en": "What the market saw" },
+    "#casos .case:nth-child(1) .case-dl dd:nth-of-type(1)": { "en": "Commercial land with a ban on commercial use." },
+    "#casos .case:nth-child(1) .case-dl dt:nth-of-type(2)": { "en": "What we identified" },
+    "#casos .case:nth-child(1) .case-dl dd:nth-of-type(2)": { "en": "Connectivity, traffic flow and urban expansion with commercial potential." },
+    "#casos .case:nth-child(1) .case-dl dt:nth-of-type(3)": { "en": "Result" },
+    "#casos .case:nth-child(1) .case-dl dd:nth-of-type(3)": { "en": "Purchase with restriction lifted and estimated value capture of 50% above price paid." },
+    "#casos .case:nth-child(1) .service-card-link": { "en": "Read full case →" },
+    "#casos .case:nth-child(2) h3 a": { "en": "The opportunity was in the seller" },
+    "#casos .case:nth-child(2) .case-dl dt:nth-of-type(1)": { "en": "What the market saw" },
+    "#casos .case:nth-child(2) .case-dl dd:nth-of-type(1)": { "en": "One more plot on the market." },
+    "#casos .case:nth-child(2) .case-dl dt:nth-of-type(2)": { "en": "What we identified" },
+    "#casos .case:nth-child(2) .case-dl dd:nth-of-type(2)": { "en": "Seller urgency and gap between asking price and real value." },
+    "#casos .case:nth-child(2) .case-dl dt:nth-of-type(3)": { "en": "Result" },
+    "#casos .case:nth-child(2) .case-dl dd:nth-of-type(3)": { "en": "Purchase at 26 million and sale at 42 million in two months." },
+    "#casos .case:nth-child(2) .service-card-link": { "en": "Read full case →" },
+    "#casos .case:nth-child(3) h3 a": { "en": "Present value vs. future value" },
+    "#casos .case:nth-child(3) .case-dl dt:nth-of-type(1)": { "en": "What the market saw" },
+    "#casos .case:nth-child(3) .case-dl dd:nth-of-type(1)": { "en": "A partly urbanised development project." },
+    "#casos .case:nth-child(3) .case-dl dt:nth-of-type(2)": { "en": "What we identified" },
+    "#casos .case:nth-child(3) .case-dl dd:nth-of-type(2)": { "en": "Developer liquidity constraints and post-urbanisation potential." },
+    "#casos .case:nth-child(3) .case-dl dt:nth-of-type(3)": { "en": "Result" },
+    "#casos .case:nth-child(3) .case-dl dd:nth-of-type(3)": { "en": "Purchase of 4 plots for 4,400 UF; current reference ~2,000 UF per plot." },
+    "#casos .case:nth-child(3) .service-card-link": { "en": "Read full case →" },
+    "#casos .btn-glass": { "en": "Browse case library →" },
+
+    "#servicios .section-label": { "en": "Services" },
+    "#servicios .section-title": { "en": "Start where you are — without committing to everything" },
+    "#servicios .section-intro": {
+      "en": "Each service covers a different stage. The usual entry point is a <strong>strategic meeting</strong> (diagnostic, 1 UF).",
+      "html": true
+    },
+    "#servicios .service-card--featured h3": { "en": "Patagonia Land Hunter" },
+    "#servicios .service-card--featured p": {
+      "en": "Active land search in Southern Chile and Patagonia — for Chilean and international clients. Local Land Acquisition Partner."
+    },
+    "#servicios .service-card--featured .service-card-link": { "en": "Start your search →" },
+    "#servicios .service-card:nth-child(2) h3": { "en": "Strategic diagnostic" },
+    "#servicios .service-card:nth-child(2) p": { "en": "Structure your search: zones, budget and visit route before going south." },
+    "#servicios .service-card:nth-child(3) h3": { "en": "Personalised search" },
+    "#servicios .service-card:nth-child(3) p": { "en": "At least 4 alternatives → comparative report of the 3 best, chosen with you." },
+    "#servicios .service-card:nth-child(4) h3": { "en": "Purchase advisory" },
+    "#servicios .service-card:nth-child(4) p": { "en": "Negotiation and closing with support — no pressure to sell a specific plot." },
+    "#servicios .service-card:nth-child(4) .service-card-price": { "en": "2.5% of purchase value" },
+    "#servicios .service-card:nth-child(4) .service-card-price-note": { "en": "minus 5 UF if you contracted search" },
+    "#servicios .service-card:nth-child(5) h3": { "en": "Potential study" },
+    "#servicios .service-card:nth-child(5) p": { "en": "Is this land a good option? Deep evaluation before committing capital." },
+    "#servicios .service-card:nth-child(5) .service-card-price": { "en": "From 10 UF" },
+    "#servicios .service-card:nth-child(6) h3": { "en": "Project structuring" },
+    "#servicios .service-card:nth-child(6) p": { "en": "Cabins, tourism or retail: viability and plan before building." },
+    "#servicios .service-card:nth-child(6) .service-card-price": { "en": "From 20 UF" },
+    "#servicios > .container > p .btn-glass": { "en": "Details of each service →" },
+
+    "#oportunidades .section-label": { "en": "How we work" },
+    "#oportunidades .section-title": { "en": "Three steps before you buy" },
+    "#oportunidades .section-intro": { "en": "Simple and repeatable — for living, investment or a project on the land." },
+    "#oportunidades .step:nth-child(1) h3": { "en": "1 · Understand your objective" },
+    "#oportunidades .step:nth-child(1) p": { "en": "Meeting to clarify budget, timeline and what you want to do with the land." },
+    "#oportunidades .step:nth-child(2) h3": { "en": "2 · Filter with local criteria" },
+    "#oportunidades .step:nth-child(2) p": { "en": "Zones, prices, access and risk signals — with field work and market data." },
+    "#oportunidades .step:nth-child(3) h3": { "en": "3 · Decide with support" },
+    "#oportunidades .step:nth-child(3) p": { "en": "Clear recommendation, negotiation if needed, and transparency if it's worth keeping search." },
+
+    "#faq .section-label": { "en": "FAQ" },
+    "#faq .section-title": { "en": "What people often ask us" },
+    "#faq .faq-item:nth-child(1) summary": { "en": "Do you sell land?" },
+    "#faq .faq-item:nth-child(1) .faq-answer": { "en": "No. We are not a brokerage or portal. We advise the buyer to choose well — with no pressure to sell a specific plot." },
+    "#faq .faq-item:nth-child(2) summary": { "en": "What is the first step?" },
+    "#faq .faq-item:nth-child(2) .faq-answer": { "en": "A strategic meeting (diagnostic, 1 UF): we understand your objective and deliver zones and criteria before visiting land." },
+    "#faq .faq-item:nth-child(3) summary": { "en": "Does it work if I live in Santiago?" },
+    "#faq .faq-item:nth-child(3) .faq-answer": { "en": "Yes. Many clients come from outside the region. We help you arrive in the south with a map and priorities, not blind visits." },
+    "#faq .faq-item:nth-child(4) summary": { "en": "What if the land I saw isn't a good option?" },
+    "#faq .faq-item:nth-child(4) .faq-answer": { "en": "We tell you transparently and keep searching with you. Our job is a good purchase, not a fast one." },
+    "#faq .faq-item:nth-child(5) summary": { "en": "Where do you work?" },
+    "#faq .faq-item:nth-child(5) .faq-answer": { "en": "Lago Llanquihue and Malalcahuello basin: Puerto Varas, Frutillar, Llanquihue, Ensenada, Puerto Octay and rural contour." },
+
+    "#contacto .section-label": { "en": "Contact" },
+    "#contacto-form-title": { "en": "Book your diagnostic session" },
+    "#contacto-form-intro": { "en": "Tell us where you are in the process. After submitting, choose a calendar slot or confirm via WhatsApp with José." },
+    "#contacto .contact-info p:nth-of-type(4)": {
+      "en": "We respond to patrimonial investors, families seeking quality of life, developers and local entrepreneurs in Southern Chile."
+    },
+    "#contacto-form label[for='nombre']": { "en": "Name" },
+    "#contacto-form label[for='email']": { "en": "Email" },
+    "#contacto-form label[for='telefono']": { "en": "Phone / WhatsApp" },
+    "#contacto-form label[for='intent']": { "en": "What do you need?" },
+    "#contacto-form label[for='perfil']": { "en": "Which best describes you?" },
+    "#contacto-form label[for='presupuesto']": { "en": "Approximate budget" },
+    "#contacto-form .form-hint": { "en": "The first step is usually a strategic diagnostic to structure your search." },
+    "#contacto-form #intent option[value='']": { "en": "Select a service…" },
+    "#contacto-form #intent option[value='diagnostico']": { "en": "Strategic diagnostic" },
+    "#contacto-form #intent option[value='busqueda']": { "en": "Personalised search" },
+    "#contacto-form #intent option[value='estudio']": { "en": "Real estate potential study" },
+    "#contacto-form #intent option[value='estructuracion']": { "en": "Project structuring" },
+    "#contacto-form #intent option[value='otro']": { "en": "Other / not sure yet" },
+    "#contacto-form #perfil option[value='']": { "en": "Select…" },
+    "#contacto-form #perfil option[value='patrimonial']": { "en": "Patrimonial investor" },
+    "#contacto-form #perfil option[value='familia']": { "en": "Family — quality of life" },
+    "#contacto-form #perfil option[value='desarrollador']": { "en": "Developer investor" },
+    "#contacto-form #perfil option[value='empresario']": { "en": "Local entrepreneur" },
+    "#contacto-form #perfil option[value='otro']": { "en": "Other" },
+    "#contacto-form #presupuesto option[value='']": { "en": "Select in UF…" },
+    ".contact-form-submit": { "en": "Book a diagnostic session" },
+    ".contact-success__kicker": { "en": "Request received" },
+    ".contact-success__title": { "en": "Done! Choose how to book your diagnostic" },
+    ".contact-success__lead": { "en": "Your information is with Land Advisors. Pick your preferred next step:" },
+    ".contact-success__btn-calendar": { "en": "Choose a time slot" },
+    "[data-wa-label]": { "en": "Confirm via WhatsApp" },
+    ".contact-success__note": { "en": "Diagnostic ~30 min · Online or in Puerto Varas · We reply on business days (Mon–Fri)." },
+
+    "#cta h2": { "en": "Ready to decide with criteria?" },
+    "#cta p": { "en": "A ~30-minute diagnostic to understand your objective — with no obligation to buy." },
+
+    "#innovacion .section-label": { "en": "How we evaluate" },
+    "#innovacion .section-title": { "en": "Technology at the service of your decision" },
+    "#innovacion .section-intro-wide": {
+      "en": "To compare <strong>purchase alternatives</strong> and evaluate <strong>commercial projects</strong> — cabins, strip centers, development — we integrate AI, geospatial data and verifiable regulation. We don't replace human judgement or field work: we amplify it.",
+      "html": true
+    },
+
+    "#territorios .section-label": { "en": "Territories" },
+    "#territorios .section-title": { "en": "Where we build knowledge and strategy" },
+    "#territorios .section-intro": {
+      "en": "We operate mainly in the Lago Llanquihue and Malalcahuello basin, focused on rural contour around urban centres — where the biggest changes and development opportunities often appear."
+    },
+    "#territorios .btn-glass": { "en": "See all territories →" },
+
+    "#nosotros .section-label": { "en": "About us" },
+    "#nosotros .section-title": { "en": "José Katz · Founder" },
+    "#nosotros .about-copy p:nth-of-type(1)": {
+      "en": "Land Advisors Chile is led by <strong>José Hernán Katz C.</strong>, a consultant specialised in real estate strategy, land purchase and project evaluation in Southern Chile.",
+      "html": true
+    },
+    "#nosotros .about-copy p:nth-of-type(2)": {
+      "en": "We combine permanent field work with technology — GIS, digital cartography, geospatial analysis and AI — to help families, investors and entrepreneurs buy with criteria and evaluate projects with backing."
+    },
+    "#nosotros .about-copy p:nth-of-type(3)": {
+      "en": "Our identity is closer to an explorer than a seller: walking paths, visiting land and understanding places from the inside, backed by verifiable data."
+    },
+
+    "#partners .section-label": { "en": "Partnerships" },
+    "#partners .section-title": { "en": "Strategic partners" },
+    "#partners .section-intro": { "en": "We work with leading companies to help you develop your project in Southern Chile." },
+
+    "#innovacion .inno-card--hero h3": { "en": "Retrieval Augmented Generation (RAG)" },
+    "#innovacion .inno-card--hero p": {
+      "en": "We use Retrieval Augmented Generation to connect AI models with our territorial, regulatory and market knowledge. Each analysis draws on verifiable sources — planning instruments, cartography, public data and local experience — not generic answers.",
+      "html": false
+    },
+    "#innovacion .inno-card--hero .inno-card-foot": { "en": "Retrieve → contextualize → recommend with backing." },
+    "#innovacion .inno-card-badge": { "en": "Technology core" },
+    "#innovacion .inno-card:nth-child(2) h3": { "en": "GIS and digital cartography" },
+    "#innovacion .inno-card:nth-child(2) p": { "en": "Geospatial layers, land use, connectivity and urban expansion integrated in one territorial reading." },
+    "#innovacion .inno-card:nth-child(3) h3": { "en": "Satellite observation" },
+    "#innovacion .inno-card:nth-child(3) p": { "en": "Google Earth and remote sensing to detect patterns the market has not yet priced in." },
+    "#innovacion .inno-card:nth-child(4) h3": { "en": "AI applied to territory" },
+    "#innovacion .inno-card:nth-child(4) p": { "en": "Models that process large volumes of regulatory, demographic and real estate data with traceability." },
+    "#innovacion .inno-card:nth-child(5) h3": { "en": "Source integration" },
+    "#innovacion .inno-card:nth-child(5) p": { "en": "Public data, planning instruments, local market and field work in one decision flow." },
+    "#innovacion .inno-card--wide h3": { "en": "Territory + technology + investment" },
+    "#innovacion .inno-card--wide p": {
+      "en": "Innovation is not using AI for its own sake: it is building a system where human experience meets verifiable data analysis, for clear recommendations — purchase, investment or commercial project — aligned with your goals."
+    },
+    "#innovacion .flow-step:nth-child(1) span": { "en": "Land" },
+    "#innovacion .flow-step:nth-child(1) small": { "en": "Exploration and data" },
+    "#innovacion .flow-step:nth-child(3) span": { "en": "Market + AI" },
+    "#innovacion .flow-step:nth-child(3) small": { "en": "Verifiable context" },
+    "#innovacion .flow-step:nth-child(5) span": { "en": "Recommendation" },
+    "#innovacion .flow-step:nth-child(5) small": { "en": "Purchase or project" },
+
+    "#servicios .service-card:nth-child(2) .service-card-link": { "en": "View diagnostic →" },
+    "#servicios .service-card:nth-child(3) .service-card-link": { "en": "View search →" },
+    "#servicios .service-card:nth-child(4) .service-card-link": { "en": "View advisory →" },
+    "#servicios .service-card:nth-child(5) .service-card-link": { "en": "Book a diagnostic session →" },
+    "#servicios .service-card:nth-child(6) .service-card-link": { "en": "Book a diagnostic session →" },
+    "#servicios .promo-deal__badge": { "en": "Promo · until 30 Sept" },
+    "#servicios .promo-deal__highlight": { "en": "Free diagnostic" },
+    "#servicios .promo-deal__new": { "en": "FREE" },
+    "#servicios .service-card--promo:nth-child(3) .promo-deal__highlight": { "en": "30% discount" },
+    "#servicios .service-card--promo:nth-child(3) .promo-deal__sub": { "en": "Free strategic diagnostic included" }
+  }
+}

@@ -10,6 +10,9 @@
  *   LA_CALLMEBOT_PHONE   — Teléfono destino sin + (ej. 56974533265)
  *
  * Si no defines propiedades, usa los defaults de abajo (solo desarrollo).
+ *
+ * IMPORTANTE: solo doPost envía WhatsApp. doGet es solo health-check
+ * (abrir la URL en el navegador / previews de links NO deben mandar mensajes).
  */
 
 var DEFAULT_PHONE = "56974533265";
@@ -77,14 +80,17 @@ function respond_(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.TEXT);
 }
 
+/**
+ * Solo health-check. NO enviar WhatsApp por GET:
+ * previews de Cursor/chat, crawlers o abrir el link en el navegador
+ * disparaban mensajes "de prueba" al teléfono.
+ */
 function doGet(e) {
-  try {
-    var text = (e && e.parameter && e.parameter.text) || "";
-    var result = sendMessage_(text);
-    return respond_({ ok: true, result: result });
-  } catch (err) {
-    return respond_({ ok: false, error: String(err.message || err) });
-  }
+  return respond_({
+    ok: true,
+    service: "land-advisors-whatsapp-proxy",
+    send: "POST only",
+  });
 }
 
 function doPost(e) {

@@ -1,0 +1,239 @@
+{
+  "pages": {
+    "/servicios/": {
+      "en": {
+        "title": "Real estate advisory services catalog | Land Advisors",
+        "h1": "Services catalog",
+        "intro": "Advisory to buy the right land in the Lago Llanquihue and Malalcahuello basin. Territory first, property second — each service is contracted independently.",
+        "breadcrumb": "Services",
+        "label": "Services",
+        "description": "Strategic diagnostic, personalized land search, purchase advisory, potential studies and project structuring in Southern Chile. Prices in UF."
+      }
+    },
+    "/servicios/diagnostico-estrategico/": {
+      "en": {
+        "title": "Strategic real estate diagnostic | Land Advisors Chile",
+        "h1": "Strategic real estate diagnostic",
+        "intro": "Ideal if you don't yet know which zone or criteria to use.",
+        "breadcrumb": "Strategic diagnostic",
+        "label": "Service"
+      }
+    },
+    "/servicios/busqueda-personalizada/": {
+      "en": {
+        "title": "Personalized land search | Land Advisors",
+        "h1": "Personalized land search",
+        "intro": "For those who want options with criteria, not a mass catalog. Includes strategic diagnostic.",
+        "breadcrumb": "Personalized search",
+        "label": "Service"
+      }
+    },
+    "/servicios/asesoria-compra/": {
+      "en": {
+        "title": "Land purchase advisory | Land Advisors Chile",
+        "h1": "Purchase and acquisition advisory",
+        "intro": "For those who already chose a plot and need negotiation support, document review and closing.",
+        "breadcrumb": "Purchase advisory",
+        "label": "Service"
+      }
+    },
+    "/servicios/estudio-potencial-inmobiliario/": {
+      "en": {
+        "title": "Real estate potential study | Land Advisors",
+        "h1": "Real estate potential study",
+        "intro": "Establish the commercial vocation of a plot, the optimal project and why.",
+        "breadcrumb": "Potential study",
+        "label": "Service"
+      }
+    },
+    "/servicios/estructuracion-proyectos/": {
+      "en": {
+        "title": "Project structuring | Land Advisors",
+        "h1": "Project structuring",
+        "intro": "Cabins, tourism or commercial: feasibility and plan before building.",
+        "breadcrumb": "Project structuring",
+        "label": "Service"
+      }
+    },
+    "/territorios/": {
+      "en": {
+        "title": "Territories — Southern Chile | Land Advisors",
+        "h1": "Territories where we work",
+        "intro": "Knowledge and strategy in the Lago Llanquihue basin and Malalcahuello.",
+        "breadcrumb": "Territories",
+        "label": "Territories"
+      }
+    },
+    "/territorios/puerto-varas/": {
+      "en": {
+        "h1": "Puerto Varas",
+        "intro": "Urban hub and rural contour — territorial reading for buyers and investors.",
+        "breadcrumb": "Puerto Varas",
+        "label": "Territory"
+      }
+    },
+    "/territorios/frutillar/": {
+      "en": {
+        "h1": "Frutillar",
+        "intro": "Culture, lake and rural contour — opportunities with territorial criteria.",
+        "breadcrumb": "Frutillar",
+        "label": "Territory"
+      }
+    },
+    "/territorios/llanquihue/": {
+      "en": {
+        "h1": "Llanquihue",
+        "intro": "Present value vs. future potential in a changing rural contour.",
+        "breadcrumb": "Llanquihue",
+        "label": "Territory"
+      }
+    },
+    "/territorios/malalcahuello/": {
+      "en": {
+        "h1": "Malalcahuello",
+        "intro": "Mountain, tourism and lifestyle projects in a distinct territorial setting.",
+        "breadcrumb": "Malalcahuello",
+        "label": "Territory"
+      }
+    },
+    "/indice-territorial/": {
+      "en": {
+        "h1": "Land Advisors Territorial Index (ILA)",
+        "intro": "Structured territorial index for the Lago Llanquihue basin.",
+        "breadcrumb": "Territorial index",
+        "label": "Index"
+      }
+    },
+    "/inteligencia-territorial/": {
+      "en": {
+        "h1": "Territorial intelligence",
+        "intro": "How we read territory, market and normative context before recommending land.",
+        "breadcrumb": "Territorial intelligence",
+        "label": "Intelligence"
+      }
+    },
+    "/casos-de-estudio/": {
+      "en": {
+        "h1": "Case studies",
+        "intro": "Real decisions with territorial and market criteria — Puerto Varas, Frutillar, Llanquihue.",
+        "breadcrumb": "Case studies",
+        "label": "Cases"
+      }
+    },
+    "/guias/": {
+      "en": {
+        "h1": "Guides",
+        "intro": "Step-by-step guides for buying land in Southern Chile with criteria.",
+        "breadcrumb": "Guides",
+        "label": "Guides"
+      }
+    },
+    "/blog/": {
+      "en": {
+        "h1": "Blog",
+        "intro": "Territorial analysis, market and criteria for buying land in Southern Chile.",
+        "breadcrumb": "Blog",
+        "label": "Blog"
+      }
+    },
+    "/blog/plusvalia-contorno-rural-puerto-varas/": {
+      "en": {
+        "title": "Plusvalía en el contorno rural de Puerto Varas | Land Advisors",
+        "h1": "Plusvalía inmobiliaria en el contorno rural de Puerto Varas",
+        "intro": "Cómo leer la plusvalía en el contorno rural de Puerto Varas: precio de compra, argumentos de valorización, evolución urbana e inversión municipal.",
+        "breadcrumb": "Plusvalía en el contorno rural de Puerto Varas | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/costos-habilitacion-terreno-contorno-rural/": {
+      "en": {
+        "title": "Costos y factibilidad al habilitar un terreno rural | Land Advisors",
+        "h1": "Costos y factibilidad real al habilitar un terreno en el contorno rural",
+        "intro": "Qué costos sumar antes de comprar un terreno en el contorno rural: servicios, accesos, tramitación y factibilidad económica real frente al valor de salida.",
+        "breadcrumb": "Costos y factibilidad al habilitar un terreno rural | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/prc-contorno-rural-puerto-varas/": {
+      "en": {
+        "title": "PRC y contorno rural de Puerto Varas | Land Advisors",
+        "h1": "PRC y contorno rural: qué verificar antes de ofertar",
+        "intro": "Cómo leer el Plan Regulador Comunal en el contorno rural de Puerto Varas: usos permitidos, restricciones y qué verificar antes de ofertar.",
+        "breadcrumb": "PRC y contorno rural de Puerto Varas | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/conectividad-real-contorno-rural/": {
+      "en": {
+        "title": "Conectividad real en el contorno rural | Land Advisors",
+        "h1": "Conectividad real vs. distancia en el mapa",
+        "intro": "Cómo evaluar conectividad real al comprar terreno en el contorno rural: tiempos, accesos inscritos y servicios.",
+        "breadcrumb": "Conectividad real en el contorno rural | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/vocacion-suelo-contorno-rural/": {
+      "en": {
+        "title": "Vocación del suelo en el contorno rural | Land Advisors",
+        "h1": "Vocación del suelo: casa, cabañas, patrimonio o negocio",
+        "intro": "Casa, cabañas, patrimonio o comercio: cómo identificar la vocación real de un terreno en el contorno rural antes de comprar.",
+        "breadcrumb": "Vocación del suelo en el contorno rural | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/comprar-terreno-sur-chile-desde-santiago/": {
+      "en": {
+        "title": "Comprar terreno en el sur de Chile desde Santiago | Land Advisors",
+        "h1": "Comprar terreno en el sur de Chile viviendo en Santiago",
+        "intro": "Guía para compradores en Santiago: cómo evaluar terrenos en el sur sin conocer la dinámica local, planificar visitas y decidir con criterio territorial.",
+        "breadcrumb": "Comprar terreno en el sur de Chile desde Santiago | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/blog/comparativa-puerto-varas-frutillar-llanquihue/": {
+      "en": {
+        "title": "Puerto Varas vs. Frutillar vs. Llanquihue | Comparativa territorial",
+        "h1": "Puerto Varas vs. Frutillar vs. Llanquihue: cómo elegir comuna",
+        "intro": "Comparativa para comprar terreno en la cuenca del Lago Llanquihue: demanda, precio, conectividad y vocación en Puerto Varas, Frutillar y Llanquihue.",
+        "breadcrumb": "Puerto Varas vs. Frutillar vs. Llanquihue | Comparativa territorial",
+        "label": "Article"
+      }
+    },
+    "/blog/cambio-uso-suelo-contorno-rural/": {
+      "en": {
+        "title": "Cambio de uso de suelo en contorno rural | Land Advisors",
+        "h1": "Cambio de uso de suelo: cuándo cierra la cuenta",
+        "intro": "Cuándo tiene sentido económico un cambio de uso de suelo en el contorno rural: turismo inmobiliario, normativa y factibilidad en la cuenca del Lago Llanquihue.",
+        "breadcrumb": "Cambio de uso de suelo en contorno rural | Land Advisors",
+        "label": "Article"
+      }
+    },
+    "/casos-de-estudio/puerto-varas-restriccion-comercial/": {
+      "en": {
+        "title": "Caso Puerto Varas: de restricción rural a vocación comercial | Land Advisors",
+        "h1": "De restricción rural a vocación comercial",
+        "intro": "Un terreno comercial en el contorno de Puerto Varas llevaba una prohibición de uso comercial en la ficha. El mercado lo descartó; la lectura territorial mostró otra historia.",
+        "breadcrumb": "Caso Puerto Varas: de restricción rural a vocación comercial | Land Advisors",
+        "label": "Case study"
+      }
+    },
+    "/casos-de-estudio/frutillar-brecha-precio/": {
+      "en": {
+        "title": "Caso Frutillar: la oportunidad estaba en el vendedor | Land Advisors",
+        "h1": "La oportunidad estaba en el vendedor",
+        "intro": "Para el mercado era un terreno más en la oferta de Frutillar. Para quien lee liquidez y comparables, era una brecha de precio accionable.",
+        "breadcrumb": "Caso Frutillar: la oportunidad estaba en el vendedor | Land Advisors",
+        "label": "Case study"
+      }
+    },
+    "/casos-de-estudio/llanquihue-valor-presente-futuro/": {
+      "en": {
+        "title": "Caso Llanquihue: valor presente vs. valor futuro | Land Advisors",
+        "h1": "Valor presente vs. valor futuro",
+        "intro": "Un proyecto inmobiliario a medio urbanizar puede verse atractivo por precio unitario. La pregunta correcta es si el valor presente compensa el riesgo de habilitación y plazos.",
+        "breadcrumb": "Caso Llanquihue: valor presente vs. valor futuro | Land Advisors",
+        "label": "Case study"
+      }
+    }
+  }
+}

@@ -1,0 +1,403 @@
+#!/usr/bin/env node
+/**
+ * Genera landing Patagonia Land Hunter / Local Land Acquisition Partner
+ */
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dirname, "..");
+const OUT = path.join(ROOT, "patagonia-land-hunter", "index.html");
+
+const SITE = { url: "https://www.landadvisors.cl", phone: "56974533265" };
+
+function langSwitch() {
+  return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>`;
+}
+
+function nav() {
+  return `<nav id="main-nav" class="nav" aria-label="Principal">
+          <div class="nav-links">
+            <a href="../patagonia-land-hunter/" class="nav-link--active" data-i18n="nav.plh">Patagonia Land Hunter</a>
+            <a href="../#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="../territorios/" data-i18n="nav.territories">Territorios</a>
+            <a href="../inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
+            <a href="../casos-de-estudio/" data-i18n="nav.cases">Casos</a>
+            <a href="../blog/" data-i18n="nav.blog">Blog</a>
+            <a href="../#nosotros" data-i18n="nav.about">Nosotros</a>
+          </div>
+          ${langSwitch()}
+          <div class="nav-cta-pair">
+            <a href="#land-search-form" class="nav-cta nav-cta--wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
+            <a href="#land-search-form" class="nav-cta nav-cta--cal" data-track="cta_plh_form" data-i18n="hero.ctaPrimary">Cuéntanos qué estás buscando</a>
+          </div>
+        </nav>`;
+}
+
+const STEP_ICONS = {
+  properties: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/><path d="M8 11h6M11 8v6"/></svg>',
+  region: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>',
+  legal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 8.5-7 9-4-.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>',
+  zoning: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16"/><rect x="7" y="8" width="4" height="8" rx="0.5"/><rect x="13" y="11" width="4" height="5" rx="0.5"/></svg>',
+  negotiate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11l-4 4v3h3l4-4"/><path d="M17 13l4-4V6h-3l-4 4"/><path d="M14 10l-4 4"/></svg>',
+  notary: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14M7 7v10M17 7v10"/><path d="M9 21h6"/></svg>',
+};
+
+const WHY_ICONS = {
+  independent:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 8.5-7 9-4-.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>',
+  territory:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+  buyer:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  network:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 3.9M15.4 6.5l-6.8 3.9"/></svg>',
+  active:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>',
+  advisory:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>',
+};
+
+function stepCard(n, icon, title, text) {
+  return `<article class="plh-step glass-card"><span class="plh-step__icon" aria-hidden="true">${STEP_ICONS[icon]}</span><h3 data-i18n="step${n}.title">${title}</h3><p data-i18n="step${n}.text">${text}</p></article>`;
+}
+
+function processSteps() {
+  return `<div class="plh-steps">
+          ${stepCard(1, "properties", "Propiedades adecuadas", "Identificamos opciones compatibles contigo, a través de corredores aliados y contactos locales de confianza.")}
+          ${stepCard(2, "region", "Orientación regional", "Te ayudamos a entender qué zonas tienen sentido según tu objetivo, presupuesto y forma de usar el terreno.")}
+          ${stepCard(3, "legal", "Verificación legal", "Coordinamos qué revisar y con quién — títulos, servidumbres y documentación — antes de comprometer capital.")}
+          ${stepCard(4, "zoning", "Zonificación y subdivisiones", "Revisión preliminar de las normas del lugar: qué se puede construir y señales de alerta.")}
+          ${stepCard(5, "negotiate", "Apoyo en la negociación", "Comparamos alternativas y te acompañamos en la negociación con información de mercado y territorio.")}
+          ${stepCard(6, "notary", "Abogados y notarios", "Coordinación con profesionales chilenos hasta el cierre — sin sustituir sus informes.")}
+        </div>`;
+}
+
+function whyLaCard(icon, titleKey, textKey, title, text) {
+  return `<article class="plh-diff glass-card"><span class="plh-diff__icon" aria-hidden="true">${WHY_ICONS[icon]}</span><div class="plh-diff__body"><h3 data-i18n="${titleKey}">${title}</h3><p data-i18n="${textKey}">${text}</p></div></article>`;
+}
+
+function whyLaGrid() {
+  return `<div class="plh-diff-grid">
+          ${whyLaCard("independent", "whyLa.independent.title", "whyLa.independent.text", "Independiente", "Sin inventario propio.")}
+          ${whyLaCard("territory", "whyLa.territory.title", "whyLa.territory.text", "Territorial", "Territorio primero.")}
+          ${whyLaCard("buyer", "whyLa.buyer.title", "whyLa.buyer.text", "Del lado del comprador", "Tus intereses primero.")}
+          ${whyLaCard("network", "whyLa.network.title", "whyLa.network.text", "Red local", "Contactos en terreno.")}
+          ${whyLaCard("active", "whyLa.active.title", "whyLa.active.text", "Búsqueda activa", "Buscamos activamente.")}
+          ${whyLaCard("advisory", "whyLa.advisory.title", "whyLa.advisory.text", "Asesoría personalizada", "Cada encargo es distinto.")}
+        </div>`;
+}
+
+const html = `<!DOCTYPE html>
+<html lang="es" class="i18n-loading" data-i18n-prefix="../" data-wa-intro="Hola, quiero iniciar una búsqueda de terreno con Land Advisors (Patagonia Land Hunter)." data-wa-phone="${SITE.phone}" data-calendar-intent="busqueda">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Búsqueda activa de terrenos en Los Lagos y Patagonia chilena. Asesoría independiente del comprador. Patagonia Land Hunter · Land Advisors.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="${SITE.url}/patagonia-land-hunter/">
+  <link rel="alternate" hreflang="es" href="${SITE.url}/patagonia-land-hunter/">
+  <link rel="alternate" hreflang="en" href="${SITE.url}/patagonia-land-hunter/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="${SITE.url}/patagonia-land-hunter/">
+  <title>Patagonia Land Hunter — búsqueda de terrenos | Land Advisors</title>
+  <link rel="icon" type="image/png" href="../assets/logo-isotipo-3d.png">
+  <meta property="og:image" content="${SITE.url}/images/plh/plh-hero.jpg">
+  <link rel="preload" href="../images/plh/plh-hero.jpg" as="image" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles-seo.css">
+  <link rel="stylesheet" href="../styles-i18n.css">
+  <link rel="stylesheet" href="../styles-plh.css">
+  <link rel="stylesheet" href="../lead-gate.css">
+  <link rel="stylesheet" href="../chat-widget.css">
+  <link rel="stylesheet" href="../styles-human.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","name":"Patagonia Land Hunter","alternateName":"Local Land Acquisition Partner","provider":{"@type":"Organization","name":"Land Advisors Chile","url":"${SITE.url}"},"areaServed":["Los Lagos","Patagonia","Southern Chile"],"description":"Independent land search and buyer representation in Los Lagos and Chilean Patagonia."}
+  </script>
+</head>
+<body class="site-v2 plh-page" data-page="plh">
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+  <header class="site-header">
+    <div class="header-shell">
+      <div class="header-inner">
+        <a href="../" class="logo-link" aria-label="Land Advisors — inicio">
+          <img src="../assets/logo-horizontal-3d.jpg" alt="Land Advisors" width="280" height="64">
+        </a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="nav.menu">Menú</button>
+        ${nav()}
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="plh-hero" id="inicio">
+      <div class="plh-hero__media" aria-hidden="true">
+        <img src="../images/plh/plh-hero.jpg" alt="" width="2560" height="1440" fetchpriority="high" decoding="async">
+        <div class="plh-hero__overlay"></div>
+      </div>
+      <div class="container plh-hero__inner" data-reveal>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Búsqueda independiente · Los Lagos y Patagonia</p>
+        <h1 data-i18n="hero.title">Encuentra tu lugar en Patagonia.</h1>
+        <p class="plh-hero__lead" data-i18n="hero.lead">Patagonia Land Hunter es el servicio de búsqueda activa de LAND ADVISORS.</p>
+        <div class="plh-hero__actions">
+          <a href="#land-search-form" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_plh_form" data-i18n="hero.ctaPrimary">Cuéntanos qué estás buscando</a>
+          <a href="#que-incluye" class="btn btn-glass" data-i18n="hero.ctaSecondary">Qué incluye el servicio</a>
+        </div>
+        <p class="plh-hero__tagline" data-i18n="hero.tagline">Patagonia Land Hunter</p>
+      </div>
+    </section>
+
+    <section class="plh-section plh-section--light" id="que-es">
+      <div class="container plh-narrow" data-reveal>
+        <p class="section-label" data-i18n="what.label">Patagonia Land Hunter</p>
+        <h2 class="section-title" data-i18n="what.title">No vendemos terrenos. Los buscamos para ti.</h2>
+        <p class="section-intro" data-i18n="what.lead">Trabajamos exclusivamente del lado del comprador.</p>
+        <p data-i18n="what.body">Muchos compradores llegan con un objetivo claro pero sin saber en qué zona concentrar la búsqueda.</p>
+        <ul class="plh-checklist plh-checklist--cols">
+          <li data-i18n="what.list1">Publicaciones abiertas y portales</li>
+          <li data-i18n="what.list2">Corredores e inmobiliarias locales</li>
+          <li data-i18n="what.list3">Propietarios y contactos directos</li>
+          <li data-i18n="what.list4">Oportunidades fuera del mercado abierto</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plh-fullbleed" aria-hidden="true">
+      <img src="../images/plh/plh-band-1.jpg" alt="" width="2560" height="1200" loading="lazy" decoding="async">
+    </section>
+
+    <section class="plh-section" id="que-incluye">
+      <div class="container" data-reveal>
+        <p class="section-label" data-i18n="includes.label">Qué puede incluir</p>
+        <h2 class="section-title" data-i18n="includes.title">Una búsqueda concreta, con entregables claros</h2>
+        <p class="section-intro plh-intro-center" data-i18n="includes.lead">Cada encargo se adapta a tu objetivo.</p>
+        <ul class="plh-includes">
+          <li data-i18n="includes.item1">Informe estratégico</li>
+          <li data-i18n="includes.item2">Definición de zonas de búsqueda</li>
+          <li data-i18n="includes.item3">Búsqueda activa</li>
+          <li data-i18n="includes.item4">Lista reducida</li>
+          <li data-i18n="includes.item5">Evaluación territorial preliminar</li>
+          <li data-i18n="includes.item6">Coordinación de visitas</li>
+          <li data-i18n="includes.item7">Apoyo en comparación y negociación</li>
+          <li data-i18n="includes.item8">Coordinación con profesionales</li>
+        </ul>
+        <div class="plh-risk glass-card">
+          <h3 data-i18n="includes.risk.title">Reducir riesgo legal y práctico</h3>
+          <p data-i18n="includes.risk.body">Comprar tierra en Chile implica normativa variable según comuna y región.</p>
+        </div>
+        <p class="plh-disclaimer" data-i18n="includes.disclaimer">LAND ADVISORS no reemplaza asesoría legal ni estudios técnicos.</p>
+      </div>
+    </section>
+
+    <section class="plh-region plh-region--lagos" id="por-que-sur">
+      <div class="plh-region__media">
+        <img src="../images/plh/plh-lagos.jpg" alt="" width="2560" height="1440" loading="lazy" decoding="async">
+        <div class="plh-region__overlay"></div>
+      </div>
+      <div class="container plh-region__inner" data-reveal>
+        <p class="section-label" data-i18n="why.label">Territorio</p>
+        <h2 class="section-title" data-i18n="zone.lagos.title">Región de Los Lagos</h2>
+        <p class="plh-region__text" data-i18n="zone.lagos.text">Cuenca del Lago Llanquihue y contorno rural.</p>
+        <ul class="plh-checklist plh-checklist--light">
+          <li data-i18n="zone.lagos.bullet1">Mayor oferta y comparables</li>
+          <li data-i18n="zone.lagos.bullet2">Servicios y conectividad</li>
+          <li data-i18n="zone.lagos.bullet3">Segunda vivienda e inversión patrimonial</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plh-region plh-region--patagonia plh-region--tall">
+      <div class="plh-region__media">
+        <img src="../images/plh/plh-patagonia.jpg" alt="" width="2560" height="1440" loading="lazy" decoding="async" class="plh-region__img--patagonia">
+        <div class="plh-region__overlay"></div>
+      </div>
+      <div class="container plh-region__inner" data-reveal>
+        <h2 class="section-title" data-i18n="zone.patagonia.title">Patagonia</h2>
+        <p class="plh-region__text" data-i18n="zone.patagonia.text">Paisajes de escala, privacidad y proyectos de largo plazo.</p>
+        <ul class="plh-checklist plh-checklist--light">
+          <li data-i18n="zone.patagonia.bullet1">Extensiones mayores</li>
+          <li data-i18n="zone.patagonia.bullet2">Privacidad y naturaleza</li>
+          <li data-i18n="zone.patagonia.bullet3">Oportunidades de mercado privado</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plh-lifeband" aria-label="Vida en Patagonia">
+      <img src="../images/plh/plh-patagonia-life.jpg" alt="" width="2000" height="1200" loading="lazy" decoding="async">
+      <div class="plh-lifeband__overlay"></div>
+      <blockquote class="container plh-lifeband__quote" data-reveal>
+        <p data-i18n="why.note">No hay una sola "mejor zona". Hay una zona coherente con tu objetivo.</p>
+      </blockquote>
+    </section>
+
+    <section class="plh-fullbleed plh-fullbleed--short" aria-hidden="true">
+      <img src="../images/plh/plh-band-2.jpg" alt="" width="2560" height="900" loading="lazy" decoding="async">
+    </section>
+
+    <section class="plh-section plh-section--process" id="como-trabajamos">
+      <div class="container" data-reveal>
+        <p class="section-label" data-i18n="process.label">Cómo te acompañamos</p>
+        <h2 class="section-title" data-i18n="process.title">Seis cosas que no conviene resolver solo desde afuera</h2>
+        <p class="section-intro" data-i18n="process.lead">Comprar tierra en Chile desde el extranjero implica pasos que muchos prefieren delegar — siempre con criterio local y transparencia.</p>
+        ${processSteps()}
+      </div>
+    </section>
+
+    <section class="plh-fullbleed plh-fullbleed--short" aria-hidden="true">
+      <img src="../images/plh/plh-band-3.jpg" alt="" width="2560" height="900" loading="lazy" decoding="async">
+    </section>
+
+    <section class="plh-section plh-section--intl" id="internacional">
+      <div class="container plh-narrow" data-reveal>
+        <p class="section-label" data-i18n="intl.label">Compradores internacionales</p>
+        <h2 class="section-title" data-i18n="intl.title">Tu aliado local en Patagonia</h2>
+        <p data-i18n="intl.lead">Comprar tierra en Chile desde el extranjero exige presencia local.</p>
+        <p class="plh-highlight" data-i18n="intl.eyes">LAND ADVISORS puede ser tus ojos en terreno en el sur de Chile.</p>
+        <ul class="plh-checklist">
+          <li data-i18n="intl.list1">Compradores internacionales</li>
+          <li data-i18n="intl.list2">Chilenos en el extranjero</li>
+          <li data-i18n="intl.list3">Oficinas familiares y clientes privados</li>
+          <li data-i18n="intl.list4">Asesores y corredores internacionales</li>
+        </ul>
+        <div class="plh-partners-box glass-card">
+          <h3 data-i18n="intl.partners.title">Trabajo con aliados internacionales</h3>
+          <p data-i18n="intl.partners.text">Aliado local de adquisición en Chile.</p>
+          <p class="plh-partners-tags" data-i18n="intl.partners.list">Búsqueda · exploración · visitas</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="plh-section plh-section--light" id="para-quien">
+      <div class="container" data-reveal>
+        <p class="section-label" data-i18n="audience.label">Audiencia</p>
+        <h2 class="section-title" data-i18n="audience.title">¿Para quién es este servicio?</h2>
+        <div class="plh-audience">
+          <div class="plh-audience-card glass-card" data-i18n="audience.families">Familias</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.international">Internacionales</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.abroad">Chilenos en el exterior</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.lifestyle">Estilo de vida / relocalización</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.investors">Inversionistas patrimoniales</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.conservation">Conservación</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.tourism">Turismo</div>
+          <div class="plh-audience-card glass-card" data-i18n="audience.partners">Aliados internacionales</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plh-section plh-section--why" id="por-que-la">
+      <div class="container" data-reveal>
+        <p class="section-label" data-i18n="whyLa.label">Land Advisors</p>
+        <h2 class="section-title" data-i18n="whyLa.title">Asesoría independiente. Conocimiento local. Mejores decisiones.</h2>
+        ${whyLaGrid()}
+      </div>
+    </section>
+
+    <section class="plh-cta-band" id="land-search-form">
+      <div class="plh-cta-band__bg" aria-hidden="true">
+        <img src="../images/plh/plh-cta.jpg" alt="" width="2200" height="1200" loading="lazy" decoding="async">
+        <div class="plh-cta-band__overlay"></div>
+      </div>
+      <div class="container plh-cta-grid" data-reveal>
+        <div class="plh-cta-copy">
+          <h2 data-i18n="final.title">¿Buscas tierra en Patagonia?</h2>
+          <p data-i18n="final.lead">Cuéntanos qué buscas.</p>
+        </div>
+        <form class="plh-form glass-card" id="plh-land-search-form" novalidate>
+          <h3 class="plh-form__title" data-i18n="form.title">Formulario de búsqueda de terreno</h3>
+          <p class="plh-form__lead" data-i18n="form.lead">Comparte tu objetivo.</p>
+          <div class="plh-form__fields">
+            <label for="plh-nombre" data-i18n="form.name">Nombre</label>
+            <input type="text" id="plh-nombre" name="nombre" required autocomplete="name">
+            <label for="plh-email" data-i18n="form.email">Correo electrónico</label>
+            <input type="email" id="plh-email" name="email" required autocomplete="email">
+            <label for="plh-telefono" data-i18n="form.phone">Teléfono</label>
+            <input type="tel" id="plh-telefono" name="telefono" required autocomplete="tel">
+            <label for="plh-pais" data-i18n="form.country">País</label>
+            <input type="text" id="plh-pais" name="pais" required autocomplete="country-name">
+            <label for="plh-idioma" data-i18n="form.language">Idioma</label>
+            <select id="plh-idioma" name="idioma" required>
+              <option value="es" data-i18n="form.lang.es">Español</option>
+              <option value="en" data-i18n="form.lang.en">Inglés</option>
+              <option value="otro" data-i18n="form.lang.other">Otro</option>
+            </select>
+            <label for="plh-busqueda" data-i18n="form.looking">¿Qué buscas?</label>
+            <input type="text" id="plh-busqueda" name="busqueda" required>
+            <label for="plh-region" data-i18n="form.region">Zona</label>
+            <input type="text" id="plh-region" name="region" placeholder="Los Lagos / Patagonia">
+            <label for="plh-objetivo" data-i18n="form.objective">Objetivo</label>
+            <select id="plh-objetivo" name="objetivo" required>
+              <option value="">—</option>
+              <option value="second-home" data-i18n="form.objective.second">Segunda vivienda</option>
+              <option value="lifestyle" data-i18n="form.objective.lifestyle">Estilo de vida / Relocalización</option>
+              <option value="investment" data-i18n="form.objective.investment">Inversión</option>
+              <option value="tourism" data-i18n="form.objective.tourism">Turismo</option>
+              <option value="conservation" data-i18n="form.objective.conservation">Conservación</option>
+              <option value="other" data-i18n="form.objective.other">Otro</option>
+            </select>
+            <label for="plh-presupuesto" data-i18n="form.budget">Presupuesto</label>
+            <input type="text" id="plh-presupuesto" name="presupuesto" data-i18n-placeholder="form.placeholder.budget" placeholder="UF / USD / EUR">
+            <label for="plh-tamano" data-i18n="form.size">Tamaño</label>
+            <input type="text" id="plh-tamano" name="tamano" data-i18n-placeholder="form.placeholder.size" placeholder="m² o hectáreas">
+            <label for="plh-plazo" data-i18n="form.timeline">Plazo</label>
+            <input type="text" id="plh-plazo" name="plazo">
+            <label for="plh-detalle" data-i18n="form.details">Detalle</label>
+            <textarea id="plh-detalle" name="detalle" rows="4"></textarea>
+            <label class="plh-checkbox"><input type="checkbox" name="internacional" value="si"><span data-i18n="form.international">Comprador internacional</span></label>
+            <input type="text" name="website" tabindex="-1" aria-hidden="true" class="plh-honeypot">
+            <button type="submit" class="btn btn-primary btn-glow btn-cta-agenda plh-form__submit" data-i18n="form.submit">Enviar solicitud</button>
+          </div>
+          <div class="plh-form-success" hidden>
+            <p data-i18n="form.success">Gracias.</p>
+            <p class="plh-form-success__note" data-i18n="form.success.note">Respondemos en horario laboral.</p>
+            <a href="#" class="btn btn-primary plh-form-success__wa" data-i18n="form.success.wa" target="_blank" rel="noopener noreferrer" hidden>Escribir por WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="../assets/logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address" data-i18n="footer.address">Walker Martínez 517, Puerto Varas</p>
+      <nav class="footer-seo-nav" aria-label="Enlaces">
+        <a href="../patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
+        <a href="../servicios/" data-i18n="nav.services">Servicios</a>
+        <a href="../territorios/" data-i18n="nav.territories">Territorios</a>
+        <a href="../blog/" data-i18n="nav.blog">Blog</a>
+        <a href="../sitemap.xml" data-i18n="footer.sitemap">Mapa del sitio</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · <span data-i18n="footer.tagline">Estrategia Inmobiliaria</span></p>
+    </div>
+  </footer>
+
+  <div id="la-chat-widget" aria-label="Contacto"></div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="../i18n.js" defer></script>
+  <script src="../landing-ui.js" defer></script>
+  <script src="../whatsapp-config.js" defer></script>
+  <script src="../calendar-config.js" defer></script>
+  <script src="../analytics-config.js" defer></script>
+  <script src="../analytics.js" defer></script>
+  <script src="../conversion-tracking.js" defer></script>
+  <script src="../land-search-form.js" defer></script>
+  <script src="../chat-widget.js" defer></script>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle?.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open);
+    });
+  </script>
+</body>
+</html>`;
+
+fs.mkdirSync(path.dirname(OUT), { recursive: true });
+fs.writeFileSync(OUT, html, "utf8");
+console.log("wrote patagonia-land-hunter/index.html");

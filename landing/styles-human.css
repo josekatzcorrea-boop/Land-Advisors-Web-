@@ -1,0 +1,307 @@
+/**
+ * Land Advisors — capa editorial (human touch)
+ * Suaviza patrones demasiado uniformes sin cambiar contenido.
+ */
+
+:root {
+  --radius: 9px;
+  --radius-lg: 13px;
+  --glass: #fff;
+  --glass-border: rgba(5, 44, 77, 0.13);
+  --shadow-soft: 0 1px 2px rgba(5, 44, 77, 0.04), 0 4px 14px rgba(5, 44, 77, 0.05);
+  --shadow-lift: 0 4px 16px rgba(5, 44, 77, 0.09);
+}
+
+/* Fondo más plano — menos “landing SaaS” */
+body.site-v2 {
+  background: #f5f6f4;
+}
+
+.grain {
+  opacity: 0.015;
+}
+
+.scroll-progress {
+  height: 2px;
+  background: rgba(5, 44, 77, 0.06);
+}
+
+/* Tarjetas: papel sólido en lugar de vidrio difuso */
+.glass-card {
+  background: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: none;
+  box-shadow: var(--shadow-soft);
+  border-color: rgba(5, 44, 77, 0.2);
+}
+
+.section-light .glass-card,
+#contacto .glass-card,
+#casos .glass-card,
+.seo-page .faq-item {
+  background: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Acento editorial en bloques de contenido */
+.seo-page .seo-card,
+.seo-page .faq-item,
+.step,
+.plh-diff,
+.plh-step,
+.service-card,
+.situacion-card,
+.ila-card,
+.plh-audience-card,
+.blog-index-card,
+.intel-cluster .glass-card,
+.seo-internal-links .glass-card {
+  border-left: 3px solid rgba(91, 143, 160, 0.38);
+}
+
+.service-card--featured,
+.ila-card--highlight {
+  border-left-color: var(--brand-teal, #1a5f72);
+}
+
+/* Ligera irregularidad en grids */
+@media (min-width: 640px) {
+  .seo-card-grid > *:nth-child(3n + 2),
+  .plh-diff-grid > *:nth-child(3n + 2),
+  .plh-steps > *:nth-child(3n + 2),
+  .situaciones-grid > *:nth-child(2n),
+  .steps > *:nth-child(2n),
+  .plh-audience > *:nth-child(4n + 2) {
+    transform: translateY(0.35rem);
+  }
+}
+
+.seo-card-grid > .seo-card:nth-child(odd),
+.plh-diff:nth-child(odd),
+.plh-step:nth-child(odd),
+.step:nth-child(odd) {
+  border-radius: 9px 11px 9px 11px;
+}
+
+.seo-card-grid > .seo-card:nth-child(even),
+.plh-diff:nth-child(even),
+.plh-step:nth-child(even),
+.step:nth-child(even) {
+  border-radius: 11px 9px 11px 9px;
+}
+
+.situacion-card:hover,
+.inno-card:hover,
+.service-card:hover {
+  transform: none;
+}
+
+.inno-card:hover {
+  border-color: rgba(5, 44, 77, 0.2);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Botones: rectangulares, sin glow animado */
+.btn {
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: none;
+}
+
+.btn-primary {
+  box-shadow: none;
+}
+
+.btn-cta-agenda,
+.nav-cta--cal,
+.sticky-cta-pair .btn-cta-agenda {
+  background: var(--blue) !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.btn-cta-agenda:hover,
+.nav-cta--cal:hover {
+  background: var(--blue-dark) !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.btn-cta-wa,
+.nav-cta--wa {
+  background: #1fa855 !important;
+  box-shadow: none !important;
+}
+
+.btn-cta-wa:hover,
+.nav-cta--wa:hover {
+  background: #188f48 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.sticky-cta-pair .btn {
+  box-shadow: 0 3px 10px rgba(5, 44, 77, 0.14);
+}
+
+.btn-glow,
+.btn-glow:hover {
+  box-shadow: none;
+}
+
+/* Secciones: menos gradiente apilado */
+.section-brand {
+  background: var(--blue);
+}
+
+.section-brand .inno-card--hero.glass-card {
+  background: var(--blue-dark);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: none;
+}
+
+.section-pensamos,
+.section-servicios,
+.section-light,
+.section-situaciones,
+#contacto,
+#casos {
+  background: #fafbfa;
+}
+
+.seo-page .seo-hero {
+  background: #f5f6f4;
+}
+
+.plh-section--process,
+.plh-section--why,
+.plh-section--light {
+  background: #fafbfa;
+}
+
+/* Tipografía de sección menos “template” */
+.section-label {
+  letter-spacing: 0.11em;
+  font-weight: 500;
+  font-size: 0.72rem;
+}
+
+.section-title {
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+/* Scroll reveal más discreto */
+[data-reveal] {
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Header más sobrio */
+.site-header {
+  box-shadow: 0 1px 0 rgba(5, 44, 77, 0.08);
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 1px 0 rgba(5, 44, 77, 0.1), 0 4px 16px rgba(5, 44, 77, 0.05);
+}
+
+/* Tags territorio */
+.territory-tags span,
+.territory-tags a {
+  border-radius: 5px;
+}
+
+/* Blog / intros SEO */
+.blog-index-intro,
+.ila-hub-intro,
+.seo-service-meta {
+  background: #fff;
+  border: 1px solid rgba(5, 44, 77, 0.12);
+  box-shadow: none;
+}
+
+.blog-index-intro {
+  background: #fff;
+}
+
+.blog-index-intro__icon {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.blog-index-card:hover {
+  transform: none;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Campañas */
+.campaign-cta {
+  border-radius: 7px;
+  animation: none !important;
+}
+
+.campaign-cta--wa,
+.campaign-cta--cal {
+  animation: none !important;
+}
+
+.campaign-cta:hover {
+  transform: none;
+  filter: none;
+}
+
+.campaign-cta--wa {
+  background: #1fa855 !important;
+  box-shadow: none !important;
+}
+
+.campaign-cta--cal {
+  background: var(--blue) !important;
+  box-shadow: none !important;
+}
+
+.campaign-trust__item,
+.campaign-grid .glass-card {
+  border-left: 3px solid rgba(91, 143, 160, 0.35);
+}
+
+/* Formularios y modales */
+.plh-form.glass-card,
+.contact-form-wrap .glass-card,
+.lead-gate__panel {
+  border-left: none;
+}
+
+.plh-diff:hover {
+  transform: none;
+  box-shadow: var(--shadow-soft);
+  border-color: rgba(5, 44, 77, 0.2);
+}
+
+.plh-form.glass-card {
+  border-radius: 11px;
+  border-left: none;
+}
+
+.plh-step__icon,
+.plh-diff__icon {
+  border-radius: 6px;
+  background: rgba(26, 95, 114, 0.08);
+}
+
+/* CTA band home */
+.cta-band::before {
+  opacity: 0.92;
+}

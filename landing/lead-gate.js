@@ -190,19 +190,19 @@
     dialog.setAttribute("aria-labelledby", "lead-gate-title");
     dialog.innerHTML =
       '<div class="lead-gate__panel">' +
-      '<button type="button" class="lead-gate__close" data-lead-gate-close aria-label="Cerrar">&times;</button>' +
+      '<button type="button" class="lead-gate__close" data-lead-gate-close data-i18n-aria="lead.close.aria" aria-label="Cerrar">&times;</button>' +
       '<div class="lead-gate__form-wrap" id="lead-gate-form-wrap">' +
       '<p class="lead-gate__kicker">Land Advisors</p>' +
-      '<h2 class="lead-gate__title" id="lead-gate-title">Antes de continuar</h2>' +
-      '<p class="lead-gate__intro" id="lead-gate-intro">Cuéntanos quién eres y qué buscas. Luego te abrimos WhatsApp o el calendario.</p>' +
+      '<h2 class="lead-gate__title" id="lead-gate-title" data-i18n="lead.title">Antes de continuar</h2>' +
+      '<p class="lead-gate__intro" id="lead-gate-intro" data-i18n="lead.intro">Cuéntanos quién eres y qué buscas. Luego te abrimos WhatsApp o el calendario.</p>' +
       '<form class="lead-gate__form" id="lead-gate-form" novalidate>' +
-      '<label for="lg-nombre">Nombre</label>' +
+      '<label for="lg-nombre" data-i18n="form.name">Nombre</label>' +
       '<input type="text" id="lg-nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">' +
-      '<label for="lg-email">Correo</label>' +
+      '<label for="lg-email" data-i18n="form.email">Correo</label>' +
       '<input type="email" id="lg-email" name="email" required autocomplete="email" placeholder="tunombre@correo.cl">' +
-      '<label for="lg-telefono">Teléfono / WhatsApp</label>' +
+      '<label for="lg-telefono" data-i18n="form.phone">Teléfono / WhatsApp</label>' +
       '<input type="tel" id="lg-telefono" name="telefono" required autocomplete="tel" placeholder="+56 9 …">' +
-      '<label for="lg-objetivo">Objetivo de compra</label>' +
+      '<label for="lg-objetivo" data-i18n="lead.objective">Objetivo de compra</label>' +
       '<select id="lg-objetivo" name="objetivo" required>' +
       '<option value="">Seleccionar…</option>' +
       '<option value="vivir">Vivir / calidad de vida</option>' +
@@ -211,7 +211,7 @@
       '<option value="proyecto">Proyecto (cabañas, comercio u otro)</option>' +
       '<option value="otro">Otro / aún lo estoy definiendo</option>' +
       "</select>" +
-      '<label for="lg-presupuesto">Rango de presupuesto</label>' +
+      '<label for="lg-presupuesto" data-i18n="lead.budget">Rango de presupuesto</label>' +
       '<select id="lg-presupuesto" name="presupuesto" required>' +
       '<option value="">Seleccionar en UF…</option>' +
       '<option value="1500-2500">1.500 a 2.500 UF</option>' +
@@ -223,22 +223,29 @@
       '<label for="lg-hp">No completar</label>' +
       '<input type="text" id="lg-hp" name="la_hp_url" tabindex="-1" autocomplete="off">' +
       "</div>" +
-      '<button type="submit" class="lead-gate__submit btn btn-primary btn-glow">Continuar</button>' +
-      '<p class="lead-gate__hint">No compartimos tus datos. Solo Land Advisors te contactará.</p>' +
+      '<button type="submit" class="lead-gate__submit btn btn-primary btn-glow" data-i18n="lead.submit">Continuar</button>' +
+      '<p class="lead-gate__hint" data-i18n="lead.hint">No compartimos tus datos. Solo Land Advisors te contactará.</p>' +
       '<p class="lead-gate__status" role="status" aria-live="polite" hidden></p>' +
       "</form></div>" +
       '<div class="lead-gate__success" id="lead-gate-success" hidden>' +
-      '<p class="lead-gate__kicker">Listo</p>' +
-      '<h2 class="lead-gate__title">Gracias. Ya tenemos tus datos</h2>' +
+      '<p class="lead-gate__kicker" data-i18n="lead.success.kicker">Listo</p>' +
+      '<h2 class="lead-gate__title" data-i18n="lead.success.title">Gracias. Ya tenemos tus datos</h2>' +
       '<p class="lead-gate__intro" id="lead-gate-success-lead">Te abrimos el siguiente paso.</p>' +
       '<div class="lead-gate__success-actions">' +
-      '<a href="#" class="btn btn-cta-wa" id="lead-gate-go-wa" data-lead-exit target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>' +
-      '<a href="#" class="btn btn-primary btn-glow btn-cta-agenda" id="lead-gate-go-cal" data-lead-exit target="_blank" rel="noopener noreferrer">Agendar diagnóstico</a>' +
+      '<a href="#" class="btn btn-cta-wa" id="lead-gate-go-wa" data-lead-exit target="_blank" rel="noopener noreferrer" data-i18n="lead.success.openWa">Abrir WhatsApp</a>' +
+      '<a href="#" class="btn btn-primary btn-glow btn-cta-agenda" id="lead-gate-go-cal" data-lead-exit target="_blank" rel="noopener noreferrer" data-i18n="lead.success.openCal">Agendar diagnóstico</a>' +
       "</div>" +
-      '<button type="button" class="lead-gate__text-close" data-lead-gate-close>Cerrar</button>' +
+      '<button type="button" class="lead-gate__text-close" data-lead-gate-close data-i18n="lead.close">Cerrar</button>' +
       "</div></div>";
 
     document.body.appendChild(dialog);
+
+    document.addEventListener("la:langchange", function (e) {
+      if (window.LA_i18n && e.detail && e.detail.dict) {
+        window.LA_i18n.apply(e.detail.dict, e.detail.lang);
+        if (pendingAction) setCopy(pendingAction);
+      }
+    });
 
     dialog.querySelectorAll("[data-lead-gate-close]").forEach(function (btn) {
       btn.addEventListener("click", close);
@@ -255,27 +262,29 @@
     return dialog;
   }
 
+  function lg(key, fallback) {
+    var dict = window.__LA_I18N_DICT;
+    if (dict && dict[key]) return dict[key];
+    return fallback || "";
+  }
+
   function setCopy(action) {
     const title = document.getElementById("lead-gate-title");
     const intro = document.getElementById("lead-gate-intro");
     const submit = dialog && dialog.querySelector(".lead-gate__submit");
     if (action === "calendar") {
-      if (title) title.textContent = "Antes de agendar tu diagnóstico";
-      if (intro)
-        intro.textContent =
-          "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego eliges horario en el calendario.";
+      if (title) title.textContent = lg("lead.title.cal", "Antes de agendar tu diagnóstico");
+      if (intro) intro.textContent = lg("lead.intro.cal", "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego eliges horario en el calendario.");
       if (submit) {
-        submit.textContent = "Continuar a agendar";
-        submit.dataset.label = "Continuar a agendar";
+        submit.textContent = lg("lead.submit.cal", "Continuar a agendar");
+        submit.dataset.label = submit.textContent;
       }
     } else {
-      if (title) title.textContent = "Antes de escribir por WhatsApp";
-      if (intro)
-        intro.textContent =
-          "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego te abrimos WhatsApp con José.";
+      if (title) title.textContent = lg("lead.title.wa", "Antes de escribir por WhatsApp");
+      if (intro) intro.textContent = lg("lead.intro.wa", "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego te abrimos WhatsApp con José.");
       if (submit) {
-        submit.textContent = "Continuar a WhatsApp";
-        submit.dataset.label = "Continuar a WhatsApp";
+        submit.textContent = lg("lead.submit.wa", "Continuar a WhatsApp");
+        submit.dataset.label = submit.textContent;
       }
     }
   }
@@ -372,7 +381,7 @@
     if (on) {
       if (!btn.dataset.label) btn.dataset.label = btn.textContent;
       btn.disabled = true;
-      btn.textContent = "Enviando…";
+      btn.textContent = lg("lead.sending", "Enviando…");
     } else {
       btn.disabled = false;
       if (btn.dataset.label) btn.textContent = btn.dataset.label;
@@ -411,7 +420,7 @@
     };
 
     if (!data.nombre || !data.email || !data.telefono || !data.objetivo || !data.presupuesto) {
-      setStatus("Completa todos los campos para continuar.", "error");
+      setStatus(lg("lead.error.fields", "Completa todos los campos para continuar."), "error");
       form.reportValidity();
       return;
     }

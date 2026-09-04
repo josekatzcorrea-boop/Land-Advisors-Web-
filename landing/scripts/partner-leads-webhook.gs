@@ -22,17 +22,16 @@
 
 var SPREADSHEET_ID = "1XdNVyeCK_55Sqm8fk3WYyg1hLuaBwINWnvBUrLENmpI";
 
-/** Destinatarios por partner (clave = id o nombre normalizado) */
+/**
+ * Destinatarios por partner.
+ * Enviar por separado (no CC en el mismo mensaje): si un dominio bloquea,
+ * no tumba el correo del otro. contacto@landadvisors.cl funciona como TO
+ * único; falla a veces si va en CC con otro destinatario.
+ */
 var PARTNER_EMAIL_ROUTES = {
   iterrasur: {
-    /** Siempre llega (cuenta Google de Land Advisors) */
-    to: "contacto@landadvisors.cl",
-    /**
-     * Destino partner.
-     * Temporal: Gmail personal de Bárbara (iterrasur.cl bloquea MailApp).
-     * Objetivo: bfonseca@iterrasur.cl cuando habiliten recepción.
-     */
-    partnerTo: "Barbarafonseca83@gmail.com",
+    to: "barbarafonseca83@gmail.com",
+    alsoTo: "contacto@landadvisors.cl",
     label: "Iterrasur",
   },
 };
@@ -111,7 +110,6 @@ function buildLeadEmailBody_(data, route) {
     data.comentario || "(sin comentario)",
     "",
     "Partner: " + (data.partner || ""),
-    route.partnerTo ? "Notificar también a: " + route.partnerTo : "",
     "Fuente: " + (data.source || "Land Advisors Website"),
     "Fecha: " + (data.fecha || new Date().toISOString()),
     "",
@@ -125,8 +123,10 @@ function buildLeadEmailBody_(data, route) {
 }
 
 /**
- * Envía correo a Land Advisors y, si aplica, un segundo correo al partner.
- * El de contacto@ es prioritario: si el dominio del partner bloquea MailApp, igual queda aviso interno.
+ * Dos envíos independientes (sin CC):
+ * 1) Bárbara Gmail
+ * 2) contacto@landadvisors.cl
+ * Así un bloqueo no anula al otro.
  */
 function notifyPartnerEmail_(data) {
   var route = resolveEmailRoute_(data);
@@ -139,34 +139,29 @@ function notifyPartnerEmail_(data) {
     (data.nombre || "Sin nombre");
   var body = buildLeadEmailBody_(data, route);
   var replyTo = data.email || "contacto@landadvisors.cl";
+  var results = { sent: true, recipients: [] };
 
-  MailApp.sendEmail({
-    to: route.to,
-    subject: subject,
-    body: body,
-    replyTo: replyTo,
-  });
-
-  var partnerResult = { sent: false, reason: "no_partner_to" };
-  if (route.partnerTo) {
+  function sendOne_(address) {
     try {
       MailApp.sendEmail({
-        to: route.partnerTo,
+        to: address,
         subject: subject,
         body: body,
         replyTo: replyTo,
+        name: "Land Advisors Chile",
       });
-      partnerResult = { sent: true, to: route.partnerTo };
-    } catch (partnerErr) {
-      partnerResult = { sent: false, error: String(partnerErr) };
+      results.recipients.push({ to: address, ok: true });
+    } catch (err) {
+      results.recipients.push({ to: address, ok: false, error: String(err) });
     }
   }
 
-  return {
-    sent: true,
-    to: route.to,
-    partner: partnerResult,
-  };
+  sendOne_(route.to);
+  if (route.alsoTo && route.alsoTo !== route.to) {
+    sendOne_(route.alsoTo);
+  }
+
+  return results;
 }
 
 function jsonResponse_(payload) {
