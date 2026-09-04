@@ -9,7 +9,12 @@ import { execSync } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
-const SRC_DIR = path.join(ROOT, "Imágenes");
+const REPO_ROOT = path.join(__dirname, "..", "..");
+const ARCHIVE_ROOT = path.join(REPO_ROOT, "..", "Land-Advisors-Archivos");
+const SRC_DIRS = [
+  path.join(ARCHIVE_ROOT, "landing", "Imágenes"),
+  path.join(ROOT, "Imágenes"),
+];
 const OUT_DIR = path.join(ROOT, "images", "plh");
 
 /** @type {{ src: string, out: string, w?: number, h?: number, pos?: string }[]} */
@@ -25,11 +30,14 @@ const MAP = [
 ];
 
 function findSrc(name) {
-  if (!fs.existsSync(SRC_DIR)) return null;
-  const exact = path.join(SRC_DIR, name);
-  if (fs.existsSync(exact)) return exact;
-  const hit = fs.readdirSync(SRC_DIR).find((f) => f.toLowerCase() === name.toLowerCase());
-  return hit ? path.join(SRC_DIR, hit) : null;
+  for (const dir of SRC_DIRS) {
+    if (!fs.existsSync(dir)) continue;
+    const exact = path.join(dir, name);
+    if (fs.existsSync(exact)) return exact;
+    const hit = fs.readdirSync(dir).find((f) => f.toLowerCase() === name.toLowerCase());
+    if (hit) return path.join(dir, hit);
+  }
+  return null;
 }
 
 function ensureSharp() {

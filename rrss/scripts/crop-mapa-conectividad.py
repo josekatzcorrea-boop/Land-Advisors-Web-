@@ -11,7 +11,12 @@ except ImportError:
     from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "Selección de fotografías" / "mapa conectividad.jpg"
+ARCHIVE = ROOT.parent / "Land-Advisors-Archivos"
+SRC_CANDIDATES = [
+    ARCHIVE / "Selección de fotografías" / "mapa conectividad.jpg",
+    ROOT / "Selección de fotografías" / "mapa conectividad.jpg",
+]
+SRC = next((p for p in SRC_CANDIDATES if p.exists()), SRC_CANDIDATES[0])
 DST = ROOT / "rrss" / "assets" / "fotos-seleccion" / "mapa-conectividad.jpg"
 
 
