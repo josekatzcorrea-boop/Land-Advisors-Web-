@@ -23,7 +23,20 @@
   border-radius: 999px;
   cursor: pointer;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
   transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch__flag {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.lang-switch__code {
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
 }
 
 .lang-switch__btn.is-active {

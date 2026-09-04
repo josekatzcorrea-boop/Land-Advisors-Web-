@@ -14,9 +14,8 @@ const SITE = { url: "https://www.landadvisors.cl", phone: "56974533265" };
 
 function langSwitch() {
   return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
-            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
-            <span class="lang-switch__sep" aria-hidden="true">|</span>
-            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span class="lang-switch__code">ES</span></button>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><span class="lang-switch__flag" aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
           </div>`;
 }
 
@@ -32,9 +31,8 @@ function nav() {
             <a href="../#nosotros" data-i18n="nav.about">Nosotros</a>
           </div>
           ${langSwitch()}
-          <div class="nav-cta-pair">
+          <div class="nav-cta-pair nav-cta-pair--solo">
             <a href="#land-search-form" class="nav-cta nav-cta--wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
-            <a href="#land-search-form" class="nav-cta nav-cta--cal" data-track="cta_plh_form" data-i18n="hero.ctaPrimary">Cuéntanos qué estás buscando</a>
           </div>
         </nav>`;
 }
@@ -227,18 +225,6 @@ const html = `<!DOCTYPE html>
       </div>
     </section>
 
-    <section class="plh-lifeband" aria-label="Vida en Patagonia">
-      <img src="../images/plh/plh-patagonia-life.jpg" alt="" width="2000" height="1200" loading="lazy" decoding="async">
-      <div class="plh-lifeband__overlay"></div>
-      <blockquote class="container plh-lifeband__quote" data-reveal>
-        <p data-i18n="why.note">No hay una sola "mejor zona". Hay una zona coherente con tu objetivo.</p>
-      </blockquote>
-    </section>
-
-    <section class="plh-fullbleed plh-fullbleed--short" aria-hidden="true">
-      <img src="../images/plh/plh-band-2.jpg" alt="" width="2560" height="900" loading="lazy" decoding="async">
-    </section>
-
     <section class="plh-section plh-section--process" id="como-trabajamos">
       <div class="container" data-reveal>
         <p class="section-label" data-i18n="process.label">Cómo te acompañamos</p>
@@ -360,6 +346,11 @@ const html = `<!DOCTYPE html>
       </div>
     </section>
   </main>
+
+  <div class="sticky-cta-pair plh-sticky-cta" aria-label="Contacto rápido">
+    <a href="#land-search-form" class="btn btn-cta-wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
+    <a href="#land-search-form" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_plh_form" data-i18n="hero.ctaPrimary">Cuéntanos qué estás buscando</a>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-inner">

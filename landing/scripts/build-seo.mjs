@@ -78,10 +78,9 @@ function esc(s) {
 }
 
 function languageSwitcher() {
-  return `<div class="lang-switch lang-switch--header" role="group" aria-label="Idioma">
-            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
-            <span class="lang-switch__sep" aria-hidden="true">|</span>
-            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+  return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span class="lang-switch__code">ES</span></button>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><span class="lang-switch__flag" aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
           </div>`;
 }
 
