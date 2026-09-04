@@ -24,6 +24,18 @@ brochure/corporativo/Land-Advisors-Brochure-compartir.html
 brochure/corporativo/Land-Advisors-Brochure-movil.pdf
 catalogo/Land-Advisors-Catalogo-movil.pdf
 
+# --- Postulaciones / CV (viven en ../Postulaciones-CV, fuera de este repo) ---
+cv-jose-katz*
+cv-assets/
+carta-assets10-jose-katz.md
+carta-jose-katz-*.md
+carta-tocheck-jose-katz.md
+CV *.pdf
+Katz_Jose_*
+scripts/build-cv-*
+scripts/export-cv-*
+scripts/node_modules/
+
 # Video territorial (opcional: quita esta línea si quieres subir el MP4)
 landing/video/territorio.mp4
 
@@ -39,11 +51,28 @@ rrss/video/assets/music/*
 # Analítica con IDs reales (mantener analytics-config.example.js en repo)
 landing/analytics-config.local.js
 
-# Land Advisors Brain (app interna)
-brain/.env.local
-brain/.next/
-
 # Servicios gallery: keep only optimized *-opt.jpg in git
 landing/servicios/*.jpg
 landing/servicios/images/*.jpg
 !landing/servicios/images/*-opt.jpg
+
+# --- Archivos pesados locales (fuente → ../Land-Advisors-Archivos/) ---
+RAG/
+Selección de fotografías/
+landing/Imágenes/
+landing/scripts/node_modules/
+landing/_build-seo-out.txt
+mandatos/
+
+# Cotizaciones / alianzas — PDFs generados (HTML fuente sí)
+cotizaciones/*.pdf
+alianzas/*.pdf
+alianzas/Propuesta-*.pdf
+
+# Video RRSS — material crudo suelto (briefs/scripts/branding sí van al repo)
+rrss/video/*.mp4
+rrss/video/*.mov
+rrss/video/*.mkv
+rrss/video/exports/
+rrss/video/_probe_out.txt
+rrss/video/_probe_*/

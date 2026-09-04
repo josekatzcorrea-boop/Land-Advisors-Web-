@@ -1,0 +1,83 @@
+# =============================================================================
+# Land Advisors — Cursor indexing exclusions
+# Objetivo: reducir indexación sin ocultar código activo ni conocimiento de marca
+# NO excluye: landing HTML/CSS/JS activo, .cursor/rules/, assets/ branding,
+#             textos de identidad/metodología, rrss/posts/, catálogo SEO JSON
+# =============================================================================
+
+# --- Git y dependencias ---
+.git/
+**/node_modules/
+
+# --- Build / cache ---
+**/__pycache__/
+**/.cache/
+**/.turbo/
+**/.vercel/
+**/coverage/
+Thumbs.db
+.DS_Store
+*.log
+debug.log
+
+# --- Binarios / media (Cursor no necesita indexar contenido binario) ---
+**/*.mp4
+**/*.mov
+**/*.mkv
+**/*.wav
+**/*.zip
+**/*.docx
+**/*.xlsx
+**/*.pptx
+
+# --- Respaldos históricos de landing (no sitio activo) ---
+landing/official/
+landing/v1-classic/
+landing/v2-saved/
+brochure/triptico/
+
+# --- Exports regenerables / tooling local ---
+output/
+rrss/output/
+rrss/video/
+landing/video/territorio.mp4
+landing/videos/
+landing/Imágenes/
+
+# --- RAG territorial (ZIPs y datos masivos) ---
+RAG/
+
+# --- Fotografías originales de selección ---
+Selección de fotografías/
+
+# --- Assets RRSS pesados (posts HTML sí indexan) ---
+rrss/assets/fotos-seleccion/
+
+# --- PDFs generados (HTML fuente sí indexa donde exista) ---
+**/*.pdf
+brochure/corporativo/
+
+# --- CVs y cartas personales (no forman parte del sitio) ---
+cv-jose-katz-*
+cv-assets/
+carta-assets10-jose-katz.md
+carta-jose-katz-cancagua.md
+carta-tocheck-jose-katz.md
+CV José Katz.pdf
+Katz_Jose_*
+
+# --- Logs de build locales ---
+landing/_build-seo-out.txt
+rrss/video/_probe_out.txt
+**/_probe_out.txt
+**/_build-seo-out.txt
+
+# --- Cotizaciones, mandatos, alianzas (PDFs; HTML fuente sí indexa) ---
+cotizaciones/*.pdf
+mandatos/
+alianzas/Propuesta-*.pdf
+
+# --- Assets RRSS adicionales (posts HTML sí indexan) ---
+rrss/assets/fotos-campo-clientes/
+rrss/assets/fotos-parque-cantabria/
+rrss/assets/fiestas-patrias-2026/
