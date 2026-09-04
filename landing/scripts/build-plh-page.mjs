@@ -347,11 +347,6 @@ const html = `<!DOCTYPE html>
     </section>
   </main>
 
-  <div class="sticky-cta-pair plh-sticky-cta" aria-label="Contacto rápido">
-    <a href="#land-search-form" class="btn btn-cta-wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
-    <a href="#land-search-form" class="btn btn-primary btn-glow btn-cta-agenda" data-track="cta_plh_form" data-i18n="hero.ctaPrimary">Cuéntanos qué estás buscando</a>
-  </div>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <img src="../assets/logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">

@@ -23,9 +23,9 @@
     ".sticky-cta-pair .btn-cta-agenda span": { "en": "Book" },
 
     "#problema .section-label": { "en": "The challenge" },
-    "#problema .section-title": { "en": "You don't lack options. You lack criteria to decide." },
+    "#problema .section-title": { "en": "There's always supply. Local criteria and knowledge aren't." },
     "#problema .section-intro": {
-      "en": "Finding land in the south is easy. <strong>Buying the right one</strong> — at a fair price and without surprises later — is the hard part. That's the risk we help you manage.",
+      "en": "Portals and brokerages surface options every day. What's missing from the listing is <strong>how to read the rural contour</strong>, compare with criteria, and know if the price fits — before you travel south.",
       "html": true
     },
     "#problema .situacion-card:nth-child(1) .situacion-quote": { "en": "«I saw dozens of listings and don't know which to compare»" },
@@ -106,25 +106,21 @@
       "en": "Each service covers a different stage. The usual entry point is a <strong>strategic meeting</strong> (diagnostic, 1 UF).",
       "html": true
     },
-    "#servicios .service-card--featured h3": { "en": "Patagonia Land Hunter" },
-    "#servicios .service-card--featured p": {
-      "en": "Active land search in Southern Chile and Patagonia — for Chilean and international clients. Local Land Acquisition Partner."
-    },
-    "#servicios .service-card--featured .service-card-link": { "en": "Start your search →" },
-    "#servicios .service-card:nth-child(2) h3": { "en": "Strategic diagnostic" },
-    "#servicios .service-card:nth-child(2) p": { "en": "Structure your search: zones, budget and visit route before going south." },
-    "#servicios .service-card:nth-child(3) h3": { "en": "Personalised search" },
-    "#servicios .service-card:nth-child(3) p": { "en": "At least 4 alternatives → comparative report of the 3 best, chosen with you." },
-    "#servicios .service-card:nth-child(4) h3": { "en": "Purchase advisory" },
-    "#servicios .service-card:nth-child(4) p": { "en": "Negotiation and closing with support — no pressure to sell a specific plot." },
-    "#servicios .service-card:nth-child(4) .service-card-price": { "en": "2.5% of purchase value" },
-    "#servicios .service-card:nth-child(4) .service-card-price-note": { "en": "minus 5 UF if you contracted search" },
-    "#servicios .service-card:nth-child(5) h3": { "en": "Potential study" },
-    "#servicios .service-card:nth-child(5) p": { "en": "Is this land a good option? Deep evaluation before committing capital." },
-    "#servicios .service-card:nth-child(5) .service-card-price": { "en": "From 10 UF" },
-    "#servicios .service-card:nth-child(6) h3": { "en": "Project structuring" },
-    "#servicios .service-card:nth-child(6) p": { "en": "Cabins, tourism or retail: viability and plan before building." },
-    "#servicios .service-card:nth-child(6) .service-card-price": { "en": "From 20 UF" },
+    "#servicios .service-card:nth-child(1) h3": { "en": "Strategic diagnostic" },
+    "#servicios .service-card:nth-child(1) p": { "en": "Structure your search: zones, budget and visit route before going south." },
+    "#servicios .service-card:nth-child(1) .service-card-link": { "en": "View diagnostic →" },
+    "#servicios .service-card:nth-child(2) h3": { "en": "Personalised search" },
+    "#servicios .service-card:nth-child(2) p": { "en": "At least 4 alternatives → comparative report of the 3 best, chosen with you." },
+    "#servicios .service-card:nth-child(3) h3": { "en": "Purchase advisory" },
+    "#servicios .service-card:nth-child(3) p": { "en": "Negotiation and closing with support — no pressure to sell a specific plot." },
+    "#servicios .service-card:nth-child(3) .service-card-price": { "en": "2.5% of purchase value" },
+    "#servicios .service-card:nth-child(3) .service-card-price-note": { "en": "minus 5 UF if you contracted search" },
+    "#servicios .service-card:nth-child(4) h3": { "en": "Potential study" },
+    "#servicios .service-card:nth-child(4) p": { "en": "Is this land a good option? Deep evaluation before committing capital." },
+    "#servicios .service-card:nth-child(4) .service-card-price": { "en": "From 10 UF" },
+    "#servicios .service-card:nth-child(5) h3": { "en": "Project structuring" },
+    "#servicios .service-card:nth-child(5) p": { "en": "Cabins, tourism or retail: viability and plan before building." },
+    "#servicios .service-card:nth-child(5) .service-card-price": { "en": "From 20 UF" },
     "#servicios > .container > p .btn-glass": { "en": "Details of each service →" },
 
     "#oportunidades .section-label": { "en": "How we work" },
@@ -244,15 +240,14 @@
     "#innovacion .flow-step:nth-child(5) span": { "en": "Recommendation" },
     "#innovacion .flow-step:nth-child(5) small": { "en": "Purchase or project" },
 
-    "#servicios .service-card:nth-child(2) .service-card-link": { "en": "View diagnostic →" },
-    "#servicios .service-card:nth-child(3) .service-card-link": { "en": "View search →" },
-    "#servicios .service-card:nth-child(4) .service-card-link": { "en": "View advisory →" },
+    "#servicios .service-card:nth-child(2) .service-card-link": { "en": "View search →" },
+    "#servicios .service-card:nth-child(3) .service-card-link": { "en": "View advisory →" },
+    "#servicios .service-card:nth-child(4) .service-card-link": { "en": "Book a diagnostic session →" },
     "#servicios .service-card:nth-child(5) .service-card-link": { "en": "Book a diagnostic session →" },
-    "#servicios .service-card:nth-child(6) .service-card-link": { "en": "Book a diagnostic session →" },
     "#servicios .promo-deal__badge": { "en": "Promo · until 30 Sept" },
     "#servicios .promo-deal__highlight": { "en": "Free diagnostic" },
     "#servicios .promo-deal__new": { "en": "FREE" },
-    "#servicios .service-card--promo:nth-child(3) .promo-deal__highlight": { "en": "30% discount" },
-    "#servicios .service-card--promo:nth-child(3) .promo-deal__sub": { "en": "Free strategic diagnostic included" }
+    "#servicios .service-card--promo:nth-child(2) .promo-deal__highlight": { "en": "30% discount" },
+    "#servicios .service-card--promo:nth-child(2) .promo-deal__sub": { "en": "Free strategic diagnostic included" }
   }
 }

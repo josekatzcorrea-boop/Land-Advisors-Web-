@@ -693,23 +693,6 @@
   flex-shrink: 0;
 }
 
-.plh-sticky-cta .btn-cta-agenda {
-  font-size: 0.78rem;
-  padding: 0.85rem 1rem;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.25;
-  max-width: 14rem;
-}
-
-@media (min-width: 480px) {
-  .plh-sticky-cta .btn-cta-agenda {
-    font-size: 0.82rem;
-    max-width: none;
-    white-space: nowrap;
-  }
-}
-
 @media (max-width: 979px) {
   .plh-page .nav-cta-pair {
     flex-direction: column;

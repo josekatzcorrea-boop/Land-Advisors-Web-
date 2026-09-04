@@ -747,8 +747,27 @@ section {
 }
 
 /* Problem */
-.section-problema.section-brand {
+.section-problema.section-brand,
+#problema.section-brand {
   border-top: none;
+}
+
+#problema.section-brand .section-label {
+  color: var(--lake-light);
+}
+
+#problema.section-brand .section-title {
+  color: var(--white);
+}
+
+#problema.section-brand .section-intro {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 44em;
+}
+
+#problema.section-brand .section-intro strong {
+  color: var(--white);
+  font-weight: 600;
 }
 
 .problem-layout {
