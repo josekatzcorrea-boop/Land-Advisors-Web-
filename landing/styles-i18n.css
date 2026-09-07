@@ -1,32 +1,32 @@
 .lang-switch {
   display: inline-flex;
-  align-items: center;
-  gap: 0.15rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
   margin-left: 0.75rem;
-  padding: 0.2rem;
-  border-radius: 999px;
-  background: rgba(5, 44, 77, 0.06);
-  border: 1px solid rgba(5, 44, 77, 0.1);
+  flex-shrink: 0;
 }
 
 .lang-switch__btn {
   appearance: none;
   border: 0;
-  background: transparent;
+  background: rgba(5, 44, 77, 0.06);
   color: var(--text-muted, #5a6570);
   font-family: inherit;
-  font-size: 0.72rem;
+  font-size: 0.625rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.35rem 0.55rem;
-  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  border-radius: 100px;
   cursor: pointer;
   line-height: 1;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.28rem;
   transition: background 0.2s ease, color 0.2s ease;
+  border: 1px solid rgba(5, 44, 77, 0.1);
 }
 
 .lang-switch__flag {
@@ -43,13 +43,14 @@
 }
 
 .lang-switch__code {
-  font-size: 0.68rem;
-  letter-spacing: 0.05em;
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
 }
 
 .lang-switch__btn.is-active {
   background: var(--blue, #052c4d);
   color: #fff;
+  border-color: transparent;
 }
 
 .lang-switch__sep {
@@ -72,14 +73,14 @@ html:not(.i18n-loading) body {
   margin-top: 0.75rem;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 901px) {
   .nav .lang-switch {
     margin-top: 0;
-    margin-left: 0.5rem;
+    margin-left: 0.35rem;
   }
 
   .header-inner .lang-switch--header {
-    margin-left: auto;
-    margin-right: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
