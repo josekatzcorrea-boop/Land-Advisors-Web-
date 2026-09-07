@@ -14,8 +14,8 @@ const SITE = { url: "https://www.landadvisors.cl", phone: "56974533265" };
 
 function langSwitch() {
   return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
-            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span class="lang-switch__code">ES</span></button>
-            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><span class="lang-switch__flag" aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><img class="lang-switch__flag" src="../images/flags/es.svg" alt="" width="18" height="12" decoding="async"><span class="lang-switch__code">ES</span></button>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><img class="lang-switch__flag" src="../images/flags/gb.svg" alt="" width="18" height="12" decoding="async"><span class="lang-switch__code">EN</span></button>
           </div>`;
 }
 

@@ -77,10 +77,10 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-function languageSwitcher() {
+function languageSwitcher(prefix = "") {
   return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
-            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span class="lang-switch__code">ES</span></button>
-            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><span class="lang-switch__flag" aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
+            <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><img class="lang-switch__flag" src="${prefix}images/flags/es.svg" alt="" width="18" height="12" decoding="async"><span class="lang-switch__code">ES</span></button>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English"><img class="lang-switch__flag" src="${prefix}images/flags/gb.svg" alt="" width="18" height="12" decoding="async"><span class="lang-switch__code">EN</span></button>
           </div>`;
 }
 
@@ -2073,7 +2073,7 @@ function navLinks(prefix, campaign) {
             <a href="${prefix}guias/" data-i18n="nav.guides">Guías</a>
             <a href="${prefix}#nosotros" data-i18n="nav.about">Nosotros</a>
           </div>
-          ${languageSwitcher()}
+          ${languageSwitcher(prefix)}
           ${navCta}
         </nav>`;
 }

@@ -30,8 +30,13 @@
 }
 
 .lang-switch__flag {
-  font-size: 0.95rem;
-  line-height: 1;
+  display: block;
+  width: 1.15rem;
+  height: 0.78rem;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(5, 44, 77, 0.12);
 }
 
 .lang-switch__code {
