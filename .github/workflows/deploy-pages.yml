@@ -23,8 +23,7 @@ jobs:
 
       - name: Prepare site (landing/ as root)
         run: |
-          powershell -ExecutionPolicy Bypass -File landing/scripts/optimize-isotipo.ps1
-          powershell -ExecutionPolicy Bypass -File landing/scripts/optimize-seo-images.ps1
+          # Scripts .ps1 usan System.Drawing (Windows). Assets ya optimizados en repo.
           node landing/scripts/build-seo.mjs
           node landing/scripts/optimize-plh-images.mjs || true
           mkdir -p _site/assets
