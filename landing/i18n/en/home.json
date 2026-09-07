@@ -55,8 +55,8 @@
     "#solucion .section-label": { "en": "How we reduce risk" },
     "#solucion .section-title": { "en": "On your side before you buy" },
     "#solucion .section-intro": {
-      "en": "We work for the <strong>buyer</strong>, not the seller. We know visible supply and alternatives not on portals — and we tell you transparently when something doesn't fit.",
-      "html": true
+      "en": "We work for the buyer. Our experience buying land in Southern Chile translates into saved resources, lower decision risk, better alternatives and advisory to compare options with objective criteria.",
+      "html": false
     },
     "#solucion .pensamos-lead": { "en": "Less noise. Better decisions. An ally who already knows the basin." },
     "#solucion .cards-bento .card:nth-child(1) h3": { "en": "We filter before you visit" },
