@@ -59,6 +59,14 @@
     return /#(contacto-form|contacto|campaign-lead)\b/i.test(href || "");
   }
 
+  function persistLead(data) {
+    if (!data || !data.nombre || !data.email) return;
+    lastLead = data;
+    try {
+      sessionStorage.setItem("la_lead_gate", JSON.stringify(data));
+    } catch (_) {}
+  }
+
   function isPostFormSuccess(el) {
     return Boolean(
       el.closest(".contact-success") ||
@@ -426,9 +434,7 @@
     }
 
     lastLead = data;
-    try {
-      sessionStorage.setItem("la_lead_gate", JSON.stringify(data));
-    } catch (_) {}
+    persistLead(data);
 
     const dest = data.action === "calendar" ? calendarHref() : buildVisitorWa(data);
 
@@ -497,5 +503,6 @@
   window.LA_LeadGate = {
     open: open,
     close: close,
+    persistLead: persistLead,
   };
 })();

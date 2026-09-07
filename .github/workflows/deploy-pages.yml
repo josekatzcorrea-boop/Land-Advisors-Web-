@@ -23,7 +23,8 @@ jobs:
 
       - name: Prepare site (landing/ as root)
         run: |
-          # Scripts .ps1 usan System.Drawing (Windows). Assets ya optimizados en repo.
+          npm ci --prefix landing || npm install --prefix landing
+          node landing/scripts/optimize-webp.mjs
           node landing/scripts/build-seo.mjs
           node landing/scripts/optimize-plh-images.mjs || true
           mkdir -p _site/assets

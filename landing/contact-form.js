@@ -51,6 +51,15 @@
     "sobre-5000": "Sobre 5.000 UF",
   };
 
+  /** Mapeo formulario contacto → lead-gate (objetivo de compra) */
+  const INTENT_TO_OBJETIVO = {
+    diagnostico: "otro",
+    busqueda: "inversion",
+    estudio: "proyecto",
+    estructuracion: "proyecto",
+    otro: "otro",
+  };
+
   function whatsappConfig() {
     return window.LA_WHATSAPP || {};
   }
@@ -379,17 +388,19 @@
     }
 
     try {
-      sessionStorage.setItem(
-        "la_lead_gate",
-        JSON.stringify({
-          nombre: (data.get("nombre") || "").trim(),
-          email: (data.get("email") || "").trim(),
-          telefono: (data.get("telefono") || "").trim(),
-          objetivo: data.get("intent") || "diagnostico",
-          presupuesto: data.get("presupuesto") || "",
-          action: "calendar",
-        })
-      );
+      const leadPayload = {
+        nombre: (data.get("nombre") || "").trim(),
+        email: (data.get("email") || "").trim(),
+        telefono: (data.get("telefono") || "").trim(),
+        objetivo: INTENT_TO_OBJETIVO[intent] || "otro",
+        presupuesto: data.get("presupuesto") || "",
+        action: "calendar",
+      };
+      if (window.LA_LeadGate && typeof window.LA_LeadGate.persistLead === "function") {
+        window.LA_LeadGate.persistLead(leadPayload);
+      } else {
+        sessionStorage.setItem("la_lead_gate", JSON.stringify(leadPayload));
+      }
     } catch (_) {}
 
     // Abrir destino preferido (calendario si hay; si no, WhatsApp)
