@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/",
+    "type": "home",
+    "breadcrumb": "Home",
+    "title": "Territorial investment in southern Chile | Land Advisors",
+    "description": "Territorial intelligence and rural and peri-urban property consultancy in Puerto Varas, Frutillar, Llanquihue and Malalcahuello. Capital growth, urban expansion and opportunities with clear criteria.",
+    "h1": "Territorial investment in southern Chile",
+    "intro": "We read territory, regulation and local market before recommending land. Consultancy for buyers who want criteria — not another property portal."
+  },
+  {
+    "path": "/servicios/",
+    "type": "hub",
+    "breadcrumb": "Services",
+    "title": "Property consultancy services | Land Advisors",
+    "description": "Strategic diagnostic, personalised search, purchase advisory, potential studies and project structuring in southern Chile. Prices in UF.",
+    "h1": "Service catalogue",
+    "intro": "Consultancy to buy the right land in the Lago Llanquihue and Malalcahuello basin. Territory first, asset second — each service is contracted independently.",
+    "keywords": ["property consultancy", "territorial investment", "property diagnostic"]
+  },
+  {
+    "path": "/territorios/",
+    "type": "hub",
+    "breadcrumb": "Territories",
+    "title": "Property investment territories in southern Chile | Land Advisors",
+    "description": "Territorial intelligence in Puerto Varas, Frutillar, Llanquihue, Malalcahuello, bespoke Patagonia and the Lago Llanquihue basin. Capital growth and urban expansion opportunities.",
+    "h1": "Territories where we read the property market",
+    "intro": "We operate in the peri-urban rural fringe of Los Lagos and Malalcahuello — and extend coverage across Patagonia on a bespoke basis, with commercial partnerships and site visits when the project warrants it.",
+    "keywords": ["territorial investment", "property opportunities southern Chile", "property capital growth"]
+  },
+  {
+    "path": "/casos-de-estudio/",
+    "type": "hub",
+    "breadcrumb": "Case studies",
+    "title": "Property case studies | Land Advisors Chile",
+    "description": "Real territorial investment cases in Puerto Varas, Frutillar and Llanquihue: capital growth, change of use and property arbitrage.",
+    "h1": "Territorial investment case studies",
+    "intro": "Past results do not guarantee future results. These cases show how territorial intelligence reveals opportunities the market does not price in.",
+    "keywords": ["property investment cases", "land capital growth", "property opportunities southern Chile"]
+  },
+  {
+    "path": "/guias/",
+    "type": "guide-hub",
+    "breadcrumb": "Guides",
+    "primaryGuide": "comprar-terreno-sur-chile",
+    "title": "How to buy land in southern Chile | Land Advisors guide",
+    "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, enabling costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
+    "h1": "How to buy land in southern Chile",
+    "intro": "Buying land in southern Chile can be a major decision — and there is plenty of attractive stock on the market. The key is not to browse more listings, but to set your basic criteria first. With that clear, you can choose options that actually fit and compare what matters most for your quality of life or project returns.",
+    "keywords": ["buy land southern Chile", "land buying guide", "land Puerto Varas", "land purchase advisory"]
+  },
+  {
+    "path": "/indice-territorial/",
+    "type": "ila-hub",
+    "breadcrumb": "Territorial index",
+    "title": "Land Advisors Index (ILA) | Territorial intelligence southern Chile",
+    "description": "Land Advisors territorial index v0: score by sector in Puerto Varas, Frutillar, Llanquihue and Ensenada. Connectivity, regulation, market and enabling risk — not listing price.",
+    "h1": "Land Advisors Index",
+    "intro": "Territorial score by rural fringe sector. Calibrated with 2024 Census data, municipal regulation and real cases — to compare zones with criteria, not listing impulse.",
+    "keywords": ["territorial index", "territorial intelligence Chile", "invest land south", "Puerto Varas Frutillar Llanquihue"]
+  },
+  {
+    "path": "/inteligencia-territorial/",
+    "type": "intelligence-hub",
+    "breadcrumb": "Territorial intelligence",
+    "title": "Territorial intelligence | Land Advisors Chile library",
+    "description": "Rural fringe series, territories, real cases and guides to decide well when buying land in southern Chile. Territorial consultancy, not an estate agency.",
+    "h1": "Territorial intelligence",
+    "intro": "Library to read land, regulation, connectivity and market before buying in the Lago Llanquihue and Malalcahuello basin.",
+    "keywords": ["territorial intelligence", "rural fringe", "buy land southern Chile", "property consultancy"]
+  },
+  {
+    "path": "/blog/",
+    "type": "blog",
+    "breadcrumb": "Blog",
+    "title": "Territorial intelligence and property investment blog | Land Advisors",
+    "description": "Articles on capital growth, urban expansion, change of land use, the southern Chile property market and territorial investment.",
+    "h1": "Territorial intelligence and property investment",
+    "intro": "We publish analysis on the southern Chile property market, rural development and investment opportunities with territorial backing.",
+    "keywords": ["territorial intelligence", "property capital growth", "urban expansion", "southern Chile property market"]
+  }
+]

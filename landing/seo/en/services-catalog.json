@@ -1,0 +1,135 @@
+{
+  "lead": "Consultancy to buy the right land in the Lago Llanquihue and Malalcahuello basin. Territory first, asset second — each service is contracted independently.",
+  "priceNote": "Prices in UF · subject to confirmation at your strategy session.",
+  "legal": "We are not an estate agency or property portal. Every piece of land requires a specific assessment.",
+  "promo": {
+    "active": true,
+    "validThrough": "2026-09-30",
+    "deadlineLabel": "until 30 September",
+    "href": "/campanas/busqueda-personalizada-30/",
+    "badge": "Promotion active",
+    "title": "Free diagnostic · 30% off search",
+    "text": "No obligation to buy more. If you want to continue, the search service is 3.5 UF.",
+    "cta": "See full promotion →",
+    "services": ["diagnostico-estrategico", "busqueda-personalizada"],
+    "deals": {
+      "diagnostico-estrategico": {
+        "oldPrice": "1 UF",
+        "newPrice": "FREE",
+        "highlight": "Free diagnostic",
+        "sub": "No obligation to buy more",
+        "variant": "free"
+      },
+      "busqueda-personalizada": {
+        "oldPrice": "5 UF",
+        "newPrice": "3.5 UF",
+        "highlight": "30% discount",
+        "sub": "Free strategic diagnostic included",
+        "variant": "discount",
+        "pct": "30%"
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "More than a piece of land",
+    "phrase": "This is what your future in southern Chile can look like — family, landscape and quality of life in areas with tourism potential. With the right land and our support, the investment feels like this too.",
+    "ariaLabel": "Gallery — life and investment in southern Chile",
+    "images": [
+      {
+        "file": "galeria-04-opt.jpg",
+        "alt": "Group exploring the territory in the southern Andes",
+        "position": "center 22%"
+      },
+      {
+        "file": "galeria-05-opt.jpg",
+        "alt": "Lake and tourist town view from the rural fringe",
+        "position": "32% center"
+      },
+      {
+        "file": "familia-outdoor-opt.jpg",
+        "alt": "Family enjoying the landscape of southern Chile",
+        "position": "center 38%"
+      },
+      {
+        "file": "tinaja-outdoor-opt.jpg",
+        "alt": "Rest and quality of life by the lake",
+        "position": "center 42%"
+      }
+    ]
+  },
+  "services": [
+    {
+      "num": "01",
+      "slug": "diagnostico-estrategico",
+      "title": "Strategic property diagnostic",
+      "price": "1 UF",
+      "deliverables": [
+        "Strategy session (in person or online)",
+        "Report with recommended zones and evaluation criteria",
+        "Concrete next steps based on your budget and objective"
+      ],
+      "notes": ["Ideal if you still do not know which zone to target or how to evaluate options."],
+      "promoNote": "Until 30 September: free diagnostic with no obligation.",
+      "cta": { "label": "Book diagnostic →", "event": "cta_diagnostico" }
+    },
+    {
+      "num": "02",
+      "slug": "busqueda-personalizada",
+      "title": "Personalised land search",
+      "price": "5 UF",
+      "deliverables": [
+        "Selection of at least 4 land options aligned with your objective and budget",
+        "Session with you to rule out, reselect and define the 3 best options together",
+        "Comparison report on the 3 best alternatives selected with the client",
+        "Purchase recommendation"
+      ],
+      "notes": [
+        "Includes strategic diagnostic.",
+        "For buyers who want curated options, not a mass catalogue."
+      ],
+      "highlightNote": "Includes strategic diagnostic.",
+      "promoNote": "Promotion: free diagnostic + search at 3.5 UF (was 5 UF) until 30 September.",
+      "cta": { "label": "Request search →", "event": "cta_busqueda" }
+    },
+    {
+      "num": "03",
+      "slug": "asesoria-compra",
+      "title": "Purchase advisory and acquisition support",
+      "price": "2.5% of purchase value",
+      "deliverables": [
+        "Negotiation strategy and document review",
+        "Coordination with notary and suppliers through to completion",
+        "Progress reports and closing checklist"
+      ],
+      "notes": ["5 UF less if you previously contracted personalised search."],
+      "cta": { "label": "Enquire about advisory →", "event": "cta_contacto" }
+    },
+    {
+      "num": "04",
+      "slug": "estudio-potencial-inmobiliario",
+      "title": "Property potential study",
+      "price": "From 10 UF",
+      "objective": "Objective: establish the commercial vocation of a piece of land, the optimal project and why.",
+      "deliverables": [
+        "Report with territorial and regulatory analysis",
+        "Value scenarios and identified risks",
+        "Recommendation to proceed or not, with verifiable support"
+      ],
+      "notes": ["Scope and final fee depend on land and project complexity."],
+      "cta": { "label": "Request study →", "event": "cta_estudio" }
+    },
+    {
+      "num": "05",
+      "slug": "estructuracion-proyectos",
+      "title": "Project structuring and development",
+      "price": "From 20 UF",
+      "deliverables": [
+        "Business model and territorial feasibility",
+        "Applicable regulation and project scenarios",
+        "Roadmap for cabins, tourism, strip centre, retail or short-stay rental"
+      ],
+      "notes": ["Territory and regulation before the business model."],
+      "cta": { "label": "Enquire about structuring →", "event": "cta_estructuracion" }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "campaigns": [
+    {
+      "slug": "comprar-terreno-sur",
+      "template": "intent",
+      "intent": "A",
+      "title": "Buy land in southern Chile | Strategic Diagnostic | Land Advisors",
+      "description": "Consultancy to buy the right land in Puerto Varas, Frutillar and Llanquihue. We are not an estate agency: we filter with territorial criteria before you offer.",
+      "h1": "Buy land in the south without losing months on listings that do not fit",
+      "heroProblem": "Saturated portals, unclear regulation and prices that do not compare with local criteria.",
+      "heroWhyUs": "Territorial intelligence consultancy — not an agency, no land portfolio of our own.",
+      "heroGain": "In the strategy session you clarify zone, total budget and next steps with basin data.",
+      "ctaLabel": "Book diagnostic",
+      "heroLead": "A compelling view is a fair starting point. We help you confirm whether the land matches your objective, whether the price stacks up and what alternatives exist — before you travel south without a plan.",
+      "sectionLabel": "Land buyer",
+      "priceAnchor": "Strategic Diagnostic · 1 UF · online or in-person session",
+      "serviceEvent": "cta_diagnostico",
+      "calendarIntent": "diagnostico",
+      "whatsappIntro": "Hello, I found you on Google. I would like to book a diagnostic to buy land in southern Chile.",
+      "image": "/images/caso-puerto-varas.jpg",
+      "imageAlt": "Puerto Varas and rural fringe — Lago Llanquihue basin",
+      "imagePosition": "center 40%",
+      "includesTitle": "What the strategy session resolves",
+      "includes": [
+        "Clear objective: home, heritage, cabins or life project",
+        "Compatible municipalities for your budget and connectivity",
+        "Criteria to filter land — regulation, access, comparables",
+        "Recommended path: diagnostic, personalised search or study",
+        "No pressure to sell a specific lot — we are consultants"
+      ],
+      "steps": [
+        { "num": "1", "title": "Strategy session", "text": "30–45 min online or in Puerto Varas. We understand your objective and real constraints." },
+        { "num": "2", "title": "Territorial map", "text": "We deliver recommended zones and criteria to evaluate listings — not a mass catalogue." },
+        { "num": "3", "title": "Short list (optional)", "text": "If you move to Personalised Search: ≥4 options, session with you and report on the 3 best." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "4+", "label": "municipalities in the basin" },
+          { "value": "≥4", "label": "filtered options in search" },
+          { "value": "1 UF", "label": "strategic diagnostic" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — price gap", "metric": "26M → 42M" },
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — commercial vocation", "metric": "+50%" }
+        ],
+        "quotes": [
+          { "text": "\"We had dozens of open listings and no criteria to compare them. The session clarified zone and budget before we travelled.\"", "source": "Buyer from Santiago" },
+          { "text": "\"We were not looking for an agency — we wanted someone aligned with us before making an offer.\"", "source": "Family, rural fringe" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Free guide: 6 steps to buy land in the south",
+        "description": "Full process, common mistakes and when each service makes sense — without hype.",
+        "href": "guias/comprar-terreno-sur-chile/",
+        "cta": "Read full guide →"
+      },
+      "allyText": "Photos open the visit. Territory, regulation and numbers close the decision — we accompany you in that order, without dampening what drew you to the place.",
+      "faq": [
+        { "q": "Do you sell land?", "a": "No. Land Advisors is territorial consultancy. We have no portfolio and no seller commission." },
+        { "q": "Can I book only the session?", "a": "Yes. Strategic Diagnostic (1 UF) is the starting point. Personalised Search is the next step if you want filtered options." },
+        { "q": "Do you work with buyers outside the south?", "a": "Yes. Many clients live in Santiago. The initial session is online; visits are planned around a short list." }
+      ],
+      "legal": "Prices in UF · subject to confirmation in session. Educational content. We are not an estate agency or property portal.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-COMPRAR",
+        "whatsappToken": "LA-A-COMPRAR",
+        "whatsappPhone": "56974533265",
+        "suggestedDailyBudgetClp": "20000-35000"
+      }
+    },
+    {
+      "slug": "invertir-terreno-sur",
+      "template": "intent",
+      "intent": "B",
+      "title": "Invest in land in southern Chile | Heritage consultancy",
+      "description": "Territorial property investment in Puerto Varas, Frutillar and Llanquihue. Capital growth with criteria — not promises of returns.",
+      "h1": "Invest in land in the south: real capital growth or already in the price?",
+      "heroProblem": "Optimistic projections in listings, few local comparables and regulation missing from the sheet.",
+      "heroWhyUs": "We read urban expansion, connectivity and local market before validating a heritage investment.",
+      "heroGain": "Strategy session to distinguish verifiable opportunity from price inflated by tourism narrative.",
+      "ctaLabel": "Book diagnostic",
+      "heroLead": "Investing on the rural fringe can make sense — if present value closes with data, not with an optimistic slide deck.",
+      "sectionLabel": "Heritage investment",
+      "priceAnchor": "Diagnostic 1 UF · Potential study from 10 UF",
+      "serviceEvent": "cta_diagnostico",
+      "calendarIntent": "diagnostico",
+      "whatsappIntro": "Hello, I found you on Google. I am looking for advisory to invest in land in southern Chile.",
+      "image": "/images/blog-plusvalia.jpg",
+      "imageAlt": "Lago Llanquihue basin — reading territorial capital growth",
+      "imagePosition": "center 35%",
+      "includesTitle": "What we analyse in your case",
+      "includes": [
+        "Capital growth vs. entry price — return on purchase or on waiting?",
+        "Urban expansion, connectivity and municipal investment in the sector",
+        "Enabling costs added to list price",
+        "Conservative exit scenario with comparables",
+        "Recommendation to proceed, negotiate or pass"
+      ],
+      "steps": [
+        { "num": "1", "title": "Strategy session", "text": "We define heritage profile, horizon and tolerance for territorial risk." },
+        { "num": "2", "title": "Market reading", "text": "We contrast visible offer with local dynamics by municipality and sector." },
+        { "num": "3", "title": "Study (if applicable)", "text": "With land in view: report on vocation, regulation and scenarios from 10 UF." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "3", "label": "documented cases in basin" },
+          { "value": "10 UF", "label": "potential study from" },
+          { "value": "0", "label": "own land for sale" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/llanquihue-valor-presente-futuro/", "label": "Llanquihue — present vs. future value", "metric": "4.400 UF" },
+          { "href": "blog/plusvalia-contorno-rural-puerto-varas/", "label": "Series: capital growth on rural fringe", "metric": "Article" }
+        ],
+        "quotes": [
+          { "text": "\"The seller promised capital growth in three years. Sector comparables told a different story.\"", "source": "Heritage investor" },
+          { "text": "\"We needed someone who read territory, not someone pushing a lot.\"", "source": "Santiago client" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Article: how to read capital growth on the rural fringe",
+        "description": "Value arguments, enabling costs and when return sits in the purchase price.",
+        "href": "blog/plusvalia-contorno-rural-puerto-varas/",
+        "cta": "Read article →"
+      },
+      "allyText": "Past results do not guarantee future results. Our role is to give you verifiable criteria — not a promise of returns.",
+      "faq": [
+        { "q": "Do you promise returns?", "a": "No. We work with conservative scenarios and local data. The final decision is yours." },
+        { "q": "How are you different from an estate agency?", "a": "We do not sell inventory. We charge for consultancy and have no incentive to push a specific property." },
+        { "q": "From what budget can I invest?", "a": "We work with buyers from ~1,000 UF total budget (purchase + enabling). The diagnostic clarifies whether the south fits your profile." }
+      ],
+      "legal": "Educational content. Does not constitute investment advice or a promise of returns.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-INVERTIR",
+        "whatsappToken": "LA-B-INVERTIR",
+        "whatsappPhone": "56974533265",
+        "suggestedDailyBudgetClp": "15000-25000"
+      }
+    },
+    {
+      "slug": "evaluar-terreno-encontrado",
+      "template": "intent",
+      "intent": "C",
+      "title": "Evaluate land before buying | Territorial study | Land Advisors",
+      "description": "Already have land in view? Potential study: regulation, access, services, comparables and recommendation before you offer.",
+      "h1": "You found a piece of land. Should you offer?",
+      "heroProblem": "The visit went well, but PRC, subdivision covenants, registered access and sector comparables are missing.",
+      "heroWhyUs": "Territorial due diligence before the offer — not commercial valuation or brokerage.",
+      "heroGain": "Report with vocation, risks and recommendation to proceed, negotiate or pass.",
+      "ctaLabel": "Book diagnostic",
+      "heroLead": "Attractive land can be expensive if regulation does not support your project or if price already embeds unsupported future value.",
+      "sectionLabel": "Land in view",
+      "priceAnchor": "Property potential study · from 10 UF",
+      "serviceEvent": "cta_estudio",
+      "calendarIntent": "estudio",
+      "whatsappIntro": "Hello, I found you on Google. I already have land in view and want to evaluate it before offering.",
+      "image": "/images/caso-elegir.jpg",
+      "imageAlt": "Land evaluation on the rural fringe of southern Chile",
+      "imagePosition": "center 45%",
+      "includesTitle": "What the study includes",
+      "includes": [
+        "Territorial and regulatory analysis (PRC, covenants, access)",
+        "Real connectivity and estimated enabling costs",
+        "Local comparables — sales, not just active listings",
+        "Value scenarios and identified risks",
+        "Explicit recommendation: proceed, negotiate or pass"
+      ],
+      "steps": [
+        { "num": "1", "title": "Initial session", "text": "We gather property background, your objective and asking price." },
+        { "num": "2", "title": "Field work", "text": "We verify regulation, access, services and sector comparables." },
+        { "num": "3", "title": "Report and session", "text": "We deliver conclusions with verifiable support and suggested negotiation margin." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "10 UF", "label": "study from" },
+          { "value": "3", "label": "scenarios per report" },
+          { "value": "100%", "label": "independent of seller" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — restriction on listing", "metric": "+50%" },
+          { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — pricing error", "metric": "26M → 42M" }
+        ],
+        "quotes": [
+          { "text": "\"The covenants prohibited what the seller promised. The study saved us a wrong offer.\"", "source": "Buyer, type B subdivision" },
+          { "text": "\"We needed real sector comparables — not the portal average.\"", "source": "Client evaluating Llanquihue" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Checklist: PRC and covenants before offering",
+        "description": "What to verify on the rural fringe — third part of the rural fringe series.",
+        "href": "blog/prc-contorno-rural-puerto-varas/",
+        "cta": "View regulatory checklist →"
+      },
+      "allyText": "A place you want is a good sign. Offering without due diligence is what we help you avoid — we will tell you honestly whether to proceed.",
+      "faq": [
+        { "q": "Is this the same as a valuation?", "a": "No. We do not certify commercial value for lending. We evaluate vocation, risks and price–market coherence for your purchase decision." },
+        { "q": "Can I send only the listing link?", "a": "It works as a starting point. The study deepens regulation, access and comparables not on the sheet." },
+        { "q": "How long does it take?", "a": "Depends on property and municipality. In the initial session we give estimated timeline and scope in UF." }
+      ],
+      "legal": "Scope and final fee depend on complexity. Does not constitute legal advice.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-EVALUAR",
+        "whatsappToken": "LA-C-EVALUAR",
+        "whatsappPhone": "56974533265",
+        "suggestedDailyBudgetClp": "12000-20000"
+      }
+    },
+    {
+      "slug": "valorizar-terreno-sur",
+      "template": "intent",
+      "intent": "D",
+      "title": "Value land in the south | Potential and change of use | Land Advisors",
+      "description": "Valuation and land vocation study in the Lago Llanquihue basin. Tourism, heritage or change of use — with regulatory support.",
+      "h1": "Does your land have real potential — or is it already in the price?",
+      "heroProblem": "You were sold \"future tourism\" or change of use without checking PRC, covenants or sector demand.",
+      "heroWhyUs": "We study commercial land vocation under current regulation — not PowerPoint projections.",
+      "heroGain": "Conservative value scenarios and recommendation to proceed or not with territorial backing.",
+      "ctaLabel": "Book diagnostic",
+      "heroLead": "Cabins, heritage or commerce can fit — but not on every property or under every regulation.",
+      "sectionLabel": "Territorial valuation",
+      "priceAnchor": "Potential study · from 10 UF · Structuring from 20 UF",
+      "serviceEvent": "cta_estudio",
+      "calendarIntent": "estudio",
+      "whatsappIntro": "Hello, I found you on Google. I want to evaluate the value potential of land in the south.",
+      "image": "/images/blog-cambio-uso.jpg",
+      "imageAlt": "Tourism and residential potential on the rural fringe of the south",
+      "imagePosition": "center 30%",
+      "includesTitle": "What the study establishes",
+      "includes": [
+        "Commercial vocation of the land: home, cabins, heritage, commerce",
+        "Change of use: what is verifiable vs. hypothetical",
+        "Tourist demand and sector connectivity",
+        "Enabling costs vs. conservative exit value",
+        "Roadmap if structuring the project makes sense (from 20 UF)"
+      ],
+      "steps": [
+        { "num": "1", "title": "Define objective", "text": "Heritage, tourist income, resale or own project?" },
+        { "num": "2", "title": "Territorial study", "text": "Regulation, local market and value scenarios in report." },
+        { "num": "3", "title": "Informed decision", "text": "Proceed, renegotiate price or seek alternative with better risk–return." }
+      ],
+      "proof": {
+        "stats": [
+          { "value": "+50%", "label": "PV case — commercial vocation" },
+          { "value": "4.400 UF", "label": "Llanquihue case" },
+          { "value": "5", "label": "parts rural fringe series" }
+        ],
+        "cases": [
+          { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Shift to commercial vocation", "metric": "+50%" },
+          { "href": "blog/cambio-uso-suelo-contorno-rural/", "label": "Article: change of use", "metric": "8 min" }
+        ],
+        "quotes": [
+          { "text": "\"We thought any land worked for cabins. PRC and covenants said otherwise.\"", "source": "Tourism project" },
+          { "text": "\"We wanted to know if potential was already paid in the price. That changed the negotiation.\"", "source": "Investor, Frutillar" }
+        ]
+      },
+      "leadMagnet": {
+        "title": "Report: change of use and property tourism",
+        "description": "When it makes economic sense — and when to doubt the seller's promise.",
+        "href": "blog/cambio-uso-suelo-contorno-rural/",
+        "cta": "Read report →"
+      },
+      "allyText": "Capital growth on paper is easy to sketch. Understanding it with criteria means unpacking concrete arguments — that is what we do.",
+      "faq": [
+        { "q": "Do you guarantee value growth?", "a": "No. We deliver scenarios with explicit assumptions and recommendation based on local data." },
+        { "q": "Is this for selling my land?", "a": "The focus is purchase or project decision. If you are a seller, we can advise on positioning — but we are not an agency." },
+        { "q": "Does it include change-of-use processing?", "a": "We identify feasibility. Processing requires competent professionals; we coordinate if you contract Purchase Advisory." }
+      ],
+      "legal": "Past results do not guarantee future results. Educational content.",
+      "ads": {
+        "utmCampaign": "LA-SEARCH-VALORIZAR",
+        "whatsappToken": "LA-D-VALORIZAR",
+        "whatsappPhone": "56974533265",
+        "suggestedDailyBudgetClp": "10000-18000"
+      }
+    },
+    {
+      "slug": "busqueda-personalizada-30",
+      "template": "promo",
+      "promoFlow": "diagnostico-first",
+      "title": "Free Strategic Diagnostic | 30% off search | Land Advisors",
+      "description": "Promotion until 30 September: free Strategic Diagnostic (value 1 UF) with no obligation. Then, if it helps, Personalised Search quoted at 3.5 UF (was 5 UF) in Puerto Varas, Frutillar and Llanquihue.",
+      "sectionLabel": "Strategic Diagnostic",
+      "h1": "Get your free diagnostic",
+      "h1Gradient": "and quote search with 30% off",
+      "heroLead": "Looking for land in the south and not sure where to start? First we clarify your objective, zones and criteria — at no cost and with no obligation to buy more. If you then want us to search with you, Personalised Search is 30% off until 30 September.",
+      "deadline": "2026-09-30",
+      "deadlineLabel": "30 September 2026",
+      "pricePromo": "3,5 UF",
+      "priceRegular": "5 UF",
+      "priceDiagnostic": "1 UF",
+      "discountPercent": 30,
+      "commissionCredit": "If you later buy with our Purchase Advisory (2.5%), the 3.5 UF paid for search is deducted from that fee.",
+      "whatsappIntro": "Hello, I saw the free Strategic Diagnostic promotion (valid until 30 September). I would like to book my session with no obligation.",
+      "image": "/images/hero.jpg",
+      "imageAlt": "Rural fringe landscape in the Lago Llanquihue basin",
+      "imageWidth": 1600,
+      "imageHeight": 1067,
+      "imagePosition": "center 35%",
+      "sideImage": "/images/galeria/galeria-12.jpg",
+      "sideImageAlt": "Site exploration with clients in the southern Chile basin",
+      "sideImageCaption": "Walking land is a natural part of the process — we accompany you at every stage.",
+      "serviceEvent": "cta_diagnostico",
+      "leadForm": true,
+      "compare": {
+        "kicker": "The difference that matters",
+        "title": "Who works for you when buying land?",
+        "intro": "At an estate agency, the mandate usually comes from the owner who sells. At Land Advisors, the consultant works only for you: the buyer. Same word \"advisory\", different incentives.",
+        "laTitle": "Land Advisors",
+        "laSubtitle": "Your consultant",
+        "corTitle": "Estate agency",
+        "corSubtitle": "Seller's side",
+        "note": "Wanting a place is natural. We add territorial and local market criteria so that decision holds up — working in your interests as the buyer.",
+        "rows": [
+          {
+            "label": "Who do they work for?",
+            "spotlight": true,
+            "la": "Only for you — the buyer. We protect your objective, budget and decision.",
+            "cor": "For the owner who sells — and also intermediates with you. Their mandate comes from the supply side."
+          },
+          {
+            "label": "Role",
+            "la": "A consultant who searches — among contacts, agencies and developers — for the land that best fits your objectives and needs.",
+            "cor": "A salesperson who prioritises which of their own plots is easiest to sell you."
+          },
+          {
+            "label": "Offer they know",
+            "la": "Studies the broad territorial offer: owners, agencies and developers.",
+            "cor": "Knows mainly the land they have for sale."
+          },
+          {
+            "label": "Clients",
+            "la": "Clients who want to make a smart purchase or a sound investment.",
+            "cor": "A client willing to choose land with less territorial information."
+          },
+          {
+            "label": "Incentive",
+            "la": "That you choose land appropriate to your objective, whatever it may be.",
+            "cor": "Closing the sale of an asset from their stock."
+          }
+        ]
+      },
+      "video": {
+        "src": "/videos/promo-busq30.mp4",
+        "poster": "/videos/promo-busq30-poster.jpg",
+        "title": "See how the free diagnostic works",
+        "caption": "José explains the promotion in ~25 seconds. When you are ready, book your diagnostic.",
+        "hint": "Tap play · ~25 s",
+        "ctaLabel": "Book diagnostic",
+        "track": "cta_promo_video_play"
+      },
+      "includes": [
+        "Free Strategic Diagnostic: online or in-person session, recommended zones and criteria to evaluate land",
+        "No obligation to contract search or any other service",
+        "If it helps afterwards: Personalised Search quoted at 3.5 UF (was 5 UF) — 30% discount",
+        "Optional search: ≥4 options, session with you, report on the 3 best and recommendation",
+        "We are not an estate agency: we do not sell our own land"
+      ],
+      "steps": [
+        {
+          "num": "1",
+          "title": "Free diagnostic",
+          "text": "Strategy session at no cost: objective, budget, sensible zones in Puerto Varas, Frutillar, Llanquihue and Malalcahuello, and what to check before visiting."
+        },
+        {
+          "num": "2",
+          "title": "Quote without pressure",
+          "text": "If you want to continue, we quote Personalised Search at 3.5 UF (30% off). If not, you keep the map and criteria — no extra commitment."
+        },
+        {
+          "num": "3",
+          "title": "Search with criteria",
+          "text": "We filter territory, regulation, services and price — not just what is most visible on portals."
+        },
+        {
+          "num": "4",
+          "title": "Report and decision",
+          "text": "We choose the 3 best options together. If you buy with our advisory, the 3.5 UF is deducted from the fee."
+        }
+      ],
+      "allyText": "The diagnostic clarifies zone and criteria before another trip south. Search is optional: we accompany you with local criteria, without pressure.",
+      "trust": {
+        "metric": "More than 100,000 UF invested through our consultancy",
+        "galleryLabel": "Our clients speak for us",
+        "gallery": [
+          { "file": "images/clientes/cliente-01.jpg", "alt": "Client on their land in southern Chile", "position": "center 30%" },
+          { "file": "images/clientes/cliente-02.jpg", "alt": "Site visit with clients on rural land", "position": "center 40%" },
+          { "file": "images/clientes/cliente-03.jpg", "alt": "Territorial exploration with Land Advisors", "position": "center 35%" },
+          { "file": "images/clientes/cliente-04.jpg", "alt": "Landscape and project on the rural fringe", "position": "center 40%" },
+          { "file": "images/clientes/cliente-05.jpg", "alt": "Land walk with clients", "position": "center 35%" },
+          { "file": "images/clientes/cliente-06.jpg", "alt": "Clients on land visit", "position": "center 40%" },
+          { "file": "images/clientes/cliente-07.jpg", "alt": "Couple on their land in the south", "position": "center 30%" },
+          { "file": "images/clientes/cliente-08.jpg", "alt": "Site walk with Land Advisors", "position": "center 40%" },
+          { "file": "images/clientes/cliente-09.jpg", "alt": "Lake and volcano view on land visit", "position": "center 35%" },
+          { "file": "images/clientes/cliente-10.jpg", "alt": "Happy client on their land", "position": "center 28%" },
+          { "file": "images/clientes/cliente-11.jpg", "alt": "Client on land with open view", "position": "center 30%" },
+          { "file": "images/clientes/cliente-12.jpg", "alt": "Moment with clients in southern Chile", "position": "center 40%" },
+          { "file": "images/clientes/cliente-13.jpg", "alt": "Exploration by lake and mountains", "position": "center 45%" },
+          { "file": "images/clientes/cliente-14.jpg", "alt": "Clients together on their land", "position": "center 40%" },
+          { "file": "images/clientes/cliente-15.jpg", "alt": "Rural land visit with clients", "position": "center 35%" },
+          { "file": "images/clientes/cliente-16.jpg", "alt": "Walk by a river in the south", "position": "center 40%" },
+          { "file": "images/clientes/cliente-17.jpg", "alt": "Clients walking the land", "position": "center 38%" },
+          { "file": "images/clientes/cliente-18.jpg", "alt": "On-site advisory with panoramic view", "position": "center 40%" }
+        ]
+      },
+      "faq": [
+        {
+          "q": "Do I have to contract search to get the free diagnostic?",
+          "a": "No. Strategic Diagnostic is free in this promotion, with no obligation to contract search or any other service."
+        },
+        {
+          "q": "What does the free Strategic Diagnostic include?",
+          "a": "Strategy session (online or in person), recommended zones for your objective and criteria to evaluate land before offering. Usual value: 1 UF."
+        },
+        {
+          "q": "When does Personalised Search at 3.5 UF apply?",
+          "a": "Only if after the diagnostic you decide you want us to search with you. We give a clear quote; there is no automatic commitment."
+        },
+        {
+          "q": "Are the 3.5 UF deducted if I buy land?",
+          "a": "Yes. If you contract our Purchase Advisory (2.5% of value), the 3.5 UF paid for Personalised Search is deducted from that fee."
+        },
+        {
+          "q": "How long is the promotion valid?",
+          "a": "Free diagnostic and search at 3.5 UF valid for bookings confirmed until 30 September 2026, subject to availability."
+        },
+        {
+          "q": "Do you work with buyers outside the south?",
+          "a": "Yes. Many clients live in Santiago or northern Chile and buy in the Lago Llanquihue and Malalcahuello basin. The initial session can be online."
+        },
+        {
+          "q": "Are you an estate agency?",
+          "a": "No. Land Advisors is territorial consultancy: we do not sell our own land; we help you buy the right piece with territorial and local market reading."
+        }
+      ],
+      "legal": "Free diagnostic with no obligation to contract other services. Search at 3.5 UF subject to quote and confirmation. Prices in UF. We are not an estate agency or property portal.",
+      "ads": {
+        "utmCampaign": "busqueda-30-sep2026",
+        "whatsappToken": "LA-BUSQ30",
+        "whatsappPhone": "56974533265",
+        "googleAdsWaUrl": "https://wa.me/56974533265?text=Hola%2C%20vi%20la%20promoci%C3%B3n%20de%20diagn%C3%B3stico%20estrat%C3%A9gico%20gratis%20(v%C3%A1lida%20hasta%2030%20de%20septiembre).%20Quiero%20agendar%20mi%20sesi%C3%B3n%20sin%20compromiso.%0A%0A%5BRef%3A%20LA-BUSQ30%5D%0A%0A(Ref%3A%20google%20%2F%20paid%20%2F%20busqueda-30-sep2026)",
+        "audienceNotes": "Santiago + south priority + northern high-income zones (mining). Interests: property investment, land southern Chile, Puerto Varas, quality of life.",
+        "suggestedDailyBudgetClp": "15000-25000"
+      }
+    }
+  ]
+}

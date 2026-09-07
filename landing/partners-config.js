@@ -10,7 +10,9 @@ window.LA_PARTNERS = [
     showName: false,
     logoScale: 1.15,
     description:
-      "Construcción llave en mano en el sur de Chile. Más de 8 años de experiencia y más de 200 casas entregadas con sistemas panelizados SIP y modulares Tecno Fast. Presupuesto cerrado y entrega desde 5 meses.",
+      "Turnkey construction in southern Chile. Over 8 years of experience and more than 200 homes delivered with SIP panelised and Tecno Fast modular systems. Fixed budget and delivery from 5 months.",
+    descriptionEn:
+      "Turnkey construction in southern Chile. Over 8 years of experience and more than 200 homes delivered with SIP panelised and Tecno Fast modular systems. Fixed budget and delivery from 5 months.",
     redirectUrl:
       "https://www.iterrasur.cl/?gad_source=1&gbraid=0AAAAApkrw-yWNEoPkUtmbzbCzLWP1eJQe",
   },

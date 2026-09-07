@@ -1,0 +1,82 @@
+{
+  "h1": "Territorial intelligence",
+  "intro": "We read land, regulation, connectivity and local market before recommending a purchase. This library brings together the rural fringe series, the territories where we operate and real cases — so you decide with criteria, not listing impulse.",
+  "author": "José Hernán Katz C.",
+  "datePublished": "2026-07-08",
+  "dateModified": "2026-07-08",
+  "readMinutes": 8,
+  "image": "/images/intel-territorial.jpg",
+  "imageAlt": "Aerial view of subdivision with lake and volcano — territorial reading in the basin",
+  "clusters": [
+    {
+      "label": "Index and observatory",
+      "description": "ILA v0 — territorial score by sector and 2026 Observatory pilot with Census and municipal planning data.",
+      "links": [
+        { "href": "indice-territorial/", "label": "Land Advisors Index (ILA)", "meta": "16 sectors" },
+        { "href": "indice-territorial/#observatorio-2026", "label": "Basin Observatory 2026", "meta": "Pilot" }
+      ]
+    },
+    {
+      "label": "Series: rural fringe of Puerto Varas",
+      "description": "Five parts to read capital growth, costs, regulation, connectivity and land vocation in the peri-urban fringe.",
+      "links": [
+        { "href": "blog/plusvalia-contorno-rural-puerto-varas/", "label": "Part 1 — Territorial capital growth", "meta": "6 min" },
+        { "href": "blog/costos-habilitacion-terreno-contorno-rural/", "label": "Part 2 — Enabling costs", "meta": "5 min" },
+        { "href": "blog/prc-contorno-rural-puerto-varas/", "label": "Part 3 — PRC and rural fringe", "meta": "7 min" },
+        { "href": "blog/conectividad-real-contorno-rural/", "label": "Part 4 — Real connectivity vs. map", "meta": "6 min" },
+        { "href": "blog/vocacion-suelo-contorno-rural/", "label": "Part 5 — Land vocation", "meta": "7 min" }
+      ]
+    },
+    {
+      "label": "Territories",
+      "description": "Market reading by municipality in the Lago Llanquihue and Malalcahuello basin.",
+      "links": [
+        { "href": "territorios/puerto-varas/", "label": "Puerto Varas", "meta": "Full guide" },
+        { "href": "territorios/frutillar/", "label": "Frutillar", "meta": "Full guide" },
+        { "href": "territorios/llanquihue/", "label": "Llanquihue", "meta": "Full guide" },
+        { "href": "territorios/malalcahuello/", "label": "Malalcahuello", "meta": "Full guide" }
+      ]
+    },
+    {
+      "label": "Cases and learnings",
+      "description": "Real decisions with problem, analysis, outcome and transferable learning.",
+      "links": [
+        { "href": "casos-de-estudio/puerto-varas-restriccion-comercial/", "label": "Puerto Varas — commercial restriction", "meta": "+50%" },
+        { "href": "casos-de-estudio/frutillar-brecha-precio/", "label": "Frutillar — price gap", "meta": "26M → 42M" },
+        { "href": "casos-de-estudio/llanquihue-valor-presente-futuro/", "label": "Llanquihue — present vs. future value", "meta": "4,400 UF" }
+      ]
+    },
+    {
+      "label": "Compare municipalities",
+      "description": "Puerto Varas, Frutillar and Llanquihue are not the same market — criteria to choose.",
+      "links": [
+        { "href": "blog/comparativa-puerto-varas-frutillar-llanquihue/", "label": "Territorial comparison", "meta": "9 min" },
+        { "href": "blog/comprar-terreno-sur-chile-desde-santiago/", "label": "Buying from Santiago", "meta": "8 min" },
+        { "href": "blog/cambio-uso-suelo-contorno-rural/", "label": "Change of land use", "meta": "8 min" }
+      ]
+    },
+    {
+      "label": "Buy better",
+      "description": "The starting point if you still do not have a zone or criteria defined.",
+      "links": [
+        { "href": "guias/", "label": "Guide: buy land in southern Chile", "meta": "10 min" },
+        { "href": "servicios/diagnostico-estrategico/", "label": "Strategic diagnostic (1 UF)", "meta": "Service" },
+        { "href": "servicios/busqueda-personalizada/", "label": "Personalised search (5 UF)", "meta": "Service" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is territorial intelligence at Land Advisors?",
+      "a": "It is the integrated reading of land, regulation, connectivity, local market and property vocation — before recommending buy or pass on a piece of land. We do not show properties: we help you decide with criteria."
+    },
+    {
+      "q": "Where do I start if I have never bought in the south?",
+      "a": "The guide to buying land in southern Chile orders the process in six steps (use, budget, sectors, enabling, infrastructure and asking for help). If you still do not have a zone defined, the strategic diagnostic (1 UF) is the usual first service."
+    },
+    {
+      "q": "Does this replace legal advice?",
+      "a": "No. Our content is educational and territorial consultancy. Before making an offer, check regulation and documents with a lawyer and competent professionals."
+    }
+  ]
+}

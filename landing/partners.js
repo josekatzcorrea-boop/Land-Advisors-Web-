@@ -31,6 +31,7 @@
   }
 
   function renderCards() {
+    var lang = (window.__LA_I18N_LANG || window.LA_LANG || "es");
     grid.innerHTML = partners
       .map(function (p) {
         var logoScale = p.logoScale || 1;
@@ -42,6 +43,9 @@
           p.showName === false
             ? ""
             : "<h3>" + escapeHtml(p.name) + "</h3>";
+        var desc =
+          lang === "en" && p.descriptionEn ? p.descriptionEn : p.description;
+        var ctaLabel = lang === "en" ? "Request contact" : "Solicitar contacto";
         return (
           '<article class="partner-card glass-card" data-partner-id="' +
           escapeHtml(p.id) +
@@ -57,11 +61,13 @@
           "</div>" +
           nameHtml +
           "<p>" +
-          escapeHtml(p.description) +
+          escapeHtml(desc) +
           "</p>" +
           '<button type="button" class="btn btn-primary btn-glow partner-card-cta" data-partner-id="' +
           escapeHtml(p.id) +
-          '">Solicitar contacto</button>' +
+          '">' +
+          escapeHtml(ctaLabel) +
+          "</button>" +
           "</article>"
         );
       })
@@ -199,6 +205,10 @@
   }
 
   renderCards();
+
+  document.addEventListener("la:langchange", function () {
+    renderCards();
+  });
 
   grid.addEventListener("click", function (e) {
     const btn = e.target.closest(".partner-card-cta");

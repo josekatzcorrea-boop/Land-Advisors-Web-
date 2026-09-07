@@ -249,6 +249,25 @@
     "#servicios .promo-deal__highlight": { "en": "Free diagnostic" },
     "#servicios .promo-deal__new": { "en": "FREE" },
     "#servicios .service-card--promo:nth-child(2) .promo-deal__highlight": { "en": "30% discount" },
-    "#servicios .service-card--promo:nth-child(2) .promo-deal__sub": { "en": "Free strategic diagnostic included" }
+    "#servicios .service-card--promo:nth-child(2) .promo-deal__sub": { "en": "Free strategic diagnostic included" },
+
+    ".tech-marquee-track span:nth-child(1)": { "en": "Geographic Information Systems" },
+    ".tech-marquee-track span:nth-child(13)": { "en": "Geographic Information Systems" },
+    ".tech-marquee-track span:nth-child(3)": { "en": "Retrieval Augmented Generation (RAG)" },
+    ".tech-marquee-track span:nth-child(15)": { "en": "Retrieval Augmented Generation (RAG)" },
+    ".tech-marquee-track span:nth-child(5)": { "en": "Geospatial analysis" },
+    ".tech-marquee-track span:nth-child(17)": { "en": "Geospatial analysis" },
+    ".tech-marquee-track span:nth-child(7)": { "en": "Applied artificial intelligence" },
+    ".tech-marquee-track span:nth-child(19)": { "en": "Applied artificial intelligence" },
+    ".tech-marquee-track span:nth-child(9)": { "en": "Google Earth · Digital cartography" },
+    ".tech-marquee-track span:nth-child(21)": { "en": "Google Earth · Digital cartography" },
+    ".tech-marquee-track span:nth-child(11)": { "en": "Territorial planning" },
+
+    "#contacto-form #presupuesto option[value='1500-2500']": { "en": "1,500 to 2,500 UF" },
+    "#contacto-form #presupuesto option[value='2500-3500']": { "en": "2,500 to 3,500 UF" },
+    "#contacto-form #presupuesto option[value='3500-4500']": { "en": "3,500 to 4,500 UF" },
+    "#contacto-form #presupuesto option[value='sobre-5000']": { "en": "Over 5,000 UF" },
+
+    "#partner-modal-title": { "en": "Request contact" }
   }
 }

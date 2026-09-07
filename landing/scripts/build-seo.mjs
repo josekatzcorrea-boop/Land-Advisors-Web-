@@ -528,7 +528,7 @@ function buildGuidesHubContent(page, prefix) {
 
 function buildGuideBody(guide, prefix, options = {}) {
   const blocks = guide.blocks || guide.sections || [];
-  const sections = blocks.map(renderGuideBlock).join("\n        ");
+  const sections = blocks.map((block, idx) => renderGuideBlock(block, idx)).join("\n        ");
   const faq = (guide.faq || [])
     .map(
       (item) => `<details class="faq-item">
@@ -659,7 +659,8 @@ function guideIcon(name) {
   return GUIDE_ICONS[name] || GUIDE_ICONS.map;
 }
 
-function renderGuideBlock(block) {
+function renderGuideBlock(block, idx) {
+  const bi = idx != null ? ` data-i18n-block="${idx}"` : "";
   switch (block.type) {
     case "roadmap": {
       const items = (block.items || [])
@@ -672,7 +673,7 @@ function renderGuideBlock(block) {
       </li>`
         )
         .join("");
-      return `<nav class="guide-roadmap glass-card" aria-label="${esc(block.title || "Pasos de la guía")}">
+      return `<nav class="guide-roadmap glass-card"${bi} aria-label="${esc(block.title || "Pasos de la guía")}">
         <p class="section-label">${esc(block.label || "Ruta recomendada")}</p>
         ${block.title ? `<h2 class="guide-roadmap__heading">${esc(block.title)}</h2>` : ""}
         <ol class="guide-roadmap__list">${items}</ol>
@@ -694,7 +695,7 @@ function renderGuideBlock(block) {
             )
             .join("")}</div>`
         : "";
-      return `<section class="guide-step" aria-labelledby="guide-step-${block.num}">
+      return `<section class="guide-step"${bi} aria-labelledby="guide-step-${block.num}">
         <div class="guide-step__head">
           <span class="guide-step__badge">${esc(block.num)}</span>
           <span class="guide-step__icon" aria-hidden="true">${guideIcon(block.icon)}</span>
@@ -714,7 +715,7 @@ function renderGuideBlock(block) {
       </article>`
         )
         .join("");
-      return `<section class="guide-criteria" aria-labelledby="guide-criteria-title">
+      return `<section class="guide-criteria"${bi} aria-labelledby="guide-criteria-title">
         <h2 class="blog-article__h2" id="guide-criteria-title">${esc(block.title)}</h2>
         ${block.intro ? `<p class="guide-criteria__intro">${esc(block.intro)}</p>` : ""}
         <div class="guide-criteria-grid">${items}</div>
@@ -744,7 +745,7 @@ function renderGuideBlock(block) {
             )
             .join("")
         : `<div class="guide-decision-grid">${renderItems(block.items)}</div>`;
-      return `<section class="guide-decision" aria-labelledby="guide-decision-title">
+      return `<section class="guide-decision"${bi} aria-labelledby="guide-decision-title">
         <h2 class="blog-article__h2" id="guide-decision-title">${esc(block.title)}</h2>
         ${block.intro ? `<p>${esc(block.intro)}</p>` : ""}
         ${groups}
@@ -755,7 +756,7 @@ function renderGuideBlock(block) {
       const cta = block.cta
         ? `<a href="${esc(block.cta.href)}" class="btn btn-primary btn-glow" data-track="${esc(block.cta.event || "cta_busqueda")}">${esc(block.cta.label)}</a>`
         : "";
-      return `<aside class="guide-callout glass-card ${variant}">
+      return `<aside class="guide-callout glass-card ${variant}"${bi}>
         <span class="guide-callout__icon" aria-hidden="true">${guideIcon(block.icon || "la")}</span>
         <div class="guide-callout__copy">
           <h2 class="guide-callout__title">${esc(block.title)}</h2>
@@ -765,22 +766,23 @@ function renderGuideBlock(block) {
       </aside>`;
     }
     default:
-      return renderBlogSection(block);
+      return renderBlogSection(block, idx);
   }
 }
 
-function renderBlogSection(section) {
+function renderBlogSection(section, idx) {
+  const bi = idx != null ? ` data-i18n-block="${idx}"` : "";
   switch (section.type) {
     case "h2":
-      return `<h2 class="blog-article__h2">${esc(section.text)}</h2>`;
+      return `<h2 class="blog-article__h2"${bi}>${esc(section.text)}</h2>`;
     case "h3":
-      return `<h3 class="blog-article__h3">${esc(section.text)}</h3>`;
+      return `<h3 class="blog-article__h3"${bi}>${esc(section.text)}</h3>`;
     case "p":
-      return `<p>${esc(section.text)}</p>`;
+      return `<p${bi}>${esc(section.text)}</p>`;
     case "ul":
-      return `<ul>${section.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
+      return `<ul${bi}>${section.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
     case "note":
-      return `<aside class="blog-article__note glass-card"><p>${esc(section.text)}</p></aside>`;
+      return `<aside class="blog-article__note glass-card"${bi}><p>${esc(section.text)}</p></aside>`;
     default:
       return "";
   }
@@ -853,7 +855,7 @@ function buildBlogIndexContent(prefix) {
 }
 
 function buildBlogArticleBody(post, prefix) {
-  const sections = (post.sections || []).map(renderBlogSection).join("\n        ");
+  const sections = (post.sections || []).map((s, i) => renderBlogSection(s, i)).join("\n        ");
   const tags = (post.tags || [])
     .map((t) => `<span class="blog-tag">${esc(t)}</span>`)
     .join("");
@@ -1146,7 +1148,7 @@ function buildTerritoryRichContent(page, prefix) {
       : "";
   }
 
-  const sections = (content.sections || []).map(renderBlogSection).join("\n        ");
+  const sections = (content.sections || []).map((s, i) => renderBlogSection(s, i)).join("\n        ");
   const related = (content.related || [])
     .map((r) => `<li><a href="${prefix}${r.href}">${esc(r.label)}</a></li>`)
     .join("");
@@ -1173,7 +1175,7 @@ function buildTerritoryRichContent(page, prefix) {
       <div class="blog-article__content">
         ${
           content.definition
-            ? `<aside class="territory-definition glass-card"><p><strong>Definición:</strong> ${esc(content.definition)}</p></aside>`
+            ? `<aside class="territory-definition glass-card" data-i18n-block="def"><p><strong>Definición:</strong> ${esc(content.definition)}</p></aside>`
             : ""
         }
         ${buildTerritoryIlaStrip(slug, prefix)}
@@ -1220,7 +1222,7 @@ function buildCasesHubContent(prefix) {
 }
 
 function buildCaseStudyBody(caseStudy, prefix) {
-  const sections = (caseStudy.sections || []).map(renderBlogSection).join("\n        ");
+  const sections = (caseStudy.sections || []).map((s, i) => renderBlogSection(s, i)).join("\n        ");
   const tags = (caseStudy.tags || [])
     .map((t) => `<span class="blog-tag">${esc(t)}</span>`)
     .join("");
@@ -1688,7 +1690,7 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
   <link rel="stylesheet" href="${prefix}styles-campaign.css">
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
 </head>
-<body class="site-v2 seo-page seo-page--campaign seo-page--campaign-intent">
+<body class="site-v2 seo-page seo-page--campaign seo-page--campaign-intent" data-page="campaign" data-seo-path="${esc(pagePath)}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -1740,7 +1742,7 @@ ${navLinks(prefix, { context: "campaign", campaign })}
 
         <section class="campaign-ally glass-card">
           <p class="section-label">De tu lado</p>
-          <h2>Enamorarse del terreno está bien</h2>
+          <h2>${esc(campaign.allyTitle || "La foto abre la visita. La decisión la cierran territorio, normativa y números")}</h2>
           <p>${esc(campaign.allyText || "")}</p>
         </section>
 
@@ -1781,6 +1783,7 @@ function campaignFooterScripts(prefix, campaign) {
     </div>
   </aside>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="${prefix}i18n.js" defer></script>
   <script src="${prefix}landing-ui.js" defer></script>
   <script src="${prefix}calendar-config.js" defer></script>
   <script src="${prefix}whatsapp-config.js" defer></script>
@@ -1981,7 +1984,7 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
   <link rel="stylesheet" href="${prefix}styles-campaign.css">
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
 </head>
-<body class="site-v2 seo-page seo-page--campaign">
+<body class="site-v2 seo-page seo-page--campaign" data-page="campaign" data-seo-path="${esc(pagePath)}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
