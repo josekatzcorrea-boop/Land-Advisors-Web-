@@ -1,5 +1,7 @@
 .lang-switch {
   display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.15rem;
   margin-left: 0.75rem;
@@ -7,6 +9,11 @@
   border-radius: 999px;
   background: rgba(5, 44, 77, 0.06);
   border: 1px solid rgba(5, 44, 77, 0.1);
+}
+
+.nav .lang-switch.lang-switch--header {
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .lang-switch__btn {
