@@ -187,5 +187,74 @@
       { "label": "Diagnóstico estratégico", "href": "servicios/diagnostico-estrategico/" },
       { "label": "Guía comprar terreno", "href": "guias/" }
     ]
+  },
+  "patagonia": {
+    "author": "José Hernán Katz C.",
+    "datePublished": "2026-09-07",
+    "dateModified": "2026-09-07",
+    "readMinutes": 8,
+    "image": "/images/plh/plh-patagonia.jpg",
+    "imageAlt": "Paisaje patagónico — inversión territorial a la medida en el sur de Chile",
+    "definition": "Patagonia a la medida: cobertura extendida en el sur de Chile más allá de nuestra base en Los Lagos, activando alianzas con corredoras y brokers locales y yendo a terreno cuando el proyecto lo amerita.",
+    "sections": [
+      {
+        "type": "p",
+        "text": "Nuestra base operativa está en la cuenca del Lago Llanquihue y Malalcahuello, pero muchos compradores buscan en toda la Patagonia: Aysén, Chiloé extendido, Coyhaique, Palena o proyectos de escala y privacidad en territorios más australes. No somos corredora con stock fijo — somos consultores dispuestos a activar la red correcta y revisar el terreno con criterio."
+      },
+      {
+        "type": "h2",
+        "text": "Alianzas comerciales, no catálogo propio"
+      },
+      {
+        "type": "p",
+        "text": "Contamos con alianzas con corredoras y brokers que operan en distintas zonas patagónicas. Eso nos permite filtrar ofertas, contrastar comparables locales y coordinar visitas sin empujar un portafolio propio. Tu interés manda: buscamos el terreno que calza con tu objetivo, no el que tenemos que cerrar."
+      },
+      {
+        "type": "h2",
+        "text": "Disposición a ir a terreno"
+      },
+      {
+        "type": "p",
+        "text": "Cuando el proyecto lo amerita — presupuesto acotado, vocación clara, riesgo que justifica la visita — vamos a terreno. La Patagonia no se evalúa solo con fotos: acceso, servicios, normativa local y dinámica de mercado cambian mucho entre comunas. Preferimos decir «aún no» a recomendar a distancia algo que no hemos podido leer bien."
+      },
+      {
+        "type": "h2",
+        "text": "Qué evaluamos antes de activar una búsqueda"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Objetivo: vivienda, patrimonio, turismo, conservación o desarrollo",
+          "Zona de interés y tolerancia a distancia / conectividad",
+          "Presupuesto realista para el territorio elegido",
+          "Aliados locales disponibles y calidad de la oferta en ese segmento",
+          "Factibilidad normativa y de habilitación — no solo precio de aviso"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Patagonia a la medida no es un servicio estándar en catálogo: partimos con diagnóstico estratégico para definir si conviene activar búsqueda extendida y con qué criterios."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Land Advisors opera en toda la Patagonia?",
+        "a": "Sí, a la medida del proyecto. Nuestra base es Los Lagos y Malalcahuello; para otras zonas activamos alianzas comerciales y visitas cuando el caso lo justifica."
+      },
+      {
+        "q": "¿Venden terrenos en Patagonia?",
+        "a": "No. No somos corredora ni portal. Filtramos, comparamos y recomendamos con criterio territorial — el terreno no es nuestro inventario."
+      },
+      {
+        "q": "¿Cómo empiezo si busco fuera de Los Lagos?",
+        "a": "Con un diagnóstico estratégico para acotar zona, presupuesto y criterio. Desde ahí definimos si activamos búsqueda personalizada con red extendida."
+      }
+    ],
+    "related": [
+      { "label": "Patagonia Land Hunter", "href": "patagonia-land-hunter/" },
+      { "label": "Búsqueda personalizada", "href": "servicios/busqueda-personalizada/" },
+      { "label": "Diagnóstico estratégico", "href": "servicios/diagnostico-estrategico/" },
+      { "label": "Inteligencia territorial", "href": "inteligencia-territorial/" }
+    ]
   }
 }

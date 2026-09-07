@@ -1,12 +1,28 @@
 /** Nav principal compartido — evita superposición en header desktop */
 
-export const NAV_ITEMS = [
+export const NAV_CORE = [
   { id: "plh", href: "patagonia-land-hunter/", label: "Patagonia Land Hunter", i18n: "nav.plh" },
   { id: "services", href: "servicios/", label: "Servicios", i18n: "nav.services" },
   { id: "cases", href: "casos-de-estudio/", label: "Casos", i18n: "nav.cases" },
   { id: "intelligence", href: "inteligencia-territorial/", label: "Inteligencia", i18n: "nav.intelligence" },
   { id: "territories", href: "territorios/", label: "Territorios", i18n: "nav.territories" },
 ];
+
+export const NAV_EXTRA = [
+  { id: "guides", href: "guias/", label: "Guías", i18n: "nav.guides" },
+  { id: "blog", href: "blog/", label: "Blog", i18n: "nav.blog" },
+];
+
+export const NAV_ABOUT = {
+  id: "about",
+  href: "#nosotros",
+  label: "Nosotros",
+  i18n: "nav.about",
+  homeOnly: true,
+};
+
+/** @deprecated use NAV_CORE */
+export const NAV_ITEMS = NAV_CORE;
 
 const OMIT_BY_CONTEXT = {
   home: [],
@@ -18,11 +34,30 @@ const OMIT_BY_CONTEXT = {
   intelligence: ["intelligence"],
   "territories-hub": ["territories"],
   territory: ["territories"],
-  blog: [],
-  guides: [],
+  "guides-hub": ["guides"],
+  guide: ["guides"],
+  "blog-hub": ["blog"],
+  "blog-post": ["blog"],
   campaign: [],
   default: [],
 };
+
+function resolveNavItems(context) {
+  const omit = new Set(OMIT_BY_CONTEXT[context] ?? OMIT_BY_CONTEXT.default);
+  const items = [];
+
+  for (const item of NAV_CORE) {
+    if (!omit.has(item.id)) items.push(item);
+  }
+  for (const item of NAV_EXTRA) {
+    if (!omit.has(item.id)) items.push(item);
+  }
+  if (context === "home") {
+    items.push(NAV_ABOUT);
+  }
+
+  return items;
+}
 
 /** @param {string} path e.g. /servicios/diagnostico-estrategico/ */
 export function navContextFromPath(path, type) {
@@ -36,10 +71,12 @@ export function navContextFromPath(path, type) {
   if (p === "/territorios/") return "territories-hub";
   if (p.startsWith("/territorios/")) return "territory";
   if (p.startsWith("/campanas/")) return "campaign";
-  if (p.startsWith("/blog/")) return "blog";
-  if (p.startsWith("/guias/")) return "guides";
+  if (p === "/guias/") return "guides-hub";
+  if (p.startsWith("/guias/")) return "guide";
+  if (p === "/blog/") return "blog-hub";
+  if (p.startsWith("/blog/")) return "blog-post";
   if (type === "case-study" && p !== "/casos-de-estudio/") return "case";
-  if (type === "blog-post") return "blog";
+  if (type === "blog-post") return "blog-post";
   if (type === "campaign") return "campaign";
   return "default";
 }
@@ -59,9 +96,11 @@ export function renderSiteNav(opts = {}) {
   const langSwitchHtml = opts.langSwitchHtml ?? "";
   const ctaMode = opts.ctaMode ?? (campaign ? "campaign-wa" : "default");
 
-  const omit = new Set(OMIT_BY_CONTEXT[context] ?? OMIT_BY_CONTEXT.default);
-  const links = NAV_ITEMS.filter((item) => !omit.has(item.id))
-    .map((item) => `<a href="${prefix}${item.href}" data-i18n="${item.i18n}">${item.label}</a>`)
+  const links = resolveNavItems(context)
+    .map((item) => {
+      const href = item.href.startsWith("#") ? item.href : `${prefix}${item.href}`;
+      return `<a href="${href}" data-i18n="${item.i18n}">${item.label}</a>`;
+    })
     .join("\n            ");
 
   let navCta;

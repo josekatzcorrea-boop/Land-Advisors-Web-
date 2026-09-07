@@ -193,7 +193,8 @@
     "#territorios .section-label": { "en": "Territories" },
     "#territorios .section-title": { "en": "Where we build knowledge and strategy" },
     "#territorios .section-intro": {
-      "en": "We operate mainly in the Lago Llanquihue and Malalcahuello basin, focused on rural contour around urban centres — where the biggest changes and development opportunities often appear."
+      "en": "We operate mainly in the Lago Llanquihue and Malalcahuello basin, focused on rural contour around urban centres. We also offer <strong>Patagonia tailored to your project</strong>: local broker alliances and field visits when the project warrants it.",
+      "html": true
     },
     "#territorios .btn-glass": { "en": "See all territories →" },
 

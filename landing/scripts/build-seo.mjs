@@ -397,6 +397,7 @@ function territoryBlogLink(slug) {
     frutillar: "casos-de-estudio/frutillar-brecha-precio/",
     llanquihue: "casos-de-estudio/llanquihue-valor-presente-futuro/",
     malalcahuello: "blog/vocacion-suelo-contorno-rural/",
+    patagonia: "patagonia-land-hunter/",
   };
   return links[slug] || "blog/plusvalia-contorno-rural-puerto-varas/";
 }
@@ -1340,7 +1341,7 @@ ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix, { context: "blog" })}
+${navLinks(prefix, { context: "blog-post" })}
       </div>
     </div>
   </header>

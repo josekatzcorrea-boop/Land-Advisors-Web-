@@ -680,6 +680,11 @@
   flex-shrink: 0;
 }
 
+.plh-page .nav-cta-pair {
+  flex-direction: column;
+  align-items: stretch;
+}
+
 @media (max-width: 979px) {
   .plh-page .nav-cta-pair {
     flex-direction: column;

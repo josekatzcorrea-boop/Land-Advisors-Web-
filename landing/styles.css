@@ -316,9 +316,17 @@ a:hover {
 
 .nav-cta-pair {
   display: flex;
-  align-items: center;
-  gap: 0.45rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
   flex-shrink: 0;
+}
+
+.nav-cta-pair .nav-cta {
+  justify-content: center;
+  text-align: center;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.625rem;
 }
 
 .nav-cta--wa {

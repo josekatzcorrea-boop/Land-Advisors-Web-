@@ -104,11 +104,11 @@
     "path": "/territorios/",
     "file": "territorios/index.html",
     "title": "Territorios de inversión inmobiliaria sur de Chile | Land Advisors",
-    "description": "Inteligencia territorial en Puerto Varas, Frutillar, Llanquihue, Malalcahuello y cuenca del Lago Llanquihue. Oportunidades de plusvalía y expansión urbana.",
+    "description": "Inteligencia territorial en Puerto Varas, Frutillar, Llanquihue, Malalcahuello, Patagonia a la medida y cuenca del Lago Llanquihue. Oportunidades de plusvalía y expansión urbana.",
     "type": "hub",
     "breadcrumb": "Territorios",
     "h1": "Territorios donde leemos el mercado inmobiliario",
-    "intro": "Operamos en el contorno rural periurbano: donde la expansión urbana, la conectividad y el cambio de uso generan oportunidades antes de que sean evidentes.",
+    "intro": "Operamos en el contorno rural periurbano de Los Lagos y Malalcahuello — y extendemos cobertura a toda la Patagonia a la medida, con alianzas comerciales y visitas a terreno cuando el proyecto lo amerita.",
     "keywords": ["inversión territorial", "oportunidades inmobiliarias sur de Chile", "plusvalía inmobiliaria"]
   },
   {
@@ -154,6 +154,17 @@
     "h1": "Inversión inmobiliaria en Malalcahuello",
     "intro": "Malalcahuello abre oportunidades de turismo inmobiliario y segunda vivienda con lectura de conectividad y vocación del territorio.",
     "keywords": ["inversión inmobiliaria Malalcahuello", "terrenos Malalcahuello"]
+  },
+  {
+    "path": "/territorios/patagonia/",
+    "file": "territorios/patagonia/index.html",
+    "title": "Patagonia a la medida | Inversión inmobiliaria territorial | Land Advisors",
+    "description": "Consultoría territorial en toda la Patagonia chilena. Alianzas con corredoras locales, lectura de mercado y visitas a terreno cuando el proyecto lo amerita.",
+    "type": "territory",
+    "breadcrumb": "Patagonia a la medida",
+    "h1": "Patagonia a la medida",
+    "intro": "Desde Los Lagos hasta territorios más australes: no vendemos un catálogo fijo, sino que activamos red de aliados comerciales y vamos a terreno cuando tu proyecto lo requiere.",
+    "keywords": ["inversión inmobiliaria Patagonia", "terrenos Patagonia Chile", "comprar terreno sur de Chile"]
   },
   {
     "path": "/indice-territorial/",
