@@ -30,6 +30,9 @@ const campaigns = campaignsData.campaigns || [];
 const ilaIndex = JSON.parse(fs.readFileSync(path.join(SEO, "ila-index.json"), "utf8"));
 const ilaSectors = ilaIndex.sectors || [];
 const observatorio2026 = JSON.parse(fs.readFileSync(path.join(SEO, "observatorio-2026.json"), "utf8"));
+const i18nEnSeoPages = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "i18n/en/seo-pages.json"), "utf8")
+).pages || {};
 
 /** Atributos <html> para CTAs WhatsApp + calendario (site-ctas.js) */
 const SITE_CTA_HTML_ATTRS =
@@ -79,6 +82,50 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function hasHreflang(pagePath) {
+  return pagePath === "/" || Boolean(i18nEnSeoPages[pagePath]);
+}
+
+function hreflangBlock(pagePath) {
+  const url = site.url + (pagePath === "/" ? "/" : pagePath);
+  return `  <link rel="alternate" hreflang="es" href="${url}">
+  <link rel="alternate" hreflang="en" href="${url}?lang=en">
+  <link rel="alternate" hreflang="x-default" href="${url}">`;
+}
+
+function footerInstagramLink() {
+  if (!site.social?.instagram) return "";
+  return ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>`;
+}
+
+/** Footer con enlazado interno SEO (Fase B) */
+function buildFooter(prefix, assets, opts = {}) {
+  const i18n = opts.i18n !== false;
+  const i18nAttr = (key) => (i18n ? ` data-i18n="${key}"` : "");
+  const navAria = i18n
+    ? ' aria-label="Enlaces del sitio" data-i18n-aria="footer.nav"'
+    : ' aria-label="Enlaces del sitio"';
+  const tagline = i18n
+    ? `<span data-i18n="footer.tagline">${esc(site.tagline)} · Sur de Chile</span>`
+    : `${esc(site.tagline)} · Sur de Chile`;
+  return `  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <p class="footer-address"${i18nAttr("footer.address")}>${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <nav class="footer-seo-nav"${navAria}>
+        <a href="${prefix}patagonia-land-hunter/"${i18nAttr("nav.plh")}>Patagonia Land Hunter</a>
+        <a href="${prefix}servicios/"${i18nAttr("nav.services")}>Servicios</a>
+        <a href="${prefix}territorios/"${i18nAttr("nav.territories")}>Territorios</a>
+        <a href="${prefix}guias/"${i18nAttr("nav.guides")}>Guías</a>
+        <a href="${prefix}casos-de-estudio/"${i18nAttr("nav.cases")}>Casos</a>
+        <a href="${prefix}blog/"${i18nAttr("nav.blog")}>Blog</a>
+        <a href="${prefix}sitemap.xml"${i18nAttr("footer.sitemap")}>Mapa del sitio</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${tagline}${footerInstagramLink()}</p>
+    </div>
+  </footer>`;
+}
+
 function languageSwitcher(prefix = "") {
   return `<div class="lang-switch lang-switch--header" role="group" data-i18n-aria="lang.switch">
             <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true" aria-label="Español"><img class="lang-switch__flag" src="${prefix}images/flags/es.svg" alt="" width="18" height="12" decoding="async"><span class="lang-switch__code">ES</span></button>
@@ -108,7 +155,8 @@ function buildHead(page, prefix, assets, options = {}) {
   <meta name="geo.region" content="CL-LL">
   <meta name="geo.placename" content="Puerto Varas">
 ${verificationMeta ? verificationMeta + "\n" : ""}  <link rel="canonical" href="${url}">
-  <title>${esc(page.title)}</title>
+${hasHreflang(page.path) ? hreflangBlock(page.path) + "\n" : ""}  <title>${esc(page.title)}</title>
+${hasHreflang(page.path) ? '  <meta property="og:locale:alternate" content="en_US">\n' : ""}
   <link rel="icon" type="image/png" href="${assets}logo-isotipo-sm.png">
   <link rel="apple-touch-icon" href="${assets}logo-isotipo-sm.png">
   <meta property="og:type" content="${ogType}">
@@ -1244,12 +1292,12 @@ function buildCaseStudyPage(caseStudy) {
   const ctaHref = prefix + "#contacto-form";
 
   return `<!DOCTYPE html>
-<html lang="es" ${SITE_CTA_HTML_ATTRS}>
+<html lang="es" class="i18n-loading" data-i18n-prefix="${prefix}" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + caseStudy.image })}
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
 </head>
-<body class="site-v2 seo-page seo-page--case-study">
+<body class="site-v2 seo-page seo-page--case-study" data-page="seo" data-seo-path="${esc(pagePath)}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -1289,13 +1337,7 @@ ${navLinks(prefix, { context: "case" })}
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
-    </div>
-  </footer>
+${buildFooter(prefix, assets)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
@@ -1331,12 +1373,12 @@ function buildBlogPostPage(post) {
   const ctaHref = prefix + "#contacto-form";
 
   return `<!DOCTYPE html>
-<html lang="es" ${SITE_CTA_HTML_ATTRS}>
+<html lang="es" class="i18n-loading" data-i18n-prefix="${prefix}" ${SITE_CTA_HTML_ATTRS}>
 <head>
 ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.image })}
   ${schemas.map((s) => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n")}
 </head>
-<body class="site-v2 seo-page seo-page--blog-post">
+<body class="site-v2 seo-page seo-page--blog-post" data-page="seo" data-seo-path="${esc(pagePath)}">
   <header class="site-header">
     <div class="header-shell">
       <div class="header-inner">
@@ -1376,13 +1418,7 @@ ${navLinks(prefix, { context: "blog-post" })}
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
-    </div>
-  </footer>
+${buildFooter(prefix, assets)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
@@ -1730,13 +1766,7 @@ ${navLinks(prefix, { context: "campaign", campaign })}
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
-    </div>
-  </footer>
+${buildFooter(prefix, assets, { i18n: false })}
 
 ${campaignFooterScripts(prefix, campaign)}
 </body>
@@ -2036,13 +2066,7 @@ ${navLinks(prefix, { context: "campaign", campaign })}
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
-    </div>
-  </footer>
+${buildFooter(prefix, assets, { i18n: false })}
 
 ${campaignFooterScripts(prefix, campaign)}
 </body>
@@ -2435,13 +2459,7 @@ ${navLinks(prefix, { context: navContextFromPath(page.path, page.type) })}
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
-      <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
-      <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
-    </div>
-  </footer>
+${buildFooter(prefix, assets)}
 
   <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
@@ -2483,6 +2501,10 @@ function syncHomeMeta() {
   html = html.replace(
     /<meta name="twitter:title" content="[^"]*">/,
     `<meta name="twitter:title" content="${esc(home.title)}">`
+  );
+  html = html.replace(
+    /<meta name="twitter:description" content="[^"]*">/,
+    `<meta name="twitter:description" content="${esc(home.description)}">`
   );
 
   html = html.replace(/\s*<meta name="google-site-verification"[^>]*>\n?/g, "");

@@ -170,6 +170,44 @@
 
 
 
+  function setMetaContent(selector, value) {
+
+    if (!value) return;
+
+    var el = document.querySelector(selector);
+
+    if (el) el.setAttribute("content", value);
+
+  }
+
+
+
+  function syncShareMeta(title, description) {
+
+    if (title) {
+
+      document.title = title;
+
+      setMetaContent('meta[property="og:title"]', title);
+
+      setMetaContent('meta[name="twitter:title"]', title);
+
+    }
+
+    if (description) {
+
+      setMetaContent('meta[name="description"]', description);
+
+      setMetaContent('meta[property="og:description"]', description);
+
+      setMetaContent('meta[name="twitter:description"]', description);
+
+    }
+
+  }
+
+
+
   function applyDict(dict, lang) {
 
     document.documentElement.lang = lang === "en" ? "en" : "es";
@@ -181,6 +219,12 @@
     var ogLocale = document.querySelector('meta[property="og:locale"]');
 
     if (ogLocale) ogLocale.setAttribute("content", lang === "en" ? "en_US" : "es_CL");
+
+
+
+    var ogAlt = document.querySelector('meta[property="og:locale:alternate"]');
+
+    if (ogAlt) ogAlt.setAttribute("content", lang === "en" ? "es_CL" : "en_US");
 
 
 
@@ -278,15 +322,7 @@
 
       if (pt) {
 
-        if (pt.title) document.title = pt.title;
-
-        if (pt.description) {
-
-          var desc = document.querySelector('meta[name="description"]');
-
-          if (desc) desc.setAttribute("content", pt.description);
-
-        }
+        syncShareMeta(pt.title, pt.description);
 
         var h1 = document.querySelector(".seo-hero h1");
 
@@ -312,15 +348,7 @@
 
     if (dict.meta && dict.meta[lang]) {
 
-      if (dict.meta[lang].title) document.title = dict.meta[lang].title;
-
-      if (dict.meta[lang].description) {
-
-        var m = document.querySelector('meta[name="description"]');
-
-        if (m) m.setAttribute("content", dict.meta[lang].description);
-
-      }
+      syncShareMeta(dict.meta[lang].title, dict.meta[lang].description);
 
     }
 

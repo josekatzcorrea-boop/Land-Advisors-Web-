@@ -100,6 +100,7 @@ const html = `<!DOCTYPE html>
   <link rel="icon" type="image/png" href="../assets/logo-isotipo-sm.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Land Advisors Chile">
   <meta property="og:title" content="Patagonia Land Hunter — búsqueda de terrenos | Land Advisors">
   <meta property="og:description" content="Búsqueda activa de terrenos en Los Lagos y Patagonia chilena. Asesoría independiente del comprador. Patagonia Land Hunter · Land Advisors.">
@@ -350,10 +351,12 @@ const html = `<!DOCTYPE html>
     <div class="container footer-inner">
       <img src="../assets/logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address" data-i18n="footer.address">Walker Martínez 517, Puerto Varas</p>
-      <nav class="footer-seo-nav" aria-label="Enlaces">
+      <nav class="footer-seo-nav" aria-label="Enlaces del sitio" data-i18n-aria="footer.nav">
         <a href="../patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
         <a href="../servicios/" data-i18n="nav.services">Servicios</a>
         <a href="../territorios/" data-i18n="nav.territories">Territorios</a>
+        <a href="../guias/" data-i18n="nav.guides">Guías</a>
+        <a href="../casos-de-estudio/" data-i18n="nav.cases">Casos</a>
         <a href="../blog/" data-i18n="nav.blog">Blog</a>
         <a href="../sitemap.xml" data-i18n="footer.sitemap">Mapa del sitio</a>
       </nav>
