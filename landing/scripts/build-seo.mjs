@@ -54,6 +54,7 @@ function syncLandingAssets() {
   const files = [
     "logo-horizontal-3d.jpg",
     "logo-isotipo-3d.png",
+    "logo-isotipo-sm.png",
     "logo-isotipo-3d-transparente.png",
     "logo-grande-3d-transparente.png",
   ];
@@ -108,8 +109,8 @@ function buildHead(page, prefix, assets, options = {}) {
   <meta name="geo.placename" content="Puerto Varas">
 ${verificationMeta ? verificationMeta + "\n" : ""}  <link rel="canonical" href="${url}">
   <title>${esc(page.title)}</title>
-  <link rel="icon" type="image/png" href="${assets}logo-isotipo-3d.png">
-  <link rel="apple-touch-icon" href="${assets}logo-isotipo-3d.png">
+  <link rel="icon" type="image/png" href="${assets}logo-isotipo-sm.png">
+  <link rel="apple-touch-icon" href="${assets}logo-isotipo-sm.png">
   <meta property="og:type" content="${ogType}">
   <meta property="og:locale" content="es_CL">
   <meta property="og:site_name" content="${esc(site.name)}">
@@ -559,6 +560,8 @@ function buildGuideRedirectPage(guide) {
 function buildRetiredPostRedirect(entry) {
   const redirectTarget = "/" + entry.redirectTo.replace(/^\//, "");
   const canonical = site.url + redirectTarget;
+  const rawTitle = entry.title || "Artículo";
+  const pageTitle = rawTitle.includes("Land Advisors") ? rawTitle : `${rawTitle} | Land Advisors`;
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -567,7 +570,7 @@ function buildRetiredPostRedirect(entry) {
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="${canonical}">
   <meta http-equiv="refresh" content="0; url=${redirectTarget}">
-  <title>${esc(entry.title || "Artículo")} | Land Advisors</title>
+  <title>${esc(pageTitle)}</title>
   <script>location.replace("${redirectTarget}");</script>
 </head>
 <body>
@@ -782,7 +785,7 @@ function buildBlogIndexContent(prefix) {
 
   return `<div class="blog-index-intro glass-card">
       <div class="blog-index-intro__icon" aria-hidden="true">
-        <img src="${assets}logo-isotipo-3d.png" alt="" width="72" height="72">
+        <img src="${assets}logo-isotipo-sm.png" alt="" width="72" height="72">
       </div>
       <div class="blog-index-intro__copy">
         <p class="section-label">Editorial territorial</p>
@@ -1288,7 +1291,7 @@ ${navLinks(prefix, { context: "case" })}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
     </div>
@@ -1375,7 +1378,7 @@ ${navLinks(prefix, { context: "blog-post" })}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
     </div>
@@ -1729,7 +1732,7 @@ ${navLinks(prefix, { context: "campaign", campaign })}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
     </div>
@@ -2035,7 +2038,7 @@ ${navLinks(prefix, { context: "campaign", campaign })}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile</p>
     </div>
@@ -2434,7 +2437,7 @@ ${navLinks(prefix, { context: navContextFromPath(page.path, page.type) })}
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="${assets}logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address">${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
       <p class="footer-copy">© <span id="year"></span> Land Advisors Chile · ${esc(site.tagline)} · Sur de Chile${site.social?.instagram ? ` <a href="${esc(site.social.instagram)}" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram — Land Advisors Chile" data-track="cta_instagram"><svg class="footer-social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>` : ""}</p>
     </div>
@@ -2454,6 +2457,52 @@ ${seoCommonScripts(prefix)}
   </script>
 </body>
 </html>`;
+}
+
+/** Sincroniza meta de home (index.html) desde pages.json + verificación Search Console */
+function syncHomeMeta() {
+  const home = pages.find((p) => p.path === "/");
+  if (!home) return;
+  const indexPath = path.join(ROOT, "index.html");
+  if (!fs.existsSync(indexPath)) return;
+  let html = fs.readFileSync(indexPath, "utf8");
+
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(home.title)}</title>`);
+  html = html.replace(
+    /<meta name="description" content="[^"]*">/,
+    `<meta name="description" content="${esc(home.description)}">`
+  );
+  html = html.replace(
+    /<meta property="og:title" content="[^"]*">/,
+    `<meta property="og:title" content="${esc(home.title)}">`
+  );
+  html = html.replace(
+    /<meta property="og:description" content="[^"]*">/,
+    `<meta property="og:description" content="${esc(home.description)}">`
+  );
+  html = html.replace(
+    /<meta name="twitter:title" content="[^"]*">/,
+    `<meta name="twitter:title" content="${esc(home.title)}">`
+  );
+
+  html = html.replace(/\s*<meta name="google-site-verification"[^>]*>\n?/g, "");
+  html = html.replace(/\s*<meta name="msvalidate\.01"[^>]*>\n?/g, "");
+  const verifyLines = [];
+  if (site.seo?.googleSiteVerification) {
+    verifyLines.push(`  <meta name="google-site-verification" content="${esc(site.seo.googleSiteVerification)}">`);
+  }
+  if (site.seo?.bingSiteVerification) {
+    verifyLines.push(`  <meta name="msvalidate.01" content="${esc(site.seo.bingSiteVerification)}">`);
+  }
+  if (verifyLines.length) {
+    html = html.replace(
+      /(<meta name="viewport" content="[^"]*">)/,
+      `$1\n${verifyLines.join("\n")}`
+    );
+  }
+
+  fs.writeFileSync(indexPath, html, "utf8");
+  console.log("synced index.html meta from pages.json");
 }
 
 function buildSitemap() {
@@ -2567,6 +2616,7 @@ for (const campaign of campaigns) {
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap(), "utf8");
 console.log("wrote sitemap.xml");
+syncHomeMeta();
 syncLandingAssets();
 console.log("synced landing/assets logos");
 

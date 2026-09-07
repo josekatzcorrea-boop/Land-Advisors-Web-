@@ -106,7 +106,7 @@ export function renderSiteNav(opts = {}) {
   let navCta;
   if (ctaMode === "plh") {
     navCta = `<div class="nav-cta-pair nav-cta-pair--solo">
-            <a href="#land-search-form" class="nav-cta nav-cta--wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
+            <a href="#land-search-form" class="nav-cta nav-cta--wa" data-track="cta_plh_form" data-i18n="nav.plhForm">Cuéntanos qué buscas</a>
           </div>`;
   } else if (ctaMode === "campaign-lead") {
     navCta = `<div class="nav-cta-pair">

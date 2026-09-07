@@ -97,8 +97,18 @@ const html = `<!DOCTYPE html>
   <link rel="alternate" hreflang="en" href="${SITE.url}/patagonia-land-hunter/?lang=en">
   <link rel="alternate" hreflang="x-default" href="${SITE.url}/patagonia-land-hunter/">
   <title>Patagonia Land Hunter — búsqueda de terrenos | Land Advisors</title>
-  <link rel="icon" type="image/png" href="../assets/logo-isotipo-3d.png">
+  <link rel="icon" type="image/png" href="../assets/logo-isotipo-sm.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Land Advisors Chile">
+  <meta property="og:title" content="Patagonia Land Hunter — búsqueda de terrenos | Land Advisors">
+  <meta property="og:description" content="Búsqueda activa de terrenos en Los Lagos y Patagonia chilena. Asesoría independiente del comprador. Patagonia Land Hunter · Land Advisors.">
+  <meta property="og:url" content="${SITE.url}/patagonia-land-hunter/">
   <meta property="og:image" content="${SITE.url}/images/plh/plh-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patagonia Land Hunter — búsqueda de terrenos | Land Advisors">
+  <meta name="twitter:description" content="Independent land search in Los Lagos and Chilean Patagonia. Buyer-side advisory · Land Advisors.">
+  <meta name="twitter:image" content="${SITE.url}/images/plh/plh-hero.jpg">
   <link rel="preload" href="../images/plh/plh-hero.jpg" as="image" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
@@ -338,7 +348,7 @@ const html = `<!DOCTYPE html>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="../assets/logo-isotipo-3d.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
+      <img src="../assets/logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address" data-i18n="footer.address">Walker Martínez 517, Puerto Varas</p>
       <nav class="footer-seo-nav" aria-label="Enlaces">
         <a href="../patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>

@@ -23,20 +23,42 @@
 
   function applyChatLabels(link) {
     if (!link) return;
+    if (isPlhPage()) {
+      link.setAttribute("aria-label", "Ir al formulario de búsqueda — Patagonia Land Hunter");
+      link.title = "Cuéntanos qué terreno buscas en Patagonia";
+      return;
+    }
     var label = lg("chat.wa.label", "Contactar por WhatsApp — Land Advisors");
     var title = lg("chat.wa.title", "Completa un breve formulario y te abrimos WhatsApp");
     link.setAttribute("aria-label", label);
     link.title = title;
   }
 
+  function isPlhPage() {
+    return document.body && document.body.dataset && document.body.dataset.page === "plh";
+  }
+
+  function scrollToPlhForm() {
+    const el = document.getElementById("land-search-form");
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    const first = el.querySelector("input, select, textarea");
+    if (first) setTimeout(function () { first.focus(); }, 400);
+  }
+
   function renderWhatsApp(root) {
     const link = document.createElement("a");
     link.className = "la-chat-widget__btn";
-    link.href = "#lead-gate";
-    link.setAttribute("data-site-wa", "");
+    link.href = isPlhPage() ? "#land-search-form" : "#lead-gate";
+    if (!isPlhPage()) link.setAttribute("data-site-wa", "");
     applyChatLabels(link);
     link.innerHTML = WHATSAPP_ICON;
     link.addEventListener("click", function (e) {
+      if (isPlhPage()) {
+        e.preventDefault();
+        scrollToPlhForm();
+        return;
+      }
       if (window.LA_LeadGate && typeof window.LA_LeadGate.open === "function") {
         e.preventDefault();
         window.LA_LeadGate.open("whatsapp");
