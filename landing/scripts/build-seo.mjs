@@ -7,6 +7,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { execSync } from "child_process";
+import { navContextFromPath, renderSiteNav } from "./site-nav.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -1252,7 +1253,7 @@ ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + caseS
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix)}
+${navLinks(prefix, { context: "case" })}
       </div>
     </div>
   </header>
@@ -1339,7 +1340,7 @@ ${buildHead(page, prefix, assets, { ogType: "article", ogImage: site.url + post.
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix)}
+${navLinks(prefix, { context: "blog" })}
       </div>
     </div>
   </header>
@@ -1655,7 +1656,7 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix, campaign)}
+${navLinks(prefix, { context: "campaign", campaign })}
       </div>
     </div>
   </header>
@@ -1954,7 +1955,7 @@ ${buildHead(page, prefix, assets, { ogImage: site.url + campaign.image, ogType: 
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix, campaign)}
+${navLinks(prefix, { context: "campaign", campaign })}
       </div>
     </div>
   </header>
@@ -2044,38 +2045,25 @@ ${campaignFooterScripts(prefix, campaign)}
 </html>`;
 }
 
-function navLinks(prefix, campaign) {
-  let navCta;
-  if (campaign?.leadForm) {
-    navCta = `<div class="nav-cta-pair">
-            <a href="#campaign-lead" class="nav-cta nav-cta--wa" data-track="cta_lead_form">WhatsApp</a>
-            <a href="#campaign-lead" class="nav-cta nav-cta--cal" data-track="cta_lead_form">Diagnóstico</a>
-          </div>`;
-  } else if (campaign) {
-    navCta = `<div class="nav-cta-pair">
-            <a href="${DEFAULT_WA_HREF}" class="nav-cta nav-cta--wa" data-campaign-wa data-track="cta_whatsapp">WhatsApp</a>
-            <a href="${DEFAULT_CAL_HREF}" class="nav-cta nav-cta--cal" data-campaign-calendar data-track="cta_calendar">Diagnóstico</a>
-          </div>`;
-  } else {
-    navCta = `<div class="nav-cta-pair">
-            <a href="${DEFAULT_WA_HREF}" class="nav-cta nav-cta--wa" data-site-wa data-track="cta_whatsapp">WhatsApp</a>
-            <a href="${DEFAULT_CAL_HREF}" class="nav-cta nav-cta--cal" data-site-calendar data-track="cta_calendar">Diagnóstico</a>
-          </div>`;
-  }
-  return `        <nav id="main-nav" class="nav" aria-label="Principal">
-          <div class="nav-links">
-            <a href="${prefix}patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
-            <a href="${prefix}servicios/" data-i18n="nav.services">Servicios</a>
-            <a href="${prefix}territorios/" data-i18n="nav.territories">Territorios</a>
-            <a href="${prefix}inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
-            <a href="${prefix}casos-de-estudio/" data-i18n="nav.cases">Casos</a>
-            <a href="${prefix}blog/" data-i18n="nav.blog">Blog</a>
-            <a href="${prefix}guias/" data-i18n="nav.guides">Guías</a>
-            <a href="${prefix}#nosotros" data-i18n="nav.about">Nosotros</a>
-          </div>
-          ${languageSwitcher(prefix)}
-          ${navCta}
-        </nav>`;
+function navLinks(prefix, options = {}) {
+  const campaign = options.campaign ?? null;
+  const context = options.context ?? "default";
+  let ctaMode = "default";
+  if (options.ctaMode) ctaMode = options.ctaMode;
+  else if (campaign?.leadForm) ctaMode = "campaign-lead";
+  else if (campaign) ctaMode = "campaign-wa";
+
+  return renderSiteNav({
+    prefix,
+    context,
+    campaign,
+    langSwitchHtml: languageSwitcher(prefix),
+    ctaMode,
+    siteWaHref: DEFAULT_WA_HREF,
+    siteCalHref: DEFAULT_CAL_HREF,
+    campaignWaHref: DEFAULT_WA_HREF,
+    campaignCalHref: DEFAULT_CAL_HREF,
+  });
 }
 
 function hubCards(type, prefix) {
@@ -2398,7 +2386,7 @@ ${buildHead(
           <img src="${assets}logo-horizontal-3d.jpg" alt="Land Advisors — Estrategia Inmobiliaria" width="280" height="64">
         </a>
         <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menú</button>
-${navLinks(prefix)}
+${navLinks(prefix, { context: navContextFromPath(page.path, page.type) })}
       </div>
     </div>
   </header>

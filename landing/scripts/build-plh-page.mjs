@@ -5,6 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { renderSiteNav } from "./site-nav.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -20,21 +21,14 @@ function langSwitch() {
 }
 
 function nav() {
-  return `<nav id="main-nav" class="nav" aria-label="Principal">
-          <div class="nav-links">
-            <a href="../patagonia-land-hunter/" class="nav-link--active" data-i18n="nav.plh">Patagonia Land Hunter</a>
-            <a href="../#servicios" data-i18n="nav.services">Servicios</a>
-            <a href="../territorios/" data-i18n="nav.territories">Territorios</a>
-            <a href="../inteligencia-territorial/" data-i18n="nav.intelligence">Inteligencia</a>
-            <a href="../casos-de-estudio/" data-i18n="nav.cases">Casos</a>
-            <a href="../blog/" data-i18n="nav.blog">Blog</a>
-            <a href="../#nosotros" data-i18n="nav.about">Nosotros</a>
-          </div>
-          ${langSwitch()}
-          <div class="nav-cta-pair nav-cta-pair--solo">
-            <a href="#land-search-form" class="nav-cta nav-cta--wa" data-track="cta_plh_form" data-i18n="cta.whatsapp">WhatsApp</a>
-          </div>
-        </nav>`;
+  return renderSiteNav({
+    prefix: "../",
+    context: "plh",
+    langSwitchHtml: langSwitch(),
+    ctaMode: "plh",
+    siteWaHref: "#land-search-form",
+    siteCalHref: "#land-search-form",
+  });
 }
 
 const STEP_ICONS = {
