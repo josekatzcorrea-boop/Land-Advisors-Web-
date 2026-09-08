@@ -35,15 +35,58 @@
     return false;
   }
 
-  function getLang() {
+  /** Geo por IP (país). Timeout corto; null = falló / sin respuesta. */
+  function detectCountryCode() {
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timedOut = false;
+    var timer = setTimeout(function () {
+      timedOut = true;
+      if (controller) controller.abort();
+    }, 1500);
+
+    var opts = { cache: "no-store" };
+    if (controller) opts.signal = controller.signal;
+
+    return fetch("https://get.geojs.io/v1/ip/country.json", opts)
+      .then(function (r) {
+        if (!r.ok) throw new Error("geo http");
+        return r.json();
+      })
+      .then(function (data) {
+        clearTimeout(timer);
+        if (timedOut) return null;
+        var code = (data && (data.country || data.country_code)) || "";
+        return String(code).toUpperCase() || null;
+      })
+      .catch(function () {
+        clearTimeout(timer);
+        return null;
+      });
+  }
+
+  function defaultLangFromCountry(country) {
+    if (country === "CL") return "es";
+    if (country) return "en";
+    return isLikelyInChile() ? "es" : "en";
+  }
+
+  function getLangFromStorageOrQuery() {
     var q = new URLSearchParams(location.search).get("lang");
     if (q === "en" || q === "es") return q;
     if (localStorage.getItem(MANUAL_KEY) === "1") {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored === "en" || stored === "es") return stored;
     }
-    if (!isLikelyInChile()) return "en";
-    return DEFAULT_LANG;
+    return null;
+  }
+
+  function getLang() {
+    var forced = getLangFromStorageOrQuery();
+    if (forced) return forced;
+    if (window.__LA_GEO_LANG === "en" || window.__LA_GEO_LANG === "es") {
+      return window.__LA_GEO_LANG;
+    }
+    return isLikelyInChile() ? DEFAULT_LANG : "en";
   }
 
   function merge() {
@@ -344,17 +387,6 @@
     location.assign(url.pathname + url.search + url.hash);
   }
 
-  function maybeRedirectLocale() {
-    var q = new URLSearchParams(location.search).get("lang");
-    if (q === "en" || q === "es") return false;
-    if (localStorage.getItem(MANUAL_KEY) === "1") return false;
-    if (!isLikelyInChile()) {
-      navigateLang("en");
-      return true;
-    }
-    return false;
-  }
-
   function bindSwitcher() {
     document.querySelectorAll(".lang-switch__btn").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
@@ -367,10 +399,8 @@
     });
   }
 
-  function init() {
-    if (maybeRedirectLocale()) return;
-
-    var lang = getLang();
+  function bootWithLang(lang) {
+    window.__LA_GEO_LANG = lang;
     window.LA_LANG = lang;
     localStorage.setItem(STORAGE_KEY, lang);
     var page = document.body.getAttribute("data-page") || "seo";
@@ -385,6 +415,32 @@
         document.documentElement.classList.remove("i18n-loading");
         bindSwitcher();
       });
+  }
+
+  function init() {
+    var forced = getLangFromStorageOrQuery();
+    if (forced) {
+      bootWithLang(forced);
+      return;
+    }
+
+    detectCountryCode().then(function (country) {
+      var lang = defaultLangFromCountry(country);
+      window.__LA_GEO_LANG = lang;
+      window.__LA_GEO_COUNTRY = country || "";
+
+      // Visitantes fuera de Chile: fijar ?lang=en para URLs compartibles
+      if (lang === "en") {
+        var url = new URL(location.href);
+        if (url.searchParams.get("lang") !== "en") {
+          navigateLang("en");
+          return;
+        }
+      }
+
+      // Chile: español sin ?lang= (canónico ES)
+      bootWithLang(lang);
+    });
   }
 
   window.LA_i18n = {

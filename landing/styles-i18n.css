@@ -79,6 +79,22 @@ html:not(.i18n-loading) body {
   margin-top: 0.75rem;
 }
 
+/* EN: ocultar Case studies del menú; evitar que About baje de línea */
+html[data-lang="en"] .nav-links a[data-i18n="nav.cases"] {
+  display: none !important;
+}
+
+@media (min-width: 901px) {
+  html[data-lang="en"] .nav-links {
+    flex-wrap: nowrap;
+  }
+
+  html[data-lang="en"] .nav-links a {
+    padding: 0.35rem 0.32rem;
+    font-size: 0.6rem;
+  }
+}
+
 @media (min-width: 980px) {
   .nav .lang-switch {
     margin-top: 0;

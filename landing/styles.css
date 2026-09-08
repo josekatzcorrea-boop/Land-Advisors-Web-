@@ -956,6 +956,11 @@ section {
   object-position: center 32%;
 }
 
+/* Caso 03 (caso-elegir): foto vertical — encuadre en valle y montañas */
+.situacion-photo--elegir {
+  object-position: center 42%;
+}
+
 .situacion-body {
   padding: 1.25rem 1.5rem 1.5rem;
 }
