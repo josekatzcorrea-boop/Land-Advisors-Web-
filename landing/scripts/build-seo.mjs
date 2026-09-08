@@ -175,7 +175,7 @@ ${hasHreflang(page.path) ? '  <meta property="og:locale:alternate" content="en_U
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}styles.css">
   <link rel="stylesheet" href="${prefix}styles-seo.css">
-  <link rel="stylesheet" href="${prefix}styles-i18n.css?v=20260908">
+  <link rel="stylesheet" href="${prefix}styles-i18n.css?v=20260908b">
   <link rel="stylesheet" href="${prefix}lead-gate.css">
   <link rel="stylesheet" href="${prefix}chat-widget.css">
   <link rel="stylesheet" href="${prefix}styles-human.css">`;
