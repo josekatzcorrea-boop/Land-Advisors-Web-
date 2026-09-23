@@ -3,18 +3,18 @@
     "/servicios/": {
       "en": {
         "title": "Property consultancy services | Land Advisors",
-        "description": "Strategic diagnostic, personalised search, purchase advisory, potential studies and project structuring in southern Chile. Prices in UF.",
-        "h1": "Service catalogue",
+        "description": "Diagnostic, personalized search, purchase advisory, potential studies and project structuring in southern Chile. Prices in UF.",
+        "h1": "Service catalog",
         "intro": "Consultancy to buy the right land in the Lago Llanquihue and Malalcahuello basin. Territory first, asset second — each service is contracted independently.",
         "breadcrumb": "Services",
         "label": "Services"
       },
       "_selectors": {
         ".services-catalog-price-note": {
-          "en": "Prices in UF · subject to confirmation at your strategy session."
+          "en": "Prices in UF · subject to confirmation at your strategy call."
         },
         ".services-catalog-legal": {
-          "en": "We are not an estate agency or property portal. Every piece of land requires a specific assessment."
+          "en": "We are not a brokerage or property portal. Every piece of land requires a specific assessment."
         },
         ".services-life-gallery__label": {
           "en": "More than a piece of land"
@@ -35,16 +35,16 @@
           "en": "See full promotion →"
         },
         ".services-catalog-item:nth-child(1) h2": {
-          "en": "Strategic property diagnostic"
+          "en": "Property Diagnostic"
         },
         ".services-catalog-item:nth-child(1) .services-catalog-price": {
           "en": "1 UF"
         },
         ".services-catalog-item:nth-child(1) .service-card-link": {
-          "en": "Book diagnostic →"
+          "en": "Book a Diagnostic →"
         },
         ".services-catalog-item:nth-child(1) .service-detail-list li:nth-child(1)": {
-          "en": "Strategy session (in person or online)"
+          "en": "Strategy call (in person or online)"
         },
         ".services-catalog-item:nth-child(1) .service-detail-list li:nth-child(2)": {
           "en": "Report with recommended zones and evaluation criteria"
@@ -56,7 +56,7 @@
           "en": "Ideal if you still do not know which zone to target or how to evaluate options."
         },
         ".services-catalog-item:nth-child(2) h2": {
-          "en": "Personalised land search"
+          "en": "Personalized land search"
         },
         ".services-catalog-item:nth-child(2) .services-catalog-price": {
           "en": "5 UF"
@@ -77,10 +77,10 @@
           "en": "Purchase recommendation"
         },
         ".services-catalog-item:nth-child(2) .service-detail-note:nth-of-type(1)": {
-          "en": "Includes strategic diagnostic."
+          "en": "Includes Diagnostic."
         },
         ".services-catalog-item:nth-child(2) .service-detail-note:nth-of-type(2)": {
-          "en": "For buyers who want curated options, not a mass catalogue."
+          "en": "For buyers who want curated options, not a mass catalog."
         },
         ".services-catalog-item:nth-child(3) h2": {
           "en": "Purchase advisory and acquisition support"
@@ -101,7 +101,7 @@
           "en": "Progress reports and closing checklist"
         },
         ".services-catalog-item:nth-child(3) .service-detail-note:nth-of-type(1)": {
-          "en": "5 UF less if you previously contracted personalised search."
+          "en": "5 UF less if you previously contracted personalized search."
         },
         ".services-catalog-item:nth-child(4) h2": {
           "en": "Property potential study"
@@ -113,7 +113,7 @@
           "en": "Request study →"
         },
         ".services-catalog-item:nth-child(4) .service-detail-objective": {
-          "en": "Objective: establish the commercial vocation of a piece of land, the optimal project and why."
+          "en": "Objective: establish the commercial potential of a piece of land, the optimal project and why."
         },
         ".services-catalog-item:nth-child(4) .service-detail-list li:nth-child(1)": {
           "en": "Report with territorial and regulatory analysis"
@@ -122,7 +122,7 @@
           "en": "Value scenarios and identified risks"
         },
         ".services-catalog-item:nth-child(4) .service-detail-list li:nth-child(3)": {
-          "en": "Recommendation to proceed or not, with verifiable support"
+          "en": "Recommendation to proceed or not, with checkable backing"
         },
         ".services-catalog-item:nth-child(4) .service-detail-note:nth-of-type(1)": {
           "en": "Scope and final fee depend on land and project complexity."
@@ -165,7 +165,7 @@
           "attr": "alt"
         },
         ".seo-card:nth-child(1) h2 a": {
-          "en": "Strategic property diagnostic"
+          "en": "Property Diagnostic"
         },
         ".seo-card:nth-child(1) p": {
           "en": "Ideal if you still do not know which zone to target or how to evaluate options."
@@ -174,10 +174,10 @@
           "en": "View service →"
         },
         ".seo-card:nth-child(2) h2 a": {
-          "en": "Personalised land search"
+          "en": "Personalized land search"
         },
         ".seo-card:nth-child(2) p": {
-          "en": "Includes strategic diagnostic."
+          "en": "Includes Diagnostic."
         },
         ".seo-card:nth-child(2) .btn": {
           "en": "View service →"
@@ -186,7 +186,7 @@
           "en": "Purchase advisory and acquisition support"
         },
         ".seo-card:nth-child(3) p": {
-          "en": "5 UF less if you previously contracted personalised search."
+          "en": "5 UF less if you previously contracted personalized search."
         },
         ".seo-card:nth-child(3) .btn": {
           "en": "View service →"
@@ -214,9 +214,9 @@
     "/territorios/": {
       "en": {
         "title": "Property investment territories in southern Chile | Land Advisors",
-        "description": "Territorial intelligence in Puerto Varas, Frutillar, Llanquihue, Malalcahuello, bespoke Patagonia and the Lago Llanquihue basin. Capital growth and urban expansion opportunities.",
+        "description": "Local market insight in Puerto Varas, Frutillar, Llanquihue, Malalcahuello, bespoke Patagonia and the Lago Llanquihue basin. Appreciation and urban expansion opportunities.",
         "h1": "Territories where we read the property market",
-        "intro": "We operate in the peri-urban rural fringe of Los Lagos and Malalcahuello — and extend coverage across Patagonia on a bespoke basis, with commercial partnerships and site visits when the project warrants it.",
+        "intro": "We operate in the rural fringe of Los Lagos and Malalcahuello — and extend coverage across Patagonia on a bespoke basis, with commercial partnerships and site visits when the project warrants it.",
         "breadcrumb": "Territories",
         "label": "Territories"
       },
@@ -271,9 +271,9 @@
     "/casos-de-estudio/": {
       "en": {
         "title": "Property case studies | Land Advisors Chile",
-        "description": "Real territorial investment cases in Puerto Varas, Frutillar and Llanquihue: capital growth, change of use and property arbitrage.",
+        "description": "Real territorial investment cases in Puerto Varas, Frutillar and Llanquihue: appreciation, change of use and property arbitrage.",
         "h1": "Territorial investment case studies",
-        "intro": "Past results do not guarantee future results. These cases show how territorial intelligence reveals opportunities the market does not price in.",
+        "intro": "Past results do not guarantee future results. These cases show how local market insight reveals opportunities the market does not price in.",
         "breadcrumb": "Case studies",
         "label": "Case studies"
       },
@@ -282,16 +282,16 @@
           "en": "Read full case →"
         },
         ".case-card:nth-child(1) h2 a": {
-          "en": "From rural restriction to commercial vocation"
+          "en": "From rural restriction to commercial potential"
         },
         ".case-card:nth-child(1) .case-card__territory": {
           "en": "Puerto Varas"
         },
         ".case-card:nth-child(1) .case-card__metric strong": {
-          "en": "+50% value captured"
+          "en": "+50% vs. purchase price"
         },
         ".case-card:nth-child(1) p:not(.case-card__metric):not(.case-card__territory)": {
-          "en": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; territorial reading told a different story."
+          "en": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; local market read told a different story."
         },
         ".case-card:nth-child(2) h2 a": {
           "en": "The opportunity was in the seller"
@@ -306,7 +306,7 @@
           "en": "For the market it was another piece of land in the Frutillar supply. For someone reading liquidity and comparables, it was an actionable price gap."
         },
         ".case-card:nth-child(3) h2 a": {
-          "en": "Present value vs. future value"
+          "en": "What it costs now vs. what it can be worth later"
         },
         ".case-card:nth-child(3) .case-card__territory": {
           "en": "Llanquihue"
@@ -315,14 +315,14 @@
           "en": "4 plots · 4,400 UF"
         },
         ".case-card:nth-child(3) p:not(.case-card__metric):not(.case-card__territory)": {
-          "en": "A partly urbanised development can look attractive on unit price. The right question is whether present value compensates for enabling risk and timelines."
+          "en": "A partly urbanized development can look attractive on unit price. The right question is whether present value compensates for site-prep risk and timelines."
         }
       }
     },
     "/guias/": {
       "en": {
         "title": "How to buy land in southern Chile | Land Advisors guide",
-        "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, enabling costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
+        "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, site-prep costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
         "h1": "How to buy land in southern Chile",
         "intro": "Buying land in southern Chile can be a major decision — and there is plenty of attractive stock on the market. The key is not to browse more listings, but to set your basic criteria first. With that clear, you can choose options that actually fit and compare what matters most for your quality of life or project returns.",
         "breadcrumb": "Guides",
@@ -356,7 +356,7 @@
             {
               "num": "4",
               "icon": "habilitation",
-              "title": "Enabling",
+              "title": "Site prep",
               "text": "What you can spend after buying"
             },
             {
@@ -378,14 +378,14 @@
           "type": "step",
           "title": "Define what you will use the property for",
           "paragraphs": [
-            "Before browsing photos, define the use: permanent home, second home, cabins, commerce, heritage investment or another project. That objective filters zones, services, regulation and the type of land that makes sense.",
-            "Raising a family near town is not the same as opening a roadside café or holding heritage long term. If the use is unclear, almost any listing can look like \"the one\"."
+            "Before browsing photos, define the use: permanent home, second home, cabins, commerce, long-term investment or another project. That objective filters zones, services, regulation and the type of land that makes sense.",
+            "Raising a family near town is not the same as opening a roadside café or holding for the long term. If the use is unclear, almost any listing can look like \"the one\"."
           ],
           "examples": [
             {
               "icon": "family",
               "title": "Living or quality of life",
-              "text": "Prioritise rural fringe with reasonable access to services, schools and town. Remote countryside usually costs more in daily time and logistics."
+              "text": "Prioritize rural fringe with reasonable access to services, schools and town. Remote countryside usually costs more in daily time and logistics."
             },
             {
               "icon": "cabin",
@@ -395,7 +395,7 @@
             {
               "icon": "invest",
               "title": "Investment or commerce",
-              "text": "Look at price comparables, fringe capital growth or cash flow, and land-use limits before committing to a view."
+              "text": "Look at price comparables, fringe appreciation or cash flow, and land-use limits before committing to a view."
             }
           ]
         },
@@ -432,13 +432,13 @@
           "type": "step",
           "title": "Set how much you can spend to enable the land",
           "paragraphs": [
-            "Enabling is everything after purchase: access, power, water, internet, earthworks, studies and timelines. That budget matters as much as the listing price.",
+            "Site prep is everything after purchase: access, power, water, internet, earthworks, studies and timelines. That budget matters as much as the listing price.",
             "If you leave no margin to enable, the land can sit unused for years — or force spending you had not planned."
           ],
           "bullets": [
             "List what is typically missing on land in your target sectors.",
             "Ask for local order-of-magnitude costs (not quotes from Santiago).",
-            "Purchase + enabling = real cost of entering the project."
+            "Purchase + site prep = real cost of entering the project."
           ]
         },
         {
@@ -446,12 +446,12 @@
           "type": "step",
           "title": "Define what services the land needs (infrastructure level)",
           "paragraphs": [
-            "Decide the minimum infrastructure you accept: mains water or well, power, sewer or septic, stable internet, consolidated road. What \"should already be there\" depends on your use and enabling budget.",
+            "Decide the minimum infrastructure you accept: mains water or well, power, sewer or septic, stable internet, consolidated road. What \"should already be there\" depends on your use and site-prep budget.",
             "The more demanding you are on ready services, the narrower the offer — and the more predictable the entry cost."
           ],
           "bullets": [
-            "Permanent home: prioritise stable services year-round.",
-            "Second home or tourism: you may accept more enabling if the setting justifies it.",
+            "Permanent home: prioritize stable services year-round.",
+            "Second home or tourism: you may accept more site prep if the setting justifies it.",
             "Commerce: check service feasibility and use rules, not just the meter."
           ]
         },
@@ -460,13 +460,13 @@
           "type": "step",
           "title": "Contact agencies, brokers or Land Advisors with this brief",
           "paragraphs": [
-            "When you already have use, budget, sectors, enabling and infrastructure level, ask for help with criteria. Arriving with that brief changes the conversation: you stop receiving \"the prettiest\" and start receiving what fits.",
-            "You can work with agencies or brokers (they show stock) and/or Land Advisors (territorial consultancy: we filter and compare against your objective without selling our own land)."
+            "When you already have use, budget, sectors, site prep and infrastructure level, ask for help with criteria. Arriving with that brief changes the conversation: you stop receiving \"the prettiest\" and start receiving what fits.",
+            "You can work with agencies or brokers (they show stock) and/or Land Advisors (land advisory: we filter and compare against your objective without selling our own land)."
           ],
           "bullets": [
             "Share your criteria brief on first contact.",
-            "Ask for several options that meet the basics — not a single favourite.",
-            "If you want method and a comparative report, the usual next step is Personalised Search."
+            "Ask for several options that meet the basics — not a single favorite.",
+            "If you want method and a comparative report, the usual next step is Personalized Search."
           ]
         },
         {
@@ -509,7 +509,7 @@
                 {
                   "icon": "traffic",
                   "title": "Vehicle flow",
-                  "text": "For a commercial project, route visibility and traffic matter as much as square metres. Without compatible traffic, a site does not sustain itself on the view alone."
+                  "text": "For a commercial project, route visibility and traffic matter as much as square meters. Without compatible traffic, a site does not sustain itself on the view alone."
                 },
                 {
                   "icon": "tourism",
@@ -524,7 +524,7 @@
                 {
                   "icon": "normativa",
                   "title": "Land use and regulation",
-                  "text": "Use limits, planning instruments and property restrictions can block cabins, commerce or densification. Verify before projecting returns."
+                  "text": "Use limits, zoning and planning rules and property restrictions can block cabins, commerce or densification. Verify before projecting returns."
                 }
               ]
             }
@@ -534,10 +534,10 @@
           "idx": 9,
           "type": "callout",
           "title": "This is what we do at Land Advisors",
-          "text": "The same process — basic criteria, short list and comparison by use — with territorial reading of the Lago Llanquihue and Malalcahuello basin. We are not an estate agency: we do not sell land. We help you buy the right piece, with local criteria on price, sectors and feasibility.",
+          "text": "The same process — basic criteria, short list and comparison by use — with local market read of the Lago Llanquihue and Malalcahuello basin. We are not a brokerage: we do not sell land. We help you buy the right piece, with local criteria on price, sectors and feasibility.",
           "cta": {
             "href": "servicios/busqueda-personalizada/",
-            "label": "Explore personalised search",
+            "label": "Explore personalized search",
             "event": "cta_busqueda"
           }
         }
@@ -553,7 +553,7 @@
           "en": "At Land Advisors this process is our daily work: territory, regulation, market and price with local criteria. We do not sell land — we help you buy the right one."
         },
         ".guide-callout--footer a": {
-          "en": "Request personalised search"
+          "en": "Request personalized search"
         },
         ".seo-guide-faq .blog-article__h2": {
           "en": "Frequently asked questions"
@@ -565,7 +565,7 @@
           "en": "Where do I start if I have never bought land in the south?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
-          "en": "Start with intended use, your purchase budget range and the names of sectors that interest you. Then define enabling and infrastructure level, and only then ask agencies, brokers or Land Advisors for options."
+          "en": "Start with intended use, your purchase budget range and the names of sectors that interest you. Then define site prep and infrastructure level, and only then ask agencies, brokers or Land Advisors for options."
         },
         ".faq-item:nth-child(2) summary": {
           "en": "What is registered access at the Land Registry?"
@@ -580,27 +580,27 @@
           "en": "Yes. The municipal planning code, property restrictions and subdivision covenants can limit uses, heights or destinations. Best to review before offering."
         },
         ".faq-item:nth-child(4) summary": {
-          "en": "How is Land Advisors different from an estate agency?"
+          "en": "How is Land Advisors different from a brokerage?"
         },
         ".faq-item:nth-child(4) .faq-answer p": {
-          "en": "An agency shows properties from its portfolio. Land Advisors is territorial consultancy: we filter options against your objective, compare with local criteria and recommend with data — without selling our own land."
+          "en": "An agency shows properties from its portfolio. Land Advisors is land advisory: we filter options against your objective, compare with local criteria and recommend with data — without selling our own land."
         },
         ".faq-item:nth-child(5) summary": {
-          "en": "How much does Personalised Search cost?"
+          "en": "How much does Personalized Search cost?"
         },
         ".faq-item:nth-child(5) .faq-answer p": {
-          "en": "Personalised Search includes at least 4 options, a session with you to choose the 3 best and a comparative report with strategic diagnostic. Reference price is 5 UF — confirmed in session according to scope."
+          "en": "Personalized Search includes at least 4 options, a session with you to choose the 3 best and a comparative report with Diagnostic. Reference price is 5 UF — confirmed in session according to scope."
         }
       }
     },
     "/indice-territorial/": {
       "en": {
-        "title": "Land Advisors Index (ILA) | Territorial intelligence southern Chile",
-        "description": "Land Advisors territorial index v0: score by sector in Puerto Varas, Frutillar, Llanquihue and Ensenada. Connectivity, regulation, market and enabling risk — not listing price.",
+        "title": "Land Advisors Index (ILA) | Local market insight southern Chile",
+        "description": "Land Advisors sector index v0: score by sector in Puerto Varas, Frutillar, Llanquihue and Ensenada. Connectivity, regulation, market and site-prep risk — not listing price.",
         "h1": "Land Advisors Index",
-        "intro": "Territorial score by rural fringe sector. Calibrated with 2024 Census data, municipal regulation and real cases — to compare zones with criteria, not listing impulse.",
-        "breadcrumb": "Territorial index",
-        "label": "Territorial index"
+        "intro": "Sector score by rural fringe sector. Calibrated with 2024 Census data, municipal regulation and real cases — to compare zones with criteria, not listing impulse.",
+        "breadcrumb": "Sector index",
+        "label": "Sector index"
       },
       "_selectors": {
         ".ila-dim-def:nth-child(1)": {
@@ -616,18 +616,18 @@
           "en": "Market and liquidity"
         },
         ".ila-dim-def:nth-child(5)": {
-          "en": "Enabling risk"
+          "en": "Site prep risk"
         }
       }
     },
     "/inteligencia-territorial/": {
       "en": {
-        "title": "Territorial intelligence | Land Advisors Chile library",
-        "description": "Rural fringe series, territories, real cases and guides to decide well when buying land in southern Chile. Territorial consultancy, not an estate agency.",
-        "h1": "Territorial intelligence",
+        "title": "Local market insight | Land Advisors Chile library",
+        "description": "Rural fringe series, territories, real cases and guides to decide well when buying land in southern Chile. Land advisory, not a brokerage.",
+        "h1": "Local market insight",
         "intro": "Library to read land, regulation, connectivity and market before buying in the Lago Llanquihue and Malalcahuello basin.",
-        "breadcrumb": "Territorial intelligence",
-        "label": "Territorial intelligence"
+        "breadcrumb": "Local market insight",
+        "label": "Local market insight"
       },
       "_selectors": {
         ".blog-article__lead": {
@@ -640,7 +640,7 @@
           "en": "Index and observatory"
         },
         ".intel-cluster:nth-child(1) .intel-cluster__desc": {
-          "en": "ILA v0 — territorial score by sector and 2026 Observatory pilot with Census and municipal planning data."
+          "en": "ILA v0 — sector score by sector and 2026 Observatory pilot with Census and municipal planning data."
         },
         ".intel-cluster:nth-child(1) li:nth-child(1) a": {
           "en": "Land Advisors Index (ILA)"
@@ -658,16 +658,16 @@
           "en": "Series: rural fringe of Puerto Varas"
         },
         ".intel-cluster:nth-child(2) .intel-cluster__desc": {
-          "en": "Five parts to read capital growth, costs, regulation, connectivity and land vocation in the peri-urban fringe."
+          "en": "Five parts to read appreciation, costs, regulation, connectivity and land vocation in the rural fringe."
         },
         ".intel-cluster:nth-child(2) li:nth-child(1) a": {
-          "en": "Part 1 — Territorial capital growth"
+          "en": "Part 1 — Territorial appreciation"
         },
         ".intel-cluster:nth-child(2) li:nth-child(1) .intel-cluster__meta": {
           "en": "6 min"
         },
         ".intel-cluster:nth-child(2) li:nth-child(2) a": {
-          "en": "Part 2 — Enabling costs"
+          "en": "Part 2 — Site-prep costs"
         },
         ".intel-cluster:nth-child(2) li:nth-child(2) .intel-cluster__meta": {
           "en": "5 min"
@@ -724,7 +724,7 @@
           "en": "Cases and learnings"
         },
         ".intel-cluster:nth-child(4) .intel-cluster__desc": {
-          "en": "Real decisions with problem, analysis, outcome and transferable learning."
+          "en": "Real decisions with problem, analysis, outcome and what this means for you."
         },
         ".intel-cluster:nth-child(4) li:nth-child(1) a": {
           "en": "Puerto Varas — commercial restriction"
@@ -781,19 +781,19 @@
           "en": "10 min"
         },
         ".intel-cluster:nth-child(6) li:nth-child(2) a": {
-          "en": "Strategic diagnostic (1 UF)"
+          "en": "Diagnostic (1 UF)"
         },
         ".intel-cluster:nth-child(6) li:nth-child(2) .intel-cluster__meta": {
           "en": "Service"
         },
         ".intel-cluster:nth-child(6) li:nth-child(3) a": {
-          "en": "Personalised search (5 UF)"
+          "en": "Personalized search (5 UF)"
         },
         ".intel-cluster:nth-child(6) li:nth-child(3) .intel-cluster__meta": {
           "en": "Service"
         },
         ".intel-faq .faq-item:nth-child(1) summary": {
-          "en": "What is territorial intelligence at Land Advisors?"
+          "en": "What is local market insight at Land Advisors?"
         },
         ".intel-faq .faq-item:nth-child(1) .faq-answer p": {
           "en": "It is the integrated reading of land, regulation, connectivity, local market and property vocation — before recommending buy or pass on a piece of land. We do not show properties: we help you decide with criteria."
@@ -802,21 +802,21 @@
           "en": "Where do I start if I have never bought in the south?"
         },
         ".intel-faq .faq-item:nth-child(2) .faq-answer p": {
-          "en": "The guide to buying land in southern Chile orders the process in six steps (use, budget, sectors, enabling, infrastructure and asking for help). If you still do not have a zone defined, the strategic diagnostic (1 UF) is the usual first service."
+          "en": "The guide to buying land in southern Chile orders the process in six steps (use, budget, sectors, site prep, infrastructure and asking for help). If you still do not have a zone defined, the Diagnostic (1 UF) is the usual first service."
         },
         ".intel-faq .faq-item:nth-child(3) summary": {
           "en": "Does this replace legal advice?"
         },
         ".intel-faq .faq-item:nth-child(3) .faq-answer p": {
-          "en": "No. Our content is educational and territorial consultancy. Before making an offer, check regulation and documents with a lawyer and competent professionals."
+          "en": "No. Our content is educational and land advisory. Before making an offer, check regulation and documents with a lawyer and competent professionals."
         }
       }
     },
     "/blog/": {
       "en": {
-        "title": "Territorial intelligence and property investment blog | Land Advisors",
-        "description": "Articles on capital growth, urban expansion, change of land use, the southern Chile property market and territorial investment.",
-        "h1": "Territorial intelligence and property investment",
+        "title": "Local market insight and property investment blog | Land Advisors",
+        "description": "Articles on appreciation, urban expansion, change of land use, the southern Chile property market and territorial investment.",
+        "h1": "Local market insight and property investment",
         "intro": "We publish analysis on the southern Chile property market, rural development and investment opportunities with territorial backing.",
         "breadcrumb": "Blog",
         "label": "Blog"
@@ -826,7 +826,7 @@
           "en": "Territorial editorial"
         },
         ".blog-index-intro__text": {
-          "en": "Analysis on the southern Chile property market, territorial reading and criteria for buying the right land — without hype or return promises."
+          "en": "Analysis on the southern Chile property market, local market read and criteria for buying the right land — without hype or return promises."
         },
         ".blog-upcoming__title": {
           "en": "Coming next"
@@ -835,19 +835,19 @@
           "en": "Read article →"
         },
         ".blog-card:nth-child(1) .blog-card__title a": {
-          "en": "Property capital growth on the Puerto Varas rural fringe"
+          "en": "Property appreciation on the Puerto Varas rural fringe"
         },
         ".blog-card:nth-child(1) .blog-card__excerpt": {
-          "en": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding capital growth — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory."
+          "en": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding appreciation — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory."
         },
         ".blog-card:nth-child(1) .blog-card__category-pill": {
-          "en": "Territorial capital growth"
+          "en": "Territorial appreciation"
         },
         ".blog-card:nth-child(1) .blog-card__series": {
           "en": "Puerto Varas rural fringe · Part 1"
         },
         ".blog-card:nth-child(2) .blog-card__title a": {
-          "en": "Real costs and feasibility when enabling land on the rural fringe"
+          "en": "Real costs and feasibility when prepping land on the rural fringe"
         },
         ".blog-card:nth-child(2) .blog-card__excerpt": {
           "en": "\"Cheap\" land on the Puerto Varas fringe can stop being cheap once access, services, approvals and real timelines are added. Feasibility is not only regulatory: it is economic."
@@ -883,7 +883,7 @@
           "en": "Puerto Varas rural fringe · Part 4"
         },
         ".blog-card:nth-child(5) .blog-card__title a": {
-          "en": "Land vocation: home, cabins, heritage or business"
+          "en": "Land vocation: home, cabins, long-term hold or business"
         },
         ".blog-card:nth-child(5) .blog-card__excerpt": {
           "en": "Not every attractive plot suits every project. Land vocation closes the rural fringe series: which use makes sense on that property and sector."
@@ -931,11 +931,11 @@
     },
     "/servicios/diagnostico-estrategico/": {
       "en": {
-        "title": "Strategic property diagnostic | Land Advisors",
+        "title": "Property Diagnostic | Land Advisors",
         "description": "Ideal if you still do not know which zone to target or how to evaluate options.",
-        "h1": "Strategic property diagnostic",
+        "h1": "Property Diagnostic",
         "intro": "Ideal if you still do not know which zone to target or how to evaluate options.",
-        "breadcrumb": "Strategic property diagnostic",
+        "breadcrumb": "Property Diagnostic",
         "label": "Service"
       },
       "_selectors": {
@@ -952,7 +952,7 @@
           "en": "What is included"
         },
         ".service-detail-list li:nth-child(1)": {
-          "en": "Strategy session (in person or online)"
+          "en": "Strategy call (in person or online)"
         },
         ".service-detail-list li:nth-child(2)": {
           "en": "Report with recommended zones and evaluation criteria"
@@ -967,11 +967,11 @@
     },
     "/servicios/busqueda-personalizada/": {
       "en": {
-        "title": "Personalised land search | Land Advisors",
-        "description": "Includes strategic diagnostic.",
-        "h1": "Personalised land search",
-        "intro": "Includes strategic diagnostic.",
-        "breadcrumb": "Personalised land search",
+        "title": "Personalized land search | Land Advisors",
+        "description": "Includes Diagnostic.",
+        "h1": "Personalized land search",
+        "intro": "Includes Diagnostic.",
+        "breadcrumb": "Personalized land search",
         "label": "Service"
       },
       "_selectors": {
@@ -1000,19 +1000,19 @@
           "en": "Purchase recommendation"
         },
         ".service-detail-note:nth-of-type(1)": {
-          "en": "Includes strategic diagnostic."
+          "en": "Includes Diagnostic."
         },
         ".service-detail-note:nth-of-type(2)": {
-          "en": "For buyers who want curated options, not a mass catalogue."
+          "en": "For buyers who want curated options, not a mass catalog."
         }
       }
     },
     "/servicios/asesoria-compra/": {
       "en": {
         "title": "Purchase advisory and acquisition support | Land Advisors",
-        "description": "5 UF less if you previously contracted personalised search.",
+        "description": "5 UF less if you previously contracted personalized search.",
         "h1": "Purchase advisory and acquisition support",
-        "intro": "5 UF less if you previously contracted personalised search.",
+        "intro": "5 UF less if you previously contracted personalized search.",
         "breadcrumb": "Purchase advisory and acquisition support",
         "label": "Service"
       },
@@ -1039,14 +1039,14 @@
           "en": "Progress reports and closing checklist"
         },
         ".service-detail-note:nth-of-type(1)": {
-          "en": "5 UF less if you previously contracted personalised search."
+          "en": "5 UF less if you previously contracted personalized search."
         }
       }
     },
     "/servicios/estudio-potencial-inmobiliario/": {
       "en": {
         "title": "Property potential study | Land Advisors",
-        "description": "Objective: establish the commercial vocation of a piece of land, the optimal project and why.",
+        "description": "Objective: establish the commercial potential of a piece of land, the optimal project and why.",
         "h1": "Property potential study",
         "intro": "Scope and final fee depend on land and project complexity.",
         "breadcrumb": "Property potential study",
@@ -1054,13 +1054,13 @@
       },
       "_selectors": {
         ".seo-service-meta p:last-child": {
-          "en": "Objective: establish the commercial vocation of a piece of land, the optimal project and why."
+          "en": "Objective: establish the commercial potential of a piece of land, the optimal project and why."
         },
         ".seo-service-meta__label": {
           "en": "Investment"
         },
         ".service-detail-objective": {
-          "en": "Objective: establish the commercial vocation of a piece of land, the optimal project and why."
+          "en": "Objective: establish the commercial potential of a piece of land, the optimal project and why."
         },
         ".seo-service-body h2": {
           "en": "What is included"
@@ -1072,7 +1072,7 @@
           "en": "Value scenarios and identified risks"
         },
         ".service-detail-list li:nth-child(3)": {
-          "en": "Recommendation to proceed or not, with verifiable support"
+          "en": "Recommendation to proceed or not, with checkable backing"
         },
         ".service-detail-note:nth-of-type(1)": {
           "en": "Scope and final fee depend on land and project complexity."
@@ -1117,18 +1117,18 @@
     },
     "/blog/plusvalia-contorno-rural-puerto-varas/": {
       "en": {
-        "title": "Capital growth on the Puerto Varas rural fringe | Land Advisors",
-        "description": "How to read capital growth on the Puerto Varas rural fringe: purchase price, value arguments, urban evolution and municipal investment.",
-        "h1": "Property capital growth on the Puerto Varas rural fringe",
-        "intro": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding capital growth — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory.",
-        "breadcrumb": "Property capital growth on the Puerto Varas rural fringe",
+        "title": "Appreciation on the Puerto Varas rural fringe | Land Advisors",
+        "description": "How to read appreciation on the Puerto Varas rural fringe: purchase price, value arguments, urban evolution and municipal investment.",
+        "h1": "Property appreciation on the Puerto Varas rural fringe",
+        "intro": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding appreciation — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory.",
+        "breadcrumb": "Property appreciation on the Puerto Varas rural fringe",
         "label": "Article"
       },
       "blocks": [
         {
           "idx": 0,
           "type": "p",
-          "en": "Buyers from Santiago or other regions often arrive with a concrete question: does this land on the Puerto Varas fringe make sense at the asking price? The answer is not only price per square metre on a property portal. It lies in how the urban–rural edge is changing, what planning allows and what the local market will pay when an opportunity stops being theoretical."
+          "en": "Buyers from Santiago or other regions often arrive with a concrete question: does this land on the Puerto Varas fringe make sense at the asking price? The answer is not only price per square meter on a property portal. It lies in how the urban–rural edge is changing, what planning allows and what the local market will pay when an opportunity stops being theoretical."
         },
         {
           "idx": 1,
@@ -1138,7 +1138,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "At Land Advisors we work the peri-urban rural fringe: sectors connected to Puerto Varas, Llanquihue or Frutillar, with vocation for housing, second home, tourism or a life project — not urban property nor isolated land without services. That is where urban expansion, connectivity improvements and use changes often generate capital growth before the mass market reflects it in price."
+          "en": "At Land Advisors we work the rural fringe: sectors connected to Puerto Varas, Llanquihue or Frutillar, with vocation for housing, second home, tourism or a life project — not urban property nor isolated land without services. That is where urban expansion, connectivity improvements and use changes often generate appreciation before the mass market reflects it in price."
         },
         {
           "idx": 3,
@@ -1153,12 +1153,12 @@
         {
           "idx": 5,
           "type": "p",
-          "en": "Land can look \"far\" on the map yet sit on an expansion corridor that has already changed the setting. We review roads, access, real travel times to services and urbanisation dynamics in neighbouring sectors. Capital growth often arrives when connectivity stops being a promise and becomes daily use."
+          "en": "Land can look \"far\" on the map yet sit on an expansion corridor that has already changed the setting. We review roads, access, real travel times to services and urbanization dynamics in neighboring sectors. Appreciation often arrives when connectivity stops being a promise and becomes daily use."
         },
         {
           "idx": 6,
           "type": "h3",
-          "en": "2. Planning instruments and applicable regulation"
+          "en": "2. Zoning and planning rules and applicable regulation"
         },
         {
           "idx": 7,
@@ -1178,22 +1178,22 @@
         {
           "idx": 10,
           "type": "h2",
-          "en": "Capital growth, purchase price and other forms of return"
+          "en": "Appreciation, purchase price and other forms of return"
         },
         {
           "idx": 11,
           "type": "p",
-          "en": "Capital growth — the increase in property value over time — is often the most visible argument, but not the only way to generate return. Often profitability sits in the price itself: buying below market value, closing a seller liquidity gap or spotting a pricing error. In those cases return does not depend on waiting years for the sector to transform; it is captured in the transaction or a short-term resale with real comparables."
+          "en": "Appreciation — the increase in property value over time — is often the most visible argument, but not the only way to generate return. Often profitability sits in the price itself: buying below market value, closing a seller liquidity gap or spotting a pricing error. In those cases return does not depend on waiting years for the sector to transform; it is captured in the transaction or a short-term resale with real comparables."
         },
         {
           "idx": 12,
           "type": "p",
-          "en": "That said, territorial capital growth is relatively easy to project in a presentation — almost always an optimistic scenario can be drawn — but understanding it with criteria means unpacking the concrete arguments that can add value. It is not one variable: there are several, and not all materialise."
+          "en": "That said, appreciation in the area is relatively easy to project in a presentation — almost always an optimistic scenario can be drawn — but understanding it with criteria means unpacking the concrete arguments that can add value. It is not one variable: there are several, and not all materialize."
         },
         {
           "idx": 13,
           "type": "h3",
-          "en": "Common value arguments on the peri-urban fringe"
+          "en": "Common value arguments on the rural fringe"
         },
         {
           "idx": 14,
@@ -1210,17 +1210,17 @@
         {
           "idx": 15,
           "type": "h2",
-          "en": "Urban evolution and municipal investment: context that moves capital growth"
+          "en": "Urban evolution and municipal investment: context that moves appreciation"
         },
         {
           "idx": 16,
           "type": "p",
-          "en": "That is why it matters to incorporate how the town has evolved — and where growth is projected — together with municipal and regional investment in the territory. These are not background details: they directly affect fringe capital growth. A sector receiving investment in connectivity, services or amenities often anticipates demand before price per square metre fully reflects it. Whoever does not read that trajectory pays today for a future that is — or is not — already underway."
+          "en": "That is why it matters to incorporate how the town has evolved — and where growth is projected — together with municipal and regional investment in the territory. These are not background details: they directly affect fringe appreciation. A sector receiving investment in connectivity, services or amenities often anticipates demand before price per square meter fully reflects it. Whoever does not read that trajectory pays today for a future that is — or is not — already underway."
         },
         {
           "idx": 17,
           "type": "p",
-          "en": "Buying with territorial reading lets you see whether current price already embeds that future value, or whether return sits in the purchase itself and not in waiting. But capital growth on paper does not close the decision: it must be weighed against real costs to enable the land — a topic we develop in the second article of this series."
+          "en": "Buying with local market read lets you see whether current price already embeds that future value, or whether return sits in the purchase itself and not in waiting. But appreciation on paper does not close the decision: it must be weighed against real costs to enable the land — a topic we develop in the second article of this series."
         },
         {
           "idx": 18,
@@ -1240,22 +1240,22 @@
         {
           "idx": 21,
           "type": "p",
-          "en": "Land in expansion can look attractive on price and be expensive if enabling costs or regulation do not support it. Opportunity appears when present value, land vocation and urban trajectory align — not when the listing promises capital growth without backing."
+          "en": "Land in expansion can look attractive on price and be expensive if site-prep costs or regulation do not support it. Opportunity appears when present value, land vocation and urban trajectory align — not when the listing promises appreciation without backing."
         },
         {
           "idx": 22,
           "type": "note",
-          "en": "Past results do not guarantee future results. This article is educational and does not constitute personalised advice or a promise of returns."
+          "en": "Past results do not guarantee future results. This article is educational and does not constitute personalized advice or a promise of returns."
         },
         {
           "idx": 23,
           "type": "p",
-          "en": "If you still lack a zone or criteria, a Strategic Diagnostic maps the territory before looking at random land. If you already have an objective in Puerto Varas or the Lago Llanquihue basin, Personalised Search filters alternatives with territorial reading — not a mass catalogue."
+          "en": "If you still lack a zone or criteria, a Diagnostic maps the territory before looking at random land. If you already have an objective in Puerto Varas or the Lago Llanquihue basin, Personalized Search filters alternatives with local market read — not a mass catalog."
         }
       ],
       "_selectors": {
         ".blog-article__lead": {
-          "en": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding capital growth — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory."
+          "en": "The price of land on the Puerto Varas fringe rarely explains its potential on its own. Understanding appreciation — and when return sits in the price itself — means reading territory, local market and the town's growth trajectory."
         },
         ".seo-guide-faq .blog-article__h2": {
           "en": "Frequently asked questions"
@@ -1264,7 +1264,7 @@
           "en": "Related"
         },
         ".blog-related li:nth-child(1) a": {
-          "en": "Part 2: Enabling costs and feasibility"
+          "en": "Part 2: Site-prep costs and feasibility"
         },
         ".blog-related li:nth-child(2) a": {
           "en": "Property investment in Puerto Varas"
@@ -1276,7 +1276,7 @@
           "en": "View case studies"
         },
         ".blog-tag:nth-child(1)": {
-          "en": "property capital growth"
+          "en": "property appreciation"
         },
         ".blog-tag:nth-child(2)": {
           "en": "Puerto Varas"
@@ -1291,18 +1291,18 @@
     },
     "/blog/costos-habilitacion-terreno-contorno-rural/": {
       "en": {
-        "title": "Costs and feasibility when enabling rural land | Land Advisors",
+        "title": "Costs and feasibility when prepping rural land | Land Advisors",
         "description": "What costs to add before buying land on the rural fringe: services, access, approvals and real economic feasibility vs. exit value.",
-        "h1": "Real costs and feasibility when enabling land on the rural fringe",
+        "h1": "Real costs and feasibility when prepping land on the rural fringe",
         "intro": "\"Cheap\" land on the Puerto Varas fringe can stop being cheap once access, services, approvals and real timelines are added. Feasibility is not only regulatory: it is economic.",
-        "breadcrumb": "Real costs and feasibility when enabling land on the rural fringe",
+        "breadcrumb": "Real costs and feasibility when prepping land on the rural fringe",
         "label": "Article"
       },
       "blocks": [
         {
           "idx": 0,
           "type": "p",
-          "en": "This article complements the reading on capital growth on the peri-urban fringe. There we looked at what can add value and how to read the town's evolution. Here the focus is different: what it really costs to put land into use, and whether the numbers close."
+          "en": "This article complements the reading on appreciation on the rural fringe. There we looked at what can add value and how to read the town's evolution. Here the focus is different: what it really costs to put land into use, and whether the numbers close."
         },
         {
           "idx": 1,
@@ -1312,7 +1312,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "List price is only the first line of analysis. Enabling land on the rural fringe means rigorously estimating access and connectivity works, extension or availability of basic services (water, power, sewer or alternative systems), municipal approvals, prior studies, urbanisation or subdivision if applicable, and real approval timelines — which almost never match what the seller promises."
+          "en": "List price is only the first line of analysis. Preparing land on the rural fringe means rigorously estimating access and connectivity works, extension or availability of basic services (water, power, sewer or alternative systems), municipal approvals, prior studies, urbanization or subdivision if applicable, and real approval timelines — which almost never match what the seller promises."
         },
         {
           "idx": 3,
@@ -1327,7 +1327,7 @@
             "Services: network extension, feasibility certificates, own solutions and maintenance.",
             "Processing: permits, completions, subdivision, change of use if applicable.",
             "Prior studies: soils, sanitary feasibility, topography, environmental impact if applicable.",
-            "Urbanisation or subdivision: works, professionals, inspection and municipal timelines.",
+            "Urbanization or subdivision: works, professionals, inspection and municipal timelines.",
             "Contingency: usual overruns on rural works and administrative delays."
           ]
         },
@@ -1339,12 +1339,12 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "Land can comply with regulation and still be unviable if the cost to service it exceeds what the market will pay for the finished asset. That is why we contrast list price with an enabling flow: what must be invested, at what stage, with what overrun risk and what exit value is verifiable with local comparables — not optimistic projections."
+          "en": "Land can comply with regulation and still be unviable if the cost to service it exceeds what the market will pay for the finished asset. That is why we contrast list price with an site-prep cost flow: what must be invested, at what stage, with what overrun risk and what exit value is verifiable with local comparables — not optimistic projections."
         },
         {
           "idx": 7,
           "type": "p",
-          "en": "The useful question is not \"can it be done?\" but \"do the numbers close?\". That means adding purchase price + enabling costs + approval time, and comparing the result with a conservative sale or use scenario."
+          "en": "The useful question is not \"can it be done?\" but \"do the numbers close?\". That means adding purchase price + site-prep costs + approval time, and comparing the result with a conservative sale or use scenario."
         },
         {
           "idx": 8,
@@ -1355,21 +1355,21 @@
           "idx": 9,
           "type": "ul",
           "items": [
-            "You are clear on objective: home, heritage investment or project with defined vocation.",
+            "You are clear on objective: home, long-term investment or project with defined vocation.",
             "The land has planning, access and verifiable local comparables behind it.",
-            "You have weighed purchase price, enabling costs and exit value — not just the listing.",
+            "You have weighed purchase price, site-prep costs and exit value — not just the listing.",
             "You identified overrun, delay and exit liquidity risks before negotiating."
           ]
         },
         {
           "idx": 10,
           "type": "note",
-          "en": "Past results do not guarantee future results. This article is educational and does not constitute personalised advice or a promise of returns."
+          "en": "Past results do not guarantee future results. This article is educational and does not constitute personalized advice or a promise of returns."
         },
         {
           "idx": 11,
           "type": "p",
-          "en": "If you need to clarify zone and criteria before evaluating numbers, Strategic Diagnostic is the starting point. If you already have land in view and want to contrast vocation, regulation and value scenarios including costs, a property potential study deepens feasibility with territorial backing."
+          "en": "If you need to clarify zone and criteria before evaluating numbers, Diagnostic is the starting point. If you already have land in view and want to contrast vocation, regulation and value scenarios including costs, a property potential study deepens feasibility with territorial backing."
         }
       ],
       "_selectors": {
@@ -1383,7 +1383,7 @@
           "en": "Related"
         },
         ".blog-related li:nth-child(1) a": {
-          "en": "Part 1: Capital growth on the rural fringe"
+          "en": "Part 1: Appreciation on the rural fringe"
         },
         ".blog-related li:nth-child(2) a": {
           "en": "Part 3: PRC and rural fringe"
@@ -1392,10 +1392,10 @@
           "en": "Property potential study"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Strategic Diagnostic (1 UF)"
+          "en": "Diagnostic (1 UF)"
         },
         ".blog-tag:nth-child(1)": {
-          "en": "site enabling"
+          "en": "site prep"
         },
         ".blog-tag:nth-child(2)": {
           "en": "Puerto Varas"
@@ -1421,7 +1421,7 @@
         {
           "idx": 0,
           "type": "p",
-          "en": "Third part of the rural fringe series. After capital growth and enabling costs, the focus is regulatory: what the land allows and what to verify before negotiating."
+          "en": "Third part of the rural fringe series. After appreciation and site-prep costs, the focus is regulatory: what the land allows and what to verify before negotiating."
         },
         {
           "idx": 1,
@@ -1431,7 +1431,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "The Municipal Planning Code orders zones, uses, densities and restrictions. On the peri-urban fringe, many plots follow different rules from the urban centre. A listing may say ideal for cabins while the PRC or subdivision covenants say otherwise."
+          "en": "The Municipal Planning Code orders zones, uses, densities and restrictions. On the rural fringe, many plots follow different rules from the urban centre. A listing may say ideal for cabins while the PRC or subdivision covenants say otherwise."
         },
         {
           "idx": 3,
@@ -1487,7 +1487,7 @@
           "en": "Restrictions can coexist. In subdivisions, covenants may limit uses even if the PRC is more permissive."
         },
         ".blog-related li:nth-child(1) a": {
-          "en": "Part 2: Enabling costs"
+          "en": "Part 2: Site-prep costs"
         },
         ".blog-related li:nth-child(2) a": {
           "en": "Part 4: Real connectivity"
@@ -1496,7 +1496,7 @@
           "en": "Territory: Puerto Varas"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-tag:nth-child(1)": {
           "en": "PRC Puerto Varas"
@@ -1550,13 +1550,13 @@
             "Real time to urban services",
             "Road condition and stream crossings",
             "Existing services or extension cost",
-            "Consolidation of neighbouring sector"
+            "Consolidation of neighboring sector"
           ]
         },
         {
           "idx": 5,
           "type": "note",
-          "en": "Educational content. Does not constitute personalised advice."
+          "en": "Educational content. Does not constitute personalized advice."
         }
       ],
       "_selectors": {
@@ -1611,16 +1611,16 @@
       "en": {
         "title": "Land vocation on the rural fringe | Land Advisors",
         "description": "Home, cabins, heritage or commerce: how to identify real land vocation on the rural fringe before buying.",
-        "h1": "Land vocation: home, cabins, heritage or business",
+        "h1": "Land vocation: home, cabins, long-term hold or business",
         "intro": "Not every attractive plot suits every project. Land vocation closes the rural fringe series: which use makes sense on that property and sector.",
-        "breadcrumb": "Land vocation: home, cabins, heritage or business",
+        "breadcrumb": "Land vocation: home, cabins, long-term hold or business",
         "label": "Article"
       },
       "blocks": [
         {
           "idx": 0,
           "type": "p",
-          "en": "Fifth part of the series. We integrate capital growth, costs, regulation and connectivity: which project fits this land?"
+          "en": "Fifth part of the series. We integrate appreciation, costs, regulation and connectivity: which project fits this land?"
         },
         {
           "idx": 1,
@@ -1633,7 +1633,7 @@
           "items": [
             "Family and quality of life",
             "Cabins or tourism",
-            "Heritage investment",
+            "Long-term investment",
             "Commerce or services"
           ]
         },
@@ -1660,7 +1660,7 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "Buying with criteria means reading capital growth, adding costs, verifying regulation, measuring connectivity and aligning vocation. The strategy session orders next steps; Personalised Search filters alternatives within this framework."
+          "en": "Buying with criteria means reading appreciation, adding costs, verifying regulation, measuring connectivity and aligning vocation. The strategy call orders next steps; Personalized Search filters alternatives within this framework."
         },
         {
           "idx": 7,
@@ -1688,19 +1688,19 @@
           "en": "Which service fits after the series?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "Diagnostic if you lack a zone; Personalised Search for filtered alternatives; potential study if you already have land in view."
+          "en": "Diagnostic if you lack a zone; Personalized Search for filtered alternatives; potential study if you already have land in view."
         },
         ".blog-related li:nth-child(1) a": {
-          "en": "Part 1: Capital growth"
+          "en": "Part 1: Appreciation"
         },
         ".blog-related li:nth-child(2) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-related li:nth-child(3) a": {
           "en": "Guide: buy land"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Personalised search"
+          "en": "Personalized search"
         },
         ".blog-tag:nth-child(1)": {
           "en": "land vocation"
@@ -1719,7 +1719,7 @@
     "/blog/comprar-terreno-sur-chile-desde-santiago/": {
       "en": {
         "title": "Buy land in southern Chile from Santiago | Land Advisors",
-        "description": "Guide for Santiago buyers: how to evaluate land in the south without knowing local dynamics, plan visits and decide with territorial criteria.",
+        "description": "Guide for Santiago buyers: how to evaluate land in the south without knowing local dynamics, plan visits and decide with local criteria.",
         "h1": "Buy land in southern Chile while living in Santiago",
         "intro": "Many of our clients live in Santiago or northern Chile. Buying in Puerto Varas, Frutillar or Llanquihue from afar is possible — but it needs a different order from browsing listings at weekends.",
         "breadcrumb": "Buy land in southern Chile while living in Santiago",
@@ -1729,7 +1729,7 @@
         {
           "idx": 0,
           "type": "p",
-          "en": "The most common mistake is committing to photos on a long weekend and offering without a filtered short list. From Santiago it pays to invest first in territorial criteria — zone, regulation, connectivity, total budget — and only then in visits."
+          "en": "The most common mistake is committing to photos on a long weekend and offering without a filtered short list. From Santiago it pays to invest first in local criteria — zone, regulation, connectivity, total budget — and only then in visits."
         },
         {
           "idx": 1,
@@ -1750,10 +1750,10 @@
           "idx": 4,
           "type": "ul",
           "items": [
-            "Define objective: home, heritage, cabins, commerce",
+            "Define objective: home, long-term hold, cabins, commerce",
             "Narrow compatible municipalities (Puerto Varas, Frutillar, Llanquihue, Malalcahuello)",
-            "Filter by total budget: purchase + enabling",
-            "Online strategy session (Strategic Diagnostic 1 UF)",
+            "Filter by total budget: purchase + site prep",
+            "Online strategy call (Diagnostic 1 UF)",
             "Short southern visit with short list — not a mass portal tour"
           ]
         },
@@ -1765,12 +1765,12 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "Google Maps does not replace real winter travel times, subdivision covenants or local comparables. That is why Personalised Search exists: at least four alternatives, session with you to choose the three best and comparative report."
+          "en": "Google Maps does not replace real winter travel times, subdivision covenants or local comparables. That is why Personalized Search exists: at least four alternatives, session with you to choose the three best and comparative report."
         },
         {
           "idx": 7,
           "type": "note",
-          "en": "Educational content. Does not constitute personalised advice."
+          "en": "Educational content. Does not constitute personalized advice."
         }
       ],
       "_selectors": {
@@ -1799,10 +1799,10 @@
           "en": "Full guide: buy land"
         },
         ".blog-related li:nth-child(2) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Strategic Diagnostic"
+          "en": "Diagnostic"
         },
         ".blog-related li:nth-child(4) a": {
           "en": "Territory Puerto Varas"
@@ -1854,7 +1854,7 @@
         {
           "idx": 4,
           "type": "p",
-          "en": "A slower market, strong heritage and tourism vocation. Some sectors embed a \"Frutillar\" premium not always matched by enabling or connectivity. Opportunities appear in price gaps and seller liquidity — see our real case."
+          "en": "A slower market, strong heritage and tourism vocation. Some sectors embed a \"Frutillar\" premium not always matched by site prep or connectivity. Opportunities appear in price gaps and seller liquidity — see our real case."
         },
         {
           "idx": 5,
@@ -1864,7 +1864,7 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "Active urbanisation and projects at different infrastructure stages. The key question is not \"is it cheaper?\" but whether present value compensates pending costs and timelines. Many buyers compare with Puerto Varas without adjusting for real time to services."
+          "en": "Active urbanization and projects at different infrastructure stages. The key question is not \"is it cheaper?\" but whether present value compensates pending costs and timelines. Many buyers compare with Puerto Varas without adjusting for real time to services."
         },
         {
           "idx": 7,
@@ -1877,7 +1877,7 @@
           "items": [
             "Services and liquidity → Puerto Varas often leads",
             "Heritage and slower tourism → Frutillar",
-            "Entry on price with urbanisation underway → Llanquihue",
+            "Entry on price with urbanization underway → Llanquihue",
             "In all three: verify PRC, covenants, registered access and local comparables"
           ]
         },
@@ -1889,12 +1889,12 @@
         {
           "idx": 10,
           "type": "p",
-          "en": "Define objective (home, cabins, heritage, commerce), total budget — purchase plus enabling — and tolerance for timelines. Strategic Diagnostic orders compatible municipalities; Personalised Search filters concrete alternatives in at least two municipalities if you still lack a fixed zone."
+          "en": "Define objective (home, cabins, long-term hold, commerce), total budget — purchase plus site prep — and tolerance for timelines. Diagnostic orders compatible municipalities; Personalized Search filters concrete alternatives in at least two municipalities if you still lack a fixed zone."
         },
         {
           "idx": 11,
           "type": "note",
-          "en": "Educational content. Does not constitute personalised advice or a promise of returns."
+          "en": "Educational content. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "_selectors": {
@@ -1911,7 +1911,7 @@
           "en": "Which municipality is cheapest?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
-          "en": "Depends on sector and land condition. Llanquihue may show lower entry prices; Frutillar and Puerto Varas have premium sectors. Enabling can invert the maths."
+          "en": "Depends on sector and land condition. Llanquihue may show lower entry prices; Frutillar and Puerto Varas have premium sectors. Site prep can invert the maths."
         },
         ".faq-item:nth-child(2) summary": {
           "en": "Can I buy in two municipalities at once?"
@@ -1977,7 +1977,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "Cabins, accommodation and recreational second homes have proven demand in connected sectors — not across the whole fringe equally. Before paying a tourism premium, verify that land and covenants allow accommodation, that demand is sustained and that enabling costs do not eat the return."
+          "en": "Cabins, accommodation and recreational second homes have proven demand in connected sectors — not across the whole fringe equally. Before paying a tourism premium, verify that land and covenants allow accommodation, that demand is sustained and that site-prep costs do not eat the return."
         },
         {
           "idx": 3,
@@ -2006,7 +2006,7 @@
             "Seller promises change \"in process\" without records",
             "Subdivision covenants prohibit the use you imagine",
             "Land is isolated but sold as tourism",
-            "It only closes if future capital growth is maximum — no conservative plan B"
+            "It only closes if future appreciation is maximum — no conservative plan B"
           ]
         },
         {
@@ -2017,7 +2017,7 @@
         {
           "idx": 8,
           "type": "p",
-          "en": "In Puerto Varas we saw land ruled out for commercial restriction where territorial reading showed another vocation. In Frutillar, opportunity sat in the price gap, not change of use. In Llanquihue, value sat in the project's present, not a future transformation. Each property needs its own reading."
+          "en": "In Puerto Varas we saw land ruled out for commercial restriction where local market read showed another vocation. In Frutillar, opportunity sat in the price gap, not change of use. In Llanquihue, value sat in the project's present, not a future transformation. Each property needs its own reading."
         },
         {
           "idx": 9,
@@ -2045,13 +2045,13 @@
           "en": "Does change of use always raise value?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "Not necessarily. If the market already prices that use or enabling costs are high, return may sit in the purchase itself — or not exist."
+          "en": "Not necessarily. If the market already prices that use or site-prep costs are high, return may sit in the purchase itself — or not exist."
         },
         ".faq-item:nth-child(3) summary": {
           "en": "Which service fits after reading this?"
         },
         ".faq-item:nth-child(3) .faq-answer p": {
-          "en": "Property potential study if you already have land in view; Personalised Search if you want alternatives filtered by vocation."
+          "en": "Property potential study if you already have land in view; Personalized Search if you want alternatives filtered by vocation."
         },
         ".blog-related li:nth-child(1) a": {
           "en": "Part 3: PRC and rural fringe"
@@ -2081,11 +2081,11 @@
     },
     "/casos-de-estudio/puerto-varas-restriccion-comercial/": {
       "en": {
-        "title": "Puerto Varas case: from rural restriction to commercial vocation | Land Advisors",
-        "description": "Real case in Puerto Varas: land with commercial use prohibition, territorial reading of connectivity and urban expansion, and estimated capture of +50% on purchase price.",
-        "h1": "From rural restriction to commercial vocation",
-        "intro": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; territorial reading told a different story.",
-        "breadcrumb": "From rural restriction to commercial vocation",
+        "title": "Puerto Varas case: from rural restriction to commercial potential | Land Advisors",
+        "description": "Real case in Puerto Varas: land with commercial use prohibition, local market read of connectivity and urban expansion, and estimated capture of +50% on purchase price.",
+        "h1": "From rural restriction to commercial potential",
+        "intro": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; local market read told a different story.",
+        "breadcrumb": "From rural restriction to commercial potential",
         "label": "Case study"
       },
       "blocks": [
@@ -2097,7 +2097,7 @@
         {
           "idx": 1,
           "type": "p",
-          "en": "The buyer wanted land with commercial vocation on the peri-urban fringe of Puerto Varas. The listing showed an attractive location, but the documentation included an explicit commercial use restriction. For most interested parties, that closed the conversation."
+          "en": "The buyer wanted land with commercial potential on the rural fringe of Puerto Varas. The listing showed an attractive location, but the documentation included an explicit commercial use restriction. For most interested parties, that closed the conversation."
         },
         {
           "idx": 2,
@@ -2107,15 +2107,15 @@
         {
           "idx": 3,
           "type": "p",
-          "en": "We reviewed real connectivity (not just map distance), vehicle flow on the corridor, urban expansion trajectory in the sector and the property's regulatory background. The restriction existed on paper, but the territorial context — access improvements, adjacent urbanisation and municipal investment on the fringe — suggested a commercial vocation different from what the listing conveyed."
+          "en": "We reviewed real connectivity (not just map distance), vehicle flow on the corridor, urban expansion trajectory in the sector and the property's regulatory background. The restriction existed on paper, but the local context — access improvements, adjacent urbanization and municipal investment on the fringe — suggested a commercial potential different from what the listing conveyed."
         },
         {
           "idx": 4,
           "type": "ul",
           "items": [
             "Connectivity and real travel times to urban services",
-            "Urbanisation dynamics in adjacent sectors",
-            "Planning instruments applicable to the property",
+            "Urbanization dynamics in adjacent sectors",
+            "Zoning and planning rules applicable to the property",
             "Local comparables for land with similar vocation"
           ]
         },
@@ -2127,7 +2127,7 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "With verifiable information, the buyer proceeded understanding the regulatory risk and the scenario for lifting the restriction. The decision was not based on the land photo: it was based on the relationship between entry price, territorial vocation and negotiation margin."
+          "en": "With checkable information, the buyer proceeded understanding the regulatory risk and the scenario for lifting the restriction. The decision was not based on the land photo: it was based on the relationship between entry price, territorial vocation and negotiation margin."
         },
         {
           "idx": 7,
@@ -2142,28 +2142,28 @@
         {
           "idx": 9,
           "type": "h2",
-          "en": "Transferable learning"
+          "en": "What this means for you"
         },
         {
           "idx": 10,
           "type": "p",
-          "en": "A restriction in the listing does not always close the opportunity — but it does require regulatory and territorial reading before making an offer. The reverse is also true: land that appears 'free' on paper can be expensive if enabling costs or connectivity do not support it."
+          "en": "A restriction in the listing does not always close the opportunity — but it does require regulatory and local market read before making an offer. The reverse is also true: land that appears 'free' on paper can be expensive if site-prep costs or connectivity do not support it."
         },
         {
           "idx": 11,
           "type": "note",
-          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "_selectors": {
         ".blog-article__lead": {
-          "en": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; territorial reading told a different story."
+          "en": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; local market read told a different story."
         },
         ".case-study__territory": {
           "en": "Puerto Varas"
         },
         ".case-study__metric": {
-          "en": "+50% value captured"
+          "en": "+50% vs. purchase price"
         },
         ".seo-guide-faq .blog-article__h2": {
           "en": "Frequently asked questions"
@@ -2187,7 +2187,7 @@
           "en": "Did Land Advisors sell this land?"
         },
         ".faq-item:nth-child(3) .faq-answer p": {
-          "en": "No. We are territorial consultancy: we support the purchase decision with market and territory criteria. We are not an estate agency or property portal."
+          "en": "No. We are land advisory: we support the purchase decision with market and territory criteria. We are not a brokerage or property portal."
         },
         ".blog-tag:nth-child(1)": {
           "en": "Puerto Varas"
@@ -2196,7 +2196,7 @@
           "en": "change of use"
         },
         ".blog-tag:nth-child(3)": {
-          "en": "capital growth"
+          "en": "appreciation"
         },
         ".blog-tag:nth-child(4)": {
           "en": "rural fringe"
@@ -2241,7 +2241,7 @@
         {
           "idx": 5,
           "type": "p",
-          "en": "The purchase was structured on the verifiable gap between list price and local market value, not on a future capital growth narrative. The return was in the transaction itself."
+          "en": "The purchase was structured on the verifiable gap between list price and local market value, not on a future appreciation narrative. The return was in the transaction itself."
         },
         {
           "idx": 6,
@@ -2256,7 +2256,7 @@
         {
           "idx": 8,
           "type": "h2",
-          "en": "Transferable learning"
+          "en": "What this means for you"
         },
         {
           "idx": 9,
@@ -2266,7 +2266,7 @@
         {
           "idx": 10,
           "type": "note",
-          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "_selectors": {
@@ -2295,13 +2295,13 @@
           "en": "How do you distinguish a low price from problematic land?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "A low price can be opportunity or a risk signal (access, services, regulation). The difference lies in contrasting purchase price, enabling costs and exit value with local data."
+          "en": "A low price can be opportunity or a risk signal (access, services, regulation). The difference lies in contrasting purchase price, site-prep costs and exit value with local data."
         },
         ".faq-item:nth-child(3) summary": {
           "en": "Which service fits if I am looking for this type of opportunity?"
         },
         ".faq-item:nth-child(3) .faq-answer p": {
-          "en": "Personalised search filters at least 4 alternatives with territorial criteria; the session with you defines the 3 best to compare in a report."
+          "en": "Personalized search filters at least 4 alternatives with local criteria; the session with you defines the 3 best to compare in a report."
         },
         ".blog-tag:nth-child(1)": {
           "en": "Frutillar"
@@ -2319,11 +2319,11 @@
     },
     "/casos-de-estudio/llanquihue-valor-presente-futuro/": {
       "en": {
-        "title": "Llanquihue case: present value vs. future value | Land Advisors",
-        "description": "Real case in Llanquihue: partly urbanised project, developer liquidity shortfall and purchase of 4 plots of land for 4,400 UF with later reference ~2,000 UF per plot.",
-        "h1": "Present value vs. future value",
-        "intro": "A partly urbanised development can look attractive on unit price. The right question is whether present value compensates for enabling risk and timelines.",
-        "breadcrumb": "Present value vs. future value",
+        "title": "Llanquihue case: what it costs now vs. what it can be worth later | Land Advisors",
+        "description": "Real case in Llanquihue: partly urbanized project, developer liquidity shortfall and purchase of 4 plots of land for 4,400 UF with later reference ~2,000 UF per plot.",
+        "h1": "What it costs now vs. what it can be worth later",
+        "intro": "A partly urbanized development can look attractive on unit price. The right question is whether present value compensates for site-prep risk and timelines.",
+        "breadcrumb": "What it costs now vs. what it can be worth later",
         "label": "Case study"
       },
       "blocks": [
@@ -2335,7 +2335,7 @@
         {
           "idx": 1,
           "type": "p",
-          "en": "The buyer was evaluating a partly urbanised development in Llanquihue. The price per plot looked competitive against standalone alternatives, but there was no contrast with pending enabling costs, real timelines and exit liquidity."
+          "en": "The buyer was evaluating a partly urbanized development in Llanquihue. The price per plot looked competitive against standalone alternatives, but there was no contrast with pending site-prep costs, real timelines and exit liquidity."
         },
         {
           "idx": 2,
@@ -2345,13 +2345,13 @@
         {
           "idx": 3,
           "type": "p",
-          "en": "We reviewed urbanisation status, effective vs. promised services, subdivision regulation, post-enabling comparables in the sector and — critically — the developer's liquidity situation, which conditioned the negotiation."
+          "en": "We reviewed urbanization status, effective vs. promised services, subdivision regulation, after site prep comparables in the sector and — critically — the developer's liquidity situation, which conditioned the negotiation."
         },
         {
           "idx": 4,
           "type": "ul",
           "items": [
-            "Urbanisation works and services status",
+            "Urbanization works and services status",
             "Co-ownership bylaws and use restrictions",
             "Comparables for enabled land in the area",
             "Conservative exit value scenario",
@@ -2366,7 +2366,7 @@
         {
           "idx": 6,
           "type": "p",
-          "en": "The purchase was structured on verifiable present value: negotiated entry price in a context of seller liquidity, with a conservative post-urbanisation value projection — not on project promises."
+          "en": "The purchase was structured on verifiable present value: negotiated entry price in a context of seller liquidity, with a conservative post-urbanization value projection — not on project promises."
         },
         {
           "idx": 7,
@@ -2381,22 +2381,22 @@
         {
           "idx": 9,
           "type": "h2",
-          "en": "Transferable learning"
+          "en": "What this means for you"
         },
         {
           "idx": 10,
           "type": "p",
-          "en": "In partly urbanised projects, the 'per plot' price can hide pending costs and timelines. Add purchase price + enabling + time, and compare with a conservative sale scenario — not with the developer brochure."
+          "en": "In partly urbanized projects, the 'per plot' price can hide pending costs and timelines. Add purchase price + site prep + time, and compare with a conservative sale scenario — not with the developer brochure."
         },
         {
           "idx": 11,
           "type": "note",
-          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "en": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "_selectors": {
         ".blog-article__lead": {
-          "en": "A partly urbanised development can look attractive on unit price. The right question is whether present value compensates for enabling risk and timelines."
+          "en": "A partly urbanized development can look attractive on unit price. The right question is whether present value compensates for site-prep risk and timelines."
         },
         ".case-study__territory": {
           "en": "Llanquihue"
@@ -2411,7 +2411,7 @@
           "en": "Related"
         },
         ".faq-item:nth-child(1) summary": {
-          "en": "Is it worth buying in a partly urbanised subdivision?"
+          "en": "Is it worth buying in a partly urbanized subdivision?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
           "en": "It can be if present value closes with verifiable comparables and pending costs are quantified. If the price already incorporates future value without support, risk rises."
@@ -2420,7 +2420,7 @@
           "en": "What should I review in the co-ownership bylaws?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "Permitted uses, construction restrictions, pending urbanisation fees and administration rules. In subdivisions, this can limit cabins, retail or density."
+          "en": "Permitted uses, construction restrictions, pending urbanization fees and administration rules. In subdivisions, this can limit cabins, retail or density."
         },
         ".faq-item:nth-child(3) summary": {
           "en": "Does Land Advisors recommend specific projects?"
@@ -2432,20 +2432,20 @@
           "en": "Llanquihue"
         },
         ".blog-tag:nth-child(2)": {
-          "en": "urbanisation"
+          "en": "urbanization"
         },
         ".blog-tag:nth-child(3)": {
           "en": "present value"
         },
         ".blog-tag:nth-child(4)": {
-          "en": "heritage investment"
+          "en": "long-term investment"
         }
       }
     },
     "/guias/comprar-terreno-sur-chile/": {
       "en": {
         "title": "How to buy land in southern Chile | Land Advisors guide",
-        "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, enabling costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
+        "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, site-prep costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
         "h1": "How to buy land in southern Chile",
         "intro": "Buying land in southern Chile can be a major decision — and there is plenty of attractive stock on the market. The key is not to browse more listings, but to set your basic criteria first. With that clear, you can choose options that actually fit and compare what matters most for your quality of life or project returns.",
         "breadcrumb": "How to buy land in southern Chile",
@@ -2479,7 +2479,7 @@
             {
               "num": "4",
               "icon": "habilitation",
-              "title": "Enabling",
+              "title": "Site prep",
               "text": "What you can spend after buying"
             },
             {
@@ -2501,14 +2501,14 @@
           "type": "step",
           "title": "Define what you will use the property for",
           "paragraphs": [
-            "Before browsing photos, define the use: permanent home, second home, cabins, commerce, heritage investment or another project. That objective filters zones, services, regulation and the type of land that makes sense.",
-            "Raising a family near town is not the same as opening a roadside café or holding heritage long term. If the use is unclear, almost any listing can look like \"the one\"."
+            "Before browsing photos, define the use: permanent home, second home, cabins, commerce, long-term investment or another project. That objective filters zones, services, regulation and the type of land that makes sense.",
+            "Raising a family near town is not the same as opening a roadside café or holding for the long term. If the use is unclear, almost any listing can look like \"the one\"."
           ],
           "examples": [
             {
               "icon": "family",
               "title": "Living or quality of life",
-              "text": "Prioritise rural fringe with reasonable access to services, schools and town. Remote countryside usually costs more in daily time and logistics."
+              "text": "Prioritize rural fringe with reasonable access to services, schools and town. Remote countryside usually costs more in daily time and logistics."
             },
             {
               "icon": "cabin",
@@ -2518,7 +2518,7 @@
             {
               "icon": "invest",
               "title": "Investment or commerce",
-              "text": "Look at price comparables, fringe capital growth or cash flow, and land-use limits before committing to a view."
+              "text": "Look at price comparables, fringe appreciation or cash flow, and land-use limits before committing to a view."
             }
           ]
         },
@@ -2555,13 +2555,13 @@
           "type": "step",
           "title": "Set how much you can spend to enable the land",
           "paragraphs": [
-            "Enabling is everything after purchase: access, power, water, internet, earthworks, studies and timelines. That budget matters as much as the listing price.",
+            "Site prep is everything after purchase: access, power, water, internet, earthworks, studies and timelines. That budget matters as much as the listing price.",
             "If you leave no margin to enable, the land can sit unused for years — or force spending you had not planned."
           ],
           "bullets": [
             "List what is typically missing on land in your target sectors.",
             "Ask for local order-of-magnitude costs (not quotes from Santiago).",
-            "Purchase + enabling = real cost of entering the project."
+            "Purchase + site prep = real cost of entering the project."
           ]
         },
         {
@@ -2569,12 +2569,12 @@
           "type": "step",
           "title": "Define what services the land needs (infrastructure level)",
           "paragraphs": [
-            "Decide the minimum infrastructure you accept: mains water or well, power, sewer or septic, stable internet, consolidated road. What \"should already be there\" depends on your use and enabling budget.",
+            "Decide the minimum infrastructure you accept: mains water or well, power, sewer or septic, stable internet, consolidated road. What \"should already be there\" depends on your use and site-prep budget.",
             "The more demanding you are on ready services, the narrower the offer — and the more predictable the entry cost."
           ],
           "bullets": [
-            "Permanent home: prioritise stable services year-round.",
-            "Second home or tourism: you may accept more enabling if the setting justifies it.",
+            "Permanent home: prioritize stable services year-round.",
+            "Second home or tourism: you may accept more site prep if the setting justifies it.",
             "Commerce: check service feasibility and use rules, not just the meter."
           ]
         },
@@ -2583,13 +2583,13 @@
           "type": "step",
           "title": "Contact agencies, brokers or Land Advisors with this brief",
           "paragraphs": [
-            "When you already have use, budget, sectors, enabling and infrastructure level, ask for help with criteria. Arriving with that brief changes the conversation: you stop receiving \"the prettiest\" and start receiving what fits.",
-            "You can work with agencies or brokers (they show stock) and/or Land Advisors (territorial consultancy: we filter and compare against your objective without selling our own land)."
+            "When you already have use, budget, sectors, site prep and infrastructure level, ask for help with criteria. Arriving with that brief changes the conversation: you stop receiving \"the prettiest\" and start receiving what fits.",
+            "You can work with agencies or brokers (they show stock) and/or Land Advisors (land advisory: we filter and compare against your objective without selling our own land)."
           ],
           "bullets": [
             "Share your criteria brief on first contact.",
-            "Ask for several options that meet the basics — not a single favourite.",
-            "If you want method and a comparative report, the usual next step is Personalised Search."
+            "Ask for several options that meet the basics — not a single favorite.",
+            "If you want method and a comparative report, the usual next step is Personalized Search."
           ]
         },
         {
@@ -2632,7 +2632,7 @@
                 {
                   "icon": "traffic",
                   "title": "Vehicle flow",
-                  "text": "For a commercial project, route visibility and traffic matter as much as square metres. Without compatible traffic, a site does not sustain itself on the view alone."
+                  "text": "For a commercial project, route visibility and traffic matter as much as square meters. Without compatible traffic, a site does not sustain itself on the view alone."
                 },
                 {
                   "icon": "tourism",
@@ -2647,7 +2647,7 @@
                 {
                   "icon": "normativa",
                   "title": "Land use and regulation",
-                  "text": "Use limits, planning instruments and property restrictions can block cabins, commerce or densification. Verify before projecting returns."
+                  "text": "Use limits, zoning and planning rules and property restrictions can block cabins, commerce or densification. Verify before projecting returns."
                 }
               ]
             }
@@ -2657,10 +2657,10 @@
           "idx": 9,
           "type": "callout",
           "title": "This is what we do at Land Advisors",
-          "text": "The same process — basic criteria, short list and comparison by use — with territorial reading of the Lago Llanquihue and Malalcahuello basin. We are not an estate agency: we do not sell land. We help you buy the right piece, with local criteria on price, sectors and feasibility.",
+          "text": "The same process — basic criteria, short list and comparison by use — with local market read of the Lago Llanquihue and Malalcahuello basin. We are not a brokerage: we do not sell land. We help you buy the right piece, with local criteria on price, sectors and feasibility.",
           "cta": {
             "href": "servicios/busqueda-personalizada/",
-            "label": "Explore personalised search",
+            "label": "Explore personalized search",
             "event": "cta_busqueda"
           }
         }
@@ -2676,7 +2676,7 @@
           "en": "At Land Advisors this process is our daily work: territory, regulation, market and price with local criteria. We do not sell land — we help you buy the right one."
         },
         ".guide-callout--footer a": {
-          "en": "Request personalised search"
+          "en": "Request personalized search"
         },
         ".seo-guide-faq .blog-article__h2": {
           "en": "Frequently asked questions"
@@ -2688,7 +2688,7 @@
           "en": "Where do I start if I have never bought land in the south?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
-          "en": "Start with intended use, your purchase budget range and the names of sectors that interest you. Then define enabling and infrastructure level, and only then ask agencies, brokers or Land Advisors for options."
+          "en": "Start with intended use, your purchase budget range and the names of sectors that interest you. Then define site prep and infrastructure level, and only then ask agencies, brokers or Land Advisors for options."
         },
         ".faq-item:nth-child(2) summary": {
           "en": "What is registered access at the Land Registry?"
@@ -2703,16 +2703,16 @@
           "en": "Yes. The municipal planning code, property restrictions and subdivision covenants can limit uses, heights or destinations. Best to review before offering."
         },
         ".faq-item:nth-child(4) summary": {
-          "en": "How is Land Advisors different from an estate agency?"
+          "en": "How is Land Advisors different from a brokerage?"
         },
         ".faq-item:nth-child(4) .faq-answer p": {
-          "en": "An agency shows properties from its portfolio. Land Advisors is territorial consultancy: we filter options against your objective, compare with local criteria and recommend with data — without selling our own land."
+          "en": "An agency shows properties from its portfolio. Land Advisors is land advisory: we filter options against your objective, compare with local criteria and recommend with data — without selling our own land."
         },
         ".faq-item:nth-child(5) summary": {
-          "en": "How much does Personalised Search cost?"
+          "en": "How much does Personalized Search cost?"
         },
         ".faq-item:nth-child(5) .faq-answer p": {
-          "en": "Personalised Search includes at least 4 options, a session with you to choose the 3 best and a comparative report with strategic diagnostic. Reference price is 5 UF — confirmed in session according to scope."
+          "en": "Personalized Search includes at least 4 options, a session with you to choose the 3 best and a comparative report with Diagnostic. Reference price is 5 UF — confirmed in session according to scope."
         }
       }
     },
@@ -2745,7 +2745,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "At Land Advisors we focus mainly on the peri-urban rural fringe: where quality of life, reasonable connectivity and project potential meet — whether for a home, cabins, heritage or neighbourhood retail. Remote countryside can look attractive on price, but usually demands more enabling work and behaves differently on resale. Consolidated urban land competes on a different price per square metre — a different market altogether."
+          "en": "At Land Advisors we focus mainly on the rural fringe: where quality of life, reasonable connectivity and project potential meet — whether for a home, cabins, long-term hold or neighborhood retail. Remote countryside can look attractive on price, but usually demands more site-prep work and behaves differently on resale. Consolidated urban land competes on a different price per square meter — a different market altogether."
         },
         {
           "idx": 3,
@@ -2763,7 +2763,7 @@
           "items": [
             "Sustained residential and second-home demand in sectors connected to services",
             "Tourism and accommodation on corridors with proven demand — not equally across the whole fringe",
-            "Neighbourhood retail and services at nodes of urban expansion",
+            "Neighborhood retail and services at nodes of urban expansion",
             "Price gaps from seller liquidity or mispricing — occasional opportunity, not a rule"
           ]
         },
@@ -2806,12 +2806,12 @@
           "idx": 13,
           "type": "ul",
           "items": [
-            "Buyer's objective: home, heritage, cabins, commerce",
+            "Buyer's objective: home, long-term hold, cabins, commerce",
             "Registered access or stable public road",
             "Existing services or real cost of extension",
             "Actual sales comparables in the sector — not just active listings",
             "PRC restrictions, subdivision rules and seller background",
-            "Conservative exit scenario and enabling timelines"
+            "Conservative exit scenario and site-prep timelines"
           ]
         },
         {
@@ -2822,7 +2822,7 @@
         {
           "idx": 15,
           "type": "p",
-          "en": "If you still lack a zone or criteria, a Strategic Diagnostic (1 UF) maps Puerto Varas and neighbouring municipalities against your objective. If you already know what you want, Personalised Search delivers at least four options, a session to choose the three best with you and a comparative report. If you already have land in view, a potential study deepens vocation, regulation and numbers."
+          "en": "If you still lack a zone or criteria, a Diagnostic (1 UF) maps Puerto Varas and neighboring municipalities against your objective. If you already know what you want, Personalized Search delivers at least four options, a session to choose the three best with you and a comparative report. If you already have land in view, a potential study deepens vocation, regulation and numbers."
         }
       ],
       "_selectors": {
@@ -2836,7 +2836,7 @@
           "en": "Is Puerto Varas expensive for buying land?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
-          "en": "It depends on the sector and enabling status. Some fringe areas carry a higher price because connectivity and services are already resolved; others show a lower list price but enabling costs raise the finished asset."
+          "en": "It depends on the sector and site-prep status. Some fringe areas carry a higher price because connectivity and services are already resolved; others show a lower list price but site-prep costs raise the finished asset."
         },
         ".faq-item:nth-child(2) summary": {
           "en": "Can I buy in Puerto Varas while living in Santiago?"
@@ -2848,19 +2848,19 @@
           "en": "Does Land Advisors sell land in Puerto Varas?"
         },
         ".faq-item:nth-child(3) .faq-answer p": {
-          "en": "We are not an estate agency. We filter options against your objective, compare with local data and recommend — without our own property portfolio."
+          "en": "We are not a brokerage. We filter options against your objective, compare with local data and recommend — without our own property portfolio."
         },
         ".blog-related li:nth-child(1) a": {
-          "en": "Rural fringe series — Part 1: Capital growth"
+          "en": "Rural fringe series — Part 1: Appreciation"
         },
         ".blog-related li:nth-child(2) a": {
           "en": "Case: commercial restriction"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Territorial intelligence — library"
+          "en": "Local market insight — library"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Personalised search"
+          "en": "Personalized search"
         }
       }
     },
@@ -2900,7 +2900,7 @@
           "type": "ul",
           "items": [
             "Second home and tourism in sectors with proven demand",
-            "Prices that sometimes embed a \"Frutillar\" premium without enabling to match",
+            "Prices that sometimes embed a \"Frutillar\" premium without site prep to match",
             "Opportunities in price gap and seller liquidity — see real case",
             "Regulation and subdivision covenants critical for tourist accommodation"
           ]
@@ -2917,7 +2917,7 @@
             "Real connectivity to town centre, Teatro del Lago and services",
             "Subdivision rules and permitted uses",
             "Local comparables — not regional averages",
-            "Enabling costs vs. conservative exit value"
+            "Site-prep costs vs. conservative exit value"
           ]
         },
         {
@@ -2937,7 +2937,7 @@
           "en": "Is Frutillar cheaper than Puerto Varas?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
-          "en": "It depends on sector and land condition. Some Frutillar fringe areas show a lower price per square metre, but enabling or connectivity can close the gap."
+          "en": "It depends on sector and land condition. Some Frutillar fringe areas show a lower price per square meter, but site prep or connectivity can close the gap."
         },
         ".faq-item:nth-child(2) summary": {
           "en": "Does Frutillar suit cabin projects?"
@@ -2952,7 +2952,7 @@
           "en": "Guide: buy land in the south"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-related li:nth-child(4) a": {
           "en": "Puerto Varas — territory guide"
@@ -2972,23 +2972,23 @@
         {
           "idx": "def",
           "type": "p",
-          "en": "Llanquihue rural fringe: expanding peri-urban land with active subdivisions and dynamics distinct from Puerto Varas and Frutillar — present value vs. future value is key.",
+          "en": "Llanquihue rural fringe: expanding peri-urban land with active subdivisions and dynamics distinct from Puerto Varas and Frutillar — what it costs now vs. what it can be worth later is key.",
           "prefix": "Definition: "
         },
         {
           "idx": 0,
           "type": "p",
-          "en": "Llanquihue shows growing urbanisation and subdivisions. The market mixes partly serviced projects, standalone lots and land with post-enabling potential. It is a territory where list price must be weighed against pending costs and real liquidity."
+          "en": "Llanquihue shows growing urbanization and subdivisions. The market mixes partly serviced projects, standalone lots and land with after site prep potential. It is a territory where list price must be weighed against pending costs and real liquidity."
         },
         {
           "idx": 1,
           "type": "h2",
-          "en": "Present value vs. future value"
+          "en": "What it costs now vs. what it can be worth later"
         },
         {
           "idx": 2,
           "type": "p",
-          "en": "A project \"partly urbanised\" can look cheap per lot, but pending urbanisation costs, co-ownership fees and approval timelines change the maths. In our Llanquihue case (4 plots, 4,400 UF) the opportunity sat in present value negotiated with developer liquidity — not in a distant capital-growth promise."
+          "en": "A project \"partly urbanized\" can look cheap per lot, but pending urbanization costs, co-ownership fees and approval timelines change the maths. In our Llanquihue case (4 plots, 4,400 UF) the opportunity sat in present value negotiated with developer liquidity — not in a distant capital-growth promise."
         },
         {
           "idx": 3,
@@ -2999,10 +2999,10 @@
           "idx": 4,
           "type": "ul",
           "items": [
-            "State of urbanisation and effective services",
+            "State of urbanization and effective services",
             "Real distance and time to Puerto Varas and Frutillar",
             "Demand for permanent housing vs. speculative investment",
-            "Post-enabling comparables in the same sector"
+            "After site prep comparables in the same sector"
           ]
         },
         {
@@ -3019,7 +3019,7 @@
           "en": "Related"
         },
         ".faq-item:nth-child(1) summary": {
-          "en": "Does buying in a partly urbanised subdivision make sense?"
+          "en": "Does buying in a partly urbanized subdivision make sense?"
         },
         ".faq-item:nth-child(1) .faq-answer p": {
           "en": "It can if present value closes with comparables and pending costs are quantified. If price already embeds future value without support, risk rises."
@@ -3034,13 +3034,13 @@
           "en": "Llanquihue case: present vs. future value"
         },
         ".blog-related li:nth-child(2) a": {
-          "en": "Part 2: Enabling costs"
+          "en": "Part 2: Site-prep costs"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Personalised search"
+          "en": "Personalized search"
         }
       }
     },
@@ -3073,7 +3073,7 @@
         {
           "idx": 2,
           "type": "p",
-          "en": "Cabins, short-stay rental or heritage can fit — but not on every property or in every season. We review local regulation, winter access, real accommodation demand and enabling costs before validating a price."
+          "en": "Cabins, short-stay rental or heritage can fit — but not on every property or in every season. We review local regulation, winter access, real accommodation demand and site-prep costs before validating a price."
         },
         {
           "idx": 3,
@@ -3086,7 +3086,7 @@
           "items": [
             "Year-round connectivity — not summer only",
             "Basic services and cost of extension",
-            "Planning instruments and covenants",
+            "Zoning and planning rules and covenants",
             "Exit liquidity in a conservative scenario"
           ]
         },
@@ -3113,16 +3113,16 @@
           "en": "Does Land Advisors operate in Malalcahuello?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "Yes, with specific territorial reading. We do not sell land: we filter and recommend against your objective."
+          "en": "Yes, with specific local market read. We do not sell land: we filter and recommend against your objective."
         },
         ".blog-related li:nth-child(1) a": {
           "en": "Part 5: Land vocation"
         },
         ".blog-related li:nth-child(2) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Strategic diagnostic"
+          "en": "Diagnostic"
         },
         ".blog-related li:nth-child(4) a": {
           "en": "Guide: buy land"
@@ -3153,7 +3153,7 @@
         {
           "idx": 1,
           "type": "h2",
-          "en": "Commercial partnerships, not our own catalogue"
+          "en": "Commercial partnerships, not our own catalog"
         },
         {
           "idx": 2,
@@ -3179,17 +3179,17 @@
           "idx": 6,
           "type": "ul",
           "items": [
-            "Objective: home, heritage, tourism, conservation or development",
+            "Objective: home, long-term hold, tourism, conservation or development",
             "Area of interest and tolerance for distance / connectivity",
             "Realistic budget for the chosen territory",
             "Local partners available and quality of offer in that segment",
-            "Regulatory and enabling feasibility — not just listing price"
+            "Regulatory and site prep feasibility — not just listing price"
           ]
         },
         {
           "idx": 7,
           "type": "note",
-          "en": "Bespoke Patagonia is not a standard catalogue service: we start with a Strategic Diagnostic to decide whether extended search makes sense and with what criteria."
+          "en": "Bespoke Patagonia is not a standard catalog service: we start with a Diagnostic to decide whether extended search makes sense and with what criteria."
         }
       ],
       "_selectors": {
@@ -3209,60 +3209,60 @@
           "en": "Do you sell land in Patagonia?"
         },
         ".faq-item:nth-child(2) .faq-answer p": {
-          "en": "No. We are not an agency or portal. We filter, compare and recommend with territorial criteria — the land is not our inventory."
+          "en": "No. We are not an agency or portal. We filter, compare and recommend with local criteria — the land is not our inventory."
         },
         ".faq-item:nth-child(3) summary": {
           "en": "How do I start if I am searching outside Los Lagos?"
         },
         ".faq-item:nth-child(3) .faq-answer p": {
-          "en": "With a Strategic Diagnostic to narrow zone, budget and criteria. From there we decide whether to activate Personalised Search with an extended network."
+          "en": "With a Diagnostic to narrow zone, budget and criteria. From there we decide whether to activate Personalized Search with an extended network."
         },
         ".blog-related li:nth-child(1) a": {
           "en": "Patagonia Land Hunter"
         },
         ".blog-related li:nth-child(2) a": {
-          "en": "Personalised search"
+          "en": "Personalized search"
         },
         ".blog-related li:nth-child(3) a": {
-          "en": "Strategic diagnostic"
+          "en": "Diagnostic"
         },
         ".blog-related li:nth-child(4) a": {
-          "en": "Territorial intelligence"
+          "en": "Local market insight"
         }
       }
     },
     "/campanas/comprar-terreno-sur/": {
       "en": {
-        "title": "Buy land in southern Chile | Strategic Diagnostic | Land Advisors",
-        "description": "Consultancy to buy the right land in Puerto Varas, Frutillar and Llanquihue. We are not an estate agency: we filter with territorial criteria before you offer.",
+        "title": "Buy land in southern Chile | Diagnostic | Land Advisors",
+        "description": "Consultancy to buy the right land in Puerto Varas, Frutillar and Llanquihue. We are not a brokerage: we filter with local criteria before you offer.",
         "h1": "Buy land in the south without losing months on listings that do not fit",
         "breadcrumb": "Buy land in the south without losing months on listings that do not fit",
         "label": "Offer"
       },
       "_selectors": {
         ".campaign-intent-badge": {
-          "en": "Territorial consultancy · Not an estate agency"
+          "en": "Land advisory · Not a brokerage"
         },
         ".campaign-hero-qa li:nth-child(1)": {
           "en": "<strong>The challenge:</strong> Saturated portals, unclear regulation and prices that do not compare with local criteria.",
           "html": true
         },
         ".campaign-hero-qa li:nth-child(2)": {
-          "en": "<strong>Why us:</strong> Territorial intelligence consultancy — not an agency, no land portfolio of our own.",
+          "en": "<strong>Why us:</strong> Independent land advisory — not an agency, no inventory of our own.",
           "html": true
         },
         ".campaign-hero-qa li:nth-child(3)": {
-          "en": "<strong>What you gain:</strong> In the strategy session you clarify zone, total budget and next steps with basin data.",
+          "en": "<strong>What you gain:</strong> In the strategy call you clarify zone, total budget and next steps with basin data.",
           "html": true
         },
         ".campaign-panel .section-label": {
           "en": "Benefit"
         },
         "#campaign-includes-title": {
-          "en": "What the strategy session resolves"
+          "en": "What the strategy call resolves"
         },
         ".campaign-panel__foot": {
-          "en": "We are not an estate agency: we do not sell land. We help you decide with criteria."
+          "en": "We are not a brokerage: we do not sell land. We help you decide with criteria."
         },
         "#campaign-steps-title": {
           "en": "How it works"
@@ -3280,10 +3280,10 @@
           "en": "Ready to decide with criteria?"
         },
         ".campaign-final-cta p": {
-          "en": "Book a strategy session or message us on WhatsApp — no purchase obligation."
+          "en": "Book a strategy call or message us on WhatsApp — no purchase obligation."
         },
         ".campaign-includes li:nth-child(1)": {
-          "en": "Clear objective: home, heritage, cabins or life project"
+          "en": "Clear objective: home, long-term hold, cabins or life project"
         },
         ".campaign-includes li:nth-child(2)": {
           "en": "Compatible municipalities for your budget and connectivity"
@@ -3292,40 +3292,40 @@
           "en": "Criteria to filter land — regulation, access, comparables"
         },
         ".campaign-includes li:nth-child(4)": {
-          "en": "Recommended path: diagnostic, personalised search or study"
+          "en": "Recommended path: diagnostic, personalized search or study"
         },
         ".campaign-includes li:nth-child(5)": {
           "en": "No pressure to sell a specific lot — we are consultants"
         },
         ".campaign-step:nth-child(1) .campaign-step__title": {
-          "en": "Strategy session"
+          "en": "Strategy call"
         },
         ".campaign-step:nth-child(1) p": {
           "en": "30–45 min online or in Puerto Varas. We understand your objective and real constraints."
         },
         ".campaign-step:nth-child(2) .campaign-step__title": {
-          "en": "Territorial map"
+          "en": "Area map"
         },
         ".campaign-step:nth-child(2) p": {
-          "en": "We deliver recommended zones and criteria to evaluate listings — not a mass catalogue."
+          "en": "We deliver recommended zones and criteria to evaluate listings — not a mass catalog."
         },
         ".campaign-step:nth-child(3) .campaign-step__title": {
           "en": "Short list (optional)"
         },
         ".campaign-step:nth-child(3) p": {
-          "en": "If you move to Personalised Search: ≥4 options, session with you and report on the 3 best."
+          "en": "If you move to Personalized Search: ≥4 options, session with you and report on the 3 best."
         },
         ".campaign-faq .faq-item:nth-child(1) summary": {
           "en": "Do you sell land?"
         },
         ".campaign-faq .faq-item:nth-child(1) .faq-answer p": {
-          "en": "No. Land Advisors is territorial consultancy. We have no portfolio and no seller commission."
+          "en": "No. Land Advisors is land advisory. We have no portfolio and no seller commission."
         },
         ".campaign-faq .faq-item:nth-child(2) summary": {
           "en": "Can I book only the session?"
         },
         ".campaign-faq .faq-item:nth-child(2) .faq-answer p": {
-          "en": "Yes. Strategic Diagnostic (1 UF) is the starting point. Personalised Search is the next step if you want filtered options."
+          "en": "Yes. Diagnostic (1 UF) is the starting point. Personalized Search is the next step if you want filtered options."
         },
         ".campaign-faq .faq-item:nth-child(3) summary": {
           "en": "Do you work with buyers outside the south?"
@@ -3346,7 +3346,7 @@
           "en": "filtered options in search"
         },
         ".campaign-stat:nth-child(3) .campaign-stat__label": {
-          "en": "strategic diagnostic"
+          "en": "Diagnostic"
         },
         ".campaign-quote:nth-child(1) p": {
           "en": "\"We had dozens of open listings and no criteria to compare them. The session clarified zone and budget before we travelled.\""
@@ -3373,26 +3373,26 @@
     },
     "/campanas/invertir-terreno-sur/": {
       "en": {
-        "title": "Invest in land in southern Chile | Heritage consultancy",
-        "description": "Territorial property investment in Puerto Varas, Frutillar and Llanquihue. Capital growth with criteria — not promises of returns.",
-        "h1": "Invest in land in the south: real capital growth or already in the price?",
-        "breadcrumb": "Invest in land in the south: real capital growth or already in the price?",
+        "title": "Invest in land in southern Chile | Land investment advisory",
+        "description": "Land investment in the area in Puerto Varas, Frutillar and Llanquihue. Appreciation with criteria — not promises of returns.",
+        "h1": "Invest in land in the south: real appreciation or already in the price?",
+        "breadcrumb": "Invest in land in the south: real appreciation or already in the price?",
         "label": "Offer"
       },
       "_selectors": {
         ".campaign-intent-badge": {
-          "en": "Territorial consultancy · Not an estate agency"
+          "en": "Land advisory · Not a brokerage"
         },
         ".campaign-hero-qa li:nth-child(1)": {
           "en": "<strong>The challenge:</strong> Optimistic projections in listings, few local comparables and regulation missing from the sheet.",
           "html": true
         },
         ".campaign-hero-qa li:nth-child(2)": {
-          "en": "<strong>Why us:</strong> We read urban expansion, connectivity and local market before validating a heritage investment.",
+          "en": "<strong>Why us:</strong> We read urban expansion, connectivity and local market before validating a long-term investment.",
           "html": true
         },
         ".campaign-hero-qa li:nth-child(3)": {
-          "en": "<strong>What you gain:</strong> Strategy session to distinguish verifiable opportunity from price inflated by tourism narrative.",
+          "en": "<strong>What you gain:</strong> Strategy call to distinguish verifiable opportunity from price inflated by tourism narrative.",
           "html": true
         },
         ".campaign-panel .section-label": {
@@ -3402,7 +3402,7 @@
           "en": "What we analyse in your case"
         },
         ".campaign-panel__foot": {
-          "en": "We are not an estate agency: we do not sell land. We help you decide with criteria."
+          "en": "We are not a brokerage: we do not sell land. We help you decide with criteria."
         },
         "#campaign-steps-title": {
           "en": "How it works"
@@ -3420,16 +3420,16 @@
           "en": "Ready to decide with criteria?"
         },
         ".campaign-final-cta p": {
-          "en": "Book a strategy session or message us on WhatsApp — no purchase obligation."
+          "en": "Book a strategy call or message us on WhatsApp — no purchase obligation."
         },
         ".campaign-includes li:nth-child(1)": {
-          "en": "Capital growth vs. entry price — return on purchase or on waiting?"
+          "en": "Appreciation vs. entry price — return on purchase or on waiting?"
         },
         ".campaign-includes li:nth-child(2)": {
           "en": "Urban expansion, connectivity and municipal investment in the sector"
         },
         ".campaign-includes li:nth-child(3)": {
-          "en": "Enabling costs added to list price"
+          "en": "Site-prep costs added to list price"
         },
         ".campaign-includes li:nth-child(4)": {
           "en": "Conservative exit scenario with comparables"
@@ -3438,10 +3438,10 @@
           "en": "Recommendation to proceed, negotiate or pass"
         },
         ".campaign-step:nth-child(1) .campaign-step__title": {
-          "en": "Strategy session"
+          "en": "Strategy call"
         },
         ".campaign-step:nth-child(1) p": {
-          "en": "We define heritage profile, horizon and tolerance for territorial risk."
+          "en": "We define your investor profile, horizon and tolerance for local risk."
         },
         ".campaign-step:nth-child(2) .campaign-step__title": {
           "en": "Market reading"
@@ -3462,7 +3462,7 @@
           "en": "No. We work with conservative scenarios and local data. The final decision is yours."
         },
         ".campaign-faq .faq-item:nth-child(2) summary": {
-          "en": "How are you different from an estate agency?"
+          "en": "How are you different from a brokerage?"
         },
         ".campaign-faq .faq-item:nth-child(2) .faq-answer p": {
           "en": "We do not sell inventory. We charge for consultancy and have no incentive to push a specific property."
@@ -3471,7 +3471,7 @@
           "en": "From what budget can I invest?"
         },
         ".campaign-faq .faq-item:nth-child(3) .faq-answer p": {
-          "en": "We work with buyers from ~1,000 UF total budget (purchase + enabling). The diagnostic clarifies whether the south fits your profile."
+          "en": "We work with buyers from ~1,000 UF total budget (purchase + site prep). The diagnostic clarifies whether the south fits your profile."
         },
         ".campaign-proof .section-label": {
           "en": "Evidence"
@@ -3489,7 +3489,7 @@
           "en": "own land for sale"
         },
         ".campaign-quote:nth-child(1) p": {
-          "en": "\"The seller promised capital growth in three years. Sector comparables told a different story.\""
+          "en": "\"The seller promised appreciation in three years. Sector comparables told a different story.\""
         },
         ".campaign-quote:nth-child(1) cite": {
           "en": "Heritage investor"
@@ -3501,10 +3501,10 @@
           "en": "Santiago client"
         },
         ".campaign-lead-magnet h2": {
-          "en": "Article: how to read capital growth on the rural fringe"
+          "en": "Article: how to read appreciation on the rural fringe"
         },
         ".campaign-lead-magnet p": {
-          "en": "Value arguments, enabling costs and when return sits in the purchase price."
+          "en": "Value arguments, site-prep costs and when return sits in the purchase price."
         },
         ".campaign-lead-magnet a": {
           "en": "Read article →"
@@ -3521,7 +3521,7 @@
       },
       "_selectors": {
         ".campaign-intent-badge": {
-          "en": "Territorial consultancy · Not an estate agency"
+          "en": "Land advisory · Not a brokerage"
         },
         ".campaign-hero-qa li:nth-child(1)": {
           "en": "<strong>The challenge:</strong> The visit went well, but PRC, subdivision covenants, registered access and sector comparables are missing.",
@@ -3542,7 +3542,7 @@
           "en": "What the study includes"
         },
         ".campaign-panel__foot": {
-          "en": "We are not an estate agency: we do not sell land. We help you decide with criteria."
+          "en": "We are not a brokerage: we do not sell land. We help you decide with criteria."
         },
         "#campaign-steps-title": {
           "en": "How it works"
@@ -3560,13 +3560,13 @@
           "en": "Ready to decide with criteria?"
         },
         ".campaign-final-cta p": {
-          "en": "Book a strategy session or message us on WhatsApp — no purchase obligation."
+          "en": "Book a strategy call or message us on WhatsApp — no purchase obligation."
         },
         ".campaign-includes li:nth-child(1)": {
           "en": "Territorial and regulatory analysis (PRC, covenants, access)"
         },
         ".campaign-includes li:nth-child(2)": {
-          "en": "Real connectivity and estimated enabling costs"
+          "en": "Real connectivity and estimated site-prep costs"
         },
         ".campaign-includes li:nth-child(3)": {
           "en": "Local comparables — sales, not just active listings"
@@ -3593,7 +3593,7 @@
           "en": "Report and session"
         },
         ".campaign-step:nth-child(3) p": {
-          "en": "We deliver conclusions with verifiable support and suggested negotiation margin."
+          "en": "We deliver conclusions with checkable backing and suggested negotiation margin."
         },
         ".campaign-faq .faq-item:nth-child(1) summary": {
           "en": "Is this the same as a valuation?"
@@ -3661,7 +3661,7 @@
       },
       "_selectors": {
         ".campaign-intent-badge": {
-          "en": "Territorial consultancy · Not an estate agency"
+          "en": "Land advisory · Not a brokerage"
         },
         ".campaign-hero-qa li:nth-child(1)": {
           "en": "<strong>The challenge:</strong> You were sold \"future tourism\" or change of use without checking PRC, covenants or sector demand.",
@@ -3682,7 +3682,7 @@
           "en": "What the study establishes"
         },
         ".campaign-panel__foot": {
-          "en": "We are not an estate agency: we do not sell land. We help you decide with criteria."
+          "en": "We are not a brokerage: we do not sell land. We help you decide with criteria."
         },
         "#campaign-steps-title": {
           "en": "How it works"
@@ -3700,10 +3700,10 @@
           "en": "Ready to decide with criteria?"
         },
         ".campaign-final-cta p": {
-          "en": "Book a strategy session or message us on WhatsApp — no purchase obligation."
+          "en": "Book a strategy call or message us on WhatsApp — no purchase obligation."
         },
         ".campaign-includes li:nth-child(1)": {
-          "en": "Commercial vocation of the land: home, cabins, heritage, commerce"
+          "en": "Commercial potential of the land: home, cabins, long-term hold, commerce"
         },
         ".campaign-includes li:nth-child(2)": {
           "en": "Change of use: what is verifiable vs. hypothetical"
@@ -3712,7 +3712,7 @@
           "en": "Tourist demand and sector connectivity"
         },
         ".campaign-includes li:nth-child(4)": {
-          "en": "Enabling costs vs. conservative exit value"
+          "en": "Site-prep costs vs. conservative exit value"
         },
         ".campaign-includes li:nth-child(5)": {
           "en": "Roadmap if structuring the project makes sense (from 20 UF)"
@@ -3760,7 +3760,7 @@
           "en": "Real decisions with criteria"
         },
         ".campaign-stat:nth-child(1) .campaign-stat__label": {
-          "en": "PV case — commercial vocation"
+          "en": "PV case — commercial potential"
         },
         ".campaign-stat:nth-child(2) .campaign-stat__label": {
           "en": "Llanquihue case"
@@ -3793,15 +3793,15 @@
     },
     "/campanas/busqueda-personalizada-30/": {
       "en": {
-        "title": "Free Strategic Diagnostic | 30% off search | Land Advisors",
-        "description": "Promotion until 30 September: free Strategic Diagnostic (value 1 UF) with no obligation. Then, if it helps, Personalised Search quoted at 3.5 UF (was 5 UF) in Puerto Varas, Frutillar and Llanquihue.",
+        "title": "Free Diagnostic | 30% off search | Land Advisors",
+        "description": "Promotion until 30 September: free Diagnostic (value 1 UF) with no obligation. Then, if it helps, Personalized Search quoted at 3.5 UF (was 5 UF) in Puerto Varas, Frutillar and Llanquihue.",
         "h1": "Get your free diagnostic",
         "breadcrumb": "Get your free diagnostic",
         "label": "Offer"
       },
       "_selectors": {
         ".campaign-intent-badge": {
-          "en": "Territorial consultancy · Not an estate agency"
+          "en": "Land advisory · Not a brokerage"
         },
         ".campaign-hero-qa li:nth-child(1)": {
           "en": "<strong>The challenge:</strong> ",
@@ -3822,7 +3822,7 @@
           "en": "What you get"
         },
         ".campaign-panel__foot": {
-          "en": "We are not an estate agency: we do not sell land. We help you decide with criteria."
+          "en": "We are not a brokerage: we do not sell land. We help you decide with criteria."
         },
         "#campaign-steps-title": {
           "en": "How it works"
@@ -3840,34 +3840,34 @@
           "en": "Ready to decide with criteria?"
         },
         ".campaign-final-cta p": {
-          "en": "Book a strategy session or message us on WhatsApp — no purchase obligation."
+          "en": "Book a strategy call or message us on WhatsApp — no purchase obligation."
         },
         ".campaign-includes li:nth-child(1)": {
-          "en": "Free Strategic Diagnostic: online or in-person session, recommended zones and criteria to evaluate land"
+          "en": "Free Diagnostic: online or in-person session, recommended zones and criteria to evaluate land"
         },
         ".campaign-includes li:nth-child(2)": {
           "en": "No obligation to contract search or any other service"
         },
         ".campaign-includes li:nth-child(3)": {
-          "en": "If it helps afterwards: Personalised Search quoted at 3.5 UF (was 5 UF) — 30% discount"
+          "en": "If it helps afterwards: Personalized Search quoted at 3.5 UF (was 5 UF) — 30% discount"
         },
         ".campaign-includes li:nth-child(4)": {
           "en": "Optional search: ≥4 options, session with you, report on the 3 best and recommendation"
         },
         ".campaign-includes li:nth-child(5)": {
-          "en": "We are not an estate agency: we do not sell our own land"
+          "en": "We are not a brokerage: we do not sell our own land"
         },
         ".campaign-step:nth-child(1) .campaign-step__title": {
           "en": "Free diagnostic"
         },
         ".campaign-step:nth-child(1) p": {
-          "en": "Strategy session at no cost: objective, budget, sensible zones in Puerto Varas, Frutillar, Llanquihue and Malalcahuello, and what to check before visiting."
+          "en": "Strategy call at no cost: objective, budget, sensible zones in Puerto Varas, Frutillar, Llanquihue and Malalcahuello, and what to check before visiting."
         },
         ".campaign-step:nth-child(2) .campaign-step__title": {
           "en": "Quote without pressure"
         },
         ".campaign-step:nth-child(2) p": {
-          "en": "If you want to continue, we quote Personalised Search at 3.5 UF (30% off). If not, you keep the map and criteria — no extra commitment."
+          "en": "If you want to continue, we quote Personalized Search at 3.5 UF (30% off). If not, you keep the map and criteria — no extra commitment."
         },
         ".campaign-step:nth-child(3) .campaign-step__title": {
           "en": "Search with criteria"
@@ -3885,16 +3885,16 @@
           "en": "Do I have to contract search to get the free diagnostic?"
         },
         ".campaign-faq .faq-item:nth-child(1) .faq-answer p": {
-          "en": "No. Strategic Diagnostic is free in this promotion, with no obligation to contract search or any other service."
+          "en": "No. Diagnostic is free in this promotion, with no obligation to contract search or any other service."
         },
         ".campaign-faq .faq-item:nth-child(2) summary": {
-          "en": "What does the free Strategic Diagnostic include?"
+          "en": "What does the free Diagnostic include?"
         },
         ".campaign-faq .faq-item:nth-child(2) .faq-answer p": {
-          "en": "Strategy session (online or in person), recommended zones for your objective and criteria to evaluate land before offering. Usual value: 1 UF."
+          "en": "Strategy call (online or in person), recommended zones for your objective and criteria to evaluate land before offering. Usual value: 1 UF."
         },
         ".campaign-faq .faq-item:nth-child(3) summary": {
-          "en": "When does Personalised Search at 3.5 UF apply?"
+          "en": "When does Personalized Search at 3.5 UF apply?"
         },
         ".campaign-faq .faq-item:nth-child(3) .faq-answer p": {
           "en": "Only if after the diagnostic you decide you want us to search with you. We give a clear quote; there is no automatic commitment."
@@ -3903,7 +3903,7 @@
           "en": "Are the 3.5 UF deducted if I buy land?"
         },
         ".campaign-faq .faq-item:nth-child(4) .faq-answer p": {
-          "en": "Yes. If you contract our Purchase Advisory (2.5% of value), the 3.5 UF paid for Personalised Search is deducted from that fee."
+          "en": "Yes. If you contract our Purchase Advisory (2.5% of value), the 3.5 UF paid for Personalized Search is deducted from that fee."
         },
         ".campaign-faq .faq-item:nth-child(5) summary": {
           "en": "How long is the promotion valid?"
@@ -3918,10 +3918,10 @@
           "en": "Yes. Many clients live in Santiago or northern Chile and buy in the Lago Llanquihue and Malalcahuello basin. The initial session can be online."
         },
         ".campaign-faq .faq-item:nth-child(7) summary": {
-          "en": "Are you an estate agency?"
+          "en": "Are you a brokerage?"
         },
         ".campaign-faq .faq-item:nth-child(7) .faq-answer p": {
-          "en": "No. Land Advisors is territorial consultancy: we do not sell our own land; we help you buy the right piece with territorial and local market reading."
+          "en": "No. Land Advisors is land advisory: we do not sell our own land; we help you buy the right piece with territorial and local market reading."
         },
         ".campaign-badge": {
           "en": "Offer until 30 September 2026"

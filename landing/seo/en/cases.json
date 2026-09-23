@@ -2,28 +2,40 @@
   "cases": [
     {
       "slug": "puerto-varas-restriccion-comercial",
-      "title": "Puerto Varas case: from rural restriction to commercial vocation | Land Advisors",
-      "description": "Real case in Puerto Varas: land with commercial use prohibition, territorial reading of connectivity and urban expansion, and estimated capture of +50% on purchase price.",
-      "h1": "From rural restriction to commercial vocation",
-      "intro": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; territorial reading told a different story.",
+      "title": "Puerto Varas case: from rural restriction to commercial potential | Land Advisors",
+      "description": "Real case in Puerto Varas: land with commercial use prohibition, local market read of connectivity and urban expansion, and estimated capture of +50% on purchase price.",
+      "h1": "From rural restriction to commercial potential",
+      "intro": "A commercial piece of land on the Puerto Varas fringe carried an explicit commercial use prohibition in the listing. The market ruled it out; local market read told a different story.",
       "territory": "Puerto Varas",
-      "metric": "+50% value captured",
+      "metric": "+50% vs. purchase price",
       "author": "José Hernán Katz C.",
       "datePublished": "2026-07-08",
       "dateModified": "2026-07-08",
       "readMinutes": 6,
       "image": "/images/caso-puerto-varas.jpg",
       "imageAlt": "Puerto Varas and Lago Llanquihue surroundings",
-      "tags": ["Puerto Varas", "change of use", "capital growth", "rural fringe"],
+      "tags": [
+        "Puerto Varas",
+        "change of use",
+        "appreciation",
+        "rural fringe"
+      ],
       "ila": {
         "sectorId": "LA-PV-004",
         "profile": "comercial",
         "thesisMarket": "The commercial use prohibition in the listing closed the conversation for the market.",
-        "thesisTerritory": "Connectivity, adjacent urbanisation and corridor trajectory suggested a commercial vocation different from what the listing conveyed.",
-        "dimensionsValidated": ["conectividad", "normativa", "mercado"],
+        "thesisTerritory": "Connectivity, adjacent urbanization and corridor trajectory suggested a commercial potential different from what the listing conveyed.",
+        "dimensionsValidated": [
+          "conectividad",
+          "normativa",
+          "mercado"
+        ],
         "contextScore": 68
       },
-      "servicesUsed": ["estudio-potencial-inmobiliario", "asesoria-compra"],
+      "servicesUsed": [
+        "estudio-potencial-inmobiliario",
+        "asesoria-compra"
+      ],
       "authorityScore": 9,
       "sections": [
         {
@@ -32,7 +44,7 @@
         },
         {
           "type": "p",
-          "text": "The buyer wanted land with commercial vocation on the peri-urban fringe of Puerto Varas. The listing showed an attractive location, but the documentation included an explicit commercial use restriction. For most interested parties, that closed the conversation."
+          "text": "The buyer wanted land with commercial potential on the rural fringe of Puerto Varas. The listing showed an attractive location, but the documentation included an explicit commercial use restriction. For most interested parties, that closed the conversation."
         },
         {
           "type": "h2",
@@ -40,14 +52,14 @@
         },
         {
           "type": "p",
-          "text": "We reviewed real connectivity (not just map distance), vehicle flow on the corridor, urban expansion trajectory in the sector and the property's regulatory background. The restriction existed on paper, but the territorial context — access improvements, adjacent urbanisation and municipal investment on the fringe — suggested a commercial vocation different from what the listing conveyed."
+          "text": "We reviewed real connectivity (not just map distance), vehicle flow on the corridor, urban expansion trajectory in the sector and the property's regulatory background. The restriction existed on paper, but the local context — access improvements, adjacent urbanization and municipal investment on the fringe — suggested a commercial potential different from what the listing conveyed."
         },
         {
           "type": "ul",
           "items": [
             "Connectivity and real travel times to urban services",
-            "Urbanisation dynamics in adjacent sectors",
-            "Planning instruments applicable to the property",
+            "Urbanization dynamics in adjacent sectors",
+            "Zoning and planning rules applicable to the property",
             "Local comparables for land with similar vocation"
           ]
         },
@@ -57,7 +69,7 @@
         },
         {
           "type": "p",
-          "text": "With verifiable information, the buyer proceeded understanding the regulatory risk and the scenario for lifting the restriction. The decision was not based on the land photo: it was based on the relationship between entry price, territorial vocation and negotiation margin."
+          "text": "With checkable information, the buyer proceeded understanding the regulatory risk and the scenario for lifting the restriction. The decision was not based on the land photo: it was based on the relationship between entry price, territorial vocation and negotiation margin."
         },
         {
           "type": "h2",
@@ -69,15 +81,15 @@
         },
         {
           "type": "h2",
-          "text": "Transferable learning"
+          "text": "What this means for you"
         },
         {
           "type": "p",
-          "text": "A restriction in the listing does not always close the opportunity — but it does require regulatory and territorial reading before making an offer. The reverse is also true: land that appears 'free' on paper can be expensive if enabling costs or connectivity do not support it."
+          "text": "A restriction in the listing does not always close the opportunity — but it does require regulatory and local market read before making an offer. The reverse is also true: land that appears 'free' on paper can be expensive if site-prep costs or connectivity do not support it."
         },
         {
           "type": "note",
-          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "faq": [
@@ -91,13 +103,22 @@
         },
         {
           "q": "Did Land Advisors sell this land?",
-          "a": "No. We are territorial consultancy: we support the purchase decision with market and territory criteria. We are not an estate agency or property portal."
+          "a": "No. We are land advisory: we support the purchase decision with market and territory criteria. We are not a brokerage or property portal."
         }
       ],
       "related": [
-        { "label": "Capital growth on the Puerto Varas rural fringe", "href": "blog/plusvalia-contorno-rural-puerto-varas/" },
-        { "label": "Property investment in Puerto Varas", "href": "territorios/puerto-varas/" },
-        { "label": "Guide: buy land in the south", "href": "guias/" }
+        {
+          "label": "Appreciation on the Puerto Varas rural fringe",
+          "href": "blog/plusvalia-contorno-rural-puerto-varas/"
+        },
+        {
+          "label": "Property investment in Puerto Varas",
+          "href": "territorios/puerto-varas/"
+        },
+        {
+          "label": "Guide: buy land in the south",
+          "href": "guias/"
+        }
       ]
     },
     {
@@ -114,16 +135,28 @@
       "readMinutes": 5,
       "image": "/images/caso-frutillar.jpg",
       "imageAlt": "Land in Frutillar, Lago Llanquihue basin",
-      "tags": ["Frutillar", "property arbitrage", "purchase price", "liquidity"],
+      "tags": [
+        "Frutillar",
+        "property arbitrage",
+        "purchase price",
+        "liquidity"
+      ],
       "ila": {
         "sectorId": "LA-FR-004",
         "profile": "patrimonio",
         "thesisMarket": "For the market it was another piece of land in the visible Frutillar supply.",
-        "thesisTerritory": "The gap was in seller liquidity and local comparables — not in future sector capital growth.",
-        "dimensionsValidated": ["mercado", "demografia", "habilitacion"],
+        "thesisTerritory": "The gap was in seller liquidity and local comparables — not in future sector appreciation.",
+        "dimensionsValidated": [
+          "mercado",
+          "demografia",
+          "habilitacion"
+        ],
         "contextScore": 67
       },
-      "servicesUsed": ["busqueda-personalizada", "asesoria-compra"],
+      "servicesUsed": [
+        "busqueda-personalizada",
+        "asesoria-compra"
+      ],
       "authorityScore": 8,
       "sections": [
         {
@@ -148,7 +181,7 @@
         },
         {
           "type": "p",
-          "text": "The purchase was structured on the verifiable gap between list price and local market value, not on a future capital growth narrative. The return was in the transaction itself."
+          "text": "The purchase was structured on the verifiable gap between list price and local market value, not on a future appreciation narrative. The return was in the transaction itself."
         },
         {
           "type": "h2",
@@ -160,7 +193,7 @@
         },
         {
           "type": "h2",
-          "text": "Transferable learning"
+          "text": "What this means for you"
         },
         {
           "type": "p",
@@ -168,7 +201,7 @@
         },
         {
           "type": "note",
-          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "faq": [
@@ -178,25 +211,34 @@
         },
         {
           "q": "How do you distinguish a low price from problematic land?",
-          "a": "A low price can be opportunity or a risk signal (access, services, regulation). The difference lies in contrasting purchase price, enabling costs and exit value with local data."
+          "a": "A low price can be opportunity or a risk signal (access, services, regulation). The difference lies in contrasting purchase price, site-prep costs and exit value with local data."
         },
         {
           "q": "Which service fits if I am looking for this type of opportunity?",
-          "a": "Personalised search filters at least 4 alternatives with territorial criteria; the session with you defines the 3 best to compare in a report."
+          "a": "Personalized search filters at least 4 alternatives with local criteria; the session with you defines the 3 best to compare in a report."
         }
       ],
       "related": [
-        { "label": "Property investment in Frutillar", "href": "territorios/frutillar/" },
-        { "label": "Guide: buy land in the south", "href": "guias/" },
-        { "label": "Personalised land search", "href": "servicios/busqueda-personalizada/" }
+        {
+          "label": "Property investment in Frutillar",
+          "href": "territorios/frutillar/"
+        },
+        {
+          "label": "Guide: buy land in the south",
+          "href": "guias/"
+        },
+        {
+          "label": "Personalized land search",
+          "href": "servicios/busqueda-personalizada/"
+        }
       ]
     },
     {
       "slug": "llanquihue-valor-presente-futuro",
-      "title": "Llanquihue case: present value vs. future value | Land Advisors",
-      "description": "Real case in Llanquihue: partly urbanised project, developer liquidity shortfall and purchase of 4 plots of land for 4,400 UF with later reference ~2,000 UF per plot.",
-      "h1": "Present value vs. future value",
-      "intro": "A partly urbanised development can look attractive on unit price. The right question is whether present value compensates for enabling risk and timelines.",
+      "title": "Llanquihue case: what it costs now vs. what it can be worth later | Land Advisors",
+      "description": "Real case in Llanquihue: partly urbanized project, developer liquidity shortfall and purchase of 4 plots of land for 4,400 UF with later reference ~2,000 UF per plot.",
+      "h1": "What it costs now vs. what it can be worth later",
+      "intro": "A partly urbanized development can look attractive on unit price. The right question is whether present value compensates for site-prep risk and timelines.",
       "territory": "Llanquihue",
       "metric": "4 plots · 4,400 UF",
       "author": "José Hernán Katz C.",
@@ -205,16 +247,28 @@
       "readMinutes": 6,
       "image": "/images/caso-llanquihue.jpg",
       "imageAlt": "Rural sector in Llanquihue with development potential",
-      "tags": ["Llanquihue", "urbanisation", "present value", "heritage investment"],
+      "tags": [
+        "Llanquihue",
+        "urbanization",
+        "present value",
+        "long-term investment"
+      ],
       "ila": {
         "sectorId": "LA-LL-003",
         "profile": "desarrollo",
         "thesisMarket": "The price per plot looked competitive against standalone alternatives.",
-        "thesisTerritory": "The opportunity was in present value negotiated with developer liquidity — not in a distant capital growth promise.",
-        "dimensionsValidated": ["habilitacion", "mercado", "normativa"],
+        "thesisTerritory": "The opportunity was in present value negotiated with developer liquidity — not in a distant appreciation promise.",
+        "dimensionsValidated": [
+          "habilitacion",
+          "mercado",
+          "normativa"
+        ],
         "contextScore": 63
       },
-      "servicesUsed": ["busqueda-personalizada", "estudio-potencial-inmobiliario"],
+      "servicesUsed": [
+        "busqueda-personalizada",
+        "estudio-potencial-inmobiliario"
+      ],
       "authorityScore": 9,
       "sections": [
         {
@@ -223,7 +277,7 @@
         },
         {
           "type": "p",
-          "text": "The buyer was evaluating a partly urbanised development in Llanquihue. The price per plot looked competitive against standalone alternatives, but there was no contrast with pending enabling costs, real timelines and exit liquidity."
+          "text": "The buyer was evaluating a partly urbanized development in Llanquihue. The price per plot looked competitive against standalone alternatives, but there was no contrast with pending site-prep costs, real timelines and exit liquidity."
         },
         {
           "type": "h2",
@@ -231,12 +285,12 @@
         },
         {
           "type": "p",
-          "text": "We reviewed urbanisation status, effective vs. promised services, subdivision regulation, post-enabling comparables in the sector and — critically — the developer's liquidity situation, which conditioned the negotiation."
+          "text": "We reviewed urbanization status, effective vs. promised services, subdivision regulation, after site prep comparables in the sector and — critically — the developer's liquidity situation, which conditioned the negotiation."
         },
         {
           "type": "ul",
           "items": [
-            "Urbanisation works and services status",
+            "Urbanization works and services status",
             "Co-ownership bylaws and use restrictions",
             "Comparables for enabled land in the area",
             "Conservative exit value scenario",
@@ -249,7 +303,7 @@
         },
         {
           "type": "p",
-          "text": "The purchase was structured on verifiable present value: negotiated entry price in a context of seller liquidity, with a conservative post-urbanisation value projection — not on project promises."
+          "text": "The purchase was structured on verifiable present value: negotiated entry price in a context of seller liquidity, with a conservative post-urbanization value projection — not on project promises."
         },
         {
           "type": "h2",
@@ -261,25 +315,25 @@
         },
         {
           "type": "h2",
-          "text": "Transferable learning"
+          "text": "What this means for you"
         },
         {
           "type": "p",
-          "text": "In partly urbanised projects, the 'per plot' price can hide pending costs and timelines. Add purchase price + enabling + time, and compare with a conservative sale scenario — not with the developer brochure."
+          "text": "In partly urbanized projects, the 'per plot' price can hide pending costs and timelines. Add purchase price + site prep + time, and compare with a conservative sale scenario — not with the developer brochure."
         },
         {
           "type": "note",
-          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalised advice or a promise of returns."
+          "text": "Past results do not guarantee future results. Illustrative case with aggregated data. Does not constitute personalized advice or a promise of returns."
         }
       ],
       "faq": [
         {
-          "q": "Is it worth buying in a partly urbanised subdivision?",
+          "q": "Is it worth buying in a partly urbanized subdivision?",
           "a": "It can be if present value closes with verifiable comparables and pending costs are quantified. If the price already incorporates future value without support, risk rises."
         },
         {
           "q": "What should I review in the co-ownership bylaws?",
-          "a": "Permitted uses, construction restrictions, pending urbanisation fees and administration rules. In subdivisions, this can limit cabins, retail or density."
+          "a": "Permitted uses, construction restrictions, pending urbanization fees and administration rules. In subdivisions, this can limit cabins, retail or density."
         },
         {
           "q": "Does Land Advisors recommend specific projects?",
@@ -287,9 +341,18 @@
         }
       ],
       "related": [
-        { "label": "Enabling costs on the rural fringe", "href": "blog/costos-habilitacion-terreno-contorno-rural/" },
-        { "label": "Property investment in Llanquihue", "href": "territorios/llanquihue/" },
-        { "label": "Property potential study", "href": "servicios/estudio-potencial-inmobiliario/" }
+        {
+          "label": "Site-prep costs on the rural fringe",
+          "href": "blog/costos-habilitacion-terreno-contorno-rural/"
+        },
+        {
+          "label": "Property investment in Llanquihue",
+          "href": "territorios/llanquihue/"
+        },
+        {
+          "label": "Property potential study",
+          "href": "servicios/estudio-potencial-inmobiliario/"
+        }
       ]
     }
   ]
