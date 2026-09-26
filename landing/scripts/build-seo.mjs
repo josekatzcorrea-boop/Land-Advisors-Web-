@@ -30,9 +30,7 @@ const campaigns = campaignsData.campaigns || [];
 const ilaIndex = JSON.parse(fs.readFileSync(path.join(SEO, "ila-index.json"), "utf8"));
 const ilaSectors = ilaIndex.sectors || [];
 const observatorio2026 = JSON.parse(fs.readFileSync(path.join(SEO, "observatorio-2026.json"), "utf8"));
-const i18nEnSeoPages = JSON.parse(
-  fs.readFileSync(path.join(ROOT, "i18n/en/seo-pages.json"), "utf8")
-).pages || {};
+const i18nRoutes = JSON.parse(fs.readFileSync(path.join(SEO, "i18n-routes.json"), "utf8")).routes || {};
 
 /** Atributos <html> para CTAs WhatsApp + calendario (site-ctas.js) */
 const SITE_CTA_HTML_ATTRS =
@@ -83,13 +81,13 @@ function esc(s) {
 }
 
 function hasHreflang(pagePath) {
-  return pagePath === "/" || Boolean(i18nEnSeoPages[pagePath]);
+  return Boolean(i18nRoutes[pagePath]);
 }
 
 function hreflangBlock(pagePath) {
   const url = site.url + (pagePath === "/" ? "/" : pagePath);
   return `  <link rel="alternate" hreflang="es" href="${url}">
-  <link rel="alternate" hreflang="en" href="${url}?lang=en">
+  <link rel="alternate" hreflang="en" href="${site.url}${i18nRoutes[pagePath]}">
   <link rel="alternate" hreflang="x-default" href="${url}">`;
 }
 
@@ -528,7 +526,7 @@ function buildGuidesHubContent(page, prefix) {
 
 function buildGuideBody(guide, prefix, options = {}) {
   const blocks = guide.blocks || guide.sections || [];
-  const sections = blocks.map((block, idx) => renderGuideBlock(block, idx)).join("\n        ");
+  const sections = blocks.map((block, idx) => renderGuideBlock(block, idx, prefix)).join("\n        ");
   const faq = (guide.faq || [])
     .map(
       (item) => `<details class="faq-item">
@@ -659,7 +657,7 @@ function guideIcon(name) {
   return GUIDE_ICONS[name] || GUIDE_ICONS.map;
 }
 
-function renderGuideBlock(block, idx) {
+function renderGuideBlock(block, idx, prefix = "") {
   const bi = idx != null ? ` data-i18n-block="${idx}"` : "";
   switch (block.type) {
     case "roadmap": {
@@ -754,7 +752,7 @@ function renderGuideBlock(block, idx) {
     case "callout": {
       const variant = block.variant === "la" ? "guide-callout--la" : "guide-callout--tip";
       const cta = block.cta
-        ? `<a href="${esc(block.cta.href)}" class="btn btn-primary btn-glow" data-track="${esc(block.cta.event || "cta_busqueda")}">${esc(block.cta.label)}</a>`
+        ? `<a href="${esc(/^(https?:|\/|#|\.)/.test(block.cta.href) ? block.cta.href : prefix + block.cta.href)}" class="btn btn-primary btn-glow" data-track="${esc(block.cta.event || "cta_busqueda")}">${esc(block.cta.label)}</a>`
         : "";
       return `<aside class="guide-callout glass-card ${variant}"${bi}>
         <span class="guide-callout__icon" aria-hidden="true">${guideIcon(block.icon || "la")}</span>
@@ -2510,6 +2508,11 @@ function syncHomeMeta() {
     `<meta name="twitter:description" content="${esc(home.description)}">`
   );
 
+  html = html.replace(
+    /<link rel="alternate" hreflang="en" href="[^"]*">/,
+    `<link rel="alternate" hreflang="en" href="${site.url}${i18nRoutes["/"]}">`
+  );
+
   html = html.replace(/\s*<meta name="google-site-verification"[^>]*>\n?/g, "");
   html = html.replace(/\s*<meta name="msvalidate\.01"[^>]*>\n?/g, "");
   const verifyLines = [];
@@ -2528,6 +2531,13 @@ function syncHomeMeta() {
 
   fs.writeFileSync(indexPath, html, "utf8");
   console.log("synced index.html meta from pages.json");
+}
+
+function sitemapAlternates(esUrl, enUrl) {
+  return `    <xhtml:link rel="alternate" hreflang="es" href="${esUrl}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${esUrl}"/>
+`;
 }
 
 function buildSitemap() {
@@ -2575,16 +2585,18 @@ function buildSitemap() {
                             ? "0.8"
                             : "0.7");
       const changefreq = p.type === "blog" || p.type === "blog-post" ? "weekly" : "monthly";
-      return `  <url>
-    <loc>${loc}</loc>
-    <lastmod>${today}</lastmod>
+      const enPath = i18nRoutes[p.path];
+      const entry = (href) => `  <url>
+    <loc>${href}</loc>
+${enPath ? sitemapAlternates(loc, site.url + enPath) : ""}    <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
+      return enPath ? `${entry(loc)}\n${entry(site.url + enPath)}` : entry(loc);
     })
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls}
 </urlset>
 `;
@@ -2648,6 +2660,7 @@ console.log("synced landing/assets logos");
 try {
   execSync("node scripts/build-i18n-seo-pages.mjs", { cwd: ROOT, stdio: "inherit" });
   execSync("node scripts/build-plh-page.mjs", { cwd: ROOT, stdio: "inherit" });
+  execSync("node scripts/build-en-pages.mjs", { cwd: ROOT, stdio: "inherit" });
 } catch (e) {
   console.warn("post-build scripts:", e.message);
 }

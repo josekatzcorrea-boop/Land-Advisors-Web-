@@ -24,8 +24,11 @@
   function applyChatLabels(link) {
     if (!link) return;
     if (isPlhPage()) {
-      link.setAttribute("aria-label", "Ir al formulario de búsqueda — Patagonia Land Hunter");
-      link.title = "Cuéntanos qué terreno buscas en Patagonia";
+      link.setAttribute(
+        "aria-label",
+        lg("chat.plh.label", "Ir al formulario de búsqueda — Patagonia Land Hunter")
+      );
+      link.title = lg("chat.plh.title", "Cuéntanos qué terreno buscas en Patagonia");
       return;
     }
     var label = lg("chat.wa.label", "Contactar por WhatsApp — Land Advisors");

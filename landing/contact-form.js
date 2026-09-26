@@ -60,6 +60,11 @@
     otro: "otro",
   };
 
+  function tr(key, fallback) {
+    const dict = window.__LA_I18N_DICT;
+    return (dict && typeof dict[key] === "string" && dict[key]) || fallback;
+  }
+
   function whatsappConfig() {
     return window.LA_WHATSAPP || {};
   }
@@ -73,7 +78,15 @@
   }
 
   function copyForIntent(intent) {
-    return intent === "diagnostico" ? FORM_COPY.diagnostico : FORM_COPY.default;
+    const variant = intent === "diagnostico" ? "diagnostico" : "default";
+    const base = FORM_COPY[variant];
+    const prefix = "contact." + variant + ".";
+    return {
+      title: tr(prefix + "title", base.title),
+      intro: tr(prefix + "intro", base.intro),
+      submit: tr(prefix + "submit", base.submit),
+      successTitle: tr(prefix + "successTitle", base.successTitle),
+    };
   }
 
   function buildMessage(data) {
@@ -91,13 +104,15 @@
 
   function buildVisitorWhatsApp(data) {
     const nombre = (data.get("nombre") || "").trim();
-    const servicio = label(INTENT_LABELS, data.get("intent"));
+    const intent = data.get("intent");
+    const servicio = tr("contact.intent." + intent, label(INTENT_LABELS, intent));
     return [
-      "Hola José, acabo de completar el formulario en landadvisors.cl.",
+      tr("contact.wa.hello", "Hola José, acabo de completar el formulario en landadvisors.cl."),
       "",
-      "Soy " + (nombre || "—") + ". Me interesa: " + servicio + ".",
+      tr("contact.wa.iam", "Soy") + " " + (nombre || "—") + ". " +
+        tr("contact.wa.interest", "Me interesa:") + " " + servicio + ".",
       "",
-      "¿Podemos coordinar la reunión? Gracias.",
+      tr("contact.wa.close", "¿Podemos coordinar la reunión? Gracias."),
     ].join("\n");
   }
 
@@ -154,7 +169,7 @@
     if (submitting) {
       if (!btn.dataset.label) btn.dataset.label = btn.textContent;
       btn.disabled = true;
-      btn.textContent = "Enviando…";
+      btn.textContent = tr("lead.sending", "Enviando…");
     } else {
       btn.disabled = false;
       if (btn.dataset.label) btn.textContent = btn.dataset.label;
@@ -346,8 +361,14 @@
     if (titleEl) titleEl.textContent = copy.successTitle;
     if (leadEl) {
       leadEl.textContent = hasCalendar
-        ? "Tu información ya está con Land Advisors. Elige horario en el calendario o confirma por WhatsApp — lo que te resulte más cómodo."
-        : "Tu información ya está con Land Advisors. Confirma por WhatsApp para coordinar la reunión en los próximos minutos.";
+        ? tr(
+            "contact.success.leadCal",
+            "Tu información ya está con Land Advisors. Elige horario en el calendario o confirma por WhatsApp — lo que te resulte más cómodo."
+          )
+        : tr(
+            "contact.success.leadWa",
+            "Tu información ya está con Land Advisors. Confirma por WhatsApp para coordinar la reunión en los próximos minutos."
+          );
     }
 
     if (calBtn) {
@@ -365,14 +386,16 @@
       waBtn.classList.toggle("contact-success__btn-whatsapp--primary", !hasCalendar);
       if (waLabel) {
         waLabel.textContent = hasCalendar
-          ? "Confirmar por WhatsApp"
-          : "Abrir WhatsApp y coordinar reunión";
+          ? tr("cta.confirmWa", "Confirmar por WhatsApp")
+          : tr("contact.success.waOnly", "Abrir WhatsApp y coordinar reunión");
       }
     }
 
     if (noteEl) {
-      noteEl.textContent =
-        "Reunión ~30 min · Online o presencial en Puerto Varas · Respondemos en horario laboral (lun–vie).";
+      noteEl.textContent = tr(
+        "form.success.note",
+        "Reunión ~30 min · Online o presencial en Puerto Varas · Respondemos en horario laboral (lun–vie)."
+      );
     }
 
     fields.hidden = true;
@@ -468,7 +491,10 @@
           showSuccessPanel(form, data);
           setStatus(
             form,
-            "Recibimos tus datos en pantalla. Si no ves el calendario, usa WhatsApp para confirmar la reunión.",
+            tr(
+              "contact.status.fallback",
+              "Recibimos tus datos en pantalla. Si no ves el calendario, usa WhatsApp para confirmar la reunión."
+            ),
             "info"
           );
         })

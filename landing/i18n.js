@@ -80,7 +80,47 @@
     return null;
   }
 
+  var EN_PATH_RE = /^(\/landing)?\/en(\/|$)/;
+
+  function isEnPath() {
+    return EN_PATH_RE.test(location.pathname);
+  }
+
+  /** Crawlers y navegadores headless: nunca redirigir por geo/idioma. */
+  function isBot() {
+    return /bot|crawl|spider|slurp|mediapartners|lighthouse|headless|inspectiontool|facebookexternalhit|embedly|preview/i.test(
+      navigator.userAgent || ""
+    );
+  }
+
+  /** URL local de la versión equivalente, leída desde <link rel="alternate" hreflang>. */
+  function alternateUrl(lang) {
+    var link = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+    if (!link) return null;
+    var target;
+    try {
+      target = new URL(link.getAttribute("href"), location.href);
+    } catch (e) {
+      return null;
+    }
+    var p = target.pathname;
+    if (location.pathname.indexOf("/landing/") === 0) p = "/landing" + p;
+    var params = new URLSearchParams(location.search);
+    params.delete("lang");
+    var qs = params.toString();
+    return p + (qs ? "?" + qs : "") + location.hash;
+  }
+
+  function goToLang(lang, replace) {
+    var url = alternateUrl(lang);
+    if (!url) return false;
+    if (replace) location.replace(url);
+    else location.assign(url);
+    return true;
+  }
+
   function getLang() {
+    if (isEnPath()) return "en";
     var forced = getLangFromStorageOrQuery();
     if (forced) return forced;
     if (window.__LA_GEO_LANG === "en" || window.__LA_GEO_LANG === "es") {
@@ -162,6 +202,67 @@
     });
   }
 
+  var ES_MONTHS = {
+    enero: "January", febrero: "February", marzo: "March", abril: "April", mayo: "May", junio: "June",
+    julio: "July", agosto: "August", septiembre: "September", setiembre: "September", octubre: "October",
+    noviembre: "November", diciembre: "December",
+    ene: "Jan", feb: "Feb", mar: "Mar", abr: "Apr", may: "May", jun: "Jun", jul: "Jul", ago: "Aug",
+    sept: "Sep", sep: "Sep", oct: "Oct", nov: "Nov", dic: "Dec"
+  };
+
+  function translateEsDate(s) {
+    var m = s.match(/^(\d{1,2}) de ([a-záéíóú]+) de (\d{4})$/i);
+    if (m && ES_MONTHS[m[2].toLowerCase()]) return ES_MONTHS[m[2].toLowerCase()] + " " + m[1] + ", " + m[3];
+    m = s.match(/^(\d{1,2}) ([a-z]+)\.? (\d{4})$/i);
+    if (m && ES_MONTHS[m[2].toLowerCase()]) return ES_MONTHS[m[2].toLowerCase()] + " " + m[1] + ", " + m[3];
+    return null;
+  }
+
+  function translatePhrase(key, phrases, patterns) {
+    if (Object.prototype.hasOwnProperty.call(phrases, key)) return phrases[key];
+    for (var i = 0; i < patterns.length; i++) {
+      var re = new RegExp(patterns[i][0]);
+      if (re.test(key)) {
+        return key.replace(re, function () {
+          var args = arguments;
+          return patterns[i][1].replace(/\$(\d)/g, function (_, n) {
+            var part = args[Number(n)] || "";
+            if (Object.prototype.hasOwnProperty.call(phrases, part)) return phrases[part];
+            return translateEsDate(part) || part;
+          });
+        });
+      }
+    }
+    return translateEsDate(key);
+  }
+
+  function applyPhrases(dict, lang) {
+    if (lang !== "en" || !document.body) return;
+    var phrases = merge(dict._commonPhrases, dict._phrases);
+    var patterns = dict._commonPatterns || [];
+    var skip = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, TEXTAREA: 1 };
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      if (!node.parentNode || skip[node.parentNode.nodeName]) return;
+      var raw = node.nodeValue;
+      var key = raw.replace(/\s+/g, " ").trim();
+      if (key.length < 2) return;
+      var en = translatePhrase(key, phrases, patterns);
+      if (en == null || en === key) return;
+      node.nodeValue = raw.match(/^\s*/)[0] + en + raw.match(/\s*$/)[0];
+    });
+    ["alt", "aria-label", "placeholder", "title"].forEach(function (attr) {
+      document.querySelectorAll("[" + attr + "]").forEach(function (el) {
+        var key = (el.getAttribute(attr) || "").replace(/\s+/g, " ").trim();
+        if (key.length < 2) return;
+        var en = translatePhrase(key, phrases, patterns);
+        if (en != null && en !== key) el.setAttribute(attr, en);
+      });
+    });
+  }
+
   function applyBlocks(blocks, lang) {
     if (!blocks || lang !== "en") return;
     blocks.forEach(function (block) {
@@ -170,7 +271,7 @@
       if (!el) return;
 
       if (block.type === "p" && block.prefix && block.en) {
-        el.innerHTML = "<strong>" + block.prefix.replace(/:$/, "") + ":</strong> " + block.en;
+        el.innerHTML = "<strong>" + block.prefix.trim().replace(/:$/, "") + ":</strong> " + block.en;
         return;
       }
 
@@ -320,7 +421,7 @@
     if (ogAlt) ogAlt.setAttribute("content", lang === "en" ? "es_CL" : "en_US");
 
     if (lang === "en") {
-      var waIntro = document.documentElement.getAttribute("data-wa-intro-en");
+      var waIntro = document.documentElement.getAttribute("data-wa-intro-en") || dict["wa.intro"];
       if (waIntro) document.documentElement.setAttribute("data-wa-intro", waIntro);
     } else {
       var waEs = document.documentElement.getAttribute("data-wa-intro-es");
@@ -357,6 +458,7 @@
       if (val) el.setAttribute("aria-label", val);
     });
 
+    applySelectors(dict._commonSelectors, lang);
     applySelectors(dict._selectors, lang);
 
     var seoPath = document.body.getAttribute("data-seo-path");
@@ -368,14 +470,16 @@
       syncShareMeta(dict.meta[lang].title, dict.meta[lang].description);
     }
 
+    applyPhrases(dict, lang);
+
     document.querySelectorAll(".lang-switch__btn").forEach(function (btn) {
       var active = btn.getAttribute("data-lang") === lang;
       btn.classList.toggle("is-active", active);
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
 
-    document.dispatchEvent(new CustomEvent("la:langchange", { detail: { lang: lang, dict: dict } }));
     window.__LA_I18N_DICT = dict;
+    document.dispatchEvent(new CustomEvent("la:langchange", { detail: { lang: lang, dict: dict } }));
     window.__LA_I18N_LANG = lang;
   }
 
@@ -394,6 +498,8 @@
         var lang = btn.getAttribute("data-lang");
         if (!lang || lang === getLang()) return;
         localStorage.setItem(MANUAL_KEY, "1");
+        localStorage.setItem(STORAGE_KEY, lang);
+        if (goToLang(lang, false)) return;
         navigateLang(lang);
       });
     });
@@ -418,9 +524,22 @@
   }
 
   function init() {
+    if (isEnPath()) {
+      if (new URLSearchParams(location.search).get("lang") === "es" && goToLang("es", true)) return;
+      bootWithLang("en");
+      return;
+    }
+
     var forced = getLangFromStorageOrQuery();
+    // ?lang=en y preferencia EN guardada: ir a la URL /en/ equivalente
+    if (forced === "en" && goToLang("en", true)) return;
     if (forced) {
       bootWithLang(forced);
+      return;
+    }
+
+    if (isBot()) {
+      bootWithLang(DEFAULT_LANG);
       return;
     }
 
@@ -429,8 +548,9 @@
       window.__LA_GEO_LANG = lang;
       window.__LA_GEO_COUNTRY = country || "";
 
-      // Visitantes fuera de Chile: fijar ?lang=en para URLs compartibles
+      // Visitantes fuera de Chile: versión /en/ equivalente (o ?lang=en si no existe)
       if (lang === "en") {
+        if (goToLang("en", true)) return;
         var url = new URL(location.href);
         if (url.searchParams.get("lang") !== "en") {
           navigateLang("en");
@@ -450,6 +570,8 @@
     t: function (dict, key) { return t(dict, key, getLang()); },
     isLikelyInChile: isLikelyInChile,
   };
+
+  if (window.__LA_I18N_PRERENDER) return;
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

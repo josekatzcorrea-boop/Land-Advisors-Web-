@@ -35,6 +35,7 @@ jobs:
             --exclude 'kmz-extract/' \
             --exclude 'seo/' \
             --exclude 'scripts/' \
+            --exclude 'node_modules/' \
             --exclude '*.ps1' \
             --exclude '*.md' \
             --exclude 'filelist.txt' \

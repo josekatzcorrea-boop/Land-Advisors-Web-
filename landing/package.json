@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "jsdom": "^24.1.3",
     "sharp": "^0.33.5"
   }
 }

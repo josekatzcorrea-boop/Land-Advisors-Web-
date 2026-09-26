@@ -2,50 +2,50 @@
   "guides": [
     {
       "slug": "comprar-terreno-sur-chile",
-      "title": "How to buy land in southern Chile | Land Advisors guide",
-      "description": "Step-by-step guide to buying land in southern Chile: intended use, budget, sectors, site-prep costs, infrastructure and support from agencies or Land Advisors. Then compare quality-of-life or return variables.",
-      "h1": "How to buy land in southern Chile",
-      "intro": "Buying land in southern Chile can be a major decision — and there is plenty of attractive stock on the market. The key is not to browse more listings, but to set your basic criteria first. With that clear, you can choose options that actually fit and compare what matters most for your quality of life or project returns.",
+      "title": "How to buy land in southern Chile: six steps | Land Advisors guide",
+      "description": "A six-step guide to buying land in southern Chile: intended use, budget, sectors, site preparation, infrastructure, and expert support—then compare the variables that shape quality of life or returns.",
+      "h1": "Six steps to buying land in southern Chile",
+      "intro": "Buying land in southern Chile is a significant decision, and the market offers a wide range of attractive options. Clarity starts with a clear framework: define your core criteria first, then select the options that fit and compare the factors that matter most for your quality of life or project returns.",
       "image": "/images/intel-territorial.jpg",
-      "imageAlt": "Rural fringe in the Lago Llanquihue basin",
+      "imageAlt": "Rural land near town in the Lago Llanquihue basin",
       "readMinutes": 12,
       "datePublished": "2026-07-07",
       "dateModified": "2026-07-20",
       "author": "José Hernán Katz C.",
       "cta": {
         "href": "servicios/busqueda-personalizada/",
-        "label": "Request personalized search",
+        "label": "Explore Personalized Search",
         "event": "cta_busqueda"
       },
       "blocks": [
         {
           "type": "roadmap",
-          "label": "Recommended path",
-          "title": "Six steps before choosing options",
+          "label": "Your roadmap",
+          "title": "Six steps to a clear shortlist",
           "items": [
             {
               "num": "1",
               "icon": "purpose",
               "title": "Intended use",
-              "text": "What you will use the land for"
+              "text": "What the land needs to deliver"
             },
             {
               "num": "2",
               "icon": "budget",
               "title": "Budget",
-              "text": "Real purchase range"
+              "text": "Your realistic purchase range"
             },
             {
               "num": "3",
               "icon": "map",
               "title": "Sectors",
-              "text": "Names of the areas that interest you"
+              "text": "The areas you want to evaluate"
             },
             {
               "num": "4",
               "icon": "habilitation",
-              "title": "Site prep",
-              "text": "What you can spend after buying"
+              "title": "Site preparation",
+              "text": "Your post-purchase investment"
             },
             {
               "num": "5",
@@ -56,8 +56,8 @@
             {
               "num": "6",
               "icon": "contact",
-              "title": "Ask for help",
-              "text": "Agencies, brokers or Land Advisors"
+              "title": "Expert support",
+              "text": "Agencies, brokers, or Land Advisors"
             }
           ]
         },
@@ -65,26 +65,26 @@
           "type": "step",
           "num": "1",
           "icon": "purpose",
-          "title": "Define what you will use the property for",
+          "title": "Define the intended use of the land",
           "paragraphs": [
-            "Before browsing photos, define the use: permanent home, second home, cabins, commerce, long-term investment or another project. That objective filters zones, services, regulation and the type of land that makes sense.",
-            "Raising a family near town is not the same as opening a roadside café or holding heritage long term. If the use is unclear, almost any listing can look like \"the one\"."
+            "Start by defining the use: permanent home, second home, cabins, retail, long-term hold, or another project. That objective shapes which zones, services, zoning, and types of land make sense.",
+            "Raising a family near town, opening a roadside café, and holding land for the long term each call for a different property. A defined use gives you a clear framework to evaluate every listing."
           ],
           "examples": [
             {
               "icon": "family",
-              "title": "Living or quality of life",
-              "text": "Prioritize rural fringe with reasonable access to services, schools and town. Remote countryside usually costs more in daily time and logistics."
+              "title": "Living and quality of life",
+              "text": "Prioritize rural land near town with reasonable access to services, schools, and town. Remote countryside typically adds daily time and logistics."
             },
             {
               "icon": "cabin",
               "title": "Tourism or cabins",
-              "text": "You need sector demand, an attractive setting and land where accommodation use is not blocked by covenants or regulation."
+              "text": "Look for sector demand, an attractive setting, and land where covenants and zoning support accommodation use."
             },
             {
               "icon": "invest",
-              "title": "Investment or commerce",
-              "text": "Look at price comparables, fringe appreciation or cash flow, and land-use limits before committing to a view."
+              "title": "Investment or retail",
+              "text": "Evaluate comparable sales, appreciation near town or cash flow, and land-use limits before committing to a view."
             }
           ]
         },
@@ -94,86 +94,86 @@
           "icon": "budget",
           "title": "Set your purchase budget range",
           "paragraphs": [
-            "Define a clear purchase range (minimum–maximum), not just an aspirational figure. That avoids wasting time on land outside your real capacity.",
-            "Mentally separate land price from what you will need afterwards to enable the site. A \"cheap\" listing can leave no margin for the project."
+            "Define a clear purchase range—minimum to maximum—rather than a single aspirational figure. That keeps your search focused on land within your real capacity.",
+            "Treat the land price and post-purchase site preparation as separate budgets. A low listing price can leave little margin for the project."
           ],
           "bullets": [
-            "Work with a range, not a single rigid ceiling.",
-            "Include reserve for fees, taxes and contingencies.",
-            "If you need finance, confirm with your bank what type of property they will lend on in that sector."
+            "Work with a range rather than a single rigid ceiling.",
+            "Include a reserve for fees, taxes, and contingencies.",
+            "If you need financing, confirm with your bank which property types it will lend on in that sector."
           ]
         },
         {
           "type": "step",
           "num": "3",
           "icon": "map",
-          "title": "Learn the local names of the sectors that interest you",
+          "title": "Learn the local names of your target sectors",
           "paragraphs": [
-            "\"Something near Puerto Varas\" is a good wish, but not enough to filter. Learn local sector names: Ensenada, Los Pellines, Puerto Octay, Frutillar Bajo, Llanquihue fringe, and so on.",
-            "With concrete names you can ask agencies, brokers or Land Advisors for options — and compare land that is truly comparable."
+            "\"Something near Puerto Varas\" is a good starting point; local sector names give your search precision. Learn them: Ensenada, Los Pellines, Puerto Octay, Frutillar Bajo, rural land near Llanquihue, and so on.",
+            "With specific names, you can request options from agencies, brokers, or Land Advisors—and compare land that is genuinely comparable."
           ],
           "bullets": [
             "Note 2–4 sectors you like and 1–2 you rule out.",
-            "Ask real travel times to town, not just map kilometres.",
-            "Check whether the sector is rural fringe (connected to town) or remote countryside."
+            "Ask for real drive times to town—map kilometers tell only part of the story.",
+            "Check whether the sector is rural land near town (connected to services) or remote countryside."
           ]
         },
         {
           "type": "step",
           "num": "4",
           "icon": "habilitation",
-          "title": "Set how much you can spend to enable the land",
+          "title": "Set your site preparation budget",
           "paragraphs": [
-            "Site prep is everything after purchase: access, power, water, internet, earthworks, studies and timelines. That budget matters as much as the listing price.",
-            "If you leave no margin to enable, the land can sit unused for years — or force spending you had not planned."
+            "Site preparation covers everything after purchase: access, power, water, internet, earthworks, studies, and timelines. That budget matters as much as the listing price.",
+            "A clear margin for site preparation keeps the project moving—and protects you from land that sits idle for years or requires unplanned spending."
           ],
           "bullets": [
-            "List what is typically missing on land in your target sectors.",
-            "Ask for local order-of-magnitude costs (not quotes from Santiago).",
-            "Purchase + site prep = real cost of entering the project."
+            "List what land in your target sectors typically lacks.",
+            "Request local order-of-magnitude costs rather than Santiago quotes.",
+            "Purchase price + site preparation = the real cost of entering the project."
           ]
         },
         {
           "type": "step",
           "num": "5",
           "icon": "services",
-          "title": "Define what services the land needs (infrastructure level)",
+          "title": "Define the infrastructure the land needs",
           "paragraphs": [
-            "Decide the minimum infrastructure you accept: mains water or well, power, sewer or septic, stable internet, consolidated road. What \"should already be there\" depends on your use and site-prep budget.",
-            "The more demanding you are on ready services, the narrower the offer — and the more predictable the entry cost."
+            "Decide the minimum infrastructure you will accept: mains water or well, power, sewer or septic, reliable internet, and an all-weather road. What \"should already be in place\" depends on your use and site preparation budget.",
+            "The higher your standard for ready services, the narrower the supply—and the more predictable the entry cost."
           ],
           "bullets": [
-            "Permanent home: prioritize stable services year-round.",
-            "Second home or tourism: you may accept more site prep if the setting justifies it.",
-            "Commerce: check service feasibility and use rules, not just the meter."
+            "Permanent home: prioritize reliable year-round services.",
+            "Second home or tourism: more site preparation may be acceptable when the setting justifies it.",
+            "Retail: confirm service feasibility and zoning, beyond the utility meter."
           ]
         },
         {
           "type": "step",
           "num": "6",
           "icon": "contact",
-          "title": "Contact agencies, brokers or Land Advisors with this brief",
+          "title": "Engage agencies, brokers, or Land Advisors with your brief",
           "paragraphs": [
-            "When you already have use, budget, sectors, site prep and infrastructure level, ask for help with criteria. Arriving with that brief changes the conversation: you stop receiving \"the prettiest\" and start receiving what fits.",
-            "You can work with agencies or brokers (they show stock) and/or Land Advisors (land advisory: we filter and compare against your objective without selling our own land)."
+            "Once you have defined use, budget, sectors, site preparation, and infrastructure level, seek guidance with a clear framework. Arriving with that brief changes the conversation: the options you receive are selected for fit rather than appearance.",
+            "You can work with agencies or brokers, who present their inventory, and/or with Land Advisors, an independent advisory firm that evaluates and compares options against your objective."
           ],
           "bullets": [
-            "Share your criteria brief on first contact.",
-            "Ask for several options that meet the basics — not a single favorite.",
-            "If you want method and a comparative report, the usual next step is Personalized Search."
+            "Share your criteria brief at first contact.",
+            "Request several options that meet the essentials, rather than a single favorite.",
+            "For a structured method and a comparative report, the natural next step is Personalized Search."
           ]
         },
         {
           "type": "callout",
           "variant": "tip",
           "icon": "filter",
-          "title": "From basic criteria to short list",
-          "text": "Once these six steps are done, you can select options that meet the basics. With that short list you compare the variables that will most affect your quality of life or project returns — not all weigh equally depending on use."
+          "title": "From core criteria to shortlist",
+          "text": "With these six steps complete, you can select the options that meet the essentials. From that shortlist, compare the variables that will most shape your quality of life or project returns—their weight varies by intended use."
         },
         {
           "type": "decision",
-          "title": "Variables that most affect your decision",
-          "intro": "Among land that already meets the essentials, compare according to your objective. What matters for living is not identical to what matters for a commercial project or an investment.",
+          "title": "The variables that shape your decision",
+          "intro": "Among land that already meets the essentials, compare according to your objective. The priorities for living differ from those for a commercial project or an investment.",
           "groups": [
             {
               "label": "For living",
@@ -182,43 +182,43 @@
                 {
                   "icon": "connect",
                   "title": "Real connectivity",
-                  "text": "Real distance and time to town, airport, supermarkets, schools and healthcare. The map misleads: what matters is the journey on a rainy day."
+                  "text": "Actual distance and drive time to town, the airport, supermarkets, schools, and healthcare. What matters is the drive on a rainy day—beyond what the map suggests."
                 },
                 {
                   "icon": "normativa",
                   "title": "Subdivision covenants",
-                  "text": "In subdivisions, covenants define what you can build, permitted uses, heights and coexistence rules. Read them before offering, not after you have chosen a plot."
+                  "text": "In subdivisions, covenants define what you can build, permitted uses, heights, and community rules. Review them before making an offer—ideally before choosing a lot."
                 },
                 {
                   "icon": "road",
                   "title": "Access quality",
-                  "text": "Public or registered road, winter condition, gradient and maintenance. Weak access punishes daily life and resale."
+                  "text": "Public or registered road, winter condition, gradient, and maintenance. Reliable access supports daily life and long-term resale value."
                 }
               ]
             },
             {
-              "label": "For commercial project or investment",
+              "label": "For commercial projects or investment",
               "icon": "invest",
               "items": [
                 {
                   "icon": "traffic",
-                  "title": "Vehicle flow",
-                  "text": "For a commercial project, route visibility and traffic matter as much as square meters. Without compatible traffic, a site does not sustain itself on the view alone."
+                  "title": "Traffic and visibility",
+                  "text": "For a commercial project, route visibility and traffic matter as much as square meters. A site sustains itself on compatible traffic—the view alone is rarely enough."
                 },
                 {
                   "icon": "tourism",
-                  "title": "Attractions, view and setting",
-                  "text": "In tourism projects, proximity to attractions, view quality and setting affect occupancy and rate. Evaluate low season, not just summer."
+                  "title": "Attractions, views, and setting",
+                  "text": "In tourism projects, proximity to attractions, view quality, and setting drive occupancy and rates. Evaluate the low season as well as summer."
                 },
                 {
                   "icon": "price",
                   "title": "Price vs. market",
-                  "text": "If the goal is investment, compare entry price with sector comparables. Good land at market price is often better than \"cheap\" land with hidden costs."
+                  "text": "For investment, compare entry price against sector comparable sales. Good land at market price often outperforms \"cheap\" land with hidden costs."
                 },
                 {
                   "icon": "normativa",
-                  "title": "Land use and regulation",
-                  "text": "Use limits, zoning and planning rules and property restrictions can block cabins, commerce or densification. Verify before projecting returns."
+                  "title": "Land use and zoning",
+                  "text": "Use limits, zoning, planning rules, and property restrictions can rule out cabins, retail, or higher density. Verify them before projecting returns."
                 }
               ]
             }
@@ -228,35 +228,35 @@
           "type": "callout",
           "variant": "la",
           "icon": "la",
-          "title": "This is what we do at Land Advisors",
-          "text": "The same process — basic criteria, short list and comparison by use — with local market read of the Lago Llanquihue and Malalcahuello basin. We are not a brokerage: we do not sell land. We help you buy the right piece, with local criteria on price, sectors and feasibility.",
+          "title": "How Land Advisors guides this process",
+          "text": "We apply the same process—core criteria, shortlist, and comparison by use—with local market intelligence across the Lago Llanquihue basin and Malalcahuello. As independent buyer-side advisors, we help you acquire the right land with clarity on price, sectors, and feasibility.",
           "cta": {
             "href": "servicios/busqueda-personalizada/",
-            "label": "Explore personalized search",
+            "label": "Explore Personalized Search",
             "event": "cta_busqueda"
           }
         }
       ],
       "faq": [
         {
-          "q": "Where do I start if I have never bought land in the south?",
-          "a": "Start with intended use, your purchase budget range and the names of sectors that interest you. Then define site prep and infrastructure level, and only then ask agencies, brokers or Land Advisors for options."
+          "q": "Where should I start if I have never bought land in the south?",
+          "a": "Start with intended use, your purchase budget range, and the names of the sectors you want to evaluate. Then define site preparation and infrastructure level—and with that brief, request options from agencies, brokers, or Land Advisors."
         },
         {
           "q": "What is registered access at the Land Registry?",
-          "a": "It is an easement or right of way officially recorded on the road reaching the land. Without stable legal access, the property can be hard to live on, finance or resell."
+          "a": "It is an easement or right of way officially recorded for the road that reaches the land. Stable legal access is essential to live on, finance, or resell the property."
         },
         {
-          "q": "Can I be barred from building cabins on rural land?",
-          "a": "Yes. The municipal planning code, property restrictions and subdivision covenants can limit uses, heights or destinations. Best to review before offering."
+          "q": "Can building cabins on rural land be restricted?",
+          "a": "Yes. The municipal zoning plan, property restrictions, and subdivision covenants can limit uses, heights, or intended purposes. Review them before making an offer."
         },
         {
           "q": "How is Land Advisors different from a brokerage?",
-          "a": "An agency shows properties from its portfolio. Land Advisors is land advisory: we filter options against your objective, compare with local criteria and recommend with data — without selling our own land."
+          "a": "A brokerage presents properties from its own inventory. Land Advisors is an independent advisory firm: we evaluate options against your objective, compare them with local expertise, and recommend with data—with no land of our own to sell."
         },
         {
           "q": "How much does Personalized Search cost?",
-          "a": "Personalized Search includes at least 4 options, a session with you to choose the 3 best and a comparative report with Diagnostic. Reference price is 5 UF — confirmed in session according to scope."
+          "a": "Personalized Search includes at least 4 options, a session with you to select the 3 strongest, and a comparative report with Diagnostic. The reference price is 5 UF—confirmed in session according to scope."
         }
       ],
       "related": [
@@ -269,19 +269,19 @@
           "href": "servicios/busqueda-personalizada/"
         },
         {
-          "label": "Appreciation on Puerto Varas rural fringe",
+          "label": "Appreciation on rural land near Puerto Varas",
           "href": "blog/plusvalia-contorno-rural-puerto-varas/"
         },
         {
-          "label": "Site-prep costs on the rural fringe",
+          "label": "Site preparation costs on rural land near town",
           "href": "blog/costos-habilitacion-terreno-contorno-rural/"
         },
         {
-          "label": "Puerto Varas case: commercial restriction",
+          "label": "Puerto Varas case: unlocking commercial potential",
           "href": "casos-de-estudio/puerto-varas-restriccion-comercial/"
         },
         {
-          "label": "Property investment in Puerto Varas",
+          "label": "Land investment in Puerto Varas",
           "href": "territorios/puerto-varas/"
         }
       ]

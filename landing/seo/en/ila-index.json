@@ -2,16 +2,16 @@
   "version": "0.1",
   "datePublished": "2026-07-09",
   "dateModified": "2026-07-09",
-  "methodology": "ILA v0 combines 2024 Census (RAG), municipal regulation (PRC/PLADECO), Land Advisors cases and territorial estimation. Score 0–100 by sector. Confidence: A = field verified, B = document cross-check, C = modelled.",
+  "methodology": "The Land Advisors Sector Index (v0) combines 2024 Census data (RAG), municipal planning (PRC/PLADECO), Land Advisors case files, and local estimates. Each sector is scored 0–100. Confidence: A = field-verified, B = document cross-check, C = modeled.",
   "dimensions": [
     {
       "id": "conectividad",
-      "label": "Real connectivity",
+      "label": "Real-world connectivity",
       "weight": 0.25
     },
     {
       "id": "normativa",
-      "label": "Regulatory vocation",
+      "label": "Zoning and permitted use",
       "weight": 0.25
     },
     {
@@ -26,14 +26,14 @@
     },
     {
       "id": "habilitacion",
-      "label": "Site prep risk",
+      "label": "Site preparation risk",
       "weight": 0.1
     }
   ],
   "profiles": [
     {
       "id": "patrimonio",
-      "label": "Heritage / second home"
+      "label": "Long-term hold / second home"
     },
     {
       "id": "turismo",
@@ -53,8 +53,8 @@
       "id": "LA-PV-001",
       "name": "Mirador — southern PV fringe",
       "comuna": "Puerto Varas",
-      "eje": "Centre — La Fábrica",
-      "definition": "Established subdivisions with lake views and reasonable access to urban services.",
+      "eje": "Center — La Fábrica",
+      "definition": "Established subdivisions with lake views and convenient access to town services.",
       "profiles": [
         "patrimonio",
         "turismo"
@@ -75,12 +75,12 @@
       },
       "confidence": "B",
       "signals": [
-        "High population density Census 2024",
+        "High population density (Census 2024)",
         "Sustained second-home demand",
-        "69% municipal car dependency"
+        "69% car dependency (municipal)"
       ],
       "risks": [
-        "Listing price already includes view premium",
+        "View premium already priced into listings",
         "Restrictive bylaws in premium subdivisions"
       ],
       "relatedTerritory": "puerto-varas"
@@ -90,7 +90,7 @@
       "name": "Ensenada corridor — eastern fringe",
       "comuna": "Puerto Varas",
       "eje": "Ensenada route",
-      "definition": "Expansion corridor towards Ensenada with a mix of subdivisions and standalone land.",
+      "definition": "Growth corridor toward Ensenada—a mix of subdivisions and standalone lots.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -111,12 +111,12 @@
       },
       "confidence": "B",
       "signals": [
-        "Documented urban expansion line PLADECO",
-        "Partial road infrastructure improvements"
+        "Urban expansion line documented in PLADECO",
+        "Road infrastructure partly upgraded"
       ],
       "risks": [
-        "Access quality varies between subdivisions",
-        "Real distance > map in winter"
+        "Access quality varies by subdivision",
+        "Winter drive times exceed map estimates"
       ],
       "relatedTerritory": "puerto-varas"
     },
@@ -125,7 +125,7 @@
       "name": "Llanquihue boundary — north-west PV",
       "comuna": "Puerto Varas",
       "eje": "PV — Llanquihue",
-      "definition": "Peri-urban transition towards Llanquihue municipality; mid-range prices.",
+      "definition": "Peri-urban transition toward Llanquihue municipality, with mid-range pricing.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -146,12 +146,12 @@
       },
       "confidence": "C",
       "signals": [
-        "Price gaps vs. PV centre",
+        "Price gaps vs. PV center",
         "Active subdivision supply"
       ],
       "risks": [
-        "Regulatory confusion between municipalities",
-        "Services at different stages by subdivision"
+        "Overlapping rules across municipalities",
+        "Service rollout varies by subdivision"
       ],
       "relatedTerritory": "puerto-varas"
     },
@@ -159,8 +159,8 @@
       "id": "LA-PV-004",
       "name": "Commercial fringe node — real case",
       "comuna": "Puerto Varas",
-      "eje": "Peri-urban urban expansion",
-      "definition": "Sector with apparent listing restriction but commercial potential through connectivity and adjacent urbanization.",
+      "eje": "Peri-urban growth edge",
+      "definition": "Sector listed with an apparent use restriction—commercial potential driven by connectivity and adjacent urbanization.",
       "profiles": [
         "comercial"
       ],
@@ -180,13 +180,13 @@
       },
       "confidence": "A",
       "signals": [
-        "Proven vehicle flow on corridor",
+        "Proven traffic volume on the corridor",
         "Adjacent urbanization underway",
-        "Local commercial comparables"
+        "Local commercial comps"
       ],
       "risks": [
-        "Regulatory process before offer",
-        "Not every property replicates the case"
+        "Regulatory review required before an offer",
+        "Outcomes vary property by property"
       ],
       "relatedCase": "puerto-varas-restriccion-comercial",
       "relatedTerritory": "puerto-varas"
@@ -195,8 +195,8 @@
       "id": "LA-FR-001",
       "name": "Frutillar — urban fringe core",
       "comuna": "Frutillar",
-      "eje": "Centre — Teatro del Lago",
-      "definition": "Heritage rural fringe with Frutillar brand premium and stable connectivity.",
+      "eje": "Center — Teatro del Lago",
+      "definition": "Established rural land near town, with the Frutillar brand premium and stable connectivity.",
       "profiles": [
         "patrimonio",
         "turismo"
@@ -217,11 +217,11 @@
       },
       "confidence": "B",
       "signals": [
-        "99% house-type housing Census 2024",
+        "99% house-type dwellings (Census 2024)",
         "Proven seasonal tourism demand"
       ],
       "risks": [
-        "Frutillar premium without site prep",
+        "Brand premium on land still needing site preparation",
         "Subdivision bylaws limit cabins"
       ],
       "relatedTerritory": "frutillar"
@@ -230,8 +230,8 @@
       "id": "LA-FR-002",
       "name": "Casma — Colonia La Radio",
       "comuna": "Frutillar",
-      "eje": "Connected southern rural",
-      "definition": "Rural sectors with dispersed population and prices below the core.",
+      "eje": "Connected rural south",
+      "definition": "Rural sectors with dispersed population and pricing below the town core.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -252,7 +252,7 @@
       },
       "confidence": "C",
       "signals": [
-        "Casma and Colonia La Radio localities Census 2024",
+        "Casma and Colonia La Radio localities (Census 2024)",
         "Occasional price gaps"
       ],
       "risks": [
@@ -266,8 +266,8 @@
       "id": "LA-FR-003",
       "name": "Frutillar Lake — western shore",
       "comuna": "Frutillar",
-      "eje": "Lake coast",
-      "definition": "Sectors with lake views and premium tourism vocation.",
+      "eje": "Lakeshore",
+      "definition": "Lake-view sectors positioned for premium tourism.",
       "profiles": [
         "turismo",
         "patrimonio"
@@ -288,12 +288,12 @@
       },
       "confidence": "B",
       "signals": [
-        "High-season accommodation demand",
-        "Limited waterfront stock"
+        "Peak-season lodging demand",
+        "Limited waterfront supply"
       ],
       "risks": [
-        "Lake environmental regulation",
-        "High site-prep costs on shore"
+        "Lakeshore environmental regulation",
+        "High site preparation costs on the shore"
       ],
       "relatedTerritory": "frutillar"
     },
@@ -301,8 +301,8 @@
       "id": "LA-LL-001",
       "name": "Llanquihue town — Iansa",
       "comuna": "Llanquihue",
-      "eje": "Municipal centre",
-      "definition": "Expanding urban core with active peripheral subdivisions.",
+      "eje": "Town center",
+      "definition": "Growing town core with active subdivisions on its edge.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -323,12 +323,12 @@
       },
       "confidence": "B",
       "signals": [
-        "High inter-census growth",
+        "Strong growth between censuses",
         "Lower car dependency than PV (53%)"
       ],
       "risks": [
-        "Ageing population 21% 60+",
-        "Lake water protection regulation"
+        "Aging population (21% aged 60+)",
+        "Lake water protection rules"
       ],
       "relatedTerritory": "llanquihue"
     },
@@ -336,8 +336,8 @@
       "id": "LA-LL-002",
       "name": "Los Pellines — southern peri-urban",
       "comuna": "Llanquihue",
-      "eje": "Southern municipal",
-      "definition": "Peri-urban residential sector with intermediate times to Puerto Varas.",
+      "eje": "Southern municipality",
+      "definition": "Peri-urban residential sector with moderate drive times to Puerto Varas.",
       "profiles": [
         "patrimonio"
       ],
@@ -357,11 +357,11 @@
       },
       "confidence": "C",
       "signals": [
-        "Los Pellines locality 1,333 pop. Census 2024"
+        "Los Pellines locality: 1,333 residents (Census 2024)"
       ],
       "risks": [
         "Seasonal access",
-        "Scarce comparables"
+        "Limited comparable sales"
       ],
       "relatedTerritory": "llanquihue"
     },
@@ -370,7 +370,7 @@
       "name": "Partly urbanized subdivisions — real case",
       "comuna": "Llanquihue",
       "eje": "Subdivisions in progress",
-      "definition": "Projects with pending urbanization; present vs. future value thesis.",
+      "definition": "Projects with pending urbanization—a present vs. future value thesis.",
       "profiles": [
         "desarrollo",
         "patrimonio"
@@ -391,12 +391,12 @@
       },
       "confidence": "A",
       "signals": [
-        "Developer liquidity as negotiation variable",
-        "After site prep sector comparables"
+        "Developer liquidity as negotiating leverage",
+        "Sector comps after site preparation"
       ],
       "risks": [
-        "Non-transparent urbanization costs",
-        "Pending co-ownership fees"
+        "Opaque urbanization costs",
+        "Outstanding co-ownership fees"
       ],
       "relatedCase": "llanquihue-valor-presente-futuro",
       "relatedTerritory": "llanquihue"
@@ -405,8 +405,8 @@
       "id": "LA-LL-004",
       "name": "Totoral — connected rural",
       "comuna": "Llanquihue",
-      "eje": "North-eastern rural",
-      "definition": "Rural with low density and lower entry prices.",
+      "eje": "Northeastern rural",
+      "definition": "Low-density rural land with lower entry prices.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -427,10 +427,10 @@
       },
       "confidence": "C",
       "signals": [
-        "Totoral 709 pop. Census 2024"
+        "Totoral: 709 residents (Census 2024)"
       ],
       "risks": [
-        "Costly site prep",
+        "High site preparation costs",
         "Limited liquidity"
       ],
       "relatedTerritory": "llanquihue"
@@ -439,8 +439,8 @@
       "id": "LA-EN-001",
       "name": "Fresia — Ensenada core",
       "comuna": "Ensenada",
-      "eje": "Sub-regional centre",
-      "definition": "Main population concentration in the municipality; strong local life.",
+      "eje": "Sub-regional center",
+      "definition": "The municipality's main population center, with strong community life.",
       "profiles": [
         "patrimonio"
       ],
@@ -460,12 +460,12 @@
       },
       "confidence": "B",
       "signals": [
-        "Fresia 5,163+ pop. in census zones",
-        "25% population 60+ municipality"
+        "Fresia: 5,163+ residents in census zones",
+        "25% of municipal population aged 60+"
       ],
       "risks": [
         "Less liquid market than PV",
-        "Population ageing"
+        "Aging population"
       ],
       "relatedTerritory": "llanquihue"
     },
@@ -473,8 +473,8 @@
       "id": "LA-EN-002",
       "name": "Tegualda — Ensenada lake",
       "comuna": "Ensenada",
-      "eje": "Osorno volcano coast",
-      "definition": "Lakeside fringe with second-home and landscape tourism vocation.",
+      "eje": "Osorno volcano shoreline",
+      "definition": "Lakeside land near town, suited to second homes and scenic tourism.",
       "profiles": [
         "patrimonio",
         "turismo"
@@ -495,12 +495,12 @@
       },
       "confidence": "C",
       "signals": [
-        "Osorno volcano view",
+        "Osorno volcano views",
         "Seasonal demand"
       ],
       "risks": [
         "Winter access",
-        "Low average schooling municipality (9 years)"
+        "Low average schooling in the municipality (9 years)"
       ],
       "relatedTerritory": "puerto-varas"
     },
@@ -509,7 +509,7 @@
       "name": "Rivera Llanquihue — inter-municipal corridor",
       "comuna": "Puerto Varas",
       "eje": "PRI Rivera Llanquihue",
-      "definition": "Mobility and expansion axis documented in inter-municipal planning.",
+      "definition": "Mobility and growth corridor documented in inter-municipal planning.",
       "profiles": [
         "comercial",
         "desarrollo",
@@ -531,11 +531,11 @@
       },
       "confidence": "B",
       "signals": [
-        "PRI Rivera Llanquihue PLADECO PV",
+        "PRI Rivera Llanquihue and PLADECO PV",
         "Municipal mobility investment"
       ],
       "risks": [
-        "Macro-zone air quality saturation",
+        "Air quality saturation across the macro-zone",
         "Long infrastructure timelines"
       ],
       "relatedTerritory": "puerto-varas"
@@ -545,7 +545,7 @@
       "name": "ZIT Lago Llanquihue — tourism ring",
       "comuna": "Puerto Varas",
       "eje": "Tourist Interest Zone",
-      "definition": "Sectors under tourism regime with restrictions and accommodation opportunities.",
+      "definition": "Sectors under a tourism designation—use restrictions alongside lodging opportunities.",
       "profiles": [
         "turismo"
       ],
@@ -565,11 +565,11 @@
       },
       "confidence": "B",
       "signals": [
-        "ZIT declared PLADECO",
-        "Basin tourism demand"
+        "ZIT designation in PLADECO",
+        "Basin-wide tourism demand"
       ],
       "risks": [
-        "Strict accommodation regulation",
+        "Strict lodging regulation",
         "Seasonal income"
       ],
       "relatedTerritory": "puerto-varas"
@@ -579,7 +579,7 @@
       "name": "Price gap — seller liquidity",
       "comuna": "Frutillar",
       "eje": "Local market",
-      "definition": "Sectors where the opportunity is in the transaction, not waiting for appreciation.",
+      "definition": "Sectors where value is captured at the transaction—ahead of appreciation.",
       "profiles": [
         "patrimonio",
         "desarrollo"
@@ -600,11 +600,11 @@
       },
       "confidence": "A",
       "signals": [
-        "Verifiable listing/transaction spread",
-        "Detectable seller urgency"
+        "Verifiable listing-to-transaction spread",
+        "Identifiable seller urgency"
       ],
       "risks": [
-        "Low price may signal risk, not opportunity"
+        "A low price can signal risk as well as opportunity"
       ],
       "relatedCase": "frutillar-brecha-precio",
       "relatedTerritory": "frutillar"

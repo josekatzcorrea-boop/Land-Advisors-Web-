@@ -21,6 +21,13 @@
     "sobre-5000": "Sobre 5.000 UF",
   };
 
+  const BUDGET_KEYS = {
+    "1500-2500": "budget.1500",
+    "2500-3500": "budget.2500",
+    "3500-4500": "budget.3500",
+    "sobre-5000": "budget.5000",
+  };
+
   const GATE_SELECTORS = [
     "[data-site-wa]",
     "[data-site-calendar]",
@@ -107,14 +114,19 @@
       document.documentElement.getAttribute("data-wa-intro") ||
       "Hola, completé el formulario en landadvisors.cl y quiero conversar.";
     const token = document.documentElement.getAttribute("data-wa-token") || "LA-WEB";
+    const objetivo = lg("lead.obj." + data.objetivo, OBJETIVO_LABELS[data.objetivo] || data.objetivo);
+    const presupuesto = lg(
+      BUDGET_KEYS[data.presupuesto],
+      PRESUPUESTO_LABELS[data.presupuesto] || data.presupuesto
+    );
     const text = [
       intro,
       "",
-      "Soy " + data.nombre + ".",
-      "Objetivo: " + (OBJETIVO_LABELS[data.objetivo] || data.objetivo) + ".",
-      "Presupuesto: " + (PRESUPUESTO_LABELS[data.presupuesto] || data.presupuesto) + ".",
-      "Teléfono: " + data.telefono + ".",
-      "Correo: " + data.email + ".",
+      lg("lead.wa.iam", "Soy") + " " + data.nombre + ".",
+      lg("lead.wa.objective", "Objetivo") + ": " + objetivo + ".",
+      lg("lead.wa.budget", "Presupuesto") + ": " + presupuesto + ".",
+      lg("lead.wa.phone", "Teléfono") + ": " + data.telefono + ".",
+      lg("lead.wa.email", "Correo") + ": " + data.email + ".",
       "",
       "[Ref: " + token + "]",
     ].join("\n");
@@ -205,27 +217,27 @@
       '<p class="lead-gate__intro" id="lead-gate-intro" data-i18n="lead.intro">Cuéntanos quién eres y qué buscas. Luego te abrimos WhatsApp o el calendario.</p>' +
       '<form class="lead-gate__form" id="lead-gate-form" novalidate>' +
       '<label for="lg-nombre" data-i18n="form.name">Nombre</label>' +
-      '<input type="text" id="lg-nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">' +
+      '<input type="text" id="lg-nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre" data-i18n-placeholder="lead.ph.name">' +
       '<label for="lg-email" data-i18n="form.email">Correo</label>' +
-      '<input type="email" id="lg-email" name="email" required autocomplete="email" placeholder="tunombre@correo.cl">' +
+      '<input type="email" id="lg-email" name="email" required autocomplete="email" placeholder="tunombre@correo.cl" data-i18n-placeholder="lead.ph.email">' +
       '<label for="lg-telefono" data-i18n="form.phone">Teléfono / WhatsApp</label>' +
       '<input type="tel" id="lg-telefono" name="telefono" required autocomplete="tel" placeholder="+56 9 …">' +
       '<label for="lg-objetivo" data-i18n="lead.objective">Objetivo de compra</label>' +
       '<select id="lg-objetivo" name="objetivo" required>' +
-      '<option value="">Seleccionar…</option>' +
-      '<option value="vivir">Vivir / calidad de vida</option>' +
-      '<option value="segunda">Segunda vivienda</option>' +
-      '<option value="inversion">Inversión patrimonial</option>' +
-      '<option value="proyecto">Proyecto (cabañas, comercio u otro)</option>' +
-      '<option value="otro">Otro / aún lo estoy definiendo</option>' +
+      '<option value="" data-i18n="form.select">Seleccionar…</option>' +
+      '<option value="vivir" data-i18n="lead.obj.vivir">Vivir / calidad de vida</option>' +
+      '<option value="segunda" data-i18n="lead.obj.segunda">Segunda vivienda</option>' +
+      '<option value="inversion" data-i18n="lead.obj.inversion">Inversión patrimonial</option>' +
+      '<option value="proyecto" data-i18n="lead.obj.proyecto">Proyecto (cabañas, comercio u otro)</option>' +
+      '<option value="otro" data-i18n="lead.obj.otro">Otro / aún lo estoy definiendo</option>' +
       "</select>" +
       '<label for="lg-presupuesto" data-i18n="lead.budget">Rango de presupuesto</label>' +
       '<select id="lg-presupuesto" name="presupuesto" required>' +
-      '<option value="">Seleccionar en UF…</option>' +
-      '<option value="1500-2500">1.500 a 2.500 UF</option>' +
-      '<option value="2500-3500">2.500 a 3.500 UF</option>' +
-      '<option value="3500-4500">3.500 a 4.500 UF</option>' +
-      '<option value="sobre-5000">Sobre 5.000 UF</option>' +
+      '<option value="" data-i18n="form.budgetUf">Seleccionar en UF…</option>' +
+      '<option value="1500-2500" data-i18n="budget.1500">1.500 a 2.500 UF</option>' +
+      '<option value="2500-3500" data-i18n="budget.2500">2.500 a 3.500 UF</option>' +
+      '<option value="3500-4500" data-i18n="budget.3500">3.500 a 4.500 UF</option>' +
+      '<option value="sobre-5000" data-i18n="budget.5000">Sobre 5.000 UF</option>' +
       "</select>" +
       '<div class="lead-gate__hp-wrap" aria-hidden="true">' +
       '<label for="lg-hp">No completar</label>' +
@@ -238,7 +250,7 @@
       '<div class="lead-gate__success" id="lead-gate-success" hidden>' +
       '<p class="lead-gate__kicker" data-i18n="lead.success.kicker">Listo</p>' +
       '<h2 class="lead-gate__title" data-i18n="lead.success.title">Gracias. Ya tenemos tus datos</h2>' +
-      '<p class="lead-gate__intro" id="lead-gate-success-lead">Te abrimos el siguiente paso.</p>' +
+      '<p class="lead-gate__intro" id="lead-gate-success-lead" data-i18n="lead.success.lead">Te abrimos el siguiente paso.</p>' +
       '<div class="lead-gate__success-actions">' +
       '<a href="#" class="btn btn-cta-wa" id="lead-gate-go-wa" data-lead-exit target="_blank" rel="noopener noreferrer" data-i18n="lead.success.openWa">Abrir WhatsApp</a>' +
       '<a href="#" class="btn btn-primary btn-glow btn-cta-agenda" id="lead-gate-go-cal" data-lead-exit target="_blank" rel="noopener noreferrer" data-i18n="lead.success.openCal">Agendar diagnóstico</a>' +
@@ -314,13 +326,13 @@
     if (data.action === "calendar") {
       if (lead) {
         lead.textContent = opened
-          ? "Si no se abrió el calendario, usa el botón de abajo."
-          : "Pulsa el botón para elegir horario en el calendario.";
+          ? lg("lead.success.calOpened", "Si no se abrió el calendario, usa el botón de abajo.")
+          : lg("lead.success.calPrompt", "Pulsa el botón para elegir horario en el calendario.");
       }
     } else if (lead) {
       lead.textContent = opened
-        ? "Si no se abrió WhatsApp, usa el botón de abajo."
-        : "Pulsa el botón para abrir WhatsApp con tu mensaje listo.";
+        ? lg("lead.success.waOpened", "Si no se abrió WhatsApp, usa el botón de abajo.")
+        : lg("lead.success.waPrompt", "Pulsa el botón para abrir WhatsApp con tu mensaje listo.");
     }
   }
 
@@ -442,7 +454,12 @@
     const opened = openDestination(dest);
     paintSuccess(data, opened);
     setSubmitting(true);
-    setStatus(opened ? "Abriendo…" : "Usa el botón de abajo para continuar.", opened ? "ok" : "info");
+    setStatus(
+      opened
+        ? lg("lead.status.opening", "Abriendo…")
+        : lg("lead.status.useButton", "Usa el botón de abajo para continuar."),
+      opened ? "ok" : "info"
+    );
 
     if (typeof window.LA_track === "function") {
       window.LA_track("form_submit", {
@@ -466,7 +483,10 @@
       }
       if (!(result && result.ok) && !(result && result.opaque)) {
         setStatus(
-          "Tus datos quedaron en pantalla. Si José no te contacta, escribe por WhatsApp con el botón de abajo.",
+          lg(
+            "lead.status.fallback",
+            "Tus datos quedaron en pantalla. Si José no te contacta, escribe por WhatsApp con el botón de abajo."
+          ),
           "info"
         );
       } else {

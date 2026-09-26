@@ -66,7 +66,7 @@ function faqBlocks(faq, startIdx = 900) {
 function buildCampaignPage(c) {
   const pathKey = `/campanas/${c.slug}/`;
   const sel = {
-    ".campaign-intent-badge": { en: "Territorial consultancy · Not an estate agency" },
+    ".campaign-intent-badge": { en: "Independent land advisory · Southern Chile" },
     ".campaign-hero-qa li:nth-child(1)": {
       en: `<strong>The challenge:</strong> ${c.heroProblem || ""}`,
       html: true,
@@ -79,22 +79,22 @@ function buildCampaignPage(c) {
       en: `<strong>What you gain:</strong> ${c.heroGain || ""}`,
       html: true,
     },
-    ".campaign-panel .section-label": { en: "Benefit" },
-    "#campaign-includes-title": { en: c.includesTitle || "What you get" },
+    ".campaign-panel .section-label": { en: "What you gain" },
+    "#campaign-includes-title": { en: c.includesTitle || "What the engagement delivers" },
     ".campaign-panel__foot": {
-      en: "We are not an estate agency: we do not sell land. We help you decide with criteria.",
+      en: "Independent, buyer-side advice—with no inventory of our own to sell.",
     },
     "#campaign-steps-title": { en: "How it works" },
-    ".campaign-ally .section-label": { en: "On your side" },
+    ".campaign-ally .section-label": { en: "Your strategic partner" },
     ".campaign-ally h2": {
       en:
         c.allyTitle ||
-        "Photos open the visit. Territory, regulation and numbers close the decision",
+        "The view opens the conversation. Land use, zoning, and numbers guide the decision",
     },
     "#campaign-faq-title": { en: "Frequently asked questions" },
-    ".campaign-final-cta h2": { en: "Ready to decide with criteria?" },
+    ".campaign-final-cta h2": { en: "Ready to navigate your next land decision?" },
     ".campaign-final-cta p": {
-      en: "Book a strategy session or message us on WhatsApp — no purchase obligation.",
+      en: "Schedule a strategy call or message us on WhatsApp—with no obligation to buy.",
     },
   };
 
@@ -113,8 +113,8 @@ function buildCampaignPage(c) {
   });
 
   if (c.proof) {
-    sel[".campaign-proof .section-label"] = { en: "Evidence" };
-    sel[".campaign-proof__title"] = { en: c.proof.title || "Real decisions with criteria" };
+    sel[".campaign-proof .section-label"] = { en: "Track record" };
+    sel[".campaign-proof__title"] = { en: c.proof.title || "Real decisions, backed by market intelligence" };
     (c.proof.stats || []).forEach((s, i) => {
       sel[`.campaign-stat:nth-child(${i + 1}) .campaign-stat__label`] = { en: s.label };
     });
@@ -131,8 +131,8 @@ function buildCampaignPage(c) {
   }
 
   if (c.template !== "intent") {
-    sel[".campaign-badge"] = { en: `Offer until ${c.deadlineLabel || ""}` };
-    sel[".campaign-pricing__label"] = { en: c.promoFlow === "diagnostico-first" ? "Step 1 · no cost" : "Promotional price" };
+    sel[".campaign-badge"] = { en: `Offer valid through ${c.deadlineLabel || ""}` };
+    sel[".campaign-pricing__label"] = { en: c.promoFlow === "diagnostico-first" ? "Step 1 · complimentary" : "Promotional price" };
     sel[".campaign-pricing__bonus-tag"] = { en: c.promoFlow === "diagnostico-first" ? "Step 2 · optional" : "Included" };
   }
 
@@ -193,9 +193,9 @@ function buildServiceDetail(svc, catalog) {
 
 function buildBlogHub(postsEn, upcoming) {
   const sel = {
-    ".blog-index-intro .section-label": { en: "Territorial editorial" },
+    ".blog-index-intro .section-label": { en: "Market insights" },
     ".blog-index-intro__text": {
-      en: "Analysis on the southern Chile property market, territorial reading and criteria for buying the right land — without hype or return promises.",
+      en: "Analysis of the Southern Chile land market—local expertise and practical frameworks to help you buy the right land with clarity and confidence.",
     },
     ".blog-upcoming__title": { en: "Coming next" },
     ".blog-card__cta": { en: "Read article →" },
@@ -218,7 +218,7 @@ function buildBlogHub(postsEn, upcoming) {
 }
 
 function buildCasesHub(cases) {
-  const sel = { ".case-card .btn": { en: "Read full case →" } };
+  const sel = { ".case-card .btn": { en: "Read the full case →" } };
   (cases || []).forEach((cs, i) => {
     const n = i + 1;
     sel[`.case-card:nth-child(${n}) h2 a`] = { en: cs.h1 };
@@ -346,11 +346,11 @@ for (const guide of guidesEn.guides || []) {
   const pathKey = `/guias/${guide.slug}/`;
   const sel = {
     ".blog-article__lead": { en: guide.intro },
-    ".guide-callout--footer .guide-callout__title": { en: "Want us to do this with you?" },
+    ".guide-callout--footer .guide-callout__title": { en: "Navigate this process with an advisor" },
     ".guide-callout--footer p": {
-      en: "At Land Advisors this process is our daily work: territory, regulation, market and price with local criteria. We do not sell land — we help you buy the right one.",
+      en: "This is our daily work at Land Advisors: land use, zoning, market, and pricing—evaluated with local expertise so you buy the right land with confidence.",
     },
-    ".guide-callout--footer a": { en: guide.cta?.label || "Request personalised search" },
+    ".guide-callout--footer a": { en: guide.cta?.label || "Explore Personalized Search" },
     ".seo-guide-faq .blog-article__h2": { en: "Frequently asked questions" },
     ".blog-related__label": { en: "Related" },
   };
@@ -446,7 +446,7 @@ if (pagesOut.pages["/territorios/"]) {
     const n = i + 1;
     tSel[`.seo-card:nth-child(${n}) h2 a`] = { en: enPage.h1 };
     tSel[`.seo-card:nth-child(${n}) p`] = { en: enPage.intro };
-    tSel[`.seo-card:nth-child(${n}) .btn`] = { en: `Invest in ${enPage.h1} →` };
+    tSel[`.seo-card:nth-child(${n}) .btn`] = { en: "Explore this area →" };
   });
   pagesOut.pages["/territorios/"]._selectors = tSel;
 }
@@ -460,12 +460,55 @@ if (pagesOut.pages["/servicios/"]) {
     const n = i + 1;
     sSel[`.seo-card:nth-child(${n}) h2 a`] = { en: enPage.h1 };
     sSel[`.seo-card:nth-child(${n}) p`] = { en: enPage.intro };
-    sSel[`.seo-card:nth-child(${n}) .btn`] = { en: "View service →" };
+    sSel[`.seo-card:nth-child(${n}) .btn`] = { en: "Explore service →" };
   });
   pagesOut.pages["/servicios/"]._selectors = sSel;
 }
 
+const PHRASE_SKIP_KEYS = new Set(["keywords", "slug", "href", "image", "path", "type", "icon", "file"]);
+const PHRASE_MAX_LEN = 900;
+
+function normPhrase(s) {
+  return String(s).replace(/\s+/g, " ").trim();
+}
+
+function collectPhrases(es, en, out, key = null) {
+  if (key && PHRASE_SKIP_KEYS.has(key)) return;
+  if (typeof es === "string" && typeof en === "string") {
+    const k = normPhrase(es);
+    const v = normPhrase(en);
+    if (!k || k === v || k.length > PHRASE_MAX_LEN || k.includes("<") || k in out) return;
+    out[k] = v;
+    return;
+  }
+  if (Array.isArray(es) && Array.isArray(en)) {
+    es.forEach((item, i) => collectPhrases(item, en[i], out, null));
+    return;
+  }
+  if (es && en && typeof es === "object" && typeof en === "object") {
+    for (const k of Object.keys(es)) if (k in en) collectPhrases(es[k], en[k], out, k);
+  }
+}
+
+const phrases = {};
+for (const file of fs.readdirSync(EN_DIR).filter((f) => f.endsWith(".json"))) {
+  const esPath = path.join(SEO, file);
+  if (!fs.existsSync(esPath)) continue;
+  collectPhrases(JSON.parse(fs.readFileSync(esPath, "utf8")), readEn(file), phrases);
+}
+for (const esPage of pagesEs) {
+  const enPage = pagesOut.pages[esPage.path]?.en;
+  const hub = hubs.find((h) => h.path === esPage.path) || {};
+  for (const field of ["title", "h1", "intro", "description", "breadcrumb", "imageAlt"]) {
+    const en = enPage?.[field] || hub[field];
+    if (esPage[field] && en) collectPhrases(esPage[field], en, phrases);
+  }
+}
+pagesOut._phrases = phrases;
+
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(pagesOut, null, 2), "utf8");
 fs.writeFileSync(path.join(__dirname, "..", "i18n", "es", "seo-pages.json"), "{}\n", "utf8");
-console.log(`wrote ${OUT} (${Object.keys(pagesOut.pages).length} pages)`);
+console.log(
+  `wrote ${OUT} (${Object.keys(pagesOut.pages).length} pages, ${Object.keys(phrases).length} phrases)`
+);

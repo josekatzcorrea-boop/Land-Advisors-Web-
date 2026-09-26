@@ -94,7 +94,7 @@ const html = `<!DOCTYPE html>
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="${SITE.url}/patagonia-land-hunter/">
   <link rel="alternate" hreflang="es" href="${SITE.url}/patagonia-land-hunter/">
-  <link rel="alternate" hreflang="en" href="${SITE.url}/patagonia-land-hunter/?lang=en">
+  <link rel="alternate" hreflang="en" href="${SITE.url}/en/patagonia-land-hunter/">
   <link rel="alternate" hreflang="x-default" href="${SITE.url}/patagonia-land-hunter/">
   <title>Patagonia Land Hunter — búsqueda de terrenos | Land Advisors</title>
   <link rel="icon" type="image/png" href="../assets/logo-isotipo-sm.png">

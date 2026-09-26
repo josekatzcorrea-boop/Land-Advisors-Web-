@@ -1,0 +1,87 @@
+{
+  "year": 2026,
+  "title": "Land Advisors Market Observatory — Lago Llanquihue Basin",
+  "subtitle": "2026 pilot · demographics, market view and sector index ranking",
+  "datePublished": "2026-07-09",
+  "author": "José Hernán Katz C.",
+  "disclaimer": "Educational content based on the 2024 Census (INE), municipal planning instruments and the Land Advisors methodology. It does not constitute personalized advice or a promise of returns.",
+  "executiveSummary": "The Lago Llanquihue basin continues to attract buyers from outside the region, yet each municipality plays a distinct role: Puerto Varas leads growth and in-migration; Frutillar carries a heritage premium with an older population; Llanquihue requires a clear read of pending infrastructure. The v0 index ranks sectors by investment profile—not by listing price.",
+  "demographics": [
+    {
+      "comuna": "Puerto Varas",
+      "population2024": 52942,
+      "population2017": 44578,
+      "growthPct": 18.8,
+      "immigrantsPct": 5.4,
+      "age60PlusPct": 17.4,
+      "unemploymentPct": 5.4,
+      "autoDependencyPct": 68.9,
+      "thesis": "Regional hub for population growth and outside demand. Prioritize verified access and zoning over the listing narrative."
+    },
+    {
+      "comuna": "Frutillar",
+      "population2024": 22554,
+      "growthPct": 25,
+      "immigrantsPct": 2.3,
+      "age60PlusPct": 19.9,
+      "unemploymentPct": 7.5,
+      "autoDependencyPct": 61.6,
+      "thesis": "Brand premium without significant in-migration. Confirm site preparation before paying for the «Frutillar» name."
+    },
+    {
+      "comuna": "Llanquihue",
+      "population2024": 18088,
+      "growthPct": 29,
+      "immigrantsPct": 2.4,
+      "age60PlusPct": 21.1,
+      "unemploymentPct": 7.8,
+      "autoDependencyPct": 53.4,
+      "thesis": "Subdivisions and present vs. future value. Always quantify pending infrastructure."
+    },
+    {
+      "comuna": "Ensenada",
+      "population2024": 12320,
+      "immigrantsPct": 1.3,
+      "age60PlusPct": 25.3,
+      "unemploymentPct": 8.9,
+      "thesis": "Low-density area with an older population. Second-home and retirement segment with distinct liquidity."
+    }
+  ],
+  "structuralForces": [
+    {
+      "label": "In-migration to Puerto Varas",
+      "source": "PLADECO PV 2022–2030",
+      "impact": "Sustains residential demand on connected rural land near town; pushes prices up in sectors already serviced."
+    },
+    {
+      "label": "Lago Llanquihue Tourism Interest Zone",
+      "source": "PLADECO PV",
+      "impact": "Lodging use under specific regulation—opportunity and restriction vary by property."
+    },
+    {
+      "label": "Regional air-quality saturation",
+      "source": "PLADECO PV",
+      "impact": "Limits certain industrial and commercial uses; relevant when commercial use is the goal."
+    },
+    {
+      "label": "PRI Rivera Llanquihue",
+      "source": "Intermunicipal planning",
+      "impact": "Structural driver of appreciation through connectivity along the PV–LL corridor."
+    },
+    {
+      "label": "Lago Llanquihue water protection",
+      "source": "PRC Llanquihue",
+      "impact": "Environmental restrictions on site preparation and change of use along the shoreline."
+    }
+  ],
+  "rankings": {
+    "patrimonio": ["LA-PV-001", "LA-FR-001", "LA-EN-002", "LA-PV-005", "LA-FR-003"],
+    "turismo": ["LA-PV-006", "LA-FR-003", "LA-FR-001", "LA-PV-001", "LA-EN-002"],
+    "comercial": ["LA-PV-004", "LA-PV-005", "LA-PV-002", "LA-LL-001", "LA-FR-001"],
+    "desarrollo": ["LA-PV-005", "LA-LL-003", "LA-PV-003", "LA-FR-002", "LA-LL-001"]
+  },
+  "cta": {
+    "label": "Schedule a strategy call with an index map for your profile",
+    "href": "#contacto-form"
+  }
+}

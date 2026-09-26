@@ -49,7 +49,9 @@
   }
 
   async function resolveSrc() {
-    for (const src of CANDIDATES) {
+    const base = document.documentElement.getAttribute("data-i18n-prefix") || "";
+    for (const candidate of CANDIDATES) {
+      const src = base + candidate;
       if (await headOk(src)) return src;
     }
     return null;

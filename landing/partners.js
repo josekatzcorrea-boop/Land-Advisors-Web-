@@ -22,12 +22,22 @@
     }
   }
 
+  function tr(key, fallback) {
+    const dict = window.__LA_I18N_DICT;
+    return (dict && typeof dict[key] === "string" && dict[key]) || fallback;
+  }
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function assetUrl(src) {
+    if (!src || /^(https?:|\/|data:)/i.test(src)) return src;
+    return (document.documentElement.getAttribute("data-i18n-prefix") || "") + src;
   }
 
   function renderCards() {
@@ -54,7 +64,7 @@
           logoStyle +
           ">" +
           '<img src="' +
-          escapeHtml(p.logo) +
+          escapeHtml(assetUrl(p.logo)) +
           '" alt="' +
           escapeHtml(p.name) +
           '" loading="lazy">' +
@@ -127,23 +137,23 @@
     const comEl = form.querySelector('[name="comentario"]');
 
     if (!nombre || nombre.length < 2) {
-      setFieldError(nombreEl, "Ingresa tu nombre completo.");
+      setFieldError(nombreEl, tr("partner.error.name", "Ingresa tu nombre completo."));
       valid = false;
     }
 
     if (!email || !EMAIL_RE.test(email)) {
-      setFieldError(emailEl, "Ingresa un correo electrónico válido.");
+      setFieldError(emailEl, tr("partner.error.email", "Ingresa un correo electrónico válido."));
       valid = false;
     }
 
     const digits = telefono.replace(/\D/g, "");
     if (!telefono || !PHONE_RE.test(telefono) || digits.length < 8) {
-      setFieldError(telEl, "Ingresa un teléfono válido (mínimo 8 dígitos).");
+      setFieldError(telEl, tr("partner.error.phone", "Ingresa un teléfono válido (mínimo 8 dígitos)."));
       valid = false;
     }
 
     if (!comentario || comentario.length < 5) {
-      setFieldError(comEl, "Cuéntanos brevemente tu necesidad o proyecto.");
+      setFieldError(comEl, tr("partner.error.comment", "Cuéntanos brevemente tu necesidad o proyecto."));
       valid = false;
     }
 
@@ -164,7 +174,7 @@
     if (submitting) {
       if (!btn.dataset.label) btn.dataset.label = btn.textContent;
       btn.disabled = true;
-      btn.textContent = "Enviando…";
+      btn.textContent = tr("lead.sending", "Enviando…");
     } else {
       btn.disabled = false;
       if (btn.dataset.label) btn.textContent = btn.dataset.label;
@@ -182,7 +192,7 @@
 
     const title = modal.querySelector(".partner-modal-title");
     if (title) {
-      title.textContent = "Solicitar contacto con " + activePartner.name;
+      title.textContent = tr("partner.modal.titlePrefix", "Solicitar contacto con") + " " + activePartner.name;
     }
 
     modal.showModal();
@@ -265,7 +275,11 @@
         });
 
         setFormStatus(
-          "Gracias. Hemos registrado tu solicitud y te pondremos en contacto con " +
+          tr(
+            "partner.status.success",
+            "Gracias. Hemos registrado tu solicitud y te pondremos en contacto con"
+          ) +
+            " " +
             activePartner.name +
             ".",
           "success"
@@ -287,7 +301,10 @@
       })
       .catch(function () {
         setFormStatus(
-          "No pudimos registrar tu solicitud. Intenta de nuevo o escríbenos por WhatsApp.",
+          tr(
+            "partner.status.error",
+            "No pudimos registrar tu solicitud. Intenta de nuevo o escríbenos por WhatsApp."
+          ),
           "error"
         );
         setSubmitting(false);
