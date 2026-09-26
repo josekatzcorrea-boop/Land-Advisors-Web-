@@ -342,14 +342,7 @@ a:hover {
 }
 
 .sticky-cta-pair {
-  position: fixed;
-  z-index: 80;
-  bottom: calc(0.85rem + env(safe-area-inset-bottom, 0));
-  left: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  pointer-events: none;
+  display: none !important;
 }
 
 .sticky-cta-pair .btn {

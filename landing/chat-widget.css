@@ -1,10 +1,6 @@
-/* Widget de contacto flotante — reemplazable por agente IA sin tocar el resto del sitio */
+/* Widget de contacto flotante — desactivado (CTAs del header son suficientes) */
 #la-chat-widget {
-  position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 9990;
-  pointer-events: none;
+  display: none !important;
 }
 
 .la-chat-widget__btn {

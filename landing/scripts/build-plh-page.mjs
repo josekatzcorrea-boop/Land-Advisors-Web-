@@ -117,7 +117,6 @@ const html = `<!DOCTYPE html>
   <link rel="stylesheet" href="../styles-i18n.css?v=20260908b">
   <link rel="stylesheet" href="../styles-plh.css">
   <link rel="stylesheet" href="../lead-gate.css">
-  <link rel="stylesheet" href="../chat-widget.css">
   <link rel="stylesheet" href="../styles-human.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Service","name":"Patagonia Land Hunter","alternateName":"Local Land Acquisition Partner","provider":{"@type":"Organization","name":"Land Advisors Chile","url":"${SITE.url}"},"areaServed":["Los Lagos","Patagonia","Southern Chile"],"description":"Independent land search and buyer representation in Los Lagos and Chilean Patagonia."}
@@ -364,7 +363,6 @@ const html = `<!DOCTYPE html>
     </div>
   </footer>
 
-  <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="../i18n.js" defer></script>
   <script src="../landing-ui.js" defer></script>
@@ -374,7 +372,6 @@ const html = `<!DOCTYPE html>
   <script src="../analytics.js" defer></script>
   <script src="../conversion-tracking.js" defer></script>
   <script src="../land-search-form.js" defer></script>
-  <script src="../chat-widget.js" defer></script>
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");

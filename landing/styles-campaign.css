@@ -305,24 +305,13 @@
   min-width: min(100%, 11rem);
 }
 
-/* CTAs flotantes al hacer scroll */
+/* CTAs flotantes al hacer scroll — desactivados (CTAs del header son suficientes) */
 .campaign-float-cta {
-  position: fixed;
-  z-index: 88;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(1.25rem) scale(0.96);
-  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
-  bottom: calc(0.85rem + env(safe-area-inset-bottom, 0));
-  left: 0.75rem;
-  right: 0.75rem;
+  display: none !important;
 }
 
 .campaign-float-cta.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
+  display: none !important;
 }
 
 .campaign-float-cta__inner {

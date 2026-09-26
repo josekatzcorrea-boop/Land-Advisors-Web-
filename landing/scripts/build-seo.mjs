@@ -175,7 +175,6 @@ ${hasHreflang(page.path) ? '  <meta property="og:locale:alternate" content="en_U
   <link rel="stylesheet" href="${prefix}styles-seo.css">
   <link rel="stylesheet" href="${prefix}styles-i18n.css?v=20260908b">
   <link rel="stylesheet" href="${prefix}lead-gate.css">
-  <link rel="stylesheet" href="${prefix}chat-widget.css">
   <link rel="stylesheet" href="${prefix}styles-human.css">`;
 }
 
@@ -1339,7 +1338,6 @@ ${navLinks(prefix, { context: "case" })}
 
 ${buildFooter(prefix, assets)}
 
-  <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 ${seoCommonScripts(prefix)}
   <script>
@@ -1420,7 +1418,6 @@ ${navLinks(prefix, { context: "blog-post" })}
 
 ${buildFooter(prefix, assets)}
 
-  <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 ${seoCommonScripts(prefix)}
   <script>
@@ -1464,8 +1461,7 @@ function seoCommonScripts(prefix) {
   <script src="${prefix}lead-gate.js" defer></script>
   <script src="${prefix}analytics-config.js" defer></script>
   <script src="${prefix}analytics.js" defer></script>
-  <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>`;
+  <script src="${prefix}conversion-tracking.js" defer></script>`;
 }
 
 function campaignCtaMarkup(campaign, variant = "float") {
@@ -1774,13 +1770,7 @@ ${campaignFooterScripts(prefix, campaign)}
 }
 
 function campaignFooterScripts(prefix, campaign) {
-  return `  <div id="la-chat-widget" aria-label="Contacto"></div>
-  <aside class="campaign-float-cta" aria-label="Acciones de campaña" hidden>
-    <div class="campaign-float-cta__inner">
-      ${campaignCtaMarkup(campaign, "float")}
-    </div>
-  </aside>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  return `  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="${prefix}i18n.js" defer></script>
   <script src="${prefix}landing-ui.js" defer></script>
   <script src="${prefix}calendar-config.js" defer></script>
@@ -1790,7 +1780,6 @@ function campaignFooterScripts(prefix, campaign) {
   <script src="${prefix}analytics-config.js" defer></script>
   <script src="${prefix}analytics.js" defer></script>
   <script src="${prefix}conversion-tracking.js" defer></script>
-  <script src="${prefix}chat-widget.js" defer></script>
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav");
@@ -2462,7 +2451,6 @@ ${navLinks(prefix, { context: navContextFromPath(page.path, page.type) })}
 
 ${buildFooter(prefix, assets)}
 
-  <div id="la-chat-widget" aria-label="Contacto"></div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 ${seoCommonScripts(prefix)}
   ${isIlaHub ? `<script src="${prefix}ila-widget.js" defer></script>` : ""}
