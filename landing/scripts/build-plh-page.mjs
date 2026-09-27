@@ -350,6 +350,11 @@ const html = `<!DOCTYPE html>
     <div class="container footer-inner">
       <img src="../assets/logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address" data-i18n="footer.address">Walker Martínez 517, Puerto Varas</p>
+      <p class="footer-contact">
+        <a href="mailto:contacto@landadvisors.cl" class="footer-contact__link" data-track="cta_email">contacto@landadvisors.cl</a>
+        <span class="footer-contact__sep" aria-hidden="true">·</span>
+        <a href="tel:+56974533265" class="footer-contact__link" data-track="cta_phone">+56-974533265</a>
+      </p>
       <nav class="footer-seo-nav" aria-label="Enlaces del sitio" data-i18n-aria="footer.nav">
         <a href="../patagonia-land-hunter/" data-i18n="nav.plh">Patagonia Land Hunter</a>
         <a href="../servicios/" data-i18n="nav.services">Servicios</a>

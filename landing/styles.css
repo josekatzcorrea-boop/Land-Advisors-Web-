@@ -2339,6 +2339,30 @@ section {
   color: var(--text-muted-dark);
 }
 
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.55rem;
+  font-size: 0.85rem;
+  color: var(--text-muted-dark);
+}
+
+.footer-contact__link {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-contact__link:hover {
+  text-decoration: underline;
+}
+
+.footer-contact__sep {
+  color: var(--gray);
+}
+
 .footer-copy {
   display: inline-flex;
   align-items: center;

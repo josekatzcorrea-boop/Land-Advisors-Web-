@@ -106,10 +106,17 @@ function buildFooter(prefix, assets, opts = {}) {
   const tagline = i18n
     ? `<span data-i18n="footer.tagline">${esc(site.tagline)} · Sur de Chile</span>`
     : `${esc(site.tagline)} · Sur de Chile`;
+  const phoneDisplay = "+56-974533265";
+  const phoneTel = (site.phone || "").replace(/[^\d+]/g, "") || "+56974533265";
   return `  <footer class="site-footer">
     <div class="container footer-inner">
       <img src="${assets}logo-isotipo-sm.png" alt="Land Advisors" class="footer-isotipo" width="72" height="72">
       <p class="footer-address"${i18nAttr("footer.address")}>${esc(site.address.street)}, ${esc(site.address.locality)} · ${esc(site.address.region)}</p>
+      <p class="footer-contact">
+        <a href="mailto:${esc(site.email)}" class="footer-contact__link" data-track="cta_email">${esc(site.email)}</a>
+        <span class="footer-contact__sep" aria-hidden="true">·</span>
+        <a href="tel:${esc(phoneTel)}" class="footer-contact__link" data-track="cta_phone">${esc(phoneDisplay)}</a>
+      </p>
       <nav class="footer-seo-nav"${navAria}>
         <a href="${prefix}patagonia-land-hunter/"${i18nAttr("nav.plh")}>Patagonia Land Hunter</a>
         <a href="${prefix}servicios/"${i18nAttr("nav.services")}>Servicios</a>
