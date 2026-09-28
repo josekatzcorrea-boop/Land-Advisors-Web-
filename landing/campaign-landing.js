@@ -16,13 +16,6 @@
     otro: "Otro / aún lo estoy definiendo",
   };
 
-  const PRESUPUESTO_LABELS = {
-    "1500-2500": "1.500 a 2.500 UF",
-    "2500-3500": "2.500 a 3.500 UF",
-    "3500-4500": "3.500 a 4.500 UF",
-    "sobre-5000": "Sobre 5.000 UF",
-  };
-
   function calendarUrl() {
     const cfg = window.LA_CALENDAR || {};
     if (!cfg.enabled || !cfg.url) return "";
@@ -137,21 +130,18 @@
       const nombre = (data.get("nombre") || "").trim();
       const email = (data.get("email") || "").trim();
       const objetivo = data.get("objetivo") || "";
-      const presupuesto = data.get("presupuesto") || "";
 
-      if (!nombre || !email || !objetivo || !presupuesto) {
+      if (!nombre || !email || !objetivo) {
         form.reportValidity();
         return;
       }
 
       const objetivoLabel = OBJETIVO_LABELS[objetivo] || objetivo;
-      const presupuestoLabel = PRESUPUESTO_LABELS[presupuesto] || presupuesto;
 
       const leadLines = [
         "Nombre: " + nombre,
         "Correo: " + email,
         "Objetivo de compra: " + objetivoLabel,
-        "Presupuesto: " + presupuestoLabel,
       ];
 
       const notifyText = [
@@ -165,7 +155,6 @@
       const visitorWa = buildWhatsAppHref([
         "Soy " + nombre + ".",
         "Objetivo: " + objetivoLabel + ".",
-        "Presupuesto: " + presupuestoLabel + ".",
         "Correo: " + email + ".",
         "Quiero continuar para agendar el diagnóstico gratis.",
       ]);
@@ -175,7 +164,6 @@
           form_intent: "diagnostico",
           campaign: "BUSQ30",
           objetivo: objetivo,
-          presupuesto: presupuesto,
           page_path: location.pathname,
         });
       }
@@ -190,7 +178,6 @@
             email: email,
             telefono: "",
             objetivo: objetivo,
-            presupuesto: presupuesto,
             action: "whatsapp",
           })
         );

@@ -386,9 +386,6 @@
     "#contacto-form label[for='perfil']": {
       "en": "Which best describes you?"
     },
-    "#contacto-form label[for='presupuesto']": {
-      "en": "Approximate budget"
-    },
     "#contacto-form .form-hint": {
       "en": "Most clients begin with a strategy call (Diagnostic) to structure the search."
     },
@@ -427,9 +424,6 @@
     },
     "#contacto-form #perfil option[value='otro']": {
       "en": "Other"
-    },
-    "#contacto-form #presupuesto option[value='']": {
-      "en": "Select in UF…"
     },
     ".contact-form-submit": {
       "en": "Schedule a strategy call"
@@ -832,18 +826,6 @@
     },
     ".tech-marquee-track span:nth-child(11)": {
       "en": "Land-use planning"
-    },
-    "#contacto-form #presupuesto option[value='1500-2500']": {
-      "en": "1,500 to 2,500 UF"
-    },
-    "#contacto-form #presupuesto option[value='2500-3500']": {
-      "en": "2,500 to 3,500 UF"
-    },
-    "#contacto-form #presupuesto option[value='3500-4500']": {
-      "en": "3,500 to 4,500 UF"
-    },
-    "#contacto-form #presupuesto option[value='sobre-5000']": {
-      "en": "Over 5,000 UF"
     },
     "#partner-modal-title": {
       "en": "Request contact"

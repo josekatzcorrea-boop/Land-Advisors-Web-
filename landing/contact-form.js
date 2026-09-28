@@ -44,13 +44,6 @@
     },
   };
 
-  const PRESUPUESTO_LABELS = {
-    "1500-2500": "1.500 a 2.500 UF",
-    "2500-3500": "2.500 a 3.500 UF",
-    "3500-4500": "3.500 a 4.500 UF",
-    "sobre-5000": "Sobre 5.000 UF",
-  };
-
   /** Mapeo formulario contacto → lead-gate (objetivo de compra) */
   const INTENT_TO_OBJETIVO = {
     diagnostico: "otro",
@@ -98,7 +91,6 @@
       "Teléfono: " + (data.get("telefono") || "").trim(),
       "Servicio: " + label(INTENT_LABELS, data.get("intent")),
       "Perfil: " + label(PERFIL_LABELS, data.get("perfil")),
-      "Presupuesto: " + label(PRESUPUESTO_LABELS, data.get("presupuesto")),
     ].join("\n");
   }
 
@@ -416,7 +408,6 @@
         email: (data.get("email") || "").trim(),
         telefono: (data.get("telefono") || "").trim(),
         objetivo: INTENT_TO_OBJETIVO[intent] || "otro",
-        presupuesto: data.get("presupuesto") || "",
         action: "calendar",
       };
       if (window.LA_LeadGate && typeof window.LA_LeadGate.persistLead === "function") {

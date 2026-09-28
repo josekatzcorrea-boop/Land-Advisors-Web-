@@ -14,20 +14,6 @@
     otro: "Otro / aún lo estoy definiendo",
   };
 
-  const PRESUPUESTO_LABELS = {
-    "1500-2500": "1.500 a 2.500 UF",
-    "2500-3500": "2.500 a 3.500 UF",
-    "3500-4500": "3.500 a 4.500 UF",
-    "sobre-5000": "Sobre 5.000 UF",
-  };
-
-  const BUDGET_KEYS = {
-    "1500-2500": "budget.1500",
-    "2500-3500": "budget.2500",
-    "3500-4500": "budget.3500",
-    "sobre-5000": "budget.5000",
-  };
-
   const GATE_SELECTORS = [
     "[data-site-wa]",
     "[data-site-calendar]",
@@ -102,7 +88,6 @@
       "Correo: " + data.email,
       "Teléfono: " + data.telefono,
       "Objetivo: " + (OBJETIVO_LABELS[data.objetivo] || data.objetivo),
-      "Presupuesto: " + (PRESUPUESTO_LABELS[data.presupuesto] || data.presupuesto),
       "Quiere: " + (data.action === "calendar" ? "Agendar diagnóstico" : "WhatsApp"),
       "",
       "Página: " + location.pathname + location.search,
@@ -115,16 +100,11 @@
       "Hola, completé el formulario en landadvisors.cl y quiero conversar.";
     const token = document.documentElement.getAttribute("data-wa-token") || "LA-WEB";
     const objetivo = lg("lead.obj." + data.objetivo, OBJETIVO_LABELS[data.objetivo] || data.objetivo);
-    const presupuesto = lg(
-      BUDGET_KEYS[data.presupuesto],
-      PRESUPUESTO_LABELS[data.presupuesto] || data.presupuesto
-    );
     const text = [
       intro,
       "",
       lg("lead.wa.iam", "Soy") + " " + data.nombre + ".",
       lg("lead.wa.objective", "Objetivo") + ": " + objetivo + ".",
-      lg("lead.wa.budget", "Presupuesto") + ": " + presupuesto + ".",
       lg("lead.wa.phone", "Teléfono") + ": " + data.telefono + ".",
       lg("lead.wa.email", "Correo") + ": " + data.email + ".",
       "",
@@ -231,14 +211,6 @@
       '<option value="proyecto" data-i18n="lead.obj.proyecto">Proyecto (cabañas, comercio u otro)</option>' +
       '<option value="otro" data-i18n="lead.obj.otro">Otro / aún lo estoy definiendo</option>' +
       "</select>" +
-      '<label for="lg-presupuesto" data-i18n="lead.budget">Rango de presupuesto</label>' +
-      '<select id="lg-presupuesto" name="presupuesto" required>' +
-      '<option value="" data-i18n="form.budgetUf">Seleccionar en UF…</option>' +
-      '<option value="1500-2500" data-i18n="budget.1500">1.500 a 2.500 UF</option>' +
-      '<option value="2500-3500" data-i18n="budget.2500">2.500 a 3.500 UF</option>' +
-      '<option value="3500-4500" data-i18n="budget.3500">3.500 a 4.500 UF</option>' +
-      '<option value="sobre-5000" data-i18n="budget.5000">Sobre 5.000 UF</option>' +
-      "</select>" +
       '<div class="lead-gate__hp-wrap" aria-hidden="true">' +
       '<label for="lg-hp">No completar</label>' +
       '<input type="text" id="lg-hp" name="la_hp_url" tabindex="-1" autocomplete="off">' +
@@ -294,14 +266,14 @@
     const submit = dialog && dialog.querySelector(".lead-gate__submit");
     if (action === "calendar") {
       if (title) title.textContent = lg("lead.title.cal", "Antes de agendar tu diagnóstico");
-      if (intro) intro.textContent = lg("lead.intro.cal", "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego eliges horario en el calendario.");
+      if (intro) intro.textContent = lg("lead.intro.cal", "Déjanos tu nombre, contacto y objetivo. Luego eliges horario en el calendario.");
       if (submit) {
         submit.textContent = lg("lead.submit.cal", "Continuar a agendar");
         submit.dataset.label = submit.textContent;
       }
     } else {
       if (title) title.textContent = lg("lead.title.wa", "Antes de escribir por WhatsApp");
-      if (intro) intro.textContent = lg("lead.intro.wa", "Déjanos tu nombre, contacto, objetivo y presupuesto. Luego te abrimos WhatsApp con José.");
+      if (intro) intro.textContent = lg("lead.intro.wa", "Déjanos tu nombre, contacto y objetivo. Luego te abrimos WhatsApp con José.");
       if (submit) {
         submit.textContent = lg("lead.submit.wa", "Continuar a WhatsApp");
         submit.dataset.label = submit.textContent;
@@ -422,7 +394,6 @@
           email: "ok@ok.cl",
           telefono: "",
           objetivo: "otro",
-          presupuesto: "sobre-5000",
           action: pendingAction,
         },
         false
@@ -435,11 +406,10 @@
       email: String(fd.get("email") || "").trim(),
       telefono: String(fd.get("telefono") || "").trim(),
       objetivo: String(fd.get("objetivo") || ""),
-      presupuesto: String(fd.get("presupuesto") || ""),
       action: pendingAction,
     };
 
-    if (!data.nombre || !data.email || !data.telefono || !data.objetivo || !data.presupuesto) {
+    if (!data.nombre || !data.email || !data.telefono || !data.objetivo) {
       setStatus(lg("lead.error.fields", "Completa todos los campos para continuar."), "error");
       form.reportValidity();
       return;
@@ -476,7 +446,6 @@
           form_intent: "lead_gate",
           gate_action: pendingAction,
           objetivo: data.objetivo,
-          presupuesto: data.presupuesto,
           webhook_ok: Boolean(result && result.ok),
           page_path: location.pathname,
         });
